@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# abvol script for ArchBang Iso
+# modified by MrGreen [mrgreen@archbang.org]
+
+# Increase volume
+increase_volume() {
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+}
+
+# Decrease volume
+decrease_volume() {
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+}
+
+# Toggle mute
+toggle_mute() {
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+}
+
+# Case statement to determine action
+case "$1" in
+    up)
+        increase_volume
+        ;;
+    down)
+        decrease_volume
+        ;;
+    mute)
+        toggle_mute
+        ;;
+    *)
+        echo "Usage: $0 [up|down|mute]"
+        exit 1
+        ;;
+esac
+

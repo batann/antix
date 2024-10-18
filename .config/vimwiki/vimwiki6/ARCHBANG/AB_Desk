@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Show current desktop in Tint2
+# modified by MrGreen fro ArchBang [mrgreen@archbang.org]
+
+# Desktop names from rc.xml into an array...
+output=$(sed -n '/<desktops>/,/<\/desktops>/p' ~/.config/openbox/rc.xml | sed -n 's/.*<name>\(.*\)<\/name>.*/\1/p')
+readarray -t desktop_names <<< "$output"
+
+
+# What desktop are we on now, if command fails give a defualt value of 0
+current_desktop=$(xdotool get_desktop)
+
+# if last command fails, which happens on first run then  give a default value to current_desktop
+if [ $? -ne 0 ]; then
+    current_desktop=0  # Set a default value
+fi
+
+# Will have to chekc if this is still needed
+#current_desktop=$((current_desktop + 1))
+
+# Print desktop name...
+echo ${desktop_names[$current_desktop]}
+
+
