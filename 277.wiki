@@ -1,0 +1,9 @@
+
+https://www.systranbox.com/configuring-an-sms-gateway-server-in-linux/
+
+https://docs.oracle.com/cd/E61905_01/doc.100/e61907/im_config_sms_gtway_im.htm#IMSAG389
+
+
+http://linuxblog.darkduck.com/2014/01/sms-gateway-linux.html
+
+

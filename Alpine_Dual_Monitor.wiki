@@ -1,0 +1,104 @@
+= Alpine_Dual_Monitor =
+
+Configuring dual monitors in Alpine OS with HDMI on the left can be accomplished using xrandr for X11-based setups. Follow these steps:
+Step 1: Install Required Packages
+
+Ensure you have xrandr installed. You might also need xf86-video-intel or other drivers depending on your hardware.
+
+
+<code>sudo apk add xrandr xf86-video-intel</code>
+
+Step 2: Identify Connected Monitors
+
+Run the following command to list all connected monitors and their names:
+
+
+<code>xrandr
+</code>
+
+You'll get an output similar to this:
+
+<code>
+Screen 0: minimum 8 x 8, current 1920 x 1080, maximum 16384 x 16384
+HDMI-1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 476mm x 268mm
+eDP-1 connected primary 1366x768+1920+0 (normal left inverted right x axis y axis) 309mm x 174mm
+</code>
+
+In this example:
+
+    <code>    HDMI-1 is the external monitor.
+	    eDP-1 is the laptop screen (internal monitor).
+		</code>
+
+Step 3: Configure Dual Monitors
+
+To configure the external monitor (HDMI) to the left of the internal monitor, use the following command:
+
+
+<code>xrandr --output HDMI-1 --auto --left-of eDP-1
+</code>
+
+Step 4: Make the Configuration Persistent
+
+To make these settings persistent across reboots, add the xrandr command to your X11 startup script. This is typically done in ~/.xinitrc or ~/.xprofile.
+
+Edit (or create) ~/.xprofile:
+
+
+<code>nano ~/.xprofile
+</code>
+
+Add the following line:
+
+
+<code>xrandr --output HDMI-1 --auto --left-of eDP-1
+</code>
+
+Step 5: Restart X11
+
+Restart your X session or reboot your system to apply the changes.
+Optional: Configure xorg.conf
+
+If you prefer to configure this in xorg.conf for more control or advanced settings, you can do so:
+
+    Create or edit /etc/X11/xorg.conf.d/10-monitor.conf:
+
+
+<code>sudo nano /etc/X11/xorg.conf.d/10-monitor.conf
+</code>
+
+    Add the following configuration:
+
+<code>
+    Section "Monitor"
+    Identifier "HDMI-1"
+    Option "Position" "0 0"
+	EndSection
+
+	Section "Monitor"
+    Identifier "eDP-1"
+    Option "RightOf" "HDMI-1"
+	EndSection
+
+	Section "Screen"
+    Identifier "Screen0"
+    Device "Intel Graphics"
+    Monitor "HDMI-1"
+    SubSection "Display"
+    Modes "1920x1080"
+    EndSubSection
+    Monitor "eDP-1"
+    SubSection "Display"
+    Modes "1366x768"
+    EndSubSection
+	EndSection
+</code>
+
+Replace "Intel Graphics" with the appropriate device identifier if using a different driver.
+Verification
+
+After configuring, you can verify the settings by running xrandr again to ensure both monitors are set up correctly.
+Troubleshooting
+
+    Ensure your hardware drivers are correctly installed.
+    Check /var/log/Xorg.0.log for any errors related to monitor configuration.

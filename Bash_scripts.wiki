@@ -1,0 +1,20 @@
+= Contents =
+        - [[#bash scripts]]
+                - [[#yad post install]]
+
+=bash scripts=
+
+
+== yad post install ==
+[[inst1.sh]]  		_yad based gui post install scripts -work in progress_
+[[inst2.sh]]
+[[inst3.sh]]
+[[inst4.sh]]
+[[inst5.sh]]
+[[inst6.sh]]
+[[works.sh]]
+[[fin.sh]]  		_dialog based postinstall script_
+[[resize.sh]] 		_resize image files_
+[[count.sh]] 		_countdown timer_
+
+

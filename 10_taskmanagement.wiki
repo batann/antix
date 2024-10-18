@@ -1,0 +1,47 @@
+= 10 Open Source Task Management Apps =
+
+ChatGPT
+There are several open-source project management tools available for Linux that can help you plan, track, and manage your projects efficiently. Here are some of the top ones:
+
+1. **OpenProject:**
+   - OpenProject is a powerful project management and team collaboration platform.
+   - It offers features like task tracking, Gantt charts, time tracking, and more.
+   - Web-based interface, easy to set up and use.
+
+2. **Redmine:**
+   - Redmine is a flexible project management web application written in Ruby on Rails.
+   - It includes issue tracking, Gantt charts, a wiki, and integrates with version control systems.
+   - Highly customizable through plugins.
+
+3. **Taiga:**
+   - Taiga is an open-source agile project management platform.
+   - It supports both Scrum and Kanban methodologies.
+   - Features include user stories, sprints, and backlog management.
+
+4. **Kanboard:**
+   - Kanboard is a simple and open-source visual task board software.
+   - It's designed for simplicity and can be used for personal task management or small team projects.
+
+5. **Taskwarrior:**
+   - Taskwarrior is a command-line task management tool with a focus on simplicity and efficiency.
+   - It's ideal for individuals or small teams comfortable with the command line.
+
+6. **Freedcamp:**
+   - Freedcamp is a free, cloud-based project management platform that can be accessed from any device with a web browser.
+   - It offers features like task lists, time tracking, and file sharing.
+
+7. **Wekan:**
+   - Wekan is an open-source Trello-like project management tool.
+   - It provides a visual board with cards that can be moved and categorized to manage tasks.
+
+8. **Odoo:**
+   - Odoo is an open-source suite of business applications that includes project management among its modules.
+   - It offers a comprehensive set of tools for project planning, resource allocation, and collaboration.
+
+9. **ProjectLibre:**
+   - ProjectLibre is an open-source alternative to Microsoft Project.
+   - It provides project scheduling and management capabilities with a familiar interface.
+
+10. **GanttProject:**
+    - GanttProject is a free and open-source project scheduling and management tool.
+    - It supports Gantt charts, resource management, and task dependencies.

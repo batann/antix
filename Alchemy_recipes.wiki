@@ -1,0 +1,700 @@
+Alchemy Recipes
+
+
+== Skyrim Alchemy Recipes: The Definitive Guide [2023] ==
+
+Are you short on potions in the game? Then you have to check out eXputer's
+Skyrim Alchemy Recipes guide for a complete tutorial on buffs.
+
+
+Basic knowledge of Skyrim Alchemy Recipes is essential to surviving in a world
+full of hostile dragons and otherworldly beings. Players who take the time to
+learn this skill are often equipped to tackle any scenario the game throws at
+them, thanks to their massive selection of consumables for every situation.
+
+== Key Takeaways ==
+
+  • Alchemy in Skyrim lets you create different kinds of potions or poisons 
+    which can be created by using ingredients gathered around the map.
+  • Both potions and poisons act as buffs, potions enhance your abilities while
+    poisons make your weapons better and give them effects.
+  • There are a total of 25 different kinds of potions that you can craft.
+  • The best potions that you can make are Fortify Enchanting, Restore Stamina,
+    and Fortify Destruction.
+  • Skyrim lets you craft a total of 20 different kinds of poisons.
+  • The best poisons to craft are Paralysis, Fear, Weakness to Fire, Damage
+    Magicka Regen, and Slow.
+
+We understand that it’s not really glamorous to invest points in a skill like
+Alchemy, especially when others allow you to spew fire from your hands more
+effectively. But what do you do when you’re backed into a corner with no
+recovery items and no fortifying potions?
+
+These situations are where players with a grasp of the Skyrim Alchemy Recipes
+will truly shine. And with this guide, we’ll show you all of the items you can
+craft with this skill.
+
+= Table of Contents =
+
+ 1. What Are Alchemy Ingredients In Skyrim?
+ 2. Skyrim Alchemy Recipes Guide
+     1. Potions Created Through Alchemy
+     2. Poisons Created Via Alchemy
+
+== What Are Alchemy Ingredients In Skyrim? ==
+
+
+Alchemy ingredients can be found all over the map of Skyrim. Some of these are
+easy to find, while others are much rarer. If players don’t want to waste their
+time searching for these ingredients, they can also purchase them from
+Alchemists found in most major settlements in the game. If you’re short on
+money, you can always create a bunch of gold with the Transmute Spell.
+
+Each ingredient has four different effects, some of which are also shared by
+other items. You can discover these either by brewing potions at an Alchemy Lab
+using ingredients with the same effects or by eating the item directly from
+your inventory to discover its first effect. Additional properties can be
+discovered by investing points in the Experimenter perk in the Alchemy skill
+tree.
+
+Skyrim Alchemy Recipes Guide
+
+We will now move on to the actual Skyrim Alchemy Recipes. These are divided
+into two categories; Potions and Poisons.
+
+To craft any of these, all you have to do is combine at least two of the
+ingredients listed at an Alchemy Lab. It doesn’t matter what combination you
+choose.
+
+Potions Created Through Alchemy
+
+Skyrim Alchemy Recipes Skyrim Alchemy Recipes
+Potion of Minor Healing [Screenshot by eXputer]
+
+Each of the following Skyrim Alchemy Recipes provides the player with a buff to
+help them in different situations. Some of these potions are suited for combat,
+while others are useful in other more specialized situations like Sneaking or
+Enchanting.
+
+Effect                     Ingredients (Combine Any Two)
+========================================================
+
+
+
+                             • Charred Skeever Hide.
+                             • Felsaad Tern Feathers.
+Cure Disease Potion          • Hawk Feathers.
+                             • Mudcrab Chitin.
+                             • Vampire Dust.
+
+                             • Burnt Spriggan Wood.
+                             • Grass Pod.
+Fortify Alteration Potion    • River Betty.
+                             • Spriggan Sap.
+
+                             • Butterfly Wing.
+                             • Dragon’s Tongue.
+Fortify Barter Potion        • Hagraven Claw.
+                             • Tundra Cotton.
+
+                             • Bleeding Crown.
+                             • Boar Tusk.
+                             • Briar Heart.
+Fortify Block Potion         • Honeycomb.
+                             • Pearl.
+                             • Slaughterfish Scales.
+                             • Tundra Cotton.
+
+                             • Creep Cluster.
+                             • Giant’s Toe.
+                             • Hawk Beak.
+                             • Netch Jelly.
+Fortify Carry Weight         • Poison Bloom.
+Potion                       • River Betty.
+                             • Scaly Pholiota.
+                             • Trama Root.
+                             • Wisp Wrappings.
+
+                             • Ancestor Moth Wing.
+                             • Berit’s Ashes.
+                             • Blue Butterfly Wing.
+                             • Blue Mountain Flower.
+Fortify Conjuration Potion   • Bone Meal.
+                             • Chaurus Hunter Antennae.
+                             • Frost Salts.
+                             • Hagraven Feathers.
+                             • Lavender.
+
+                             • Ash Creep Cluster.
+                             • Beehive Husk.
+                             • Ectoplasm.
+Fortify Destruction Potion   • Glow Dust.
+                             • Glowing Mushroom.
+                             • Nightshade.
+                             • Wisp Wrappings.
+
+                             • Ancestor Moth Wing.
+                             • Blue Butterfly Wing.
+                             • Chaurus Hunter Antennae.
+Fortify Enchanting Potion    • Hagraven Claw.
+                             • Snowberries.
+                             • Spawn Ash.
+                             • Spriggan Sap.
+
+                             • Bear Claws.
+                             • Blue Mountain Flower.
+                             • Boar Tusk.
+                             • Giant’s Toe.
+Fortify Health Potion        • Glowing Mushroom.
+                             • Hanging Moss.
+                             • Wheat.
+                             • Yellow Mountain Flower.
+
+                             • Ice Wraith Teeth.
+                             • Sabre Cat Tooth.
+Fortify Heavy Armor Potion   • Slaughterfish Scales.
+                             • Thistle Branch.
+                             • White Cap.
+
+                             • Dragon’s Tongue.
+                             • Dwarven Oil.
+Fortify Illusion Potion      • Mora Tapinella.
+                             • Scaly Pholiota.
+                             • Taproot.
+
+                             • Ash Hopper Jelly.
+                             • Beehive Husk.
+                             • Felsaad Tern Feathers.
+Fortify Light Armor Potion   • Hawk Feathers.
+                             • Honeycomb.
+                             • Luna Moth Wing.
+                             • Skeever Tail.
+
+                             • Ashen Grass Pod.
+                             • Falmer Ear.
+Fortify Lockpicking Potion   • Namira’s Rot.
+                             • Pine Thrush Egg.
+                             • Spider Egg.
+
+                             • Briar Heart.
+                             • Ectoplasm.
+                             • Emperor Parasol Moss.
+                             • Fine-Cut Void Salts.
+                             • Histcarp.
+Fortify Magicka Potion       • Jazbay Grapes.
+                             • Red Mountain Flower.
+                             • Salmon Roe.
+                             • Tundra Cotton.
+                             • Void Salts.
+
+                             • Canis Root.
+                             • Elves Ear.
+Fortify Marksman Potion      • Juniper Berries.
+                             • Spider Egg.
+
+                             • Bear Claws.
+                             • Canis Root.
+                             • Hanging Moss.
+Fortify One-Handed Potion    • Hawk Feathers.
+                             • Rock Warbler Egg.
+                             • Small Pearl.
+
+                             • Blue Dartwing.
+                             • Nordic Barnacle.
+Fortify Pickpocket Potion    • Orange Dartwing.
+                             • Slaughterfish Egg.
+
+                             • Abecean Longfin.
+                             • Cyrodilic Spadetail.
+                             • Salt Pile.
+Fortify Restoration Potion   • Small Antlers.
+                             • Small Pearl.
+                             • Yellow Mountain Flower.
+
+                             • Blisterwort.
+                             • Glowing Mushroom.
+Fortify Smithing Potion      • Sabre Cat Tooth.
+                             • Spriggan Sap.
+
+                             • Abecean Longfin.
+                             • Ashen Grass Pod.
+                             • Beehive Husk.
+                             • Frost Mirriam.
+Fortify Sneak Potion         • Hawk Feathers.
+                             • Human Flesh.
+                             • Powdered Mammoth Tusk.
+                             • Purple Mountain Flower.
+
+                             • Boar Tusk.
+                             • Chaurus Eggs.
+                             • Garlic.
+Fortify Stamina Potion       • Large Antlers.
+                             • Lavender.
+                             • Slaughterfish Egg.
+                             • Torchbug Thorax.
+
+                             • Dragon’s Tongue.
+                             • Emperor Parasol Moss.
+Fortify Two-Handed Potion    • Fly Amanita.
+                             • Troll Fat.
+
+                             • Ash Creep Cluster.
+                             • Chaurus Eggs.
+                             • Crimson Nirnroot.
+Invisibility Potion          • Ice Wraith Teeth.
+                             • Luna Moth Wing.
+                             • Nirnroot.
+                             • Vampire Dust.
+
+                             • Emperor Parasol Moss.
+                             • Garlic.
+                             • Gleamblossom.
+                             • Juniper Berries.
+Regenerate Health Potion     • Luna Moth Wing.
+                             • Namira’s Rot.
+                             • Nordic Barnacle.
+                             • Vampire Dust.
+
+                             • Dwarven Oil.
+                             • Fire Salts.
+                             • Garlic.
+                             • Jazbay Grapes.
+Regenerate Magicka Potion    • Moon Sugar.
+                             • Salmon Roe.
+                             • Salt Pile.
+                             • Taproot.
+
+                             • Bee.
+                             • Fly Amanita.
+Regenerate Stamina Potion    • Mora Tapinella.
+                             • Scaly Pholiota.
+
+                             • Ash Creep Cluster.
+                             • Ashen Grass Pod.
+                             • Berit’s Ashes.
+                             • Bone Meal.
+                             • Dragon’s Tongue.
+Resist Fire Potion           • Elves Ear.
+                             • Fire Salts.
+                             • Fly Amanita.
+                             • Mudcrab Chitin.
+                             • Snowberries.
+                             • Spawn Ash.
+
+                             • Frost Mirriam.
+                             • Frost Salts.
+                             • Hawk Beak.
+                             • Moon Sugar.
+                             • Purple Mountain Flower.
+Resist Frost Potion          • Silverside Perch.
+                             • Slaughterfish Scales.
+                             • Small Pearl.
+                             • Snowberries.
+                             • Thistle Branch.
+
+                             • Bleeding Crown.
+                             • Chicken’s Egg.
+                             • Crimson Nirnroot.
+                             • Felsaad Tern Feathers.
+                             • Fine-Cut Void Salts.
+                             • Gleamblossom.
+Resist Magic Potion          • Hagraven Claw.
+                             • Hawk’s Egg.
+                             • Lavender.
+                             • Nirnroot.
+                             • Tundra Cotton.
+                             • Void Salts.
+                             • Wisp Wrappings.
+
+                             • Beehive Husk.
+                             • Charred Skeever Hide.
+                             • Falmer Ear.
+                             • Garlic.
+                             • Grass Pod.
+Resist Poison Potion         • Mudcrab Chitin.
+                             • Slaughterfish Egg.
+                             • Thistle Branch.
+                             • Troll Fat.
+                             • Yellow Mountain Flower.
+
+                             • Ash Hopper Jelly.
+                             • Blue Dartwing.
+                             • Glow Dust.
+                             • Glowing Mushroom.
+Resist Shock Potion          • Hawk Beak.
+                             • Pearl.
+                             • Pine Thrush Egg.
+                             • Snowberries.
+                             • Swamp Fungal Pod.
+
+                             • Ash Hopper Jelly.
+                             • Blisterwort.
+                             • Blue Dartwing.
+                             • Blue Mountain Flower.
+                             • Butterfly Wing.
+                             • Charred Skeever Hide.
+Restore Health Potion        • Daedra Heart.
+                             • Eye of Sabre Cat.
+                             • Felsaad Tern Feathers.
+                             • Imp Stool.
+                             • Rock Warbler Egg.
+                             • Swamp Fungal Pod.
+                             • Wheat.
+
+                             • Briar Heart.
+                             • Creep Cluster.
+                             • Dwarven Oil.
+                             • Ectoplasm.
+                             • Elves Ear.
+                             • Fire Salts.
+                             • Frost Salts.
+                             • Giant Lichen.
+Restore Magicka Potion       • Grass Pod.
+                             • Human Flesh.
+                             • Moon Sugar.
+                             • Mora Tapinella.
+                             • Pearl.
+                             • Red Mountain Flower.
+                             • Taproot.
+                             • Vampire Dust.
+                             • White Cap.
+
+                             • Bear Claws.
+                             • Bee.
+                             • Charred Skeever Hide.
+                             • Eye of Sabre Cat.
+                             • Hawk Beak.
+                             • Histcarp.
+                             • Honeycomb.
+                             • Large Antlers.
+                             • Mudcrab Chitin.
+                             • Netch Jelly.
+Restore Stamina Potion       • Orange Dartwing.
+                             • Pearl.
+                             • Pine Thrush Egg.
+                             • Powdered Mammoth Tusk.
+                             • Purple Mountain Flower.
+                             • Sabre Cat Tooth.
+                             • Salmon Roe.
+                             • Silverside Perch.
+                             • Small Pearl.
+                             • Torchbug Thorax.
+                             • Wisp Wrappings.
+
+                             • Chicken’s Egg.
+                             • Fish.
+Waterbreathing Potion        • Hawk’s Egg.
+                             • Histcarp.
+                             • Nordic Barnacle.
+                             • Salmon Roe.
+
+Poisons Created Via Alchemy
+
+Skyrim Alchemy Recipes Skyrim Alchemy Recipes
+Weak Aversion To Magic [Image by eXputer]
+
+This next list of Skyrim Alchemy Recipes creates Poisons that can be used to
+inflict various debuffs on your enemies. They are exclusively applied to your
+weapons, which then pass the effect onto foes when you attack them.
+
+Effect                     Ingredients (Combine Any Two)
+
+                             • Crimson Nirnroot.
+                             • Deathbell.
+                             • Ectoplasm.
+                             • Emperor Parasol Moss.
+                             • Falmer Ear.
+                             • Fine-Cut Void Salts.
+                             • Human Flesh.
+                             • Human Heart.
+                             • Imp Stool.
+Damage Health Poison         • Jarrin Root.
+                             • Nightshade.
+                             • Nirnroot.
+                             • Poison Bloom .
+                             • Red Mountain Flower.
+                             • River Betty.
+                             • Skeever Tail.
+                             • Small Antlers.
+                             • Troll Fat.
+                             • Void Salts.
+
+                             • Butterfly Wing.
+                             • Chaurus Eggs.
+                             • Daedra Heart.
+                             • Eye of Sabre Cat.
+                             • Glow Dust.
+                             • Hagraven Feathers.
+Damage Magicka Poison        • Hanging Moss.
+                             • Human Heart.
+                             • Jarrin Root.
+                             • Luna Moth Wing.
+                             • Namira’s Rot.
+                             • Nordic Barnacle.
+                             • Trama Root.
+
+                             • Ancestor Moth Wing.
+                             • Bear Claws.
+                             • Blue Butterfly Wing.
+                             • Blue Mountain Flower.
+                             • Burnt Spriggan Wood.
+                             • Chaurus Hunter Antennae.
+                             • Chicken’s Egg.
+Damage Magicka Regen         • Glow Dust.
+Poison                       • Hanging Moss.
+                             • Hawk’s Egg.
+                             • Human Heart.
+                             • Jarrin Root.
+                             • Nightshade.
+                             • Spider Egg.
+                             • Spriggan Sap.
+
+                             • Ancestor Moth Wing.
+                             • Ash Creep Cluster.
+                             • Berit’s Ashes.
+                             • Blisterwort.
+                             • Blue Butterfly Wing.
+                             • Bone Meal.
+                             • Canis Root.
+Damage Stamina Poison        • Chaurus Hunter Antennae.
+                             • Crimson Nirnroot.
+                             • Cyrodilic Spadetail.
+                             • Giant’s Toe.
+                             • Jarrin Root.
+                             • Nirnroot.
+                             • Rock Warbler Egg.
+                             • Spider Egg.
+
+                             • Creep Cluster.
+                             • Daedra Heart.
+                             • Frost Mirriam.
+                             • Giant’s Toe.
+                             • Histcarp.
+Damage Stamina Regen         • Juniper Berries.
+Poison                       • Large Antlers.
+                             • Silverside Perch.
+                             • Skeever Tail.
+                             • Wheat.
+                             • Yellow Mountain Flower.
+
+                             • Blue Dartwing.
+                             • Cyrodilic Spadetail.
+                             • Daedra Heart.
+                             • Gleamblossom.
+Fear Poison                  • Namira’s Rot.
+                             • Netch Jelly.
+                             • Poison Bloom.
+                             • Powdered Mammoth Tusk.
+
+                             • Blisterwort.
+                             • Boar Tusk.
+                             • Falmer Ear.
+Frenzy Poison                • Fly Amanita.
+                             • Hagraven Feathers.
+                             • Human Heart.
+                             • Troll Fat.
+
+                             • Imp Stool.
+                             • Mora Tapinella.
+Lingering Damage Health      • Orange Dartwing.
+Poison                       • Scathecraw.
+                             • Slaughterfish Egg.
+                             • Slaughterfish Scales.
+
+                             • Hagraven Claw.
+                             • Purple Mountain Flower.
+Lingering Damage Magicka     • Swamp Fungal Pod.
+Poison                       • Torchbug Thorax.
+                             • Wheat.
+
+                             • Butterfly Wing.
+                             • Chicken’s Egg.
+Lingering Damage Stamina     • Hawk’s Egg.
+Poison                       • Nightshade.
+                             • Small Antlers.
+
+                             • Briar Heart.
+                             • Canis Root.
+                             • Gleamblossom.
+Paralysis Poison             • Human Flesh.
+                             • Imp Stool.
+                             • Netch Jelly.
+                             • Swamp Fungal Pod.
+
+                             • Cyrodilic Spadetail.
+                             • Eye of Sabre Cat.
+                             • Giant Lichen.
+Ravage Health Poison         • Jazbay Grapes.
+                             • Scathecraw.
+                             • Silverside Perch.
+                             • Skeever Tail.
+
+                             • Frost Mirriam.
+                             • Grass Pod.
+                             • Lavender.
+                             • Orange Dartwing.
+Ravage Magicka Poison        • Red Mountain Flower.
+                             • Scathecraw.
+                             • Spawn Ash.
+                             • White Cap.
+
+                             • Bee.
+                             • Berit’s Ashes.
+                             • Bone Meal.
+                             • Deathbell.
+Ravage Stamina Poison        • Honeycomb.
+                             • Scathecraw.
+                             • Spawn Ash.
+                             • Thistle Branch.
+
+                             • Burnt Spriggan Wood.
+                             • Deathbell.
+                             • Large Antlers.
+Slow Poison                  • Poison Bloom.
+                             • River Betty.
+                             • Salt Pile.
+                             • Trama Root.
+
+                             • Bleeding Crown.
+                             • Burnt Spriggan Wood.
+                             • Frost Salts.
+Weakness to Fire Poison      • Ice Wraith Teeth.
+                             • Juniper Berries.
+                             • Moon Sugar.
+                             • Powdered Mammoth Tusk.
+
+                             • Abecean Longfin.
+                             • Ash Hopper Jelly.
+                             • Elves Ear.
+Weakness to Frost Poison     • Fire Salts.
+                             • Ice Wraith Teeth.
+                             • White Cap.
+
+                             • Creep Cluster.
+                             • Dwarven Oil.
+                             • Jazbay Grapes.
+                             • Rock Warbler Egg.
+Weakness to Magic Poison     • Salt Pile.
+                             • Scaly Pholiota.
+                             • Taproot.
+                             • Torchbug Thorax.
+
+                             • Abecean Longfin.
+                             • Bleeding Crown.
+                             • Chaurus Eggs.
+                             • Deathbell.
+Weakness to Poison           • Giant Lichen.
+                             • Pine Thrush Egg.
+                             • Sabre Cat Tooth.
+                             • Small Antlers.
+
+                             • Ashen Grass Pod.
+                             • Bee.
+                             • Fine-Cut Void Salts.
+Weakness to Shock Poison     • Giant Lichen.
+                             • Hagraven Feathers.
+                             • Trama Root.
+                             • Void Salts.
+
+And with this, we’ve covered each and every alchemic item that the player can
+craft. There are a bunch more potions and poisons in the game, but they cannot
+be created at an Alchemy Lab. You have to purchase them from merchants.
+
+This has been eXputer’s Skyrim Alchemy Recipes guide. While you’re here, why
+not also check out our All Black Book Locations article for the same game?
+
+Next:
+
+  • Best Skyrim Quests
+  • Skyrim: Best Horses
+  • Best Builds in Skyrim
+  • Skyrim: Best Bows
+
+Was this article helpful?
+Yes ✔️ No ✖
+
+Thanks! Do share your feedback with us. ⚡
+
+How could we improve this post? Please Help us. ✍
+
+[                    ] Submit
+Tags
+The Elder Scrolls V: Skyrim
+By Huzaifah Durrani August 23, 2023Last Updated: August 24, 2023
+6 minutes read
+Facebook Twitter LinkedIn Reddit Share via Email Print
+Photo of Huzaifah DurraniPhoto of Huzaifah Durrani
+
+Huzaifah Durrani
+
+  • Guides & Reviews Writer |
+  • 
+  • Facebook
+  • LinkedIn
+
+
+Huzaifa is eXputer's Review Editor, who’s all about RPG games. He loves being
+immersed in beautifully crafted worlds full of wacky characters. He’s got
+several years of experience critically judging games and writing his unbiased
+thoughts on them. You can also find his content published on sites like
+Twinfinite & GearNuke. Experience: 5+ years || Education: Bachelor's in
+Journalism || Previously Worked At GearNuke & Twinfinite || Reviewed over 200+
+games || Mainly Covers RPG Guides &  Latest Games Reviews
+
+Related Articles
+
+Bethesda GamesBethesda Games
+
+At This Point, Bethesda Games Feel Incomplete Without Mods
+
+2 days ago
+How to fix ESO error 307How to fix ESO error 307
+
+How To Fix ESO Error 307 In 2023
+
+1 week ago
+Skyrim TransmuteSkyrim Transmute
+
+Skyrim: How To Make Gold With The Transmute Spell?
+
+2 weeks ago
+Top 18 Best Houses In SkyrimTop 18 Best Houses In Skyrim
+
+Skyrim Best Houses [Top 18]
+
+July 20, 2023
+Latest Guides
+
+  • best laser weapons starfieldbest laser weapons starfield
+    8 Best Laser Weapons In Starfield [Also Unlock Guide]
+  • MK1-Invasion-Clues-GuideMK1-Invasion-Clues-Guide
+    MK1 Invasion Clues [All Solutions]
+  • Darrius Mortal KombatDarrius Mortal Kombat
+    Mortal Kombat 1: Darrius [Lore And Changes]
+  • Armored Core 6 All Hidden Parts [Stats, Descriptions, & Locations] featured
+    imageArmored Core 6 All Hidden Parts [Stats, Descriptions, & Locations]
+    featured image
+    Armored Core 6: All Hidden Parts [Stats, Descriptions, & Locaw3m: Can't load dump.
+tions]
+  • Is Harumi In Mortal Kombat 1 [Answered] featured imageIs Harumi In Mortal
+    Kombat 1 [Answered] featured image
+    Is Harumi In Mortal Kombat 1? [Answered]
+
+© 2023 eXputer. All trademarks mentioned are the property of their respective
+owners
+
+ eXputer is part of REDLUMB LLC FZ. Business Centre 1, M Floor, The Meydan HQ,
+                           Nad Al Sheba, Dubai, UAE
+About | Team | Editorial Guidelines | Privacy Policy | Cookie Policy | Terms of
+Use | Affiliate Disclosure | Contact Us
+
+  • Twitter
+  • LinkedIn
+  • YouTube
+  • Instagram
+  • TikTok
+
+Close
+Search for: [                    ] [Search]
+Close
+[                    ] Search for

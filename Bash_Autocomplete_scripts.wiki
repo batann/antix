@@ -1,0 +1,24 @@
+= Bash Autocomplete =
+
+
+_Run in terminal:_
+	cat >> ~/.inputrc <<'EOF'
+	"\e[A": history-search-backward
+	"\e[B": history-search-forward
+	EOF
+
+_Open a new shell session, or just reload inputrc:_
+
+	bind -f ~/.inputrc
+
+_Use Arrow Up/Down after the beginning of command_
+
+
+###########
+
+
+
+
+
+
+

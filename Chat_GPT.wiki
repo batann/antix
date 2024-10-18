@@ -1,0 +1,15 @@
+= Contents =
+    - [[#Chat GPT]]
+            - [[#CLI-chat_gpt]]
+            - [[#Articles GPT]]
+            - [[#Recommendations GPT]]
+
+= Chat GPT =
+
+
+=== CLI-chat_gpt ===
+[[CLI-chat_gpt]]
+=== Articles GPT ===
+[[Articles GPT]]
+=== Recommendations GPT ===
+[[Recommendations GPT]]

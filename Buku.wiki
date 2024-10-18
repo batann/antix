@@ -1,0 +1,5 @@
+= buku =
+[[buku_bookmarks]]
+[[buku install]]
+[[buku examples]]
+[[buku manual]]

@@ -1,0 +1,428 @@
+= Contents =
+        - [[#The 30 Best VSCode Shortcuts To Boost Productivity in 2023]]
+        - [[#30 Best VSCode Shortcuts to Boost Productivity in 2023]]
+                - [[#1. Zen Mode]]
+                - [[#2. Command Palette]]
+                - [[#3. Global Find]]
+                - [[#4. Move a Line Up/Down]]
+                - [[#5. Multi-Select Cursor]]
+                - [[#6. Delete a Line]]
+                - [[#7. Comment Code]]
+                - [[#8. Toggle the Sidebar]]
+                - [[#9. Split View]]
+                - [[#10. Copy a Line Up/Down]]
+                - [[#11. Navigate to a Specific Line]]
+                - [[#12. Open Settings]]
+                - [[#13. Trim Trailing Whitespace]]
+                - [[#14. Select the Current Line]]
+                - [[#15. Open the Markdown preview]]
+                - [[#16. Fold/Unfold Code Block]]
+                - [[#17. Show References]]
+                - [[#18. Trigger Suggestion/Parameter Hints]]
+                - [[#19. Show All Symbols]]
+                - [[#20. Go Back/Move Forward]]
+                - [[#21. Show Integrated terminal]]
+                - [[#22. Zoom In/Out]]
+                - [[#23. Show Extensions]]
+                - [[#24. Show Search Bar]]
+                - [[#25. Quick Open]]
+                - [[#26. Create New File]]
+                - [[#27. Toggle Full Screen]]
+                - [[#28. Renaming Symbols]]
+                - [[#29. Indent/Outdent Lines]]
+                - [[#30. Show Output Panel]]
+                - [[#Best Practices for Finding & Using Shortcuts in VSCode]]
+
+
+
+= The 30 Best VSCode Shortcuts To Boost Productivity in 2023 =
+= 30 Best VSCode Shortcuts to Boost Productivity in 2023 =
+
+== 1. Zen Mode ==
+
+
+Main feature: Enter distraction-free mode
+
+Mac command: Cmd + K, Z
+
+Windows command: Ctrl + K, Z
+
+This allows you to enter full-screen mode, which is ideal for focusing solely
+on the code you're working on. The interface is minimalistic, and all
+extraneous elements are hidden, providing a distraction-free environment. To
+exit, double-click escape.
+
+== 2. Command Palette ==
+
+
+Main feature: Show all commands
+
+Mac command: Cmd + Shift + P
+
+Windows command: Ctrl + Shift + P
+
+This will bring up a search bar where you can search for any command or feature
+you need, eliminating the need to navigate through various menus and settings,
+as it offers access to all VS Code commands and features from a single
+location.
+
+== 3. Global Find ==
+
+
+Main feature: Search within all files
+
+Mac command: Cmd + Shift + F
+
+Windows command: Ctrl + Shift + F
+
+Use this to search for specific text or code within your current file, which is
+ideal when you're trying to find a particular function or variable in multiple
+places. It highlights all instances of your search text, allowing you to easily
+navigate to each.
+
+== 4. Move a Line Up/Down ==
+
+
+Main feature: Move a line up or down
+
+Mac command: Option + Up/Down arrow
+
+Windows command: Alt + Up/Down arrow
+
+This shortcut makes it easy to move a block of code to a different location in
+the file without having to cut and paste. This is especially useful when you're
+editing large files with many lines of code.
+
+== 5. Multi-Select Cursor ==
+
+
+Main feature: At cursor at multiple places
+
+Mac command: Option + Click
+
+Windows command: Alt + Click
+
+You can use this shortcut to place multiple cursors in different locations in a
+file. This feature can save you time by enabling you to simultaneously make
+identical changes in different places.
+
+== 6. Delete a Line ==
+
+
+Main feature: Delete a line quickly
+
+Mac command: Cmd + Shift + K
+
+Windows command: Ctrl + Shift + K
+
+This simple but essential feature lets you remove a line of code quickly
+without selecting it manually or cutting it with the mouse. It can come in
+handy when you're refactoring code.
+
+== 7. Comment Code ==
+
+
+Main feature: Comment single or multi lines of code
+
+Mac command: Cmd + /
+
+Windows command: Ctrl + /
+
+Using this shortcut, you can add comments to your code quickly and with ease.
+Whether you’re improving documentation, debugging, or want to temporarily
+disable a block of code, you can use it to comment out a single line or
+multiple lines of code.
+
+== 8. Toggle the Sidebar ==
+
+
+Main feature: Make the sidebar appear or disappear
+
+Mac command: Cmd + B
+
+Windows command: Ctrl + B
+
+When you want to hide or show the sidebar in the editor, this is a shortcut you
+can use. It’s useful when you need more screen real estate or want to reduce
+the clutter in the editor.
+
+== 9. Split View ==
+
+
+Main feature: View files side by side
+
+Mac command: Cmd + \
+
+Windows command: Ctrl + \
+
+This shortcut allows you to split the editor pane into two parts, allowing you
+to view two different files side by side. You can use this when you're
+comparing two files or referencing one file while working on another.
+
+== 10. Copy a Line Up/Down ==
+
+
+Main feature: Duplicate a line
+
+Mac command: Option + Shift + Up/Down arrow
+
+Windows command: Alt + Shift + Up/Down arrow
+
+You can use this shortcut when you want to duplicate a line of code quickly. It
+makes it easy to create repetitive code blocks or copy and paste blocks of code
+without manually selecting them.
+
+== 11. Navigate to a Specific Line ==
+
+Main feature: Takes you to a specified line
+
+Mac command: Ctrl + G
+
+Windows command: Ctrl + G
+
+With this VSCode go to line shortcut, you can jump to a specific line in the
+current file. The command opens a dialog box where you can enter the line
+number you want to navigate to.
+
+== 12. Open Settings ==
+
+Main feature:
+
+Mac command: Cmd + ,
+
+Windows command: Ctrl + ,
+
+Do you want to open the settings panel in VS Code? The quickest way to do so is
+to use this shortcut, simply click CTRL (for Windows) or CMD for Mac) with the
+comma (,) key.
+
+== 13. Trim Trailing Whitespace ==
+
+Main feature: Remove unwanted whitespace
+
+Mac command: Cmd + K Cmd + X
+
+Windows command: Ctrl + K Ctrl + X
+
+If you want to remove trailing whitespace from the end of lines in your code,
+this shortcut will be useful. Using the feature can help improve your code's
+readability and avoid unnecessary changes in version control systems.
+
+== 14. Select the Current Line ==
+
+Main feature: Select everything on the current line
+
+Mac command: Cmd + L
+
+Windows command: Ctrl + L
+
+Use this shortcut when you want to select a piece of text or code on a line.
+This feature will select the entire line the cursor is currently on. With this,
+you don’t need to manually highlight the line with the mouse.
+
+== 15. Open the Markdown preview ==
+
+Main feature: Preview a markdown document
+
+Mac command: Shift + Cmd + V
+
+Windows command: Shift + Ctrl + V
+
+This VS Code shortcut lets you preview your Markdown files in a separate pane.
+This feature can be useful when you're writing documentation or other
+text-based content using Markdown, such as ReadMe files.
+
+== 16. Fold/Unfold Code Block ==
+
+Main feature: Collapse or expand code block
+
+Mac commands: Option + Cmd + [ to fold | Option + Cmd + ] to unfold
+
+Windows commands: Ctrl + Shift + [ to fold | Ctrl + Shift + ] to unfold
+
+When working with long files or files containing large blocks of code, you will
+sometimes want to collapse and expand code blocks. That’s when this shortcut
+comes in handy.
+
+== 17. Show References ==
+
+Main feature: Quickly find reference to a symbol
+
+Mac command: Cmd + Shift + click
+
+Windows command: Shift + F12
+
+To use this shortcut, first, place your cursor on the symbol you want to find
+references for, then press the shortcut key combination. This will open a panel
+with a list of all the references to that symbol in your project.
+
+== 18. Trigger Suggestion/Parameter Hints ==
+
+Main feature: Show auto-complete suggestions
+
+Mac command: Cmd + Shift + Space
+
+Windows command: Ctrl + Shift + Space
+
+This triggers code completion suggestions and parameter hints for the current
+code context. This feature can help speed up your workflow.
+
+== 19. Show All Symbols ==
+
+Main feature: Show all symbols in the current file
+
+Mac command: Cmd + T
+
+Windows command: Ctrl + T
+
+This shortcut lets you see a list of the current file's symbols (functions,
+classes, etc.). This feature can help you navigate large files quickly.
+
+== 20. Go Back/Move Forward ==
+
+Main feature: Navigate forward/backward
+
+Mac command: Ctrl - or Ctrl + UpArrow -
+
+Windows command: Alt + Left/Right Arrow
+
+Navigate through your code history and jump between previous cursor positions
+in the file with this go-back/move-forward shortcut. It’s a useful shortcut
+when you need to quickly retrace your steps or switch between different parts
+of your code.
+
+== 21. Show Integrated terminal ==
+
+Main feature: Toggle integrated terminal
+
+Mac command: Ctrl + `
+
+Windows command: Ctrl + `
+
+The shortcut allows you to use the integrated Terminal in VS Code. It allows
+developers to run commands on the terminal without leaving VS Code.
+
+== 22. Zoom In/Out ==
+
+Main feature: Zoom in and out of the current file
+
+Mac command: Cmd + =/Minus
+
+Windows command: Ctrl + =/Minus
+
+Zooming is a useful VS Code shortcut when you need to view your code more
+closely or when you need to adjust the font size to improve readability.
+
+== 23. Show Extensions ==
+
+Main feature: Toggle extensions panel
+
+Mac command: Shift + Cmd + X
+
+Windows command: Shift + Ctrl + X
+
+If you want to see the extensions you have in your VS Code, you can use this
+shortcut, as it will toggle the extensions panel. By default, this panel
+appears on the left to display all the extensions you’ve installed in VS Code.
+
+== 24. Show Search Bar ==
+
+Main feature: Toggle the search bar
+
+Mac command: Cmd + F
+
+Windows command: Ctrl + F
+
+Use this shortcut to open the search bar in VS Code. This feature is useful
+when searching for specific content within a file or across multiple files in
+your project.
+
+== 25. Quick Open ==
+
+Main feature: Open a specific file
+
+Mac command: Cmd + P
+
+Windows command: Ctrl + P
+
+You can use this shortcut to navigate to a specific file in your project. It
+opens a dialog box to search for files by name or browse the file hierarchy. It
+can come in handy when working on large projects with many files.
+
+== 26. Create New File ==
+
+Main feature: Quickly create new files
+
+Mac command: Cmd + N
+
+Windows command: Ctrl + N
+
+This opens a new, untitled file in the editor, which you can then save and name
+appropriately. It’s useful because it eliminates the need to navigate through
+the file explorer anytime you want to create a new file.
+
+== 27. Toggle Full Screen ==
+
+Main feature: Enable and disable full-screen mode
+
+Mac command: Ctrl + Cmd + F
+
+Windows command: F11
+
+When you want to maximize your workspace and remove distractions, using the
+full-screen mode is a feature that comes in handy. It’s also useful for times
+when you are working on a device with a smaller screen.
+
+== 28. Renaming Symbols ==
+
+Main feature: Rename all instances of a symbol
+
+Mac command: F2
+
+Windows command: F2
+
+This shortcut lets you rename all occurrences of a symbol (variable, function,
+class, etc.) in your project. This feature is useful, especially when you need
+to refactor code and consistently change all instances of a symbol.
+
+== 29. Indent/Outdent Lines ==
+
+Main feature: Properly indent lines of code
+
+Mac commands: Cmd + ] to indent | Cmd + [ to outdent
+
+Windows commands: Ctrl + ] to indent | Ctrl + [ to outdent
+
+Every now and then, you will need to indent or outdent a piece of text or code.
+First, select the lines that you want to indent/outdent. Then click CMD (Mac)
+or CTRL(Window) and the closing square bracket `]` button.
+
+== 30. Show Output Panel ==
+
+Main feature: Display the output panel
+
+Mac command: Shift + Cmd + U
+
+Windows command: Shift + Ctrl + U
+
+This shortcut allows you to open the Output panel in your VS Code. That way,
+you can view the output of running programs or other system messages the editor
+generates.
+
+== Best Practices for Finding & Using Shortcuts in VSCode ==
+
+  • Use the Command Palette: A powerful tool in VS Code that allows you to
+    search for and execute commands using shortcuts. To access this, press
+    Ctrl+Shift+P (Windows, Linux) or Cmd+Shift+P (Mac) and start typing the
+    command you want to execute.
+  • Customize shortcuts to fit your workflow: If you use certain commands
+    frequently, consider customizing keyboard shortcuts to fit your workflow.
+    Go to "File > Preferences > Keyboard Shortcuts" (Windows) or "Code >
+    Preferences > Keyboard Shortcuts" (Mac) and search for the command you want
+    to customize. Click the pencil icon next to the command and enter a
+    keyboard shortcut.
+  • Practice: Learning shortcuts takes practice and repetition. Make an effort
+    to use shortcuts often and over time to develop muscle memory.
+  • Share shortcuts with your team: If you work in a team, sharing shortcuts
+    with colleagues can improve collw3m: Can't load dump.
+aboration and make coding easier.

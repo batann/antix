@@ -1,0 +1,28 @@
+ 20 examples of aria2c cli commands
+
+ChatGPT:
+
+  1. Download a single file:  aria2c http://example.com/file.txt
+  2. Download multiple files:  aria2c http://example.com/file1.txt http://example.com/file2.txt
+  3. Specify output path:  aria2c -d /path/to/save http://example.com/file.txt
+  4. Limit download speed:  aria2c --max-download-limit=100K http://example.com/file.txt
+  5. Set maximum number of concurrent downloads:  aria2c --max-concurrent-downloads=4 http://example.com/file.txt
+  6. Set user agent string:  aria2c --user-agent="Custom User Agent" http://example.com/file.txt
+  7. Resume a partially downloaded file:  aria2c -c http://example.com/file.txt
+  8. Limit the number of retries on download failure:  aria2c --max-tries=3 http://example.com/file.txt
+  9. Set a custom file name for the download:  aria2c --out=custom_name.txt http://example.com/file.txt
+  10. Download a file using multiple connections:  aria2c -s4 http://example.com/file.txt
+  11. Download a file and save the download history:  aria2c --save-session=downloads.txt http://example.com/file.txt
+  12. Limit the number of simultaneous connections per server:  aria2c --max-connection-per-server=2
+  http://example.com/file.txt
+  13. Set a custom referer URL:  aria2c --referer="http://example.com" http://example.com/file.txt
+  14. Download a file and verify its integrity using checksum:  aria2c --checksum=sha1=abcdef123456
+  http://example.com/file.txt
+  15. Set timeout for establishing connections:  aria2c --connect-timeout=10 http://example.com/file.txt
+  16. Download a file using BitTorrent:  aria2c http://example.com/file.torrent
+  17. Limit the number of active downloads:  aria2c --max-overall-download-limit=500K http://example.com/file.txt
+  18. Use a specific proxy server for downloads:  aria2c --all-proxy="http://proxy.example.com:8080"
+  http://example.com/file.txt
+  19. Download a file and only retrieve the first few kilobytes:  aria2c --truncate-uris=K=32
+  http://example.com/file.txt
+  20. Show download progress in the command line:  aria2c --console-log-level=info http://example.com/file.txt

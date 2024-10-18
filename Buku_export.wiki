@@ -1,0 +1,6 @@
+#!/bin/bash
+
+more +9 "test.html">"test.html.new"
+move /y "test.html.new" "test.html" >null
+cat test.html>>bookmarks.html
+firefox bookmarks.html

@@ -1,0 +1,23 @@
+= Contents =
+                - [[#Buku]]
+                - [[#Oil]]
+                - [[#Peco]]
+
+
+
+
+
+
+
+== Buku ==
+`apt install buku`
+or
+`pip3 install buku`
+
+
+
+== Oil ==
+`git clone https://github.com/AndreiUlmeyda/oil.git`
+
+== Peco ==
+`apt install peco`

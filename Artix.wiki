@@ -1,0 +1,6 @@
+= Artix =
+
+[[Artix-Installation]]
+[[Artix-Configuration]]
+[[Artix-Troubleshooting]]
+[[Artix-Custom-ISO]]

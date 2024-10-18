@@ -1,0 +1,999 @@
+==Test==
+===buku bookmarks===
+
+
+
+
+[Linux post-installation steps for Docker Engine \| Docker Documentation](https://docs.docker.com/engine/install/linux-postinstall/#configuring-remote-access-with-systemd-unit-file)
+:   Find the recommended Docker Engine post-installation steps for Linux
+    users, including how to run Docker as a non-root user and more. \#\#
+    run docker without sudo, docker running as root, docker post
+    install, docker post installation, run docker as non root, docker
+    non root user, how to run docker in linux, how to run docker linux,
+    how to start docker in linux, run docker on linux
+
+[Linux Privilege Escalation](https://redtm.com/privilege-escalation/linux-privilege-escalation-cheat-sheet/)
+:   I have written a cheat sheet for windows privilege escalation
+    recently and updating continually. Privilege Escalation is a very
+    important skills in real world
+
+[linux-training.be](http://linux-training.be/)\
+[List of daily chess tactics - Chess puzzles -
+Chessentials](https://chessentials.com/chess-tactics/) : Chess tactics.
+The complete list of chess tactics featured on this blog. Solve the
+puzzles, exercise calculation and improve your chess.
+
+[Live botnet threats worldwide \| Spamhaus Technology](https://www.spamhaus.com/threat-map/)
+:   Spamhaus Live Botnet Map
+
+[Live Cyber Threat Map \| Check
+Point](https://threatmap.checkpoint.com/)\
+[Live Flight Tracker - FlightAware](https://flightaware.com/live/) :
+Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport
+Delays for airline flights, private/GA flights, and airports.
+
+[Live from Iceland - Webcams around Iceland](https://www.livefromiceland.is/)
+:   Watch live feeds from our webcams with spectacular views of Iceland.
+    Our streaming cameras are placed all around Iceland and broadcast
+    24/7. The ultimate slow TV!
+
+[Live Starlink Satellite and Coverage Map](https://satellitemap.space/)
+:   Live view of Starlink internet satellites and coverage.
+
+[Live Train Tracker \| geOps](https://mobility.portal.geops.io/)
+:   Live train tracker and more: Worldwide live positions of trains,
+    busses, trams and other public transport vehicles. Find out if your
+    train is on time and see where it is located right now.
+
+[Live Webcams - Free, public web cams found online](http://www.opentopia.com/hiddencam.php)
+:   Browse Opentopia\'s vast webcam database, containing thousands of
+    live webcam views from around the world
+
+[Live World Map of Satellite Positions - In-The-Sky.org](https://in-the-sky.org/satmap_worldmap.php)
+:   A world map of the positions of satellites above the Earth\'s
+    surface, and a planetarium view showing where they appear in the
+    night sky.
+
+[Live-OS \| Syncthing](http://127.0.0.1:8384/)\
+[Home - Mailinator](http://mailinator.com/index.jsp) : Mailinator
+provides Email and SMS Workflow Testing for Developers, Dev Teams, and
+QA Testing. Automate testing for 2FA and password resets.
+
+[Making tmux Pretty and Usable - A Guide to Customizing your tmux.conf](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
+:   Hermann Vocke writing about software development, mostly
+
+[Manage and track your cryptocurrency portfolio \| CryptoCompare.com](https://www.cryptocompare.com/portfolio/)
+:   Track all your coins in one place. Get accurate statistics and
+    profit/loss information about your cryptocurrency investments. Track
+    your sells and buys and see your performance over time. With our
+    advanced risk analysis tab, you can see where your exposure lies and
+    make better informed investment decisions.
+
+[MAP \| Kaspersky Cyberthreat real-time map](https://cybermap.kaspersky.com/)
+:   MAP \| Find out if you are under cyber-attack here
+
+[mempool - Bitcoin Explorer](https://mempool.space/)
+:   The Mempool Open Source Project™ - Explore the full Bitcoin
+    ecosystem.
+
+[MetaGer -
+Onion](http://metagerv65pwclop2rsfzg4jwowpavpwd6grhhlvdgsswvo6ii4akgyd.onion/)\
+[MetaGer: Privacy Protected Search & Find](https://metager.org/) :
+Search safely while having your privacy respected. The digital knowledge
+of the world must be freel accessible without paternalism and abide by
+states or corporations.
+
+[MetaGer:
+US](http://metagerv65pwclop2rsfzg4jwowpavpwd6grhhlvdgsswvo6ii4akgyd.onion/en-US)\
+[mind nvim \| Part 2/5: Content fuzzy searching and more -
+YouTube](https://www.youtube.com/watch?v=ELjsbyhkkKw) : Part 2/5:
+explores the content feature of mind.nvim, data and link nodes, as well
+as fuzzy searching and more.00:00 Introduction00:47 Data nodes03:46 Link
+no\...
+
+[Mint \| Bitcoin.com](https://mint.bitcoin.com/#/configure)\
+[MorphToken](https://www.morphtoken.com/)\
+[mpd.conf - Pastebin.com](https://pastebin.com/P7rwMFLq) : Pastebin.com
+is the number one paste tool since 2002. Pastebin is a website where you
+can store text online for a set period of time.
+
+[Multi Screen Desktop Using VNC - Part 2: An Improved And Simplified Version \| ODROID Magazine](https://magazine.odroid.com/article/multi-screen-desktop-using-vnc-part-2-an-improved-and-simplified-version/)
+:   Looks to me everyone has been stuck indoors for longer than they
+    desired. Some of us had to work during this time too. Working on a
+    small laptop screen is no fun task, and using HDMI cables while kids
+    run around is not fun either. So, how about we use an ODROID as a
+    secondary screen? ▶
+
+[Multiple-item data entry with YAD \| The Linux Rain](https://www.thelinuxrain.org/articles/multiple-item-data-entry-with-yad)
+:   YAD (Yet Another Dialog) creates GUI dialogs for data entry, user
+    notification, etc. It was written by Victor Ananjevsky and is
+    described as a fork of Zenity. In fact, it greatly extends Zenity
+    and has a very large number of handy options. Here I explain how to
+    build a multiple-item data entry form with YAD (version 0.20.3 from
+    the Debian stable repository).
+
+[MX Linux Forum - Index page](https://forum.mxlinux.org/)\
+[MX/antiX Technical Documentation Wiki -- MX
+Linux](https://mxlinux.org/wiki/)\
+[My Neovim Config -
+YouTube](https://www.youtube.com/watch?v=hLV96u2Cnck) : My init.vim:
+https://github.com/mathletedev/dotfiles/blob/main/.config/nvim/init.lua\-\-\--Website:
+https://mathletedev.github.io/GitHub: https://github.com/mat\...
+
+[My Way of Configuring Ncmpcpp Music Player - Addy\'s Blog](https://addy-dclxvi.github.io/post/configuring-ncmpcpp/)
+:   My simple way how to setup ncmpcpp music player
+
+[MyMonero](https://wallet.mymonero.com/)\
+[ncmpcpp config - Pastebin.com](https://pastebin.com/yZM8zGwv) :
+Pastebin.com is the number one paste tool since 2002. Pastebin is a
+website where you can store text online for a set period of time.
+
+[Neovim configuration for beginners \| by Rio Nyx \| Geek Culture \|
+Medium](https://medium.com/geekculture/neovim-configuration-for-beginners-b2116dbbde84)\
+[NETGEAR](http://m.home/index.html)\
+[networking - WiFi not working after installing openmediavault (OMV) 5
+in RPi 4 - Raspberry Pi Stack
+Exchange](https://raspberrypi.stackexchange.com/questions/110799/wifi-not-working-after-installing-openmediavault-omv-5-in-rpi-4)
+: I installed OMV 5 in my Raspberry Pi 4B running Raspbian GNU/Linux 10
+(buster), following this video
+https://www.youtube.com/watch?v=sYDyvr9Uc6Y (script installation). Just
+right after install OMV\...
+
+[Networking Tutorials](https://www.computernetworkingnotes.com/networking-tutorials/)
+:   Learn basic networking concepts in easy language with examples.
+    Networking tutorials are organized based on fundamental networking
+    terms. Each essential networking concept is explained individually
+    in separate networking tutorial. Understand essential networking
+    concepts in easy language.
+
+[Neutrino - Solutions for monitoring, analyzing and tracking
+cryptocurrency flows](https://www.neutrino.nu/)\
+[Nightmare - Nightmare](https://guyinatuxedo.github.io/) : Nightmare: an
+intro to binary exploitation / reverse engineering course based around
+CTF challenges.
+
+[Nmap Commands - 17 Basic Commands for Linux Network](https://phoenixnap.com/kb/nmap-command-linux-examples)
+:   A detailed guide on Nmap command in Linux with examples. Nmap is an
+    open-source tool used for security scans & network audits.
+
+[no.i2p - i2p](http://no.i2p/search/?q=tor)\
+[Sunsetting Nomics.com](https://nomics.com/)\
+[NVD - Home](https://nvd.nist.gov/)\
+[nvim-config \| A modern Neovim configuration with full battery for
+Python, Lua, C++, Markdown, LaTeX, and
+more...](https://jdhao.github.io/nvim-config/) : A modern Neovim
+configuration with full battery for Python, Lua, C++, Markdown, LaTeX,
+and more...
+
+[Offensive Windows IPC Internals 1: Named Pipes · csandker.io](https://csandker.io/2021/01/10/Offensive-Windows-IPC-1-NamedPipes.html)
+:   Although the name might sound a bit odd Pipes are very basic and
+    simple technology to enable communication and share data between two
+    processes, where the term pipe simply describes \...
+
+[Offensive Windows IPC Internals 2: RPC · csandker.io](https://csandker.io/2021/02/21/Offensive-Windows-IPC-2-RPC.html)
+:   Remote Procedure Calls (RPC) is a technology to enable data
+    communication between a client and a server across process and
+    machine boundaries (network communication). Therefore RPC is an
+    Inter Process Communication (IPC) technology\...
+
+[Offensive Windows IPC Internals 3: ALPC · csandker.io](https://csandker.io/2022/05/24/Offensive-Windows-IPC-3-ALPC.html)
+:   After talking about two inter-process communication (IPC) protocols
+    that can be uses remotely as well as locally, namely Named Pipes and
+    RPC, with ALPC we\'re now looking at a technology that can only be
+    used locally\...
+
+[Crypto Research, Data, and Tools \| Messari](https://messari.io/onchainfx)
+:   Gain an edge over the crypto market with professional grade data,
+    tools, and research.
+
+[Onion Land -
+Onion](https://www.3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/)\
+[Onion
+Links](http://s4k4ceiapwwgcm3mkb6e4diqecpo7kvdnfr5gg7sph7jjppqkvwwqtyd.onion/)\
+[Onion Mail - Encrypted & Anonymous email](https://onionmail.org/) :
+Onion Mail is free encrypted & anonymous email service, manage emails in
+the normal network and in the onion network. Encrypt email with your PGP
+public key.
+
+[Onion Mail -
+Onion](https://www.pflujznptk5lmuf6xwadfqy6nffykdvahfbljh7liljailjbxrgvhfid.onion/)\
+[Online anonymous web proxy - zend2](https://www.zend2.com/#)\
+[onlineotp](https://www.onlineotp.com/) : Online one time password (otp)
+
+[oolite - SourceForge Community
+Blog](https://sourceforge.net/blog/projects-of-the-week-april-24-2017/oolite/)\
+[Oolite Main Page - Elite
+Wiki](https://wiki.alioth.net/index.php/Oolite_Main_Page)\
+[OpenRailwayMap](https://www.openrailwaymap.org/) : OpenRailwayMap - An
+OpenStreetMap-based project for creating a map of the world\'s railway
+infrastructure.
+
+[OpenTrainTimes: Real-time Track Diagrams](https://www.opentraintimes.com/maps)
+:   See trains moving in real-time on one of our 134 live track diagrams
+
+[OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/)\
+[Opt out of global data surveillance programs like PRISM, XKeyscore, and
+Tempora - PRISM Break - PRISM Break](https://prism-break.org/en/) : Opt
+out of global data surveillance programs like PRISM, XKeyscore and
+Tempora. Help make mass surveillance of entire populations uneconomical!
+We all have a right to privacy, which you can exercise today by
+encrypting your communications and ending your reliance on proprietary
+services.
+
+[Our Documentation \| Python.org](https://www.python.org/doc/)
+:   The official home of the Python Programming Language \#\# Python
+    programming language object oriented web free open source software
+    license documentation download community
+
+[Overland - Overland literary journal](https://overland.org.au/)\
+[OWASP Foundation, the Open Source Foundation for Application Security
+\| OWASP Foundation](https://www.owasp.org/) : OWASP Foundation, the
+Open Source Foundation for Application Security on the main website for
+The OWASP Foundation. OWASP is a nonprofit foundation that works to
+improve the security of software.
+
+[OWASP Secure Coding Dojo \| OWASP Foundation](https://owasp.org/www-project-secure-coding-dojo/)
+:   OWASP Secure Coding Dojo on the main website for The OWASP
+    Foundation. OWASP is a nonprofit foundation that works to improve
+    the security of software.
+
+[OWASP WebGoat \| OWASP Foundation](https://owasp.org/www-project-webgoat/)
+:   OWASP WebGoat on the main website for The OWASP Foundation. OWASP is
+    a nonprofit foundation that works to improve the security of
+    software.
+
+[Packet Storm](https://packetstormsecurity.com/)
+:   Information Security Services, News, Files, Tools, Exploits,
+    Advisories and Whitepapers
+
+[Cover Your Tracks](https://panopticlick.eff.org/)
+:   See how trackers view your browser
+
+[Parrot Security](https://start.parrot.sh/)\
+[Parrot Security](https://www.parrotsec.org/)\
+[ParrotOS Documentation \| ParrotOS
+Documentation](https://www.parrotsec.org/docs) : An important part of
+any operating system is documentation, the technical manuals which
+describe the operation and use of programs. As part of its efforts to
+create a high-quality free operating system, the Parrot Project is
+making every effort to provide all of its users with proper
+documentation in an easily accessible form.
+
+[ParrotOS Documentation \| ParrotOS Documentation](https://www.parrotsec.org/docs/)
+:   An important part of any operating system is documentation, the
+    technical manuals which describe the operation and use of programs.
+    As part of its efforts to create a high-quality free operating
+    system, the Parrot Project is making every effort to provide all of
+    its users with proper documentation in an easily accessible form.
+
+[Password Manager CLI \| Bitwarden Help Center](https://bitwarden.com/help/cli/)
+:   The Bitwarden command-line interface (CLI) is a powerful,
+    fully-featured tool for accessing and managing your Vault.
+
+[PentesterLab: Learn Web Penetration Testing: The Right
+Way](https://pentesterlab.com/)\
+[Phobos -
+Onion](https://www.phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/)\
+[PHP: PHP Manual - Manual](https://php.net/manual/en/index.php)\
+[Ping, mtr, dig and TCP port check from multiple
+locations](http://ping.pe/)\
+[Playing Music with Mopidy and Ncmpcpp \| Digital
+Neanderthal](https://www.digitalneanderthal.com/post/ncmpcpp/) : Learn.
+Unlearn. Relearn.
+
+[Post installation - Alpine
+Linux](https://wiki.alpinelinux.org/wiki/Post_installation)\
+[Power of g \| Vim Tips Wiki \|
+Fandom](https://vim.fandom.com/wiki/Power_of_g) : The global command :g
+is very useful. Here are some examples showing the power of :g.
+:\[range\]g/pattern/cmd This acts on the specified \[range\] (default
+whole file), by executing the Ex command cmd for each line matching
+pattern (an Ex command is one starting with a colon such as :d for
+delete\...
+
+[Prefs.js file - MozillaZine Knowledge
+Base](http://kb.mozillazine.org/Prefs.js_file)\
+[PrivateBin](https://privatebin.net/) : Visit this link to see the note.
+Giving the URL to anyone allows them to access the note, too.
+
+[Privilege Escalation cheatsheet -](https://0xsp.com/offensive/privilege-escalation-cheatsheet/)
+:   Windows Kernel Exploits system info -\> look up missing
+    kb\'ssysteminfo \| findstr /B /C:\"OS Name\" /C:\"OS \*
+    Version\"sherlock -\> Find-AllVulns PowerShell0xsp Mongoose Common
+    Kernel Exploits
+    \[MS16-014\](https://www.exploit-db.com/exploits/40039) - applies
+    to: Windows 7 SP1
+    x86\[MS16-016\](https://www.exploit-db.com/exploits/39432) -
+    \'WebDAV\' applies to Windows 7 SP1 x86 (Build
+    7601)\[MS16-032\](https://www.exploit-db.com/exploits/39719) -
+    applies to: Windows 7 x86/x64, Windows 8 x86/64, Windows 10, Windows
+
+[Projects/Zenity - GNOME
+Wiki!](https://wiki.gnome.org/action/show/Projects/Zenity?action=show)\
+[Proton Mail --- Get a private, secure, and encrypted email \|
+Proton](https://protonmail.com/) : Proton Mail is the world's largest
+secure email service with over 70 million users. Available on Web, iOS,
+Android, and desktop. Protected by Swiss privacy law.
+
+[ProxySite.com - Free Web Proxy Site](https://www.proxysite.com/)
+:   Access the wealth of information on the Internet without giving up
+    your privacy. What you do on the Internet is nobody's business but
+    your own. ProxySite.com stands between your web use and anyone
+    trying to monitor your activity.
+
+[PS3 » Brewology - PS3 PSP WII XBOX - Homebrew News, Saved Games,
+Downloads, and More!](https://www.brewology.com/?cat=4)\
+[PS3 HEN - New Alternative Easy Installation Method (4.84 HFW ONLY) -
+YouTube](https://www.youtube.com/watch?v=s7gMikAHEm4) : 4.84 HFW ONLY!!
+This shows a quick run through of this NEW alternate method of
+installing HEN, this can be used to update too. Just set your homepage
+to http\...
+
+[PS3 HFW 4.89 - Hybrid Firmware Latest Update V4.89.1 -
+SATERAHSIA](https://saterahsia.com/ps3-hfw-4-89-hybrid-firmware-latest-update-v4-89-1/)\
+[PS3 PKG / PSN Downloader - Brewology - PS3 PSP WII XBOX - Homebrew
+News, Saved Games, Downloads, and
+More!](https://www.brewology.com/psn/downloader.php?ref=news)\
+[PS3: CFW Evilnat 4.89.2 beta released -- Wololo.net --
+almal3eb](https://almal3eb.com/2022/05/30/ps3-cfw-evilnat-4-89-2-beta-released-wololo-net/)\
+[python enabled neovim at
+DuckDuckGo](https://duckduckgo.com/?q=python+enabled+neovim&t=fpas&iax=images&ia=images)
+: DuckDuckGo. Privacy, Simplified.
+
+[QRCode Monkey - The free QR Code Generator to create custom QR Codes with Logo](https://www.qrcode-monkey.com/)
+:   Create custom QR Codes with Logo, Color and Design for free. This QR
+    Code Maker offers free vector formats for best print quality.\'
+
+[Quad9 \| A public and free DNS service for a better security and privacy](https://quad9.net/)
+:   A public and free DNS service for a better security and privacy
+
+[Qubes OS: A reasonably secure operating system \| Qubes OS](https://www.qubes-os.org/)
+:   Qubes is a security-oriented, free and open-source operating system
+    for personal computers that allows you to securely compartmentalize
+    your digital life.
+
+[Qwant - The search engine that doesn\'t know anything about you, and that changes everything!](https://www.qwant.com/)
+:   The 1st European search engine that respects your privacy.
+
+[Reddit - Dive into
+anything](https://www.reddit.com/r/vim/comments/nwi7d8/terminal_sexy_but_for_vim/)\
+[Redirect Notice](https://docs.alpinelinux.org/)\
+[Redirecting you to SondeHub-Amateur\...](https://tracker.habhub.org/) :
+Live tracking of radiosonde flights. Data via SondeHub v2. Includes
+weather overlay, predictions, and access to historic radiosonde flights
+on sondehub.
+
+[Reset The Net - Privacy Pack](https://pack.resetthenet.org/)
+:   Help fight to end mass surveillance. Get these tools to protect
+    yourself and your friends.
+
+[Restore Privacy \| Your online privacy resource center](https://restoreprivacy.com/)
+:   Giving you the tools and information you need to restore your
+    privacy, secure your devices, and stay safe online.
+
+[Revisions to Convert audio files to mp3 using ffmpeg \[closed\] - Stack Overflow](https://stackoverflow.com/posts/41463292/revisions)
+:   Stack Overflow \| The World's Largest Online Community for
+    Developers
+
+[ript.io - a really cool domain parked on Park.io](http://ript.io/)
+:   The domain name ript.io is being parked on Park.io. Contact the
+    domain owner to make an offer right now\...
+
+[What every Browser knows about you](http://webkay.robinlinus.com/)
+:   This is a demonstration of all the data your browser knows about
+    you. All this data can be accessed by any website without asking you
+    for any permission.
+
+[Running a Linux Command on Start-Up \| Baeldung on Linux](https://www.baeldung.com/linux/run-command-start-up)
+:   Learn various ways to run a command or a script when a Linux system
+    starts up
+
+[Satellite Map \| Explore Active Satellites Orbiting Earth](https://geoxc-apps2.bd.esri.com/Visualization/sat2/index.html)
+:   Satellite map of active satellites orbiting the Earth. View
+    satellites along with information about the purpose, operator,
+    orbital parameters, launch date & location of the satellite. \#\#
+    Esri ArcGIS Satellite Map Maps Space Debris Trajectory Orbit
+    Geosynchronous
+
+[save - How I configure Vim for use with netrw? - Vi and Vim Stack Exchange](https://vi.stackexchange.com/questions/8839/how-i-configure-vim-for-use-with-netrw)
+:   I recently started to use netrw as a file manager next to my editing
+    session. But I had a coupe of issues with it. First of all netrw
+    reads unhidden buffers from the disk every time. Which made me
+
+[Scripts](http://yadgui.com/index.php/options-5)
+:   Yet Another Dialog Information n
+
+[Search · task vimwiki · GitHub](https://github.com/search?q=task+vimwiki)
+:   GitHub is where people build software. More than 100 million people
+    use GitHub to discover, fork, and contribute to over 330 million
+    projects.
+
+[Search bar like google in HTML and CSS - Stack Overflow](https://stackoverflow.com/questions/39077407/search-bar-like-google-in-html-and-css)
+:   Iam learning HTML, CSS and i have problem with making search bar
+    like google. Can you give me any advice, what am I doing wrong,
+    especialy with size? Thanks :) \<!DOCTYPE html\> \<html\...
+
+[Search through entire vimwiki - Vi and Vim Stack Exchange](https://vi.stackexchange.com/questions/19357/search-through-entire-vimwiki)
+:   Is there a (built-in) way to search all vimwiki files for a certain
+    pattern? I don\'t mean searching tags, but something akin to using
+    grep on all the wiki files in the vimwiki directory. If there \...
+
+[searx](http://127.0.0.1:8888/)\
+[searx.org](http://searx.org/) : SearXNG --- a privacy-respecting, open
+metasearch engine
+
+[searx/settings.yml at master · searx/searx · GitHub](https://github.com/searx/searx/blob/master/searx/settings.yml)
+:   Privacy-respecting metasearch engine. Contribute to searx/searx
+    development by creating an account on GitHub.
+
+[searx/use\_default\_settings.yml at master · searx/searx · GitHub](https://github.com/searx/searx/blob/master/utils/templates/etc/searx/use_default_settings.yml)
+:   Privacy-respecting metasearch engine. Contribute to searx/searx
+    development by creating an account on GitHub.
+
+[What do you need to protect?](https://securityinabox.org/en/)
+:   What do you need to protect?
+
+[sed - How can I can insert the contents of a file into another file right before a specific line - Stack Overflow](https://stackoverflow.com/questions/2512362/how-can-i-can-insert-the-contents-of-a-file-into-another-file-right-before-a-spe)
+:   How can I can insert the contents of a file into another file right
+    before a specific line using sed? example I have file1.xml that has
+    the following: \<field tagRef=\"376\"\> \...
+
+[sed - How to insert text before the first line of a file? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/99350/how-to-insert-text-before-the-first-line-of-a-file)
+:   I\'ve been looking around sed command to add text into a file in a
+    specific line. This works adding text after line 1: sed \'1 a\\ But
+    I want to add it before line 1. It would be: sed \'0 a\\ but I \...
+
+[SED - Insert file at top of another - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/337435/sed-insert-file-at-top-of-another)
+:   I have been trying to insert a file as the first line of another
+    with following SED command, without much success. Each time the file
+    is inserted after line 1. Is there a switch that will inserted \...
+
+[Send Anonymous Email](https://www.anonymousspeech.com/)\
+[Setting up an encrypted personal wiki and diary with Vimwiki and
+Cryptomator](https://tuomassalmi.com/tech/personal-wiki/) : I have tried
+multiple times in my life to keep a diary or log of my life and
+thoughts. Usually this has failed by me not writing entries...
+
+[settings.yml --- Searx Documentation
+(Searx-1.1.0.tex)](https://searx.github.io/searx/admin/settings.html#settings-location)\
+[settings.yml --- Searx Documentation
+(Searx-1.1.0.tex)](https://searx.github.io/searx/admin/settings.html#settings-use-default-settings)\
+[Sexual Harassment \| Australian Bureau of
+Statistics](https://www.abs.gov.au/articles/sexual-harassment) :
+Statistics about sexual harassment, including prevalence,
+characteristics of victims, and intersections with other types of
+violence and abuse.
+
+[shell - Change Firefox homepage via bash script? - Stack Overflow](https://stackoverflow.com/questions/22860624/change-firefox-homepage-via-bash-script#22861970)
+:   Hope all is well. Well I am trying to do this for quite sometime but
+    still failing to achieve the result. I have written a bash script,
+    aim is to change the homepage of Firefox over the network. Af\...
+
+[shell - How to assign the output of a Bash command to a variable? - Stack Overflow](https://stackoverflow.com/questions/2314750/how-to-assign-the-output-of-a-bash-command-to-a-variable)
+:   I have a problem putting the content of pwd command into a shell
+    variable that I\'ll use later. Here is my shell code (the loop
+    doesn\'t stop): \#!/bin/bash pwd= \`pwd\` until \[ \$pwd = \"/\" \]
+    do \...
+
+[shell - How to use bash dialog \--yesno correctly - Stack Overflow](https://stackoverflow.com/questions/37644634/how-to-use-bash-dialog-yesno-correctly)
+:   I want a simple Yes/No dialog and do make an action dependent on the
+    users choice. My try so far: operation=\$(dialog \--stdout \--title
+    \"What to do?\" \\ \--backtitle \"Backup-Verwaltung\...
+
+[Shell Scripting for Beginners -- How to Write Bash Scripts in Linux](https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/)
+:   Shell scripting is an important part of process automation in Linux.
+    Scripting helps you write a sequence of commands in a file and then
+    execute them. This saves you time because you don\'t have to write
+    certain commands again and again. You can perform daily tasks
+    efficiently and even
+
+[Shodan Search Engine](https://www.shodan.io/)
+:   Search Engine for the Internet of Things
+
+[SimpleSwap \| Cryptocurrency Exchange \| Easy way to swap BTC to ETH, XRP, LTC, EOS, XLM](https://simpleswap.io/)
+:   SimpleSwap is a cryptocurrency exchange that allows to swap BTC and
+    altcoins in an easy way. SimpleSwap supports 500+ cryptocurrencies.
+    Make Bitcoin to Ethereum, Litecoin crypto exchanges at the best
+    rates!
+
+[Sjk Video Playlist \| RedTube](https://www.redtube.com/playlist/3434751)
+:   Sjk porn playlist on RedTube. porn video playlist created by
+    Samson1966.
+
+[Small, Simple, and Secure: Alpine Linux under the Microscope - YouTube](https://www.youtube.com/watch?v=sIG2P9k6EjA)
+:   Alpine Linux is a distro that has become popular for Docker images.
+    Why do we need another distro? Why does Alpine matter? How does it
+    differ from other dist\...
+
+[الأداة الذكية لاختصار الروابط المتعددة](http://cutt.us/smarts/)
+:   يمكنك استخدام هذه الأداة للاختصار المتعدد للروابط، أو لاختصار عدة
+    روابط في نص أو رسالة
+
+[Bitcoin Block Explorer & API --- SoChain](https://chain.so/)
+:   Explore the Bitcoin network and build applications using our fast
+    API built for developers of all strides.
+
+[LunarCrush \| Trade what others can\'t stop talking about - Crypto - Stocks - NFTs](https://lunarcrush.com/)
+:   Smarter crypto, NFT, and stock investing with insights from millions
+    of conversations happening across social.
+
+[Social Searcher - Free Social Media Search Engine](https://www.social-searcher.com/)
+:   Start real-time mentions monitoring in social media and web. Quickly
+    analyze what people are saying about your company, brand, product,
+    or service in one easy to use dashboard.
+
+[SonicWall Security
+Center](https://securitycenter.sonicwall.com/m/page/worldwide-attacks)\
+[SonicWall Security
+Center](https://securitycenter.sonicwall.com/m/page/capture-labs-threat-metrics)\
+[Internet Speed Test by IHT -- Check WiFi, Fiber, VPN in 30 Sec Health
+Test Online by Broadband Connection Stability Diagnostic
+Tool](http://internethealthtest.org/) : Test and accurately measure the
+speed of your cable, dsl, fiber or wifi, internet and VPN connection
+speed of all your devices, with bandwidth to locations around the world
+and see how fast is your download and upload speed in Mbps, the quality
+and performance of your ISP with our top-notch speed test tool.
+
+[SpeedSmart - HTML5 Internet Speed Test - Test your internet speed](https://speedsmart.net/)
+:   SpeedSmart.net is an HTML5 Internet speed test. Test your internet
+    connection speed in seconds to locations all around the world with
+    this broadband speed test to see how fast your home or mobile
+    internet connection really is across every device.
+
+[Speedtest by Ookla - The Global Broadband Speed Test](https://www.speedtest.net/)
+:   Use Speedtest on all your devices with our free desktop and mobile
+    apps.
+
+[SSHFS: Mounting a remote file system over SSH \| Enable Sysadmin](https://www.redhat.com/sysadmin/sshfs)
+:   Learn how to securely mount a remote file system from another server
+    locally on your machine with SSHFS.
+
+[Qualys SSL Labs - Projects / SSL Client
+Test](https://www.ssllabs.com/ssltest/viewMyClient.html)\
+[Startpage - Private Search Engine. No Tracking. No Search
+History.](https://startpage.com/) : Search and browse the internet
+without being tracked or targeted. Startpage is the world\'s most
+private search engine. Use Startpage to protect your personal data.
+
+[Startpage - Private Search Engine. No Tracking. No Search History.](https://www.startpage.com/)
+:   Search and browse the internet without being tracked or targeted.
+    Startpage is the world\'s most private search engine. Use Startpage
+    to protect your personal data.
+
+[startup-nvim/startup.nvim: A highly configurable neovim startup screen](http://neovimcraft.com/plugin/startup-nvim/startup.nvim/index.html)
+:   Search through our curated neovim plugin directory.
+
+[Stealthy free Web Proxy \| Unlocking the
+web!](http://webproxy.stealthy.co/)\
+[Step by step installation --- Searx Documentation
+(Searx-1.1.0.tex)](https://searx.github.io/searx/admin/installation-searx.html)\
+[Step-by-step - Samba File Sharing on MX Linux • Accessing Shared Files
+•
+tutorialforlinux.com](https://tutorialforlinux.com/2021/06/27/step-by-step-samba-file-sharing-on-mx-linux/3/)
+: Accessing Shared FilesGNU/Linux MX Samba File Sharing -- Quick-Start
+Guide You are Welcome! The Tutorial shows you Step-by-Step How to
+Getting-Started Easily to Sharing Files/Videos/Pictures over a Linux,
+Unix, Windows, macOS X, Android and iOS Local Network with Samba in MX
+GNU/Linux Desktop. And to Share Files with Samba on MX Linux it's easily
+achieved • Read More »
+
+[Surveillance Self-Defense](https://ssd.eff.org/)
+:   We're the Electronic Frontier Foundation, an independent non-profit
+    working to protect online privacy for nearly thirty years. This is
+    Surveillance Self-Defense : our expert guide to protecting you and
+    your friends from online spying. Read the BASICS to find out how
+    online surveillance works. Dive into our TOOL GUIDES for\...
+
+[System integration · jarun/buku Wiki · GitHub](https://github.com/jarun/buku/wiki/System-integration)
+:   :bookmark: Personal mini-web in text. Contribute to jarun/buku
+    development by creating an account on GitHub.
+
+[Tagbar - Display tags of the current file ordered by scope : vim
+online](https://www.vim.org/scripts/script.php?script_id=3465)\
+[Tails - Home](https://tails.boum.org/)\
+[Talk:Firefox links - MozillaZine Knowledge
+Base](https://kb.mozillazine.org/Talk:Firefox_links)\
+[Taskwarrior - 30-Second Tutorial -
+Taskwarrior](https://taskwarrior.org/docs/30second/)\
+[Taskwarrior - Best Practices -
+Taskwarrior](https://taskwarrior.org/docs/best-practices/)\
+[Taskwarrior - Configuration -
+Taskwarrior](https://taskwarrior.org/docs/configuration/)\
+[Taskwarrior Sync \| Post \| Random
+Geekery](https://randomgeekery.org/post/2020/01/taskwarrior-sync/) :
+\`tl;dr:\` Set up an account at Freecinc or inthe.AM to synchronize
+Taskwarrior tasks across all the machines! The problem You've been doing
+great with your tasks. You tag them. You collect them into projects. You
+set priorities and due dates. Maybe you even track blockers and active
+tasks. Everything's great until the day you need to get at your tasks on
+a different machine: laptop, work computer, whatever. How do you get at
+your carefully maintained task list from another machine?
+
+[Temp Mail - Disposable Temporary Email service - Mail.tm](https://mail.tm/en/)
+:   Feel free to use temporary email to register on dubious sites,
+    forums or social networks. Protect your personal email address from
+    spam.
+
+[Test your IPv6.](https://test-ipv6.com/)
+:   This will test your browser and connection for IPv6 readiness, as
+    well as show you your current IPv4 and IPv6 address.
+
+[The 40 Simple Yet Effective Linux Shell Script Examples](https://www.ubuntupit.com/simple-yet-effective-linux-shell-script-examples/)
+:   Check out these 40 simple yet practical Linux shell script examples
+    to boost your productivity and for becoming a Linux power user.
+
+[The 5 Steps of Dehumanization \| Psychology Today](https://www.psychologytoday.com/us/blog/cutting-edge-leadership/201811/the-5-steps-dehumanization)
+:   The psychology of racism and discrimination.
+
+[The Bash Guide](https://guide.bash.academy/)
+:   A complete guide for newcomers and advanced users to correct usage
+    and deepen understanding of the bash shell language.
+
+[The Blockchain Data Platform - Chainalysis](https://www.chainalysis.com/)
+:   Chainalysis helps government agencies, cryptocurrency businesses,
+    and financial institutions engage confidently with cryptocurrency.
+
+[The Debian Administrator\'s Handbook](https://www.debian.org/doc/manuals/debian-handbook/index.en.html)
+:   A reference book presenting the Debian distribution, from initial
+    installation to configuration of services.
+
+[The FREE anonymous PROXY - ProxyListPro](http://proxylistpro.com/)\
+[The makers\' choice for sysadmins, developers and desktop
+users.](https://www.opensuse.org/) : Discover Tumbleweed and get the
+newest Linux packages with our rolling release. Fast! Integrated!
+Stabilized! Tested!. Discover Leap and get the most complete Linux
+distribution with openSUSE's latest regular-release version!
+
+[The Penetration Testing Execution
+Standard](http://www.pentest-standard.org/index.php/Main_Page)\
+[The science of vacation - Watch
+Online](https://www.documentary24.com/the-science-of-vacation--3191/) :
+\"The scientifically perfect holiday\" -- Some pieces of information,
+which show us how to get as much as possible from a holiday,
+scientifically proven. When the
+
+[The Ultimate Firefox Privacy & Security Guide](https://proprivacy.com/vpn/guides/firefox-privacy-security-guide)
+:   Firefox is widely regarded as the most privacy-friendly mainstream
+    browser available This can be improved with a range of add-ons and
+    configuration tweaks.
+
+[THREAT MAP by LookingGlass](https://map.lookingglasscyber.com/)\
+[Threatbutt Internet Hacking Attack Attribution
+Map](https://threatbutt.com/map/)\
+[Threema Web](https://web.threema.ch/#!/welcome) : Chat from your
+desktop with Threema Web and have full access to all chats, contacts and
+media files.
+
+[Timewarrior - Support - Timewarrior](https://timewarrior.net/support/)\
+[Timewarrior - What is it? -
+Timewarrior](https://timewarrior.net/docs/what/)\
+[TinyURL.com - shorten that long URL into a tiny
+URL](http://tinyurl.com/) : TinyURL is the original URL shortener that
+shortens your unwieldly links into more manageable and useable URLs.
+\#\# tinyurl url save share shorten analyze
+
+[Tmux has forever changed the way I write code. - YouTube](https://www.youtube.com/watch?v=DzNmUNvnB04)
+:   Before tmux, I spent most of my time working in graphical editors
+    and interfaces, and found working in the terminal difficult to
+    do.After moving to tmux and \...
+
+[Tor Hidden Wiki](http://wikitjerrta4qgz4.onion/)\
+[Tor Project \| Anonymity Online](https://www.torproject.org/) :
+Anonymity Online \| Defend yourself against tracking and surveillance.
+Circumvent censorship.
+
+[Torch -
+Onion](https://www.xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/)\
+[TorDex](http://tordexu73joywapk2txdr54jed4imqledpcvcuf75qsas2gwdgksvnyd.onion/)\
+[Training](https://opensecuritytraining.info/Training.html)\
+[Transform Your Neovim into a IDE: A Step-by-Step Guide - MartinLwx\'s
+blog](https://martinlwx.github.io/en/config-neovim-from-scratch/) :
+Configure your neovim from scratch, including LSP support
+
+[Trust BTC Escrow -
+Onion](https://www.pxdmqka7qbymz6xqs3cl3zmautwq6qf2p6fptf4u4hpddniyw2skziad.onion/)\
+[Secure email: Tutanota free encrypted email.](https://tutanota.com/) :
+Tutanota is the secure email service, built in Germany. Use encrypted
+emails on all devices with our open source email client, mobile apps &
+desktop clients.
+
+[ubuntu - How to change nvim path to .config - Stack Overflow](https://stackoverflow.com/questions/66866818/how-to-change-nvim-path-to-config)
+:   I just started with this from neovim and ubuntu and I don\'t know
+    why when I install neovim it is not in .config, putting the command
+    which nvim in the terminal tells me that it is in / usr / bin / \...
+
+[Ubuntu Manpage: pandoc - general markup
+converter](https://manpages.ubuntu.com/manpages/kinetic/en/man1/pandoc.1.html)\
+[uefi - \'\'EFI boot partition\'\' and \'\'biosgrub\'\' partition - Ask
+Ubuntu](https://askubuntu.com/questions/500359/efi-boot-partition-and-biosgrub-partition)
+: Why do I need these? I have installed Ubuntu under a non UEFI (master
+boot record) and have installed Ubuntu with no \'biosgrub\' and it works
+fine, whereas other times I am asked to make a \'biosgrub\'
+
+[Zalmos.com unblock proxy - Free web proxy](http://www.zalmos.com/)
+:   Use Zalmos web proxy to access the internet whitout giving your
+    private data. Get instant access to all your favorite block
+    websites. Zalmos.com unblock proxy
+
+[UNIX / Linux : How to install and configure mutt -- The Geek Diary](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
+:   Mutt is known for being a fast and highly configurable mail client,
+    and since it is text-based, it's ideal for checking email quickly
+    over SSH. \#\# install mutt, install and configure mutt, configure
+    mutt, ehel CentOS install and configure mutt, muttrc configuration
+    file
+
+[Use Vim to manage your task list and access Reddit and Twitter \| Opensource.com](https://opensource.com/article/20/1/vim-task-list-reddit-twitter)
+:   Last year, I brought you 19 days of new (to you) productivity tools
+    for 2019.
+
+[Users Manual -- MX Linux](https://mxlinux.org/manuals/)\
+[videos](fille:///home/batan/videos_to_watch)\
+[Videos -- MX Linux](https://mxlinux.org/videos/)\
+[VIM for web-development (HTML/CSS) in 2020 \| by Felipe Cavalheiro dos
+Anjos \|
+Medium](https://medium.com/@felipe.anjos/vim-for-web-development-html-css-in-2020-95576d9b21ad)
+: Why would you want to use an editor that is almost 30 years old?
+Because it has come to stay, and isn't it better to learn something that
+will stick around? Well, also because it is damn powerful...
+
+[Vim for Writers - NaperWriMo
+Wiki](https://www.naperwrimo.org/wiki/index.php?title=Vim_for_Writers)\
+[Vim: you don\'t need NERDtree or (maybe) netrw \| George
+Ornbo](https://shapeshed.com/vim-netrw/) : Vim\'s netrw file browser is
+good enough. With a few tweaks there is no need for plugin like
+NERDtree. For many tasks you may not even need netrw.
+
+[Vimrc Configuration Guide - How to Customize Your Vim Code Editor with Mappings, Vimscript, Status Line, and More](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
+:   Configuring your .vimrc file lets you use the full power of Vim.
+    With a customized .vimrc file you can increase your Vim powers
+    tenfold. In this article I will show you a few ways you can
+    customize your .vimrc file. I will go over: \* Basic Settings \*
+
+[vimscript - VimWiki - create a \"smart\" index page for subdir/section of wiki? - Vi and Vim Stack Exchange](https://vi.stackexchange.com/questions/28505/vimwiki-create-a-smart-index-page-for-subdir-section-of-wiki)
+:   I\'m using VimWiki for a writing project and for certain sections
+    (like \"chapters\", contained in sub-directories) I want to create
+    indexes that work similarly to the way VimWiki\'s diary in\...
+
+[vimwiki-cli · PyPI](https://pypi.org/project/vimwiki-cli/)
+:   Vimwiki Command-Line Interface
+
+[VimWiki: how to automate wikis per project folder (Neovim) - DEV Community](https://dev.to/psiho/vimwiki-how-to-automate-wikis-per-project-folder-neovim-3k72)
+:   Neovim is grabbing more and more pieces of my workflow from other
+    systems, and last two pieces are\... Tagged with linux, vim.
+
+[Volunteer Opportunities at Mozilla ---
+Mozilla](https://www.mozilla.org/contribute/)\
+[Volunteer Opportunities at Mozilla ---
+Mozilla](https://www.mozilla.org/en-US/contribute/)\
+[Vulnerability Database](https://vuldb.com/) : Number one vulnerability
+management and threat intelligence platform documenting and explaining
+vulnerabilities since 1970.
+
+[VULNERABILITY LAB - SECURITY VULNERABILITY RESEARCH LABORATORY - Best Independent Bug Bounty Programs, Responsible Disclosure & Vulnerability Coordination Platform - INDEX](https://www.vulnerability-lab.com/)
+:   VULNERABILITY LAB - SECURITY VULNERABILITY RESEARCH LABORATORY -
+    Best Independent Bug Bounty Programs, Responsible Disclosure &
+    Vulnerability Coordination Platform
+
+[vx-underground](https://www.vx-underground.org/)\
+[WalletExplorer.com: smart Bitcoin block
+explorer](https://www.walletexplorer.com/)\
+[Tech and Crypto Vibes -
+YouTube](https://www.youtube.com/c/TechandCryptovibes) : Hi. Welcome to
+my channel. My Name is Warith AL Maawali I aim to give you the pure
+information on Tech, Security and Crypto currency. Enjoy your stay.
+Bitcoi\... \#\# crypto \"crypto news\" \"crypto currency\"
+cryptocurrency \"crypto trading\" \"crypto 2018\" vibe \"crypto vr\"
+\"vr crypto\" ethereum altcoins \"crypto invest\" litecoin \...
+
+[Warith Al Maawali (\@warith2020) \|
+Twitter](https://twitter.com/warith2020?lang=en)\
+[Warith AL Maawali LinkedIn
+profile](https://www.linkedin.com/in/warith1977/)\
+[Web APIs \| MDN](https://developer.mozilla.org/en-US/docs/Web/API) :
+When writing code for the Web, there are a large number of Web APIs
+available. Below is a list of all the APIs and interfaces (object types)
+that you may be able to use while developing your Web app or site.
+
+[Web Security Academy: Free Online Training from PortSwigger](https://portswigger.net/web-security)
+:   The Web Security Academy is a free online training center for web
+    application security, brought to you by PortSwigger. Create an
+    account to get started.
+
+[Webcams from around the World - WorldCam](https://worldcam.eu/)
+:   WorldCam features an extensive network of live webcams from around
+    the World. Portal offers a map and the search engine for internet
+    cameras. Search the portal for beach, ski, animal and other cams.
+
+[WebDAV server setup on Ubuntu Linux - Linux Tutorials - Learn Linux Configuration](https://linuxconfig.org/webdav-server-setup-on-ubuntu-linux)
+:   WebDAV server setup on Ubuntu Linux
+
+[webproxy.to - Fast, Secure and Anonymous USA IP Web Proxy!](http://webproxy.to/)
+:   Unblock your favorite websites securely and anonymously with
+    Webproxy.to. Browse the internet fast, without any restrictions on
+    sites like Youtube, Facebook and more.
+
+[Welcome to searx --- Searx Documentation
+(Searx-1.1.0.tex)](https://searx.github.io/searx/)\
+[Welcome to Unified Extensible Firmware Interface Forum \| Unified
+Extensible Firmware Interface Forum](https://uefi.org/)\
+[What Is Dehumanization, Anyway? \| Psychology
+Today](https://www.psychologytoday.com/us/blog/the-web-violence/201806/what-is-dehumanization-anyway)
+: Dehumanization has been in the news a lot---understand it and how to
+fight it.
+
+[What Vim command to use to delete all text after a certain character on every line of a file? - TechTalk7](https://www.techtalk7.com/what-vim-command-to-use-to-delete-all-text-after-a-certain-character-on-every-line-of-a-file/)
+:   Scenario: I have a text file that has pipe (as in the \| character)
+    delimited data. Each field of data in the pipe delimited fields can
+    be of variable length, so counting characters won't work (or using
+    some sort of substring function... if that even exists in Vim). Is
+    it possible, using Vim to delete all \[...\]
+
+[Find and check IP address](https://whoer.net/)
+:   What\'s my IP address, how to find and check my IP address. Two
+    versions of anonymity check: light and extended
+
+[WiGLE: Wireless Network Mapping](https://wigle.net/)
+:   Maps and database of 802.11 wireless networks, with statistics,
+    submitted by wardrivers, netstumblers, and net huggers.
+
+[WordPress Vulnerabilities](https://wpscan.com/wordpresses)
+:   List of WordPress Vulnerabilities
+
+[WordPress Vulnerability Database - Patchstack](https://patchstack.com/database/)
+:   Hand curated, verified and enriched vulnerability information by
+    Patchstack security experts. Find all WordPress plugin, theme and
+    core security issues.
+
+[World map, satellite view // Earth map online service](https://satellites.pro/)
+:   🗺️ All world countries satellite map with labels, ruler, search,
+    locating, sharing, country/state boundary tracking clickable, cities
+    list menu for each state, weather forecast
+
+[World Webcams, Camera Search](http://world-webcams.nsspot.net/)
+:   Displays images from hundreds of webcams, cameras around the world,
+    including a description of the web cam location. and Displays
+    worldwide webcam images on the Google map.
+
+[www.nsupdate.info](https://www.nsupdate.info/)\
+[wxGlade: App Reviews, Features, Pricing & Download \|
+AlternativeTo](https://alternativeto.net/software/wxglade/about/) :
+wxGlade is a GUI designer written in Python with the popular GUI toolkit
+wxPython, that helps you create wxWidgets/wxPython user interfaces. At
+the moment it can generate Python, C++, Perl, Lisp and XRC (wxWidgets\'
+XML resources) code.
+
+[x11 - Add VIRTUAL output to Xorg - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/378373/add-virtual-output-to-xorg)
+:   I want to create a dummy, virtual output on my Xorg server on
+    current Intel iGPU (on Ubuntu 16.04.2 HWE, with Xorg server version
+    1.18.4). It is the similiar to Linux Mint 18.2, which one of the
+    xr\...
+
+[x86matthew - Home](https://www.x86matthew.com/)\
+[XSinator - XS-Leak Browser Test Suite](https://xsinator.com/)\
+[Yad - Checklist within form? / Programming & Scripting / Arch Linux
+Forums](https://bbs.archlinux.org/viewtopic.php?id=202463)\
+[YAD \--paned does not terminated after closing window · Issue \#78 ·
+v1cont/yad · GitHub](https://github.com/v1cont/yad/issues/78) : The
+example from the manual: yad \--plug=12345 \--tabnum=1 \--text=\"first
+tab with text\" &\> res1 & yad \--plug=12345 \--tabnum=2
+\--text=\"second tab\" \--entry &\> res2 & yad \--paned \--key=12345
+\--tab=\"Tab 1\" \--tab=\"Tab 2\" and sometimes YAD is no\...
+
+[YAD (and BASH) Demo \| yaddemo](https://cjungmann.github.io/yaddemo/)
+:   Learning to use the YAD command
+
+[YAD (Yet Another Dialog) Scripts/ Examples -- eirenicon llc](https://eirenicon.org/knowledge-base/yad-yet-another-dialog/)
+:   I have to say, I am a fan of Yad (Yet Another Dialog). I use Yad as
+    my primary "dialog tool" (in bspwm) to manage actual work & task
+    functions like: accessing help (files & note...
+
+[YAD HTML dialog](https://yad-guide.ingk.se/html/yad-html.html)\
+[yad-common - Google Groups](https://groups.google.com/g/yad-common)\
+[yad-examples/player.sh at master - yad-examples -
+Codeberg.org](https://codeberg.org/NRZCode/yad-examples/src/branch/master/player.sh)
+: yad-examples
+
+[yad-examples/sysinfo-notebook.sh at master - yad-examples - Codeberg.org](https://codeberg.org/NRZCode/yad-examples/src/branch/master/sysinfo-notebook.sh)
+:   yad-examples
+
+[yad-examples/tabs.sh at master - yad-examples - Codeberg.org](https://codeberg.org/NRZCode/yad-examples/src/branch/master/tabs.sh)
+:   yad-examples
+
+[Yad: App Reviews, Features, Pricing & Download \| AlternativeTo](https://alternativeto.net/software/yad/about/)
+:   Yad (yet another dialog) is a fork of Zenity with many improvements,
+    such as custom buttons, additional dialogs, pop-up menu in
+    notification icon and more. It\'s useful for creating quick and easy
+    GUIs for shell and batch scripting.
+
+[yadbash at DuckDuckGo](https://duckduckgo.com/?q=yadbash&ia=web)
+:   DuckDuckGo. Privacy, Simplified.
+
+[YouTube](https://youtube.com/)
+:   Enjoy the videos and music that you love, upload original content
+    and share it all with friends, family and the world on YouTube.
+
+[Zenity: App Reviews, Features, Pricing & Download \| AlternativeTo](https://alternativeto.net/software/zenity/about/)
+:   Zenity is a tool that allows you to display GTK dialog boxes in
+    commandline and shell scripts.
+
+[ZeroBin.net - Onion](http://zerobinqmdqd236y.onion/)\
+[ZoomEye - Cyberspace Search Engine](https://www.zoomeye.org/)\
+[ΞTHTECTIVE](https://www.ethtective.com/) : Ethereum Visual Blockchain &
+Transaction Explorer, Research and Analytics tool
+
+[Create a Python virtual environment in the Linux terminal - PragmaticLinux](https://www.pragmaticlinux.com/2021/12/create-a-python-virtual-environment-in-the-linux-terminal/)
+:   This article explains how to create and manage a Python virtual
+    environment in the Linux terminal. The recommended approach for
+    installing PyPI packages.
+
+[archivebox.config package --- ArchiveBox 0.6.2
+documentation](https://docs.archivebox.io/en/latest/archivebox.config.html)\
+[ArchiveBox Linux Setup // Dan\'s Tech
+Journey](https://danstechjourney.com/archivebox-linux-setup/)\
+[How to Create a Web Archive With Archivebox - Make Tech
+Easier](https://www.maketecheasier.com/create-web-archive-with-archivebox/)
+: Archiving your favorite websites for safekeeping can be a daunting
+task. Learn how you can automate the process in Linux by using
+Archivebox.
+
+[ArchiveBox \| 🗃 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more...](https://archivebox.io/)
+:   🗃 Open source self-hosted web archiving. Takes URLs/browser
+    history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media,
+    and more...
+
+[Configuration --- ArchiveBox 0.6.2
+documentation](https://docs.archivebox.io/en/master/Configuration.html)\
+[Configuration · ArchiveBox/ArchiveBox Wiki ·
+GitHub](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration) : 🗃
+Open source self-hosted web archiving. Takes URLs/browser
+history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and
+more\... - Configuration · ArchiveBox/ArchiveBox Wiki
+
+[Falkon Plugins / JavaScript Button · GitLab](https://gitlab.com/falkon-plugins/javascript-button)
+:   JavaScript Button extension for Falkon
+
+[Falkon/ToolbarTools: Adds spacers and separators to Falkon toolbar. - ToolbarTools - Git with a cute cup](https://git.sgorava.xyz/Falkon/ToolbarTools)
+:   ToolbarTools - Adds spacers and separators to Falkon toolbar.
+
+[RSS Finder - Falkon Browser](https://store.falkon.org/p/1689113/)
+:   Helps to find RSS feeds on the website.Adds a button to toolbar and
+    statusbar on which when you click the popup window with available
+    feed will show up.
+
+[startup - How to run scripts on start up? - Ask Ubuntu](https://askubuntu.com/questions/814/how-to-run-scripts-on-start-up)
+:   How can I run scripts automatically when Ubuntu starts up so I
+    don\'t have to run them manually after startup?
+
+[phpzag.com : Demo Create Event Calendar with jQuery, PHP and
+MySQL](https://phpzag.com/demo/create-event-calendar-with-jquery-php-and-mysql/)\
+[Linux Beginner Tutorials \|
+Linux.org](https://www.linux.org/forums/linux-beginner-tutorials.123/)\
+[Linux Intermediate Tutorials \|
+Linux.org](https://www.linux.org/forums/linux-intermediate-tutorials.124/)\
+[Linux Advanced Tutorials \|
+Linux.org](https://www.linux.org/forums/linux-advanced-tutorials.125/)\
+[How To Make a Countdown Timer in Bash -
+Putorius](https://www.putorius.net/how-to-make-countdown-timer-in-bash.html)
+: Learn how to make a nice countdown timer in bash to use in your
+scripts using while loops.
+
+[linux - Is there a way to display a countdown or stopwatch timer in a terminal? - Super User](https://superuser.com/questions/611538/is-there-a-way-to-display-a-countdown-or-stopwatch-timer-in-a-terminal)
+:   How can I display a real-time countdown timer on the Linux terminal?
+    Is there an existing app or, even better, a one liner to do this?
+
+[terminal - List of ANSI color escape sequences - Stack Overflow](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)
+:   On most terminals it is possible to colorize output using the \\033
+    ANSI escape sequence. I\'m looking for a list of all supported
+    colors and options (like bright and blinking). As there are probably
+
+[sh - How to set the timer in shell - Stack Overflow](https://stackoverflow.com/questions/29920602/how-to-set-the-timer-in-shell)
+:   Can we set the timer in shell script? means if I set the timer for
+    20 secs my shell scripts should be execute like this :
+    20..19..18..17.. after completing the I should get the result. Is it
+    poss\...
+
+[A Lonely MILF Seduces a Young Man who Rents Her Basement Apartment the Landlady Part 2 \| xHamster](https://xhamster.com/videos/a-lonely-milf-seduces-a-young-man-who-rents-her-basement-apartment-the-landlady-part-2-xhe4lqo)
+:   Watch A Lonely MILF Seduces a Young Man who Rents Her Basement
+    Apartment the Landlady Part 2 video on xHamster - the ultimate
+    archive of free Neighbor & Cumming HD porn tube movies!
+y

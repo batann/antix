@@ -1,0 +1,375 @@
+
+= ALCI =
+
+== Postinstall Steps: ==
+
+
+
+Decide to include already
+xorg, Lightdm, XFCE4, …
+
+When your reboot, you decide what you install.
+Xfce4 as an example:
+
+| Command                             | Description      |
+| sudo pacman -S archlinux-           |                  |
+| sudo pacman -Syyu                   | Update System    |
+| sudo pacman -S xorg-server xor-apps | Install software |
+| sudo pacman -S lightdm-gtk-greeter  | Install software |
+| sudo pacman -S xfce4 xfce4-goodies  | Install Desktop  |
+|                                     |                  |
+
+sudo pacman -Syyu
+
+sudo pacman -S xorg-server xorg-apps
+
+sudo pacman -S lightdm lightdm-gtk-greeter
+
+sudo pacman -S xfce4 xfce4-goodies
+
+Edit the packages.x8664 and add the packages you want.
+
+Build the iso.
+
+Burn the iso.
+
+Test the iso.
+
+ 
+
+=== 43 Calamares config – we need to change the config because of the move to 3.3 ===
+https://alci.online/43-calamares-config-we-need-to-change-the-config-because-of-the-move-to-3-3-branch/
+
+_We changed to Calamares 3.3 a few weeks back. Thanks to a user reporting an
+issue on github we investigated what happened to the current setup. It seems
+Calamares has changed its way of declaring variables from @@ROOT@@ to ${ROOT}.
+Once that was changed our..._
+
+=== 42 Moving from Calamares 3.2.61 to 3.3 – workflow video ===
+https://alci.online/42-moving-from-calamares-3-2-61-to-3-3-workflow-video/
+
+_In this video you can see all the things I have to do in order to get things
+working with the very last code of April 2023. Many things have changed. Not
+only the application but also the configuration. ArcoLinux and Carli have
+migrated already. On the Carli..._
+
+=== 41 What is the workflow to be able to create a new grub theme for your distro ===
+https://alci.online/what-is-the-workflow-to-be-able-to-create-a-new-grub-theme-for-your-distro/
+
+_In this video we explain you the workflow of creating a new grub theme for your
+distro. create a grub theme and host it online (here Github) create a PKGBUILD
+put the application on your repo add the application to the packages list file
+build the iso test the iso_
+
+=== 40 Keeping your iso up-to-date with a new archiso version – archiso 70 ===
+https://alci.online/40-keeping-your-iso-up-to-date-with-a-new-archiso-version-archiso-70/
+
+_It is always the same workflow. Compare the releng folder coming in from the
+Archiso package (sometimes also the /usr/bin/mkarchiso script). Decide what you
+like to include on your future iso with the use of Meld. Double-check.
+Triple-check. Build the iso. Test the iso._
+
+=== 39 How to add wayland support for Plasma (hardened iso) – calamares popup === 
+https://alci.online/39-how-to-add-wayland-support-for-plasma-hardened-iso-calamares-popup-are-you-sure/
+
+_In this video we cover the following topics: how to add wayland support to the
+current Plasma iso based on hardened linux kernel alci website and sourceforge
+- where to download the isos - if you are not ready yet to build them
+yourselves where the github is how to..._
+
+=== 38 Calamares – shellprocess – using instances – removing pacman-init.service ===
+https://alci.online/38-calamares-shellprocess-using-instances-removing-pacman-init-service/
+
+_In this 3 hour during video I show everything I do to update the 7 ALCI isos
+with their different kernels and different desktops. We show how to debug
+Calamares: pkexec calamares -d We show you the workflow with meld and gitahead.
+We give tips what not to do and what..._
+
+=== 37 How to create an ALCI iso with Xanmod-Edge kernel ===
+https://alci.online/37-how-to-create-an-alci-iso-with-xanmod-edge-kernel/
+
+_November 2022 Xanmod-edge ceased to existWe have changed all references to
+Xanmod but ofcourse not in the videosSee which files matter if you want to
+change from a linux kernel to a linux-xanmod-edge kernel. We created an
+additional Calamares configuration fox..._
+
+=== 36 Keeping your iso building project up to date – workflow – tips and tricks ===
+https://alci.online/36-keeping-your-iso-building-project-up-to-date-workflow-tips-and-tricks/
+
+_It is always easy (and fun) to start with a whatif. What comes later is more
+difficult... maintaining.Taking the time to keep things up-to-date.Figuring out
+new challenges. Read all you can about Calamares - make an account on their
+github and subscribe. Every release..._
+
+=== 35 Calamares is a versatile tool – read the important files – know the important folders ===
+https://alci.online/35-calamares-is-a-versatile-tool-read-the-important-files-know-the-important-folders/
+
+_This is basically a video to promote reading. But what should you read? Make
+sure you have a copy of Calamares that you can "git pull" from time to time.
+git clone https://github.com/calamares/calamares Then we show you in the video
+which files and folders matter?..._
+
+=== 34 How to create an ALCI iso with hardened kernel and Plasma ===
+https://alci.online/34-how-to-create-an-alci-iso-with-hardened-kernel-and-plasma/
+
+_In this video we show you that you can create an Arch Linux iso based on the
+hardened kernel in 30 minutes. We create a new config for Calamares and a new
+project to build the iso. What matters is the workflow and the differences -
+use meld_
+
+=== 33 How to build an ALCI iso in VirtualBox and get it out again ===
+https://alci.online/how-to-build-an-alci-iso-in-virtualbox-and-get-it-out-again/
+
+_We were talking about building an ALCI on Discord and I saw an opportunity to
+test the scripts on an Arch Linux system but this time on VirtualBox. How to
+build an ALCI iso on VirtualBox and how to get the iso to the host_
+
+=== 32 Build your own iso – you are on your own – no ArcoLinux – no Alci – no Chaotics – pure Arch Linux and a local repo ===
+https://alci.online/32-build-you-own-iso-you-are-on-your-own-no-arcolinux-no-alci-no-chaotics-pure-arch-linux-and-a-local-repo/
+
+_You want to be independent. You want to have your own local repo. You want to
+stay as close to Arch Linux as possible. You want to build up your own distro.
+ArcoLinux repo will NOT be used. Alci repo will NOT be used. Chaotics repo will
+NOT be used. Arch Linux repos..._
+
+=== 31 Create Cinnamon iso – no ArcoLinux repo – no Chaotics repo – just Arch Linux repo and drivers ===
+https://alci.online/31-create-cinnamon-iso-no-arcolinux-repo-no-chaotics-repo-just-arch-linux-repo-and-drivers/
+
+_In this video we talk about drivers and about daring to experiment so you know
+what drivers you need for pc 1 and laptop 2. Test it out and write it down. We
+talk about nvidia, nvidia-lts and nvidia-dkms. We decide to install Cinnamon
+and not use the ALCI-DWM desktop..._
+
+=== 30 How to create a linux-lts iso – created from scratch ===
+https://alci.online/30-how-to-create-a-linux-lts-iso-created-from-scratch/
+
+_After creating the zen iso on my own time without recording it we can now
+create a linux-lts iso together. We create githubs for the iso and the
+Calamares config. We build a new Calamares config for linux-lts. We decide
+against putting packages on our system because..._
+
+=== 29 How to create an linux-zen iso – how did I create it ===
+https://alci.online/29-how-to-create-an-linux-zen-iso-how-did-i-create-it/
+
+_This video is an after the facts video. See which files matter if you want to
+change from a linux kernel to a linux-zen kernel. We created an additional
+Calamares configuration to remove linux and decided NOT to put broadcom-wl on
+our system. Our next article we will..._
+
+=== 28 If Arch Linux removes a package from its repos you need to act ===
+https://alci.online/28-if-arch-linux-removes-a-package-from-its-repos-you-need-to-act/
+
+_The package list contains all the packages we can use for our iso. These are
+pre-build packages from Arch Linux. If Arch Linux decides not to build the
+packages anymore it will result in an error during the build. error: target not
+found: termite-terminfo Then there..._
+
+=== 27 Booting up with your deskop in the live environment ===
+https://alci.online/27-booting-up-with-your-deskop-in-the-live-environment/
+
+_Two things to change and you are good to go if you start with the dev github
+and want xfce4. We change the content of packages.x8664 and remove
+alci-dwm-nemesis. A few lines down we have already a desktop - xfce4 and
+xfce4-goodies.Change the packages if you want..._
+
+=== 26 Archiso 55-1 changes incorporated ===
+https://alci.online/26-archiso-55-1-changes-incorporated/
+
+_It is always the same workflow. Compare the releng folder coming in from the
+Archiso package (sometimes also the mkarchiso script). Decide what you like to
+include on your future iso with the use of Meld. Double-check. Triple-check.
+Build the iso. Test the iso._
+
+=== 25 Compare archiso 53-1 with our githubs ===
+https://alci.online/25-compare-archiso-53-1-with-our-githubs/
+
+_It is always the same workflow. Compare the releng folder coming in from the
+Archiso package (sometimes also the mkarchiso script). Decide what you like to
+include on your future iso with the use of Meld. Double-check. Triple-check.
+Build the iso. Test the iso._
+
+=== 24 Rebuild Calamares when kpmcore gets an update ===
+https://alci.online/rebuild-calamares-when-kpmcore-gets-an-update/
+
+_You see a message in Calamares and you did not change anything. Maybe Calamares
+did not changeMaybe the configuration did not change but everything else did
+change. New kernels, new systemd and also the packages that are needed to make
+Calamares work. In this instance..._
+
+=== 23 Rebuild Calamares when one of its dependencies gets an update – boost and boost-libs ===
+https://alci.online/rebuild-calamares-when-one-of-its-dependencies-gets-an-update-boost-and-boost-libs/
+
+_You see a message in Calamares and you did not change anything. Maybe Calamares
+did not change Maybe the configuration did not change but everything else did
+change. New kernels, new systemd and also the packages that are needed to make
+Calamares work. Here the two..._
+
+=== 22 Archiso 52-1 compared and implemented ===
+https://alci.online/22-archiso-52-1-compared-and-implemented/
+
+_It is always the same workflow. Compare the releng folder coming in from the
+Archiso package (sometimes also the mkarchiso script). Decide what you like to
+include on your future iso with the use of Meld. Double-check. Triple-check.
+Build the iso. Test the iso.Let us..._
+
+=== 21 Building a new Calamares v3.2.39.1 ===
+https://alci.online/21-building-a-new-calamares-v3-2-39-1/
+
+_Building a new Calamares is something YOU can do. You do not need us for it.
+You can build it and put it on the local repo on your pc. You can make your own
+Calamares configurations. See example below.You can make your own packages list
+and it will become YOUR..._
+
+=== 20 Creating an ALCI Sddm theme and testing it out – BTRFS as formatting ===
+https://alci.online/20-creating-an-alci-sddm-theme-and-testing-it-out-btrfs-as-formatting/
+
+_We are moving the arcolinux-sddm-plasma-archpaint to the ALCI project. We show
+you how that can be done via Github. Lots of elements need to be changed. We do
+not want to keep any trace of ArcoLinux anywhere. We show you how we will
+change the current ArcoLinux..._
+
+=== 19 Change the configuration of Calamares to use BTRFS by default ===
+https://alci.online/19-change-the-configuration-of-calamares-to-use-btrfs-by-default/
+
+_Can we change the configuration of Calamares so that it will no longer use EXT4
+as default format but BTRFS? We will show you where to get this knowledge and
+how to accomplish such a whatif. From A till we boot into the new installation
+with BTRFS._
+
+=== 18 Building our ALCI iso with our local repo and our newly created nemesis-wallpapers – what changed since last time ===
+https://alci.online/18-building-our-alci-iso-with-our-local-repo-and-our-newly-created-nemesis-wallpapers-what-changed-since-last-time/
+
+_We build our iso and go over all the changes. we create our local repo we build
+a package called nemesis-wallpapers to test our local repo we keep sddm on our
+future system - you will boot into a graphical environment we give you an
+example how a local repo should..._
+
+=== 17 How to build your own package for your local repository ===
+https://alci.online/17-how-to-build-your-own-package-for-your-local-repository/
+
+_It is fun to make your Operating System just the way you like. In our example
+we will put several wallpapers on our github and create a package for it. The
+advantage of a package is that Pacman can control it. sudo pacman -S  or -R
+will work. If we copy/pasted the..._
+
+
+=== 16 How to add services on your future system – workflow explained ===
+https://alci.online/16-how-to-add-services-on-your-future-system-workflow-explained/
+
+_If you know how to add a certain service to you current system you can figure
+out how to install it on ALCI. This is not about samba, bluetooth, avahi, ...
+This is about ANY service you will ever encounter. This is a workflow tutorial._
+
+=== 15 Theming ALCI Xfce ===
+https://alci.online/15-theming-alci-xfce/
+
+_This was me just having fun. Changing Xfce4 in all kinds of ways._
+
+=== 14 Build a new Calamares ===
+https://alci.online/14-build-a-new-calamares/
+
+_In this video we show you all the steps you have to take to build and test out
+a new Calamares. It is super easy. Combined with article 13 - adding a local
+repo - you can be faster than the developers and become independent. You do not
+have to wait for anyone updating..._
+
+=== 13 How to add your local custom repo to ALCI ===
+https://alci.online/13-how-to-add-your-local-custom-repo-to-alci/
+
+_The core of ALCI is the packages list and ofcourse pacman.conf which will tell
+where the pacakages are. You can get the packages from: Arch Linux ArcoLinux
+Chaotic AUR ... many others But you can also create a local repo on your
+computer system. You build the packages..._
+
+=== 12 How to figure out what to put on ALCI ===
+https://alci.online/12-how-to-figure-out-what-to-put-on-alci/
+
+_ALCI is all about choosing packages and adding them too the packages.x8664.
+Here we show you where you can find the sources. Where to get the Lego blocks
+and which you might want or will need?_
+
+=== 11 What if Calamares crashes when creating the partitions ===
+https://alci.online/11-what-if-calamares-crashes-when-creating-the-partitions/
+
+_ALCI is designed to be as minimal as possible. Hence our choice to make our
+personalized ALCI DWM. Gparted could be installed on the fly and you can do
+your workflow that way. But what if you just want to start from scratch and
+delete all partitions and go on with the..._
+
+=== 10 ArcoFy your ALCI – get your personal configuration in ===
+https://alci.online/10-arcofy-your-alci-get-your-personal-configuration-in/
+
+_You can add your personal look to ALCI. Just keep the .config files and folders
+that matter save and copy/paste them in the /archiso/airootfs/etc/skel. Super
+easy and quick._
+
+=== 9 Changing ALCI when a new Archiso package arrives – procedure – choices ===
+https://alci.online/9-changing-alci-when-a-new-archiso-package-arrives-procedure-choices
+
+_The major difference for this project is the cloud service that is now in our
+systemd/system. This is the website what it is all about:  https://cloud-init.io/
+The package is called :  cloud-init_
+
+=== 8 How to create an ALCI iso on Arch Linux ===
+https://alci.online/8-how-to-create-an-alci-iso-on-arch-linux/
+
+_ALCI is an ArcoLinux project. By default we have the ArcoLinux mirrors and
+ArcoLinux keys. If you would like to install packages from ArcoLinux you need
+to get the keys in and know where the mirrors are.Since my Arch Linux system
+contains all the keys and mirrors from..._
+
+=== 7 ALCI contains the ArcoLinux keys by default ===
+https://alci.online/7-alci-contains-the-arcolinux-keys-by-default/
+
+_ALCI is an ArcoLinux project. We would like to install packages from ArcoLinux.
+IF HOWEVER you are not planning to install anything from ArcoLInux repos you
+can remove one line of code. Edit this file /archiso/airootfs/etc/systemd/
+system/pacman-init.service and delete..._
+
+=== 6 Sharing the info to build ALCI between users ===
+https://alci.online/6-sharing-the-info-to-build-alci-between-users/
+
+_We have now the possibilty to ask people what the content of the 
+packages.x8664 file is and learn from it. On Discord we have a separate
+channel for Arch Linux Calamares Installer or ALCI. On that channel we can
+exchange configs via https://pastebin.com. That is..._
+
+=== 5 Adding packages to the ALCI iso ===
+https://alci.online/5-adding-packages-to-the-alci-iso/
+
+_Adapt ALCI to your needs ... Less typing is always better We have added some
+ideas at the bottom of the packages.x8664. The content of this file will
+change over time.Read the text at the bottom. Some packages will always be
+removed by Calamares._
+
+=== 4 Installing ALCI – Xorg – Lightdm – Mate – Encrypted – zapping our harddisk ===
+https://alci.online/4-installing-alci-xorg-lightdm-mate-encrypted-zapping-our-harddisk/
+
+_In this article we decided to encrypt our harddisk and install Mate. A great
+tip is when we talk about really removing any trace of files, folders or
+formatting from your harddisk. wipefs -a /dev/sda or sgdisk -Z /dev/sda_
+
+=== 3 Installing ALCI – Xorg – Sddm – Cinnamon – ASA – ATT- Awesome ===
+https://alci.online/3-installing-alci-xorg-sddm-cinnamon-asa-att-awesome/
+
+_The iso is already built when we start our video. See article 2 to learn how to
+build the iso.   Content of the video we install ALCI together - choose any of
+the options available on Calamares we install xorg-server, xorg-apps, sddm, and
+cinnamon we enable sddm..._
+
+=== 2 How to get started with ALCI ===
+https://alci.online/2-how-to-get-started-with-alci/
+
+_Synthesis check you have the correct archiso version git clone the project git
+clone https://github.com/arcolinuxiso/alci-iso change content of archiso/
+packages.x8664 or not use meld to compare the other packages files -
+example-packages.x8664 and..._
+
+=== 1 Creation of ALCI or Arch Linux Calamares Installer ===
+https://alci.online/1-creation-of-alci-or-arch-linux-calamares-installer/
+
+_I have recorded every single step of the way. It took a bit longer than
+expected. I did make some mistakes that made everything a bit longer. The goal
+is as always outgrow the master. Become smarter by watching the videos, Get
+your own what-ifs and be able to carry..._
+

@@ -1,0 +1,235 @@
+= Buku Examples =
+
+== Examples ==
+
+    === Edit and add a bookmark from editor: ===
+
+    $ buku -w
+    $ buku -w 'gedit -w'
+    $ buku -w 'macvim -f' -a https://ddg.gg search engine, privacy
+
+    The first command picks editor from the environment variable EDITOR. The second command opens gedit in blocking mode. The third command opens macvim with option -f and the URL and tags populated in template.
+
+    === Add a bookmark with tags search engine and privacy, comment Search engine with perks, fetch page title from the web: ===
+
+    $ buku -a https://ddg.gg search engine, privacy -c Search engine with perks
+    336. DuckDuckGo
+    > https://ddg.gg
+    + Alternative search engine with perks
+    # privacy,search engine
+
+    where, >: URL, +: comment, #: tags
+
+    === Add a bookmark with tags search engine & privacy and immutable custom title DDG: ===
+
+    $ buku -a https://ddg.gg search engine, privacy --title 'DDG' --immutable 1
+    336. DDG (L)
+    > https://ddg.gg
+    # privacy,search engine
+
+    Note that URL must precede tags.
+
+    === Add a bookmark without a title (works for update too): ===
+
+    $ buku -a https://ddg.gg search engine, privacy --title
+
+    === Edit and update a bookmark from editor: ===
+
+    $ buku -w 15012014
+
+    === This will open the existing bookmark's details in the editor for modifications. Environment variable EDITOR must be set. ===
+
+    Update existing bookmark at index 15012014 with new URL, tags and comments, fetch title from the web:
+
+    $ buku -u 15012014 --url http://ddg.gg/ --tag web search, utilities -c Private search engine
+
+    === Fetch and update only title for bookmark at 15012014: ===
+
+    $ buku -u 15012014
+
+    === Update only comment for bookmark at 15012014: ===
+
+    $ buku -u 15012014 -c this is a new comment
+
+    Applies to --url, --title and --tag too.
+
+    === Export bookmarks tagged tag 1 or tag 2 to HTML, XBEL, Markdown, Orgfile or a new database: ===
+
+    $ buku -e bookmarks.html --stag tag 1, tag 2
+    $ buku -e bookmarks.xbel --stag tag 1, tag 2
+    $ buku -e bookmarks.md --stag tag 1, tag 2
+    $ buku -e bookmarks.org --stag tag 1, tag 2
+    $ buku -e bookmarks.db --stag tag 1, tag 2
+
+    All bookmarks are exported if search is not opted.
+
+    === Import bookmarks from HTML, XBEL, Markdown or Orgfile: ===
+
+    $ buku -i bookmarks.html
+    $ buku -i bookmarks.xbel
+    $ buku -i bookmarks.md
+    $ buku -i bookmarks.org
+    $ buku -i bookmarks.db
+
+    === Delete only comment for bookmark at 15012014: ===
+
+    $ buku -u 15012014 -c
+
+    Applies to --title and --tag too. URL cannot be deleted without deleting the bookmark.
+
+    Update or refresh full DB with page titles from the web:
+
+    $ buku -u
+    $ buku -u --tacit (show only failures and exceptions)
+
+    This operation can update the title or description fields of non-immutable bookmarks by parsing the fetched page. Fields are updated only if the fetched fields are non-empty. Tags remain untouched.
+
+echo -e " / |/  \ / / |/  \  | _ ) __ _| |_ __ _ _ _   / |/  \ /  (_)/ / "
+echo -e " | | () / /| | () | | _ \/ _` |  _/ _` | ' \  | | () | () |/ /_ "
+echo -e " |_|\__/_/ |_|\__/  |___/\__,_|\__\__,_|_||_| |_|\__/ \__//_/(_)"
+echo -e "                                                                "
+echo -e "  _  __   ___  __    ___       _               _  __   __ _  __ "
+echo -e " / |/  \ / / |/  \  | _ ) __ _| |_ __ _ _ _   / |/  \ /  (_)/ / "
+echo -e " | | () / /| | () | | _ \/ _` |  _/ _` | ' \  | | () | () |/ /_ "
+echo -e " |_|\__/_/ |_|\__/  |___/\__,_|\__\__,_|_||_| |_|\__/ \__//_/(_)"
+echo -e "                                                                "
+echo -e "  _  __   ___  __    ___       _               _  __   __ _  __ "
+echo -e " / |/  \ / / |/  \  | _ ) __ _| |_ __ _ _ _   / |/  \ /  (_)/ / "
+echo -e " | | () / /| | () | | _ \/ _` |  _/ _` | ' \  | | () | () |/ /_ "
+echo -e " |_|\__/_/ |_|\__/  |___/\__,_|\__\__,_|_||_| |_|\__/ \__//_/(_)"
+echo -e "                                                                "
+echo -e "  _  __   ___  __    ___       _               _  __   __ _  __ "
+echo -e " / |/  \ / / |/  \  | _ ) __ _| |_ __ _ _ _   / |/  \ /  (_)/ / "
+echo -e " | | () / /| | () | | _ \/ _` |  _/ _` | ' \  | | () | () |/ /_ "
+echo -e " |_|\__/_/ |_|\__/  |___/\__,_|\__\__,_|_||_| |_|\__/ \__//_/(_)"
+echo -e "                                                                "
+echo -e "  _  __   ___  __    ___       _               _  __   __ _  __ "
+echo -e " / |/  \ / / |/  \  | _ ) __ _| |_ __ _ _ _   / |/  \ /  (_)/ / "
+echo -e " | | () / /| | () | | _ \/ _` |  _/ _` | ' \  | | () | () |/ /_ "
+echo -e " |_|\__/_/ |_|\__/  |___/\__,_|\__\__,_|_||_| |_|\__/ \__//_/(_)"
+echo -e "                                                                "
+
+    Delete bookmark at index 15012014:
+
+    $ buku -d 15012014
+    Index 15012020 moved to 15012014
+
+    The last index is moved to the deleted index to keep the DB compact. Add --tacit to delete without confirmation.
+
+    Delete all bookmarks:
+
+    $ buku -d
+
+    Delete a range or list of bookmarks:
+
+    $ buku -d 100-200
+    $ buku -d 100 15 200
+
+    Search bookmarks for ANY of the keywords kernel and debugging in URL, title or tags:
+
+    $ buku kernel debugging
+    $ buku -s kernel debugging
+
+    Search bookmarks with ALL the keywords kernel and debugging in URL, title or tags:
+
+    $ buku -S kernel debugging
+
+    Search bookmarks tagged general kernel concepts:
+
+    $ buku --stag general kernel concepts
+
+    Search for bookmarks matching ANY of the tags kernel, debugging, general kernel concepts:
+
+    $ buku --stag kernel, debugging, general kernel concepts
+
+    Search for bookmarks matching ALL of the tags kernel, debugging, general kernel concepts:
+
+    $ buku --stag kernel + debugging + general kernel concepts
+
+    Search for bookmarks matching any of the keywords hello or world, excluding the keywords real and life, matching both the tags kernel and debugging, but excluding the tags general kernel concepts and books:
+
+    $ buku hello world --exclude real life --stag 'kernel + debugging - general kernel concepts, books'
+
+    List all unique tags alphabetically:
+
+    $ buku --stag
+
+    Run a search and update the results:
+
+    $ buku -s kernel debugging -u --tag + linux kernel
+
+    Run a search and delete the results:
+
+    $ buku -s kernel debugging -d
+
+    Encrypt or decrypt DB with custom number of iterations (15) to generate key:
+
+    $ buku -l 15
+    $ buku -k 15
+
+    The same number of iterations must be specified for one lock & unlock instance. Default is 8, if omitted.
+
+    Show details of bookmarks at index 15012014 and ranges 20-30, 40-50:
+
+    $ buku -p 20-30 15012014 40-50
+
+    Show details of the last 10 bookmarks:
+
+    $ buku -p -10
+
+    Show all bookmarks with real index from database:
+
+    $ buku -p
+    $ buku -p | more
+
+    Replace tag 'old tag' with 'new tag':
+
+    $ buku --replace 'old tag' 'new tag'
+
+    Delete tag 'old tag' from DB:
+
+    $ buku --replace 'old tag'
+
+    Append (or delete) tags 'tag 1', 'tag 2' to (or from) existing tags of bookmark at index 15012014:
+
+    $ buku -u 15012014 --tag + tag 1, tag 2
+    $ buku -u 15012014 --tag - tag 1, tag 2
+
+    Open URL at index 15012014 in browser:
+
+    $ buku -o 15012014
+
+    List bookmarks with no title or tags for bookkeeping:
+
+    $ buku -S blank
+
+    List bookmarks with immutable title:
+
+    $ buku -S immutable
+
+    Shorten URL www.google.com and the URL at index 20:
+
+    $ buku --shorten www.google.com
+    $ buku --shorten 20
+
+    Append, remove tags at prompt (taglist index to the left, bookmark index to the right):
+
+    // append tags at taglist indices 4 and 6-9 to existing tags in bookmarks at indices 5 and 2-3
+    buku (? for help) g 4 9-6 >> 5 3-2
+    // set tags at taglist indices 4 and 6-9 as tags in bookmarks at indices 5 and 2-3
+    buku (? for help) g 4 9-6 > 5 3-2
+    // remove all tags from bookmarks at indices 5 and 2-3
+    buku (? for help) g > 5 3-2
+    // remove tags at taglist indices 4 and 6-9 from tags in bookmarks at indices 5 and 2-3
+    buku (? for help) g 4 9-6 << 5 3-2
+
+    List bookmarks with colored output:
+
+    $ buku --colors oKlxm -p
+
+    More help:
+
+    $ buku -h
+    $ man buku
+
+
