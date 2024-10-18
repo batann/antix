@@ -1,0 +1,87 @@
+= Contents =
+        - [[#Top Free Linux Books]]
+                - [[#Beginner Level:]]
+                - [[#Intermediate Level:]]
+                - [[#Advanced Level:]]
+                - [[#Linux Distributions:]]
+                - [[#Security and Networking:]]
+                - [[#Linux and DevOps:]]
+                - [[#Advanced Topics:]]
+
+= Top Free Linux Books =
+
+Linux is an open-source operating system with a vast and active community, which has led to the creation of numerous free books and resources for learning about Linux. Here are 20 free books on Linux that cover various aspects of the operating system, from beginner to advanced topics:
+
+== Beginner Level: ==
+The Linux Command Line by William Shotts Jr.
+A comprehensive guide to using the Linux command line.
+
+Linux Fundamentals by Paul Cobbaut 
+Covers the basics of Linux, including system administration and shell scripting.
+
+Introduction to Linux by Machtelt Garrels
+Provides an introduction to Linux for beginners.
+
+The Linux Kernel Module Programming Guide by Peter Jay Salzman and Ori Pomerantz
+Focuses on writing kernel modules.
+
+== Intermediate Level: ==
+
+Linux Device Drivers by Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman
+A guide to writing device drivers for the Linux kernel.
+
+Linux System Programming by Robert Love
+Covers system calls, I/O, and more.
+
+The Linux Development Platform by Rafeeq Ur Rehman, Christopher Paul
+Offers insights into Linux development tools and techniques.
+
+Bash Guide for Beginners by Machtelt Garrels
+Helps you master the basics of shell scripting with Bash.
+
+== Advanced Level: ==
+
+Linux From Scratch (LFS) by Gerard Beekmans and others
+Guides you through building a Linux system from the ground up.
+
+Advanced Linux Programming by Mark Mitchell, Jeffrey Oldham, and Alex Samuel
+A resource for experienced programmers delving into advanced Linux topics.
+
+Understanding the Linux Kernel by Daniel P. Bovet and Marco Cesati
+Provides an in-depth look at the Linux kernel's architecture and internals.
+== Linux Distributions: ==
+
+Ubuntu Manual by Ubuntu Documentation Team
+A guide to using Ubuntu Linux.
+
+Debian Administrator's Handbook by Raphaël Hertzog and Roland Mas
+A comprehensive resource for Debian administrators.
+
+== Security and Networking: ==
+
+Linux Network Administrator's Guide by Tony Bautts, Terry Dawson, and Gregor N. Purdy
+Focuses on networking and system administration.
+
+SELinux by Example by Frank Mayer, Karl MacMillan, and David Caplan
+A guide to understanding and configuring SELinux.
+
+== Linux and DevOps: ==
+
+Continuous Delivery with Docker and Jenkins by Rafal Leszko
+Explores using Docker and Jenkins for continuous delivery.
+
+Kubernetes Up & Running by Kelsey Hightower, Brendan Burns, and Joe Beda
+A guide to deploying, scaling, and managing containerized applications with Kubernetes.
+
+== Advanced Topics: ==
+
+The Art of Assembly Language by Randall Hyde
+Covers assembly language programming on Linux.
+
+Linux Performance by Brendan Gregg
+Focuses on performance analysis and tuning on Linux systems.
+
+Advanced Bash-Scripting Guide by Mendel Cooper
+An in-depth guide to Bash scripting for advanced users and programmers.
+
+These free Linux books cover a wide range of topics, from beginner to advanced, and provide valuable resources for learning and mastering Linux and related technologies. Whether you're new to Linux or an experienced user, there's something here to help you expand your knowledge and skills.

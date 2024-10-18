@@ -1,0 +1,59 @@
+= Configuration =
+
+After you have successfully finished your Installation you might want to start configuring your firewall.
+
+There are some simple steps you have to go through:
+
+    define your interfaces
+    define zones, networks, hosts and groups (as you need)
+    set up your rules
+
+For an thorough explanation of all these concepts please see concepts introduced by Vuurmuur.
+
+To accomplish all this you will use Vuurmuurs gui tool vuurmuur_conf. This tool can be used for much more than just configuration: You will be able to check the status of your firewall, monitor active connections, see the bandwith currently used, keep an overview about your transfer volume and much more. But more on this later; lets first set up the firewall.
+Interfaces
+
+Interfaces in Vuurmuur correspond to real network devices in your firewall machine. Those interfaces consist of a name, an ip address and the real interface name. You may use dynamic interfaces (address is provided by a DHCP server) as well; Vuurmuur then will read it from the system. For more advanced networks you might specify virtual interfaces as well (eg eth0:0, eth0:1).
+
+Note “:” is not allowed to be used in interface names.
+
+The name you specify for an interface is up to you. It should help you to see things more clearly and to avoid confusion. You might, of course, use real interface names like eth0 and eth1 if you are used to that, you might name them after the NICs chipset (rtl, 3c90x, …), name them ’ext’ and ‘int’ (be careful not to confuse zones and interfaces later!) or however you like. On this site we use the name ‘inet-nic’ for the internet facing interface, and ’lan-nic’ for the lan interface.
+Zones, Networks, Hosts and Groups
+
+A zone is a container for networks and a network is a container for hosts. With groups you may group hosts together (within one network). And a host is a single machine one network. Choosing names for zones, networks and hosts is a quite difficult job because you will be confronted with your choices everywhere in Vuurmuur: every host is displayed as: hostname.networkname.zonename. Knowing this makes life a lot easier: You can define zones like ‘int’, ’ext’ and probably ‘dmz’ and add appropriate network names or choose your naming or use ’lan’, ‘world’ and ‘inet’. The choice is entirely up to you. For a more detailed explanation, see concepts introduced by Vuurmuur.
+
+You need to attach at least one interface to every network. By attaching an interface to a network, you tell Vuurmuur which interface belongs to a network. Normally every network will have one interface, but more are possible as well, for example when you have more than one connection to the internet. In the most simple case this could be ‘inet-nic’ for ‘world.inet’ and ’lan-nic’ for ’local.lan’.
+Rules
+
+By default Vuurmuur drops all traffic: this is the default policy. To allow certain traffic to pass you must create rules. Rules have the following syntax:
+
+<action> service <service> from <src> to <dst> options <options>
+
+Below you find some example rules to get you going.
+
+Add the following rules to be able the browse the web from the firewall machine
+
+accept service dns from firewall to world.inet
+accept service http from firewall to world.inet options log
+accept service https from firewall to world.inet options log
+accept service ftp from firewall to world.inet options log
+
+The following rules will allow computers in the network ’local.lan’ to access the internet.
+
+accept service dns from local.lan to world.inet
+accept service http from local.lan to world.inet options log
+accept service https from local.lan to world.inet options log
+accept service ftp from local.lan to world.inet options log
+snat service any from local.lan to world.inet
+
+You probably want to enable ssh access from the local.lan to your firewall
+
+accept service ssh from local.lan to firewall options log,logprefix="incoming ssh"
+
+For more informantion on creating rules see Rule Basics and NAT rules.
+
+The logviewer and the connection viewer can be used to see what rules you need. In the logviewer you can see that the logprefix that is set in the rules will make it clear which rule causes which log line.
+
+After you are done configuring your rules, be sure to apply the changes to the system, so the new rules will get into effect!
+
+Now that you have a working firewall, please take a look at the Maintenance section, so your firewall will keep running as you expect.

@@ -1,0 +1,117 @@
+set nocp
+syntax on
+filetype plugin indent on
+set autowrite
+set hidden
+set mouse=a
+set swapfile
+set nu
+set relativenumber
+set t_Co=256
+set cursorcolumn
+set cursorline
+
+colorscheme gotham256
+#set shortmess+=I
+if filereadable("/etc/vim/vimrc.local")
+		source /erc/vim/vimrc.local
+	endif
+let g:netrw_menu = 1
+let g:netrw_preview = 1
+let g:netrw_winsize = 20
+let g:netrw_banner = 0
+let g:netrw_lifestyle = 1
+let g:netrw_browse_split = 0
+
+
+" default task report type
+let g:task_report_name     = 'next'
+" custom reports have to be listed explicitly to make them available
+let g:task_report_command  = []
+" whether the field under the cursor is highlighted
+let g:task_highlight_field = 1
+" can not make change to task data when set to 1
+let g:task_readonly        = 0
+" vim built-in term for task undo in gvim
+let g:task_gui_term        = 1
+" allows user to override task configurations. Seperated by space. Defaults to ''
+let g:task_rc_override     = 'rc.defaultwidth=999'
+" default fields to ask when adding a new task
+let g:task_default_prompt  = ['due', 'description']
+" whether the info window is splited vertically
+let g:task_info_vsplit     = 0
+" info window size
+let g:task_info_size       = 15
+" info window position
+let g:task_info_position   = 'belowright'
+" directory to store log files defaults to taskwarrior data.location
+let g:task_log_directory   = '~/.task'
+" max number of historical entries
+let g:task_log_max         = '20'
+" forward arrow shown on statusline
+let g:task_left_arrow      = ' <<'
+" backward arrow ...
+let g:task_left_arrow      = '>> '
+
+
+let g:vimwiki_hl_headers = 1
+let wiki_2 = {}
+let wiki_2.pRth = '/home/batan/16/vimwiki2/'
+let wiki_2.path_html = '/home/batan/16/vimwiki2_html/'
+
+let wiki_1 = {}
+let wiki_1.path = '/home/batan/16/vimwiki/'
+let wiki_1.path_html = '/home/batan/16/vimwiki_html/'
+
+
+
+let g:vimwiki_list=[wiki_1, wiki_2]
+
+let g:table_mode_always_active= 1
+let g:table_mode_tablesize_map='<Leader>tt'
+let g:table_mode_tablesize_op_map='<Leader>T'
+
+	"" code addons emmet-vim
+	""let g:user_emmet_install_global = 0
+	""autocmd FileType html,css EmmetInstall
+	""
+	""" ALE lint
+	""let g:ale_fixers = {
+		"" \ ‘html’: [‘prettier’],
+		"" \ ‘css’: [‘stylelint’],
+		"" \}let g:ale_linters = {
+			"" \ ‘html’: [‘htmlhint’],
+			"" \ ‘css’: [‘stylelint’],
+			"" \}
+			""let g:ale_linters_explicit = 1
+			""let g:ale_fix_on_save = 1
+			"
+nnoremap <leader>dd :Lexplore %:p:h<CR>
+nnoremap <Leader>da :Lexplore<CR>
+
+nmap <F8> :TagbarToggle<CR>
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\ 'html': ['prettier'],
+\ 'css': ['stylelint'],
+\}
+
+
+
+let g:ale_fix_on_save = 1
+let b:ale_linters = ['eslint']
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\ 'html': ['htmlhint'],
+\ 'css': ['stylelint'],
+\}
+
+
+	let g:ale_completion_enabled = 0
+
+set omnifunc=ale#completion#OmniFunc
+
+let g:ale_completion_autoimport = 1
+let g:airline#extensions#ale#enabled = 1

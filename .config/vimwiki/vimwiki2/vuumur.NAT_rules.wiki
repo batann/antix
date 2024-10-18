@@ -1,0 +1,82 @@
+= NAT Rules =
+
+As most system administrators will know Network Address Translation (NAT) is a solution for the shortage of IPv4 addresses. It works by translating addresses between the public addressed Internet and the privatly addressed local networks.
+Source NAT
+
+Most people talking about NAT actually mean Source NAT. Source NAT is the form of NAT where the firewall translates the source ipaddress in a connection initiated by a host with a private ipaddress. In other words: the client on your local network opening a webpage on the internet.
+
+In Vuurmuur this is handled by the SNAT action. A SNAT rule is setup like this:
+
+snat service http from local.lan to world.inet
+
+What does this mean? It basicly says: all connections of type http (webbrowsing) from you local network to the internet will be natted.
+
+Please note: the SNAT action in Vuurmuur does not create ACCEPT rules in iptables. This means that you have to create ACCEPT rules as well. In the above example this means:
+
+accept service http from local.lan to world.inet
+
+To not make life to complicated you can use one snat rule with a lot of accept rules, as is shown in this example:
+
+accept service http from local.lan to world.inet
+accept service https from local.lan to world.inet
+accept service ftp from local.lan to world.inet
+snat service any from local.lan to world.inet
+
+Remember, only traffic that is accepted first will be snatted. So there is no risk in using the service ‘any’ with snat.
+
+For setups with dynamic ipaddresses you can also use the MASQ action.
+Portforwarding
+
+If you use Vuurmuur in a NAT environment, hosts on the internet by default can’t reach the machines in the lan behind the firewall. The solution to enable this is called portforwarding. What happens is the following. A client is connecting to a port on the firewalls public ipaddress. The firewall is configured to translate this connection so it is send to a host on your network behind the firewall. To the client this is transparant.
+
+To create a portforwarding rule in Vuurmuur you select ‘Portfw’ as action, and the server as destination. Vuurmuur figures out by itself that the initial connection is made to the firewall itself. Unlike Source NAT, with portfw you don’t have to create accept rules! The portfw action takes care of that. You can use the DNAT action for creating the nat rules only.
+
+Example:
+
+portfw service smtp from world.inet to mailserver.local.lan
+
+This example will forward all smtp traffic that is send to the public ipaddress of your firewall to the host mailserver.local.lan.
+
+Note that there are some limitation to the portforwarding technique. You can only forward a service from a source to one destination. The following WILL NOT work:
+
+portfw service smtp from world.inet to mailserver.local.lan
+portfw service smtp from world.inet to anothermailserver.local.lan
+
+In this only case the second rule will be effective.
+Redirect
+
+If you run a proxyserver on your firewall you might want to redirect traffic that tries to pass the firewall on port 80 to local port 3128 so the firewall can act as a transparant proxy (see also Transparent Proxy). In this case you can use a rule like:
+
+Redirect service http from local.lan to world.inet options redirectport="3128"
+
+If you want to redirect connections that come in on the firewall itself, use:
+
+Redirect service ssh from local.lan to firewall options redirectport="1022"
+
+This way a connection to the firewall on port 22 will be handled by the program on the firewall that listens for connections on port 1022.
+
+Note: unlike Source NAT, with redirect you don’t have to create accept rules! The redirect action takes care of that.
+Bounce
+
+If you use NAT and you have servers on your local network that are publicly accesseble through portfw rules you might have run into the problem that your lan-clients cannot access the server by using its hostname. The problem is that the hostname of the server as the world knows it is connected to your public ipaddress. If your lan client tries to access it the dns lookup will return the public ipaddress and not the lan address.
+Solving this the right way
+
+In essence this is a name resolution problem. When a client from your lan requests the ipaddress of a server in the same lan the dns server ideally should return the lan-ipaddress. Three solutions on the dns levels are possible:
+
+    Setup the dns server in your lan so that it returns private addresses for the hostnames in question.
+    Setup your dns server in such a way that it will return the local addresses for requests from your lan, but the public ipaddresses for requests from the internet. See for an explanation on how to do this with bind: http://www.debian-administration.org/articles/355
+    On all clients manually add the hostname and private ipaddress to /etc/hosts
+
+There are numerous reasons why all solutions above won’t work for you, although they really are the best solutions. For example if the dns server does not support the separation, or you need to quickly replace an existing firewall. However you are strongly advised to use one of the above solutions over the bounce action.
+Solving it the wrong way, aka the bounce action
+
+The bounce action basically bounces the request from a lan client to its public ipaddress back to the server in the lan (or another lan connected to the firewall). It is essential to keep in mind that this means that all communication between the client and the server go through the firewall!
+
+A bounce rule looks like this:
+
+bounce service http from local.lan to webserver.local.lan options via_int=”inet-nic”
+
+In the option via_int the interface with the external ipaddress needs to be supplied.
+Source port randomization
+
+In Vuurmuur 0.6 the ‘random’ option was introduced for all above actions except redirect. The purpose of this option is to randomize the source ports of the connections that are NAT’d. This is useful for dealing with the current day DNS problems. For a write up on that see: http://cipherdyne.org/blog/2008/07/mitigating-dns-cache-poisoning-attacks-with-iptables.html

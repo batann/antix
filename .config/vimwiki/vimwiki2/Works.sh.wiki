@@ -1,0 +1,10 @@
+=works.sh=
+
+#!/usr/bin/env bash
+phrase="The Time Now......, 
+it's `date +'%l:%M %P'`"
+
+/usr/bin/notify-send --icon=clock -t 40000 "Time Now" "<span color='#0000ff' font='46px'><i><b>$phrase</b></i></span>" >/dev/null 2>&1
+/usr/bin/espeak "Waicky, waicky, hands of snaky. You just wasted one more hour of your life that you will never get back."
+date >>.log
+

@@ -1,0 +1,48 @@
+= Contents =
+        - [[#Top Pi-Hole Alternatives]]
+                                - [[#AdGuard Home:]]
+                                - [[#pfBlockerNG:]]
+                                - [[#DNSCrypt-Proxy:]]
+                                - [[#HostsBlock:]]
+                                - [[#dnsmasq:]]
+                                - [[#AdBlock:]]
+                                - [[#Energized Protection:]]
+                                - [[#Privoxy:]]
+                                - [[#AdAway:]]
+                                - [[#Blocky:]]
+
+= Top Pi-Hole Alternatives =
+
+Pi-hole is a popular open-source network-level ad blocker and DNS sinkhole that runs on a Raspberry Pi or other compatible devices. If you're looking for alternatives to Pi-hole, here are some open-source alternatives that offer similar functionality:
+
+==== AdGuard Home: ==== 
+AdGuard Home is an open-source ad blocker and DNS server that can be used to block ads, trackers, and malicious websites at the network level. It offers a user-friendly web interface for configuration.
+
+==== pfBlockerNG: ==== 
+pfBlockerNG is a package for the pfSense firewall that provides ad blocking and DNS filtering capabilities. It can be used to block ads and malicious domains.
+
+==== DNSCrypt-Proxy: ==== 
+DNSCrypt-Proxy is a tool that encrypts DNS traffic between your device and a DNS resolver, adding a layer of security and privacy to your DNS queries. While it doesn't block ads by default, you can pair it with blocklists or filtering rules to achieve similar functionality.
+
+==== HostsBlock: ==== 
+HostsBlock is a bash script that downloads and manages various hosts files to block ads, trackers, and malware. It can be used in conjunction with your DNS resolver of choice.
+
+==== dnsmasq: ==== 
+Dnsmasq is a lightweight DNS server and DHCP server that can be configured to block ads and filter DNS queries. While it's not as feature-rich as Pi-hole, it can be a good choice for more advanced users who want more control over their DNS filtering.
+
+==== AdBlock: ==== 
+AdBlock is an open-source DNS sinkhole and ad blocker that can run on various platforms, including Linux and Windows. It provides an easy-to-use web interface for configuration.
+
+==== Energized Protection: ==== 
+Energized Protection is a collection of ad and malware blocking hosts files that can be used with DNS filtering tools like dnsmasq, unbound, or other DNS servers.
+
+==== Privoxy: ==== 
+Privoxy is a web proxy with filtering capabilities that can be used to block ads and other unwanted content. It works by intercepting and filtering HTTP traffic.
+
+==== AdAway: ==== 
+AdAway is an open-source ad blocker for Android devices. While it's not a network-level ad blocker like Pi-hole, it can be an effective way to block ads on mobile devices.
+
+==== Blocky: ==== 
+Blocky is an open-source, self-hosted DNS filter and ad blocker that provides an easy-to-use web interface for configuration.
+
+These alternatives offer various features and levels of complexity, so you can choose the one that best suits your needs and technical expertise. Whether you want a straightforward ad blocker or a more advanced DNS filtering solution, there are open-source options available to help you improve your online privacy and security.

@@ -1,0 +1,6 @@
+
+===GPG key===
+[[GPG key]]
+===SSH key===
+[[create ssh key]]
+[[create and coppy ssh-key]]

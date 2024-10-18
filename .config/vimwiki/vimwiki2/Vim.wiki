@@ -1,0 +1,48 @@
+= Contents =
+    - [[#Vim]]
+            - [[#My_vimrc]]
+            - [[#vimrc configuration egs]]
+            - [[#Vim Startup Page]]
+            - [[#Vimwiki Cheat Sheet]]
+            - [[#vim_cheat]]
+            - [[#vimwiki]]
+            - [[#README_links]]
+            - [[#Netrw]]
+            - [[#Vim Courses]]
+            - [[#fzf-vim]]
+        - [[#Neovim]]
+
+=Vim=
+
+### **Random:**
+	%s/^./\U&/
+	_Capitalize first letter in line_
+
+
+=== My_vimrc ===
+[[My_vimrc]] _old_
+[[My_vimrc_in_progress]] _new_
+=== vimrc configuration egs ===
+[[vimrc configuration egs]]
+===Vim Startup Page===
+[[vim startup page]]
+===Vimwiki Cheat Sheet===
+[[Vimwiki Cheatsheetm]]
+=== vim_cheat ===
+[[vim cheat]]
+=== vimwiki ===
+[[vimwiki]]
+=== README_links ===
+[[MISC_links_README]]
+=== Netrw ===
+[[article netrw]]
+
+===Vim Courses===
+[[Vim COurses]]
+https://vimawesome.com/?q=cat%3Acompletion
+http://www.gpick.org/blog/vim/as-dedicated-note-taking-application.html
+https://phpzag.com/demo/create-event-calendar-with-jquery-php-and-mysql/
+=== fzf-vim ===
+[[fzf-vim]]
+===Neovim===
+[[Neovim]]

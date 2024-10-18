@@ -1,0 +1,59 @@
+= Contents =
+    - [[#TWBM]]
+    - [[#Examples]]
+        - [[#FTS examples]]
+            - [[#FTS combined with tag filtering]]
+            - [[#Match exact taglist]]
+            - [[#Open all matching sites non-interactively]]
+            - [[#Search -> select interactively -> pipe bookmark id downstream for processing]]
+            - [[#Search by any tag and sort by bookmark age ascending]]
+            - [[#Adding URI to local files]]
+            - [[#Adding shell commands as URI]]
+        - [[#Configuration]]
+
+= TWBM =
+<code>
+pip3 install twbm
+</code>
+= Examples =
+
+===  FTS examples === 
+(https://www.sqlite.org/fts5.htm) 
+
+twbm search 'security "single-page"'
+twbm search '"https://securit""*" '
+twbm search '^security'
+twbm search 'postgres OR sqlite'
+twbm search 'security NOT keycloak'
+
+=== FTS combined with tag filtering ===
+twbm search -t tag1,tag2 -n notag1 <searchquery>
+
+=== Match exact taglist ===
+twbm search -e tag1,tag2
+
+=== Open all matching sites non-interactively ===
+twbm search poker --np | twbm open
+
+===  Search -> select interactively -> pipe bookmark id downstream for processing ===
+twbm search xxxxx | twbm update -t x
+
+=== Search by any tag and sort by bookmark age ascending ===
+twbm search -T tag1,tag2 -O
+
+=== Adding URI to local files ===
+twbm add /home/user/presentation.pptx tag1,tag2 --title 'My super Presentation'
+twmb add '$HOME/vimwiki/e4m/poker-points.png' --title 'Poker Points'
+
+=== Adding shell commands as URI ===
+twbm add "shell::vim +/'# SqlAlchemy' sql.md" shell,sql,doc --title 'sqlalchemy snippets'
+
+== Configuration ==
+
+Location of sqlite database:
+
+# aliases which I use
+alias b="twbuku --db $HOME/bm.db -n 1000 --deep"  # using patched original buku
+
+alias bb="TWBM_DB_URL=sqlite:////$HOME/bm.db twbm search"  # using extended CLI tool
+alias bbb="TWBM_DB_URL=sqlite:////$HOME/bm.db twbm"

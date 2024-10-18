@@ -1,0 +1,23 @@
+= Vim-Taskwarrior Commands =
+
+:TW [args]            " task [filter report arguments]
+:TWUndo               " undo the previous modification
+:TWEditTaskrc         " edit ~/.taskrc
+:TWEditVitrc          " edit ~/.vitrc
+:TWDeleteCompleted    " clear all completed tasks
+:TWAdd                " add new tasks interactively
+:TWAnnotate           " add an annotation
+:TWComplete           " mark task done
+:TWDelete             " deleta a task
+:TWDeleteAnnotation   " delete an annotation
+:TWModifyInteractive  " make changes to a task interactively (use with caution!)
+:TWReportInfo         " run the info report
+:TWReportSort [args]  " overide the sort method, reset to default if no arguments passed
+:TWSync               " synchronise with taskd server
+:TWToggleReadonly     " toggle readonly option
+:TWToggleHLField      " toggle highlight field option
+:TWHistory            " list history records using unite.vim
+:TWHistoryClear       " clear history
+:TWBookmark           " list bookmarks using unite.vim
+:TWBookmarkClear      " clear bookmarks
+

@@ -1,0 +1,83 @@
+= Contents =
+    - [[#User Resources]]
+        - [[#Introduction]]
+        - [[#Useful Extensions]]
+        - [[#Disable JIT]]
+        - [[#Disable WebAssembly]]
+        - [[#Disable Weak SSL Cipher Suites]]
+        - [[#Disable Media Router]]
+        - [[#Linux]]
+
+= User Resources =
+
+== Introduction ==
+
+   This page collects information about extensions and options for
+   Chromium that may be useful for users.
+
+   Please submit a [14]PR to ungoogled-chromium-wiki if you want to
+   contribute.
+
+== Useful Extensions ==
+
+   TODO: bulleted list of extensions, each with a short explanation of
+   their purpose, benefits, and potential drawbacks
+     * [15]chromium-web-store - Check and/or install updates to CRX-based
+       extensions (i.e. not exclusively from the Chrome Web Store). It
+       supports optional automatic updates. This is an extension-based
+       implementation of [16]Issue #285.
+
+== Disable JIT ==
+
+   The [17]JIT optimization of JavaScript is a [18]known attack vector. It
+   can be disabled with the launch flag --js-flags='--jitless'.
+
+   JavaScript will still run with JIT disabled, but websites may be
+   slower, especially script-heavy apps like Google Maps. Disabling JIT
+   also disables WebAssembly.
+
+== Disable WebAssembly ==
+
+   (Suggested in [19]#578)
+
+   Like JavaScript, WebAssembly is another potential attack vector. See
+   [20]#578 for the details of exploiting WebAssembly.
+
+   See [21]stevenspringett/disable-webassembly for instructions on
+   disabling WebAssembly.
+
+== Disable Weak SSL Cipher Suites ==
+
+   Disable weak SSL cipher suites to prevent usage in SSL-encrypted
+   traffic like HTTPS.
+
+   The command-line flag is --cipher-suite-blacklist, with a
+   comma-delimited list of cipher suites in hexadecimal. There must be
+   exactly four hexadecimal digits per cipher suite. Example:
+chromium --cipher-suite-blacklist=0x000a,0x009c,0x009d,0x002f,0x0035
+
+== Disable Media Router ==
+
+   Disabling Media Router prevents the browser from sending UDP
+   broadcasts. (NOTE: Broadcasts happen even if the media router extension
+   is disabled). This can be achieved by setting the policies:
+
+   == Linux ==
+
+   Create or add the following JSON content to
+   /etc/chromium/policies/managed/policies.json:
+{
+  "EnableMediaRouter": false
+}
+
+   Here is an example of policies.json with more configuration settings:
+{
+  "EnableMediaRouter": false,
+  "DefaultWebUsbGuardSetting": 2,
+  "DefaultWebBluetoothGuardSetting": 2,
+  "HomepageLocation": "http://site.com",
+  "NativeMessagingUserLevelHosts": false,
+  "WPADQuickCheckEnabled": false,
+  "BackgroundModeEnabled": false
+}
+

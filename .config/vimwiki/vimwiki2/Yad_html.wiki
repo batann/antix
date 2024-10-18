@@ -1,0 +1,33 @@
+=Yad -html=
+
+
+
+
+
+
+
++===================================================================================================================+
+|                                   YAD - DIALOG - with HTML support                                                |
++===================================================================================================================+
+| dependencies: | software         | downloads:                                                                  |  |
+|---------------+------------------+-----------------------------------------------------------------------------+--|
+|               | intltool         | https://launchpadlibrarian.net/199705878/intltool-0.51.0.tar.gz             |  |  
+|               | gtk-4.9.4        | https://gnome.mirror.digitalpacific.com.au/sources/gtk/4.9/gtk-4.9.4.tar.xz |  |  
+|               | auto-conf        | http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.xz                      |  |  
+|               | webkit-gtk2.40.5 | https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz                      |  |  
++---------------+------------------+-----------------------------------------------------------------------------+--+		
+
+
+===fin.sh===
+_or use the fin.sh script and enable 'YAD -html'_
+[[fin.sh]]
+file://home/batan/16/sh/fin.sh
+
+		
+
+
+
+
+
+
+

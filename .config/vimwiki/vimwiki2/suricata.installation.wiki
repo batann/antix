@@ -1,0 +1,300 @@
+3. Installation
+
+Before Suricata can be used it has to be installed. Suricata can be installed on various distributions using binary packages: Binary packages.
+
+For people familiar with compiling their own software, the Source method is recommended.
+
+Advanced users can check the advanced guides, see Arch Based.
+3.1. Source
+
+Installing from the source distribution files gives the most control over the Suricata installation.
+
+The Suricata source distribution files should be verified before building the source, see Verifying Suricata Source Distribution Files.
+
+Basic steps:
+
+tar xzvf suricata-6.0.0.tar.gz
+cd suricata-6.0.0
+./configure
+make
+make install
+
+This will install Suricata into /usr/local/bin/, use the default configuration in /usr/local/etc/suricata/ and will output to /usr/local/var/log/suricata
+3.1.1. Common configure options
+
+--disable-gccmarch-native
+
+    Do not optimize the binary for the hardware it is built on. Add this flag if the binary is meant to be portable or if Suricata is to be used in a VM.
+
+--prefix=/usr/
+
+    Installs the Suricata binary into /usr/bin/. Default /usr/local/
+
+--sysconfdir=/etc
+
+    Installs the Suricata configuration files into /etc/suricata/. Default /usr/local/etc/
+
+--localstatedir=/var
+
+    Setups Suricata for logging into /var/log/suricata/. Default /usr/local/var/log/suricata
+
+--enable-lua
+
+    Enables Lua support for detection and output.
+
+--enable-geoip
+
+    Enables GeoIP support for detection.
+
+--enable-dpdk
+
+    Enables DPDK packet capture method.
+
+3.1.2. Dependencies and compilation
+3.1.2.1. Ubuntu/Debian
+
+Note
+
+The following instructions require sudo to be installed.
+Minimal dependencies for Ubuntu/Debian
+
+sudo apt -y install autoconf automake build-essential cargo \
+    cbindgen libjansson-dev libpcap-dev libpcre2-dev libtool \
+    libyaml-dev make pkg-config rustc zlib1g-dev
+
+3.1.2.2. CentOS, AlmaLinux, RockyLinux, Fedora, etc
+
+Note
+
+The following instructions require sudo to be installed.
+
+To install all minimal dependencies, it is required to enable extra package repository in most distros. You can enable it possibly by one of the following ways:
+
+sudo dnf -y update
+sudo dnf -y install epel-release dnf-plugins-core
+# AlmaLinux 8 / RockyLinux 8
+sudo dnf config-manager --set-enabled powertools
+# AlmaLinux 9 / RockyLinux 9
+sudo dnf config-manager --set-enable crb
+# Oracle Linux 8
+sudo dnf config-manager --set-enable ol8_codeready_builder
+# Oracle Linux 9
+sudo dnf config-manager --set-enable ol9_codeready_builder
+
+Minimal dependencies for RPM-based distributions
+
+sudo dnf install -y rustc cargo cbindgen
+sudo dnf install -y gcc gcc-c++ jansson-devel libpcap-devel \
+    libyaml-devel make pcre2-devel zlib-devel
+
+3.1.2.3. Compilation
+
+Follow these steps from your Suricata directory:
+
+./configure # you may want to add additional parameters here
+# ./configure --help to get all available parameters
+# j is for adding concurrency to make; the number indicates how much
+# concurrency so choose a number that is suitable for your build system
+make -j8
+make install # to install your Suricata compiled binary
+# make install-full - installs configuration and rulesets as well
+
+3.1.2.4. Rust support
+
+    Rust packages can be found in package managers but some distributions don't provide Rust or provide outdated Rust packages. In case of insufficient version you can install Rust directly from the Rust project itself:
+
+    1) Install Rust https://www.rust-lang.org/en-US/install.html
+    2) Install cbindgen - if the cbindgen is not found in the repository
+       or the cbindgen version is lower than required, it can be
+       alternatively installed as: cargo install --force cbindgen
+    3) Make sure the cargo path is within your PATH environment
+       echo 'export PATH="~/.cargo/bin:${PATH}"' >> ~/.bashrc
+       export PATH="~/.cargo/bin:${PATH}"
+
+3.1.3. Auto-Setup
+
+You can also use the available auto-setup features of Suricata:
+
+./configure && make && sudo make install-conf
+
+make install-conf would do the regular "make install" and then it would automatically create/setup all the necessary directories and suricata.yaml for you.
+
+./configure && make && sudo make install-rules
+
+make install-rules would do the regular "make install" and then it would automatically download and set up the latest ruleset from Emerging Threats available for Suricata.
+
+./configure && make && sudo make install-full
+
+make install-full would combine everything mentioned above (install-conf and install-rules) and will present you with a ready-to-run (configured and set-up) Suricata.
+3.2. Binary packages
+3.2.1. Ubuntu from Personal Package Archives (PPA)
+
+For Ubuntu, OISF maintains a PPA suricata-stable that always contains the latest stable release.
+
+Note
+
+The following instructions require sudo to be installed.
+
+Setup to install the latest stable Suricata:
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt-get update
+
+Then, you can install the latest stable with:
+
+sudo apt-get install suricata
+
+After installing you can proceed to the Basic setup.
+
+OISF launchpad: suricata-stable.
+3.2.1.1. Upgrading
+
+To upgrade:
+
+sudo apt-get update
+sudo apt-get upgrade suricata
+
+3.2.1.2. Remove
+
+To remove Suricata from your system:
+
+sudo apt-get remove suricata
+
+3.2.1.3. Getting Debug or Pre-release Versions
+
+Note
+
+The following instructions require sudo to be installed.
+
+If you want Suricata with built-in (enabled) debugging, you can install the debug package:
+
+sudo apt-get install suricata-dbg
+
+If you would like to help test the Release Candidate (RC) packages, the same procedures apply, just using another PPA: suricata-beta:
+
+sudo add-apt-repository ppa:oisf/suricata-beta
+sudo apt-get update
+sudo apt-get upgrade
+
+You can use both the suricata-stable and suricata-beta repositories together. Suricata will then always be the latest release, stable or beta.
+
+OISF launchpad: suricata-beta.
+3.2.1.4. Daily Releases
+
+Note
+
+The following instructions require sudo to be installed.
+
+If you would like to help test the daily build packages from our latest git(dev) repository, the same procedures as above apply, just using another PPA, suricata-daily:
+
+sudo add-apt-repository ppa:oisf/suricata-daily-allarch
+sudo apt-get update
+sudo apt-get upgrade
+
+Note
+
+Please have in mind that this is packaged from our latest development git master and is therefore potentially unstable.
+
+We do our best to make others aware of continuing development and items within the engine that are not yet complete or optimal. With this in mind, please refer to Suricata's issue tracker on Redmine for an up-to-date list of what we are working on, planned roadmap, and to report issues.
+
+OISF launchpad: suricata-daily.
+3.2.2. Debian
+
+Note
+
+The following instructions require sudo to be installed.
+
+In Debian 9 (stretch) and later do:
+
+sudo apt-get install suricata
+
+In the "stable" version of Debian, Suricata is usually not available in the latest version. A more recent version is often available from Debian backports, if it can be built there.
+
+To use backports, the backports repository for the current stable distribution needs to be added to the system-wide sources list. For Debian 10 (buster), for instance, run the following as root:
+
+echo "deb http://http.debian.net/debian buster-backports main" > \
+    /etc/apt/sources.list.d/backports.list
+apt-get update
+apt-get install suricata -t buster-backports
+
+3.2.3. CentOS, AlmaLinux, RockyLinux, Fedora, etc
+
+RPMs are provided for the latest release of Enterprise Linux. This includes CentOS Linux and rebuilds such as AlmaLinux and RockyLinux. Additionally, RPMs are provided for the latest supported versions of Fedora.
+
+RPMs specifically for CentOS Stream are not provided, however the RPMs for their related version may work fine.
+3.2.3.1. Installing From Package Repositories
+3.2.3.1.1. CentOS, RHEL, AlmaLinux, RockyLinux, etc Version 8+
+
+Note
+
+The following instructions require sudo to be installed.
+
+sudo dnf install epel-release dnf-plugins-core
+sudo dnf copr enable @oisf/suricata-7.0
+sudo dnf install suricata
+
+3.2.3.1.2. CentOS 7
+
+sudo yum install epel-release yum-plugin-copr
+sudo yum copr enable @oisf/suricata-7.0
+sudo yum install suricata
+
+3.2.3.1.3. Fedora
+
+sudo dnf install dnf-plugins-core
+sudo dnf copr enable @oisf/suricata-7.0
+sudo dnf install suricata
+
+3.2.3.2. Additional Notes for RPM Installations
+
+    Suricata is pre-configured to run as the suricata user.
+
+    Command line parameters such as providing the interface names can be configured in /etc/sysconfig/suricata.
+
+    Users can run suricata-update without being root provided they are added to the suricata group.
+
+    Directories:
+
+        /etc/suricata: Configuration directory
+
+        /var/log/suricata: Log directory
+
+        /var/lib/suricata: State directory rules, datasets.
+
+3.2.3.2.1. Starting Suricata On-Boot
+
+The Suricata RPMs are configured to run from Systemd.
+
+Note
+
+The following instructions require sudo to be installed.
+
+To start Suricata:
+
+sudo systemctl start suricata
+
+To stop Suricata:
+
+sudo systemctl stop suricata
+
+To have Suricata start on-boot:
+
+sudo systemctl enable suricata
+
+To reload rules:
+
+sudo systemctl reload suricata
+
+3.2.4. Arch Based
+
+The ArchLinux AUR contains Suricata and suricata-nfqueue packages, with commonly used configurations for compilation (may also be edited to your liking). You may use makepkg, yay (sample below), or other AUR helpers to compile and build Suricata packages.
+
+yay -S suricata
+
+3.3. Advanced Installation
+
+If you are using Ubuntu, you can follow Installation from GIT.
+
+For other various installation guides for installing from GIT and for other operating systems, please check (bear in mind that those may be somewhat outdated): https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Installation
+

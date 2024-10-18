@@ -1,0 +1,62 @@
+= tar and rsync dir struckture =
+
+== rsync ==
+ the differences between two sets of files across the network connection, using an efficient checksum-search algorithm. Make sure it is installed on all servers for remote copy. The syntax is as follows to copy directories tree only:
+<code>a
+rsync -av -f"+ */" -f"- *" /path/to/src /path/to/dest/
+rsync -av -f"+ */" -f"- *" /path/to/apache/logs/ root@www433.nixcraft.net.in:/path/to/apache/logs/
+</code>
+If you are using an older rsync version, try:
+<code>
+rsync -av --include='*/' --exclude='*' /path/to/src /path/to/dest/
+rsync -av --include='*/' --exclude='*' /path/to/apache/logs/ root@www433.nixcraft.net.in:/path/to/apache/logs/
+</code>
+rsync Command For Directory Structures / Tree Only
+
+Consider the following layout in /var/logs/apache/ for each domain:
+<code>
+cricketnow.in/
+cyberciti.biz/
+hexindia.net/
+io9.in/
+nixcraft.com/
+theos.in/
+</code>
+You can sync just directories by excluding everything else. Open a command-line terminal (select Applications > Accessories > Terminal), and then type the following commands or login using ssh to the remote server. You want to copy all dirs i.e. exclude everything that is not a directory, enter:
+<code>
+# cd /var/log/apache/
+# rsync -av -f"+ */" -f"- *" . root@server2.nixcraft.com:/var/log/apache/
+</code>
+Sample outputs:
+<code>
+building file list ... done
+./
+cricketnow.in/
+cyberciti.biz/
+hexindia.net/
+io9.in/
+nixcraft.com/
+theos.in/
+
+sent 388 bytes  received 98 bytes  972.00 bytes/sec
+total size is 0  speedup is 0.00
+</code>
+You can also make local copies as follows:
+<code>
+# cd /var/log/apache/
+# rsync -av -f"+ */" -f"- *" . /jailfs/apache/httpd_root/var/log/apache/
+</code>
+
+
+== tar dir structures ==
+
+<code>
+find First -type d -print0 | xargs -0 tar cf dir_template.tar --no-recursion
+</code>
+Where First is the top level directory that you want to save the structure of.
+
+Copy dir_template.tar to your target destination, then:
+
+<code>
+tar xf dir_template.tar
+</code>

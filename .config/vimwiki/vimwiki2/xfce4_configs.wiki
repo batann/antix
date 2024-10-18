@@ -1,0 +1,14 @@
+= Xfce4-configuration-flie-directories =
+
+*In .config directory:*
+.config/autostart
+.config/Thunar
+.config/Xfce4
+.local/share/xfce4
+
+*Note that there's a global set of configuration files in*
+/etc/xdg/xfce4
+/etc/xdg/Thunar
+/etc/xdg/menus
+
+tar vfcz xfce4.backup.tar.gz .config/autostart .config/Thunar .config/Xfce4 .local/share/xfce4 /etc/xdg/xfce4 /etc/xdg/Thunar /etc/xdg/menus

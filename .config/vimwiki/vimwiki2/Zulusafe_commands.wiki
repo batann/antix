@@ -1,0 +1,10 @@
+==zulusafe commands==
+
+To add a file to a wallet,run 				: zuluSafe-cli --add <path to file>
+To delete a file in a wallet,run 			: zuluSafe-cli --delete <file name>
+To get a file from the wallet,run 			: zuluSafe-cli --get <file name>
+To add all files in a folder,run 			: zuluSafe-cli --add-all <folder path>
+To get a list of files in the wallet,run 		: zuluSafe-cli --list
+To get all files from the wallet,run 			: zuluSafe-cli --get-all
+To get a list of wallets,run 				: zuluSafe-cli --wallets
+

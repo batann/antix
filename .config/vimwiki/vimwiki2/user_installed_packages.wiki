@@ -1,0 +1,54 @@
+axel                                 light command line download accelerator
+bleachbit                            delete unnecessary files from the system
+buku                                 Powerful command-line bookmark manager
+chromium                             web browser
+cmus                                 lightweight ncurses audio player
+ddgr                                 DuckDuckGo from the terminal
+espeak                               Multi-lingual software speech synthesizer
+exuberant-ctags                      build tag file indexes of source code definitions
+fairymax                             xboard compatible chess and chess-variant engine
+falkon                               lightweight web browser based on Qt WebEngine
+festvox-us-slt-hts                   : US English voice for Festival. 32kHz sample rate, HTS
+ffmpeg                               Tools for transcoding, streaming and playing of multimedia files
+fzf                                  general-purpose command-line fuzzy finder
+gnome-software-plugin-flatpak        Flatpak support for GNOME Software
+grub-customizer                      GUI to configure GRUB2 and BURG
+grub-imageboot                       boot iso, harddisk and floppy images with grub2 and syslinux memdisk
+jq                                   lightweight and flexible command-line JSON processor
+kodi                                 Open Source Home Theatre (executable binaries)
+kodi-repository-kodi                 Open Source Home Theatre (official addons repository feed)
+lazpaint-qt5                         Image editor with raster and  vector layers (qt5)
+links2                               Web browser running in both graphics and text mode
+man2html                             browse man pages in your web browser
+mat2                                 Metadata anonymisation toolkit v2
+megatools                            Command-line client for the Mega cloud storage service
+mpv                                  video player based on MPlayer/mplayer2
+neovim                               heavily refactored vim fork
+nodau                                simple console based note taking program
+openssh-server                       secure shell (SSH) server, for secure access from remote machines
+pandoc                               general markup converter
+pipx                                 execute binaries from Python packages in isolated environments
+pwman3                               console password management application
+python3-pip                          Python package installer
+ranger                               Console File Manager with VI Key Bindings
+rename                               Perl extension for renaming multiple files
+renameutils                          Programs to make file renaming easier
+rofi                                 window switcher, run dialog and dmenu replacement
+speedtest-cli                        Command line interface for testing internet bandwidth using speedtest.net
+stacer                               Linux system optimizer and monitoring
+stockfish                            strong chess engine, to play chess against
+sweeper                              history and temporary file cleaner
+tesseract-ocr                        Tesseract command line OCR tool
+timewarrior                          feature-rich time tracking utility
+tldr                                 Haskell tldr client
+trash-cli                            command line trashcan utility
+tree                                 displays an indented directory tree, in color
+vim                                  Vi IMproved - enhanced vi editor
+vit                                  full-screen terminal interface for Taskwarrior
+vnstat                               console-based network traffic monitor
+w3m                                  WWW browsable pager with excellent tables/frames support
+xboard                               X Window System Chess Board
+xcape                                Configure modifier keys to act as other keys when pressed and released
+xterm                                X terminal emulator
+yt-dlp                               downloader of videos from YouTube and other sites
+

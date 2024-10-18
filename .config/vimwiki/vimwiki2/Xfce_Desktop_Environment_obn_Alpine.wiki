@@ -1,0 +1,61 @@
+= Contents =
+        - [[#Xfce Desktop On Alpine OS]]
+                        - [[#Update Alpine Linux:]]
+                        - [[#Install XFCE:]]
+                        - [[#Install Display Manager (Optional):]]
+                        - [[#Enable the Display Manager:]]
+                        - [[#Reboot your System:]]
+                        - [[#Log In to XFCE:]]
+
+= Xfce Desktop On Alpine OS =
+
+_To install the XFCE desktop environment on a fresh install of Alpine Linux, you can follow these steps:_
+
+=== Update Alpine Linux: ===
+_Before you begin, it's a good practice to update the package list and upgrade any existing 
+packages on your system. Open a terminal and run the following commands as the root user or with sudo:_
+
+`    sh
+
+sudo apk update
+sudo apk upgrade
+`
+=== Install XFCE: ===
+_XFCE is available as a package in the Alpine Linux repositories. You can install it using the apk package manager. Run the following command:_
+`
+sh
+
+sudo apk add xfce4 xfce4-terminal
+`
+This command will install the XFCE desktop environment and the XFCE terminal emulator.
+
+=== Install Display Manager (Optional): ===
+_If you want to use a display manager to log in to your XFCE session, you can install one. A popular choice is LightDM. Install it using:_
+`
+sh
+
+sudo apk add lightdm lightdm-gtk-greeter
+`
+=== Enable the Display Manager: ===
+_To enable the display manager to start automatically when you boot your system, you can use the following commands:_
+`
+sh
+
+sudo rc-update add lightdm default
+sudo rc-service lightdm start
+`
+Replace "lightdm" with the name of your chosen display manager if you installed a different one.
+
+=== Reboot your System: ===
+_After completing the installation and configuration, it's a good idea to reboot your system to ensure that the XFCE desktop environment starts correctly:_
+`
+sh
+
+    sudo reboot
+`
+=== Log In to XFCE: ===
+
+After your system reboots, you should see the display manager (e.g., LightDM) prompting you to log in.
+Select your username and provide your password to log in to the XFCE desktop environment.
+You should now have the XFCE desktop environment up and running on your Alpine Linux system. You can customize 
+your XFCE desktop to your liking and install additional software as needed.

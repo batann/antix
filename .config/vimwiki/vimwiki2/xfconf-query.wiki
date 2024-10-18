@@ -1,0 +1,23 @@
+= Contents =
+
+
+
+*removing an existing command from key*``
+xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Alt>Left' -r
+``
+
+*adding <Super> and Left Arrow_*``
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Left' -s 'your_command_here'
+``
+_Replace <Super> with <Windows> if that's the key you want to use. Also, replace 'your command here' with the actual command you want to associate with this shortcut._
+
+
+*For example, if you want to open Thunar with <Super> + Left, you would use:*``
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Left' -s 'thunar'
+``
+=== Finally ===
+
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Down' -s 'xfwm4-tile-down-key'
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Up' -s 'xfwm4-tile-up-key'
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Right' -s 'xfwm4-tile-right-key'
+xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>Left' -s 'xfwm4-tile-left-key'

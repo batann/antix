@@ -1,0 +1,8 @@
+= Maintainance =
+
+Most important issue that needs care is managing the logs produced by Vuurmuur and by your firewall system. With de Debian packages, logrotate scripts are automaticaly installed. If you install from source, an example logrotate script can be found in /usr/share/vuurmuur/scripts/.
+
+Depending on your rules configuration and the traffic of you site, the logs can grow very quickly. So don’t skip this step!
+Backup
+
+Another important point for making sure your system will keep running as expected, and will be back online quickly after a disk crash or user mistake, is making backups. All Vuurmuur configuration data is stored in /etc/vuurmuur if you chose the default installation locations. So simply doing a tar cvfz vuurmuur-backup.tar.gz /etc/vuurmuur/ is enough to backup your configuration. Store the backup in a secure place (not on the firewall itself of course).

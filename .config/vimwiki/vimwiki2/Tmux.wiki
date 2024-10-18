@@ -1,0 +1,11 @@
+=tmux=
+[[random tmux commands]]
+
+
+
+==tmux config==
+==tmux on start==
+[[tmux on start]]
+
+
+

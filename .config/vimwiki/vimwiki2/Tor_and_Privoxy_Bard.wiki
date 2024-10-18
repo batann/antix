@@ -1,0 +1,29 @@
+Installation:
+
+Update repository lists: sudo apt update
+Install Tor: sudo apt install tor
+Install Privoxy: sudo apt install privoxy
+Configuration:
+
+Tor:
+
+Edit Tor configuration file: sudo nano /etc/tor/torrc
+Uncomment the line #Uncomment the following to define an exit relay to use by default.
+Choose a reliable exit node using Tor Project's website (<invalid URL removed>)
+Add the chosen exit node after "ExitNodes {". Example: ExitNodes {relay1.exit-node.com:9030}
+Save and close the file.
+Privoxy:
+
+Edit Privoxy configuration file: sudo nano /etc/privoxy/config
+Find the line "listen -t 127.0.0.1:8118". This binds Privoxy to localhost port 8118.
+Change it to "listen -t localhost:8118 # Tor" (with a # before the original line). This comments out the original binding and sets up a new one for Tor.
+Find the line "forward localhost:9050". This directs Privoxy to Tor on port 9050.
+Add a # before this line to comment it out.
+Find the line "forward / localhost:9050 # Tor". This also directs Privoxy to Tor.
+Uncomment this line.
+Save and close the file.
+Restart services:
+
+Restart Tor: sudo systemctl restart tor
+Restart Privoxy: sudo systemctl restart privoxy
+

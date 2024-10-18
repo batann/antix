@@ -1,0 +1,16 @@
+
+* [ ] send-notify
+	* [ ]  gui for send-notify on login
+	* [ ] backgrounds
+	* [ ] logo
+* [ ]  project managment tool
+* [ ]  neovim for coding
+* [ ]  firefox browser-setup
+	* [ ] configuration privacy focused
+	* [ ] homepage incl local dashboard
+	* [ ] 
+* [ ]  proxy
+	* [ ] tor & privoxy
+* [ ] searex
+* [ ] 
+

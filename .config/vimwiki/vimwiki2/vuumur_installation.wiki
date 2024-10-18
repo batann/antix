@@ -1,0 +1,13 @@
+= Installation =
+== Installation instructions for installing from source ==
+
+Installing from source is made easy with an install script. The steps that need to be taken for this type of installation will be explained below.
+
+1)    download the archive, e.g. vuurmuur-0.8.1.tar.gz, and store it on your disk
+2)    unpack the archive with the command gzip -cd vuurmuur-0.8.1.tar.gz | tar xvf -
+3)    enter the directory vuurmuur-0.8.1
+4)    Now run the install script: ./installer/install.sh --install --defaults (this will use the default locations, /etc/vuurmuur for the config, /usr/bin/ for the binaries, /usr/share/vuurmuur for misc files and /var/log/vuurmuur for logs)
+5)    After some waiting you should get a success message.
+6)    To make sure Vuurmuur gets started on boot, please look at the vuurmuur-initd.sh script in /usr/share/vuurmuur/scripts/.
+7)    To get an initial config run vuurmuur_conf --wizard
+

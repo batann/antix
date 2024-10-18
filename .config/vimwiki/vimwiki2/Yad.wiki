@@ -1,0 +1,8 @@
+= Yad =
+
+
+===Yad EG.===
+ [[Yad eg]]
+
+===Yad Dynamic --list===
+[[Dynamic List]]

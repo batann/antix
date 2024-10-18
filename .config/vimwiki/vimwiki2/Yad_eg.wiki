@@ -1,0 +1,208 @@
+=Yad=
+
+*Sun 12 Mar 2023 04:52:24 PM AEDT*
+
+== Logout dialog ==
+
+Show logout dialog.
+
+Additional software:
+
+  • wmctrl (http://tripie.sweb.cz/utils/wmctrl/)
+
+code:
+`
+ 1 #! /bin/bash
+ 2
+ 3 action=$(yad --width 300 --entry --title "System Logout" \
+ 4     --image=gnome-shutdown \
+ 5     --button="Switch User:2" \
+ 6     --button="gtk-ok:0" --button="gtk-close:1" \
+ 7     --text "Choose action:" \
+ 8     --entry-text \
+ 9     "Power Off" "Reboot" "Suspend" "Logout")
+10 ret=$?
+11
+12 [[ $ret -eq 1 ]] && exit 0
+13
+14 if [[ $ret -eq 2 ]]; then
+15     gdmflexiserver --startnew &
+16     exit 0
+17 fi
+18
+19 case $action in
+20     Power*) cmd="sudo /sbin/poweroff" ;;
+21     Reboot*) cmd="sudo /sbin/reboot" ;;
+22     Suspend*) cmd="sudo /bin/sh -c 'echo disk > /sys/power/state'" ;;
+23     Logout*)
+24     case $(wmctrl -m | grep Name) in
+25         *Openbox) cmd="openbox --exit" ;;
+26         *FVWM) cmd="FvwmCommand Quit" ;;
+27             *Metacity) cmd="gnome-save-session --kill" ;;
+28         *) exit 1 ;;
+29     esac
+30     ;;
+31     *) exit 1 ;;
+32 esac
+33
+34 eval exec $cmd
+`
+
+== Run dialog ==
+
+Run dialog with history, URI recognition and run-in-xterm functions
+
+Additional software:
+
+  • xterm
+  • perl
+
+code:
+`
+ 1 #! /bin/bash
+ 2
+ 3 XTERM="xterm"
+ 4
+ 5 # create history file
+ 6 mkdir -p ${XDG_CACHE_HOME:-$HOME/.cache}/
+ 7 HISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/ix-run.history
+ 8 touch $HISTFILE
+ 9
+10 # create and run dialog
+11 TITLE="Run command"
+12 TEXT="\nEnter command to execute:\n"
+13 rcmd=$('yad --width=500 --center --window-icon="gtk-execute" --name="${0##*/}" --title="$TITLE" --text="$TEXT" --image="gtk-execute" --entry --editable --rest="$HISTFILE")
+14
+15 [[ -z "$rcmd" ]] && exit 0
+16
+17 # run command
+18 case $rcmd in
+19     http://*|https://*|ftp://*)
+20     xdg-open $rcmd &
+21     ;;
+22     mailto://*)
+23     xdg-email $rcmd &
+24     ;;
+25     man://*)
+26     eval $XTERM -e "man ${rcmd#man://}" &
+27     ;;
+28     telnet*|ssh*)
+29     eval $XTERM -e "$rcmd" &
+30     ;;
+31     *)
+32     eval $rcmd &
+33     ;;
+34 esac
+35
+36 # add command to history
+37 grep -q -F "$rcmd" $HISTFILE || sed -i "1 i $rcmd" $HISTFILE
+38
+39 exit 0
+`
+== Autostart editor ==
+
+Edit content of $HOME/.config/autostart.
+
+code:
+`
+ 1 #! /bin/bash
+ 2
+ 3 config_dir=${XDG_CONFIG_HOME:-$HOME/.config}
+ 4 results=$(mktemp --tmpdir autostart.XXXXXXXXXX)
+ 5
+ 6 for f in $config_dir/autostart/*.desktop; do
+ 7     grep -m 1 -e '^[[:blank:]]*Exec' $f | cut -d = -f 2
+ 8     grep -m 1 -e '^[[:blank:]]*Name' $f | cut -d = -f 2
+ 9     grep -m 1 -e '^[[:blank:]]*Comment' $f | cut -d = -f 2
+10 done | yad --width=500 --height=300 --title="Autostart editor" --image="gtk-execute" \
+11            --text="Add/remove autostart items" --list --editable --print-all \
+12            --multiple --column="Command" --column="Name" --column="Description" > $results
+13
+14 if [[ ${PIPESTATUS[1]} -eq 0 ]]; then
+15     rm -f $config_dir/autostart/*.desktop
+16     i=0
+17     cat $results | while read line; do
+18         eval $(echo $line | awk -F'|' '{printf "export NAME=\"%s\" COMMENT=\"%s\" COMMAND=\"%s\"", $2, $3, $1}')
+19         cat > $config_dir/autostart/$i$NAME.desktop << EOF
+20 [Desktop Entry]
+21 Encoding=UTF-8
+22 Name=$NAME
+23 Comment=$COMMENT
+24 Exec=$COMMAND
+25 StartupNotify=true
+26 Terminal=false
+27 EOF
+28     $((i++))
+29     done
+30     unset NAME COMMENT COMMAND
+31 fi
+32
+33 rm -f $results
+34 exit 0
+`
+== Graphical frontend for su(1) ==
+
+Run program as a different user (root by default). Ask password if needed
+
+Additional software:
+
+  • empty (http://empty.sourceforge.net/)
+
+code:
+`
+ 1 #! /bin/bash
+ 2
+ 3 # some defaults
+ 4 user="root"
+ 5 suargs="-p"
+ 6 force="no"
+ 7
+ 8 # parse commandline   
+ 9 if [[ $# -eq 0 ]]; then
+10     echo "Usage: ${0##*/} [-f] [-u user] [--] "
+11     exit 1
+12 fi
+13
+14 OPTIND=1
+15 while getopts u: opt; do
+16     case "$opt" in
+17         f) force="yes" ;;
+18         u) user="$OPTARG" ;;
+19     esac
+20 done
+21 shift $((OPTIND - 1))
+22
+23 cmd="$*"
+24
+25 if [[ $force != "no" ]]; then
+26     # check for sudo
+27     sudo_check=$(sudo -H -S -- echo SUDO_OK 2>&1 &)
+28     if [[ $sudo_check == "SUDO_OK" ]]; then
+29         eval sudo $cmd
+30         exit $?
+31     fi
+32 fi
+33
+34 # get password
+35 pass=$(yad --class="GSu" \
+36     --title="Password" \
+37     --text="Enter password for user <b>$user</b>:" \
+38     --image="dialog-password" \
+39     --entry --hide-text)
+40 [[ -z "$pass" ]] && exit 1
+41
+42 # grant access to xserver for specified user
+43 xhost +${user}@ &> /dev/null
+44
+45 # run command
+46 fifo_in="$(mktemp -u --tmpdir gsu.empty.in.XXXXXXXXX)"
+47 fifo_out="$(mktemp -u --tmpdir gsu.empty.out.XXXXXXXXX)"
+48
+49 LC_MESSAGES=C empty -f -i $fifo_in -o $fifo_out su $suargs $user -c "$cmd"
+50 [[ $? -eq 0 ]] && empty -w -i $fifo_out -o $fifo_in "word:" "$pass\n"
+51
+52 exit $?
+`
+
+
+

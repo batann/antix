@@ -1,0 +1,120 @@
+==== Contents ====
+        - [[#XFCE4 backup]]
+                - [[#Full Backup]]
+                - [[#Back Up XFCE desktop]]
+                - [[#Themes And Icons]]
+                - [[#Full-backup Restore]]
+                - [[#XFCE Only Restore]]
+                - [[#Finish up by restoring your custom icons and themes.]]
+                - [[#Alternatively,]]
+
+==XFCE4 backup==
+
+====== Stick to the same Desktop unless you are keen on learning some more keybindings ======
+
+=== Full Backup ===
+
+	Creating a backup of the XFCE desktop environment through the ~/.config folder isn’t impossible, though it’s time-consuming, as the user will need to isolate and copy out a few individual folders to save for later. If you’re in a hurry and want a quick backup, a great alternative is to create a complete backup of the configuration file instead. This way, not only will your desktop settings be safe, but other aspects of your Linux desktop will have a backup as well.
+
+	Keep in mind that choosing to backup everything in the configuration folder will take up much more space than just backing up the XFCE4 files. In the terminal, compress the configuration folder in /home/ using the tar command.
+
+	Note: be sure to repeat the backup process for each user that has an XFCE desktop.
+
+`tar -czvf full-backup.tar.gz ~/.config`
+
+	When tar completes, move the file from /home/username/ to your home server, external hard drive or cloud storage host of choice.
+
+
+=== Back Up XFCE desktop ===
+
+	If you don’t have time to wait for the entire ~/.config folder to compress, consider just creating a backup of the XFCE desktop files. To start the process of saving your desktop settings, open up a terminal and run the following commands.
+
+`mkdir -p ~/Desktop/xfce-desktop-backup`
+
+`mkdir -p ~/Desktop/xfce-desktop-backup/thunar`
+
+`mkdir -p ~/Desktop/xfce-desktop-backup/xfce-settings`
+
+`cp -R ~/.config/Thunar/ ~/`
+
+`cp -R ~/.config/xfce4/ ~/`
+
+`mv ~/xfce4 ~/Desktop/xfce-desktop-backup/xfce-settings`
+`mv ~/Thunar ~/Desktop/xfce-desktop-backup/xfce-settings`
+
+	If you’re on Xubuntu, you’ll also need to copy the Xubuntu folder inside of the configuration directory.
+
+`mkdir -p ~/Desktop/xfce-desktop-backup/xubuntu-settings`
+
+`cp -R ~/.config/xubunu~ ~/`
+
+`mv xubuntu ~/Desktop/xfce-desktop-backup/xubuntu-settings`
+
+	With all of the configuration files in the right place, use the tar command to create an archive backup.
+
+`tar -czvf xfce4-backup.tar.gz ~/Desktop/xfce-desktop-backup`
+
+=== Themes And Icons ===
+
+
+
+`tar -czvf icons-backup.tar.gz ~/.icons`
+
+`tar -czvf themes-backup.tar.gz ~/.themes`
+
+Or:
+
+`tar -czvf icons-backup.tar.gz  /usr/share/icons `
+
+`tar -czvf themes-backup.tar.gz /usr/share/themes/`
+
+	Compression may take a while, due to how many files themes and icon sets tend to have on Linux. When the compression is done, take both TarGZ archives and place them somewhere safe.
+Restore Backup
+
+	Restoring an XFCE desktop environment with a backup has a lot of work to it. To set your Linux PC back to the way it was before you created a backup, open up a terminal window and follow the steps below.
+
+		Step 1: Download your backups and place all of them in the /home/username/ folder.
+
+		Step 2: Decompress and restore the desktop archive backup.
+
+=== Full-backup Restore ===
+
+`tar -xzvf full-backup.tar.gz -C ~/`
+
+=== XFCE Only Restore ===
+
+`tar -xzvf xfce4-backup.tar.gz -C ~/`
+
+`cd xfce-desktop-backup/xfce-settings`
+
+`mv * ~/.config`
+
+`cd xfce-desktop-backup/thunar`
+
+`mv * ~/.config`
+
+=== Finish up by restoring your custom icons and themes. ===
+
+`tar -xzvf icons-backup.tar.gz -C ~/`
+
+`tar -xzvf themes-backup.tar.gz -C  ~/`
+
+	Or:
+
+`sudo tar -xzvf icons-backup.tar.gz -C /usr/share/`
+
+`sudo tar -xzvf themes-backup.tar.gz -C /usr/share/`
+
+		Step 3: Use the rm command and remove all of the TarGZ archive files.
+
+`rm *.tar.gz`
+
+===Alternatively,=== 
+
+if you’d like to keep the XFCE backup archive files on your Linux PC, it’s a good idea to move them somewhere else on the file system, where they’re out of the way.
+
+`mkdir -p ~/Documents/tar-archives/`
+
+`mv *.tar.gz ~/Documents/tar-archives/`
+
+

@@ -1,0 +1,58 @@
+= Contents =
+    - [[#Top_5_HTML_CSS_JS_code]]
+        - [[#HTML Script Resources]]
+            - [[#HTML5 UP]]
+            - [[#CodePen]]
+            - [[#HTML5 Boilerplate]]
+            - [[#W3Schools]]
+            - [[#FreeHTML5]]
+        - [[#CSS Script Resources]]
+            - [[#CSS-Tricks]]
+            - [[#Codrops]]
+            - [[#Animate.css]]
+            - [[#Hover.css]]
+            - [[#CSSZenGarden]]
+        - [[#JavaScript Script Resources]]
+            - [[#JavaScript.info]]
+            - [[#jQuery]]
+            - [[#MDN Web Docs - JavaScript]]
+            - [[#Eloquent JavaScript]]
+            - [[#JSFiddle]]
+
+= Top_5_HTML_CSS_JS_code =
+
+== HTML Script Resources ==
+    === HTML5 UP ===
+_Free responsive HTML5 and CSS3 site templates._
+    === CodePen ===
+_A community platform where developers share their HTML, CSS, and JavaScript snippets._
+    === HTML5 Boilerplate ===
+_A front-end template for building fast, robust, and adaptable web apps or sites._
+    === W3Schools ===
+_A variety of HTML5 examples and templates._
+    === FreeHTML5 ===
+_A collection of free HTML5 and CSS3 templates._
+
+== CSS Script Resources ==
+    === CSS-Tricks ===
+_Comprehensive CSS tutorials, tips, and tricks._
+    === Codrops ===
+_A reference for CSS properties with practical examples._
+    === Animate.css ===
+_A library of ready-to-use, cross-browser animations for use in web projects._
+    === Hover.css ===
+_A collection of CSS3 powered hover effects._
+    === CSSZenGarden ===
+_A demonstration of what can be accomplished through CSS-based design._
+
+== JavaScript Script Resources ==
+    === JavaScript.info ===
+_A comprehensive guide to modern JavaScript, from basics to advanced topics._
+    === jQuery ===
+_A fast, small, and feature-rich JavaScript library._
+    === MDN Web Docs - JavaScript ===
+_Mozilla's developer resource for JavaScript._
+    === Eloquent JavaScript ===
+_A book providing a deep dive into JavaScript, available online._
+    === JSFiddle ===
+_An online IDE for testing and sharing HTML, CSS, and JavaScript code snippets._

@@ -1,0 +1,91 @@
+= Contents =
+    - [[#Top 20 Privacy Focused Websites]]
+                - [[#DuckDuckGo]]
+                - [[#ProtonMail]]
+                - [[#Signal]]
+                - [[#Tor Project]]
+                - [[#PrivacyTools]]
+                - [[#Tutanota]]
+                - [[#Startpage]]
+                - [[#Brave]]
+                - [[#Wire]]
+                - [[#Riseup]]
+                - [[#Mullvad]]
+                - [[#Privacy Badger]]
+                - [[#Ghostery]]
+                - [[#Standard Notes]]
+                - [[#Nextcloud]]
+                - [[#Matrix]]
+                - [[#Qubes OS]]
+                - [[#Librem One]]
+                - [[#Prism Break]]
+                - [[#CryptPad]]
+
+= Top 20 Privacy Focused Websites =
+
+
+Privacy-focused websites are those that prioritize user privacy and data protection. While there isnt an official ranking system for such websites, I can list 20 notable ones that are known for their strong privacy practices, as of my last knowledge update in September 2021
+
+==== DuckDuckGo ====
+_A privacy-focused search engine that doesnt track users._
+
+==== ProtonMail ====
+_An encrypted email service with a strong focus on privacy._
+
+==== Signal ====
+_A secure and private messaging app._
+
+==== Tor Project ====
+_The organization behind the Tor network, which provides anonymous web browsing._
+
+==== PrivacyTools ====
+_A website offering recommendations for privacy-focused software and services._
+
+==== Tutanota ====
+_An open-source and encrypted email service._
+
+ ==== Startpage ====
+_A private search engine that uses Google search results without tracking users._
+
+ ==== Brave ====
+_A privacy-focused web browser that blocks ads and trackers._
+
+ ==== Wire ====
+_An end-to-end encrypted messaging platform._
+
+ ==== Riseup ====
+_A collective that offers secure and private communication services._
+
+ ==== Mullvad ====
+_A privacy-focused VPN service._
+
+ ==== Privacy Badger ====
+_A browser extension that blocks trackers._
+
+ ==== Ghostery ====
+_A browser extension that enhances privacy by blocking trackers._
+
+ ==== Standard Notes ====
+_An encrypted note-taking app._
+
+ ==== Nextcloud ====
+_A self-hosted file synchronization and sharing platform._
+
+ ==== Matrix ====
+_An open standard for secure, decentralized communication._
+
+ ==== Qubes OS ====
+  security-focused operating system that isolates applications.
+
+ ==== Librem One ====
+_A suite of privacy-focused online services._
+
+ ==== Prism Break ====
+_A website listing alternatives to proprietary software and services._
+
+ ==== CryptPad ====
+_An encrypted collaborative office suite._
+
+
+
+Please note that the privacy landscape is continually evolving, and its essential to do your research and stay updated on the latest developments to make informed choices regarding your online privacy and security. Additionally, the privacy practices of websites and services can change over time, so its a good practice to review their privacy policies regularly.

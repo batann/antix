@@ -1,0 +1,43 @@
+- needs to be:
+	- within home/
+ 	- integrated within page/
+	- 
+	- buku
+	- cloud
+
+
+
+
+
+
+_structure:_
+==========
+
+-wiki.index
+	-p1
+		-p1a
+			-p1I
+			-p1II
+			-p1III
+		-p1b
+			-I
+			-II
+			-III
+		-p1c
+			-I
+			-II
+			-III
+		-p1d
+			-I
+			-II
+			-III
+		-p1e
+			-I
+			-II
+			-III
+		
+	-p2
+	-p3
+	-p4
+	-p5
+	-p6

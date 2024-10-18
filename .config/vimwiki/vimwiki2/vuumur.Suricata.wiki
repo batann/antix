@@ -1,0 +1,57 @@
+= Suricata =
+Using Suricata IPS with Vuurmuur
+
+Vuurmuur is a frontend to netfilter/iptables, the packet filter implemented by Linux. Being a packet filter, no content inspection is done. Decisions to drop or accept a packet are taken on the basis of ipaddresses, port numbers, connection state, and some other packet and connection properties.
+
+Suricata is an Intrusion Detection System (IDS) and Intrusion Prevention System that matches the content of the connections against signatures of known attacks.
+
+This document describes how to set-up Vuurmuur so you can take your protection beyond the packet filter, into content filtering and intrusion prevention!
+How Suricata IPS works
+
+Suricata works by getting one packet at a time from the system. These are then pre-processed, after which they are passed to the detection engine. Suricata can use pcap for this in IDS mode, but can also connect to a special feature of Linux, named nfnetlink_queue. This queue is a way for the kernel to copy a packet to a userspace process (in this case Suricata). Then it waits for this userspace process to issue a verdict on this packet, with ‘accept’ and ‘drop’ being the two possible verdicts.
+
+Suricata works with rules. These rules can have actions like ‘alert’, ’log’, etc. Suricata IPS introduces three new actions specific to IPS mode, ‘drop’, ‘sdrop’ and ‘reject’ (sdrop is silent drop). As you read above, the only two possible verdict for a packet are ‘accept’ and ‘drop’, so how can Suricata reject a packet?
+
+This is done in two steps:
+
+    the packet is dropped using the ‘drop’ verdict.
+    Suricata sends an icmp error or tcp-reset to the offending ipaddress.
+
+Integration with Vuurmuur
+
+You might wonder “which traffic is send to Suricata?”. As stated above, Suricata gets its packets from the nfnetlink_queue from the kernel. But how do you control which traffic gets into this queue? This is controlled by a special target in iptables, the NQQUEUE target. Rules in Vuurmuur can also have a corresponding ‘NFQueue’ action.
+
+Which traffic you want to Queue is entirely up to your own preferences and needs. You might want to pass all traffic to Suricata:
+
+NFQueue service any from any to any
+
+But probably you want a more fine grained control, combining the strength of a strict packet filter and content scanning. So if you normally have a rule like this:
+
+Accept service http from local.lan to world.inet
+
+You can replace it by:
+
+NFQueue service http from local.lan to world.inet
+
+This way no extra ports are opened, but the http connections are passed to Suricata IPS for anomaly detection.
+Portfw
+
+For rules in Vuurmuur with action ‘Portfw’ some special care is needed. This is because for these rules iptables ACCEPT rules are automatically created. To solve this an action DNAT was created. This creates the NAT rules, but not the accept rule. This is how it is used:
+
+Original:
+
+Portfw service smtp from world.inet to mailserver.local.lan
+
+DNAT/NFQUEUE:
+
+Dnat service smtp from world.inet to mailserver.local.lan
+NFQueue service smtp from world.inet to mailserver.local.lan
+
+This way the port-forwarded traffic is passed to Suricata as well.
+Known issues/gotcha’s
+
+Currently there are two known issues with using Suricata this way. Both are not specific to using it with Vuurmuur.
+
+The first is that if traffic is sent to the queue while no program is connected to the queue, traffic is effectively dropped. The same is true if Suricata crashes.
+
+The second issue is that Suricata can use a lot of system resources, which can mean that connections will be slower. But this mostly depends on the settings of Suricata itself (more rules means less performance) and of course on the speed of your hardware.

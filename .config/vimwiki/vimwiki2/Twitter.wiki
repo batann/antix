@@ -1,0 +1,78 @@
+= Contents =
+        - [[#Twitter]]
+                - [[#Twitter API v2]]
+                - [[#Twitter APIv1.1]]
+                        - [[#API Key:]]
+                        - [[#API KEY Secret]]
+                        - [[#Bearer Token]]
+                        - [[#Access Token]]
+                        - [[#Access Token Secret]]
+        - [[#]]
+        - [[#===   OAuth 2.0   ==]]
+                        - [[#Client ID:]]
+                        - [[#Client Secret:]]
+                        - [[#Rainbowstream:]]
+        - [[#Development]]
+
+= Twitter =
+== Twitter API v2 ==
+== Twitter APIv1.1 ==
+Get application/rate_limit_status
+https://developer.twitter.com/en/docs/twitter-api/v1/developer-utilities/rate-limit-status/api-reference/get-application-rate_limit_status
+https://api.twitter.com/1.1/application/rate_limit_status.json
+=== API Key: ===
+ZQdYXidNduCocAckiQnoUdM9N
+=== API KEY Secret ===
+CWuV8bWlCS12rF9MW8ShzfWzQlm3o1GfKAEYrQwpAelDwq1OIq
+=== Bearer Token ===
+AAAAAAAAAAAAAAAAAAAAAJkSdgEAAAAAmGflLwpr%2F7uSf9a2P0misxUlEYY%3DysmDklpsuoh9wNVDv1EE86q2KDk6i8z1Zv7rrCz3U4bwAOYGxy
+=== Access Token ===
+1054641120137760769-gdmPjnzT9lzKtqKajotJwx5Z19qh3D
+=== Access Token Secret ===
+FI01v9H5mT1xQwh741OMb7DPMgj1mjZh0Jb5BEDotYtNH
+
+====================
+===   OAuth 2.0   ==
+====================
+https://developer.twitter.com/en/docs/authentication/guides/v2-authentication-mapping
+=== Client ID: ===
+dGVjb0J5d3hmUDY2VElBZVRUcGc6MTpjaQ
+=== Client Secret: ===
+CnkUdwU9U7O9MhGj_SWsFYDCQytHpt2w07MmKTX0vqNjvA0HzE
+=== Rainbowstream: ===
+App details
+
+Name:
+_batan_
+App ID:
+
+Development
+===========
+
+If you want to build a runnable version yourself, follow these simple steps
+
+  	  *  Create your own Twitter Application
+	
+	  *  Get your Twitter application’s API key and secret
+	
+	  *  Fork github’s repo and clone in your system.
+
+  *  Create a file consumer.py in rainbowstream folder with following content
+
+    	# Consumer information
+   	 CONSUMER_KEY = 'APIKey' # Your Twitter application's API key
+   	 CONSUMER_SECRET = 'APISecret' # Your Twitter application's API secret
+   	 PCKT_CONSUMER_KEY = 'PocketAPIKey' # Your Pocket application's API key
+
+  *  Use pip to install in local
+
+   	 # cd to directory which contains setup.py (cloned directory)
+   	 virtualenv venv # Python3 users: use -p to specify python3
+   	 source venv/bin/activate
+   	 pip install -e .
+   	 which rainbowstream # /this-directory/venv/bin/rainbowstream
+   	 # Remove ~/.rainbow_oauth if exists
+   	 rainbowstream # local version of rainbowstream
+
+
+

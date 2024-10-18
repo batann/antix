@@ -1,0 +1,155 @@
+= Taskwarrior_tools =
+
+#author:	batan
+#description:	random notes
+
+| Nu | `                      Description                    ` | `                                         URL                                  ' |
+|----|---------------------------------------------------------|----------------------------------------------------------------------------------|
+| 1  | taskopen                                                | https://github.com/jschlatow/taskopen                                            |
+| 2  | task time-tracking-hook                                 | https://github.com/kostajh/taskwarrior-time-tracking-hook                        |
+| 3  | taskwarrior-notifications                               | https://github.com/flickerfly/taskwarrior-notifications                          |
+| 4  | in.the.am                                               | https://github.com/coddingtonbear/inthe.am                                       |
+| 5  | taskwarrior-progress                                    | https://github.com/frenchrd/taskwarrior-progress                                 |
+| 6  | taskwarriot_hooks                                       | https://github.com/samxsmith/taskwarrior_utils.git                               |
+| 7  | mutt2tw                                                 | https://github.com/kellya/mutt2tw                                                |
+| 8  | taskwarrior-expire                                      | https://github.com/tbabej/taskwarrior-tag_expire-hook.git                        |
+| 9  | tw-airline-plugin                                       | https://github.com/linuxcaffe/tw-airline-plugin.git                              |
+| 10 | gmailtaskadd                                            | https://github.com/theJonathanToth/gmailtaskadd                                  |
+| 11 | voice-to-taskwarrior                                    | https://github.com/bergercookie/voice_to_taskwarrior.git                         |
+| 12 | taskwarrior-themes                                      | https://github.com/garretpatten/taskwarrior-themes                               |
+| 13 | tasknotes                                               | https://github.com/mhayden7/tasknotes.git                                        |
+| 14 | tasknote                                                | https://github.com/task-note/tasknote.git                                        |
+| 15 | task-dashboard                                          | https://github.com/8ware/task-dashboard.git                                      |
+|    |                                                         |                                                                                  |
+|    |                                                         |                                                                                  |
+|    |                                                         |                                                                                  |
+
+= 20 Taskwarrior Hooks =
+
+== Burndown Plugin: ==
+Description: Provides burndown charts for your Taskwarrior tasks.
+
+== Gantt Plugin: ==
+Description: Allows the generation of Gantt charts based on your Taskwarrior tasks.
+
+== Kanban Plugin: ==
+Description: Implements a Kanban-style board for Taskwarrior tasks.
+
+== Timewarrior Integration: ==
+Description: Integrates Timewarrior time tracking with Taskwarrior.
+
+== Taskopen Hook: ==
+Description: Opens task details in your preferred text editor when using task open.
+
+== Taskjournal Hook: ==
+Description: Adds journal entries to tasks, providing a way to log additional details.
+
+== Taskd Server Hooks: ==
+Description: Custom hooks for Taskd server events, enhancing server functionality.
+
+== Task Slack Integration: ==
+Description: Integrates Taskwarrior with Slack for task updates and notifications.
+
+== Task Git Integration: ==
+Description: Tracks changes in your Taskwarrior tasks using Git.
+
+== Task Sync Hooks: ==
+Description: Custom hooks for syncing Taskwarrior tasks across multiple devices.
+
+== Taskw Autoarchive Hook: ==
+Description: Automates the archiving of completed tasks.
+
+== Taskw Sync: ==
+Description: A sync plugin for Taskwarrior, allowing synchronization between instances.
+
+== Taskw Update Hook: ==
+Description: Automatically updates the due date of recurring tasks.
+
+== Taskw Stats: ==
+Description: Provides additional statistical insights into your task data.
+
+== Task Trello Sync: ==
+Description: Syncs Taskwarrior tasks with Trello boards.
+
+== Taskwarrior Pomodoro: ==
+Description: Implements Pomodoro technique timers for Taskwarrior tasks.
+
+== Task Wiki Linking: ==
+Description: Adds wiki-style linking between tasks.
+
+== Task Time Tracking: ==
+Description: Enhances Taskwarrior with time tracking capabilities.
+
+== Taskwarrior Habitica: ==
+Description: Integrates Taskwarrior tasks with the Habitica productivity game.
+
+== Taskwarrior Colors: ==
+Description: Customizes the colors used in the Taskwarrior interface.
+
+Before installing any plugin or hook, ensure it is compatible with your Taskwarrior version and review the documentation for installation instructions and usage details.
+
+
+
+
+
+= Vimwiki, a personal wiki for Vim, has a vibrant ecosystem of plugins and hooks that enhance its functionality. Here are 20 Vimwiki hooks or plugins: =
+
+== Vimwiki-Tasks: ==
+Description: Adds task management features to Vimwiki, allowing you to manage to-do lists and tasks.
+
+== Vimwiki Calendar: ==
+Description: Integrates a calendar view into Vimwiki, enhancing date-based navigation.
+
+== Vimwiki Math: ==
+Description: Enables mathematical notation support within Vimwiki for documenting equations.
+
+== Vimwiki Diary: ==
+Description: Extends Vimwiki with a diary functionality for journaling and logging.
+
+== Vimwiki Syntax Highlighting: ==
+Description: Enhances Vimwiki by adding syntax highlighting for various file types.
+
+== Vimwiki Tagging: ==
+Description: Implements tagging functionality in Vimwiki, facilitating organization and categorization.
+
+== Vimwiki PlantUML: ==
+Description: Integrates PlantUML support into Vimwiki for creating UML diagrams.
+
+== Vimwiki Git: ==
+Description: Enables version control integration with Git for Vimwiki files.
+
+== Vimwiki Bookmarks: ==
+Description: Adds bookmarking features to Vimwiki for easy navigation.
+
+== Vimwiki Snippets: ==
+Description: Allows the use of snippets within Vimwiki for faster content creation.
+
+== Vimwiki Table of Contents: ==
+Description: Automatically generates and maintains a table of contents for your Vimwiki.
+
+== Vimwiki Dropbox Sync: ==
+Description: Facilitates synchronization of Vimwiki files with Dropbox.
+
+== Vimwiki Calendar Sync: ==
+Description: Syncs Vimwiki calendar entries with external calendar applications.
+
+== Vimwiki Live Preview: ==
+Description: Provides live preview functionality for Vimwiki files.
+
+== Vimwiki Task Warrior Integration: ==
+Description: Integrates Vimwiki with Taskwarrior, a task management tool.
+
+== Vimwiki Todoist Sync: ==
+Description: Syncs Vimwiki tasks with Todoist for cross-platform task management.
+
+== Vimwiki FZF Integration: ==
+Description: Integrates FZF (fuzzy finder) with Vimwiki for efficient searching and navigation.
+
+== Vimwiki Pandoc Integration: ==
+Description: Integrates Pandoc with Vimwiki for exporting Vimwiki pages to various formats.
+
+== Vimwiki Blog: ==
+Description: Turns Vimwiki into a simple static blog generator.
+
+== Vimwiki Spell Checking: ==
+Description: Adds spell-checking support to Vimwiki for improved text accuracy.

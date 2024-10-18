@@ -1,0 +1,38 @@
+=== Vim Courses ===
+_free_
+
+*   Vimtutor
+	1–2 hours long
+	Best introductory course for beginners
+
+*   Editors – Vim
+ 	1 hour long
+	Best for Vim’s philosophy and demonstration of Vim
+
+*   Vim Tutorial for Beginners
+ 	1–2 hours long
+ 	Best short video course
+
+*   VimGenius
+ 	2–4 hours long
+	Best paired with vimtutor and it has intermediate courses too
+
+*   VIM Adventures
+ 	10–12 hours long
+	Best gamified course
+
+*   Interactive Vim tutorial
+ 	1–2 hours long
+	Best interactive course
+
+*   Learning Vim
+ 	1–2 hours long
+	Best LinkedIn course with exercises
+
+*   Learn Vim
+ 	1–3 hours long
+	Best for VSCode users
+
+*   Vim Masterclass
+ 	8 hours long
+	Best comprehensive course with exercises

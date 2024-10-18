@@ -1,0 +1,35 @@
+= Concepts =
+Concepts introduced by Vuurmuur
+
+Vuurmuur introduces some very important concepts to make your life easier. It aims to provide a more high level access to netfilter/iptables’ great features. But to appropriately use them some basic understanding of these basic concepts is required.
+Zones, Networks, Hosts and Groups
+
+Before you can start to create any rules you have to explain your network setup to Vuurmuur. All rules are based on parts of your network: interfaces, services, zones, networks, hosts and groups. Most of these are self explanatory or at least aim to be. This section tries to clear things up.
+
+Using Vuurmuur and its concepts helps you to a proper design of your firewall. Before starting to implement a firewall you should always think about which parts your network consists of. Just starting to allow/deny things without having a “master plan” is inherently dangerous!
+
+One of the most important tools Vuurmuur provides you with is the segmentation of your network into zones, networks, hosts and groups. Those elements are essential for creating rules.
+
+A zone is a container for networks and a network is a container for hosts. With groups you may group hosts together (within one network). And a host is a single machine in a network. For now lets consider this simple example:
+
+You can think of zone as a possibility to group networks and hosts of equal security level together. For example you may define two zones: ’lan’ and ‘inet’ to distinguish the internal part of you network from the external one. It becomes inherently clear that those two zones mean different levels of access.
+
+Define at least one network within each zone. You may define several networks within a zone.
+
+For the sake of simplicity we will refer to zones with red colour and to networks with orange. Vuurmuur shows your network in the following way: network.zone: In our example we have local.lan and world.inet. For the definition of a network in Vuurmuur you have to add network address, netmask and at least one interface via which the network can be reached. Then there are hosts: Imagine — as in our example — there is a special host in the internal network that should be reachable from the internet.
+
+To refer to the host in the example above we may use server.local.lan. This is how network elements will show up when creating rules. The same applies for zones, networks and groups.
+A word on naming conventions
+
+How you name the elements in your network is entirely up to you. There are just some hints for clever naming: like use rather short names as they will be used for things like live log view and so on. For zones you should use names representing the status relative to your network like ’lan’, ‘inet’ or ‘dmz’ and so on. It should be quite obvious to anyone viewing and creating rules what security level a zone has. The more intuitive the names are the less errors you can/will make on firewall rules! The same applies for network and host names as well.
+
+! Never ever try to reuse names that are already known in a different context in your network. This will bring you in great trouble — just because you then have two completely different objects with probably completely different level of security and you (or someone less educated who will try to administer the firewall when you are on holidays) will certainly get confused and probably make wrong (and dangerous) decisions!
+
+If you are new to Vuurmuur you should probably just try to model your network once on your desktop machine and then set up rules. Then you will very quickly get a good feeling on how to use those naming mechanism. You will avoid confusion this way. Once you are used to this way of seeing your network you won’t want to miss it any more! ;-)
+Interfaces
+
+The same as above applies to interfaces as well: You may give them whatever names you like. You may choose name of the NIC vendor or names like ’lan’ and ‘inet’ or whatever you prefer.
+
+Interfaces will be — as zones, networks, hosts and groups — be used for creating rules. When creating networks you need to specify an interface that this network is attached to. Vuurmuur uses this interface for its rules: To avoid accepting packages from this network on a wrong interface. An interface in the Vuurmuur sense consists of a name you may freely choose, an IP address and a (real) device name like ’eth0’. You may specify if your interface is dynamic (Vuurmuur will care to monitor changes in the IP address then) and in advanced mode you may specify that your interface is virtual.
+
+So again: choose names wise, be careful not to confuse yourself with strange names. Always keep an eye on having a rather intuitive naming scheme so that it is not so easy to rip security holes in your firewall by accident. Depending on your setup you may choose a simple naming scheme like ’lan’ and ‘inet’ or a more complex one with either virtual interfaces or multiple interfaces. Anyways: You need to keep an overview!

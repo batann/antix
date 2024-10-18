@@ -1,0 +1,77 @@
+=Compile Yad with html=
+
+
+
+
+
+
+
+
+
+  depcies: 	software:   		link:                                     
+ +====================================================================================================+               
+		m4-latest   		ftp://ftp.gnu.org/gnu/m4/m4-latest.tar.gz
+                autoconf    		git://git.sv.gnu.org/autoconf             
+		gtk-4.9.4		https://gnome.mirror.digitalpacific.com.au/sources/gtk/4.9/gtk-4.9.4.tar.xz
+		webkitgtk-2.40.5	https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz
++=====================================================================================================+
+
+
+
+		cd
+Install dependencies ==
+	apt-get install build-essential
+
+== Download and install intltool ==
+	wget http://ftp.de.debian.org/debian/pool/main/i/intltool/intltool_0.51.0-5_all.deb
+	sudo dpkg -i intltoolizeXXXX.deb
+
+== Clone Yad from Git ==
+	git clone https://github.com/v1cont/yad.git
+
+== Generate Built scripts ==
+	autoreconf -ivf && intltoolize
+	./configure --enable-html
+	make
+	make install
+
+== Run manual update ==
+gtk-update-icon-cache
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For successfully build you may need to install the following packages:
+
+    GNU Autotools (https://www.gnu.org/software/autoconf/ http://www.gnu.org/software/automake/)
+    Intltool >= 0.40.0 (http://freedesktop.org/wiki/Software/intltool/)
+    GTK+ >= 3.22.0 (http://www.gtk.org) with appropriate -dev packages depending on your distro
+
+Additionally, you can build yad with the following libraries:
+
+    Webkit - for supporting HTML dialog (http://webkitgtk.org)
+    GtkSourceView - for enabling syntax highlighting in text-info dialog (https://wiki.gnome.org/Projects/GtkSourceView)
+    GSpell - for support spell checking in text fields (https://wiki.gnome.org/Projects/gspell)
+
+In standalone build (configure option --enable-standalone) some defaults can be redefined with the following defines
+
+BORDERS - set the default border width around dialog. Default is 5
+REMAIN - if defined, timeout indicator will show the remaining time
+COMBO_EDIT - if defined, combo-box in entry dialog will be always editable
+TERM_CMD - string with terminal command. Default is "xterm -e '%s'"
+OPEN_CMD - string with open command. Default is "xdg-open '%s'"
+DATE_FMT - string with date output format. Default is "%x". See strftime(3) for details
+URI_COLOR - color for URIs in text-info dialog. Default is blue
+MARK1_COLOR - color for first type of text marks in text-info dialog. Default is lightgreen MARK2_COLOR - color for second type of text marks in text-info dialog. Default is pink MAX_TABS - set the number of tabs for tabbed dialog. Default is 100
+
+Defines can be added througs CFLAGS environment variable

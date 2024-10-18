@@ -1,0 +1,52 @@
+├── page
+│   ├── a.html
+│   ├── bookm.html
+│   ├── contact.html
+│   ├── diary
+│   │   ├── 10test.html
+│   │   ├── 1test.html
+│   │   ├── 2023-02-23.html
+│   │   ├── 2023-02-24.html
+│   │   ├── 20test.html
+│   │   ├── 2test.html
+│   │   ├── 30test.html
+│   │   ├── 3test.html
+│   │   └── diary.html
+│   ├── feed.php
+│   ├── homepage.html
+│   ├── homepage.html~
+│   ├── homepage.html.bak
+│   ├── images
+│   │   ├── batan-hik-icon (copy 1).svg
+│   │   ├── batan-hik-icon.svg1
+│   │   ├── batan-hik-icon.svg111
+│   │   ├── batan-logo.svg
+│   │   ├── browser-home-page-banner.jpg
+│   │   ├── browser-home-page-banner.jpg2
+│   │   ├── browser-home-page-banner.jpg222
+│   │   ├── browser-home-page-banner.jpg44
+│   │   ├── browser-home-page-banner.jpg5
+│   │   ├── browser-home-page-banner.jpg.bak
+│   │   ├── jinx-logo1.jpg
+│   │   ├── jinx-logo1.xcf
+│   │   ├── jinx-logo.png
+│   │   ├── jinx-logo.svg
+│   │   ├── jinx-logo.svg.bak
+│   │   ├── jinx-logo.svg.jinx
+│   │   ├── jinx-logo.xcf
+│   │   ├── kali-dragon-icon.svg
+│   │   └── kali-logo.svg
+│   ├── notes
+│   │   └── index.html
+│   ├── plugins
+│   │   └── themify-icons
+│   │       ├── fonts
+│   │       │   └── themify.woff
+│   │       └── themify-icons.css
+│   ├── poinf.sh
+│   ├── privacy.html
+│   ├── script.min.js
+│   ├── search.html
+│   ├── style.min.css
+│   └── vimwiki2
+

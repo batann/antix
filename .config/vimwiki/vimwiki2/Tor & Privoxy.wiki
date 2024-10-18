@@ -1,0 +1,50 @@
+= Tor & Privaxy =
+
+== Install Tor: ==
+Open the terminal and type:
+```
+sudo apt-get update
+sudo apt-get install tor
+```
+== Configure Tor: ==
+Edit the Tor configuration file:
+
+```
+sudo nano /etc/tor/torrc
+```
+Add the following lines:
+```
+yaml
+
+ControlPort 9051
+CookieAuthentication 1
+```
+== Restart Tor: ==
+```
+sudo service tor restart
+```
+Install Privoxy:
+```
+sudo apt-get install privoxy
+```
+== Configure Privoxy: ==
+Edit the Privoxy configuration file:
+
+```
+sudo nano /etc/privoxy/config
+```
+Add this line to forward traffic to Tor:
+```
+forward-socks5 / 127.0.0.1:9050 .
+```
+Restart Privoxy:
+```
+sudo service privoxy restart
+```
+== Test your setup: ==
+Configure your browser to use Privoxy as a proxy on localhost:8118. Visit check.torproject.org to verify your connection.
+
+See also: Tor Project Documentation Privoxy User Manual
+
+You may also enjoy: Anonymizing Online Presence 🌐 Linux Security Best Practices 
+
