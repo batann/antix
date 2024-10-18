@@ -1,0 +1,1303 @@
+20
+ART
+∨ ∨
+    AS SYMPTOM
+ZIZEK AND THE ETHICS OF
+PSYCHOANALYTIC CRITICISM
+
+TIM DEAN
+
+                                                                                          ∨ ∨
+This paper tackles a problem that is exemplified by, but not restricted to, Slavoj Zizek’s
+work: the tendency to treat aesthetic artifacts as symptoms of the culture in which they
+were produced. Whether or not one employs the vocabulary and methods of
+psychoanalysis to do so, this approach to aesthetics has become so widespread in the
+humanities that it qualifies as a contemporary critical norm. As a norm, it may be subject
+to debate and even contestation. Today it is normative to read literature, film, and other
+cultural texts primarily as evidence about the societies that made them—evidence that
+necessarily requires our hermeneutic labor in order to yield its significance. This
+methodological protocol remains in place whether one inhabits critical perspectives as
+ostensibly disparate as historicist, materialist, or psychoanalytic modes of thinking; it is
+also a grounding assumption of cultural studies, irrespective of how one defines that
+critical practice. Indeed, the issue I want to address is quite as much
+                                                                      ∨ ∨
+                                                                           a Marxist problem
+as it is a psychoanalytic one, and therefore the way in which Zizek articulates Lacan
+with
+ ∨ ∨
+      Marx makes his work especially fertile terrain on which to engage this matter. As
+Zizek reminds us in The Sublime Object of Ideology,
+                                                ∨ ∨
+                                                         Lacan claimed that Marx invented
+the symptom [SO 11]—an observation that Zizek has been keen to exploit from the very
+beginning
+      ∨ ∨
+             of his work.
+      Zizek’s combining psychoanalysis with Marxism in novel ways has helped make
+Lacan more palatable to contemporary critical sensibilities by politicizing psychoanalysis,
+demonstrating
+    ∨ ∨
+                 how it offers less an account of the individual than of society and culture.
+In Zizek’s hands psychoanalytic theory appears less vulnerable to the      standard criticisms
+                                                                         ∨ ∨
+that it is ahistorical and apolitical. While a number of critiques of Zizek have reiterated
+these common objections, nevertheless his politicizing of psychoanalysis has been
+particularly important during a period that witnessed the rise of new historicism, the
+institutionalization of cultural studies, and the escalating importance of   ∨ ∨
+                                                                                “the political”
+as a sign—perhaps the sign—of humanities professors’ seriousness.1 Zizek’s work has
+gone a long way toward making Lacan seem indispensable to cultural studies, just as
+Juliet Mitchell’s and Jacqueline Rose’s work a decade earlier made Lacan seem
+indispensable to theoretically rigorous feminism. At a moment when the poststructuralist  ∨ ∨
+variant of Lacanian theory was being displaced by historicist modes of thought, Zizek
+emerged on the scene to revivify psychoanalysis and make    ∨ ∨
+                                                                  it exciting again. Thus his
+work’s appeal has an historical basis quite apart from Zizek’s own personal charisma
+and his remarkable productivity. It is his politicizing of psychoanalysis, as much as his
+
+Thanks to Julia Bader and George Starr, in whose house    ∨ ∨
+                                                              this essay was composed.
+     1. For significant considerations of the politics of Zizek’s work, see Bellamy; Chow; Guerra;
+Miklitsch; Resch,
+              ∨ ∨
+                   “Running”; Resch, “Sound.” Whereas these studies focus on the political im-
+plications of Zizekian thinking, the present study concerns the different (though related) question
+of the ethical ramifications of his work.
+
+
+
+diacritics / summer 2002                                   diacritics 32.2: 21–41               21
+                                                      ∨ ∨
+rendering Lacan newly accessible, that has made Zizek popular. I want to argue, however,
+that his style of politicizing psychoanalysis
+                                     ∨ ∨
+                                               carries a significant ethical cost, one that
+follows partly as a consequence of Zizek’s failure to work through his theoretical relation
+to Althusser, from whom he derives the practice of symptomatic reading while claiming
+to displace the latter’s version of psychoanalytic Marxism. Thus I shall be arguing for a
+significant distinction between a political and an ethical psychoanalysis, suggesting
+that we have been cultivating the former at the expense of the latter.
+
+
+Spaghetti Psychoanalysis
+                                                ∨ ∨
+The notion of the symptom is central to Zizek’s thinking about politics and culture.
+Although in his work and in psychoanalytic theory more generally the term symptom
+carries
+   ∨ ∨
+        a range of conceptual meanings, symptomatology remains the governing trope
+of Zizek’s oeuvre. Following
+                         ∨ ∨
+                             Lacan, who continued to modify the concept of the symptom
+throughout his career, Zizek argues that just about anything can be understood as
+symptomatic:
+
+     [I]n the final years of Lacan’s teaching we find a kind of universalization of
+     the symptom: almost everything that is becomes in a way symptom, so that
+     finally even woman is determined as the symptom of man. We can even say
+     that “symptom” is Lacan’s final answer to the eternal philosophical question
+     “Why is there something instead of nothing?”—this “something” which “is”
+     instead of nothing is indeed the symptom. [SO 71–72]
+
+If, for reasons to be elaborated, virtually∨ ∨
+                                              anything can be considered a symptom, then
+this conceptual move illuminates how Zizek can write about everything, how he seems
+able to render all cultural phenomena as grist to his theoretical mill. Having grasped the
+structural logic of the symptom, ∨ ∨
+                                     one may submit practically anything of interest to its
+explanatory grid. And while Zizek expounds more than merely one logic of symptom
+formation, his structural logics—like his many books—tend to remain variations on a
+single theme.
+      If, according to Lacan at the end of his career, the symptom has become a condition
+of subjective existence rather than a contingent problem, then there can be no possibility
+of curing symptoms in the manner that Freud envisioned when he invented
+psychoanalysis. Yet while this universalizing of symptomatology sidelines the question
+of cure, it does nothing to diminish the psychoanalytic zeal for diagnosis and
+interpretation. Instead, the opposite is true: universalizing the symptom fuels the motive
+for diagnosis and interpretation, since symptoms are no longer localized and self-evident
+but lurking everywhere. A hermeneutic operation becomes necessary before we can see
+how, for example, woman is the symptom of∨ man.2 By shifting symptoms from the
+                                                    ∨
+category of the exception to that of the rule, Zizek to some extent depathologizes the
+symptom, converting it into a subjective norm. But to the degree that his method requires
+a diagnostic stance (insofar
+                          ∨ ∨
+                              as it encourages an intensified hermeneutic vigilance vis-à-
+vis the cultural field), Zizek’s symptomatology raises questions about the ethics of
+diagnosis. While Lacan’s universalizing of the symptom provokes fundamental
+        ∨ ∨
+     2. Ziz ek elaborates this particular example in Enjoy Your Symptom! [31–67]. The charac-
+terization of woman as the symptom of man may be understood as a heterosexist correlate of the
+Lacanian axiom that there is no sexual relation (“il n’y a pas de rapport sexuel”). Although space
+prevents me from taking up this example of the symptom, I have pursued some of the issues it
+raises for sexual politics in Dean, “Homosexuality.”
+
+
+
+22
+epistemological questions too, my primary concern lies with the ethical implications of
+a critical approach that regards the universe as perpetually in need of interpretation.
+Reading one’s world in terms of symptoms positions one as a hermeneut with a particular  ∨ ∨
+relation to the world—a relation of suspicion and putative mastery. Although Zizek
+repeatedly points out that one can never master one’s “own” symptom (but only enjoy
+it), his method nonetheless situates the critic in a position of hermeneutic mastery over
+the social and cultural symptoms he or she diagnoses. One cannot help    ∨ ∨
+                                                                              noticing that in
+his dozen or so books no cultural artifact poses any resistance to Zizek’s hermeneutic
+energy; there is no social system or movie or opera or novel that he cannot interpret. We
+might
+ ∨ ∨
+        say that there seems to be no cultural phenomenon that, with his Lacanian schema,
+Zizek∨ cannot master.3
+         ∨
+      Zizek’s hermeneutic voracity—what Tom Cohen characterizes as his approaching
+“the vast samples of American popular culture with vampirelike urgency” [356]—could
+be understood as but one more instance of psychoanalysis’s imperialism, its tendency to
+find exemplifications of its principles everywhere it turns [see Derrida; Meltzer]. I would
+suggest, however, that viewing cultural phenomena through the lens of symptomatology
+points to a larger problem, one that pertains to not only psychoanalytic criticism but
+also Marxism, historicism, and cultural studies. The problem lies in the way that treating
+aesthetic artifacts as cultural symptoms ∨elides the specificity of art, making cultural
+                                                 ∨
+forms too readily apprehensible as what Zizek, in one definition of the symptom, calls
+“the point of emergence of the truth about social relations” [SO 26]. Of course, the
+category
+ ∨ ∨
+           of art—and, more broadly, that of aesthetic experience—does not appear in
+Zizek’s work; speaking of “art” when discussing post-Lacanian ideology critique may
+appear as quaintly anachronistic. But that is exactly my     ∨ ∨
+                                                                point. Despite his interest in
+Kantian philosophy and his evocation of the sublime, Zizek’s approach to culture and
+society leaves little conceptual space for any consideration of aesthetic effects or their
+significance.4
+      This is an ethical problem because it eradicates dimensions of alterity particular to
+art, making any encounter with the difficulty and strangeness of aesthetic experience
+seem beside the point. Rather than finding any moments of∨opacity or resistance to his
+                                                                   ∨
+hermeneutic schemes when engaging aesthetic artifacts, Zizek finds only a familiar
+scenario—one that his readers now recognize quickly too. Although he speaks almost
+continuously about otherness, no actual  ∨ ∨
+                                             instances of otherness are permitted to interrupt
+his interpretive discourse. And while Zizek’s approach exemplifies this problem especially
+strikingly, it is far from limited to his work. Business as usual throughout the humanities
+proceeds as if thinking about art symptomatically—as a “point of emergence of the
+truth about social relations”—were the only credible alternative to thinking about art as
+
+                          ∨ ∨
+      3. See, for example, Ziz ek’s analysis of September 11, which began circulating
+                                                                                ∨ ∨
+                                                                                       online merely
+weeks after the event [Welcome]. As Louis Menand points out apropos of Ziz ek and others, the
+intellectual certainty manifested on the Left in the wake of 9/11 is itself rather troubling:
+
+     The initial response of most cultural and political critics to the attacks of September
+     11th—a completely unanticipated atrocity carried out by an organization that few people
+     in the West had ever heard of and whose intentions are still not entirely comprehen-
+     sible—was: It just proves what I’ve always said. . . . The surprising thing about most of
+     the published reflections on September 11th is how devoid of surprise they are. They
+     are so devoid of surprise as to be almost devoid of thought. [98]
+                                                       ∨ ∨
+      4. Rey Chow notes, in passing, this feature of Ziz ek’s work: “Whether
+                                                                          ∨ ∨
+                                                                                 he is reading litera-
+ture, film, jokes, comics, science fiction, philosophy, or anything else, Ziz ek is seldom interested
+in the problem of aesthetic form and its relation to (the construction of) subjectivity as such” [7].
+
+
+
+
+diacritics / summer 2002                                                                           23
+the creation of transcendent genius. I find both of these alternatives unsatisfactory because
+both effectively make art transparent, reducing its alterity to more   ∨ ∨
+                                                                           familiar terms. In
+what follows, I elucidate the epistemological implications of Zizek’s notion of the
+sociocultural symptom, before pursuing its ethical implications and suggesting how
+psychoanalysis might provide some conceptual resources for a more ethically defensible
+approach to aesthetics.
+
+
+Arguing for the Real
+                            ∨ ∨
+Thus far my critique of Zizek has argued that his combining Hegelian Marxism with
+Lacanian psychoanalysis conduces to a critical perspective on cultural matters that makes
+aesthetic forms overly familiar, rendering them instantly recognizable as the products
+of ideological conflict. Were it not∨that symptomatic reading constitutes the approach I
+                                        ∨
+wish to critique, I would say that Zizek’s work itself stands ∨as the symptom of a much
+                                                                  ∨
+larger critical problem. In other words, I have suggested that Zizek makes art too familiar
+and that this critical tendency itself can be seen as dispiritingly familiar. But it must be
+acknowledged that the appearance, in 1989, of The Sublime Object of Ideology
+inaugurated an innovative approach in the history of psychoanalytic criticism. It was
+not something familiar∨ ∨
+                          but a wonderfully strange new critical voice that we heard when
+we began reading Zizek. He revivified psychoanalytic criticism by making it more
+political, more philosophical, and ultimately more popular; and he achieved all this by
+shifting the emphasis from analyses of imaginary and symbolic representations to an
+engagement with that which resists representation: the real.
+ ∨ ∨
+      Following Jacques-Alain Miller’s systematic periodization of Lacanian thought,
+Zizek focuses his sharpest attention on the “late Lacan,” wherein the concept of the
+real—along with the notions of drive, jouissance, Thing, and objet petit a associated
+with it—comes to the fore. Lacan’s insistence throughout the 1950s on the subjective
+importance of the signifier gave way (circa 1960) to a growing interest in what the
+signifier could not accommodate and, indeed, what animates the symbolic universe in
+the first place.5 With the waning of structuralism and its emphasis on the quasideterminist
+role of symbolic structures in human life, Lacan began expending greater speculative
+energy on the underdetermination of subjectivity by symbolic forms. Whereas the concept
+of overdetermination derived from psychoanalytic hermeneutics (specifically, The
+Interpretation of Dreams) had promised a theory of subject formation that seemed
+compatible with Lévi-Strauss’s structuralism, in fact the multiply determining relations
+created by chains of signifiers connected in a symbolic network could never completely
+determine the subjective effects they were invoked to explain. There is always something
+left over, something unexplained by symbolic determination. Hence Freud’s observations
+about the enigmatic “navel of the dream”; hence, too, Lacan’s attempts to theorize this
+subjective underdetermination via a range of terms and concepts (principally that of
+l’objet petit a).
+      Paradoxically the Freudian understanding of overdetermination leads to a radically
+nondeterminist theory of subjectivity; Lacan’s account of the symbolic order’s constitutive
+effects does not revoke all notions of subjective agency, as often has been assumed in
+Anglo-American debates about the ideological consequences of Lacanian psychoanalysis.
+
+        ∨ ∨
+ ∨ ∨
+      5. Ziz ek locates this shift in Lacan’s seminar on The Ethics of Psychoanalysis, 1959–60
+[Ziz ek, “Undergrowth” 7]. The publication of this seminar in 1986 and ∨ ∨
+                                                                           its translation into En-
+glish in 1992 provide dates that circumscribe the period during which Ziz ek was in the process of
+emerging as the intellectual figure that we know today.
+
+
+
+
+24
+To discredit the notion of individual autonomy is not to nullify agency tout court. Much
+of the confusion on this score stems from a reluctance to engage the theoretical debates
+of psychoanalytic Marxism, particularly Althusser’s account of the overdetermination
+of social contradictions and the consequent relative autonomy of various social practices,
+including the aesthetic [Althusser, “Contradiction”]. The Althusserian concept of “relative
+autonomy” is one to which I shall return; for now I want to register simply that it is the
+implications
+ ∨ ∨
+                of symbolic underdetermination for an account of political agency that
+Zizek has been intent on developing throughout his work.
+     He has tried to accomplish this by explaining the Lacanian real—that which resists
+representation—in terms of a notion of antagonism drawn from Ernesto Laclau and
+Chantal Mouffe’s post-Marxian theory of radical democracy. In Hegemony and Socialist
+Strategy (1985), Laclau and Mouffe employ the term antagonism to describe an
+ideological field’s discursive failure to fully constitute itself. Rather than being considered
+incidental, such failure actually structures the ideological field, while also providing
+opportunities for political struggle and,∨ in principle, the possibility of social change.
+                                              ∨
+Inspired by this constellation of ideas, Zizek proceeded to rewrite Laclau and Mouffe’s
+notion of discursive failure in terms of the Lacanian real, arguing that any symbolic
+universe is structured by that∨ which it cannot accommodate and therefore necessarily
+                                    ∨
+excludes. We might say that Zizek pumps up the concept of the real, developing it from
+a relatively passive notion of inherent limit to something like the raison d’être of all
+discursive activity—ideological, cultural, and otherwise. He does this by redefining the
+connection between the symbolic and the real: more than as a relation of heterogeneity,
+in which∨the symbolic cannot apprehend and therefore by definition does not include
+            ∨
+the real, Zizek pictures the symbolic’s exclusion of the real as constitutive, as its founding
+instance and that which ∨ ∨
+                            fuels symbolic machinery even as it threatens to disrupt it. It is
+this relation that Zizek describes using the term “antagonism” (or “deadlock” or
+“impossibility,” as he also often characterizes it). Thus whereas Laclau and Mouffe
+conceptualize antagonism
+                    ∨ ∨
+                              somewhat deconstructively in terms of discursive failure or
+contradiction, Ziz ek conceptualizes antagonism more insistently in terms of the
+unsymbolizable real, thereby shifting the accent in a way that has generated considerable
+debate among  ∨ ∨
+                  these thinkers.6
+     When Zizek characterizes the ideological field as constituted around a deadlock
+that by definition does not admit of discursive or practical manipulation, the possibilities
+for political struggle and melioration
+                                ∨ ∨
+                                           start to seem bleak. Skepticism concerning the
+political implications of Ziz ek’s psychoanalytic account of ideology has led to
+disagreement over the status of the Lacanian real as constitutively excluded from symbolic
+formations. For example, Judith Butler has argued that what is constitutively excluded
+from the sociosymbolic order should be subject to political rearticulation, and therefore
+that to hypostasize the real as definitively unsymbolizable is effectively to secure a
+social system that excludes various minorities (including queers) by shunting their lives
+
+                                                            ∨ ∨
+      6. In his afterword to Laclau’s New Reflections, Ziz ek is explicit about this distinction,
+insisting that “[w]e must then distinguish the experience of antagonism in its radical form, as a
+limit of the social, as the impossibility around which the social field is structured, from antago-
+nism as the relation between antagonistic subject-positions: in Lacanian terms,
+                                                                              ∨ ∨
+                                                                                     we must distin-
+guish antagonism as real from the social reality of the antagonistic
+                                                             ∨ ∨
+                                                                     fight” [Ziz ek, “Beyond” 253;
+original emphases]. The question of the relation between Ziz ek’s use ∨of the notion of antagonism
+                                                                          ∨
+and Laclau’s is one of the topics addressed in Butler, Laclau, and Ziz ek’s Contingency, Hege-
+mony, Universality.
+                  ∨ ∨
+                      See  also Laclau [“Theory,” esp.  15], where he  makes   clear the limits of his
+agreement with Ziz ek’s construing antagonism in terms of the real. In his most recent thinking,
+Laclau wishes to align the real with his concept of dislocation and to retain an understanding of
+antagonism as discursive, not real.
+
+
+
+diacritics / summer 2002                                                                           25
+into zones of the unthinkable and unlivable.7 The problem in this debate is—and always
+has been—the ideological
+                       ∨ ∨
+                                implications of the real; thus the aspect of Lacanian
+psychoanalysis that Zizek has brought to the fore, theorizing it in book after book, is
+still the source of greatest misunderstanding.8
+      Having intervened ∨in this debate on more than one occasion, I now see better than
+                            ∨
+I did previously how Zizek’s success in explaining the concept of the real is also
+paradoxically what has enabled misunderstandings to occur and, indeed, continues to
+reinforce rather than diminish them. Because Lacan’s real can be defined ∨only negatively
+                                                                            ∨
+(as “impossible” and suchlike), it is an infuriatingly abstract concept. Zizek has made
+the concept more accessible by illustrating it with innumerable examples, many of them
+drawn from the familiar world of popular culture. Thus although he maintains (correctly,
+in my view) that the real is inherently nonsubstantial and has no necessary positive
+content, he repeatedly argues this philosophical point through examples   ∨ ∨
+                                                                             that lend the
+real any number of quite memorable positive contents. The appeal of Zizek’s work—
+but also one of its greatest rhetorical drawbacks—lies in his substituting, by way of
+explanation, very concrete instances for highly abstract ideas. Thus we should not find
+it quite so puzzling that Butler seems unable to grasp this elementary concept and keeps
+insisting that the constitutive exclusions through which the sociosymbolic founds itself
+must be understood in terms of racial and sexual ∨ ∨
+                                                     discrimination. She attributes to the
+real one kind of positive content because Ziz ek keeps explaining it by way of
+exemplifications that lend it other kinds of positive content.9
+
+
+Enjoying the Idea of the Symptom
+                                                                    ∨ ∨
+Another way of stating this problem would be to say that Zizek’s argument about the
+real as nonmeaning (or resistance to meaning) tends to be accompanied by a frenzy of
+meaning-making activity—a
+                      ∨ ∨
+                              dazzling hermeneutic spectacle—on his part. Resistance
+to meaning is one of Zizek’s perennial themes, but it is never allowed to interfere with
+his own discursive performance. Thus although he claims that “late Lacan” takes us
+beyond hermeneutics (by taking us beyond the world ∨of interpretable signifiers to that
+                                                          ∨
+of the uninterpretable because unsymbolizable real), Zizek seems most in his element
+when he is busily interpreting the products of mass culture and gaily revealing their
+hidden significance. This disjunction
+                              ∨ ∨
+                                      between what he says and what he does suggests
+more than a contradiction in Zizek’s idiosyncratic critical practice: it indexes the limits
+of symptomatic reading as an approach to culture. The hermeneutic quest for meaning
+assumes that true significance remains concealed until it is revealed by an interpretive
+act; and the notion of symptom embodies this assumption. There can be no symptom
+without an interpretant. To diagnose something as a symptom is to posit a hidden
+
+                                     ∨ ∨
+      7. Butler first took issue with Ziz ek’s account of ideology formation in “Arguing with the
+Real,”
+ ∨ ∨
+         and developed her argument in The Psychic Life of Power. I discuss Butler’s critique of
+Ziz ek and her misunderstanding of the real in “Bodies That Mutter.”
+      8. ∨In his final contribution to the exchanges collected in Contingency, Hegemony, Univer-
+           ∨
+sality, Ziz ek notes this problem: “Perhaps the ultimate object of contention in our debate is the
+status of the (Lacanian) real” [308].
+      9. This also sheds some light on Butler’s sophistic contention that “[t]o claim that the real
+resists symbolization is still to symbolize the real as a kind of resistance” [“Arguing” 207]. As I
+demonstrate in Beyond Sexuality [182–83], Butler is quite mistaken    ∨ ∨
+                                                                            here; yet in making her
+erroneous argument she is picking up on a significant problem in Ziz ek’s work and throwing into
+relief just how difficult it is to discuss the real without in some way familiarizing and thereby
+betraying it.
+
+
+
+
+26
+significance that must be elicited via interpretation. Hence Lacan’s early definition of
+the symptom as “structured like a language”—that is, as meaningful without being fully
+transparent [Lacan, “Function” 59].
+      By bringing out the semiotic aspect of the symptom—“the symptom being a
+metaphor in which flesh or function is taken as a signifying element”—Lacan lays the
+groundwork for vastly expanding the traditional psychoanalytic conception of what
+qualifies as a symptom [Lacan, “Agency” 166]. If a symptom can be understood as a
+metaphor in which part of the body or a somatic function takes the place of a signifier,
+then interpretation consists in determining what signifier or message has been replaced
+by that portion of the anatomy and why. The symptom’s true message lies hidden behind
+its corporeal surrogate. In this account we observe the steps of an argument about the
+relation between language and organic phenomena that founds psychoanalysis, namely,
+that a physiological ailment (for instance, Dora’s cough) may be considered a message;
+that the message is concealed because a substitution has occurred; and that therefore the
+message requires decoding via interpretation. Behind this psychoanalytic logic lies the
+metaphysical assumption that truth is hidden, and it is this assumption that undergirds
+the hermeneutic enterprise. The correlative assumption is that whatever is hidden must
+be true, that the subject’s truth resides in what he or she conceals. Hence Lacan’s remark
+that “[t]he symptom is in itself, through and through, signification, that is to say, truth,
+truth taking shape” [Seminar 2 320].
+      This account represents the early period of Lacan’s theory of symptom formation,
+but we can see how his defining it semiotically already initiates a process of universalizing
+the symptom. Structured like a language, the symptom is first and foremost a sign of the
+unconscious; its primary message is general, not specific: the unconscious is here, and
+it has something to say. By aligning the symptom with the unconscious (both of which
+are defined as “structured like a language”) and by identifying the truth of the symptom
+as concealed thanks to a metaphoric subsitution, Lacan aligns subjective truth with the
+unconscious and implies, moreover, that this truth is hidden. Hence the necessity for
+interpretation to bring it out. But if the unconscious is hidden, this is not because it lies
+concealed inside the individual, in the depths of her mind or the recesses of his soul.
+Rather, the unconscious is hidden in plain view, like the purloined letter in Poe’s story
+[Lacan, “Seminar”].10 Lacan considers the unconscious to be a property of surfaces, not
+of depths; hence his distinguishing psychoanalysis from depth psychology and his interest
+in topology, particularly the mathematical transformation of surfaces. Exterior to the
+self, the unconscious is that “other scene” that emerges as an effect of symbolic life and
+differentially affects us all. Once it too is conceived in terms of language, the symptom
+can be understood to afflict not only hysterics but everybody. Thus Lacan’s redefinition
+of the symptom as sînthome late in his career, though it has been taken to mark a radical
+shift in his thinking, was always a latent possibility insofar as his description of symptoms
+as “structured like a language” and characterized by metaphoric substitution universalized
+the symptom from the start.
+      One significant difference between early and late Lacanian conceptions of the
+symptom is that the sînthome is said to block rather∨ ∨
+                                                         than to elicit interpretation—though
+the idea of the sînthome doesn’t seem to inhibit Zizek’s hermeneutic energy. In principle,
+however, the sînthome stymies interpretation because “late Lacan” shifts symptoms
+from the symbolic register to the real, ∨ ∨
+                                           recognizing in the symptom that which binds the
+subject to his or her jouissance. As Zizek glosses this shift: “The symptom is not only a
+
+     10. A recent instance of the idea that the unconscious involves hiding something in plain
+sight is offered by the British psychoanalyst Adam Phillips, who describes a five-year-old girl
+who initiates every session by walking into his consulting room, closing her eyes, and urging
+Phillips to find her [Phillips 3–9].
+
+
+
+diacritics / summer 2002                                                                     27
+cyphered message, it is at the same time a way for the subject to organize his enjoyment—
+that is why, even after the completed interpretation, the subject is not prepared to renounce
+his symptom; that is why he ‘loves his symptom more than himself’” [SO 74]. In this
+view, our symptoms are what keep us going, and therefore they cannot be removed
+without the risk of subjective dissolution. Symptoms provide a certain kind of satisfaction,
+as well as a measure of discomfort and pain. Here the symptom is no longer the result of
+a metaphorical substitution but rather functions as a sign of the unsubstitutable real.
+Lacan’s shift ∨ ∨
+                  from thinking of symptoms in primarily symbolic to primarily real terms
+appeals to Zizek, who summarizes his understanding of it thus: “This, then, is a symptom:
+a particular, ‘pathological,’ signifying formation, a binding of enjoyment, an inert stain
+resisting communication and interpretation, a stain which cannot be included in the
+circuit of discourse, of social bond network, but is at the same time a positive condition
+of it”∨ [SO 75]. Here we have encapsulated the structural logic of symptom formation
+         ∨
+that Zizek employs throughout his work.                               ∨ ∨
+      It is remarkable that in this synopsis of the symptom’s logic Zizek makes no mention
+of the unconscious. Whereas for Freud and Lacan the symptom functions first and
+foremost as a sign  ∨ ∨
+                        of the unconscious—whether of an unconscious wish or an unconscious
+message—for Zizek the symptom functions as a sign of the real, “an inert stain resisting
+communication and interpretation.” For Freud the symptom represents a compromise
+formation, a product∨ ∨
+                             of the conflict between unconscious wishes and the forces of
+repression; for Zizek, however,
+                            ∨ ∨
+                                     the symptom is a product of antagonism between language
+and the real. Thus Zizek converts the central Freudian idea of compromise (der
+Kompromiß) into a modified notion of Laclauean antagonism. He nevertheless remains
+in accord with classical psychoanalytic theory when it comes to the dimension            ∨ ∨
+                                                                                             of
+satisfaction that consolidates the symptom and makes it so hard to dislodge. What Zizek
+describes as “a binding of enjoyment” (or jouissance), Freud locates in the symptom as
+a “substitute-formation,” whereby the satisfaction found in the symptom has replaced
+the instinctual process that has been affected by defense [Freud, Inhibitions 145]. In
+Freudian terms, this substitution can be understood economically as a process in which
+the symptom provides an unconscious wish with a surrogate satisfaction; and it can be
+understood symbolically as the process through which one unconscious idea is replaced
+by another according to certain chains of association [Laplanche and Pontalis 434].
+Thus both “early” and “late” Lacanian accounts of the symptom—the symptom as a
+metaphorical substitution (a “ciphered message”) and the sînthome as a condensation of
+jouissance—can be regarded as latent in Freud.
+      Thanks to its theory of the unconscious, psychoanalysis tacitly universalizes
+symptomatology from its inception. Epistemologically this universalization
+problematizes the symptom’s medical status, while at the same time facilitating
+symptomatology’s transposition from the clinical to the cultural realm. Indeed, originally
+the symptom was just as much a cultural idea as a medical one, according to Marjorie
+Garber in Symptoms of Culture, so we should not trouble ourselves unduly about its
+epistemological status from a clinical point of view.11 All it takes to extend the logic of
+
+      11. See Garber: “It might be supposed that the word symptom itself began as a medical term
+and became more broadly and metaphorically applied, over time, to other realms of inquiry, but
+in fact this is not the case. Symptoms were from the beginning broadly defined cultural indica-
+tors; it is symptomatic of our own desire to classify, categorize, and limit, that we should think of
+them in a more restricted pathological sense” [3]. While Garber’s approach to culture, in this
+and other books, exemplifies the kind of critical
+                                            ∨ ∨
+                                                   method that is the target of∨ my critique, I would
+                                                                                 ∨
+like to distinguish her perspective from Ziz ek’s. Although she alludes to Ziz ek in Symptoms of
+Culture, Garber is interested more in symbolic networks and their metonymic displacements than
+in the real. She claims as her inspiration the hermeneutical model laid out in The Interpretation of
+
+
+
+
+28
+symptom formation to culture and society is to conceive of the social as a space of
+conflict, since symptoms are the result—and hence a sign—of conflict. As soon as one
+dispenses with a functionalist sociological perspective and instead views the social in
+terms of power relations, it immediately becomes clear that society is conflictual. Thus
+the link to Marx is easily made, and any lingering uncertainty about why Lacan credited
+him with inventing the symptom rapidly dissipates. Since from a psychoanalytic
+perspective the unconscious stands as a sign of subjective conflict, Lacan’s reconceiving
+the unconscious in terms of language—that is, as a social rather than an individual
+dimension of experience—also situates symptoms beyond the         ∨ ∨
+                                                                     merely personal realm.
+Hence it seems little more than critical common sense when Zizek begins his inaugural
+work by announcing that culture in its entirety should be considered a compromise
+formation, the symptomatic outcome of a conflict: “All ‘culture’ is in a way a reaction-
+formation, an attempt to limit, canalize—to cultivate this imbalance, this traumatic kernel,
+this radical antagonism through which man cuts his umbilical cord with nature, with
+animal homeostasis” [SO 5].12
+     Once culture is conceived of in this manner, there can be but one politically
+progressive approach to it, namely, demystification. The conflict that has given rise to
+culture in general—and the more local conflicts that produce as their symptoms various
+cultural phenomena—must be interpreted so that their ideological stakes become
+apparent. In this way cultural criticism has come to be considered a form of political
+work. Indeed, demystification has become the quintessential critical gesture when
+responding to cultural artifacts; it tends to be regarded as the only responsible alternative
+to either uncritical veneration (of art) or mindless consumption (of mass cultural
+entertainment). The politically progressive critic is always about the business of
+unmasking, attempting to unveil the ideological struggles behind a seemingly innocent
+or harmonious work of art. Whereas traditional psychoanalytic criticism decoded the
+neurotic conflicts of individual artists (finding in writers’ and painters’ characters the
+surrogates of warring parts of their selves), contemporary psychoanalytic criticism
+demystifies the transindividual struggles (whether social or ideological) that the work
+of art is understood to encode.                                            ∨ ∨
+     Of course, psychoanalytic Marxism in literary studies precedes Zizek and may be
+traced at least to Althusser, who in Reading Capital coined the term “symptomatic
+reading” to argue not only that he was approaching Marx’s text symptomatically, but
+also that he was deriving his method from Marx’s own technique of reading the political
+
+Dreams, arguing that cultural symptoms may be read according to this method by tracing their
+associations in much the way that Freud does when interpreting dreams. Garber thus draws an
+analogy between Freudian dreamwork—the psychical translation process that involves conden-
+sation and displacement—and cultural work, suggesting that reading cultural artifacts in an
+associative manner may be preferable to the primarily quantitative, empirical approach that
+dominates sociology and certain versions of cultural studies. Her neopsychoanalytic method en-
+ables greater
+        ∨ ∨
+               attention to particularity and specificity, including the specificities of literary works;
+unlike Ziz ek, Garber is inclined to bracket questions about the representativeness or exemplarity
+of the cultural artifacts∨ she considers. Perhaps as a result, Garber shows herself to be a subtler
+                            ∨
+reader of culture than Ziz ek, even as she is a weaker theorist.
+     12. Technically we should distinguish between a compromise formation (of which symptoms
+are an instance) and a reaction formation, since the reaction formation defends against a wish
+while the compromise formation includes the substitutive satisfaction of a wish. But, as Laplanche
+and Pontalis argue, in practice this distinction is hard to sustain, because the unconscious wish is
+often discernible
+            ∨ ∨
+                   in the reaction formation, as well as in the compromise formation [378]. With
+respect to Ziz ek’s characterization of culture as a reaction formation in the context of an argu-
+ment that universalizes the symptom, I doubt that he is placing any weight on this particular
+technical distinction.
+
+
+
+diacritics / summer 2002                                                                              29
+economy of David Ricardo and Adam Smith. Althusser characterizes Marx’s strategy as
+“a reading which might well be called ‘symptomatic’ (symptomale), insofar as it divulges
+the undivulged event in the text it reads, and in the same movement relates it to a different
+text, present as a necessary absence in the first” [Althusser and Balibar 28; original
+emphases]. In this regard, Althusser
+                                   ∨ ∨
+                                         already was claiming in 1965 that Marx invented
+the symptom—a point that Ziz ek overlooks in order to promote his version of
+psychoanalytic Marxism as definitively superseding Althusserianism. Yet while            ∨ ∨
+appropriating from Althusser the notion and practice of symptomatic reading, Zizek
+does not adopt with it the crucial concept of “relative autonomy,” at least as far as
+aesthetic practice is concerned.
+                            ∨ ∨
+                                    Although he argues for “the autonomy of the psychic
+domain” [Metastases 7], Zizek does not seem prepared to concede even relative autonomy
+to the aesthetic domain, either in principle or in practice. The result is that he borrows
+from Althusser what from my perspective represents one of the most problematic aspects
+of his theory. The concept of relative autonomy may offer a partial solution to the problem
+I’ve been delineating, insofar as it adumbrates how aesthetic forms are never only an
+expression of ideological or cultural conflicts; and therefore it suggests that art cannot
+be fully determined by—or reducible to—its contextual   ∨ ∨
+                                                             matrix.13
+     However, the problem I’m sketching exceeds Zizek’s hastiness vis-à-vis Althusser
+or the absence in his theory of a viable conceptual space for specifically aesthetic effects.
+Ongoing reactions to New Critical formalism in literary studies have generated profound
+skepticism regarding any notion of autonomy when it comes to aesthetic practice—to
+the extent that claims on behalf of “relative autonomy” provoke allergic responses from
+left-leaning humanities professors, who seem to regard Althusser’s concept as a
+dangerously anti-Marxian idea. In order to retrieve what Althusser meant by relative
+autonomy, I want to develop his commitment to discursive specificity in terms of aesthetic
+alterity, or what I call the otherness of art. By showing how discursive specificity entails
+considering that dimension of irreducibility or alterity particular to distinct cultural
+domains, I wish to emphasize the degree to which ethical as well as epistemological
+issues are involved in these debates over critical approaches to aesthetics. While I concede
+that treating works of art (or, more broadly, textual artifacts) in less individualistic ways
+represents a measure of critical progress, I remain troubled by the unquestioned
+assumption that any cultural text should be understood as a compromise formation, the
+symptomatic product of a conflict whose terms are at least partly unconscious. Whether
+one approaches textual forms in the context of an authorial or a cultural unconscious,
+the conviction still holds that the work of art is duplicitous or ignorant of something,
+that it exhibits contradictions of which it is unaware and therefore needs the critic to
+help reveal. Neither artists nor their cultures are considered masters of the conflicts that
+produce their work; instead the role of mastery—of interpreting the symptom—falls to
+the demystifying critic.14 Hence my suggestion that there is something ethically suspect
+
+
+
+      13. Althusser makes clear what he means by relative autonomy when he argues that “[t]he
+fact that each of these times and each of these histories [including the history of aesthetic forms]
+is relatively autonomous does not make them so many domains which are independent of the
+whole: the specificity of each of these times and each of these histories—in other words, their
+relative autonomy and independence—is based on a certain type of articulation in the whole, and
+therefore on a certain type of dependence  ∨ ∨
+                                               with respect to the whole” [Reading Capital 100;
+original emphases]. A useful critique of Ziz ek’s relation to Althusser may be found in Bellamy.
+For his relation to Lacan, see Althusser, Writings. A very enlightening critique of Althusser’s
+appropriation of Lacan for his theory of interpellation is given in Barrett.
+      14. A notable exception to this way of thinking may be found in a brief but suggestive essay
+by Colette Soler, a Lacanian psychoanalyst who argues the following:
+
+
+
+30
+about this ostensibly progressive approach to cultural forms—in other words, that there
+is a significant disjunction between the politics and the ethics of cultural study.
+
+
+Suspecting Hermeneutics
+                                                                                             ∨ ∨
+The position that my critique has targeted thus far—and which I have taken Zizek’s
+work to exemplify—goes under the general rubric of the hermeneutics of suspicion, a
+phrase originally coined by existential phenomenologist Paul Ricoeur to describe the
+interpretive protocols of Nietzsche, Marx, and Freud, but these days more often employed
+by cultural conservatives such as Harold Bloom to inveigh against politicized literary
+criticism.15 Interpretation is subject to greater contestation in modernity, according to
+Ricoeur, because no universal canon remains to govern exegesis. In the wake of “the
+death of God,” the position that authorized hermeneutics has dissolved. Where once a
+scriptural or textual double meaning had been understood as the form through which
+divinity manifested itself, now double meaning tends to be apprehended in terms of
+dissimulation, and hence interpretation becomes coeval with demystification.
+“Fundamentally,” Ricoeur argues, “the Genealogy of Morals in Nietzsche’s sense, the
+theory of ideologies in the Marxist sense, and the theory of ideals and illusions in Freud’s
+sense represent three convergent procedures of demystification” [34]. Viewing Marxism
+and psychoanalysis as operating with homologous hermeneutics, Ricoeur probably would
+agree
+    ∨ ∨
+       that “Marx invented the symptom,” though he would be less sanguine than Althusser
+or Zizek about
+            ∨ ∨
+                 the implications of this homology.
+     Like Zizek and Garber after him, Ricoeur focuses his examination of psychoanalytic
+hermeneutics on The Interpretation of Dreams, particularly the mechanisms of distortion
+that Freud names the “dream-work” (die Traumarbeit). We might recall that, according
+to Freud, a dream is structured exactly like a symptom (“our procedure in interpreting
+dreams is identical with the procedure by which we resolve hysterical symptoms”
+[Interpretation 528]), and therefore to characterize aesthetic artifacts as cultural symptoms
+implies that those artifacts are formed through the same mechanisms of distortion that
+produce dreams. Indeed, the pervasive critical notion of “cultural work”—that is, the
+kind of effects we often take literature to be performing unbeknownst to its authors—
+derives by homology from this basic postulate of psychoanalytic hermeneutics, even
+when those critics who employ it are more likely to regard themselves as practicing
+Marxist rather than psychoanalytic criticism.16 Just as Garber initiates Symptoms of
+Culture by claiming that her∨ method extends the hermeneutics outlined in The
+                                  ∨
+Interpretation of Dreams, so Zizek begins his explanation of how Marx invented the
+symptom
+ ∨ ∨
+            by pursuing a disquisition on not symptoms but dreams. Following Freud,
+Zizek insists that neither latent nor manifest contents of the dream should distract us
+
+
+     Psychoanalysis does not apply to literature. Its attempts in doing so have always mani-
+     fested their futility, their unfitness to lay the grounds for even the most meager literary
+     judgment. Why? Because artistic works are not products of the unconscious. You can
+     well interpret a novel or poem—i.e., make sense of it—but this sense has nothing to do
+     with the creation of the work itself. This sense has no common measure with the work’s
+     existence, and an enigma remains on the side of the existence of the work of art. This
+     would even be a possible definition of the work in its relation to sense: it resists inter-
+     pretation as much as it lends itself to interpretation. [214]
+
+    15. For more progressive critiques of the hermeneutics of suspicion, see Armstrong; Sedgwick.
+    16. For a representative range of instances, see Morris; Poovey; Reynolds and Hutner;
+Tompkins.
+
+
+
+diacritics / summer 2002                                                                           31
+from the formal process of distortion performed by the dreamwork, since it is in that set
+of formal transpositions, rather than in the hidden content, that unconscious desire is to
+be found:
+
+     We should not reduce the interpretation of dreams, or symptoms in general, to
+     the retranslation of the “latent dream-thought” into the “normal,” everyday
+     common language of intersubjective communication (Habermas’s formula).
+     The structure is always triple; there are always three elements at work: the
+     manifest dream-text, the latent dream-content or thought and the unconscious
+     desire articulated in a dream. This desire attaches itself to the dream, it
+     intercalates itself in the interspace between the latent thought and the manifest
+     text; it is therefore not “more concealed, deeper” in relation to the latent
+     thought, it is decidedly more “on the surface,” consisting entirely of the
+     signifier’s mechanisms, of the treatment to which the latent thought is submitted.
+     In other words, its only place is in the form of the “dream”: the real subject
+     matter of the dream (the unconscious desire) articulates itself in the dream-
+     work, in the elaboration of its “latent content.” [SO 13; original emphases]
+                                                                      ∨ ∨
+Accurately reprising Freud’s argument in Die Traumdeutung, Zizek brings out two
+significant points. First, classical psychoanalytic hermeneutics is more properly formal
+than generally is assumed, insofar as its interpretive ingenuity exercises itself upon the
+distinctive mode of translating one set of ideas (the latent dream-thought) into another
+set (the dream’s manifest content). Unconscious desire becomes visible in the set of
+transformations that converts one content into another, rather than residing in either the
+earlier (latent) or subsequent (manifest) representations.
+      Second, by elaborating psychoanalytic hermeneutics as a kind of formalism in which
+the
+ ∨ ∨
+     content of mental images remains utterly secondary when establishing their meaning,
+Zizek also clarifies the distinction between psychoanalysis and depth psychology. If
+meaning lies not in the latent dream-thought but in the mode of its transformation, then
+the truth of desire must be located not in the hidden depths of subjective inwardness but
+in the ostensibly superficial displacements that constitute the dreamwork. By thus
+reorienting the surface-depth ∨ ∨
+                                   model through which hermeneutics-as-demystification
+conventionally operates, Zizek goes some distance toward countering critiques of
+psychoanalysis as a metaphysics of the subject and hence as a hermeneutics of
+demystification. It is by virtue of its attention to the literalness of verbal
+                                                                          ∨ ∨
+                                                                               utterances that
+psychoanalysis may be distinguished from psychology. Although Zizek never makes
+reference to Ricoeur’s important critique, he often claims that psychoanalytic
+interpretation remains irreducible to demystification, insisting that “we must avoid the
+simple metaphors of demasking, of throwing away the veils which are supposed to hide
+the naked reality” [SO 28–29]. Indeed, he argues that the standard psychoanalytic critique
+of ideology, which he associates with Althusser, “no longer works”: “We can no longer
+subject the ideological text to ‘symptomatic reading,’ confronting it with its blank spots,
+with what it must repress  ∨ ∨
+                              to organize itself, to preserve its consistency” [SO 30]. At
+moments such as these, Zizek’s   ∨ ∨
+                                     argument appears to coincide with mine.
+      The problem is that what Zizek counsels against—“simple metaphors of demasking,”
+“‘symptomatic reading’”—turns out to be exactly the interpretive method and rhetoric
+he adopts. He executes a twist on the standard critique of ideology as imaginary illusion,
+yet remains caught within the terms of that critique, as when he argues that “ideology is
+not a dreamlike illusion that we build to escape insupportable reality; in its basic
+dimension it is a fantasy-construction which serves as a support for our ‘reality’ itself:
+an ‘illusion’ which structures our effective, real social relations and thereby masks some
+
+
+
+
+32
+insupportable, real, impossible ∨kernel” [SO 45]. While neatly inverting the relation
+                                     ∨
+between ideology and reality, Zizek nevertheless retains the Nietzschean notion of
+masking and thereby tacitly positions himself as the one who unmasks, the one who will
+reveal
+ ∨ ∨
+        to us the “impossible” truth of social relations. This apparent inconsistency is not
+Zizek’s problem as much as it is an inevitable consequence of his approach. Having
+established his critical method
+                             ∨ ∨
+                                 in The Sublime Object of Ideology via a strictly Freudian
+explication of dreamwork, Zizek remains caught within the logic of that hermeneutical
+model, despite his claims to be moving beyond hermeneutics. By definition dreamwork—
+or, analogically, cultural work, ideological work—is a process of distortion, and
+psychoanalytic interpretation generally follows this process in reverse, tracking the formal
+operations through which one scenario has been transformed into another. By tracing
+backwards a procedure of distortion or disguise, psychoanalytic hermeneutics situates
+itself in the realm of demystification. Even when its purpose is less to reveal a hidden
+content than to lay bare the surface mechanisms by which that content appears to have
+been hidden, psychoanalytic interpretation still represents a method of unconcealment.17
+And while it redefines what truth consists in, Lacanian psychoanalysis holds onto the
+notion that some form of interpretation is required to access subjective truth.
+
+
+The Psychoanalytic Critique of Hermeneutics
+
+It might appear that psychoanalysis, inaugurated as a science of interpretation, could
+never escape the fundamental presuppositions of hermeneutics within whose terms
+Ricoeur and others have discussed it. After all, isn’t it the psychoanalytic zeal for
+interpretation that licenses—even for Freud himself—rapid extensions of its method
+from the clinical to the cultural domain? Yet two versions of psychoanalytic thought
+insist that it should not be understood as a hermeneutic; Jean Laplanche has gone so far
+as to argue that psychoanalysis
+                       ∨ ∨
+                                     should be recognized as an antihermeneutic. By
+considering further Zizek’s and Laplanche’s implicit and explicit refutations of Ricoeur,
+I want to challenge the basic assumption that a clinical method of interpretation can be
+readily transposed to the cultural realm. In other words, I want to take seriously the
+proposition that a certain style of psychoanalytic thinking represents a break with
+hermeneutics; but I also want to show how this break undermines the otherwise nearly
+irresistible logic whereby a clinical practice is extended to social and cultural analysis.
+On the basis of that argument, I shall suggest how Althusser might be articulated with
+Laplanche for the purpose of constructing a quite different psychoanalytic approach to
+aesthetics.
+      ∨ ∨
+     Zizek’s critique of hermeneutics objects to the assumption that everything can be
+translated into meaning, that full integration into the circuit of intersubjective   ∨ ∨
+communication is possible in principle. Opposing Habermas’s reading of Freud, Zizek
+contends that the former’s understanding of interpretation overlooks the “traumatic
+kernel” that constitutively resists translation into sense. “Here we confront the
+incommensurability ∨ ∨
+                        between hermeneutics (‘deep’ as it may be) and psychoanalytic
+interpretation,” Zizek argues, since “Habermas can assert that distortions have meaning
+as such—what remains unthinkable for him is that meaning as such results from a certain
+distortion—that the emergence of meaning is based on a disavowal of some ‘primordially
+repressed’ traumatic kernel” [Metastases 27; original emphases]. By focusing on that
+                              ∨ ∨
+      17. See Miklitsch: “If Ziz ek’s program cannot be labeled a ‘hermeneutics of suspicion’ (if
+only because he has so little use for hermeneutics proper and, more importantly perhaps, because
+of a certain comic, even Chaplinesque, strain in his work), it is a politics of demystification for all
+that” [486].
+
+
+
+diacritics / summer 2002                                                                            33
+                                                       ∨ ∨
+which resists meaning (in other words, the real), Zizek aims to distinguish psychoanalytic
+interpretation from hermeneutics. In this respect he follows Lacan, who argues that
+psychoanalytic interpretation directs the patient to what cannot be interpreted, that which
+hermeneutics fails to grasp. As he explains in The Four Fundamental Concepts of Psycho-
+Analysis:
+
+     Interpretation is not open to any meaning. This would be to concede to those
+     who rise up against the character of uncertainty in analytic interpretation that,
+     in effect, all interpretations are possible, which is patently absurd. The fact
+     that I have said that the effect of interpretation is to isolate in the subject a
+     kernel, a kern, to use Freud’s own term, of non-sense, does not mean that
+     interpretation is in itself nonsense. . . .
+           Interpretation is not open to all meanings. It is not just any interpretation.
+     It is a significant interpretation, one that must not be missed. This does not
+     mean that it is not this signification that is essential to the advent of the subject.
+     What is essential is that he should see, beyond this signification, to what
+     signifier—to what irreducible, traumatic, non-meaning—he is, as a subject,
+     subjected. [250–51; original emphases]
+
+For interpretation to point not toward meaning or signification but “beyond . . .
+signification” pushes interpretation—paradoxically enough—beyond the framework of
+hermeneutics. Rather than making sense of trauma, psychoanalytic interpretation draws
+attention to its resistance to sense. In the clinical setting, then, interpretation represents
+something quite different from what hermeneutics conventionally understands by this
+term.
+     Laplanche develops a related critique of hermeneutics by centering his account of
+human subjectivity—and hence of analytic technique—on the enigmatic signifier, a
+term he borrows from Lacan to designate a kind of resistance to meaning that roughly
+corresponds with the Lacanian real (or, more precisely, corresponds with the real as an
+effect internal to the symbolic). It is from a sentence I quoted earlier, in which Lacan
+defines the symptom as a corporeal metaphor, that Laplanche takes this term. Here is
+the complete—and completely slippery—sentence: “Between the enigmatic signifier of
+the sexual trauma and the term that is substituted for it in an actual signifying chain
+there passes the spark that fixes in a symptom the signification inaccessible to the
+conscious subject in which that symptom may be resolved—a symptom being a metaphor
+in which flesh or function is taken as a signifying element” [Lacan, “Agency” 166;
+emphasis added].18 Somewhat akin to this typically Lacanian sentence, the enigmatic
+signifier poses as meaningful yet irreducibly opaque—“inaccessible,” as Lacan says
+here. It does not form part of a signifying chain but instead causes something else to
+take its place; the enigmatic signifier therefore isn’t a signifier in any general acceptance
+of the term. While coining other terms (such as message) that are intended to be
+synonymous with, and thus to clarify, that of enigmatic signifier, Laplanche generalizes
+this concept, making it the cornerstone of his own distinctive psychoanalytic theory.
+Through elaborations of this idea, he has devoted much of his career to refuting Ricoeur’s
+phenomenological reading of Freud. ∨
+                                              ∨
+     Yet it is with more than simply a Zizekian notion of the resistance to sense that
+Laplanche launches his refutation of Ricoeur. In sharp contrast to the Habermasian
+
+     18. “Entre le signifiant énigmatique du trauma sexuel et le terme à quoi il vient se substituer
+dans une chaîne signifiante actuelle, passe l’étincelle, qui fixe dans un symptôme,—métaphore
+où la chair ou bien la fonction sont prises comme élément signifiant,—la signification inacces-
+sible au sujet conscient où il peut se résoudre” [Écrits 518].
+
+
+
+34
+paradigm of intersubjective communication, Laplanche pictures the origins of
+intersubjectivity in unintelligible communications; his norm for human relations is not
+simply misunderstanding (an idea that Habermas can accommodate easily enough), but
+more fundamentally communications that are understood by neither party. In other words,
+the enigmatic signifier remains enigmatic because it remains unconscious. As Laplanche
+explains when glossing this concept, “If I had to give up the term ‘enigmatic’ to my
+objectors, I should then coin the expression ‘compromised signifier,’ in the dual sense
+that it is a compromise, like the symptom, as well as being compromised by the
+unconscious of its originator” [“Interpretation” 158; original emphases]. In his reference
+to the symptom as a compromise formation, Laplanche harks back to the passage in
+which Lacan coins the term enigmatic signifier to explain symptom formation. He also
+emphasizes that intersubjectivity begins when human relations are at their most
+asymmetrical, inasmuch as children are surrounded by adults who already have an
+unconscious. It is not simply that an infant, whose cognitive skills are incompletely
+developed, fails to understand everything adults communicate to him or her; rather it is
+a question of how adults handling a child communicate messages they themselves do
+not understand and of which they are not aware. Laplanche calls this process generalized
+seduction. In so doing, he revives the seduction theory that Freud abandoned in 1897,
+while abstracting the idea of seduction from a contingent event and transforming it into
+the necessary condition of intersubjectivity. It is by virtue of receiving unintelligible
+messages from the other that one is seduced into relationality.19
+      Laplanche identifies his general theory of seduction as “the foundation of
+psychoanalytic anti-hermeneutics”: the enigmatic signifier thwarts interpretation even
+as it prompts it [Laplanche, “Psychoanalysis” 7]. He justifies this claim by not only
+locating the origins of intersubjectivity in that which resists meaning, but also arguing
+that the practice of analysis consists in working against rather than toward the consolations
+of sense. Engaging Ricoeur on his own turf—that of an account of psychoanalytic
+hermeneutics based on reading The Interpretation of Dreams—Laplanche shows how
+the original edition of this seminal work broke with hermeneutics by outlining a method
+that refused all syntheses of meaning. It was only in later editions (published after 1900),
+he suggests, that hermeneutical codes of symbolism and typicality were added to the
+text, in its burgeoning footnotes, addenda, and interpolations. Laplanche connects this
+eclipsing of Freud’s original insights—by Freud himself—with his abandonment of the
+seduction theory during the same period. As throughout his work, Laplanche reads the
+Freudian corpus in terms of an intellectual recentering whereby the most refractory
+ideas are disciplined by subsequent revisions that serve to conceal the radical implications
+of the unconscious’s decentering of subjective life. This intellectual recentering mimes
+the subjective centripetalism accomplished by the human ego, which in good dialectical
+fashion synthesizes, (mis)recognizes, and comprehends.
+      Countering this synthesizing agency, the method of free association breaks things
+down, dispersing attention in multiple, often contradictory directions. The free associative
+method represents Freud’s greatest discovery, according to Laplanche, because it is a
+method correlative to its object—the unconscious. Laplanche is fascinated by those
+passages in The Interpretation of Dreams where for pages and pages Freud laboriously
+traces the associations of discrete components of a single brief dream (such as the famous
+dream of Irma’s injection), without ever gathering together these associations into a
+
+     19. With respect to the question of the genealogical relation between Lacanian and
+Laplanchean psychoanalyses, it is notable that Laplanche connects this seduction-through-enigma
+                                                                         ∨ ∨
+to the enigmatic solicitation from the Other that Lacan discusses—and Ziz ek elaborates—using
+the phrase Che vuoi? (What∨does it want from me?). See Lacan, “Subversion” 312–13; Laplanche,
+                              ∨
+“Interpretation” 146–47; Ziz ek, Sublime 110–21.
+
+
+
+diacritics / summer 2002                                                                    35
+final meaning or interpretation. It is Freud’s reluctance to specify one-to-one
+correspondences—his refusal to say: “the dream means X”—that permits Laplanche to
+argue that the associative method represents a break with hermeneutics. Rather than
+building up meaning, the analytic method breaks it down. But this antihermeneutical
+approach is domesticated by Freud’s invention of dream symbolism (in which X means
+Y), typical dreams, and the complexes or scenarios (Oedipus, etc.) that Freud attempts
+to establish as the bedrock of unconscious significance. Laplanche regards dream
+symbolism and the predetermined meaning of family complexes as betrayals of the
+psychoanalytic method.20 Symbolism and paradigmatic stories tell you what the enigma
+means, when the significance of the enigmatic signifier lies in the fact that you can
+never know what it means, since although it may be transmitted at least partly through
+discourse it does not pertain to the order of sense.
+
+
+Mastering Engimas
+
+A placeholder for that which defies sense, the enigmatic signifier both provokes and
+stymies interpretation. Laplanche views interpretation in the hermeneutical sense as a
+strategy directed toward mastering the other’s enigma; by contrast psychoanalytic
+interpretation involves an effort to disrupt the forms of mastery with which we’ve made
+sense of our own and others’ desires. The technique of free association remains
+indispensable to this enterprise because it fragments sense rather than maintaining its
+coherence. For Laplanche the antihermeneutical technique that accompanies free
+association consists in interpretation stripped down to pointing—a kind of pointing that
+works to punctuate the subject’s discourse, cutting it into its discrete components:
+
+     [T]he analyst’s interpretation correlates exactly with the free associations,
+     whose course it merely punctuates by emphasizing their overlaps or nodal
+     points. . . . The German deuten, Deutung, is here much more eloquent, and
+     much less “hermeneutic” than our word “interpretation”: deuten auf means
+     to indicate with a finger or with the eyes—“to point,” as the Lacanians would
+     say. [“Interpretation” 162]
+
+By simply pointing to elements of the subject’s discourse, an analyst practicing
+antihermeneutical interpretation attempts to punctuate that discourse and thereby
+introduce some space into preexistent organizations of meaning. The controversial
+Lacanian practice of variable length sessions makes the temporal frame of analysis
+available for this punctuating work, since the choice of when to end a session marks as
+especially significant whatever has preceded that moment by introducing a caesura into
+the flow of discourse. In this way the end of each session is deroutinized and opened to
+greater reflection.
+     Here I’m interested less in debating the merits of Lacan’s technical innovation than
+in distinguishing between interpretation as translation into another register of sense and
+interpretation as a form of minimalist punctuation that equivocates sense. Ultimately,
+however, my concern lies with whether or how the antihermeneuticist version of
+psychoanalytic interpretation can be transferred to the cultural realm. What I find so
+promising for cultural studies about Laplanche’s theory of the enigmatic signifier is its
+insistence on the irreducibility of the enigma, its principled refusal to assimilate everything
+
+    20. “Reading through symbolism and typicality does not stimulate the associative method,”
+Laplanche insists; “when one is present, the other is absent, and vice versa. . . . It is symbolism
+which silences association” [“Psychoanalysis” 9; original emphasis].
+
+
+
+36
+diacritics / summer 2002   37
+to the empire of sense. Although cultural studies (especially in its postcolonialist variants)
+has elaborated an ethical commitment to honoring the alterity of other cultures and their
+subjects—that is, a commitment to respecting the various ways in which different cultural
+ontologies might not make sense within the terms of hegemonic discourse—there has
+been less willingness to extend this ethical commitment to the aesthetic realm as such.
+Thus although social practices guided by the principle of others’ autonomy tend to be
+regarded as politically desirable, the possibility of according relative autonomy to
+something designated “art” tends to be regarded as politically suspect. Progressive critics
+claim to accept the impossibility of mastering the enigmas of other persons and other
+cultures, yet seem unable to accept the impossibility of fully mastering the enigmas of
+the aesthetic domain. While we try to respect the otherness of other persons, our
+interpretive practices do not respect the otherness of art. It is as if art needed to come
+from an alien culture before we could concede that some aspect of it remains
+untranslatable into meaning.
+      Insofar as it is transmitted discursively, the enigmatic signifier pertains not only to
+intersubjective relations but also to aesthetic relations; irreducible engimas haunt our
+aesthetic experience as well as affecting our involvement with other persons.
+Extrapolating from Laplanche, I would suggest that as soon as one conceives alterity in
+symbolic terms, one sees that otherness exceeds intersubjective and intercultural
+dynamics; otherness is a property of discourse, and the enigmas of otherness are
+exacerbated by art. We might even say that art’s purpose lies in intensifying those aspects
+of alterity that otherwise remain dormant in everyday discourse and conventional
+intersubjective communication. From this perspective, the disruption of normative
+communication would signal a proximity to aesthetic experience, and art would be defined
+less as the secluded reserve of high culture than as the practice or experience of disruption
+through which something like the enigmatic signifier becomes palpable.
+      Of course, this definition represents a peculiarly modernist understanding of art—
+one whose institutionalization generated the shibboleth of aesthetic autonomy in the
+first place. But whereas the New Critical account of aesthetic autonomy entailed a view
+of art as harmoniously self-enclosed and ontologically distinct from mass culture, the
+psychoanalytic account of relative autonomy entails a view of art as disrupting
+harmonious self-enclosures of all kinds, and as troubling rather than reinforcing the
+boundary between high and low cultural forms. If we call “aesthetic” those experiences
+in which meaning is disrupted
+                           ∨ ∨
+                                   by an encounter with alterity, then the products of mass
+culture so beloved by Zizek may give rise to an experience whose relative autonomy
+from normative coordinates of sense requires acknowledging.21 By reading Althusser
+through Laplanche, I am suggesting that the concept of relative autonomy pertains to
+not only cultural production but also cultural reception: relative autonomy at the level
+of reception implies a fundamental irreducibility to sense or understanding. Putting this
+matter at its most schematic, I would say that Laplanche’s concept of the enigmatic
+signifier rewrites at the level of reception what Althusser meant by relative autonomy.
+      To the extent that art entails a practice or experience of defamiliarization in which
+otherness comes to the fore, it requires an ethical rather than an epistemological approach.
+From this perspective the ethics of psychoanalytic criticism would consist in refusing
+
+                                                                                           ∨ ∨
+     21. Here I find myself in sympathy with Tom Cohen’s deconstructive critique of Ziz ek as
+inattentive to the textual materiality
+                                    ∨ ∨
+                                         of the Hitchcock films he discusses: in attempting to go
+beyond the symbolic to the real, Ziz ek overlooks Hitchcock’s experiments with language, thereby
+reinscribing a fairly traditional method of film criticism that emphasizes the auteur, characters in
+the diegesis, the immediacy of the cinematic image, and suchlike [Cohen, “Beyond”]. It is un-
+doubtedly
+      ∨ ∨
+           the case that Cohen’s readings of individual Hitchcock movies are far more interesting
+than Ziz ek’s, despite the latter’s enthusiasm.
+
+
+
+38
+the imperative to overcome all enigmaticity through demystification. Such an ethics
+would encourage us to adopt a less knowingly superior attitude toward art by helping to
+allay the suspicion that meaning and motive lie concealed behind aesthetic expressions.
+In Lacanian terms, this would entail criticism registering the effects of the real on
+interpretation, rather than thematizing the real through interpretations that use aesthetic
+artifacts to illustrate psychoanalytic concepts.22 The hermeneutics of suspicion that
+characterizes interpretive practices running the gamut from psychoanalytic to materialist
+to historicist criticism promotes a paranoid relation to cultural forms, fueling the impulse
+to critically master opacity or uncertainty through rigorous interpretation. But just as
+psychoanalysis indubitably contributes to this project by way of its theories of a cultural
+unconscious and attendant cultural symptoms, so too can psychoanalysis make us less
+paranoid, less insistent on uncovering meaning and significance everywhere we turn.
+Psychoanalysis can help us tolerate resistances to meaning by enabling us to appreciate
+how enigmas aren’t always puzzles to be decoded or obstacles to be overcome, but
+instead represent an ineliminable condition of existence. Thus whereas the concept of
+the unconscious licenses a critical commitment to demystification, the concept of the
+enigmatic signifier puts the brake on demystification.
+     Having claimed that the enigmatic signifier remains enigmatic because it remains
+unconscious, I want in closing to differentiate the implications for cultural criticism of
+the concept of the unconscious from those of the enigmatic signifier. The notion of the
+enigmatic signifier seems preferable for cultural criticism to that of the unconscious,
+since whereas the latter indexes a general limit to our intentional agency, the former
+indexes a more specific limit to our hermeneutic agency. It is particularly important to
+acknowledge the limits of interpretation when working in the aesthetic domain, and
+thence to see how one’s relation to aesthetic experience may be ethical before it is
+epistemological. Diagnosing aesthetic artifacts as cultural symptoms tends to preempt
+the possibility of any such ethical consideration. Although my previous work has
+strenuously emphasized the need for cultural theory to retain a radically psychoanalytic
+concept of the unconscious as that which disrupts subjective and sexual norms, I have
+become skeptical about the viability for literary studies of a concept such as the cultural
+unconscious. The concept of the unconscious licenses interpretation as an interminable
+enterprise that permanently defers analysis of the disruptive impact aesthetic experience
+may have on us.23 “Interpretation of a literary work is endless,” maintains Jacqueline
+Rose in an exemplary work of psychoanalytic literary criticism [ix]; but the enigmatic
+signifier holds the potential to halt interpretation and thus to reorient the focus of criticism.
+If psychoanalysis has∨a future that consists in more than merely repeating itself in ever
+                          ∨
+varying contexts à la Zizek, then interpretation may prove negligible to what we want to
+say next about art.
+
+                                    WORKS CITED
+Althusser, Louis. “Contradiction and Overdetermination: Notes for an Investigation.”
+      1962. For Marx. Trans. Ben Brewster. London: Verso, 1990. 87–127.
+________
+        . Writings on Psychoanalysis: Freud and Lacan. Ed. Olivier Corpet and François
+      Matheron. Trans. Jeffrey Mehlman. New York: Columbia UP, 1996.
+
+      22. This distinction marks the distance between what might be regarded∨ as an ethics of the
+                                                               ∨ ∨                ∨
+real that I’m advocating and that proposed by Alenka Zupanc ic , who follows Ziz ek in thematizing
+                                                                                 ∨ ∨
+the real-as-impossible within the Kantian philosophical tradition [see Zupanc ic ].
+      23. Although space prevents me from doing justice to Jameson’s psychoanalytic Marxism
+here, by this point it should be clear that my critique is aimed also at the highly influential para-
+digm set forth in The Political Unconscious. While from a literary critical perspective it may be
+politically desirable to “always historicize” (as Jameson urges), ethically it may not invariably
+be so.
+
+
+
+diacritics / summer 2002                                                                          39
+Althusser, Louis, and Étienne Balibar. Reading Capital. Trans. Ben Brewster. London:
+      Verso, 1979.
+Armstrong, Isobel. The Radical Aesthetic. Oxford: Blackwell, 2000.
+Barrett, Michèle. “Althusser’s Marx, Althusser’s Lacan.” The Althusserian Legacy. Ed.
+      E. Ann Kaplan and Michael Sprinkler. London: Verso, 1993. 169–82.
+Bellamy, Elizabeth J. “Discourses of Impossibility: Can Psychoanalysis Be Political?”
+      Diacritics 23.1 (1993): 24–38.
+Butler, Judith. “Arguing with the Real.” Bodies That Matter: On the Discursive Limits
+      of ‘Sex.’ New York: Routledge, 1993. 187–222.
+________
+         . The Psychic Life of Power: Theories∨ in Subjection. Stanford: Stanford UP, 1997.
+                                                 ∨
+Butler, Judith, Ernesto Laclau, and Slavoj Zizek. Contingency, Hegemony, Universality:
+      Contemporary Dialogues on the Left. London: Verso, 2000.
+Chow, Rey. “Ethics after Idealism.” Diacritics
+                                           ∨ ∨
+                                                     23.1 (1993): 3–22.
+Cohen, Tom. “Beyond ‘The Gaze’: Zizek, Hitchcock, and the American Sublime.”
+      American Literary History 7.2 (1995): 350–78.
+Dean, Tim. “Bodies That Mutter.” Beyond Sexuality. Chicago: U of Chicago P, 2000.
+      174–214.
+________
+          . “Homosexuality and the Problem of Otherness.” Homosexuality and
+      Psychoanalysis. Ed. Tim Dean and Christopher Lane. Chicago: U of Chicago P,
+      2001. 120–43.
+Derrida, Jacques. “The Purveyor of Truth.” Trans. Alan Bass. Muller and Richardson
+      173-212.
+Freud, Sigmund. Inhibitions, Symptoms and Anxiety. 1926. Standard Edition 20: 75–
+      172.
+________
+         . The Interpretation of Dreams. 1900. Vols. 4–5 of Standard Edition.
+________
+         . The Standard Edition of the Complete Psychological Works of Sigmund Freud.
+      Ed. and trans. James Strachey. London: Hogarth, 1953–74.
+Garber, Marjorie. Symptoms of Culture.       New York: Routledge, 1998.
+                                           ∨ ∨
+Guerra, Gustavo. “Thinking Aslant: Zizek and Pragmatism.” JPCS: Journal for the
+      Psychoanalysis of Culture and Society 6.1 (2001): 21–28.
+Jameson, Fredric. The Political Unconscious: Narrative as a Socially Symbolic Act.
+      Ithaca: Cornell UP, 1981.
+Lacan, Jacques. “The Agency of the Letter in the Unconscious, or Reason since Freud.”
+      1957. Écrits: A Selection 146–78.
+________
+         . Écrits. Paris: Seuil, 1966.
+________
+         . Écrits: A Selection. Trans. Alan Sheridan. New York: Norton, 1977.
+________
+         . The Four Fundamental Concepts of Psycho-Analysis. Ed. Jacques-Alain Miller.
+      Trans. Alan Sheridan. Harmondsworth: Penguin, 1979.
+________
+         . “The Function and Field of Speech and Language in Psychoanalysis.” 1953.
+      Écrits: A Selection 30–113.
+________
+         . Le séminaire, livre VII: L’éthique de la psychanalyse. Ed. Jacques-Alain Miller.
+      Paris: Seuil, 1986. [The Seminar of Jacques Lacan, Book 7: The Ethics of
+      Psychoanalysis, 1959–1960. Ed. Jacques-Alain Miller. Trans. Dennis Porter. New
+      York: Norton, 1992.]
+________
+         . The Seminar of Jacques Lacan, Book 2: The Ego in Freud’s Theory and in the
+      Technique of Psychoanalysis, 1954–1955. Ed. Jacques-Alain Miller. Trans. Sylvana
+      Tomaselli. Cambridge: Cambridge UP, 1988.
+________
+         . “Seminar on ‘The Purloined Letter.’” 1955–56. Trans. Jeffrey Mehlman. Muller
+      and Richardson 28–54.
+________
+         . “The Subversion of the Subject and the Dialectic of Desire in the Freudian
+      Unconscious.” 1960. Écrits: A Selection 292–325.
+Laclau, Ernesto. New Reflections on the Revolution of Our Time. London: Verso, 1990.
+
+
+40
+________
+        . “Theory, Democracy, and the Left: An Interview with Ernesto Laclau” (conducted
+      by Carlos Pessoa, Marta Hernández, Seoungwon Lee, and Lasse Thomassen).
+      Umbr(a): A Journal of the Unconscious (2001): 7–27.
+Laclau, Ernesto, and Chantal Mouffe. Hegemony and Socialist Strategy: Towards a
+      Radical Democratic Politics. Trans. Winston Moore and Paul Cammack. London:
+      Verso, 1985.
+Laplanche, Jean. “Interpretation between Determinism and Hermeneutics: A Restatement
+      of the Problem.” Trans. Philip Slotkin. Essays on Otherness. Ed. John Fletcher.
+      London: Routledge, 1999. 138–65.
+________
+         . “Psychoanalysis as Anti-Hermeneutics.” Radical Philosophy 79 (1996): 7–12.
+Laplanche, Jean, and J.-B. Pontalis. The Language of Psycho-Analysis. Trans. Donald
+      Nicholson-Smith. New York: Norton, 1973.
+Meltzer, Françoise. “Introduction: Partitive Plays, Pipe Dreams.” The Trial(s) of
+      Psychoanalysis. Ed. Meltzer. Chicago: U of Chicago P, 1988. 1–7.
+Menand, Louis. “Faith, Hope, and Clarity.” New Yorker 16 Sept. 2002:∨ ∨
+                                                                          98–104.
+Miklitsch, Robert. “‘Going through the Fantasy’: Screening Slavoj Zizek.” South Atlantic
+      Quarterly 97.2 (1998): 475–507.
+Morris, Timothy. Making the Team: The Cultural Work of Baseball Fiction. Urbana: U
+      of Illinois P, 1997.
+Muller, John P., and William J. Richardson, eds. The Purloined Poe: Lacan, Derrida,
+      and Psychoanalytic Reading. Baltimore: Johns Hopkins UP, 1988.
+Phillips, Adam. Houdini’s Box: The Art of Escape. New York: Pantheon, 2001.
+Poovey, Mary. Uneven Developments: The Ideological Work of Gender in Mid-Victorian
+      England. Chicago: U of Chicago P, 1988.
+                                            ∨ ∨
+Resch, Robert Paul. “Running on Empty: Zizek’s Concept of the Subject.” JPCS: Journal
+      for the Psychoanalysis of Culture
+                                    ∨ ∨
+                                         and Society 4.1 (1999): 92–99.
+________
+        . “The Sound of Sci(l)ence: Zizek’s Concept of Ideology-Critique.” JPCS: Journal
+      for the Psychoanalysis of Culture and Society 6.1 (2001): 6–20.
+Reynolds, Larry J., and Gordon Hutner, eds. National Imaginaries, American Identities:
+      The Cultural Work of American Iconography. Princeton: Princeton UP, 2000.
+Ricoeur, Paul. Freud and Philosophy: An Essay on Interpretation. 1965. Trans. Denis
+      Savage. New Haven: Yale UP, 1970.
+Rose, Jacqueline. The Haunting of Sylvia Plath. Cambridge: Harvard UP, 1992.
+Sedgwick, Eve Kosofsky. “Paranoid Reading and Reparative Reading; or, You’re So
+      Paranoid, You Probably Think This Introduction Is about You.” Novel Gazing: Queer
+      Readings in Fiction. Ed. Sedgwick. Durham: Duke UP, 1997. 1–37.
+Soler, Colette. “Literature as Symptom.” Lacan and the Subject of Language. Ed. Ellie
+      Ragland-Sullivan and Mark Bracher. New York: Routledge, 1991. 213–19.
+Tompkins, Jane. Sensational Designs: The Cultural Work of American Fiction, 1790–
+ ∨ ∨
+      1860. New York: Oxford UP, 1985.
+Zizek, Slavoj. “Beyond Discourse-Analysis.” Laclau, New Reflections 249–60.
+________
+         . Enjoy Your Symptom! Jacques Lacan in Hollywood and Out. New York:
+      Routledge, 1992.
+________
+         . The Metastases of Enjoyment: Six Essays on Woman and Causality. London:
+      Verso, 1994.
+________
+         . The Sublime Object of Ideology. London: Verso, 1989. [SO]
+________
+         . “The Undergrowth of Enjoyment: How Popular Culture Can Serve as an
+      Introduction to Lacan.” New Formations 9 (1989): 7–29.
+________
+         . Welcome to the Desert of the Real: Five Essays on September 11 and Related
+      Dates. London: Verso, 2002.
+          ∨ ∨
+Zupancic, Alenka. Ethics of the Real: Kant, Lacan, London: Verso, 2000.
+
+
+
+
+diacritics / summer 2002                                                             41
+

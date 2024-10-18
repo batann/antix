@@ -1,0 +1,1077 @@
+                             DEBATES
+
+
+          Religion and the Bifurcation of the Left
+
+
+
+           Slavoj Žižek and the
+    Imperial/Colonial Model of Religion
+
+
+                     William David Hart
+
+
+
+
+                          Hegelian Prelude
+
+
+
+                                      This earliest form of religion—
+although one may well refuse to call it religion—is that for
+which we have the name “magic.” (Hegel 1998a, 226)
+
+The religion of magic is still found today among wholly crude
+and barbarous peoples such as the Eskimos. (229)
+
+The Negroes have an endless multitude of “divine images”
+which they make into their gods or their “fetishes.” (234–35)
+
+[Africa] is no historical part of the World; it has no movement
+or development to exhibit. Historical movements in it—that is
+in its northern part—belong to the Asiatic or European World.
+(Hegel 1988b, 92)
+
+World history goes from East to West: as Asia is the begin-
+ning of world history, so Europe is simply its end. In world
+history there is an absolute East, par excellence (whereas the
+
+
+
+                N e p a n t l a : V i e w s f r o m S o u t h 3.3
+            Copyright 2002 by Duke University Press
+
+                                     553
+                                       554
+                                   Nepantla
+
+         geographical term “East” is in itself entirely relative); for al-
+         though the earth is a sphere, history makes no circle around
+         that sphere. On the contrary, it has a deﬁnite East which is
+         Asia. It is here that the external physical sun comes up, to sink
+         in the West: and for that same reason it is in the West that
+         the inner Sun of self-consciousness rises, shedding a higher
+         brilliance. (ibid.)
+
+         This inner dialectic of civil society thus drives it—or at any
+         rate drives a speciﬁc civil society—to push beyond its own lim-
+         its [colonial expansion] and seek markets, and so its necessary
+         means of subsistence, in other lands which are either deﬁcient
+         in the goods it has overproduced, or else generally backward in
+         industry, &c. (Hegel 1967, 151)
+
+         The same consideration justiﬁes civilized nations in regarding
+         and treating as barbarians those who lag behind them in in-
+         stitutions which are the essential moments of the state. Thus
+         a pastoral people may treat hunters as barbarians, and both of
+         these are barbarians from the point of view of agriculturists,
+         &c. The civilized nation is conscious that the rights of barbar-
+         ians are unequal to its own and treats their autonomy as only a
+         formality. (219)
+
+                                   Introduction
+In their efforts to develop a general theory of religion, scholars often employ
+an evolutionary/hierarchical model. These models became evident at least
+as early as the eighteenth century and reached their zenith in the nineteenth
+century. Almost invariably, they exhibit the following schemata: from sim-
+ple to complex religion, from primitive to civilized, from religions of the
+South to those of the North, from religions of the East to those of the
+West, from the religions of Africa, aboriginal Australia, and native Amer-
+ica to the religions of Europe. This evolutionary and hierarchical model
+of religion is more properly called the imperial/colonial model of religion.1 I
+shall argue that Slavoj Žižek’s recent book The Fragile Absolute, or, Why Is
+the Christian Legacy Worth Fighting For? (2000a) is a legacy of this model
+of religion, the most systematic version of which is found in the work
+of Hegel. I shall argue, further, that Žižek’s and Hegel’s models share
+                                     555
+                  Hart . Imperial/Colonial Model of Religion
+
+
+Eurocentric presuppositions—historical, cultural, political, and econom-
+ic—that are troubling. What I will not argue is that Žižek intends to recapit-
+ulate the imperial/colonial model of religion. On the contrary, he stumbles
+into this model. He does so, precisely, because he does not intend to. He does
+not think about the ethics and politics of religion and representation at all.
+Instead, he speaks the “common sense” of his culture, which distinguishes
+invidiously between Christianity and other religions, viewing Christianity
+alternately, if not simultaneously, as the height of religious evolution and
+as a revelation whose very “absurdity” confounds and throws into utter
+disarray preexisting notions of religion, ethics, and politics. Žižek holds
+this common sense constant and beyond question—it does not even reach
+the threshold of critique—as he queries “our” culture’s common sense on
+other matters. What he holds constant, I put into “play.”
+          The appellation imperial/colonial model of religion is apropos. For
+colonial modernity began with Portuguese and Spanish voyages of conquest
+consecrated by the Pope in the 1494 Treaty of Tordesillas. Thus conquest
+provides the historical context for the emergence of a theory of religion
+that models the hierarchical, sociopolitical relations with native peoples
+in the Americas, Africa, Asia, Australia, and the islands of the Atlantic,
+Paciﬁc, and Indian Oceans (the bitter fruit of conquest) that were already
+beginning to develop. This development was fed by the classiﬁcation of
+national characters, the transatlantic slave trade, and the emergence of
+racial theory, developments that in turn fed into and were conditioned by
+Christian Europe’s lingering anxieties toward its Jewish inhabitants and by
+competition and conﬂict between Christian and Islamic civilizations. When
+I refer to the imperial/colonial model of religion, it is this large tableau—
+with its temporal, geographical, racial, and gendered hierarchies—that I
+have in mind.
+          That is not all that I have in mind. The imperial/colonial model of
+religion has antecedents in the medieval notion of the “four faiths”: Chris-
+tianity, Judaism, Islam, and Idolatry (King 1999, 99). Idolatry (or paganism)
+referred to non-Abrahamic religion. The singular religion rather than the
+plural religions was appropriate since, for the proponents of the Abrahamic
+religions, the similarities were more important than the differences. As
+polytheists and demon worshipers, the adherents of non-Abrahamic reli-
+gion were ignorant of father Abraham and certainly ignorant of Jesus the
+Christ. Idolatry was the dominant category under which the Portuguese
+and Spanish perceived Africans and American Indians during the ﬁfteenth
+century. But we know that this was not the only way they (Africans at
+                                      556
+                                  Nepantla
+
+least) were perceived. When the Portuguese raided West African villages
+in 1441, they shouted “‘St. George’ and ‘Santiago’ (St. James), the saints they
+always appealed to when raiding the outposts of Islam” (Raboteau 2001, 4).
+At a time when the crusading spirit of Christendom was experiencing its
+last revival, the Portuguese clearly saw Africans (at least some of them) as
+their Muslim enemies. Ironically, their African adventures were partially
+inspired by “a legendary Christian king called Prester John,” who resided
+somewhere in Africa and whom they hoped to persuade “to join them in
+their crusade against the followers of Islam” (ibid.).
+          By the time of the European Enlightenment, and certainly by the
+nineteenth century, the medieval quartet of Christianity, Judaism, Islam,
+and Idolatry had developed into the precursor of the “world religions”
+model. On one side of an epistemic and normative dividing line were the
+world religions, on the other side were “nature religions.” World religions
+were deﬁned in large part by the presence of literacy, if not a high textual
+tradition. Nature religions were nonliterate. World religions were Euro-
+pean and Asian. Nature religions were African, Native American, and
+Aboriginal. Thus the category of Idolatry as an all-purpose description of
+non-Abrahamic religion had all but disappeared as Asian religions were
+distinguished from African, Native American, and Aboriginal religions
+and became constitutive members of the world religions club, while the
+religions of the “people without history,” as Hegel would put it, were rele-
+gated to the category of nature, tribal, primitive, or primal religion. By the
+mid-nineteenth century, the imperial/colonial model of religion was ﬁrmly
+in place, constituting the “common sense” through which religion was un-
+derstood. Indeed, the imperial/colonial “model with its Christian center,
+‘oriental’ periphery, and ‘primitive’ outer-periphery is still the dominant
+way of organizing religious studies departments” (Hart 2002, 9).
+          In this essay, I trace the reemergence of the imperial/colonial
+model of religion in the work of Žižek. To show that his recent work
+presupposes this model—despite his status as a progressive Marxist—is my
+task. To show that this model is constitutive of his politics, that his politics
+are Eurocentric, and that Eurocentrism colors his view of Christianity and
+Marxism is also my burden. Before I attempt to shoulder so heavy a load,
+allow me to make a remark about the pleasures and the perils of reading
+Žižek.
+          Reading Žižek is a stimulating experience. One is simultaneously
+informed, ediﬁed, and entertained. His courage, his willingness to criticize
+leftist conventions and common sense, is attractive, even when he is wrong,
+                                      557
+                   Hart . Imperial/Colonial Model of Religion
+
+
+even when his political judgment is questionable, even when his taste is
+“bad.” My analysis is often little more than a writing between his lines,
+an effort to understand Žižek’s deﬁciencies in light of his own critique. If
+Stuart Hall’s “Religious Ideology and Social Movements in Jamaica” (1985)
+has greater depth than Marx’s account of religion, then Žižek swims even
+deeper, in the middle regions between a superﬁcial analysis and the kind of
+depth analysis that one ﬁnds, for example, in Dipesh Chakrabarty’s “The
+Time of History and the Times of the Gods” (1997). Žižek’s most explicit
+effort to theorize religion in relation to Marxism is The Fragile Absolute. As
+usual, one is stunned by Žižek’s sheer intelligence, by his endless creativity
+in reading both the philosophical tradition and popular culture through
+Lacanian lenses. His appropriation of Jacques Lacan allows him to capture
+something important about religion that Hall misses, that is, the powerful,
+contradictory, and paradoxical ways in which religion works ideologically
+on the level of fantasy and affect, on the level of the viscera, the stomach,
+and the amygdala. Thus he gives a better account of subject formation in
+religious ideology, of the sensible and infrasensible “domains in which we
+think, within which intensities of cultural appraisal are stored, and through
+which we value and disvalue” (Connolly 1999, 177).
+          Take the case, which Žižek recounts, of a woman who needs a
+lifesaving blood transfusion. Her religious beliefs (let’s assume that she is a
+Christian Scientist) hold that transfusions are sinful. A liberal judge has a
+difﬁcult decision to make: How does he get the woman to consent to a blood
+transfusion without forcing her to violate her religious beliefs? The judge
+attempts to resolve this problem by forcing the woman to have a blood
+transfusion against her will. Since sin is an act of will and the transfusion
+violated her will, then she could not be held responsible for the act, and
+would not be condemned to hell and damnation. Her life could be saved
+without violating her religious conviction that transfusions are sinful or the
+liberal belief that coercing confessions is wrong.
+          Despite its noble intentions, which might lead him behave simi-
+larly were he facing a similar case, Žižek despises this solution as a lie. It
+does not force the woman, psychoanalytically speaking, to confront her de-
+sire. For in regard to the judge’s question (of whether she would be guilty
+of sin were the court to forcibly transfuse her), the woman in question
+“knew perfectly well that if she answered ‘No,’ the judge would order enforced
+transfusion” (Žižek 2000a, 138). Thus she was in the enviable position of
+saying yes by saying no. Answering no would allow her to satisfy her true
+as opposed to her lying desire. Here is a formal coincidence between telling
+                                      558
+                                  Nepantla
+
+the truth and telling a lie, that is, a formal truth provides cover for a sub-
+stantive lie. This solution does not force the woman to face the truth of her
+desire, that is, the Lacanian difference between her stated desire (as “sub-
+ject of statement”) and her unstated desire (as “subject of enunciation”).
+Statements are propositional. They are public relations announcements for
+an ego that always dissembles, deceives, and lies. Enunciations are about
+affects, instincts, and ideological fantasy. They are the pronouncements of
+our unconscious desire. The woman in question speaks to the letter of the
+law, its propositional truth, when acknowledging the sinfulness of blood
+transfusion (she truly believes that transfusion is sinful). But she lies about
+her true desire and thus does not speak to the spirit of the law, to what we
+might call the “truth effects of affect.” For “on the level of her subjective
+position of enunciation,” she endorses the very blood transfusion that as a
+proposition she rejects (ibid.).
+          Through analyses such as this, Žižek provides a powerful set of
+conceptual tools—most notably, the idea of “ideological fantasy”—that
+help us to better understand the power of religious ideologies and the tena-
+cious hold that they have on their subjects. But if we are stunned by Žižek’s
+intelligence, by his ability to illuminate the ideological power of religion,
+then equally as stunning is his thorough captivity to the imperial/colonial
+model of religion. This enthrallment is only underscored by his often sub-
+tle and insightful analysis of ideology. If Žižek has identiﬁed the “sublime
+object of ideology” as a traumatic void, constitutive lack, or ontological
+absence at the center of the subject, ethnos, and nation—at the center of
+any notion of wholeness, completion, or plenitude—then he remains blind
+to that object in his narrative of religion. In this essay, I use the conceptual
+resources that Žižek provides to illustrate this blindness.
+          As one of my colleagues has said, The Fragile Absolute, like all of
+Žižek’s texts, is something of a “grab bag.” One is never sure of how to
+read Žižek, never sure of his mood. Is his account serious? Is it parody? Is
+it analysis by way of perversion? Or analysis by way of hysteria? (Penney
+2000, 3). It is hard to know as he meanders, digresses, and lurches from
+ostensible Lacanian insight (often illustrated by reference to a movie) to a
+stimulating reading of Marx. In this analysis, I will grab what I ﬁnd useful
+in Žižek’s “bag” and leave the rest behind. That I leave a great deal behind
+has as much to do with limitations of space as with my desire, speciﬁcally,
+to explicate his concept of religion. So I have nothing to say about a lot of
+things (for instance, his brilliant analysis of Coke as an example of Lacan’s
+objet petit a) that I otherwise ﬁnd interesting and noteworthy.
+                                      559
+                   Hart . Imperial/Colonial Model of Religion
+
+
+           Žižek (2000a, 1) begins his analysis, rather portentously, with the
+following statement: “One of the most deplorable aspects of the postmodern
+era and its so-called ‘thought’ is the return of the religious dimension in all
+its different guises; from Christian and other fundamentalisms, through the
+multitude of New Age spiritualisms, up to the emerging religious sensitiv-
+ity within deconstructionism itself (so-called ‘post-secular’ thought). How
+is a Marxist, by deﬁnition a ‘ﬁghting materialist’ (Lenin), to counter this
+massive onslaught of obscurantism?” Against the obvious answer of fero-
+ciously attacking these tendencies and mercilessly denouncing the residual
+religiosity within Marxism, Žižek advocates “fully endorsing what one is ac-
+cused of : yes, there is a direct lineage from Christianity to Marxism; yes,
+Christianity and Marxism should ﬁght on the same side of the barricade
+against the onslaught of new spiritualisms—the authentic Christian legacy
+is much too precious to be left to the fundamentalist freaks” (2).
+           What one notices immediately is that Žižek puts Christianity and
+Marxism on the same side and against the multicultural multitude, which
+he construes in summary fashion as “fundamentalist freaks.” Before pro-
+ceeding, a disclaimer: I share Žižek’s disdain for liberal multiculturalism.
+I think that he is right, furthermore, to criticize much of the academic-
+cultural Left for fetishizing difference and underplaying the virtues of
+universality, not as an antecedent, transcendental a priori but as a conse-
+quent, as a result of agonistic struggle. Žižek is a provocative writer whose
+very style invites counterprovocation. I am being intentionally provocative,
+maybe perverse, in using the term multicultural multitude, which I refuse to
+concede to liberalism or to Žižek’s critique. Under the cover of a legitimate
+and necessary critique of difference, Žižek smuggles illegitimate claims for
+Europe. He seeks to universalize European difference to the detriment, I
+fear, of the multicultural multitude, whose legitimate interests, fears, and
+desires cannot be reduced to the language of liberal pluralism and the
+politics of political correctness, even if that kind of language and politics
+is multiculturalism’s dominant mode of articulation. Can Žižek imagine
+the agonistic universalization of non-European difference? Or is the non-
+European markered, by deﬁnition, as nonuniversal, as nonuniversalizable?
+I wonder. To answer these questions now would be premature. Thus I will
+only mark the chain of equivalence between fundamentalism, freakishness,
+inauthentic Christianity, New Age spirituality, and paganism, that is, the
+ensemble of peoples, perspectives, and forms of religiosity, spirituality, and
+piety that I call the multicultural multitude. I will return to these questions
+later.
+                                    560
+                                 Nepantla
+
+          By putting Christianity and Marxism on the same side, but more
+important, by linking them uniquely, irremediably, and even essentially to
+Europe, and thus placing them against the others, Žižek reafﬁrms the im-
+perial/colonial model in the theory of religion. This model, which Žižek
+appears to have appropriated without reservation, is given its most thorough
+philosophical exposition by Hegel in four series of Lectures on the Philos-
+ophy of Religion (1821, 1824, 1827, 1831). In these lectures Hegel develops
+an evolutionary schema in which Geist, Spirit, God moves spatiotempo-
+rally from South to North, from East to West, from the dark continent
+to the continent of enlightenment, from black to white, from Oriental to
+Occidental, from primitive to civilized, from fetish to Christ. Christianity
+sits at the top of religious development. And while it too must be sublated
+(preserved, cancelled, transformed, and lifted higher) by philosophy, phi-
+losophy would not be possible without it. But do not Žižek’s accounts of
+Marxism and Christianity make similar moves? Are not Christianity and
+Marxism—at least in his account—two sides of a Eurocentric narrative of
+colonial modernity? I attempt to answer these questions in the remainder
+of this essay.
+
+                            Judeo-Christian Logic
+According to Žižek, there is a “Judeo-Christian logic.” He urges “us” to
+stick to this logic against the “onslaught of New Age neo-paganism.” The
+virtues of this logic are as profound as the vices of neopagans, who are
+fundamentalist freaks under a different description. Judeo-Christian logic
+provides the theoretical and political weapons that “we” need in the ﬁght
+against Capital, and against its neopagan, fundamentalist, and multicul-
+tural proxies. To this point, Žižek has not said clearly what that logic is,
+but one gets the sneaking suspicion that it is a Lacanian logic avant la let-
+tre. In any event, what interests him most are the correlations that he can
+make been this logic and Lacan. He explicates this logic, if you can call
+it explication, in a set of reﬂections that have a serial but not a narrative
+relation. On my gloss of Žižek’s (2000a, 83) account, Judeo-Christian logic
+allows us to apprehend the “ontological paradox—scandal, even—of the
+notion of fantasy.” Pagans, whether “paleo” or “neo,” simply get fantasy
+wrong. They think that fantasy is subjective when, in fact, it belongs to
+the anomalous category of the “objectively-subjective” (Dennett 1991, 132;
+quoted in Žižek 2000a, 83). They think of fantasy as an idiosyncratic de-
+rangement of cosmic order, rather than “the violent singular excess that
+sustains every notion of such an order”; that is, they construe fantasy as
+                                       561
+                   Hart . Imperial/Colonial Model of Religion
+
+
+external and abnormal rather than constitutive of the norm (Žižek 2000a,
+86). Thus they deny that error, distortion, and lying are metaphysical con-
+stituents of truth. Further, they are oblivious to Friedrich Shelling’s mood,
+his account of an inﬁnite melancholy in nature, a muteness before an inﬁ-
+nite pain, a deadlock, an “unresolved absolute tension” that only the logos
+in “man” can redeem. Žižek stops short of dismissing Shelling’s account as
+“crazy teleological speculation” insofar as it has an analogue in historical
+experience. By historical experience he means a movie! Federico Fellini’s
+Satyricon is his evidence. On Žižek’s reading, the “Ancient Roman hedonis-
+tic ﬁgures” depicted in this movie are “permeated by an inﬁnite sadness”
+(87). This observation sets up a claim about the soteriological complexity
+and superiority of Christianity that he has been working toward all along:
+
+         Fellini himself claimed that, precisely as a Christian, he wanted
+         to make a ﬁlm about a universe in which Christianity is yet to
+         come, from which the notion of Christian redemption is yet
+         to come, from which the notion of Christian redemption is
+         totally absent. Does the strange sadness, a kind of fundamental
+         melancholy, of these pagan ﬁgures not, then, bear witness to
+         the fact that they somehow already have the premonition that
+         the true God will soon reveal Himself, and that they were born
+         just a little bit too early, so that they cannot be redeemed?
+         And is this not also the fundamental lesson of the Hegelian
+         dialectics of alienation: we are not dealing with the Paradise
+         which is then lost due to some fatal intrusion—there is already
+         in paradisiacal satisfaction (in the satisfaction of the “naïve”
+         organic community) something suffocating, a longing for fresh
+         air, for an opening that would break the unbearable constraint;
+         and this longing introduces into Paradise an unbearable inﬁnite
+         Pain, a desire to break out—life in Paradise is always pervaded
+         by an inﬁnite melancholy. (88)
+
+          According to Žižek, there is nothing speculative, teleological, or
+nonsensical about this account. On the contrary, it is the only way of avoid-
+ing the naiveté of an evolutionary narrative. Now, this is quite astonishing
+in light of the naiveté of his evolutionary narrative of religion, of the im-
+perial/colonial matrix from which it emerged, whose history makes his
+Hegelian account of religion suspect. Even the wise and dusky wings
+                                      562
+                                  Nepantla
+
+of Minerva (that is, a retrospective assessment) are not enough to save
+this account from the ridicule that it deserves. But on this matter, Žižek
+seems oddly indifferent, even blind. And what he has to say about Walter
+Benjamin’s idiosyncratic notions of messianism and other antievolution-
+ary gestures does not save his account. They only expose more sharply its
+inadequacy.
+          If Judeo-Christian logic is antievolutionary, as Žižek contends,
+then it alone can give a proper account of eternity. This logic stands against
+a pagan logic that denies the founding power of trauma, which is an eter-
+nal, irremediable wound or inﬁnite sadness that we cannot speak or put
+into historical context because it resists the symbolizing and historicizing
+work of language. Judeo-Christian logic comprehends the negativity of
+eternity, the ontological difference between time and eternity, eternity as
+that which time excludes, eternity as the negative condition for the emer-
+gence of time. In effect, Žižek baptizes Martin Heidegger’s ontological
+difference as Judeo-Christian.2 Ignorance of this difference distinguishes
+“pre-Christian religions.” Notice: he doesn’t say other religions or non-
+Christian religions but pre-Christian. He calls such religions pre-Christian
+because he is employing an evolutionary model, probably Hegel’s model,
+in which Judaism is the Sublime Religion and Christianity is the Consum-
+mate Religion. Before and behind these religions, to the south and to the
+east, are the pre-Christian religions: (1) “Immediate or Natural Religion,”
+where Spirit has yet to extricate itself from nature—Spirit being the proper
+measure of “man”; (2) Mediated Religion, where the spiritual is elevated
+above the natural; and (3) Consummate Religion, “religion that is for itself,”
+which is self-conscious, which can take itself as an object of inquiry. If one
+does an ethnography of this schema, one discovers the following “ascent
+of ‘Religion Man’”: from Eskimos, Africans, Mongols, Chinese, Indians,
+Burmese, Jews, ancient Greeks, and ancient Romans,3 to modern Euro-
+peans. In ascending rank order, the list of religions are: magic (fetishism,
+animism, primitivism), Buddhism, Lamaism, the “State Religion of the
+Chinese Empire,” Taoism, Hinduism, Persian Religion, Egyptian Religion,
+Greek Religion, Jewish Religion, Roman Religion, and Christianity (Hegel
+1988, 205–15, 229–30, 235, 391). These lists are a little misleading; not only
+do the two orders of ascent fail to map up perfectly, they also obscure the
+categorical difference between Christianity as Consummate (superhistori-
+cal) Religion and all the others as Determinate (historical) Religion. The
+differences between the others are matters of degree; the one between them
+and Christianity is a difference in kind. And this is true despite the fact that
+                                      563
+                   Hart . Imperial/Colonial Model of Religion
+
+
+there is no place in Hegel’s philosophy for the kind of gaps and conceptual
+leaps that one ﬁnds, for example, in the philosophy of Søren Kierkegaard,
+his dissident follower. Hegel’s account reﬂects the conﬁdence of a Christian
+Europe that was well on its way (in 1827) to reducing most of the globe to
+a colony.
+           If Žižek explicates the antievolutionary character of Judeo-Chris-
+tian logic in relation to eternity, then he ignores the context of colo-
+nial modernity and, thus, the evolutionary and hierarchical episteme of
+eighteenth- and nineteenth-century comparative religion, which is consti-
+tutive of the very notion of Judeo-Christianity. If I am correct in assuming
+Žižek’s reliance on Hegel—and even if I am not, since this episteme is bigger
+than Hegel—then Žižek bears a certain burden of proof. He must explain
+why his Hegelianism does not commit him to Hegel’s account of religion,
+history, and politics. As the quotations with which I opened this essay show,
+there is a constitutive relation between pre-Darwinian evolutionary theory,
+the distinction between lower and higher races, between “primitive” reli-
+gions and “world historical” religions, and claims for the preeminence of
+European Man. In the absence of an account that distinguishes his views
+from this tradition, it would be foolish not to raise the question of Žižek’s
+complicity. Here an inversion of the ethical-juridical mood is appropriate.
+Žižek must be considered guilty until proven innocent.
+           Tsenay Serequeberhan and Jorge Larrain provide the kind of
+accounts that Žižek needs to confront if he is to exonerate himself. Sereque-
+berhan shows why Hegel’s political philosophy—which is integrally con-
+nected to his philosophies of history and religion by the evolutionary/hierar-
+chical motif—requires colonialism. Hegel is driven by the dialectics of
+his own logic—with its failure to adequately address the political econ-
+omy of civil society, which inexorably produces poverty, which places the
+poor/nonproductive/superﬂuous classes outside the modern system of jus-
+tice that is based on property ownership—to advocate colonialism as a
+solution. According to Serequeberhan (1989, 311), colonialism is the only
+solution to the market imperfections of civil society, and to the surplus popu-
+lations it inevitably produces, “that is compatible with the basic terms of his
+[Hegel’s] perspective and the European reality upon which and out of which
+he reﬂected.” The structural imperfections (contradictions) inherent in civil
+society made colonialism attractive, even necessary. “Thus, non-European
+territories which do not share the peculiar European idea of property and
+society and thus do not have the strange problem of ‘overproduction’ are
+                                      564
+                                   Nepantla
+
+labeled ‘generally backward in industry’ and thereby become the legitimate
+prey of colonialist expansion” (ibid.).
+          Larrain provides an account of what we might call the impe-
+rial/colonial episteme of nineteenth-century Europe, allowing us to place
+Serequeberhan’s account in a larger context. On this view, Hegel’s distinc-
+tion between “world historical peoples” and “peoples without history” pre-
+supposes classical political economy (Smith, Malthus, Say, Ricardo), which
+regards the British bourgeoisie as the privileged representative of capitalist
+emancipation and progress, and presages Marx and Engels’s notion that the
+most important proletariat, that is, the universal and messianic class, “is the
+proletariat of the most advanced European capitalist nations.” What these
+perspectives hold in common is “a kind of Eurocentrism: the belief that the
+progress brought about by these historical actors in capitalist Western Eu-
+rope is inherently superior and has a historical mission which must ﬁnally
+prevail in the world” (Larrain 1991, 239). The concepts and images that
+Serequeberhan and Larrain identify in the work of the classical political
+economists, and in the work of Hegel and Marx—including the notion of
+“peoples without history,” the concept of the white man’s burden, and the
+imagery of darkest Africa—are examples of what David Spurr (1993) calls
+“the rhetoric of empire.”
+
+                    Are the Jews Stealing Žižek’s Jouissance?
+Žižek’s account of religion is an artifact of the ethno-philosophical discourse
+of colonial modernity, of the imperial/colonial “machine.” The ethno-
+graphic material on which Hegel relies and that Žižek presupposes became
+available, primarily, through imperial encounters between an emerging
+West and the “rest”—from the conquest of the Americas to the coloniza-
+tion of India to the “scramble for Africa,” the latter of which occurred in the
+century of Hegel’s death. It was during that same century, the nineteenth,
+that Europeans fell in love with ancient Greece and struggled with anxieties
+about the relative importance of “Athens and Jerusalem” in the formation
+of European identity. Was Europe fundamentally Hebraic or Hellenistic?
+Jewish or Greek? And what was the relation between these traditions and
+Christianity? Jews were a troubling presence, an immovable foreign body
+within the imagined community of the European body politic, which for
+centuries had been deﬁned externally by its Islamic other. The recovery of
+ancient Greek learning, whose mediation/transformation by Arab-Islamic
+culture was increasingly disavowed (on this view, Arab-Islamic culture was
+merely the caretaker or valet of Western culture) often went hand-in-hand
+                                      565
+                   Hart . Imperial/Colonial Model of Religion
+
+
+with an effort to establish the superiority of Christianity to Judaism. In his
+1793 text, Religion within the Limits of Reason Alone, Kant (1960, 116) says
+that “Judaism is really not a religion at all but merely a union of a number
+of people who, since they belonged to a particular stock, formed themselves
+into a commonwealth under purely political laws, and not into a church.”
+Kant is not being complimentary. On the contrary, this is an account in
+which Judaism comes up short in the game of comparative religion, since
+true religion is a by-product of strict adherence to the moral law, and no
+religion is stricter in this regard than Christianity. As with Kant, religion
+for Hegel is a term of praise. I read Kant’s position on Judaism, his skep-
+ticism about its religiousness, in relation to Hegel’s expressed doubt about
+whether the religion of magic is even worthy of the name religion at all. For
+Hegel religion is a mark of humanity; it distinguishes absolutely between
+humanity and animality, and differentially between higher and lower races.
+          It would be incorrect to say that Hegel questioned the humanity
+of Jews, but he certainly doubted the equality of Judaism. Žižek has no
+such doubts: he is positively certain of Christianity’s superiority. The Spirit,
+as God, as History, moves from East to West and leaves Judaism behind.
+In his account, Žižek seeks a gentle way of leaving Judaism behind while
+simultaneously bringing it along. He accomplishes this sublation through
+his notion of Judeo-Christian logic. Again, this logic—and here we return
+to the question of time and eternity—is opposed to pagan or pre-Christian
+religions. They remain merely at the level of wisdom because they sto-
+ically “emphasize the insufﬁciency of every temporal ﬁnite object . . . in
+favor of the True Divine Object which alone can provide Inﬁnite Bliss”
+(Žižek 2000a, 96). The genius of Christianity—and here one suspects that
+Žižek is following without attribution that great anti-Hegelian Hegelian,
+Kierkegaard—is to insist on the invasion of the temporal by the eternal.
+Christianity confounds pagan wisdom by offering “Christ as a mortal-
+temporal individual, and insists that belief in the temporal Event of Incar-
+nation is the only path to eternal truth and salvation. In this precise sense,
+Christianity is a ‘religion of Love’: in love, one singles out, focuses on, a
+ﬁnite temporal object which ‘means more than anything else’” (ibid; see
+also Žižek 2000b, 663).
+          Žižek also appropriates Kierkegaard’s notion of inﬁnite passion.
+And he poses what he calls “the delicate question of the relationship be-
+tween Judaism and Christianity” (Žižek 2000a, 97). He never says why
+this question is delicate. One has to read between the lines. Perhaps Žižek
+is reticent because to speak about the anti-Semitic obscene and monstrous
+                                      566
+                                  Nepantla
+
+underside of Christianity (ibid.), as he might put it were he referring to fun-
+damentalist freaks, would force him to deal with imperialism/colonialism
+and its relation to his account of religion. In evading this question, he makes
+explicit that conquest, expulsion, and/or subordination of the Jews (the ob-
+scene underside), which always already entails the subordination of pagans,
+is prerequisite to the universal and hierarchical claims that he makes for
+the Christian legacy. Before Christianity can rise to the top, before Žižek’s
+notions of Europe and universality can be consolidated, Judaism must be
+cast down.
+          Judaism proves deﬁcient because of its dogmatism, because of
+Jews’ “‘stubborn attachment’” (Žižek borrows Judith Butler’s term) to the
+ghost that haunts them, “to their secret disavowed tradition,” which brings
+them up short (Žižek 2000a, 97). Judaism, to personify, refuses to confess, to
+acknowledge the extralegal event (the founding “crime” and, thus, obscene
+underside) that undergirds every law and every order and that “haunts
+the public legal order as its spectral supplement” (ibid.). Judaism, to put it
+colloquially, “is in denial.” It is split between its public and secret aspects,
+between the symbolic Law (language) and secret crime. This inner split
+is simultaneously the split between Christianity, which confesses, which
+acknowledges its dirty secret, its obscene underside, and Judaism, which
+refuses to confess.4 But even this account, Žižek argues, is inadequate. It
+presents a distorted picture of Christianity as tied, through what Foucault
+calls the confessional mode of discourse, to an “entanglement of Law and
+its spectral double” (100), that is, the “originary” crime, transgression, and
+obscenity on which the Law is founded. Isn’t the point of Paul’s message
+of agape, Žižek asks rhetorically, that we should leave this vicious cycle be-
+hind? Doesn’t Pauline agape cut the Gordian knot of “Law and its founding
+Transgression?”5 If the answer to these questions is yes—Žižek’s conﬁ-
+dence that it is and my doubt notwithstanding—then isn’t Christianity’s
+superiority even greater than we imagined? Moreover, what if the standard
+argument “that pagan (pre-Jewish) gods were ‘anthropomorphic’” and that
+“the Jewish religion . . . was the ﬁrst thoroughly to ‘de-anthropomorphize’
+Divinity” is false (103)? Doesn’t the very prohibition of worship of other
+gods suggest that Jews had a propensity to do so?
+          This is the train of Žižek’s reasoning. He disputes the claim that
+Christianity stands intermediate between the thoroughgoing anthropo-
+morphism of paganism and the radical iconoclasm of Judaism. On the
+contrary, he argues “that it is the Jewish religion which remains an ‘ab-
+stract/immediate’ negation of anthropomorphism, and as such attached to
+                                     567
+                  Hart . Imperial/Colonial Model of Religion
+
+
+it, determined by it in its very direct negation, whereas it is only Chris-
+tianity that actually ‘sublates’ paganism” (Žižek 2000a, 97–100; quota-
+tion on 104). Christianity goes further than Judaism. Its iconoclasm is
+stricter. It is “the negation of the negation.” It negates, that is, Judaism’s
+“‘abstract/immediate’ negation of anthropomorphism.” To translate this
+from Hegelese into English, Christians no longer need prohibitions against
+graven images. Such prohibitions (negations) have done their pedagogical
+work. Thus in using icons (the negation of the negation), Christians, who
+are neither confused nor idolatrous, acknowledge the supersensible and
+nonrepresentational nature of God. Christianity has attained a critically
+mediated universality that Judaism has not.
+           This is the payoff that Žižek has been seeking, the conclusion
+toward which he has been working. Finally, Judaism has been put in its
+proper place. In Žižek’s Hegelian narrative of Christian triumphalism, Ju-
+daism stands above the other religions that Hegel called “determinant”
+(excepting Roman religion) but below Christianity—indeed, in a different
+category altogether. This is the universalizing logic found only in Chris-
+tianity and its Marxist legacy that Žižek suggests “we” hold on to in the
+face of New Age neopaganism. Žižek names his enemies. He calls them
+neopagans and fundamentalist freaks. Also on his enemies list are “PC”
+(politically correct) racial minorities, proponents of “deviant” sexualities,
+and liberal advocates of human rights. All attempt to rewrite the past so
+as to abolish “the Real of a traumatic encounter whose structuring role in
+the subject’s psychic economy forever resists its symbolic rewriting” (Žižek
+2000a, 108–9; quotation on 109; see also Žižek 2000b, 676). This multicul-
+tural multitude (horde) reduces the Judeo-Christian injunction “to love and
+respect your neighbor” to an imaginary doubling or mirroring of the self.
+The irreducibly traumatic character of the neighbor and, thus, of neigh-
+borly love is denied. The PC horde imagines love and respect without
+trauma, which is to say that it imagines a Law and Order that doesn’t
+wound.6 Thus, for the politically correct, human rights is little more than
+the right to violate the Ten Commandments, to worship false gods, to steal,
+lie, kill, and so on. In violating the Decalogue they violate Lacan who
+“directly inscribes psychoanalysis into the Judaic tradition” (Žižek 2000a,
+110). But even here Žižek is anxious to distinguish the Jewish and Christian
+components of Judeo-Christian logic, and to establish the superiority of the
+latter. Thus Judaism is salutary in refusing “to assert love for the neighbor
+outside the conﬁnes of the Law” (112). This refusal prevents neighborly love
+“from degrading into a narcissistic (mis)recognition of my mirror-image”
+                                      568
+                                   Nepantla
+
+(ibid.). But Christianity is better. Christian love goes beyond Jewish law by
+breaking the vicious cycle of law and sin.
+          Žižek develops this argument in relation to the views of Donald
+Davidson. While he spends some time comparing and contrasting Lacan’s
+“Big Other” (language, the Symbolic order, Law) and Davidson’s princi-
+ple of charity, according to which “‘disagreement and agreement alike are
+intelligible only against a background of massive agreement’” (Davidson
+1984, 187; quoted in Žižek 2000a, 114), that discussion can be dispensed
+with for my purposes. What I will focus on instead is yet another argu-
+ment that Žižek makes for the comparative superiority of Christianity to
+Judaism, on the one hand, and to paganism, on the other. In this regard,
+Žižek contrasts the global character of pagan religions and the universal
+character of Christianity. The pagan cosmos is one of hierarchy, harmony,
+and balance. Evil is deﬁned as disharmony, derangement, and disruption.
+The superiority (universality) of one principle is never asserted over others.
+In contrast, Christianity, by its very nature, is subversive of “this global bal-
+anced cosmic Order” (Žižek 2000a, 120). It scandalizes pagan wisdom by
+speaking of the individual’s “immediate access to universality (of nirvana, of
+the Holy Spirit, or, today, of human Rights and freedoms)” (ibid.). “Chris-
+tianity is the miraculous Event that disturbs the balance of the One-All
+[pagan cosmology]; it is the violent intrusion of Difference that precisely
+throws the balanced circuit of the universe off the rails” (121). That Žižek in-
+cludes nirvana on his list of the vectors of universality does not change its
+Orientalist color. On the contrary, he recapitulates the standard Orientalist
+notion that the West (he marks Christianity as Western) is dynamic, his-
+torical, revolutionary, and universal while the East is not. The South and
+other geographies, of course, do not ﬁgure in his account, as they do not in
+Hegel’s infamous claim that Africa is static and ahistorical and that history
+moves from East to West.
+          The closest, so far as I can tell, that Žižek comes to addressing the
+imperial/colonial implications of Hegel’s philosophy of religion is The Sub-
+lime Object of Ideology (1989). There he mentions Yirmiahu Yovel’s critique
+of Hegel’s inconsistency and anti-Semitism. Indeed, Hegel’s inconsistency is
+driven by his anti-Semitism. Thus Judaism (the religion of sublimity) pre-
+ceeds Greek religion (the religion of beauty) even though this violates the
+Kantian order—ﬁrst the beautiful, then the sublime—on which Hegel’s
+account depends. Rather than pursuing this point,7 much less the evolu-
+tionary/hierarchical character of Hegel’s overall philosophy, Žižek retreats
+into a discussion of the philosophical sublime. Thus he turns away from the
+                                       569
+                   Hart . Imperial/Colonial Model of Religion
+
+
+torn ﬂesh and red blood of the historical sublime, from the bodily practices,
+disciplines, and tortures of anti-Semitism and colonial modernity to the
+discourse of a philosophy seminar (Žižek 1989, 201–2).
+          If the Jews did not steal Žižek’s love object, if they are not respon-
+sible for his jouissance, his pain-ﬁlled satisfaction, then it seems a sure bet
+that the motley crew of “village idiots” (pagans), and those that he skewers
+as “fundamentalist freaks,” are. While Doug Akoi’s (1996, 413–14) point, in
+the following passage, is to show how Žižek’s analysis helps to illuminate
+“the fascistic moment of every culture,” there is no better description of the
+operation that Žižek performs on the multicultural multitude:
+
+         Žižek argues that there is an irreducible gap between the fan-
+         tasy of culture as a Gemeinschaft/ethnos/Nation-Cause/shared
+         thing, that is, as a community sustained by organic bonds, and
+         the agonism of cultural difference, where meanings are mis-
+         read and signs are misappropriated. This gap, opened up by
+         the imaginariness of culture, motivates the displacement of its
+         immanent impossibility onto an ideological fantasy of a patho-
+         logical Other who threatens the wholesome body politic. This
+         is the formal conversion of the negativity of cultural lack into
+         the despised positivity of the alien Thing—the new old nation-
+         alism translated into Hegelese.
+
+In reading Žižek against himself, we have seen and will see how he con-
+structs the non-Western, non-European, non-Christian other as lacking
+true politics, true ethics, true universality. This other threatens the whole-
+some Western/European/Christian body politic. The European/Christian
+ethnos—its possession of the love object, the object treasure—is being
+threatened by “pagans at the gate.”
+
+                       The Plague of Eurocentric Fantasies
+I will pursue the ﬁnal part of this analysis by way of a digression on Euro-
+centrism, which as it turns out is not a digression at all but a constitutive
+part of Žižek’s argument for the universality of Christianity and its superi-
+ority to paganism. This will allow me to tie in the ﬁnal thread of Žižek’s
+account of religion in The Fragile Absolute.
+          Žižek has a rather odd notion of Eurocentrism. Or perhaps it isn’t
+so odd. He claims that politics proper is of ancient Greek derivation; as
+                                      570
+                                  Nepantla
+
+such, it is “something speciﬁcally ‘European’” (Žižek 1998, 991).8 Politics
+proper always entails a paradoxical “short circuit between the universal
+and the particular” (988). It is the universalization of the particular. The
+history of European political thought, however, is “nothing but a series
+of disavowals” (ibid.) of democratic antagonism, that is, the competitive
+(and salutary) struggle for universality, which is the proper logic of politics.
+Politics is not the globalization of difference but the universalization of
+particularity, not a globalizing politics of difference but a universalizing
+politics that everyone can identify with. Politics proper accents democratic
+antagonism, while archepolitics (communitarianism), parapolitics (Jürgen
+Habermas and John Rawls), metapolitics (Marxism), and ultrapolitics (Carl
+Schmitt) subvert democratic antagonism in a variety of ways. They “de-
+antagonize” politics proper by (1) construing it as a closed, homogeneous,
+and plenitudinous social space that is organically structured, (2) establishing
+clear rules and procedures, (3) reducing politics to the status of a “shadow
+theater” whose real act is always economic and always offstage, or (4)
+transforming antagonism (through a false radicalism) into war (990–92).
+          Žižek believes that there is no politics without an agonistic strug-
+gle for universality, without the paradox of particularity occupying the
+space of universality. Thus archepolitics, parapolitics, metapolitics, and ul-
+trapolitics are, in fact, postpolitical. Postpolitics is rule by market forces,
+multiculturalism, tolerant humanism, consensus, and the police, with the
+Leviathan of the sovereign state as their sum total. This postpolitical turn
+succeeds in pushing real antagonism, which needs to be democratically and
+agonistically mediated, out of the Symbolic realm and into the Real. As
+the Real is the impossible to say, this antagonism is not spoken, but oper-
+ates, in Freudian terms, below the level of the ego, on the level of the id.
+It feeds the growth of what Žižek calls “id-evil,” including new forms of
+racism, and the explosion “of excessive ethnic or religious fundamentalist
+violence.” The motive of such evil, Žižek contends, is neither ego-selﬁshness
+nor superego-fanaticism, that is, an excessive “devotion to some ideological
+ideal.” Rather, it is jouissance (Zizek 1998, 998–99), which is the enjoyment
+not pleasure that we derive from our pain. It is “the paradoxical satisfac-
+tion,” according to Dylan Evans (1996, 92), “that the subject derives from
+his symptom, or, to put it another way, the suffering that he derives from
+his own satisfaction.” Id-evil, as Žižek notes, “stages the most elementary
+short-circuit in the relationship of the subject to the primordially miss-
+ing object-cause of his desire. What bothers us in the Other (the Jew, the
+Japanese, the African, the Turk, and so forth) is that he appears to entertain
+                                      571
+                   Hart . Imperial/Colonial Model of Religion
+
+
+a privileged relationship to the object” (Žižek 1998, 999). This privileged
+Other “possesses the object-treasure,” having stolen it from us “(which is
+why we don’t have it),” or threatens “our possession of the object” (Žižek
+2000a, 8).
+           This id-logic or logic of the Real is the consequence of the postpo-
+litical turn (on the Symbolic level) from democratic antagonism to tolerant
+humanism and multicultural consensus. What is hard to understand, how-
+ever, is why Žižek thinks that proper politics, a politics of democratic
+antagonism and universality, is essentially European. He stops just short of
+this explicit claim, but it is difﬁcult to draw any other conclusion. What is
+at stake? I ask this question because Žižek’s argument is in excess of his
+theoretical needs. That he is in the grips of ideological fantasy is evident
+by the fact that the very argument against Eurocentrism—the notion that
+it can ﬁll the constitutive emptiness at the center of things—starts to func-
+tion as an argument in its favor (Žižek 1989, 49). Thus Žižek blames what
+Europe lacks on the multicultural multitude, on fundamentalist freaks and
+New Age neopagans. This is odd. Žižek need not argue for Eurocentrism
+to justify selectively retrieving various aspects of the European legacy that
+he, like many others, values. The value of such retrievals itself is sufﬁcient
+justiﬁcation. That being the case, I cannot help but ask why he overstates
+his case. What does Žižek fear? His fear as far as I can tell is tied to the
+privileged role that the notion of universality plays in his thinking, in par-
+ticular his view that there are only three competing and/or complimentary
+forms of universalism: Christianity, Capitalism, and Marxism.
+           If Christian universalism has been put in jeopardy if not dis-
+placed by capitalist universalism, then only Marxist universalism—which
+is a Christian legacy, ﬁltered and augmented by Lacan, of course—can
+displace capitalism. Given what he regards as the European provenance
+of Christianity and Marxism, Žižek fears that the decline of Eurocen-
+trism may mean the loss of universality. This should give pause to any
+reader who is tempted to separate Žižek’s Hegelian, Eurocentric, evolu-
+tionary/hierarchical model of religion from his politics. One is no more
+likely to ﬁnd a culturally and socially autonomous and atomistic notion of
+politics in Žižek’s work than in Hegel’s work. The temptation, for those
+who otherwise ﬁnd his insights compelling, to quarantine Žižek’s politics
+from his other views is understandable but wrong. For Žižek Christianity,
+Marxism, universality, and Europe are a uniquely precious if fragile ensem-
+ble. This is why he argues so strongly for the comparative superiority of
+Christianity to paganism and Judaism. Interestingly enough, Žižek never
+                                     572
+                                  Nepantla
+
+mentions Islam.9 Islam, which poses so many problems for the narrative
+that Žižek constructs, is also absent from Hegel’s account! Is this merely an
+interesting coincidence? Perhaps.
+          A reprise of Žižek’s argument in The Fragile Absolute, as I have
+developed it, goes something like this: Marxism and Christianity share a
+common ancestry. Marxism should embrace its Christian heritage. As the
+only bearers of messianic universalism, Marxism and Christianity should
+join forces against the competing universalism of capitalism. If Marxism
+is indebted to Christianity, then Christianity is indebted to Judaism, thus
+the concept of Judeo-Christianity. But it is important to maintain their
+difference while acknowledging their unity. For Christianity is superior to
+Judaism, goes beyond Judaism, embodies the greatest strengths of Judaism
+while avoiding its greatest weaknesses. Thus Christian love—to return to
+one of the threads of Žižek’s argument that I want to pull a little further—
+succeeds in decoupling law and transgression, thus pulling the plug on
+a vicious cycle. In describing this process, Žižek is clearly in a generous
+mood. One is not sure whether this is a mark of genius or perversity,
+perhaps perverse genius. For only a perverse genius could make Saint
+Paul speak Lacanian; moreover, Paul is as rigorous an antihumanist as
+Louis Althusser. One is almost forced to read this account as parody so
+as not to laugh. But I suspect that this is no laughing matter for Žižek.
+He is serious. Thus, through Pauline agape, we unplug from the law,
+from “theoretical humanism,” from “an idealized Romantic universe in
+which all concrete social differences magically disappear” (Žižek 2000a,
+127). Christianity uncouples the law and its spectral obscene supplement. It
+suspends this monstrous supplement, which haunts the law like an angry
+ghost, while preserving the law. This is the Hegelian logic of Aufhebung,
+of sublation, of simultaneously preserving, negating, transforming, and
+lifting higher. According to Žižek, only Christianity can do this work. For
+Christianity, however fragile and ﬂeeting, is the absolute (126–28).
+          If the ultimate outcome, the superiority of Christianity, is a fore-
+gone conclusion, Žižek still manages to surprise us along the way. Thus he
+partially rehabilitates Judaism vis-à-vis Christianity. On this revised view,
+Judaism is properly pre– the vicious cycle of law and sin, of desire and guilt,
+while Christianity is properly post–vicious cycle. True, in its cruder forms,
+Christianity seems to be a case of the superego gone amok, where transgres-
+sions of the spirit of the law are judged as severely as transgressions of the
+letter of the law. Indeed, in its cruder, improper forms, Christianity “ma-
+nipulates guilt much more effectively” (Žižek 2000a, 142) than Judaism,
+                                       573
+                   Hart . Imperial/Colonial Model of Religion
+
+
+for which truth and not one’s pathological, desiring, emotional investment
+in that truth is what matters. Here, it seems, Nietzsche had it right. Thus
+crude, improper, inauthentic Christianity simply misses the point when it
+accuses Jews of being hypocritical, of trying to cheat God “by seeking ways
+of obeying God’s commandments and prohibitions literally, while nonethe-
+less retaining what they desire” (140). In making this judgment, Christians
+are ignorant of a paradox: “that the vicious dialectic of Law and its trans-
+gression elaborated by Saint Paul is the invisible third term, the ‘vanishing
+mediator’ between the Jewish religion and Christianity” (145). Neither oc-
+cupies the middle ground of the vicious cycle: Jews do not because they do
+not experience guilt, they have not broken into the vicious cycle; Christians
+do not because they have broken out of the vicious cycle. If neither Judaism
+nor Christianity is guilty of what it is commonly accused, then Christianity
+is still superior because it has sublated, that is, broken out of a vicious cycle
+that Judaism has never broken into. Again, Žižek uses Paul as read by Hegel
+and Hegel as read by Lacan to put Judaism in its proper place.
+           The task of distinguishing Christianity from Judaism, with all the
+anxieties of inﬂuence that entails, and from the more subterranean anxieties
+of inﬂuence that characterize Christianity’s relations with paganism, has
+long vexed Christian intellectuals. They waged a two-front war against
+Jews and pagans, plus an internal war against Christian deviants; thus Islam
+was initially seen as a Christian heresy. Whether Žižek can “properly”
+be called a Christian intellectual or not, he takes on the task. I take the
+following passage, which may be good Christian theology but is bad history,
+social theory, and phenomenology, as his basic claim:
+
+         As every true Christian knows, love is the work of love—the
+         hard and arduous work of repeated “uncoupling” in which,
+         again and again, we have to disengage ourselves from the in-
+         ertia that constrains us to identify with the particular order we
+         were born into. Through the Christian work of compassion-
+         ate love, we discern in what was hitherto a disturbing foreign
+         body, tolerated and even modestly supported by us so that we
+         were not too bothered by it, a subject, with its crushed dreams
+         and desires—it is this Christian heritage of “uncoupling” that
+         is threatened by today’s fundamentalisms, especially when they
+         proclaim themselves Christian. Does not Fascism ultimately
+         involve the return of the pagan mores which, rejecting the love
+                                       574
+                                   Nepantla
+
+         of one’s enemy, cultivate full identiﬁcation with one’s own eth-
+         nic community? (Žižek 2000a, 128–29)
+
+On Žižek’s account, authentic Christianity breaks out of the vicious cycle
+of law and sin that characterizes the human condition by renouncing “the
+transgressive fantasmatic supplement that attaches us to it” (149). Christian-
+ity attacks itself, what it desires most—just as Medea and Sethe attack and
+kill their children, Kierkegaard binds Isaac for sacriﬁce, and God gives his
+only son to be cruciﬁed—and this is the ultimate meaning of uncoupling,
+the ultimate antifascist gesture. Thus Christian love creates a new subjec-
+tivity, where “we catch a glimpse of Another Space which can no longer be
+dismissed as a fantasmatic supplement to social reality” (158). Christianity
+is the fragile absolute.
+          Marxism is a legacy of Christian Europe, which is the abode of
+agonistic universality or true politics.10 But what about the constitutive
+void at the center of Europe, the ontological lack underwriting the very
+notion of Eurocentrism? To put a ﬁner point on an observation that I made
+earlier, doesn’t Žižek blame this lack on pagans and fundamentalist freaks,
+on those whom I call the multicultural multitude? Isn’t he accusing them
+of stealing his jouissance? To paraphrase Žižek, the question that he must
+confront is how he invests the ideological ﬁgures of the pagan and the
+fundamentalist with his unconscious desire, with how he has constructed
+these ﬁgures to escape a certain deadlock of his desire. Isn’t his antipa-
+ganism and antifundamentalism a “pathological, paranoid construction”
+(Žižek 1989, 48)? Perhaps this accounts for the severity of Žižek’s critique
+of the non-Christian other. Could it be that the multicultural multitude of
+fundamentalist freaks, New Age spiritualists, neopagans, and inauthentic
+Christians represent the “return of the repressed” (a case of the Empire
+striking back) in Žižek’s neo-Hegelian account of religion? If Christianity
+is the fragile absolute, then colonial modernity is the absolute trauma. Colo-
+nial modernity is that of which Žižek cannot speak; it is the “impossible
+Real” in his account of religion.
+
+                                      Coda
+In The Ticklish Subject (1999) and in other works, Žižek deplores the global
+reﬂexivity or “ticklish” character of contemporary Western life. And yet, his
+own lack of reﬂectivity allows him, without reservation, to deploy Oriental-
+ist discourse, which Edward Said and others have shown is one of the most
+                                          575
+                     Hart . Imperial/Colonial Model of Religion
+
+
+tenacious and productive discourses of imperial/colonial modernity. Thus
+in his essay “Melancholy and the Act” (Žižek 2000b, 676–77), in a section
+titled “The Pope versus the Dalai Lama,” he offers this bit of Orientalist
+profundity: “One can now understand why the Dalai Lama is much more
+appropriate for our postmodern, permissive times. He presents us with
+a vague, feel-good spiritualism without any speciﬁc obligations; anyone,
+even the most decadent Hollywood star, can follow him while continuing
+a money-grubbing, promiscuous lifestyle. In contrast, the pope reminds us
+that there is a price to pay for a proper ethical attitude.” Now the point
+here isn’t merely that Lacanians can be Orientalist, too. Nor am I merely
+saying that Žižek knows as little about Buddhist scholarship as he does
+about biblical scholarship. For as Mark Twain once observed, everyone is
+ignorant about something. The point, rather, is that Žižek is ignorant of his
+ignorance. Or maybe this is a case of ideological fantasy, in which case, Žižek
+(1989, 32–33) “know[s] very well how things really are,”11 but is still acting
+as if he did not. If this is correct, then Žižek’s is an ideological ignorance,
+the refusal of knowledge, the refusal to be self-reﬂexive, to be tickled. He
+is not ticklish/reﬂexive where being ticklish is a good thing. In any event,
+his observation about the Pope and the Dalai Lama—which is a compar-
+ative theory of religion in microcosm that recapitulates the Orientalist and
+primitivist history of comparative religion, which is an important modal-
+ity of knowledge production in imperial/colonial modernity—dovetails
+nicely with his Eurocentic fantasy in which the universality/absolutism of
+Christianity (and its Marxist legacy) is the only viable obstacle to global
+capitalism.
+
+
+                                         Notes
+[The next issue of Nepantla, 4.1, will include a short rejoinder by Hart to the reply by
+           Žižek that follows here. Eds.]
+1. I am aware that evolutionary and hierarchical can be construed in a variety of ways,
+           both negative and positive. Unless otherwise speciﬁed, I use these words as
+           deprecations. In employing them (or the term colonial modernity), I intend to
+           move the reader toward a similar assessment.
+2. “Ontological difference” refers, in Heidegger’s language, to the difference between
+           being and the Being of being, that is, the void, emptiness, nothingness from
+           which being emerges. In Spinoza’s language, this is the distinction between
+           natura naturans (nature naturing) and natura naturata (nature natured).
+3. In the 1827 lectures, Hegel places ancient Roman religion higher than Judaism.
+                                            576
+                                        Nepantla
+
+4. Žižek cites Freud’s Moses and Monotheism (1983 [1939]) to illustrate this logic. Thus
+           the murder of Moses and his true identity as an Egyptian are the (repressed)
+           obscene and monstrous underside of the Mosaic Law, which it haunts.
+5. Žižek is no biblical scholar and neither am I. I assume that his commentary should be
+           understood as that of the intelligent, nonbibilical scholar. It is metacommen-
+           tary on the ordinary discourse of the religious community and not an effort
+           to engage biblical scholars on their terrain of expertise. In his effort to put
+           Paul to work, Žižek relies heavily on Alain Badiou’s interpretation in Saint
+           Paul ou la naissance de l’universalisme (1998).
+6. I have already suggested that Žižek’s critique of multiculturalism, while insightful, is
+           inadequate. If Michel Foucault moves toward liberal notions of the self in his
+           later work, if Jacques Derrida’s Specters of Marx (1994) concludes with a set
+           of liberal proposals, if, as Žižek himself argues in a 2001 Süddeutsche Zeitung
+           review of Empire, the even more radical, Marxist-communist discourse of
+           Michael Hardt and Antonio Negri (2000) succumbs to the siren songs of
+           human rights liberalism in its constructive proposals, then why should we
+           expect more from multiculturalists? Given the discursive constraints of a
+           deeply ingrained culture of liberalism, perhaps multiculturalists express rad-
+           ical, subversive, and revolutionary desires within the constraints of the only
+           language they know.
+7. In fairness, Žižek’s account strengthens Yovel’s by pointing out this very inconsistency.
+           While there is no absolute distinction between metaphysics and politics, Ži-
+          žek, at least in this case, is more interested in the former than in the latter.
+8. On this point, many questions could be asked, not the least of which would be why
+          ancient Greece was necessarily European as opposed to, say, Mediterranean,
+          and why we should assume that Europe’s others are eccentric and nonconsti-
+          tutive of European identity. I can barely resist pursuing these matters, but I
+          will.
+9. Should we take “fundamentalism” as an oblique reference to Islam? If so, why would
+          Žižek be so coy?
+10. This includes Europe’s American and Australian diaspora.
+11. It isn’t reality that people misrecognize, according to Žižek 1989, 32–33), “but the
+            illusion that is structuring their reality, their real social activity. They know
+            very well how things really are, but still they are doing it as if they did
+            not know. The illusion is therefore double: it consists in overlooking the
+            illusion which is structuring our real, effective relationship to reality. And
+            this overlooked, unconscious illusion is what may be called the ideological
+            fantasy.”
+                                           577
+                      Hart . Imperial/Colonial Model of Religion
+
+
+
+
+                                       References
+Akoi, Doug. 1996. “The Thing of Culture.” University of Toronto Quarterly 65: 404–18.
+Badiou, Alain. 1998. Saint Paul ou la naissance de l’universalisme. Paris: Presses
+         universitaires de France.
+Chakrabarty, Dipesh. 1997. “The Time of History and the Times of the Gods.” In The
+           Politics of Culture in the Shadow of Capital, edited by Lisa Lowe and David
+          Lloyd. Durham, NC: Duke University Press.
+Connolly, William E. 1999. Why I Am Not a Secularist. Minneapolis: University of
+          Minnesota.
+Davidson, Donald. 1984. Inquiries into Truth and Representation. Oxford: Clarendon.
+Dennett, Daniel C. 1991. Consciousness Explained. New York: Little, Brown.
+Derrida, Jacques. 1994. Specters of Marx: The State of the Debt, the Work of Mourning,
+          and the New International. London: Routledge.
+Evans, Dylan. 1996. An Introductory Dictionary of Lacanian Psychoanalysis. London:
+          Routledge.
+Freud, Sigmund. 1983 [1939]. Moses and Monotheism. In The Origins of Religion.
+          Harmondsworth, UK: Penguin.
+Hall, Stuart. 1985. “Religious Ideology and Social Movements in Jamaica.” In Religion
+          and Ideology, edited by Robert Bocock and Kenneth Thompson.
+          Manchester, UK: Manchester University Press.
+Hardt, Michael, and Antonio Negri. 2000. Empire. Cambridge: Harvard University
+          Press.
+Hart, William David. 2002. “From Theology to theology: The Place of God-Talk in
+           Religious Studies.” In Shifting Paradigms: Religious Studies and the University,
+           edited by Delwin Brown and Linell Cady. Albany, NY: SUNY.
+Hegel, G. W. F. 1967. Philosophy of Right. Translated by T. M. Knox. New York:
+           Oxford University Press.
+        . 1988a. Lectures on the Philosophy of Religion. Translated by R. F. Brown, P. C.
+           Hodgson, and J. M. Stewart. Berkeley: University of California Press.
+        . 1988b. Lectures on the Philosophy of History. Translated by Leo Rauch.
+           Indianapolis: Hackett.
+Kant, Immanuel. 1960 [1793]. Religion within the Limits of Reason Alone. New York:
+           Harper and Row.
+King, Richard. 1999. Orientalism and Religion: Postcolonial Theory, India, and “The
+           Mystic East.” London: Routledge.
+Larrain, Jorge. 1991. “Classical Political Economists and Marx on Colonialism and
+           ‘Backward’ Nations.” World Development 19: 225–43.
+                                           578
+                                      Nepantla
+
+Penney, James. 2000. Review of The Ticklish Subject: The Absent Centre of Political
+         Ontology, by Slavoj Žižek. Journal of the Psychoanalysis of Culture 5.i1: 166.
+Raboteau, Albert J. 2001. Canaan Land: A Religious History of African Americans. New
+          York: Oxford University Press.
+Spurr, David. 1993. The Rhetoric of Empire: Colonial Discourse in Journalism, Travel
+          Writing, and Imperial Administration. Durham, NC: Duke University Press.
+Serequeberhan, Tsenay. 1989. “The Idea of Colonialism in Hegel’s Philosophy of
+           Right.” International Philosophical Quarterly 39: 301–18.
+Žižek, Slavoj. 1989. The Sublime Object of Ideology. London: Verso.
+        . 1998. “A Leftist Plea for Eurocentrism.” Critical Inquiry 24: 988–1009.
+        . 1999. The Ticklish Subject: The Absent Centre of Political Ontology. London:
+           Verso.
+        . 2000a. The Fragile Absolute, or, Why Is the Christian Legacy Worth Fighting
+           For? London: Verso.
+        . 2000b. “Melancholy and the Act.” Critical Inquiry 26: 657–81.
+

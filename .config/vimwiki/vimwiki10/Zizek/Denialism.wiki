@@ -1,0 +1,1893 @@
+Adam Sitze
+
+Denialism
+
+
+
+
+             Perhaps the most coherent expression of Presi-
+             dent Thabo Mbeki’s position on the relation-
+             ship between HIV, AIDS, and antiretroviral
+             (ARV) therapy is set forth in a document
+             entitled ‘‘Castro Hlongwane, Caravans, Cats,
+             Geese, Foot and Mouth Statistics: HIV/AIDS
+             and the Struggle for the Humanisation of the
+             African.’’ The text was distributed throughout
+             the African National Congress (ANC) National
+             Executive in March 2002, and is rumored to
+             have been authored by Peter Mokaba, whose
+             subsequent death on June 9, 2002, at age
+             forty-three of ‘‘acute pneumonia linked to a res-
+             piratory problem’’ gave rise to speculations that
+             he died of AIDS. It is not a document to be
+             written oﬀ, even though this is how its critics
+             have treated it.1 On the contrary, whether one
+             interprets it as Mokaba’s oblique, extended sui-
+             cide note (explaining why he would not take
+             ARVs even though he could aﬀord them) or
+             as Mbeki’s unwilling political last will and tes-
+             tament (allowing a name to be given to his
+             disavowal of a deadly condition’s given name),
+             it must be read as a distinctly necropolitical
+             text. In it we ﬁnd the strongest sustained argu-
+             ment in support of the Mbeki administration’s
+
+             The South Atlantic Quarterly 103:4, Fall 2004.
+             Copyright © 2004 by Duke University Press.
+770 Adam Sitze
+
+
+
+decision to delay the provision of ARVs to South Africans between 1999 and
+2003. This argument may be summarized as follows: HIV is not the only
+cause of the many immune deﬁciencies weakening the South African body
+politic; poverty also causes the acquisition of immune deﬁciencies; the sci-
+ence grounding HIV’s existence and treatment is not only questionable but
+racist; ARVs can neither prevent nor treat the acquisition of poverty-based
+immune deﬁciencies; ARVs are linked to the interests of multinational capi-
+tal; ARVs are not even a cure for HIV and are toxic besides.2 Whatever the
+merits of these claims are on their own terms (the racism of HIV/AIDS
+epidemiology certainly has been well documented), ‘‘Castro Hlongwane’’
+adds them up, by a kind of kettle logic, to reach what seems to have been a
+presupposed conclusion: the Ministry of Health need not rush to include
+ARV treatments as a part of the ﬁght against HIV/AIDS in South Africa.
+The Treatment Action Campaign (TAC) estimates that this conclusion has
+led to the unnecessary deaths of thousands of poor people.
+   It is tempting to read ‘‘Castro Hlongwane’’ as a mere eﬀect of a more
+fundamental economic logic, such that the Mbeki administration’s hesita-
+tion to provide ARVs could be explained because they are too expensive, or
+because providing generic ARVs would somehow scare oﬀ foreign direct
+investment. But the disturbing probability is that the Mbeki administra-
+tion’s theories about HIV and AIDS operate with a high degree of rela-
+tive autonomy. Providing ARVs for HIV-positive South Africans is not only
+economically possible for the Mbeki administration, but may be its most
+cost-eﬀective policy option.3 The decision not to provide ARVs cannot then
+be considered a decision made of economic necessity. As Mandisa Mbali
+argues, the very opposite is true: there is every indication that the theory that
+HIV is not the exclusive cause of AIDS is the exclusive cause of the Mbeki
+administration’s deadly delay of ARVS.4 ‘‘Castro Hlongwane,’’ as the single
+most coherent formulation of this theory, must be read for the performative
+force of its death sentences.
+
+
+The dominant accounts of the Mbeki administration’s denialism tend to
+frame the question as a variation on the tradition of humanistic and social-
+scientiﬁc thought Mahmood Mamdani has called ‘‘South African exception-
+alism.’’ 5 Grasped within this frame, Mbeki’s theories would be unique to
+South Africa, intelligible as only another intriguing turn in the history of a
+particularly fascinating nation, the politics and culture of which are unlike
+any other. The corollary of this approach would be the reduction of denial-
+                                                                 Denialism   771
+
+
+
+ism to an exceptionalism of a second sort. As the only leader in contempo-
+rary world politics to publicly question accepted scientiﬁc opinion on the
+question of HIV/AIDS, Mbeki would appear purely and simply irrational.
+He would emerge as the embodiment of every postulate of Enlightenment
+racism.
+   Aside from its capitulation to the eternal imperialist suspicion of post-
+colonial self-government, the problem with the exceptionalist approach is
+that it would obscure a more general economy of denialism, a denialism writ
+large. By this, I mean the denialism programmed into not only the circuits
+and institutions of globalizing capital, but also the U.S. mass media’s apoca-
+lyptic accounts of AIDS in Africa that have circulated since at least 1986.6
+Discussing these accounts in 1988, Susan Sontag objected to the ‘‘prolif-
+eration of reports or projections of unreal (that is, ungraspable) dooms-
+day eventualities,’’ arguing that the narrative of inevitability structuring the
+latter is bound ‘‘to produce a variety of reality-denying responses.’’ 7 On Son-
+tag’s read, there is a denialist kernel lodged in the very discourse of emer-
+gency that has framed the northern approach to the pandemic from the
+beginning. To the extent that Africa already signiﬁed nihilism (death, sick-
+ness, nothingness, despair) in and for the Euro-American social imaginary,8
+it cannot come as a surprise that the subjects of the same would prefer
+merely to shudder at the thought of Africans’ lack of access to essential
+medicines (for HIV/AIDS or for malaria or tuberculosis). In South Africa,
+meanwhile, the earliest accounts of the epidemic emerged in 1983.9 In the
+next eight years, more than ﬁfty studies would be published in South Africa
+in the ﬁelds of actuarial science, epidemiology, business management,
+demography, and public health.10 These studies, many of which were con-
+ducted in the ministries of the apartheid state, the labs, libraries, and
+archives of white-only universities, and the oﬃces of white-owned capitals,
+openly calculated and speculated on the eﬀect of HIV on South Africa’s
+black population.11 By 1989, the same apartheid ministers who, in 1985, had
+rebuked a sensationalist media for blowing the epidemic out of proportion 12
+were musing publicly about the disease’s destructive power.13 Between
+1990 and 1995, hundreds more studies of HIV/AIDS in South Africa
+emerged.14 The methodologies, disciplinary status, institutional supports,
+and problématique of these studies were more or less the same as the studies
+of the late 1980s, but they were now marked by one critical diﬀerence. By
+the late 1980s to mid-1990s, the discourse on HIV/AIDS, in South Africa
+as elsewhere,15 had been altered by the emergence of ‘‘miracle drugs.’’ After
+the FDA approved Zidovudine (AZT) in 1987, it was clear that the medi-
+772 Adam Sitze
+
+
+
+cation, while toxic and by no means a cure for HIV/AIDS, could signiﬁ-
+cantly inhibit the replication of HIV, and that people with low white blood
+cell counts could—like Lazarus, it was said—return from the grave.16 By
+early 1994, further studies established that AZT could reduce mother-to-
+child-transmission (MTCT) of HIV to as low as 8.3 percent.17 A second
+HIV/AIDS drug, Didanosine (ddI), would be approved by the FDA in Octo-
+ber 1991, while Nevirapine, which the FDA approved in September 1996,
+was shown in 1999 to be 50 percent more powerful than AZT in reducing
+intrapartum MCTC.
+   What this means is that even prior to the emergence between 1994 and
+1996 of nonnucleoside reverse transcriptase inhibitors, protease inhibitors,
+and powerful ‘‘triple therapies,’’ knowledge about the horrible scope of the
+pandemic had been multiplied by a decisive coeﬃcient. For at least a decade,
+it has been possible to block the replication of the virus with antiretro-
+viral treatment. In Foucauldian terms, biomedical technologies like AZT
+and ddI brought a new diagram of power/knowledge into eﬀect.18 Because
+ARVs reduced AIDS-related mortality by 75 percent, an HIV-positive diag-
+nosis could be reclassiﬁed as a chronic condition rather than a death sen-
+tence. This irreversibly changed the percepts that enable us to see and speak
+about the virus. The new diagram introduced a set of urgent political ques-
+tions related to the power relations of access. Now that life with HIV/AIDS
+could be extended with regular doses of ARVs, corporate entities entered
+into direct relations of biopolitical regulation of the bodies of people with
+HIV/AIDS. Even as people with HIV/AIDS acquired a new form of life,
+the laws of the deregulated market acquired a new power to live and let
+die. In 1989, an emergent AIDS Coalition to Unleash Power (ACT UP),
+which was largely responsible for constituting the new diagram in the ﬁrst
+place,19 placed political economic questions regarding the cost and distri-
+bution of ARVs at the very center of the struggle against the pandemic.20
+The major pharmaceutical corporations acknowledged as much by enter-
+taining questions of the global aﬀordability of ARVs in a set of meetings
+hosted by the World Health Organization (WHO) between 1991 and 1993.21
+Claiming to be at the mercy of the same laws of capital they mercilessly
+enforced, these corporations raised those questions in convoluted terms
+that permitted them to be immediately dropped. And so, more than ten
+years after AZT was approved by the FDA as a treatment for HIV/AIDS,
+researchers in Geneva could still report, writing in an evasive passive voice,
+that ‘‘unfortunately, the biomedical advance demonstrating the dramatic
+                                                               Denialism   773
+
+
+
+reduction of mother-to-child transmission of HIV with Zidovudine (ZDV)
+treatment has yet to be translated into widespread use of antiviral treatment
+to help prevent HIV infection in infants.’’ 22
+
+
+Indeed, to inquire into denialism today is to ask how ‘‘only a fraction of
+those in need were receiving antiretroviral treatment at the end of 2002—
+about 800,000 people worldwide, 500,000 of whom live in high-income
+countries. In sub-Saharan Africa, where 2.4 million died of AIDS in 2002,
+only about 50,000 people were receiving treatment.’’ 23 It is impossible to
+respond to this question without ﬁrst charting the ways that a certain denial-
+ism has informed not only northern discourses on the pandemic, but also
+the decisions of the dominant institutions of globalizing capital, which have
+acted precisely to refuse the biopower called into being by the new biomedi-
+cal technologies on the basis of a fundamentally racist approach to global
+populations.24 In the same year that apartheid formally ended in Pretoria,
+the groundwork for what some have called ‘‘global apartheid’’ was ﬁnalized
+in Washington, D.C.25 In 1994, the year that studies deﬁnitively established
+the power of perinatal AZT treatment, the best available projections warned
+that the pandemic could soon double in size in the world’s poorest regions.26
+Yet in that same year, the United States not only entered into a four-year
+period of stagnant international HIV/AIDS funding,27 but also accelerated
+its distinctly imperial economic policy by concluding the Uruguay round
+of the General Agreement on Tariﬀs and Trade (GATT).28 The Final Act of
+GATT established the World Trade Organization (WTO) and codiﬁed a set
+of highly contested clauses pertaining to Trade-Related Aspects of Intel-
+lectual Property Rights (TRIPs).29 The TRIPs clauses, formulated in large
+part by multinational pharmaceutical corporations,30 gave the same cor-
+porations signiﬁcant powers to secure their intellectual property patents,
+and thus their monopolies, on essential medications.31 At a moment when
+eﬀective HIV/AIDS treatments had been available for years, and when the
+scope of the pandemic was plainly known to all decision makers, the United
+States and Big Pharma acted not to support people with HIV/AIDS in their
+struggle against the virus, but to protect patents from the claims of people
+with HIV/AIDS. Not to be outdone where cruel mismanagement is con-
+cerned, the World Bank and the International Monetary Fund (IMF), acting
+with their signature incompetence,32 responded to HIV/AIDS not only by
+adding fuel to the ﬁre, but also, during the late 1990s, by accusing Afri-
+774 Adam Sitze
+
+
+
+cans of arson. As scores of analysts have shown, it is no accident that the
+states which implemented structural adjustment plans in the 1980s were
+the same ones that found themselves most unable to respond eﬀectively to
+the spread of HIV/AIDS in the 1990s.33 Forced to cut social spending and
+even urged to charge for health care services in IMF-designed plans to sta-
+bilize currencies and facilitate WB debt repayment, these states and their
+diminished health care systems were incapable of addressing the mani-
+fold medical needs of people living with HIV/AIDS.34 It was thus adding
+insult to injury when, after years of creating this incapacity as a reality, the
+World Bank issued a 1996 study regretfully conﬁrming the unaﬀordability
+of HIV/AIDS treatment in sub-Saharan Africa on the basis of a ‘‘realistic
+estimate’’ of the region’s low total health expenditure rates.35
+    The cost-beneﬁt analyses by which these institutions arrived at their deci-
+sions are, as David Fidler has argued, intelligible as a mix of vicious racism
+and cynical Realpolitik.36 But what Fidler’s dialectic misses is the univer-
+sal equivalent that renders the heat of the one commensurable with the
+coldness of the other. It is neither hyperbole nor catachresis but arithmetic
+to hear in these institutions’ murmured solipsistic calculations so many
+hissed whispers of Marx’s blunt word on the fate of life abandoned by the
+replication of surplus value: ‘‘The surplus populations would have to die.’’ 37
+‘‘It is our view that the impact of AIDS via these mechanisms [labor supply
+shortages and signiﬁcant reductions in aggregate demand (via reductions
+in total consumption)] has been exaggerated in both cases. As we argued
+earlier, in the presence of high unemployment, even the large numbers
+of deaths from AIDS that our model projects are likely to result in tem-
+porary labour supply bottlenecks and frictional replacement costs, rather
+than substantial and lasting labour supply shortages.’’ 38 ‘‘In the presence
+of large-scale unemployment, it is likely that a signiﬁcant proportion of
+those disabled by, or dying from, HIV/AIDS will be replaced. The [indirect
+costs] model [of the human capital approach, which ‘takes lost earnings as
+a proxy for lost production attributable to the disease’] thus adjusts esti-
+mates of total production downwards to account for the replacement of a
+proportion of lost workers in these sectors. Note that non-marketed pro-
+duction (such as household work) has not been included in the calculation
+of lost production costs.’’ 39 ‘‘Over the short term at the macro level, and to
+some extent determined by the nature of the economic groups aﬀected [by
+HIV/AIDS], the indicators suggest that the economy as a whole may bene-
+ﬁt, even while a range of households are forced ever further into a state
+                                                                  Denialism   775
+
+
+
+of unsustainability and poverty.’’ 40 ‘‘If the only eﬀect of the AIDS epidemic
+were to reduce the population growth rate, it would increase the growth rate
+of per capita income in any plausible economic model.’’ 41 ‘‘Dean Jamison of
+the World Bank introduced the concept of a ‘disability-adjusted life year,’ or
+DALY, to measure the number of productive years lost to illness or death.
+By his calculus, for example, a country that spent $1,000 a year to save the
+life of someone earning $500 a year would suﬀer a net economic loss.’’ 42 ‘‘It
+is helpful, even crucial, to calculate the cost of disease and the resultant loss
+of earnings. Health is clearly a factor in development. Bismarck knew that
+in the late 19th century. He was the ﬁrst to persuade management to cre-
+ate a mutual health insurance system for workers so the factories could go
+on running. But it is naive to think that business people will be persuaded
+to invest in healthcare in a globalised labor market.’’ 43 ‘‘I think to provide
+treatment to the bulk of the people is just not feasible. I think to provide
+treatment for instance to qualiﬁed workers actually saves money for com-
+panies. . . . I think [of ] the cost of providing actual treatment to everyone at
+the present. I don’t think it’s realistic. It’s not achievable.’’ 44
+   Because capital is constrained only ever to be able to approach ARV treat-
+ments, not to mention people with HIV/AIDS, on the basis of an M-C-M
+circuit,45 the degree to which a chemical compound or a living being cannot
+generate surplus value for capital is the degree to which it becomes super-
+ﬂuous in and to a capitalist economy. Though the HIV/AIDS pandemic is
+hardly reducible to the old laws of capital, capital’s contradictions neverthe-
+less determine its shape and scope. As of 2000, ‘‘92 percent of the world
+population have to make do with only 8 percent of total expenditure [on
+ARV treatments].’’ 46 The dizzying interconnections of globalism’s parochial
+ﬂows thus correlate with a striation of sobering global proportions: the loca-
+tions of the markets where the most HIV/AIDS treatments are sold are
+almost mutually exclusive with the places where most people with HIV/
+AIDS live. Despite appearances, this is not so much a ‘‘market failure’’ 47
+as a distinctly neoliberal overextension of the law of the market itself.48 By
+insisting that it derive a surplus from the production of ARV treatments,
+capital prevents the intrinsic capacities of the chemical compounds in those
+treatments from doing what they can do in the bodies of people living with
+HIV/AIDS. To the extent that essential medicines cannot generate capital,
+capital renders them inessential, withholding them from the vast majority
+of the people they are designed to treat. Conversely, by refusing to commit
+to the health of people living with HIV/AIDS unless those people satisfy
+776 Adam Sitze
+
+
+
+a condition extraneous to health (the capacity to produce surplus value),
+capital separates people with HIV/AIDS from what they could do with ARV
+treatments. In short, by introducing into a problem of global health the com-
+pletely extrinsic criteria of surplus value, capital separates individuals from
+the inorganic nature they cannot live without.49
+   Yet because the chemical compounds in ARV treatments are one of the
+forms through which people create a life on the body-without-organs, those
+compounds are not and cannot be the private property of this or that corpo-
+ration, but are and must remain the products of what Marx calls the ‘‘general
+intellect.’’ 50 The common notion that access to essential medicines is constitu-
+tive of a life expresses ontologically what activist intellectuals express politi-
+cally when they argue that ‘‘essential drugs must be considered a global pub-
+lic good.’’ 51 More so than a call to return to the violated innocence of the
+commons (which, despite its attractions, has its own problems 52), a com-
+mon notion of this type opens up the practical generality, which is not to say
+universality, adequate for reregulating, if not also dechartering, the corpora-
+tions that are the worst enemies of the intrinsically generic compounds they
+commodify. Patrick Bond is correct to call the struggle against HIV/AIDS a
+confrontation with capital-in-general,53 as was Leslie Doyal when she argued
+that ‘‘the demand for health is in itself a revolutionary demand,’’ 54 and the
+late Jonathan Mann, who proposed that the struggle against HIV/AIDS is
+by deﬁnition revolutionary.55 Loss of life from HIV/AIDS is less a structural
+asymptote beyond which capital accumulation cannot occur 56 than a symp-
+tom of a globalism already ready to absorb just such a loss.57 The compul-
+sion to deny essential medicines to the poor is programmed into the circuits
+by which globalizing capital attempts to reproduce its own constant rate of
+growth. Multiplying capital cannot but multiply the virus.
+
+
+How, if at all, does this help us read ‘‘Castro Hlongwane’’? No doubt the
+text’s arguments about poverty would not be so misleading were they lim-
+ited to the claim that the spread of HIV/AIDS cannot be understood apart
+from the conditions of extreme poverty that are one of the legacies of apart-
+heid. This claim is all too true, and Zackie Achmat, chairperson of the
+TAC, makes it frequently.58 All the same, it is pointless to draw on the tra-
+ditional terms of philosophical logic to critique the sophistry of ‘‘Castro
+Hlongwane.’’ Even focusing on its confused substitution of the pandemic’s
+necessary condition (poverty) for its suﬃcient condition (HIV) distracts
+                                                                 Denialism   777
+
+
+
+from the fundamental problem. More than the market’s failure to ensure
+the poor access to ARVs, denialism writ large describes a condition deﬁned
+by the immanence of HIV/AIDS and capital. In the general economy we are
+charting, the replication of deregulated capital and the unblocked replica-
+tion of the virus are so tightly linked that, in eﬀect, they constitute a single
+double helix.59 Where capital ﬁnds that it can extract surplus value from a
+body or molecule, there ARVs will block the reverse transcription of HIV
+RNA in the DNA of T-cells. But where capital ﬁnds no commodities to con-
+vert to surplus value, there the nucleic acid of the virus copies itself without
+limit in the living cells of the body. Under conditions of capitalist political
+economy, the intervals of one repeat themselves in direct inverse proportion
+to the intervals of the other. What’s more, as two of the most fundamental
+forces deﬁning the diagram that today goes by the name globalization, and
+as forces that are by deﬁnition neither dead nor alive, HIV/AIDS and global-
+izing capital generate a situation in which the ontological limit between
+life and death becomes more diﬃcult than ever to ﬁx. Marx established
+long ago that capital is, as dead labor time, a nonliving yet undead force
+that requires laboring beings for its own reproduction.60 Medical research-
+ers, meanwhile, approach the HIV virus as a complex molecular (inorganic)
+structure the only speciﬁcally organic characteristic of which—reproduc-
+tion—it borrows parasitically from the enzymes, energy, and ribosomes of
+its host cells.61 Given the structural similarity between these two circuits,
+ought we consider the relation between them a mere matter of homology?
+Or does their relation indicate that they exist on the same plane of consis-
+tency and pursue a single global program? If so, how are we to understand
+that plane, given that the striated disciplines that today remain in charge
+of the study of the virus (macroeconomics, epidemiology, and virology, not
+to mention actuarial science, business management, and demography) are
+incapable of posing the question of their immanence? If both circuits deter-
+mine the shape, extent, and quality of what we call globalization, won’t they
+each also intensify the other’s rendering indistinct of the limit between life
+and death? If so, how might that indistinction require us to rethink the
+series of political, legal, moral, and epistemological concepts founded on
+that limit? 62
+   Before responding to these questions, let me consider the strongest
+counterargument against the immanence of HIV/AIDS and global capital,
+namely, that the latter is suﬃciently elastic to allow the former to disappear
+without also altering its own fundamental structure. For the strongest proof
+778 Adam Sitze
+
+
+
+that deregulated capital cannot help but not help poor people with HIV/
+AIDS, we unfortunately need look no further than capital’s own attempts at
+largesse. Prior to the emergence of Bush’s Emergency Plan for AIDS Relief
+(PEPFAR), capital’s best eﬀort to address the pandemic on its own terms
+came in the form of a series of ‘‘price cuts.’’
+     The most important agreement of recent years to reduce the cost of
+     antiretrovirals in developing countries, the accelerating access initia-
+     tive, has made it possible to cut the annual cost per patient from
+     $12,000 in 2000 to $420 in 2003. It was launched in May 2000 by
+     UNAIDS, in partnership with several UN agencies and ﬁve drug com-
+     panies (Boehringer Ingelheim, Bristol-Meyers Squibb, GlaxoSmith-
+     Kline, Merck & Co., and Hoﬀmann-La Roche), but there is little to show
+     for it. Over three years, 80 countries expressed interest; 39 have devel-
+     oped action plans, but less than half have ﬁnally concluded agreements
+     with the companies, and under 1% of the patients in those countries
+     are receiving antiretroviral treatments: a total of 27,000 people beneﬁt
+     in Africa where 30 million people are HIV+.63
+Even though these price cuts had, as an unintended side-eﬀect, boomer-
+anging calls for lower drug prices in G8 states,64 they nevertheless failed as
+an attempt to break with capital’s laws of restricted economy. Like the chari-
+table donations of major philanthropists, they arrived wrapped in restric-
+tions and bound with ‘‘conditionalities.’’ 65 Hence Dr. Mohammed Abdul-
+lah’s (chair of Kenya’s AIDS Control Council) riposte to the UNAIDS oﬀer:
+‘‘If the international maﬁa—the drug companies—really mean business,
+they should waive their patent rights and let developing countries make the
+drugs themselves under their supervision. Kenya already has the capacity
+to make most of these drugs. It is the big ﬁve who are stopping us.’’ 66 Bush’s
+PEPFAR, which, like the Global Fund to Fight AIDS, Tuberculosis, and
+Malaria (GFATM),67 was forced into existence by the tireless eﬀorts of AIDS
+activists, nevertheless does not break with this system of cynical subsidies
+but, on the contrary, institutionalizes it.68 Even though Bush’s speechwrit-
+ers included in his 2003 State of the Union address an unusually candid
+remark regarding the ‘‘immense possibility’’ oﬀered by generic HIV/AIDS
+treatments, PEPFAR’s only notable achievement since then has been how
+quickly it has thrown the immense powers of the U.S. executive branch
+behind Big Pharma’s suppression of that very possibility.69
+  Neoliberalism’s abandonment of sub-Saharan Africa is all the more an-
+                                                               Denialism   779
+
+
+
+gering because of the signiﬁcant gains against HIV/AIDS accomplished by
+the few states that have been able to decommodify HIV/AIDS treatments.
+In 1996, drawing on a long history of opposition to drug patents,70 Brazil
+passed its Patent Property Law, which allowed the Brazilian Health Minis-
+try to combine prevention eﬀorts with universal and free access to locally
+produced generic ARVs. The results were good. The virus’s transmission
+rate was reduced, Brazil’s AIDS-related deaths were halved, and the gen-
+eral state of public health improved.71 Pharmaceutical Executive magazine
+dutifully warned its readers.72 And so, even though Brazil’s law was con-
+sistent with TRIPs,73 which fully allows for compulsory licensing, because
+of what one legal scholar generously calls ‘‘rampant confusion’’ over TRIPs
+in the Oﬃce of the U.S. Trade Representative (USTR),74 which has consis-
+tently and aggressively misinterpreted TRIPs as a merely minimum stan-
+dard for patent compliance,75 Brazil’s trade law was opposed ﬁrst by the
+Clinton administration, which ﬁled formal complaints against the law with
+the WTO on January 19, 2001, and then by the Bush administration, which
+reﬁled the same complaint two weeks later.76
+   But even with the threat of U.S. trade sanctions added into the equa-
+tion, Brazil’s example demonstrated the possibility and desirability of break-
+ing patents in order to implement a coordinated program of ARV treat-
+ment and prevention. It was to emulate the successes of the Brazilian model
+that the Mandela administration drafted the Medicines and Related Sub-
+stances Control Amendment Act, Number 90, of 1997. The bill gave the
+South African government the power to eliminate patent protections for
+pharmaceuticals in order to reduce the price of medicines vital to pub-
+lic health.77 Its section 15(c) vested the executive branch, via the minister
+of health, with the power to compulsorily license HIV/AIDS medications
+and/or to parallel import the same.78 Yet even though this ‘‘quite mild’’
+law (as Jonathan King rightly characterized it 79) was completely TRIPs-
+compliant, the United States threatened South Africa just as it had threat-
+ened not only Brazil but also, earlier, Thailand.80 The United States placed
+South Africa on its Special 301 watch list in 1998 and again in 1999. It ini-
+tiated what the USTR explicitly called a ‘‘full court press,’’ even deploying
+the personal charms of then vice president Al Gore to strike down the law.81
+This ‘‘massive bullying eﬀort,’’ as Robert Weissman aptly renamed it, met
+in April 1999 with sustained resistance organized and led by ACT UP activ-
+ists like Paul Davis, Asia Russell, and Sharonann Lynch, supported by pub-
+lic relations eﬀorts from Médecins Sans Frontières (MSF) and informed
+780 Adam Sitze
+
+
+
+by research from the Consumer Project on Technology.82 Though many
+altermondialistes cite Seattle as the ﬁrst signiﬁcant victory over the osten-
+sibly anonymous and abstract forces of multinational capital, we must not
+forget that, two months earlier, seven hundred motivated and highly orga-
+nized people forced the USTR to announce, against a supposedly invin-
+cible Big Pharma lobby, that ‘‘the trade dispute was resolved and that the
+U.S. government would cease pressuring South Africa on the issues of com-
+pulsory licensing and parallel imports.’’ 83 This victory obviously worried
+PhRMA, which, besides being impatient with the impotence of the U.S.
+executive branch, was nervous about the combination of intensifying treat-
+ment access activism in South Africa and the oﬀer of inexpensive generic
+ARVs by a number of Thai and Indian pharmaceuticals.84 Along with its
+twin organization in South Africa (the South African Pharmaceutical Manu-
+facturers’ Association [PMA]), PhRMA ﬁled suit against the South African
+government in 1999, naming Mandela as a defendant in an attempt to strike
+section 15(c) from the books. What happened next is diﬃcult to forget, if
+only because its force as an event is still resonating today. On April 19, 2001,
+thirty-nine of the richest pharmaceutical companies, acting as a cartel of
+the single-most proﬁtable sector of multinational capital in the world, with-
+drew their case against South Africa, having been outmaneuvered in and
+out of court by the South African government, the TAC, and the bright-red
+protest of the global multitude.
+
+
+What this cursory chart indicates is that what today goes by the name denial-
+ism is not and cannot be limited either to Mbeki or even to a text like ‘‘Castro
+Hlongwane.’’ On the contrary, after turning a cold hard stare toward the
+problem of HIV/AIDS in sub-Saharan Africa in the late 1980s and early
+1990s, the dominant institutions of international ﬁnance, multinational
+capital, global governance, and developed states, up to and including the
+U.S. executive branch, refused sub-Saharan Africa access to the potent com-
+bination of generic medicines and capital necessary to stall the epidemic.
+The emergence of this general economy of denialism is both datable and
+demonstrable. It is datable because the potentialities it suppressed emerged
+at a very speciﬁc conjuncture deﬁned by the emergence of ARV therapies.
+It is demonstrable because it is based on an easily reconstructed set of cost-
+beneﬁt calculations that continue to be shamelessly computed in public
+today. And it is general because it marked an abyssal consensus reached by
+                                                                    Denialism   781
+
+
+
+globalism’s leading institutions. Because global capital would not suﬀer the
+expenditure necessary to halt the replication of the virus, the replication of
+the virus could not be halted. People with HIV/AIDS would just have to
+suﬀer.85
+   To propose the existence of a ‘‘denialism writ large’’ or a ‘‘general econ-
+omy of denialism’’ is neither merely to return the insult nor to exonerate the
+Mbeki administration. It is to suggest that a quotient of the force enabling
+the scornful critique of the Mbeki administration in northern mass media
+derives from a condensation and displacement of denialism writ large onto
+Mbeki’s ﬁgure. Readers of Time and Newsweek can sleep well at night know-
+ing that irrational African leaders (and not the multinationals whose adver-
+tisements cram those same magazine’s pages) are responsible for withhold-
+ing HIV/AIDS treatments from the poor. Our nominalism requires us to
+understand this denialism of the ﬁrst order. But that same principle obliges
+us to acknowledge that denial is more than a mere refusal of reality. In addi-
+tion to naming a psychic symptom and an epistemological error, the term
+also indicates a very speciﬁc relation of power. When we critique the way
+a government denies a person his or her rights, we imply that it refuses a
+person what is already essentially constitutive of his or her very being: the
+right to have rights.86 It is this doxa that is at issue when, in the ﬁrst volume
+of The History of Sexuality, Foucault suggested that the exercise of contem-
+porary sovereign power was no longer a power ‘‘to take life or let live’’ but
+a power ‘‘to make live or to cast out into death [de rejeter dans la mort].’’ 87
+Hurley’s translation of rejeter as ‘‘disallow’’ obscures the sense in which the
+sovereign power to let die manifests itself precisely as a kind of ‘‘repudia-
+tion.’’ Under political conditions that place the subject’s ‘‘existence as a living
+being in question,’’ 88 sovereign power is what it was for Sade: a power to
+repudiate zoe itself.89 Whatever is refused in denial is immanent to the life
+of the denied.
+   This relation to institutions of sovereign power suggests that denialism
+is not so much symptom or error as global dispositif.90 Understood in this
+manner, denialism’s component parts deﬁnitely include a way of not see-
+ing or not speaking about the potentialities of HIV/AIDS treatment (which
+we may just as well call ‘‘disavowal’’). But beyond that, it consists of the sov-
+ereign power to refuse to the living the forms-of-life without which a life
+cannot be alive, and also, above all, of the relations of economic and political
+force that enable disavowal to become a sovereign power capable of actualiz-
+ing the potential superﬂuity of poor people living with HIV/AIDS. Denial-
+782 Adam Sitze
+
+
+
+ism will have been in eﬀect wherever a disavowal of the possibilities of life
+with HIV/AIDS ﬁnds institutional support in the sovereign power to aban-
+don naked life. Numerous embodiments of the U.S. executive branch,91 if
+not also the executives of numerous African states,92 the various institu-
+tions of the Washington Consensus, and the major pharmaceutical capitals
+exercise a denialism of this type. A denialist institution is one whose bio-
+political claim on life requires it constantly to attempt to register the colos-
+sal reality of the HIV/AIDS pandemic (through ceaseless studies, shock-
+ing estimates, grave public statements, expert panels, sustained public
+relations campaigns, maudlin charity balls, half-hearted aid programs,
+strange donation schemes) yet whose implication within circuits of capi-
+tal spur it to disavow that same reality (mainly by classifying it as an ethi-
+cal problem, which, as Alain Badiou has argued, has the eﬀect of ceding
+to the market a monopoly over the ontological attribute of necessity: such
+classiﬁcation already invites the active and passive suppression of exist-
+ing but uneconomical possibilities for slowing the virus replication 93). The
+most powerful eﬀect of such institutions is that those living within their
+jurisdictions ﬁnd themselves internally excluded by the surfeit of overlap-
+ping sovereign powers claiming to ensure their salus.94 Denialism’s crown-
+ing achievement is an absurd but not unfamiliar geopolitical condition in
+which the leading institutions of globalizing capital daily reiterate their
+commitment to the ﬁght against HIV/AIDS—a geopolitical condition, then,
+where people with HIV/AIDS have never attracted more compassionate
+spokespeople, charitable organizations, concerned onlookers, professional
+mourners, pitying philanthropists, and rock-star advocates—and yet where,
+ﬁfteen years after ARVs emerged as a distinct biomedical possibility, they
+are available to only 50,000 to 75,000 of the 4.1 million in sub-Saharan
+Africa who will die without immediate access to them.
+
+
+A perplexing contiguity links the general economy of denialism to its spe-
+ciﬁc manifestation in the Mbeki administration. Approached in this frame,
+Mbeki’s denialism is still, in Mamphela Ramphele’s words, ‘‘irresponsibility
+bordering on criminality.’’ 95 Even before the South African government’s
+and the TAC’s resounding April 2001 court victory over the pharmaceutical
+cartel, the Ministry of Health indicated that it would not declare the situa-
+tion a ‘‘national emergency’’ or ‘‘extreme urgency’’ that, under Article 31
+of TRIPs would be the surest way to open an exception to patent enforce-
+                                                                   Denialism   783
+
+
+
+ment and enable the parallel imports the court victory had made possible.96
+Instead, Mbeki began posing, more insistently and publicly than ever, ques-
+tions he had asked since at least 1999 regarding the relationship between
+HIV and AIDS, the validity of HIV/AIDS tests, the racist presuppositions
+of epidemiological studies of HIV, and the ostensibly intolerable toxicity of
+ARVs.97 Why?
+    When the TAC calls the Mbeki administration’s logic ‘‘denialism,’’ or
+when Pieter-Dirk Uys parodies Mbeki by playing ‘‘MacBeki,’’ they imply
+that Mbeki’s position is informed by a certain madness.98 ‘‘Disavowal’’ (Ver-
+leugnung) is certainly, for Freud, constituted by a simultaneous denial and
+recognition of a traumatic reality that is so consistent it eventually splits
+the ego into the two autonomous egos of the psychotic. But the textual
+operation at work when ‘‘Castro Hlongwane’’ rejects the relation between
+HIV and AIDS through a semantic analysis of the signiﬁer AIDS itself,99
+to the point where it argues that to call the illnesses sweeping through
+South Africa ‘‘AIDS’’ would itself be genocide,100 suggests that, if there were
+an operation of psychosis in ‘‘Castro Hlongwane,’’ it would not be intelli-
+gible in Freudian terms. Because the text seems to encounter AIDS as an
+inassimilable signiﬁer, and because its miracle cure for AIDS consists in
+nothing more than a refusal of its signiﬁed, the madness of the text would
+seem to consist less in disavowal than in what Lacan, drawing on a juridi-
+cal term, calls ‘‘foreclosure.’’ 101 For Lacan, foreclosure takes place when the
+subject’s refusal, rejection, or repudiation of le nom du père reaches a point
+where the paternal signiﬁer is cast outside of the symbolic altogether. The
+paradox of foreclosure is that the signiﬁer which confers order, identity,
+and law upon the symbolic is forced outside of the same symbolic order it
+grounds.102 It is for this reason that foreclosure manifests itself in a certain
+kind of ‘‘miraculous’’ symbolic creativity.103 The hallucinations of the psy-
+chotic, Lacan suggests, are speciﬁcally neological in character, marked by
+autonyms, new compound words, purely homophonic equivalences, and a
+struggle against the omnipotent words of God.104 On this read, if there were
+in ‘‘Castro Hlongwane’’ a certain operation of psychosis, it would manifest
+itself at the point where the text renames the acronym AIDS and introduces
+its mode of truth production as a ‘‘miracle’’ akin to a sovereign performative
+(‘‘let there be light’’).105 Like President Schreber’s autobiography, the validity
+of the text’s statements would derive from its attempt to occupy the gap in
+the symbolic left open by the foreclosed-upon nom du père. But, keeping
+in mind that for Achille Mbembe, as for Carl Schmitt, the category of the
+784 Adam Sitze
+
+
+
+miracle is linked to the paradox of the sovereign exception, where the sover-
+eign is legally exempted from the same rule of law he grounds, perhaps we
+ought to consider a less psychobiographical approach to the interpretation
+of ‘‘Castro Hlongwane.’’ 106 From the angle of a certain concept of political
+sovereignty, the text’s theories, which by its own account do battle with the
+signiﬁers of an omnipotent apparatus, would be what Mbembe would call a
+‘‘fantasm of power.’’ Issued from the organ of sovereign power, they would
+be written with the tip of God’s phallus.107 In this event, it would be impos-
+sible to read ‘‘Castro Hlongwane’’ without situating its theories in the non-
+discursive supports that endow them with the capacity to remain in force
+while also signifying nothing.108
+    Whatever its etiology, Mbeki’s maddening intransigence forced the TAC
+into action against the same post-apartheid government that many TAC ac-
+tivists had fought to bring into existence.109 In August 2001, the TAC ﬁled
+suit in the Transvaal High Court against the South African Ministry of
+Health and against each of the provincial Executive Councils of Health,
+demanding that Nevirapine be made available to HIV-positive pregnant
+women giving birth in public health institutions, and that the government
+implement an eﬀective national program to prevent MTCT of HIV. The
+TAC won the case in December 2001, with the high court ruling that ‘‘the
+state ban on Nevirapine outside pilot sites was ‘unjustiﬁable,’’’ 110 only to face
+an immediate appeal by the Ministry of Health. At issue in the Ministry’s
+appeal was a question concerning the balance of powers under the new Con-
+stitution: by requiring the government to prevent MTCT, was the Constitu-
+tional Court creating health policy (that is, overstepping its constitutional
+limits) or merely enforcing the Bill of Rights? 111 It is worth dwelling on this
+question for a moment. Given the ease with which the term apartheid lends
+itself to metonymy, it is no surprise that the social antagonisms around
+treatment access would quickly become narrated as a struggle against a new
+apartheid. Though recourse to the term is by no means inappropriate, the
+trouble with applying it straightforwardly to the ANC-led government is
+that the rhetorical plus of a dramatic dialectical reversal does not oﬀset the
+logical minuses of occluding the term’s contested historiography, obscur-
+ing the care with which the TAC positions itself relative to the ANC and
+to South Africa’s 1996 Constitution, and obfuscating the concrete way in
+which the political legacy of apartheid is directly at stake in the political
+techniques by which the TAC struggled for access. A more nuanced ver-
+sion of the same argument would suggest that the TAC’s struggle against
+                                                                  Denialism   785
+
+
+
+the Mbeki administration is less reducible to a struggle against the ANC
+per se, than against the enduring powers of the executive branch in particu-
+lar.112 In 1991, Barney Pityana observed that, under apartheid, the principle
+of parliamentary sovereignty had resulted in ‘‘the erosion of the power and
+inﬂuence of the judiciary in favour of the executive.’’ 113 The judiciary’s impo-
+tence under the Westminster system relegated it to the mere enforcement
+of racist laws it could not and, in any case, often would not contest. Given the
+extent to which minority white supremacist rule depended on unchecked
+executive power, it makes sense that Pityana would conclude his argument
+by suggesting that, among other things, ‘‘those who will work on a new con-
+stitution need to ensure that there is a genuine separation of powers’’ and
+‘‘that the power of the executive is limited.’’ 114
+    In post-apartheid South Africa, the struggle to maintain the indepen-
+dence of the judiciary has taken on a contradictory form, since, despite sig-
+niﬁcant progress, the courts remain all but inaccessible to the poors, and
+continue to be composed of many of the same white judges who presided
+so fecklessly under apartheid.115 South Africa’s Constitutional Court, which
+came into being on February 15, 1995, was designed to respond to, if not
+also resolve, this contradiction. More than any other juridical-political insti-
+tution created by the new Constitution, it was to serve as the foundation
+for the Bill of Rights and the separation of powers that were to have deﬁned
+the post-apartheid Rechtsstaat.116 The Court’s powers were to ensure that the
+seat of sovereign power in post-apartheid South Africa would be concen-
+trated more in the Constitution and in the judiciary than in the legislature
+or executive. The strong argument on behalf of this approach is that it would
+be able to provide a juridical-political framework capable of lawfully disman-
+tling apartheid’s white supremacist legacy. Because the new Constitution’s
+Bill of Rights included justiciable socioeconomic rights, and because the
+executive branch remained responsible for the ﬁscal consequences of any
+given national social and economic policy, the new Constitution’s separa-
+tion of powers positioned the Constitutional Court to become a site where
+the socioeconomic legacy of apartheid could be contested, as it were, at the
+expense of the executive.117 Yet, by that same token, the introduction of the
+new Constitution was less a hammer blow than a heart transplant: it did not
+shatter apartheid in a single stroke but introduced an organ that, if success-
+ful, would be capable eventually of circulating nonracialism in the capillar-
+ies of the body politic. But herein lies one of the signature limits to the con-
+stitutionalist approach to political transition. The trouble is not only that,
+786 Adam Sitze
+
+
+
+as Heinz Klug argues, ‘‘to date there have been very few constitutional chal-
+lenges to the basic inequalities which are part of apartheid’s legacy,’’ but also
+that, when it comes to the basic inequalities that are the legacy of apartheid,
+‘‘it is not clear what a constitution can do.’’ 118
+    The TAC’s legal challenges against the executive branch are one of the
+ﬁrst signiﬁcant tests of the socioeconomic rights set forth in the Consti-
+tution, as well as one of the ﬁrst signiﬁcant tests of the balance of powers
+between the executive and the judiciary.119 As such, the TAC’s case is less
+a renewal, sequel, or analog of the struggle to constitute a post-apartheid
+South African state than a concrete and direct extension of that struggle.
+Approached from this angle, where the separation of powers becomes intel-
+ligible as a site for contestation over the political trace of apartheid, one of
+the more disturbing aspects of Mbeki’s denialism emerges. As it prolonged
+its denialism even after losing its Constitutional Court appeal in July 2002,
+the Mbeki administration turned one of the foundational institutions of
+the post-apartheid Constitution into a point where the same Constitution
+founders. After the MTCT case, it seemed that the Mbeki administration
+would begin to climb down from its denialism (not least because, that same
+month, the Mbeki administration announced that it would also make ARVs
+available to rape survivors). But it was precisely at that point that ‘‘Castro
+Hlongwane’’ was leaked. Even the TAC’s court victories, which suggested
+that justiciable socioeconomic rights are indeed practicable,120 were not suf-
+ﬁcient to bring into existence the MTCT programs legitimated in them.
+Denialism had been overruled in the Constitutional Court, but it was still
+in eﬀect biopolitically. In December 2002, the executive’s delays forced the
+TAC to lodge a complaint with South Africa’s Human Rights Council.121 The
+complaint called for an investigation of contempt of court by the Mpuma-
+langa MEC for Health, since the MTCT program supported by the highest
+level of the South African judiciary had still not been implemented. In Janu-
+ary 2003, Tshabala-Msimang again argued that ‘‘garlic, lemon, olive, and
+African potatoes’’ could be used in place of ARVs to strengthen immune
+systems, while also blocking a Global Fund disbursement of $72 million
+intended to purchase ARVs in KwaZulu-Natal. In March 2003, frustrated by
+the executive’s prolonged refusal, the TAC introduced another civil disobe-
+dience campaign. When, after four years of patient civil rights organizing,
+the TAC laid charges of murder and culpable homicide against members of
+the ANC government, or when it interrupted the minister of health’s speech
+                                                                  Denialism   787
+
+
+
+to call her a murderer, their tactics were hardly, as some have charged, ‘‘out
+of order’’ than perhaps long overdue.122
+
+
+Besides suggesting that the powers of executoria potestas have managed to
+persist in post-apartheid South Africa, Mbeki’s denialism has thus demon-
+strated the fragility of even an extremely strong Rechtsstaat. When the basic
+right at issue is the right for access to health care services, and when the
+service in question consists of access to a chemical compound capable of
+blocking HIV’s replication, the essence of a right is not, as commonsensi-
+cal discourses of right presuppose, predicated of space (where the decisive
+questions concern inclusion or exclusion, being inside or outside right’s
+domain, staying within or straying beyond its limits). Where the exercise of
+rights is deﬁned by an expiration date, it is time that is of the essence. The
+Mbeki administration’s exercise of executive power following, and argu-
+ably even prior to, the MTCT case opened a biotemporal exception to rights
+within the space of rights itself.123 Denialism is an exercise of political power
+in which the executive branch exercised a power to let die without also, at
+the same time, revoking or suspending the constitutional provisions that
+guarantee a right to life.
+   Ulrike Kistner thus has a persuasive case when she applies to Mbeki’s
+denialism Agamben’s analysis of the sovereign power and naked life.124 But,
+by that same token, Kistner’s straightforward application of Agamben also
+obscures the way that denialism throws the dominant reading of Agamben
+into question. The Mbeki administration’s life-denying exercise of sover-
+eign power consisted not in a declaration of a state of emergency, but, on the
+contrary, in a stalwart refusal to issue such a declaration.125 By not declaring
+the health emergency that only the executive branch, through the Ministry
+of Health, could declare, Mbeki delayed triggering the TRIPs clause that
+would have activated key provisions of Article 31 of the TRIPs agreement
+and enabled the compulsory licensing of inexpensive versions of HIV/AIDS
+therapies.126 Abandoned within the interval of these delays, those claim-
+ing their right to life in an exemplary way—in a way that scrupulously and
+explicitly aﬃrmed the basic rights set forth in the new Constitution—were
+nevertheless unable to bring those rights to life. Before being able to see
+the fruits of their labor in the TAC’s August 2003 victory, TAC activists
+Queenie Qiza, Edward Mabunda, Christopher Moraka, and Charlene Wil-
+788 Adam Sitze
+
+
+
+son, to name just a few, succumbed to AIDS and died. Their deaths were
+foreseeable, and could have been prevented had they had access to the thera-
+pies they were fully within their rights to receive. But their right to life was
+denied by the Mbeki administration’s sovereign refusal to exercise its own
+sovereign power.
+   It does not follow from this that those who died protesting their right to
+life were victims of false consciousness, or that the TAC was duped by the
+Constitution into limiting itself to merely legal tactics (the very opposite is
+true), or that rights are not worth ﬁghting for, or that the state’s denial of
+the basic right to life in this instance somehow cancels out the merits of
+rights per se. The troubling implication of denialism is rather that necro-
+political abandonment can take place even in a robust Rechtsstaat. Denial-
+ism’s corollary, in this respect, is the urgency of posing biopolitical ques-
+tions not merely in constitutionalist terms, where the possession of a right
+is itself taken as a form of political power, but, more fundamentally, in terms
+of the immanent modes of existence of people provided with rights. Where
+the possession of right is neither coextensive with nor even determinant of
+political power relations, the latter’s relation to life will become felicitous
+or salutary less through the recitation of various bacis rights than through
+reference to the twist or torsion that is both prior to and incommensurable
+with the foundation of the constitution itself.127
+   In these terms, the speciﬁcally political philosophical question posed by
+denialism is not why Mbeki says what he says, whether he personally
+believes in his own utterances or not, whether he really is mad or not, and
+so on. It is how the post-apartheid state acquired the power to deny life and
+to preserve rights in one and the same gesture. Here it is worth recalling
+that the obscure and often bizarre writings of David Rasnick, Peter Dues-
+berg, Robert Root-Bernstein, and others did not become life-denying until
+their iterations entered into relation with the nondiscursive force speciﬁc to
+the institution of potestas executoria.128 Mbeki’s ‘‘irresponsibility bordering
+on criminality’’ is inseparable from the criminality of sovereignty itself.129
+Yet if there is therefore no denialism without the sovereign power to let die,
+so too is there no sovereign power to let die without its own scandalous
+genealogy.130 What the contemporary critique of the Mbeki administration
+too often misses is that a certain denialism deﬁned the apartheid state’s
+relation to HIV/AIDS from the very beginning. In the early 1990s, a num-
+ber of medical workers began arguing that the rapid spread of the epidemic
+through various black populations was related to a datable and demon-
+                                                                 Denialism   789
+
+
+
+strable pattern of inaction on the part of the apartheid government since
+1983.131 This inaction was especially egregious given the government’s fore-
+knowledge of the possibility of epidemic.132 In as early as 1985, the Depart-
+ment of National Health and Population Development established an AIDS
+Advisory Group.133 For reasons of racism and homophobia,134 the few edu-
+cational initiatives it did organize were limited to almost exclusively white
+populations.135 Only in 1992, after conferring with the Health Secretariat
+of the newly unbanned ANC,136 did the Department of Health establish a
+national AIDS program.137 Writing in that year, Alan Fleming sharply cor-
+rected the lament that South Africa had already lost the battle to prevent
+AIDS. ‘‘I disagree: battle was never joined.’’ 138 A year later, Wilson Carswell
+issued a damning critique outlining the deliberate nature of this inaction.
+     South Africa has the infrastructure and health funding needed to check
+     AIDS, but failed to take action. The central health ministry did not
+     respond to the epidemic until 1990 with the establishment of an AIDS
+     unit, secondary school AIDS prevention programs and packages in
+     8 languages, a neutral national information campaign, workshops to
+     increase awareness, and funding to organizations targeting hard-to-
+     reach groups. The AIDS unit was soon merged into a health promo-
+     tion section and the unit’s head ﬁred, with all the prevention initia-
+     tives terminated except the continued availability of pamphlets in only
+     English and Afrikaans. An oﬃcial complaint has been made to no avail
+     against the health department oﬃcial who closed the AIDS campaign.
+     Meanwhile, the government contends that it holds no responsibility
+     for educating its population in the prevention of AIDS. These recent
+     actions suggest that the government is committing genocide by allow-
+     ing excess mortality from AIDS to decimate Black heterosexuals dur-
+     ing the impending period of interim rule and political transition.139
+Carswell’s argument is hardly a conspiracy theory. Writing in 1988, Susan
+Sontag cited then foreign minister Roelof ‘‘Pik’’ Botha’s ominous warning
+that ‘‘the terrorists are now coming to us with a weapon more terrible than
+Marxism: AIDS.’’ 140 That the apartheid government reacted to HIV/AIDS
+primarily as a tactic of warfare is clear from other sources as well. In 1999,
+two former apartheid agents applied to the Truth and Reconciliation Com-
+mission for amnesty for employing HIV-positive ex-PAC and ANC mem-
+bers in 1990 to spread HIV/AIDs in black brothels.141 Yet even as unthink-
+able as this act is, it is not an aberration from the crime that is apartheid
+790 Adam Sitze
+
+
+
+itself. Apartheid pursued genocide not only through the police’s weapon-
+ization of people with HIV/AIDS, but also through the sham sovereignty of
+the tribal homelands. Pieter-Dirk Uys misses the mark when he suggests
+that ‘‘in the past the South African government killed people; now we
+just let them die!’’ 142 One need only review the last half century’s black
+infant mortality rates to see that Biko was not exaggerating when he argued
+that ‘‘the tribal cocoons called ‘homelands’ are nothing else but sophisti-
+cated concentration camps where black people are allowed to ‘suﬀer peace-
+fully.’ ’’ 143 The sovereign power to let die was always integral to the necro-
+politics of the apartheid state. That this power was not suﬃciently dissolved
+with the transfer of power in 1994 is clear from the implementation of
+the AIDS Plan the ANC developed in concert with the Department of
+Health after its unbanning. Though the plan was progressive in many
+respects, ﬁnal political authority for its coordination rested with the execu-
+tive branch, where, despite considerable bureaucratic confusion in the
+intervening years, is where it remains today.144 If, as Helen Schneider,
+Joanne Stein, and Mandisa Mbali can argue, ‘‘the real problem underlying
+AIDS implementation failure in South Africa’’ is the ‘‘authoritarian’’ style of
+the political leaders coordinating that implementation, it is because of an
+incomplete transformation of the sovereign powers that deﬁned the worst
+of apartheid.145 Denialism is less a question of Mbeki’s utterances or
+Mokaba’s psyche than matter of the nondiscursive forces speciﬁc to institu-
+tions of executoria potestas. In the last analysis, it is against the remanence of
+these forces that the TAC struggles. The fundamental political philosophi-
+cal question posed by denialism is how a sovereign power to abandon naked
+life to unceremonial death was able to survive South Africa’s transition to
+democracy.
+
+
+Posing the problem in this manner simultaneously opens a way to think
+about the forms of resistance to denialism. In 2003, the leading institu-
+tions of global mass media focused considerable attention on TAC chair-
+person Zackie Achmat’s pledge not to take ARVs before they became avail-
+able in the South African public health care system.146 Precisely because
+of the hagiographic quality of this attention, which obscures the character
+of the TAC as a broad grass-roots movement, it is has become necessary
+to rethink Achmat’s interventions on the basis of his own writing. By the
+latter, I mean to the texts Achmat has published on sex, politics, and rep-
+                                                                 Denialism   791
+
+
+
+resentation around the same time he founded the National Coalition for
+Gay and Lesbian Equality. Even as the very best of the recent hagiographies
+take pains to include mentions of Achmat’s six months as a male prostitute,
+they for some reason treat as unspeakable his time as a critical theorist.147
+The implication of this foreclosure is that one cannot both be a martyr (as
+the hagiographies assume Achmat is) and oﬀer a critical theory of martyr-
+dom (as Achmat has done in his writing), as if the aura and authenticity of
+political sacriﬁce would be somehow conjured away by explicit account of
+the mechanisms by which such eﬀects are produced.
+   In an odd way, this implication is entirely consistent with the arguments
+of the refused texts themselves. In his 1994 ‘‘Oﬀ the Control Track: Power,
+Resistance, and Representation in South African Documentaries,’’ Achmat
+oﬀers ‘‘a theorization and critique of ideas which invoke suﬀering, sacriﬁce,
+and death as necessary for liberation.’’ 148 He focuses, in particular, on the
+matrices of power and knowledge that, prior to any pure source of popular
+memory, make possible the documentary ﬁlmic narration of the antiapart-
+heid struggle as an ‘‘unarmed people prepared to confront the mightiest
+military force on the African continent with the power of their own death.’’ 149
+His critique of this matrix is that, by conﬁguring death as sacriﬁce, it recu-
+perates from death a surplus value, in the form of the signiﬁer of the martyr,
+that documentary ﬁlm essentially enjoys and exploits. The immanent power
+of these signiﬁers, Achmat suggests, is their capacity to haunt—to ‘‘possess’’
+the subject that witnesses them.150
+   At the close of Achmat’s essay—which, like his 1995 ‘‘My Childhood as an
+Adult Molester,’’ ends with an explicit emphasis on beginning 151—his text
+takes a metacritical turn. As if the essay had been directed, all along, against
+the Greco-Roman-Christian metaphysic that translates martyrdom into
+witnessing, substitutes testimony for witnessing, and derives protest from
+testimony, Achmat’s critique of the content of anti-apartheid documen-
+taries enters into a retheorization of the way that martyrdom is inscribed in
+the testamentary form of protest documentary itself. Acknowledging that
+the ‘‘mimetic approximation to truth’’ that deﬁnes the documentary form
+is ‘‘derived from the experience of suﬀering, repression, and death,’’ Ach-
+mat suggests that this mimeticism is itself generative of the sacriﬁcial cycle
+of violence it claims merely to represent. The documentary emphasis on
+martyrdom, he argues, ‘‘may in fact be the constant reinvention of the origi-
+nary trauma of colonial wars and conquest, racial domination, gender and
+class inequalities, projected onto martyred bodies.’’ 152 Quite unlike René
+792 Adam Sitze
+
+
+
+Girard, from whose analytic of mimeticism Achmat maintains a studied
+distance, Achmat argues that insofar as documentary ﬁlm derives its power
+of truth from what he calls ‘‘the power of one’s own death,’’ the correlation
+of attestation and conscience that deﬁnes its mode of truth production will
+necessarily require death, in the form of the reproduction of the martyrs
+on whose behalf it then claims to bear witness. Achmat suggests that this
+derivation of truth and politics from death becomes especially intolerable,
+under conditions where imperialist fantasies of African nihilism ﬁnd their
+rhyme in the African state’s exercise of a certain denialism.
+     Living in Africa on a continent which signiﬁes death and destruction
+     in the imperialist imaginary, it is imperative to uncouple sacriﬁce from
+     resistance. Faced with the denial of state responsibility for the basic
+     conditions of life in villages, towns, and cities across the continent we
+     cannot indulge the genocidal fantasies of sacriﬁce. Hence, it is disturb-
+     ing to read ﬁlmmakers who insist upon valorising sacriﬁce and torture
+     as a necessity for the pastoral reinvention of Africa.153
+To oppose the pleasure principle inscribed in documentary attestation, Ach-
+mat turns to Foucault’s argument, in the ﬁnal chapter of the ﬁrst volume
+of The History of Sexuality, that ‘‘death is power’s limit.’’ His reading of Fou-
+cault is precise and subtle, and I would like to read over Achmat’s shoulder
+in order to draw out what I feel are its implications. In the chapter to which
+Achmat turns, Foucault begins by discussing ‘‘patria potestas.’’ 154 Without
+going any further, it is already worth noting that, in the political philoso-
+phies of Kant and Hegel, the notion of ‘‘testament’’ receives its intelligibility
+from the same Roman laws of patriarchal inheritance that give rise to the
+modern concept of state sovereignty.155 The codes of patria potestas that give
+the father the right to decide on the life or death of the son also stipulate the
+conditions under which the will of the father can survive his death. Testa-
+ments are designed to guarantee primogeniture (the institution so opposed
+by the early Marx): the testis in testament presupposes the testes of the patria
+potestas.
+   The stakes of Achmat’s critique of documentary attestation become
+clearer once read alongside Foucault’s inquiry into the limits of patria po-
+testas. His critique becomes intelligible as a challenge to documentary ﬁlm
+to think beyond its capitulation to the nihilism inscribed in the patriarchal
+concept of testament. To frame images of death as signiﬁers of martyrdom
+is not only to locate the truth, test, or touchstone of political struggle in
+                                                                     Denialism   793
+
+
+
+death. It is also to come into possession of the images of the dead as if they
+were nothing more than properties invested with a certain political value—
+as if the dead have merely left behind their images in a last will and tes-
+tament the validity of which it then falls to documentary ﬁlm to execute
+as a kind of ‘‘estate.’’ But by placing this kind of value on death, Achmat
+seems to argue, documentary ﬁlm also unwittingly turns death itself into a
+value. It exorcises the power immanent to the images of the dead (the power
+to possess the living) even as it teaches the unhaunted living to value life
+as nothing more than a potential political death. Documentary ﬁlm would
+thus remain under the sway of patria potestas to the extent that its ethics of
+attestation derives its understanding of death from a property-based notion
+of inheritance. Resistance to patria potestas would, in turn, require a depar-
+ture from documentary ﬁlm’s capitulation to and recapitulation of the tes-
+tamentary poetics grounded in this understanding.
+   Why else might Achmat be reading The History of Sexuality in 1994—a
+moment of political transition that also marked a juncture where confes-
+sion and testimony were becoming the dominant regimes of intelligibility
+for the narration of apartheid. Whether in the managed spectacles of the
+Truth and Reconciliation Commission or in the spate of biographies and
+autobiographies that emerged in the 1990s, discourses on the transition
+from apartheid became governed by the regime of truth Foucault has called
+exomologesis. Though exomologesis can be roughly translated as ‘‘recognition
+of fact,’’ Foucault treats it as a ‘‘technology of the self ’’ designed to purify the
+soul from sin through a self-revelation (publicatio sui) that is simultaneously
+a self-renunciation (the extreme form of which is martyrdom). Like any
+technology of the self, exomologesis is a distinctly collective act; whether in
+its medical or juridical form, it unfolds as a dramatic ritual of penitence that
+reconcites the penitent with the community and the community to itself.
+Foucault’s inquiry into exomologesis, which advances his discussion of con-
+fession in the ﬁrst volume of The History of Sexuality, approaches it as a spe-
+ciﬁcally pastoral power, a mode of subjectivation that binds the subject to
+itself through various practices of self-knowledge: publicly disclosing one’s
+wounds in order to be cured; bearing witness against and refusing oneself
+in order to make a break with one’s past; and reaﬃrming the fact of one’s
+ﬁdelity to the principle of salvation through truth.156
+   Returning to Foucault’s comments on exomologesis helps us reread the
+opening of Achmat’s 1995 ‘‘My Childhood as an Adult Molester,’’ which ren-
+ders testimony decidedly indistinct from the most uncensored fantasy.157
+794 Adam Sitze
+
+
+
+This preference not to deliver straight testimony marks a departure from
+the disciplines of self-revelation that otherwise dominated the production
+of discourse about apartheid in the mid-1990s. Achmat instead locates the
+truth of politics, and the politics of truth, in a joyful militancy that aﬃrms
+even death itself—though in a very cautious way. Reading Foucault’s re-
+marks on the nature of contemporary sovereign power, Achmat suggests
+that while ‘‘death is the limit of power, sacriﬁce brings a diﬀerent power
+relation to bear on the symbolism of death. The private moments of death
+become timeless public images of sacriﬁce.’’ Against exomologesis’s relent-
+less imperative to confess and testify publicly, Achmat concludes his essay
+by calling for forms of documentary ﬁlm that ‘‘ensure that death once again
+becomes the limit point of power and an eternal moment of privacy.’’ This
+may seem like an odd point with which to conclude an ending that is sup-
+posed to double as a beginning. But read alongside Foucault’s argument
+in The History of Sexuality, the aﬃrmative kernel encrypted in it becomes
+clearer. If we keep in mind that, for Foucault, death is the limit not to power
+per se, but the limit to political sovereignty vested with a power ‘‘to make live
+or to cast out into death,’’ we can follow the way in which Achmat’s aﬃrma-
+tion of a private death is a line of ﬂight from the sovereign power to decide
+life and death.
+   This becomes vitally important when we consider the 1999 utterance
+that, in its various iterations over the last four years, has become globally
+known as Achmat’s ‘‘pledge.’’ ‘‘I will not take expensive treatment until all
+ordinary South Africans can get it on the public-health system. That prob-
+ably means that I will die a horrible death, even though medical science
+has made it unnecessary.’’ 158 As we know, the force of Achmat’s performa-
+tive culminated felicitously in his ingestion of ARVs in early August 2003,
+days after the Mbeki administration caved to the TAC and announced that
+the government would soon roll out a universal AIDS plan. But in making
+and keeping his pledge even though—especially while—his life hung in
+the balance, didn’t Achmat contradict everything he wrote in 1994? As his
+own life and possible death became the object of numerous documentaries,
+didn’t he surrender to the very metaphysic of martyrdom, protest, and tes-
+timony against which he earlier wrote so passionately? Didn’t Achmat’s
+refusal to take ARVs require him to subject himself to the very sovereign
+power against which he protested, namely, the power to let die?
+   The hagiographies imply exactly this. But to read Achmat’s 1994 and 1995
+texts is to gain a new angle from which to understand his pledge. The latter,
+                                                                   Denialism   795
+
+
+
+like the former, consists of a departure from the entire catalog of transcen-
+dental and essentially nihilistic powers collected under the rubric of patria
+potestas. Up to and including martyrdom. Though Achmat made a pledge
+referring to the possibility of his own death, it would be a mistake to pre-
+sume this pledge expresses a desire to protest or bear witness through or to
+the ‘‘power of one’s own death.’’ Recalling that Achmat is a dedicated reader
+of Bataille, and a writer for whom life, sex, and politics are inextricable, let
+me conclude by dwelling on the singular politics of his pledge. To do so
+is to wonder whether, prior to its utterance, perhaps even as its condition
+of possibility and as the source of its power, it was subtended by a secret,
+cautious pact with the virus itself. A pact of what kind? In 1993, Alexan-
+der García Düttmann argued that the anxiety of living with HIV/AIDS is,
+in part, that the virus undermines the ontological distinction between life
+and death. ‘‘One no longer lives and has not yet died, because one has died
+already and nevertheless lives on, because life and death merge beyond rec-
+ognition.’’ 159 Under political conditions where death marks power’s limit,
+wouldn’t this indistinction amount to an edge? Wouldn’t it yield a power
+to protest sovereign power from just beyond, or just before, the limit that
+deﬁnes its jurisdiction? Supposing it were even possible for a virus to sign a
+pact, that is to say, to keep its promise, wouldn’t one of the eﬀects of that pact
+be a chance to take part in a combat against sovereign power without also
+having anything to do with the limits it inscribes in life? Signing a secret
+pact with the virus would not here be a matter of using the ‘‘power of one’s
+own death’’ as an instrument of political leverage. It would be a matter of
+cautiously opening a relation to death that nevertheless did not derive its
+political power from death. Part of the power of such a pact would derive
+from giving oneself over to the virus, surrendering to its replication, but on
+one critical condition: that one gain from that replication a new power. This
+power would be neither a power of one’s own death nor a power to repre-
+sent death. It would instead be a paradoxical power that derives its speciﬁc
+modality from the ontological indeterminacy of the virus itself: from a virus
+that is neither dead nor alive, the power to live without dying on the terms
+of sovereign power.
+   Pledging to remain without ARVs until the poorest have access to them
+would then be a way of introducing a promise, and therefore the political
+itself, into the relations between people living with HIV but without ARVs.
+Letting his body embody a wrong that itself calls for justice would be a way
+of aﬃrming the same HIV-positive political community his pledge posits.
+796 Adam Sitze
+
+
+
+Putting his life on the line would be neither stoicism nor satyagraha,160 but
+a way of drawing on the virus to redeﬁne the line between life and death
+itself: to re-create the diagnosis ‘‘positive’’ in and as a name for the aﬃrma-
+tion of life with HIV. The pledge would not, then, be a pact of the sort that
+binds one to oneself in solipsistic moral consistency (promise-keeping).161
+It would be a process of individuation deﬁned by a protest of the condition
+of the dead and the living dead.162 To iterate the virus’s own potency in and
+as the power of that pledge would be to transcribe the very power of the
+virus into a power of truth the most powerful eﬀect of which—treatment—
+would amount to the virus’s recession. It would be to enter into a cautious
+ensemble with the virus that was at the same time a combat against it. It
+would be to turn the virus back on itself, to make it work on itself, to turn
+the virus’s own power into a potential for the virus to be maintained in pri-
+vation—to live, with it.
+    Who knows whether this pact, in fact, exists. Perhaps I have just imagined
+it. But what is clear enough is that, grasped hagiographically, the truth-force
+of Achmat’s pledge cannot but be misrecognized as the martyrdom from
+which Achmat, in 1994, urged ﬂight. On these terms, it would remain intel-
+ligible merely as a particularly bold and forcefully instrumentalist form of
+dissent, objection, or complaint. But other visions of protest are possible.
+From Zackie Achmat one can learn that protest also signiﬁes promise and
+aﬃrmation, and that to protest and to live are undeniably the same.
+
+Notes
+The author would like to thank Crystal Bartolovich, Sanjay Basu, Susan Edmunds, Bob Gates,
+Michael Goode, Roger Hallas, Amy Kapczynski, Mandisa Mbali, and Mary Strunk for their
+comments and critiques on drafts of this essay.
+  1 See Phillipe Riviére, ‘‘In Denial about a Deadly Future: South Africa’s AIDS Apartheid,’’
+      trans. Malcolm Greenwood, Le Monde Diplomatique (August 2002), http://mondediplo
+      .com/2002/08/04aids (accessed April 4, 2004). This essay will instead take up the line
+      of inquiry opened by Mandisa Mbali, who suggests that denialism is ‘‘a new ‘-ism’ in
+      South Africa,’’ and Ulrike Kistner, who argues that it is ‘‘a new way of exercising political
+      power in matters of life and death.’’ See Mandisa Mbali, ‘‘HIV/AIDS Policy-Making in
+      Post-Apartheid South Africa,’’ in State of the Nation: South Africa 2003–2004, ed. J. Daniel,
+      A. Habib, and R. Southall (Cape Town: Human Sciences Research Council Press, 2003),
+      327n 1; Ulrike Kistner, ‘‘The Constitutional Right to Live, and the Political Power to Let
+      Die,’’ Debate 8 (September 2002): 16.
+  2 See also Thabo Mbeki, ‘‘Letter from Thabo Mbeki to Bill Clinton,’’ Washington Post,
+      April 18, 2000; Barton Gellman, ‘‘South African President Escalates AIDS Feud,’’ Wash-
+      ington Post, April 19, 2000; Thabo Mbeki, ‘‘Speech of the President of South Africa at the
+                                                                              Denialism    797
+
+
+
+    Opening Session of the Conference’’ (speech given at the Thirteenth International AIDS
+    Conference, Durban, South Africa, July 9, 2000); Jon Jeter, ‘‘Political Resistance in South
+    Africa Blocks Wide Use of HIV Drugs; Leaders Ambivalent about Distribution of Anti-
+    retrovirals,’’ Washington Post, October 1, 2001; Jaspreet Kindra and Drew Forrest, ‘‘ANC
+    Closes Ranks; Government Oﬃcials Refuse to Defy President Thabo Mbeki on the Issue
+    of AIDS Treatment,’’ Mail and Guardian, February 22, 2002; Ferial Haﬀajee, ‘‘Questions
+    and Answers with Peter Mokaba; ‘No Antiretrovirals, Please,’’’ Financial Mail, March 1,
+    2002; Rachel Swarns, ‘‘An AIDS Skeptic in South Africa Feeds Simmering Doubts (Inter-
+    view with Peter Mokaba),’’ New York Times, March 31, 2002; Thabo Mbeki, ‘‘Health,
+    Human Dignity, and Partners for Poverty Reduction,’’ ANC Today, April 5, 2002.
+3   Richard Pithouse argues that ‘‘Mbeki’s failure to seize the opportunity provided by the
+    defeat of the pharmaceutical companies cannot be explained by a desire to put the mar-
+    ket before people’s health. Even market fundamentalists agree that it is cost eﬀective
+    to provide the medicines that can prevent new infections and treat existing infections
+    rather than endure the cost of mass ill health and early death. Mbeki’s inaction can
+    only be explained by the fact that he genuinely takes the denialist view, supported by
+    a tiny group of right-wing Americans, that the HI virus doesn’t cause AIDS and that
+    AIDS medicines are toxic’’ (‘‘AIDS Activists Take ANC Government to Court,’’ Green
+    Left Weekly, December 12, 2001; compare Richard Pithouse, ‘‘Mbeki’s AIDS Stance
+    Slammed,’’ Green Left Weekly, July 26, 2000, 15).
+4   See Mandisa Mbali, ‘‘Mbeki’s Bizarre AIDS Theories,’’ Mail and Guardian, March 21,
+    2002.
+5   Mahmood Mamdani, Citizen and Subject (Princeton: Princeton University Press,
+    1996), 27.
+6   See Rod Nordland, ‘‘Africa in the Plague Years,’’ Newsweek, November 24, 1986, 44;
+    Michael Serrill, ‘‘In the Grip of the Scourge,’’ Time, February 16, 1987, 58; Marilyn Chase,
+    ‘‘AIDS Has Spread ‘Almost Everywhere’ in Africa, Zaire Doctor Tells Parley,’’ Wall Street
+    Journal, June 24, 1986; Marilyn Chase, ‘‘Growing AIDS Peril in Africa Is Seen; Huge
+    Medical, Educational Push Asked,’’ Wall Street Journal, November 14, 1986; Renee Saba-
+    tier, Martin Foreman, Jon Tinker, and Marty Radlett, AIDS and the Third World (London:
+    Panos Institute, 1989).
+7   Susan Sontag, AIDS and Its Metaphors (New York: Farrar, Straus, and Giroux, 1988), 91.
+8   See Achille Mbembe, On the Postcolony (Berkeley: University of California Press, 2001),
+    1–4; Simon Watney, ‘‘Missionary Positions: AIDS, ‘Africa,’ and Race,’’ in Practices of Free-
+    dom: Selected Writings on HIV/AIDS (Durham: Duke University Press, 1994), 103–20;
+    but compare Ato Quayson, ‘‘Obverse Denominations: Africa?’’ Public Culture 14.3 (Fall
+    2002): 587.
+9   See E. B. Gouws and B. G. Williams, ‘‘Science and HIV/AIDS in South Africa: A Review
+    of the Literature,’’ South African Journal of Science 96 (June 2000): 274; Louis Grund-
+    lingh, ‘‘HIV/AIDS in South Africa: A Case of Failed Reponses Because of Stigmatization,
+    Discrimination, and Morality, 1983–1994,’’ New Contree 46 (November 1999): 55–81;
+    Louis Grundlingh, ‘‘Government Reponses to HIV/AIDS in South Africa as Reported
+    in the Media, 1983–1994,’’ South African Historical Journal 45 (November 2001): 125–
+    53; R. Sher, ‘‘Acquired Immune Deﬁciency Syndrome (AIDS) in the RSA (Supplement),’’
+    South African Medical Journal (October 1986): 23–26; W. Becker, ‘‘HTLV-III Infection in
+798 Adam Sitze
+
+
+
+      the RSA (Supplement),’’ South African Medical Journal (October 1986): 26–27; compare
+      R. Sher, ‘‘HIV Infection in South Africa, 1982–1988—A Review,’’ South African Medical
+      Journal 76.7 (October 1989): 314–18.
+ 10   See J. A. van der Merwe, ‘‘AIDS’’ (unpublished paper, Sud Afrikaanse Nasionale Trust
+      en Assuransie Maatskappij Beperk [SANLAM], 1988); G. M. Oppenheimer and R. A.
+      Padgug, ‘‘AIDS: The Risks to Insurers, the Threat to Equity,’’ Hastings Center Report 16.5
+      (October 1986): 18–22; W. A. van Niekerk, ‘‘Information on HIV/AIDS’’ (report released
+      by the Republic of South Africa, Department of National Health and Population Devel-
+      opment, November 1988); B. D. Schoub et al., ‘‘Epidemiological Considerations of the
+      Present Status and Future Growth of the Acquired Immunodeﬁciency Syndrome Epi-
+      demic in South Africa,’’ South African Medical Journal 70.4 (August 20, 1988): 153–57;
+      P. G. du Plessis, ‘‘The Potential Inﬂuence of AIDS on the South African Investment
+      Milieu’’ (partial fulﬁllment of MBA, Department of Business Management, University
+      of Stellenbosch, 1991); R. Schall, ‘‘Statistical Analysis of HIV Prevalence,’’ South African
+      Medical Journal 77.1 (January 1990): 52; E. Osborn, ‘‘Forward Projection of HIV Preva-
+      lence,’’ South African Medical Journal 78.6 (September 1990): 373; C. J. van Gelderen,
+      ‘‘Insurance and Compensation in the Event of HIV Infection,’’ South African Medical
+      Journal 81.6 (March 1992): 33.
+ 11   See G. N. Padayachee and R. Schall, ‘‘Short-term Predictions of the Prevalence of Human
+      Immunodeﬁciency Virus Infection among the Black Population in South Africa,’’ South
+      African Medical Journal 77.7 (April 1990): 329–33; R. Schall, ‘‘On the Maximum Size of
+      the AIDS Epidemic among the Heterosexual Black Population in South Africa,’’ South
+      African Medical Journal 78.9 (November 1990): 507–11.
+ 12   See Grundlingh, ‘‘Government Responses to HIV/AIDS,’’ 134.
+ 13   In 1989, Minister of Health and Population Development Dr. Willie van Niekerk stated
+      that AIDS possessed ‘‘destructive potential stretching beyond human concept. It has the
+      potential to lead to chaos in Africa and South Africa, not only destroying the social and
+      political structures but to lead [sic] to economic chaos’’ (cited in Grundlingh, ‘‘Govern-
+      ment Responses to HIV/AIDS,’’ 127).
+ 14   See Gouws and Williams, ‘‘Science and HIV/AIDS,’’ 274–75.
+ 15   See Grundlingh, ‘‘Government Responses to HIV/AIDS,’’ 133.
+ 16   See Roger Ricklefs, ‘‘Living with AIDS: Thanks to New Drugs, Patients Are Surviving
+      and Working Longer—They Are a Greater Presence in the Workplace Today; Employers
+      Are Adapting—The Costs of Chronic Illness,’’ Wall Street Journal, September 2, 1988.
+ 17   See E. M. Connor et al., ‘‘Reduction of Maternal-Infant Transmission of Human Immu-
+      nodeﬁciency Virus Type 1 with Zidovudine Treatment,’’ New England Journal of Medicine
+      331.18 (1994): 1173–80; compare Emory Thomas Jr., ‘‘AZT Is Found to Slash the Trans-
+      mission of HIV from Mothers to Their Infants,’’ Wall Street Journal, February 22, 1994.
+ 18   See Gilles Deleuze, Foucault, trans. Seán Hand (Minneapolis: University of Minnesota
+      Press, 1988), 34–44.
+ 19   See Gilbert Elbaz, ‘‘Beyond Anger: The Activist Construction of the AIDS Crisis,’’ Social
+      Justice 22.4 (December 1995): 43; Paula Treichler, How to Have Theory in an Epidemic:
+      Cultural Chronicles of AIDS (Durham: Duke University Press, 1999), 278–314.
+20    See Marilyn Chase, ‘‘Pricing Battle: Burroughs Wellcome Reaps Proﬁts, Outrage from
+                                                                               Denialism    799
+
+
+
+     Its AIDS Drug,’’ Wall Street Journal, September 15, 1989; Marilyn Chase, ‘‘Burroughs-
+     Wellcome Cuts Price of AZT under Pressure from AIDS Activists,’’ Wall Street Journal,
+     September 19, 1989; Naomi Freundlich, ‘‘Now That AIDS Is Treatable, Who’ll Pay the
+     Crushing Cost?’’ Business Week, September 11, 1989, 115; Steve Taravella, ‘‘AIDS Drug
+     Brings Providers Challenge of Distribution,’’ Modern Healthcare 19 (September 1989):
+     39; ‘‘The Costs of Cures’’ (editorial), Wall Street Journal, October 4, 1989; Jacob Smith
+     Yang, ‘‘750 Protest Bush,’’ Gay Community News, October 12, 1991, 12; ‘‘Burroughs-
+     Wellcome Hit over High AIDS Drug Proﬁts,’’ Chemical Marketing Reporter 243.26 (June
+     1993): 7.
+21   Barton Gellman, ‘‘An Unequal Calculus of Life and Death; As Millions Perished in Pan-
+     demic, Firms Debated Access to Drugs,’’ Washington Post, December 27, 2000.
+22   See Monitoring the AIDS Pandemic (MAP), ‘‘The Status and Trends of the HIV/AIDS
+     Epidemics in the World,’’ Preliminary Report (June 26, 1998), 19. The ﬁrst study to con-
+     clude on the unaﬀordability of ARVs in sub-Saharan Africa was Mansergh et al., ‘‘Cost-
+     Eﬀectiveness of Short-Course Zidovudine to Prevent Perinatal HIV Type 1 Infection in
+     Sub-Saharan African Developing Country Setting,’’ Journal of the American Medical Asso-
+     ciation 276.2 (July 1996): 139–45. Later studies codiﬁed this conclusion without also
+     questioning the political economic conditions of possibility for the drug prices they took
+     as their point of departure. See Katherine Floyd and Charles Gilks, ‘‘Cost and Financ-
+     ing of Providing Anti-Retroviral Therapy: A Background Paper,’’ World Health Organ-
+     ization (April 1997), www.worldbank.org/aids-econ/arv/ﬂoyd/whoarv.pdf (accessed
+     April 4, 2004), which concludes that ‘‘ARV therapy does not appear to be either cost-
+     saving or cost-eﬀective in a developing country context, and this is true for prophylaxis
+     to pregnant women as well as more general provision to HIV-infected individuals’’ (13).
+23   See UNAIDS Fact Sheet, ‘‘Access to HIV Treatment and Care,’’ September 2003, www
+     .unaids.org/en/media/fact+sheets.asp (accessed April 4, 2004).
+24   See Achille Mbembe, ‘‘Necropolitics,’’ trans. Libby Meintjes,Public Culture 15.1 (2003): 17.
+25   See Bryan Rostron, ‘‘The New Apartheid?’’ Mail and Guardian, February 25, 2002, 15;
+     Mark Gevisser, ‘‘AIDS: The New Apartheid,’’ The Nation, May 14, 2001, 5–6; Salih Booker
+     and William Minter, ‘‘Global Apartheid,’’ The Nation, July 9, 2001, 11–17; Martine Bulard,
+     ‘‘Apartheid of Pharmacology,’’ Le Monde Diplomatique, trans. Malcolm Greenwood (Janu-
+     ary 2000), http://mondediplo.com/2000/01/12bulard? [accessed April 4, 2004]). See,
+     more generally, Titus Alexander, Unraveling Global Apartheid: An Overview of World Poli-
+     tics (Cambridge, UK: Polity Press, 1996); Patrick Bond, Against Global Apartheid: South
+     Africa Meets the World Bank, IMF, and International Finance (Cape Town: University of
+     Cape Town Press, 2001).
+26   In 1995, the WHO estimated that during 1994 over 19.5 million people had been in-
+     fected with HIV, and estimated that 40 million could be infected by 2000 (‘‘The Cur-
+     rent Global Situation of the HIV/AIDS Pandemic,’’ WHO Report [January 3, 1995]).
+     These were the same numbers the WHO provided to Big Pharma on May 23, 1991, and
+     that the CIA made available to President George H. W. Bush that same year in Inter-
+     agency Intelligence Memorandum 91-10005. See Gellman, ‘‘Unequal Calculus’’; David
+     Fidler, ‘‘Racism or Realpolitik? U.S. Foreign Policy and the HIV/AIDS Catastrophe in
+     Sub-Saharan Africa,’’ The Journal of Gender, Race, and Justice 7 (2003): 109.
+800 Adam Sitze
+
+
+
+27 See Fidler, ‘‘Racism or Realpolitik?’’ 110.
+28 See Emmanuel Todd, After the Empire: The Breakdown of the American Order, trans. C. Jon
+    Delogu (New York: Columbia University Press, 2003), 75–76.
+29 See ‘‘Intellectual Property . . . Is Theft,’’ The Economist, January 22, 1994, 72.
+30 See Robert Weissman, ‘‘A Long Strange TRIPs: The Pharmaceutical Industry Drive to
+    Harmonize Global Intellectual Property Rules, and the Remaining WTO Legal Alterna-
+    tives Available to Third World Countries,’’ University of Pennsylvania Journal of Economic
+    Law 17 (1996): 1069–1125, esp. 1075–93.
+ 31 Which, as Sanjay Basu has emphasized, include but are not limited to HIV/AIDS thera-
+    pies. See ‘‘The Dangerous Deradicalization of AIDS Discourse,’’ ZNet Commentary
+    (October 25, 2003), www.zmag.org/content/showarticle.cfm?SectionID=14&ItemID=
+    4398 (accessed April 4, 2004).
+32 By its own estimates, the failure rate of World Bank projects in the poorest regions of
+    the world is 65 to 70 percent. See Bond, Against Global Apartheid, 210. Even the World
+    Bank’s own attempts to redress the debt crises caused by its policies have, by its own
+    admission, failed. See Fantu Cheru, ‘‘Debt Relief and Social Investment: Linking the
+    HIPC Initiative to the HIV/AIDS Epidemic in Africa: The Case of Zambia,’’ Review of
+    African Political Economy 86 (2000): 520–22.
+ 33 See Alison Marshall with Tom Pravda, ‘‘The Vicious Circle: AIDS and Third World
+    Debt,’’ report by the World Development Movement for the UN Special Session on HIV/
+    AIDS, June 25, 2001, www.wdm.org.uk/cambriefs/debt/vicircle.pdf (accessed March 19,
+    2004); L. Squire, ‘‘Confronting AIDS,’’ Finance and Development (March 1998): 15–17;
+    Nana Poku, ‘‘Africa’s AIDS Crisis in Context: How the Poor Are Dying,’’ Third World
+    Quarterly 22.2 (2001): 200–1; Carolyn Baylies, ‘‘International Partnership in the Fight
+    against AIDS: Addressing Need and Redressing Injustice?’’ Review of African Political
+    Economy 81 (1999): 393; Carol Barker and Meredeth Turshen, ‘‘AIDS in Africa,’’ Review
+    of African Political Economy 13.36 (Summer 1986): 54; Meredeth Turshen, ‘‘US Aid to
+    AIDS in Africa,’’ Review of African Political Economy 13.35 (Summer 1986): 98–99.
+34 This is not to suggest, however, that an advanced health infrastructure is necessary
+    before ARVs can begin to be administered successfully. On the contrary, recent studies
+    have shown that the poors in Cape Town adhere more strictly to prescribed ARV regi-
+    mens than do people in the United Kingdom, thus putting the lie to the argument that
+    ‘‘poor Africans, many of whom lack watches and literacy, would break the strict regime
+    of taking certain pills at certain times, risking the emergence of a drug-resistant strain
+    of HIV’’ (Rory Carroll, ‘‘Aids Orphans’ Survival Oﬀers Africa Hope; Ground-Breaking
+    Treatment Debunks Drug Firm Myths in Cape Town,’’ The Observer, May 25, 2003, 19;
+    see C. Orrell, D. R. Bangsberg, M. Badri, R. Wood ‘‘Adherence Is Not a Barrier to Suc-
+    cessful Antiretroviral Therapy in South Africa’’ AIDS 17.9 [June 2003]: 1369–75).
+ 35 See Floyd and Gilks, ‘‘Cost and Financing Aspects of Providing Anti-Retroviral Therapy.’’
+    Nicholas Prescott argues, meanwhile, for the feasibility of AZT perinatal treatment, but
+    without inquiring into the conditions of possibility for the ‘‘realistic’’ budget constraints
+    he cites. See ‘‘Setting Priorities for Government Involvement with Antiretrovirals,’’ in
+    The Implications of Antiretroviral Treatments: Informal Consultation, ed. Eric van Praag,
+    Susan Fernyak, and Alison Martin Katz (Geneva: WHO in collaboration with UNAIDS,
+    1997), 57–62.
+                                                                             Denialism     801
+
+
+
+36 Fidler, ‘‘Racism or Realpolitik?’’ 98–99, 145–46.
+37 Karl Marx, ‘‘Economic and Philosophic Manuscripts,’’ in Early Writings, trans. R. Living-
+   stone and Gregor Benton (New York: Vintage Books, 1975), 286; compare Karl Marx,
+   Grundrisse: Foundations of the Critique of Political Economy (Rough Draft), trans. M. Nico-
+   laus (New York: Penguin Books, in association with New Left Review, 1973), 706. On the
+   point of ‘‘surplus populations,’’ the predominantly anthropological and phenomenologi-
+   cal terms of Mbembe’s analysis of violence lead his discussion of generalized sovereignty
+   astray. In the case of HIV/AIDS, generalized sovereignty’s ‘‘destruction of human bodies
+   and populations’’ is not, as Mbembe suggests, linked to ‘‘the generalized instrumental-
+   ization of human existence’’ (‘‘Necropolitics,’’ 13). On the contrary, the people abandoned
+   by capital’s replication of surplus value are not instrumentalized at all, which is why
+   capital abandons them. The violence of this abandonment is neither phenomenological
+   nor anthropological but immanent to the circuits of capital itself.
+38 This estimate is based on a study that is, in turn, the ‘‘result of a hypothetical model of
+   the costs of a package of care likely to be received by those people with HIV or AIDS
+   who gain access to health care services. This excludes the very signiﬁcant proportion of
+   people who, we believe, will not gain access to health services at all’’ (65). See ‘‘AIDS in
+   South Africa: The Demographic and Economic Implications’’ (a paper prepared by the
+   Centre for Health Policy, Department of Community Health Medical School, University
+   of Witwatersrand, Johannesburg, no. 23, September 1991, 69).
+39 Jonathan Broomberg, Malcolm Steinberg, Patrick Masobe, and Grame Behr, ‘‘The Eco-
+   nomic Impact of the AIDS Epidemic in South Africa,’’ in Facing Up to AIDS: The Socio-
+   Economic Impact in Southern Africa, ed. Sholto Cross and Alan Whiteside (New York: St.
+   Martin’s Press, 1993), 161.
+40 Sholto Cross, ‘‘A Socio-Economic Analysis of the Long-Run Eﬀects of AIDS in South
+   Africa,’’ in Cross and Whiteside, Facing Up to AIDS, 139. Cross goes on to argue that ‘‘in
+   the South African case, there is very strong evidence for the neo-Malthusian position:
+   obscured as the situation has been by the social engineering policies of apartheid, never-
+   theless the intrinsically low levels of employment and the high reproduction rates—
+   in association with a primary-resource based economy with no obvious possibilities
+   for rural involution—mean that there is a strong correlation between high population
+   growth rates and the entrapment in poverty of the majority. To the extent that AIDS will
+   bring about an overall reduction in population growth rates, there is thus a prima facie
+   case that the eﬀect on economic growth—and of course on per capita income, although
+   this in itself is no very satisfactory indicator—will from one point of view be positive’’
+   (140–41).
+41 From the 1992 World Bank Population and Human Resources report, cited in Barton
+   Gellman, ‘‘The Belated Global Response to AIDS in Africa: World Shunned Signs of the
+   Coming Plague,’’ Washington Post, July 5, 2000.
+42 Gellman, ‘‘Unequal Calculus.’’
+43 Anonymous banker, quoted in Jean-Loup Motchane, ‘‘WHO’s Responsible?’’ Le Monde
+   Diplomatique trans. Luke Sanford (July 2002), http://mondediplo.com/2002/07/17who?
+   (accessed April 4, 2004).
+44 George Soros, quoted in Patrick Bond, ‘‘Sacriﬁcing AIDS Victims for Corporate Proﬁts,’’
+   Green Left Weekly, July 3, 2002, 18.
+802 Adam Sitze
+
+
+
+45 See Karl Marx, Capital: A Critique of Political Economy, Volume 1, trans. Ben Fowkes (New
+    York: Vintage Books, 1977), 247–57.
+46 See Bulard, ‘‘Apartheid of Pharmacology.’’
+47 Though it certainly is that. See Andy Gray and Jenni Smit, ‘‘Improving Access to HIV-
+    Related Drugs in South Africa: A Case of Colliding Interests,’’ Review of African Political
+    Economy 27.86 (December 2000): 586.
+48 See Thomas Lemke, ‘‘‘The Birth of Bio-politics,’ Michel Foucault’s Lecture at the Collège
+    de France on Neo-Liberal Governmentality,’’ Economy and Society 30.2 (May 2001): 197.
+49 Marx, ‘‘Economic and Philosophical Manuscripts,’’ 328.
+50 See Giorgio Agamben, Means without Ends: Essays on Politics, trans. C. Casarino and
+    V. Binetti (Minneapolis: University of Minnesota Press, 2002), 11, 116. I am grateful to
+    Amy Kapczynski for formulating this problem.
+ 51 Germán Velásquez, ‘‘Unhealthy Proﬁts,’’ trans. J. Stoker, Le Monde Diplomatique (July
+    2003), http://mondediplo.com/2003/07/10velasquez? (accessed April 4, 2004). See also
+    Phillipe Quéau, ‘‘Who Owns Knowledge?’’ trans. Malcolm Greenwood, Le Monde Diplo-
+    matique (January 2000), http://mondediplo.com/2000/01/13queau? (accessed April 4,
+    2004); Inge Kaul, ‘‘Biens publics globaux: un concept révolutionnaire,’’ Le Monde Diplo-
+    matique (June 2000): 22–23; Mark Heywood, ‘‘Life-Sustaining Medicines Are a Basic
+    Need,’’ Mail and Guardian, March 25, 2003.
+52 The concept of the commons has become one of the key grounds for altermondialiste
+    struggle, up to and including the struggle for treatment access. Thus, of the various
+    groups engaged in such struggles, Naomi Klein could argue, ‘‘the spirit they share is
+    a radical reclaiming of the commons’’ (‘‘Reclaiming the Commons,’’ New Left Review
+    9 [May–June 2001]: 82; compare Alternatives to Economic Globalization: A Better World
+    Is Possible; A Report of the International Forum on Globalization [San Francisco: Berrett-
+    Koehler, 2002], 79–104, esp. 86). But as compelling and correct as this characterization
+    may be, the commons is often narrated in the genre of a kind of pastoral heterotopia,
+    implying that models for late modern global anticapitalism can be derived from ante-
+    capitalist Europe. The problem with this is not only its nostalgia, but also the relation
+    of its rhetoric of crisis to the Malthusian problématique that has governed some of the
+    more prominent late modern returns to the notion of the commons. That the latter is
+    also a response to the ‘‘problem of overpopulation’’ is evident from Garrett Hardin’s ‘‘The
+    Tragedy of the Commons,’’ which concludes by arguing that ‘‘it is the role of education
+    to reveal to all the necessity of abandoning the freedom to breed. Only so, can we put
+    an end to this [populational] aspect of the tragedy of the commons’’ (Science 162 [1968]:
+    1248). It remains an open question whether Negri’s theorization of the ‘‘immeasurable
+    opening’’ of the common, which tacitly cites Rancière’s rereading of Plato, departs from
+    this problématique (Time for Revolution, trans. Mateo Mandarini [New York: Continuum
+    Books, 2003], 181–93).
+ 53 See Bond, ‘‘Sacriﬁcing AIDS Victims,’’ 18.
+54 Doyal quoted in Gray and Smit, ‘‘Improving Access,’’ 588.
+ 55 Jonathan Mann, ‘‘AIDS: Why It Isn’t Being Defeated,’’ Green Left Weekly, April 28, 1993.
+56 See Immanuel Wallerstein, The Decline of American Power (New York: New Press, 2003),
+    250.
+57 See Sanjay Basu, ‘‘AIDS, Empire, and Public Health Behaviourism,’’ Znet Commen-
+                                                                               Denialism    803
+
+
+
+     tary (August 2, 2003), www.zmag.org/content/showarticle.cfm?SectionID=2&ItemID
+     =3988 (accessed April 4, 2004).
+58   See Zackie Achmat, ‘‘Living Nonracialism,’’ Mail and Guardian, May 2, 2003. See also
+     Nicoli Nattrass, ‘‘We Need to Fight AIDS and Poverty,’’ Mail and Guardian, March 25,
+     2003.
+59   Which is an immanentist reformulation of the argument that (as Paul Farmer puts
+     it in his 2001 defense of Mbeki) ‘‘inequality is the major co-factor in this epidemic’’
+     (‘‘AIDS Heretic,’’ New Internationalist 331 [January–February 2001]: 16) or that ‘‘AIDS
+     and economics are completely entwined’’ (‘‘Misunderstanding Mbeki,’’ statement pre-
+     pared by the Institute for Health and Social Justice at the Department of Social Medi-
+     cine, Harvard Medical School, www.zmag.org/misunderstanding mbeki.htm [accessed
+     April 4, 2004]).
+60   See Karl Marx, Capital, 1:342.
+61   See Mary Catherine Bateson and Richard Goldsby, Thinking AIDS (New York: Addison-
+     Wesley, 1988), 51–58.
+62   See Mbembe, ‘‘Necropolitics,’’ 16.
+63   Velásquez, ‘‘Unhealthy Proﬁts.’’
+64   See Gardiner Harris and Michael Waldholz, ‘‘AIDS Drug Plan Spurs Call to Cut Prices
+     Elsewhere,’’ Wall Street Journal, May 12, 2000.
+65   See Baylies, ‘‘Overview: HIV/AIDS in Africa,’’ Review of African Political Economy 86
+     (2000): 491. Zackie Achmat explains that ‘‘in Botswana, for every dollar Merck gives,
+     the Gates Foundation gives a dollar, which comes back to the company when they buy
+     Merck drugs at wholesale price, which can be added to Merck’s tax deduction on the
+     donation’’ (Robert Weissman and Zackie Achmat, ‘‘Defying the Drug Cartel: The South
+     African Campaign for Access to Essential Medicines,’’ Multinational Monitor [January–
+     February 2001]: 32). Similarly, a one-billion-dollar loan announced by Clinton in 2000
+     carried ‘‘the condition that the drugs must be bought from American pharmaceutical
+     ﬁrms’’ (Cheru, ‘‘Debt Relief and Social Investment,’’ 527; Gellman ‘‘Unequal Calculus’’;
+     Gellman, ‘‘World Shunned Signs’’). None of this, of course, prevented capital from pat-
+     ting itself on the back for a job well done. See Michael Waldholz, ‘‘AZT Price Cut for Third
+     World Mothers-to-Be,’’ Wall Street Journal, March 5, 1998; Michael Waldholz, ‘‘AIDS
+     Medicine Will Cost Less in Poor Nations,’’ Wall Street Journal, June 23, 1998.
+66   Quoted in James Still, ‘‘Slashed Drug Costs ‘Will Not Touch Kenya’s Aids Crisis,’’’ The
+     Guardian, November 7, 2000. For his part, Achmat endorses local production of medi-
+     cines in both the private and public sectors. See Weissman and Achmat, ‘‘Defying the
+     Drug Cartel,’’ 31.
+67   See Robert Weissman, ‘‘The AIDS Fund Fight,’’ The Nation, July 9, 2001, 14; Allyn Taylor,
+     ‘‘Public-Private Partnerships for Health: The United Nations Global Fund on AIDS and
+     Health,’’ The John Marshall Law Review 35 (2002): 404–5; Fidler, ‘‘Racism or Realpolitik?’’
+     136–46.
+68   See Naomi Klein, ‘‘Bush’s Aids ‘Gift’ Has Been Seized by Industry Giants,’’ The Guardian,
+     October 13, 2003, www.guardian.co.uk/wto/article/0,2763,1061786,00.html (accessed
+     April 4, 2004).
+69   In his critique of PEPFAR, James Love observes that ‘‘Bush, like President Bill Clinton
+     before him, has noisily combated generic drugs in international forums, even though,
+804 Adam Sitze
+
+
+
+      to quote Bush, their lower cost ‘places an immense possibility within our grasp’ ’’ (‘‘Pre-
+      scription for Pain,’’ Le Monde Diplomatique [March 2003], http://mondediplo.com/2003/
+      03/12generics? [accessed April 4, 2004]).
+70    See Nancy Dunne, ‘‘U.S. Warns Brazil on Protection for Drug Patents,’’ Financial Times,
+      July 23, 1988, 3.
+ 71   See Stephen Buckley, ‘‘Brazil Becomes Model in Fight against AIDS,’’ Washington Post,
+      September 17, 2000; Tina Rosenberg, ‘‘Look at Brazil,’’ New York Times, January 28,
+      2001. John Culhane has noted, however, that in Brazil as in the United States, the suc-
+      cess of ARV therapy has been limited along lines of race and gender. In Brazil, signiﬁ-
+      cantly more women than men are infected, and in the United States, African-American
+      women account for two-thirds of all new infections. See ‘‘Recurring Nightmare: Barriers
+      to Eﬀective Treatment of HIV in the United States and Internationally,’’ John Marshall
+      Law Review 35 (2002): 382.
+ 72   See L. J. Sellers, ‘‘Success Story,’’ Pharmaceutical Executive 21.3 (March 2001): 30.
+ 73   See ‘‘Policy Position of Brazil at the TRIPs Council on Access to Medicines’’ (June 20,
+      2001), www.cptech.org/ip/wto/tc/brazil.html (accessed April 4, 2004).
+ 74   Sara Ford, ‘‘Compulsory Licensing Provisions under the TRIPs Agreement: Balancing
+      Pills and Patents,’’ American University International Law Review 15 (2000): 954; Robert
+      Weissman, ‘‘‘Free Trade’ and Medicines in the Americas,’’ Foreign Policy in Focus 6.13
+      (April 2001): 1.
+ 75   The United States’ aggressive assertion of patent rights, even in cases where its own
+      national security interests seem to dictate otherwise (witness the debates around Cipro
+      in October 2001), has ultimately undermined even the hegemony of its own institu-
+      tions of neoliberal economics. The attempts by the United States in December 2002 and
+      August 2003 to dilute paragraph 6 of the WTO’s November 2001 Doha Ministerial Decla-
+      ration heralded, if not also concretely prepared the way for, the collapse of the WTO trade
+      talks in Cancun in September 2003. See ‘‘The Right Fix?’’ The Economist, August 28,
+      2003, 1. The United States’ assertion of such rights is not, of course, a new development.
+      See Sana Siwolop, ‘‘Reagan Turns Up the Heat on Patent-Pilfering Countries,’’ Business
+      Week, April 21, 1986, 47.
+76    Kevin Watkins, ‘‘A Harsh Campaign to Prevent Aﬀordable AIDS Treatment,’’ Interna-
+      tional Herald Tribune, February 12, 2001.
+ 77   Ford, ‘‘Compulsory Licensing Provisions,’’ 952.
+ 78   See Patrick Bond, ‘‘Globalization, Pharmaceutical Pricing, and South African Health
+      Policy: Managing Confrontation with U.S. Firms and Politicians,’’ International Journal
+      of Health Services 29.4 (1999): 768.
+79    Jonathan King, ‘‘Commentary: Life Patents and AIDS Drug Access,’’ GeneWatch 14.5
+      (September 2001): 11.
+80    See Bond, ‘‘Globalization, Pharmaceutical Pricing, and South African Health Policy,’’
+      775.
+ 81   See Robert Weissman, ‘‘AIDS Drugs for Africa,’’ Multinational Monitor (September
+      1999): 10–11; Michelle Nerozzi, ‘‘The Battle over Life-Saving Pharmaceuticals: Are De-
+      veloping Countries Being ‘TRIPped’ by Developed Countries?’’ Villanova Law Review 47
+      (2002): 607; Cheru, ‘‘Debt Relief and Social Investment,’’ 527–28.
+                                                                            Denialism     805
+
+
+
+82 See Weissman, ‘‘AIDS Drugs for Africa,’’ 9; Richard Kim, ‘‘ACT UP Goes Global,’’ The
+   Nation, July 9, 2001, 17.
+83 Weissman, ‘‘AIDS Drugs for Africa,’’ 13. Klein suggests that altermondialiste struggles
+   begin with the Zapatista uprising of January 1, 1994 (‘‘Reclaiming the Commons,’’ 81).
+84 At the time, a generic version of Fluconazole cost US$0.30 in Thailand; under patent
+   in South Africa and Kenya, the same medicine cost US$15.00 and US$18.00, respec-
+   tively (Poku, ‘‘Africa’s AIDS Crisis,’’ 202; Médecins Sans Frontières, ‘‘Untangling the
+   Web of Price Reductions: A Pricing Guide for the Purchase of ARVs for Developing
+   Countries’’ [July 1, 2002], www.accessmed-msf.org/documents/purple2.pdf [accessed
+   April 4, 2004]). In March 2000, the TAC challenged Pﬁzer to reduce the price of Flu-
+   conazole to US$0.50 per 200 milligram. In the same month, Cipla oﬀered Nevirapine
+   for 135 rupees per tab, more than half Boehringer Ingelheim’s price of 344 rupees for the
+   ‘‘brand-name’’ version of the same. In October 2000, the TAC announced the Christo-
+   pher Moraka Deﬁance Campaign against patent abuse, and began illegally importing
+   Fluconazole from Thailand. In January 2001, the ﬁrst illegal shipment of Fluconazole
+   arrived.
+85 It was not until 1999 that the World Bank could bring itself to publicly articulate this
+   consensus: ‘‘Nowhere is the eﬀort big enough, or well-resourced enough to turn the epi-
+   demic back’’ (World Bank, Intensifying Action against HIV/AIDS in Africa, Responding
+   to a Development Crisis, (Washington, DC: The International Bank for Reconstruction
+   and Development, Africa Region, 1999). The latest eﬀorts remain governed by the same
+   consensus. Even though 6 million people with AIDS will be in immediate clinical need
+   of ARVs by 2005, and 11.5 million by 2008, the WHO’s goal is to treat only 3 million by
+   2005, and PEPFAR’s only 2 million by 2008.The massively underfunded GFATM, mean-
+   while, is at this point capable of providing ARVs to only 491,000 people with HIV/AIDS
+   by 2008 (HealthGAP, ‘‘Treat the People—Commit to Treat Those in Immediate Clinical
+   Need,’’ [May 13, 2003], on ﬁle with author).
+86 See Claude Lefort, Democracy and Political Theory, trans. D. Macey (Minneapolis: Uni-
+   versity of Minnesota Press, 1988), 37, 40. See also Wole Soyinka, The Burden of Memory,
+   the Muse of Forgiveness (New York: Oxford University Press, 1999), 70–72.
+87 See Michel Foucault, The History of Sexuality, vol. 1: An Introduction, trans. R. Hurley
+   (New York: Vintage Books, 1990), 138, emphasis in original; compare ‘‘Society Must Be
+   Defended’’: Lectures at the Collège de France, 1975–76, trans. D. Macey (New York: Picador,
+   2003), 241, 247.
+88 See Foucault, The History of Sexuality, 1:143.
+89 Writing in 1961, seven years after Lacan used refus as one of two terms to translate
+   Freud’s Verwerfung (the other being rejet), Foucault used the term refus to refer to the
+   madness of Sadean sovereignty. See Foucault, Madness and Civilization: A History of
+   Insanity in the Age of Reason, trans. R. Howard (New York: Vintage Books, 1965), 283.
+90 See Gilles Deleuze, ‘‘What Is a Dispositif ?’’ in Michel Foucault, Philosopher, trans. Tim-
+   othy Armstrong (New York: Routledge, 1992), 159–66.
+91 See Culhane, ‘‘Recurring Nightmare,’’ 386. The ACT UP slogan ‘‘SILENCE = DEATH’’
+   was aimed, in large part, at Reagan, who did not even utter the word AIDS until May 31,
+   1987—six years after the emergence of HIV in the United States. The murderous homo-
+806 Adam Sitze
+
+
+
+      phobia of this silence must not be forgotten. The assumption of early epidemiologists
+      was that AIDS would be limited to gay communities and drug users, and that after ‘‘satu-
+      rating’’ these populations, it would soon ‘‘run out of victims’’ or ‘‘run its course.’’ The
+      same epidemiologists wondered aloud whether Africans did not already somehow pos-
+      sess a natural immunity to the virus. See F. P. Siegal and M. Siegal, AIDS: The Medical
+      Mystery (New York: Grove Press, 1983), 121–24.
+92    Nana Poku argues that ‘‘with the exception of Uganda and Senegal, African leaders are
+      engaged in denial, typically asserting that the moral values of their societies would not
+      permit transmission of an agent such as HIV that is associated with risky sexual behav-
+      iour, homosexuality, and injecting drug use’’ (‘‘Africa’s AIDS Crisis in Context,’’ 199).
+      Amson Sibanda has likewise noted ‘‘ignorance and denial’’ as factors for the spread of
+      HIV/AIDS in Zimbabwe (‘‘A Nation in Pain: Why the HIV/AIDS Epidemic Is Out of
+      Control in Zimbabwe,’’ International Journal of Health Services 30.4 [2000]: 730, 735).
+      Carolyn Baylies concurs, noting that instead of intervening in the pandemic, African
+      governments have responded with a ‘‘stance of denial, or, alternately, oﬃcial acknowl-
+      edgement of the need for an AIDS policy coupled with a persistent failure to accept the
+      depth of the crisis of the urgency of the situation, much less to follow through on the
+      construction of a comprehensive policy’’ (Baylies, ‘‘Overview: HIV/AIDS in Africa,’’ 488,
+      491; but compare Cheru, ‘‘Debt Relief and Social Investment,’’ 526).
+ 93   See Alain Badiou, Ethics: An Essay on the Understanding of Evil, trans. Peter Hallward
+      (New York: Verso, 2002), 30–39; especially 35.
+94    I take it as axiomatic that, since the days of the Dutch East Indies Company, if not earlier,
+      corporations have arrogated to themselves the prerogatives of sovereignty (territorial
+      control, monopoly over legitimate violence, right to decide life and death, police power
+      in the broadest sense, etc.) and that the Kantian distinction between a land’s ‘‘supreme
+      owner’’ (Obereigentümer) and its ‘‘supreme commander’’ (Oberbefehlshaber) is no longer
+      helpful, if it ever was, for grasping manifestations of sovereign power. Instead, as Agam-
+      ben argues, sovereignty can no longer be understood as an ‘‘exclusively political concept,
+      an exclusively juridical category, a power external to law, or the supreme rule of the
+      juridical order’’ (Giorgio Agamben, Homo Sacer I: Sovereign Power and Bare Life, trans.
+      Daniel Heller-Roazen [Stanford: Stanford University Press, 1998], 28). See Immanuel
+      Kant, The Metaphysics of Morals, trans. M. Gregor (Cambridge: Cambridge University
+      Press, 1996), 99–100; Ernest Mandel, Marxist Economic Theory, vol. 2, trans. Brian
+      Pearce (New York: Monthly Review Press, 1968), 469–72; Michael Hardt and Antonio
+      Negri, Empire (Cambridge: Harvard University Press, 2000), 305, 331, 336; Mbembe, On
+      the Postcolony 29–30, 78–79; Giorgio Agamben, The Coming Community, trans. Michael
+      Hardt (Minneapolis: University of Minnesota Press, 1993), 79. For the opposing view,
+      see Carl Schmitt’s critique of Weber and Kelsen in The Crisis of Parliamentary Democracy,
+      trans. Ellen Kennedy (Cambridge: MIT Press, 1988), 24–25.
+ 95   Quoted in Mark Schoofs, ‘‘Flirting with Pseudoscience,’’ Village Voice, March 21,
+      2000, 56.
+96    It is important to note that whereas Article 31 of TRIPs by no means requires a decla-
+      ration of health emergency to invoke compulsory licensing, it permits certain limita-
+      tions on compulsory licensing to be waived in the case of such a declaration, and so
+                                                                               Denialism     807
+
+
+
+      places considerable powers at the disposal of governments, at the same time it raises
+      the stakes on the exercise of those powers. In eﬀect, the sovereign exception is the only
+      form of political power TRIPs permits states to exercise over licensing questions. See
+      Ford, ‘‘Compulsory Licensing Provisions,’’ 959.
+97    In October 1999, Mbeki made his denialism public in a speech before the National
+      Council of Provinces. In May 2000, he convened an HIV/AIDS ‘‘advisory panel’’ com-
+      posed of denialists. In July 2000, Mbeki delivered the opening address to the Thirteenth
+      International AIDS Conference, in which he declared that he doubted whether every-
+      thing could be blamed on a single virus. In September 2000, Mbeki oﬀered denialist
+      remarks in Time magazine, and Minister of Health Tshabalala-Msimang oﬀered similar
+      remarks on South African radio. See Mbali, ‘‘HIV/AIDS Policy-Making,’’ 319–20.
+98    Of ‘‘Castro Hlongwane,’’ Achmat said, ‘‘On the record, you had, for the ﬁrst time, an
+      indication of the madness, the irrationality, the blindness, the willfulness, the vindic-
+      tiveness of Mbeki on this question’’ (quoted in Samantha Powers, ‘‘The AIDS Rebel,’’
+      The New Yorker, May 19, 2003, 65). Compare also Pieter-Dirk Uys ‘‘‘AIDS Comes from
+      Venus; HIV Comes from Mars!’’’ Index on Censorship 4 (2001): 21–22; Newaal Deane,
+      ‘‘The Madness of Queen Manto,’’ Mail and Guardian, April 11, 2003.
+99    ‘‘This monograph accepts that our people, and others elsewhere in Africa and the rest of
+      the world, face a serious problem of AIDS. It accepts the determination that AIDS stands
+      for Acquired Immunodeﬁciency Syndrome. It accepts that a Syndrome is a collection
+      of diseases. It proceeds from the assumption that the collection of diseases generally
+      described as belonging to the AIDS syndrome have known causes. It rejects as illogical
+      the proposition that AIDS is a single disease caused by a singular virus, HIV. In other
+      words, it accepts that AIDS is either a syndrome or a disease. It cannot be both. Its acro-
+      nym correctly describes it as a syndrome. For this reason, it is not described as AIDD. It
+      accepts that an essential part of AIDS is immune deﬁciency. This constitutes the ID in
+      AIDS. It accepts that this immune deﬁciency may be acquired, accounting for the A in
+      AIDS. It asserts that there are many conditions that cause acquired immune deﬁciency,
+      including malnutrition and disease. . . . It accepts that HIV may be one of the causes of
+      this immune deﬁciency, but cannot be the only cause’’ (4).
+100   ‘‘Bernstein makes the important observation that ‘[AIDS is] the ﬁrst disease that no one
+      can survive by deﬁnition. Not only is this description of AIDS logically bankrupt, it sends
+      the demoralising and inaccurate message to people with HIV or AIDS that they have a
+      disease that is not worth ﬁghting. A more legitimate, and more hopeful, deﬁnition must
+      be devised.’ Because of all this, it has become imperative for us to know as precisely as
+      possible what our people are dying from, speciﬁcally. To say that our people are dying of
+      AIDS will not help us in our struggle to improve the health of our people. As Bernstein
+      says, to say this would be to say our people have a disease that is not worth ﬁghting. This
+      would certainly condemn them to premature death. It is this that would constitute geno-
+      cide’’ (58; emphasis in original). In a similar vein, Mokaba argued that ‘‘we cannot allow
+      our people to take something [i.e., ARV therapy] so dangerous that it will actually exter-
+      minate them. However well meaning, the hazards of misplaced compassion could lead
+      to genocide’’ (quoted in Peter Kwan, ‘‘Biography of a Nightmare: HIV/AIDS in South
+      Africa,’’ The John Marshall Law Review 35 [2002]: 394).
+808 Adam Sitze
+
+
+
+ 101 See Jacques Lacan, Écrits: A Selection, trans. A. Sheridan (New York: Norton, 1981), 200.
+102 See Jacques Lacan, The Ethics of Psychoanalysis, 1959–1960, in The Seminar of Jacques
+      Lacan, book 7, ed. J-A. Miller, trans. D. Porter (New York: Norton, 1992), 66.
+103 Lacan, Écrits, 190, 202–4, 206.
+104 Ibid., 184, 202, 204.
+105 ‘‘The Book of Genesis in the Holy Bible says: ‘And God said, ‘‘Let there be light,’’ and
+      there was light. God saw that the light was good, and he separated the light from the dark-
+      ness.’ Taking example from this, though disadvantaged by the fact that we do not have
+      the power of the Creator, we trust that we present in this brief discourse will help all of us
+      to separate the light from the darkness with regard to the issue of AIDS. This may be dif-
+      ﬁcult. It is, nevertheless, critically important. Given that our minds on this matter have
+      become thoroughly clogged by the information communicated by the omnipotent appa-
+      ratus, a miracle will have to be achieved to get all our people to use their brains, rather
+      than perish on emotional responses based on greatly heightened levels of fear’’ (11).
+106 See Mbembe, On the Postcolony, 189; Carl Schmitt, Political Theology: Four Chapters on the
+      Concept of Sovereignty, trans. G. Schwab (Cambridge: MIT Press, 1988), 36; Carl Schmitt,
+      Die Diktatur (Berlin: Duncker and Humblot, 1994), 139.
+107 See Mbembe, On the Postcolony, 212.
+108 See Gilles Deleuze and Félix Guattari, Anti-Oedipus: Capitalism and Schizophrenia, trans.
+      R. Hurley, M. Seem, and H. R. Lane (Minneapolis: University of Minnesota Press, 1983),
+      214; Giorgio Agamben, Homo Sacer, 1:51.
+109 See Powers, ‘‘The AIDS Rebel,’’ 60, 63.
+ 110 Drew Forrest, ‘‘Social Movements: ‘Ultra-Left’ or ‘Global Citizens,’ Mail and Guardian,
+      January 31, 2003.
+  111 See Richard Calland, ‘‘A Case of Power and Who Controls It,’’ Mail and Guardian, Janu-
+      ary 18, 2002; Klug, ‘‘Five Years On: How Relevant Is the South African Constitution?’’
+      Vermont Law Review 26.4 (Summer 2002): 810–14.
+ 112 See Forrest, ‘‘Social Movements,’’ 8; Powers, ‘‘The AIDS Rebel,’’ 56, 60–61, 64–65;
+      Mbali, ‘‘HIV/AIDS Policy-Making,’’ 315, 321–22.
+ 113 Nyameko Barney Pityana, ‘‘Revolution within the Law?’’ in Bounds of Possibility: The
+      Legacy of Steve Biko and Black Consciousness, ed. N. B. Pityana, M. Ramphele, M. Mpuml-
+      wana, L. Wilson (Cape Town: David Philip, 1991), 202–4.
+ 114 Ibid., 212.
+ 115 See Hoyt Webb, ‘‘The Constitutional Court of South Africa: Rights Interpretation and
+      Comparative Constitutional Law,’’ Journal of Constitutional Law 1.2 (Fall 1998): 281;
+      J. Tholakele H. Madala, ‘‘Rule under Apartheid and the Fledgling Democracy in South
+      Africa: The Role of the Judiciary,’’ North Carolina Journal of International Law and Com-
+      mercial Regulation 26 (2001): 748, 750–56, 759.
+ 116 See Patric Mzolisi Mtshaulana, ‘‘The History and Role of the Constitutional Court of
+      South Africa,’’ in The Post-Apartheid Constitutions: Perspectives on South Africa’s Basic
+      Law, ed. P. Andrews and S. Ellmann (Johannesburg: Witwatersrand University Press,
+      2001), 547.
+ 117 See Pierre de Vos, ‘‘Pious Wishes or Directly Enforceable Human Rights? Social and
+      Economic Rights in South Africa’s 1996 Constitution,’’ South African Journal of Human
+      Rights 13.1 (1997): 67–101. It should be noted, however, that because of South Africa’s
+                                                                                     Denialism     809
+
+
+
+       quasi-federal system, the executive does not directly control AIDS spending. See Helen
+       Schneider and Joanne Stein, ‘‘Implementing AIDS Policy in Post-Apartheid South Af-
+       rica,’’ Social Science and Medicine 52 (2001): 724.
+118    Klug, ‘‘Five Years On,’’ 819; compare Heinz Klug, ‘‘Introducing the Devil: An Institu-
+       tional Analysis of the Constitutional Power of Review,’’ South African Journal of Human
+       Rights 13 (1997): 185–207.
+119    See Calland, ‘‘A Case of Power and Who Controls It’’; ‘‘Accountable to the Constitution,’’
+       Mail and Guardian, January 18, 2002; ‘‘South Africa’s Independent Judiciary Is Safe—
+       For Now,’’ Mail and Guardian, August 27, 2002; ‘‘A Failure of Legal Imagination in Pro-
+       Poor Law,’’ Mail and Guardian, May 13, 2003.
+120    See Klug, ‘‘How Relevant Is the South African Constitution,’’ 819.
+ 121   Which, under Pityana’s leadership, had earlier capitulated to pressure from the execu-
+       tive to withdraw its support for the TAC’s lawsuit. See Thuli Nhlapo and Nawaal Deane,
+       ‘‘How Pityana Buckled,’’ Mail and Guardian, November 30, 2001.
+122    Zackie Achmat, ‘‘The Long Walk to Civil Disobedience,’’ Mail and Guardian, April 4,
+       2003. In fact, no systematic ARV roll-out has taken place even after Mbeki’s cabinet
+       directed the Department of Health in August 2003 to develop an operational plan within
+       one month to provide ARVs in the public sector, after Mbeki’s announcement in Novem-
+       ber 2003 that his administration would triple its AIDS budget to $1.7 billion, or after the
+       TAC’s pressure in South Africa’s Competition Commission forced GlaxoSmithKline and
+       Boehringer Ingelheim, in a controversial December 2003 settlement, to issue licenses
+       on AZT and Lamivudine to four generic producers. See Sharon LaFraniere, ‘‘South
+       Africa Is Criticized for Delay in AIDS Treatment,’’ New York Times, February 20, 2004.
+123    On the primarily temporal mode of the sovereign exception, see Agamben, Means with-
+       out Ends, 39, 43.
+124    Kistner, ‘‘The Constitutional Right to Live, and the Political Power to Let Die,’’ 16; see
+       also Achille Mbembe, ‘‘Biopolitics and Sovereignty,’’ Newsletter of the Wits Institute for
+       Social and Economic Research 2.1 (June 2003): 13, 19.
+125    See Pat Sidley, ‘‘Churches, Unions Lay Down Line on AIDS,’’ Business Day, September 21,
+       2001, 3.
+126    It is hard to know what constitutional provisions could be deployed against this non-
+       application of sovereign power: even though Section 37(3) of the 1996 Constitution gives
+       the judiciary the power to limit executive declarations of states of emergency, no clauses
+       provide powers that would enable the judiciary to require the executive to declare a health
+       emergency. The TAC’s MTCT case was, in a way, designed to force Mbeki’s hand on this
+       question. MTCT is more readily conceptualized as a ‘‘health emergency’’ than ‘‘mere’’
+       seropositivity, which in a certain strict sense is classiﬁed ‘‘only’’ as a ‘‘chronic condition.’’
+       See Stephen Ellman, ‘‘A Constitutional Conﬂuence,’’ in The Post-Apartheid Constitutions:
+       Perspectives on South Africa’s Basic Law, ed. P. Andrews and S. Ellmann (Johannesburg:
+       Witwatersrand University Press, 2001), 460. There is also a sense in which the TAC’s
+       implicitly pronatal legal strategy played into the biopolitical reduction of women to and
+       as reproductive organs, while at the same time embracing the tropes of innocence that
+       become available once one advocates on behalf of infants. As Heinz Klug’s reading of
+       the case suggests, the limit of this strategy was apparent in the discourse of the ruling
+       itself (‘‘How Relevant Is the South African Constitution?’’ 817).
+810   Adam Sitze
+
+
+
+127 See Jacques Rancière, Disagreement: Politics and Philosophy, trans. Julie Rose (Minneapo-
+     lis: University of Minnesota Press, 1999), 13–19.
+128 See Mbali, ‘‘HIV/AIDS Policy-Making,’’ 318.
+129 See Agamben, Means without Ends, 106–7; compare G. W. F. Hegel, Phenomenology of
+     Spirit, trans. A. Miller (Oxford: Oxford University Press, 1977), para. 591.
+130 See Mbali, ‘‘HIV/AIDS Policy-Making,’’ 313–15.
+ 131 See ‘‘Why AIDs Campaigns Are Not Working,’’ Nursing RSA 6.6 (June 1991): 6. The
+     necessity and possibility for these campaigns had been outlined in a series of 1988
+     articles by C. B. Ijsselmuiden, et al. See ‘‘AIDS and South Africa—Towards a Compre-
+     hensive Strategy; Part I: The World-Wide Experience,’’ ‘‘Part II: Screening and Control,’’
+     and ‘‘Part III: The Role of Education,’’ South African Medical Journal 73.8 (April 1988):
+     455–60, 461–64, 465–67.
+ 132 Writing in 1992, Alan Fleming argues that one of the unique features of the HIV/AIDS
+     pandemic in South Africa is precisely this foreknowledge: ‘‘East and central African
+     countries had no warning, as the epidemic was mature and seroprevalence already high
+     when serological tests were ﬁrst introduced in 1985, whereas South Africa had the warn-
+     ing seven years ago when seroprevalence was still extremely low but the spread south-
+     ward of HIV-1 was inevitable’’ (‘‘South Africa and AIDS—Seven Years Wasted,’’ Current
+     AIDS Literature 5.11 [November 1992]: 425; Fleming’s article was also published in Nurs-
+     ing RSA 8.7 [July 1993]: 18–19).
+ 133 Ibid., 426.
+134 See Grundlingh, ‘‘HIV/AIDS in South Africa,’’ 57, 80–81; Grundlingh, ‘‘Government
+     Reponses to HIV/AIDS,’’ 126, 152–53.
+ 135 Discussing HIV/AIDS educational programs, Fleming argues that ‘‘to date nothing is
+     in place in the government schools, which are attended by the majority in all ethnic
+     groups,’’ while ‘‘the 11 established AIDS Training and Information Centres (ATICs) are in
+     locations where they serve almost exclusively the white population, and only now [1992]
+     has an ATIC in Soweto been ‘approved’ ’’ (‘‘Seven Years Wasted,’’ 427).
+136 See Schneider and Stein, ‘‘Implementing AIDS Policy,’’ 725.
+ 137 See Kwan, ‘‘Biography of a Nightmare,’’ 389.
+138 Fleming, ‘‘Seven Years Wasted,’’ 428.
+139 Wilson Carswell, ‘‘HIV in South Africa,’’ Lancet 342 (July 1993): 132.
+140 Sontag, AIDS and Its Metaphors, 62.
+ 141 See Bronwen Roberts, ‘‘Apartheid Forces Spread AIDS,’’ Mail and Guardian, Novem-
+     ber 12, 1999. Compare Jacques Pauw, Into the Heart of Darkness: Confessions of Apartheid’s
+     Assassins (Johannesburg: Jonathan Ball Publishers, 1997), 70–71.
+142 Uys, ‘‘‘AIDS Comes from Venus’,’’ 29
+143 Steven Biko, I Write What I Like, ed. A. Stubbs (New York: Harper and Row, 1986), 86.
+144 See Schneider and Stein, ‘‘Implementing AIDS Policy,’’ 725.
+145 Ibid., 728; Mbali, ‘‘HIV/AIDS Policy-Making,’’ 326.
+146 See John Donnelly, ‘‘A Vigilant Voice for AIDS Victims,’’ The Boston Globe, May 31,
+     2003; Margarette Driscoll, ‘‘I Won’t Buy Life While Others Die,’’ Sunday Times (Lon-
+     don), May 25, 2003; Nicol Innocenti, ‘‘Aids Activist in Gandhi Mould,’’ Financial Times,
+     March 24, 2003; Tina Rosenberg, ‘‘In South Africa, a Hero Measured by the Advance
+     of a Deadly Disease,’’ New York Times, January 13, 2003; Rory Carroll, ‘‘A Good Man in
+                                                                                 Denialism     811
+
+
+
+      Africa,’’ The Guardian, December 10, 2002; Matt Steinglass, ‘‘Killing Him Softly,’’ Boston
+      Globe, December 8, 2002.
+147   See Powers, ‘‘The AIDS Rebel,’’ 54.
+148   Zackie Achmat, ‘‘Oﬀ the Control Track: Power, Resistance, and Representation in
+      South African Documentaries,’’ The Journal of the International Institute 1.2 (Summer
+      1994), www.umich.edu/~iinet/journal/vol1no2/achmet.html (accessed April 4, 2004).
+149   Achmat, ‘‘Oﬀ the Control Track,’’ part 1; emphasis in original.
+150   ‘‘In the case of sacriﬁce and martyrdom, this image we possess of those martyred, and
+      to which nothing is opposed other than the sacriﬁcing of lives in the battle against apart-
+      heid, is also one that possesses us’’ (Achmat, ‘‘Oﬀ the Control Track,’’ part 5).
+151   In ‘‘Oﬀ the Control Track,’’ Achmat clariﬁes that his concluding section ‘‘is really only a
+      beginning’’ (part 5), while he concludes ‘‘My Childhood as an Adult Molester’’ with the
+      sentence, ‘‘It was the beginning of a life of sex and politics’’ (in Deﬁant Desire, ed. Mark
+      Gevisser and Edwin Cameron [New York: Routledge, 1995], 341).
+152   Achmat, ‘‘Oﬀ the Control Track,’’ part 5.
+153   Ibid.
+154   Foucault, History of Sexuality, 1:135.
+155   See Kant, Metaphysics of Morals, paragraph 34; G. W. F. Hegel, Philosophy of Right, trans.
+      A. M. Knox (Oxford: Oxford University Press, 1967), paras. 177–80.
+156   See Michel Foucault, Ethics, Subjectivity, and Truth: The Essential Works of Michel Fou-
+      cault, 1954–1984, vol. 1, ed. P. Rabinow, trans. R. Hurley et al. (New York: New Press,
+      1997), 81–85, 242–45.
+157   Achmat, ‘‘My Childhood as an Adult Molester,’’ 325.
+158   Quoted in Powers, ‘‘The AIDS Rebel,’’ 56.
+159   Alexander García Düttmann, At Odds with AIDS: Thinking and Talking about a Virus,
+      trans. P. Gilgen and C. Scott-Curtis (Stanford: Stanford University Press, 1996), 2.
+160   The authority of which, as Partha Chatterjee points out, is ‘‘derived entirely from a moral
+      claim—of personal courage and sacriﬁce and a patent [sic] adherence to truth. So much
+      so that the supreme test of political leadership was death itself ’’ (Nationalist Thought and
+      the Colonial World: A Derivative Discourse [Minneapolis: University of Minnesota Press,
+      1993], 109).
+161   ‘‘I am not the only one,’’ Achmat said of being without ARVs to Tavis Smiley in a No-
+      vember 14, 2003, interview, www.npr.org/features/feature.php?wﬂd=150614 (accessed
+      April 4, 2004).
+162   It is striking to ﬁnd Achmat responding to a question about ‘‘the Deﬁance Campaign’’ by
+      clarifying that it is ‘‘the Christopher Moraka Deﬁance Campaign’’ and by repeating the
+      testimony Moraka gave, two months before his death from AIDS, against Pﬁzer. Here
+      testimony and protest, mourning and mobilizing, merge to the point of indistinction.
+      See Weissman and Achmat, ‘‘Defying the Drug Cartel,’’ 29.
+

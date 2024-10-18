@@ -1,0 +1,1191 @@
+                                                               The Construction of Corruption, or
+                                     R U L E S O F S E PA R AT I O N A N D I L L U S I O N S O F P U R I T Y
+
+                                                                             IN BOURGEOIS SOCIETIES
+
+
+    What’s breaking into a bank compared with founding a bank?                              Peter Bratsis
+    — Bertolt Brecht, The Threepenny Opera
+
+    Defilement is never an isolated event. It cannot occur except in view of a
+    systematic ordering of ideas. Hence any piecemeal interpretation of pollution
+    rules of another culture is bound to fail. For the only way in which pollution
+    ideas make sense is in reference to a total structure of thought whose key-
+    stone, boundaries, margins and internal lines are held in relation by rituals of
+    separation.
+    — Mary Douglas, Purity and Danger
+
+
+
+                                           Did Somebody Say Corruption ?
+
+George W. Bush and his “coalition of the willing” wage war on the cor-
+rupt regime of Saddam Hussein. Islamic fundamentalists deride their
+national governments as corrupt and, accordingly, have little love for the
+United States, a patron of many of these regimes. The World Bank has
+declared that corruption is the single greatest obstacle to global develop-
+ment. The Michigan Militia and similar right-wing populist groups claim
+that federal institutions, such as the FBI and IRS, are a corruption. Left-
+leaning critics and reformers, such as Michael Moore and Ralph Nader,
+attack the corruption that presumably plagues American political and eco-
+nomic life.
+     The list could go on and on; it seems that there is hardly any con-
+temporary political tendency that does not contain some form of anti-
+corruption agenda. It is striking that so many disparate and competing
+political discourses all agree that corruption is a problem, oftentimes the
+problem. Regardless of the interpretive frame (right, left, populist, tech-
+nocratic, religious, secular, etc.), the specter of corruption is a constant,
+and is both unavoidable and unquestioned; unquestioned in the sense that
+the undesirability of corruption is taken as a given, no substantive argu-
+ment is needed — who is, after all, in favor of corruption?— and unavoid-
+able in that corruption seems to refer to underlying tensions, antago-
+nisms, and traumas that, regardless of one’s conceptual toolbox and
+political tendencies, cannot be ignored or passed over.
+
+Social Text 77, Vol. 21, No. 4, Winter 2003. Copyright © 2003 by Duke University Press.
+         These cursory observations highlight the main hurdle in, as well as
+     the need for, the understanding of corruption. The idea of corruption has
+     become so universal, so unquestioned, so much a part of various common
+     senses, that its determinations, historical specificities, and social functions
+     tend to remain hidden. If this is true anywhere, it is true in regard to the
+     ever growing popularity of the term corporate corruption. Insider trading
+     and bribery may likely be placed under the category of “corporate cor-
+     ruption.” But what about embezzlement or union busting or transfer pric-
+     ing or planned obsolescence? What makes something a corruption? Fur-
+     thermore, what’s so bad about corruption?
+          This essay is an examination of the foundations and function of the
+     concept of corruption. Discussion focuses on the most developed and
+     seminal version of the concept in modern society, political corruption.
+     Beginning with a discussion of definitions of political corruption, the essay
+     argues that there is a significant and much neglected difference between
+     modern and premodern understandings of corruption. The modern under-
+     standing of corruption, it is argued, is directly tied to the rise of the orga-
+     nization of social life and interests by way of the categories of the public
+     and private. The main function of the idea of corruption and the rules
+     and rituals that arise from it has been to keep the categories of the public
+     and private pure and believable. The homology between the rules regard-
+     ing clean and unclean foods in Leviticus and the rules regarding clean and
+     unclean politics in congressional ethics regulations is demonstrated. Based
+     on this reading of congressional regulations, the key components behind
+     the modern concept of corruption are identified and exposed. The essay
+     concludes with a discussion of the implications of this argument for the
+     question of corporate corruption, the apparent proliferation of anticorrup-
+     tion discourses, and politics overall.
+
+
+
+                                                             What Is Corruption?
+
+     Nearly all definitions of political corruption emphasize the subversion of
+     the public good by private interest. Among the more famous definitions of
+     corruption is the one offered by Joseph Nye (1989): “Behavior which
+     deviates from the formal duties of a public role because of private-regard-
+     ing (personal, close family, private clique) pecuniary or state gains; or vio-
+     lates rules against the exercise of certain types of private-regarding influ-
+     ence” (966). Similarly, Carl Friedrich (1989) argues that
+
+         corruption is a kind of behavior which deviates from the norm actually
+         prevalent or believed to prevail in a given context, such as the political. It is
+
+
+
+
+10   Peter Bratsis
+    deviant behavior associated with a particular motivation, namely that of pri-
+    vate gain at public expense. But whether this was the motivation or not, it is
+    the fact that private gain was secured at public expense that matters. Such
+    private gain may be a monetary one, and in the minds of the general public
+    it usually is, but it may take other forms. (15)1
+
+Contained within the modern understanding of corruption are two inter-
+related assumptions: that mutually exclusive public and private interests
+exist and that public servants must necessarily abstract themselves from
+the realm of the private in order to properly function.
+      The significance and relative historical novelty of this definition has
+been ignored in the contemporary literature on political corruption. The
+tendency has been to emphasize the continuity of the concept of political
+corruption from the ancient to modern times. Carl Friedrich (1989) has
+argued that the basic understanding of corruption as “a general disease of
+the body politic” is common to the ancients and the moderns (18). John
+Noonan (1984), who defines bribery, presumably the most obvious form
+of political corruption, as “an inducement improperly influencing the per-
+formance of a public function” (xi), traces the concept back to roughly
+3000 B.C. and claims that, although the concept has transformed over time,
+it has, in its main contours, remained constant.
+      Along the same lines, there are usually numerous references to Aris-
+totle and Machiavelli in works tracing the history of the concept of cor-
+ruption. Aristotle is often cited for his assertion that political forms can be
+corrupted. In his classification of the three kinds of constitution, Aristotle
+lists kingship, aristocracy, and polity.2 He goes on to note that each can be
+corrupted. His discussion of kingship is particularly relevant because what
+causes the corruption of kingship into tyranny is the disregard the tyrant
+has for his subjects; he rules only to further his own “interests” (Aristotle
+1958, 373 –75). Machiavelli’s discussion of the function and causes of
+corruption are also often discussed, especially as he developed them in
+The Discourses in discussing the decline of the republic of Rome (Machi-
+avelli 1970, esp. book 1). Sara Shumer (1979) has noted that Machi-
+avelli’s discussion of corruption includes the idea of the subversion of the
+public by the private: “One dimension of political corruption is the priva-
+tization both of the average citizen and those in office. In the corrupt
+state, men locate their values wholly within the private sphere and they use
+the public sphere to promote private interests” (9).
+      There are reasons to doubt this official history of corruption as a con-
+cept common to nearly all political forms and historical epochs. For one
+thing, the apparent lack of a word for bribery in Ancient Greek presents a
+problem for those who assume an unbroken line in the concept of cor-
+
+
+
+                                                The Construction of Corruption       11
+The recipient of   ruption. Mark Philp (1997) notes that there are many words in Ancient
+                   Greek that make no distinction between a gift and a bribe (doron, lemma,
+a bribe is         chresmasi peithein) since, for the Greeks, to persuade through gift giving
+                   was acceptable and no perversion of judgment could be assumed (26).
+incapable of the   Philp makes the point that if the Greeks have no conception of bribery,
+                   then the whole idea of a public body in Ancient Greece is put into ques-
+autonomous
+                   tion: “If these were the only terms for bribery in the Ancient Greek world
+                   we would have to take the view that there is a basic untranslatability of the
+thought and
+                   terms between us and them — that they not only failed to distinguish gifts
+moral judgment     and bribes, but that they also had no real concept of public office or
+                   trust” (26). On this point, Philp is absolutely right. He goes on to argue,
+necessary for      following Harvey (1985), that there was a term for bribery in Ancient
+                   Greece, diaphtheirein. However, contrary to Philp’s interpretation, it is
+being a citizen.   not true that diaphtheirein has the same status as the modern term bribery
+                   or that it can be said to connote a form of corruption in the modern
+                   sense. Diaphtheirein refers to the corruption of the mind by which the abil-
+                   ity to make sound judgments and pursue the good has been impaired
+                   and, more generally, to destruction and decay. Not all bribery is corrup-
+                   tion in the modern sense. A closer reading of Harvey’s discussion of
+                   diaphtheirein reveals this point. Harvey takes great pains to show that in
+                   contrast to and concurrent with neutral and positive terms, there did
+                   indeed exist at least one negative term (diaphtheirein) for influencing
+                   through giving money and gifts. Nowhere, however, do we find any refer-
+                   ence to public trust, private interest, or any category we usually use in dis-
+                   cussing bribery and corruption. Bribery as diaphthora (the more com-
+                   mon version of the word) was negative because it implied that the citizen,
+                   by way of accepting a bribe, was no longer able to properly act as a citizen
+                   since the will and power to judge had been destroyed.3 As Harvey puts it,
+                   “The man who takes a bribe surrenders his free will; what he says and
+                   does he does for another, and in that sense he no longer exists as an inde-
+                   pendent individual: he is a non-entity. That, I suggest, is the essential
+                   point” (86). Instead of some public trust succumbing to private interests,
+                   the recipient of a bribe has lost the ability to be a citizen by relinquishing
+                   his autonomy. Like slaves, merchants, and women, all precluded from
+                   being citizens since they lack basic requisites for properly acting as a citi-
+                   zen, the recipient of a bribe is incapable of the autonomous thought and
+                   moral judgment necessary for being a citizen.4
+                        The categories of the public and the private are integral to the mod-
+                   ern notion of corruption. Put simply, no corruption in the modern sense
+                   is possible if there is no public and private. As Philp’s arguments illustrate,
+                   much of the literature on corruption assumes that the apparent omnipres-
+
+
+
+
+12                 Peter Bratsis
+ence of a concept of corruption is a sure sign that the public and private
+are also omnipresent social categories. That the ancient understanding of
+corruption is so far removed from the modern one puts this assumption
+into question.
+     Ernst Kantorowicz’s The King’s Two Bodies (1957) provides a useful
+corrective to this ahistorical tendency in the corruption literature. For
+Kantorowicz, our modern understanding of public and private is tied to
+the rise in early modern England of the legal and political doctrine of the
+king’s two bodies. This doctrine asserts that we have two bodies, a public
+and a private one. In its most developed form, the two bodies doctrine
+asserts that while, on the one hand, we exist as concrete individuals with
+physical bodies, particular passions, interests, obligations, and so forth, on
+the other hand, we exist in an abstract sense, as members of the body
+politic, a body that is beyond our physical bodies and concrete social exis-
+tence. This body politic is the polity, characterized by the common inter-
+ests that bind its members together and is materialized in the rituals, per-
+sonnel, and institutions of the state (193 – 272).
+     It should be noted that this version of public and private differs
+greatly from other typical uses of these categories within political thought,
+notably, the Arendtian understanding of public and private, most clearly
+exemplified by Habermas’s treatise on the public sphere. Habermas (1991)
+notes that the terms private and public first appear in German in the mid-
+dle of the sixteenth century and argues that no such divisions existed in
+feudal societies. He goes on to argue that these categories did exist in
+ancient societies and equates the ancient Greek terms of polis and oikos
+with public and private (Habermas 1991, chap. 1). Thus, in the Arendtian
+sense, the categories of the public and the private are mainly functional
+distinctions based on different uses of space. The public sphere becomes
+the space within which individuals can come together and discuss and
+formulate political opinions and positions. This is contrasted to the state,
+on the one hand, with its police and legal functions, and to the private side
+of civil society on the other hand, with its family ties and market relations
+(Habermas 1991, 30). Although the two distinctions are not necessarily
+mutually exclusive, this functionalist distinction between what is public
+and what is private is not the distinction between public and private con-
+noted by corruption. In political corruption, private interests and pas-
+sions come to displace the common good. It is not that public spaces
+come to be used for nonpolitical goals, for example, that makes for polit-
+ical corruption. Thus, although we see the categories of public and private
+applied to most societies, including those of the ancient world, it is usually
+done so in this more functionalist way and the categories themselves have
+
+
+
+
+                                              The Construction of Corruption     13
+     little in common with the ways in which the ancients understood and
+     organized political life.5
+           In light of these observations, the categories of public and private
+     that our modern concept of corruption presupposes are fairly recent.
+     Even up to Machiavelli, despite Shumer’s point, noted above, our modern
+     concept of corruption seems to be missing. Related to the argument
+     regarding the rise of the public and the private is the question of the rise
+     of the concept of interests. As Albert Hirschman (1977) has argued, it is
+     only in the modern era that the concept of interests emerges and this
+     marks a radical break with premodern conceptions of the good. For
+     Hirschman it is the increasing dominance of finance and money that
+     explains the change in the term interest from simply a financial term to a
+     concept that is central to our understanding and organization of contem-
+     porary politics.6 It is in this context that Hirschman sheds light on the
+     question of Machiavelli’s notion of corruption and notes how the term cor-
+     ruption went through a similar transformation in meaning: “ ‘Corruption’
+     has a similar semantic trajectory. In the writings of Machiavelli, who took
+     the term from Poybius, corruzione stood for deterioration in the quality of
+     government, no matter for what reason it may occur. The term was still
+     used with this inclusive meaning in eighteenth-century England, although
+     it became also identified with bribery at that time. Eventually the mone-
+     tary meaning drove the non-monetary one out almost completely” (40).7
+           The Greek term diaphthora and the Latin term corruzione, in spite of
+     their usual translation as “corruption,” refer to an understanding of cor-
+     ruption that is quite foreign to our modern one. Political corruption is an
+     exclusively modern phenomenon made possible only after the rise of the
+     public/private split and the concept of interests. While it may be impossi-
+     ble, and not particularly important from the perspective of the present
+     work, to provide some specific date or event that signals the moment that
+     our modern concept of corruption emerges, it is appropriate to locate it
+     within the general processes of modernity and claim that our understand-
+     ing of corruption becomes possible and thinkable as capitalism and the
+     state emerge and become dominant.8
+
+
+
+                                                           Why Corruption?
+
+     To note the novelty of the modern concept of political corruption and the
+     basic preconditions of its existence begs the question of why the term
+     corruption came to represent the idea of the subversion of the public
+     interest by private interests. This becomes more strongly apparent when
+     one notes deeper differences in meaning between the two concepts of
+
+
+
+14   Peter Bratsis
+corruption. In the traditional understanding of corruption, there was a
+strong imagery of decay and regression, of something becoming less and
+less capable, potent, or virtuous. This understanding contained the idea
+that through disease, old age, the influence of vice, or any other reason,
+the ability to seek the good and virtuous is decreased and possibly destroyed.
+Here, we have the corruption of the mind, morals, and the will. The term
+still retains this meaning today. We understand the use of the term in the
+claim, for example, that the youth of Athens were corrupted by Socrates
+and we use the term in essentially the same way when we claim that the
+minds of the young are corrupted by the entertainment industry or that
+the ability to make sound decisions is corrupted by religious cults, various
+psychological disorders, and so on. What is interesting here is that there is
+a clear division of good and bad; vice is never good nor is disease or psy-
+chosis.
+      By contrast, in the modern understanding of corruption there is no
+division based on something that in itself is good and desirable and some-
+thing that is not. Private interests are not bad. Quite the opposite, the
+whole line of questioning from Weber’s The Protestant Work Ethic and the
+Spirit of Capitalism to Hirschman’s The Passions and the Interests has been
+focused on explaining how private interests, particularly in the econo-
+mistic sense, came to be welcomed as something positive. How, then, can
+two things, public and private interests that are in themselves seen as
+proper and good, come to constitute something that is bad and improper?
+Mary Douglas (1966) does much to answer this question when she notes
+that notions of purity and cleanliness have nothing to do with something
+that in itself is dirty. For Douglas, dirt is best understood as something that
+is out of place:
+
+    Shoes are not dirty in themselves, but it is dirty to place them on the dining-
+    table; food is not dirty in itself, but it is dirty to leave cooking utensils in the
+    bedroom, or food bespattered on clothing; similarly, bathroom equipment in
+    the drawing room; clothes lying on chairs; out-door things in-doors; upstairs
+    things downstairs; under-clothing appearing where over-clothing should be,
+    and so on. In short, our pollution behaviour is the reaction which condemns
+    any object or idea likely to confuse cherished classifications. (36 – 37)
+
+Private interests and public interests are both perfectly fine, as long as they
+stay in their proper places. Once we have the contamination of the public
+by the private, politicians and politics itself become dirty, tainted, infected,
+and thus corrupt. The opposite is equally true. Once we have an invasion
+of the private by the public (for example, public authorities being able to
+regulate “private” behaviors such as sexual and religious conduct, and so
+forth) we come to equally negative conclusions regarding the transgres-
+
+
+                                                    The Construction of Corruption         15
+     sion of the categorical separation of private and public. The modern
+     notion of political corruption is thus much closer to the idea of corruption
+     as adulteration than the idea of corruption as deterioration and destruc-
+     tion. This conception of political corruption is consistent with the use of
+     corruption to describe the loss of the purity of one substance by the intro-
+     duction of another, in the way that wine can be corrupted by water or a
+     flower bed can be corrupted by weeds.
+          To emphasize these differences in meaning, let us take as an illustra-
+     tion the likelihood that Ronald Reagan had Alzheimer’s disease in the
+     later years of his presidency. Assuming that the disease had progressed to
+     the point of hindering his ability to make sound decisions, his condition
+     would constitute corruption in the classical sense in the same way that
+     bribery constitutes corruption; his capacity to think and act in an auton-
+     omous and rational way was diminished. It is obviously not corruption in
+     the modern sense since there is no instance of the contamination of the
+     public interest by private interests. The Clinton coffee scandals, in which
+     prospective campaign contributors were invited to coffees at the White
+     House, are an example of the latter. It is hard to imagine that drinking
+     coffee could ever result in corruption in the traditional sense (unless one
+     became so addicted to it that the ability to reason was lost, one had to
+     resort to crime in order to support the consumption of coffee, and so
+     forth) but drinking coffee can easily result in corruption in the modern
+     sense. If the coffee is being consumed by prospective campaign contribu-
+     tors in a public area, say, the nonresidential areas of the White House, it
+     can be said to constitute political corruption because the president is
+     allowing his private interests to contaminate the purity of the public space.
+     This space within the White House is not public simply because it is owned
+     by the public but rather because it is designated for the president’s use as
+     a public servant, not as a private citizen. If coffee is being consumed and
+     contributions are being sought in space that is designated for the presi-
+     dent’s use as a private individual, no corruption is present. The same
+     people, the same coffee, the same money changing hands; the only differ-
+     ence is in the room where it is occurring, which constitutes all the differ-
+     ence between corruption and noncorruption.9
+          In light of these stark differences, how is it possible that the modern
+     and traditional ideas of corruption are so easily conflated and confused?
+     Although the meanings are different, both understandings of political cor-
+     ruption attempt to establish a normative distinction between what is desir-
+     able and what is not. In the traditional understanding of political corrup-
+     tion, the characteristics of a citizen, king, or regime as they should be are
+     established and contrasted with those characteristics that are seen as bad
+     or undesirable from the point of view of that ideal reality. In the modern
+
+
+
+16   Peter Bratsis
+understanding, a strict division of the public and private is asserted and
+various phenomena that may conflict with that presumed division are
+termed a corruption. This difference between what should be and keeping
+things in their proper place is immensely significant. On the one hand we
+have a normative political project that posits what the good is and on this
+basis is able to establish what is corrupt or bad. On the other hand we
+have the desirable/undesirable distinction established in a more techno-
+cratic and underhanded way. The proper ordering of all things social is
+posited in the form of ontological assumptions regarding the public/private
+and phenomena that pose a challenge to this vision of how things are
+become branded as corrupt.
+     Since the modern concept of corruption does not function as an
+explicitly normative construct but rather as an articulation of categories of
+bourgeois political ontology, it has the effect of constituting and reaffirm-
+ing the dominant public/private split through its application and subse-
+quent categorization of phenomena as corrupt or uncorrupt, as patho-
+logical or normal. In so doing, the normative dimension of the modern
+concept of corruption becomes manifest precisely because of its way of
+categorizing social phenomena. By establishing the division between the
+normal and pathological in the public/private split, the modern under-
+standing of political corruption is at once making a statement of fact and
+presenting us with the political goal of fully realizing the normal. As Georges
+Canguilhem (1991) notes in his discussion of the foundations of the con-
+cept of the normal:
+
+    In the discussion of these meanings [of normal] it has been pointed out how
+    ambiguous this term is since it designates at once a fact and “a value attrib-
+    uted to this fact by the person speaking, by virtue of an evaluative judgement
+    for which he takes responsibility.” One should also stress how this ambiguity
+    is deepened by the realist philosophical tradition which holds that, as every
+    generality is the sign of an essence, and every perfection the realization of
+    the essence, a generality observable in fact takes the value of realized perfec-
+    tion, and a common characteristic, the value of an ideal type. (125)
+
+In this way, the modern concept of corruption repeats the normative-
+political emphasis of the traditional understanding of political corruption
+but does so in an essentialist and apolitical manner. The confusion of the
+two concepts of political corruption thus appears to be, at least partly, a
+result of the similar normative function of situating what is politically
+desirable and what is not. But already built into the modern concept of
+corruption is an ahistorical and acritical understanding of political phe-
+nomena that takes the integrity of the public/private split at face value, as
+a quality immanent in all societies, as the normal. For this reason, it is rare
+
+
+                                                  The Construction of Corruption       17
+     that the historical specificity and socially embedded quality of the concept
+     of political corruption becomes visible to observers. Similarly, by conflat-
+     ing the two concepts of corruption, the reception of the modern concept
+     of corruption reifies it back throughout history and gives the public/
+     private split the appearance of the eternal.
+          Characteristically, most contemporary discussions of political cor-
+     ruption within political science occur within the subfield of comparative
+     politics, not normative political theory. Under the guise of discussions on
+     clientalism, patronage, totalitarianism, civil society, and so forth, com-
+     parative politics has spent much of its time demonstrating the normalcy of
+     the United States and other advanced capitalist societies by demonstrating
+     the pathologies of “less developed” nations.10 In line with the comments
+     by Canguilhem quoted above, an omnipresent assumption in this litera-
+     ture is that the public and private are essential attributes of human soci-
+     eties, that political development and advancement entail the realization of
+     this fact and the formation of institutions, laws, and attitudes that end the
+     systematic corruption prevalent in these underdeveloped societies. The
+     following statement from Jacob von Klaveren (1989) is typical: “We know
+     that the political systems of the so-called underdeveloped regions still
+     remain in the stage of systematic corruption, and there are good reasons
+     for this which we cannot go into here. For simplicity’s sake, let us say that
+     the Age of Enlightenment has not yet, in a relative sense, occurred there,
+     which is not too surprising considering the low educational level” (557).11
+     In a different context, even a political commentator as astute as Hannah
+     Arendt argues that totalitarianism is characterized by the effacement of
+     the public-private distinction (Arendt 1968). Totalitarianism, then, is a
+     corruption of the separation of the public and private, a pathological
+     negation of the separation of the public from the private, and it is certainly
+     less desirable than the normal articulation of the public-private split in lib-
+     eral societies. In this respect, Arendt is no more capable of going beyond
+     the essentialist bourgeois conception of the public and private than are
+     mainstream social scientists and their theories of modernization and
+     development.
+
+
+
+             Rules of Separation: From Leviticus to Washington, D.C.
+
+     The categorizations of academics, however, are not the cause of the divi-
+     sion between what is considered a normal and a pathological ordering of
+     the public and private. The academic categories are no more than reflec-
+     tions of the categories and normative precepts prevalent in bourgeois soci-
+     eties themselves. What we must understand is how bourgeois societies
+
+
+
+18   Peter Bratsis
+come to form and regulate their conception of normalcy regarding the                Conforming to
+public/private split.
+     As Canguilhem first argued in The Normal and the Pathological                 the rule when it
+(1991), and as Michel Foucault demonstrated in his various histories of
+the practices of normalization (especially Madness and Civilization, 1965),      comes to political
+the question is not simply how the normal is constituted but how the nor-
+                                                                                   corruption thus
+mal is constituted by way of the production of the pathological. The nor-
+mal in the case of corruption, just as in the case of physiological diseases
+                                                                                       refers to not
+and mental disorders, is largely a negative category; normal is that which
+is not pathological. How do we know what is pathological? There are               transgressing the
+rules that inform us. The term normal derives from the Latin term norma
+(rule). The normal is that which conforms to the rule. Conforming to the         rules that regulate
+rule when it comes to political corruption thus refers to not transgressing
+the rules that regulate the purity of the public and private. If breaking          the purity of the
+these rules is constitutive of the pathological, of corruption, then following
+the rules can be nothing but the normal, good, and desirable. If we are to              public and
+understand how the normal is constituted, we must be able to identify
+those rules that define the pathological and upon whose presence the pre-                   private.
+sumed purity of the public depends.
+     Mary Douglas’s analysis of rules of separation is a useful point of
+departure for such an analysis. As noted above, Douglas argues that soci-
+eties tend to declare “any object or idea likely to confuse cherished clas-
+sifications” as impure/dirty/corrupt. These classifications, in turn, are
+dependent upon a conceptual edifice “whose key-stone, boundaries, mar-
+gins and internal lines are held in relation by rituals of separation.” Most
+interesting in terms of its implications toward the analytical task at hand is
+how Douglas applies these principles in her explanation of the various
+rules regarding clean and unclean food in Leviticus. Douglas attempts to
+solve what has long been considered a puzzle by biblical scholars, how to
+explain why some animals are considered unclean and others clean: “Why
+should the camel, the hare, and the rock badger be unclean? Why should
+some locusts, but not all, be unclean? Why should the frog be clean and
+the mouse and the hippopotamus unclean? What have chameleons, moles
+and crocodiles got in common that they should be listed together?” (42).12
+As Douglas notes, there have tended to be two ways of addressing this
+problem. One approach has been to view these rules as arbitrary, irra-
+tional, and unexplainable, and the other has been to see them as largely
+serving educational and disciplinary functions, such as teaching self-
+discipline by selecting the most tasty and tempting of creatures as unclean
+or selecting those animals that were most likely to harm health and carry
+disease, or protecting Jewish culture from the encroachment of neighbor-
+ing cultures (30 – 33, 44 – 50). Having identified the contradictions and
+
+
+
+                                              The Construction of Corruption                      19
+     inconsistencies in these attempts to explain the rules, Douglas attempts a
+     new explanation by treating these various rules as exactly what they pur-
+     port to be, rules of separation. Douglas notes that the traditional idea of
+     the holy was quite literal; it referred to wholeness, completeness, purity of
+     form (51– 53). Thus, for example, animals appropriate for sacrifice had to
+     be complete and pure, free from physical imperfections and blemishes.
+     Similarly, for wholeness and completeness to be realized, the organization
+     of the world has to be kept pure. In accordance with this meaning of
+     holy, we find injunctions against sowing the same field with more than one
+     kind of seed, against plant and animal hybrids, against making cloth by
+     combining two or more kinds of fibers, against bestiality, and so forth. To
+     be heterodox and confusing is unholy; things should be kept in their
+     proper order and not mixed.13
+          The categorizing of clean and unclean foods, then, has nothing to do
+     with how appetizing, ugly, healthy, or sloppy the animals are, but, rather,
+     how pure they are in terms of conforming to their classification. The ani-
+     mals that are true to life in the sky are birds; they have feathers and two
+     feet and they fly. All birds that do not fly are unclean since they defy
+     these principles, as do all things that fly but are not birds. The animals
+     true to life in the water are fish with scales and fins; all creatures in the
+     water that do not have these characteristics are unclean. Animals that
+     roam the earth are four-footed and move by walking, jumping, or hop-
+     ping. Animals that seem to have two feet and two hands, like crocodiles,
+     mice, and weasels, are unclean. All creatures that swarm are unclean since
+     that mode of propulsion is proper to neither sky, nor land, nor water.
+     Thus, worms, snakes, and the like are unclean. Some kinds of locusts are
+     clean because they hop; locusts that fly have an attribute that only birds
+     can properly have. Proper mammals have cloven feet and chew the cud.
+     Camels, pigs, badgers, and hares all lack one or both of these qualifica-
+     tions, and therefore are unclean. Members of the antelope family, sheep
+     and goats, cows, and so on, do conform to these rules, and so they are
+     clean (Douglas 1966, 56 – 58).
+          In this example Douglas provides us with an important illustration of
+     the idea of cleanliness as keeping things in their proper place. Moreover,
+     she gives us a model for interpreting other sets of rules of separation.
+     The task of interpreting rules of separation in relation to political corrup-
+     tion seems somewhat different than interpreting Leviticus because we
+     have already identified the basic idea behind the rules against political
+     corruption, to keep private interests from contaminating the public good.
+     So, while Douglas’s interpretation of Leviticus is compelling in its ele-
+     gance and ability to explain all the seemingly anomalous classifications of
+     clean and unclean, it would apparently not be useful for examining rules
+
+
+
+20   Peter Bratsis
+regarding political corruption. But this would be a false conclusion because
+we know only the general principle behind keeping the public/private divi-
+sions separate and clean. Why, for example, is it OK for a congressperson
+to go on a seven-day trip paid for by a lobbyist but not an eight-day trip?
+Why is clientalism corruption, but passing laws that benefit campaign
+supporters and contributors usually not? Why are staff members allowed
+to lobby the congressional representatives they have worked for after one
+year, as opposed to four or five years, or never, or right away? The reality
+is that, with one partial exception, there has never in the history of the mod-
+ern state been a law against political corruption as such.14 There are only
+laws against particular examples of what could be classified as political
+corruption: bribery, embezzlement, nepotism, and so forth. So, although
+there is no need to deduce the general principle regarding political cor-
+ruption, there is a need to examine the rules designed to maintain the
+purity and separation of the public and private if we are to be able to
+deduce the ideas behind what bourgeois societies understand to be cor-
+ruption and what they do not.
+      A partial list of ethics rules from the House of Representatives fol-
+lows, as background for the subsequent discussion in this essay. The rules
+are divided according to the kind of activity they refer to, and the wording
+of each rule is exactly as it appears in a summary memo of ethics rules
+given to all members, officials, and employees of the House of Represen-
+tatives (Committee on Standards of Official Conduct 2001).
+
+    The House Gift Rule prohibits acceptance of any gift unless permitted by
+    one of the exceptions stated in the rule. Gifts allowed by the exceptions
+    include:
+    — Any gift (other than cash or cash equivalent) valued at less than $50;
+    however, the cumulative value of gifts that can be accepted from any one
+    source in a calendar year is less than $100;
+    — Gifts from relatives, and gifts from other Members or employees;
+    — Gifts based on personal friendship (but a gift over $250 in value may not
+    be accepted unless a written determination is obtained from Standards Com-
+    mittee);
+    — Personal hospitality in a private home (except from a registered lobbyist);
+    — Anything paid for by federal, state, or local government.
+
+    Members and staff may never solicit a gift, or accept a gift, that is linked to
+    any action that have taken or are being asked to take.
+    Private payment of necessary food, transportation and lodging expenses may
+    be accepted from a qualified private sponsor for travel to a meeting, speak-
+    ing engagement, or fact-finding event in connection with official duties.
+
+    Limit on number of days at the expense of the trip sponsor:
+    —4 days, including travel time, for domestic travel.
+    —7 days, excluding travel time, for foreign travel.
+
+
+                                                 The Construction of Corruption       21
+         No use of congressional office resources (including equipment, supplies or
+         files) for campaign purposes.
+         No solicitation of political contributions from or in any congressional office.
+         Don’t accept any contribution that is linked to any official action, past or
+         prospective.
+         No personal use or borrowing of campaign funds, and no use for official
+         House purposes.
+         Avoid mixing of House and private resources.
+         Official position and confidential information may not be used for personal
+         gain.
+         A Member must abstain from voting on a question only if the Member has a
+         direct personal or pecuniary interest in the question.
+         Outside Earned Income Limit for Calendar Year 2001—$21,765.
+
+         For ONE YEAR after leaving office:
+         — A Member may not communicate with or appear before a Member, offi-
+         cer or employee of either House of Congress, or any Legislative Branch
+         office, with intent to influence official action on behalf of anyone else.
+         —Very Senior Staff may not communicate with or appear before the indi-
+         vidual’s former employer or office with intent to influence official action on
+         behalf of anyone else.
+
+           All the important components of the concept of corruption that I
+     have identified and discussed are present in these rules. The two bodies
+     principle is evident in the rules that distinguish between the person as a
+     public servant and as a private citizen. Gifts from family, gifts from other
+     members of Congress, gifts from close friends, and anything paid for by
+     public funds are allowed (since in all these exchanges it is either a private-
+     to-private or public-to-public relationship). Hospitality in a private home
+     is allowed as long as that person is not a registered lobbyist (thus negating
+     the distinction of a private home). Members must abstain from voting on
+     and lobbying for issues in which they have private interests. Similarly,
+     omnipresent in these rules is the general prohibition against mixing the
+     public and private. All of the rules are manifestations of this principle; the
+     suggestion that all House personnel “avoid mixing of House and private
+     resources” seems clear enough. In this way, the main contours of these rules
+     clearly conform to the dual conceptual principles of two bodies and cor-
+     ruption as a mixing of categories.
+           An interesting gray area is the position of the political candidate.
+     Reelection campaigns of incumbent members of the House are clearly not
+     on the public side of the equation; Congressional staff and resources are
+     not to be used for campaign purposes. No campaign activity, including
+
+
+
+22   Peter Bratsis
+soliciting contributions, is to take place in any congressional rooms or            It would seem
+offices. Even informational mailings to constituents are not allowed within
+ninety days prior to a primary or general election since it would be impos-        that candidates
+sible to distinguish between the member sending the mailing as a public
+servant or sending it as a candidate. Conversely, campaign contributions             for office and
+may not be used for public or private purposes. It would seem that candi-
+                                                                                        campaign
+dates for office and campaign contributions are neither public nor private;
+they represent an interesting in-between situation, and a position that is
+                                                                                  contributions are
+inherently heterodox and “unclean” (perhaps equivalent to larvae that, as
+swarming creatures, are unclean but, once they transform into walking or         neither public nor
+hopping insects, become perfectly clean). It may be normal to be a private
+citizen, it may be normal to be a public servant, but to be a candidate is to         private; they
+be neither and, thus, the conceptual position of the candidate must be
+kept as separate as possible from the usual registers of public and private           represent an
+to avoid creating confusion.
+     This interesting in-between case aside, the greatest challenge to inter-           interesting
+preting these rules of separation is explaining, first, all the possible forms
+of corruption against which there are no rules and, second, all those rules
+                                                                                       in-between
+that appear to be arbitrary or, at least, could easily be different and still
+                                                                                         situation.
+conform to the general principles. For example, why should the limit for
+allowable gifts be set at $50 and not higher or lower? If the limit were $60,
+or $100, or $10, would it not still fulfill the same function and would not
+the principles behind the rule remain the same? Similarly, how can we
+interpret some of the more general and looser rules, such as the prohibi-
+tion against using one’s official position for personal gain?
+     If anything can be gleaned from Douglas’s analysis of Leviticus it is
+that rules of separation are synonymous with the system of ideas; one
+constitutes the other. The system of ideas that underlie the rules is itself a
+product of the rules. There can be no classification of clean and unclean
+without the rules of separation and no rules without classifications. In
+this sense, the reason the gift limit is $50 is that there must be a limit, a
+rule of separation. This is not to say that the dollar amount is random or
+that it could be any amount and still retain its practical function. The first
+step in understanding this rule is understanding why there is a need to
+place a dollar amount as a limit in the first place. Because there is the $50
+rule, not simply some general principle of public/private separation, we
+can now identify what conforms to the rule and what does not, we can
+now identify the normal and pathological in relation to accepting gifts. In
+the same way, the general decrees that public office cannot be used for
+private gain or that gifts and contributions can never be linked to actions
+that have been taken or that will be taken are utterly meaningless and
+have no significance. Why else would someone who is neither a relative
+
+
+
+                                              The Construction of Corruption                     23
+If former            nor a friend give a gift to a member of the House or provide a campaign
+                     contribution if not as some form of support for an action that was taken
+employees and        or that he or she hopes will be taken? It is precisely because everyone
+                     knows this to be true that limits are established and the rules of separation
+advisors are to      are made specific.15
+                          Examples of this principle appear throughout the rules. We know that
+lobby for you on
+                     everyone is potentially a lobbyist, so, in order to establish a clear distinc-
+                     tion, the categorization lobbyist is made a technical term referring to those
+behalf of an
+                     who are legally registered as such. We know that any number of actions
+interest group,      while in office could result in private gain (indeed, untold numbers of cor-
+                     porations and law firms are willing to pay significant amounts of money to
+they should at       employ individuals once they leave office, purely on the basis of their
+                     having been in office), so we have a multitude of specific rules that tell us
+least wait a year;   what constitutes private gain and what does not. We cannot know what
+                     political corruption is without recourse to these rules of separation.
+it looks better.          That the limit to gifts should be $50, that privately sponsored travel
+                     has four- and seven-day limits, that additional earned income is limited to
+                     $21,765, all have another foundation as well. As has been noted, the dol-
+                     lar limit to gifts could have been set at $1,000 and the basic principle of
+                     there being a specific rule by which to determine what is normal and
+                     pathological would be sustained. However, it would be more difficult to
+                     demonstrate that a gift of that magnitude does not constitute a corruption
+                     of the public interest in the eyes of citizens. Obviously, the greater the
+                     value of a gift the less believable the assertion that the person receiving the
+                     gift was not influenced by it. It may be that the gift limit could be $100 or
+                     that the additional earned-income level could be $40,000 and the gift
+                     would be just as believable and efficient as the existing amounts; the point
+                     is that the specific limits in each rule correspond to basic parameters regard-
+                     ing how such actions are likely to be perceived. A principle that underpins
+                     much of the content of these rules is that public servants must not engage
+                     in behaviors that are too overt and obvious in their illustration of how the
+                     concrete private body of the public servant conflicts with the presumed
+                     purity and objectivity of their abstract public body. If former employees
+                     and advisors are to lobby for you on behalf of an interest group, they
+                     should at least wait a year; it looks better. If you do take a trip paid for by
+                     private money, don’t let it go beyond four days; it doesn’t look good.
+                     Maybe it is true that elected public servants will tend to act on behalf of
+                     important supporters and campaign contributors, but at least don’t make
+                     it too obvious.
+                          The investigation into the violation of many of the rules listed above
+                     by Representative “Bud” Shuster (R-Pa.) illustrates this principle. Shu-
+                     ster, chairman of the Transportation and Infrastructure Committee,
+
+
+
+24                   Peter Bratsis
+became the object of an official investigation by the Committee on Stan-
+dards of Official Conduct (CSOC) largely as a result of Shuster’s appar-
+ent collusion with his former chief of staff, Ann Eppard, who had worked
+for him for twenty-two years (Committee on Standards of Official Con-
+duct 2000a). After resigning her post, Eppard established her own lobby-
+ing firm and lobbied Shuster on behalf of her clients during and after
+the twelve-month period following her resignation. As already noted,
+senior house staff are not allowed to lobby their former employers for
+twelve months following the end of their employment. The official report
+notes that this restriction, enacted in 1989, was intended “to diminish any
+appearance that Government decisions might be affected by the improper use
+by an individual of his former senior position” (CSOC 2000a, 8; italics in
+original).
+     Shuster and Eppard proved to be inept at keeping up appearances.
+Not only was Eppard the former chief of staff, she was also, while she was
+lobbying Shuster, the assistant treasurer for Shuster’s reelection campaign
+and a significant fund-raiser (in itself, it is perfectly legal to be a lobbyist
+and a campaign officer or fund-raiser — it simply must not appear to be
+something that is done in exchange for some favor). Shortly after Eppard
+began to represent Frito-Lay and Federal Express, Shuster pushed through
+the Congress the granting of a waiver from many federal safety regulations
+for midsized delivery trucks (such as those used by both companies): “A
+quiet lobbying campaign aimed at the House Transportation Committee
+yielded in a few months what years of regulatory struggles had not”
+(CSOC 2000a, 79). After Eppard was hired by Amtrak, Shuster champi-
+oned a bill that provided Amtrak with money and financial restructuring,
+exactly what Amtrak had hired Eppard to accomplish. After Eppard was
+hired by the Outdoor Advertising Association of America, Shuster argued
+on behalf of a bill allowing more billboards to be place along routes des-
+ignated as scenic byways, and legislation was eventually passed (CSOC
+2000a, 79 – 82). There are a great many additional potential rules infrac-
+tions investigated by the CSOC, including a trip by Shuster to Puerto
+Rico paid for by one of Eppard’s clients, frequent stays by Shuster at
+Eppard’s home, and Shuster’s frequent use of Eppard’s car.
+     It should be noted that the CSOC found Shuster not guilty of any
+infractions in the three legislative cases noted above. Yet, he was found to
+have violated the letter of the law with regard to the twelve-month rule and
+gift rules, and was found guilty of bad campaign-finance accounting and
+a few other minor infractions. All the infractions boil down to the violation
+of one rule, literally rule number 1, clause I of the Code of Official Con-
+duct, “a Member, officer, or employee of the House of Representatives
+shall conduct himself at all times in a manner which shall reflect creditably
+
+
+
+                                               The Construction of Corruption      25
+     on the House of Representatives.” What Shuster was ultimately found
+     guilty of is not being a good enough actor when it comes to maintaining
+     the illusion of the purity of the public good from private interests. The
+     letter of reproval issued to Shuster by the CSOC reads like a mantra for
+     clause I; it begins by noting that “by your actions you have brought dis-
+     credit to the House of Representatives” and goes on to establish why each
+     infraction constitutes a violation of clause I: “The first area of misconduct,
+     constituting conduct that did not reflect creditably on the House of Rep-
+     resentatives. . . . The third area of misconduct to which you admitted, and
+     which constitutes conduct by you that did not reflect creditably on the
+     House of Representatives. . . . The fifth area of misconduct to which you
+     have admitted, and which constitutes conduct that did not reflect cred-
+     itably on the House of Representatives” (CSOC 2000b). The letter con-
+     cludes with the following statement: “In our free and democratic system
+     of republican government, it is vital that citizens feel confidence in the
+     integrity of the legislative institutions that make the laws that govern
+     America. Ultimately, individual Members of Congress can undermine
+     respect for the institutions of our government” (CSOC 2000b).
+          The purity of the public is specular and illusionary, a performative
+     gesture, a product of a series of rules designed to cloak the fetishistic
+     nature of the public/private split. In Leviticus, the division between the
+     clean and the unclean was such that by following the rules of separation
+     one could completely realize the conceptual goal of wholeness as it was
+     understood at the time. In Washington, D.C., the fetishistic nature of the
+     public makes it impossible to fully realize the separation of the public and
+     private in terms of the actual content of politics. The legal fiction, as Kan-
+     torowicz terms it, of the abstract body of the public is materialized and
+     regulated through the rules of separation in that what is kept pure is not
+     politics itself but, rather, its categorizations and self-presentations. Given
+     the impossibility of removing ”private interests” from either the real bod-
+     ies of public servants or from the actual substance of bourgeois politics, a
+     series of rules and practices are instituted in order to purge the realm of
+     appearances from acts that challenge the categorization of society as divided
+     into two mutually exclusive registers, the public and the private. The suc-
+     cess of these rules of separation thus relies upon two interrelated impera-
+     tives, to regulate and cloak or eliminate all those activities that are likely to
+     be perceived by citizens as a presence of private regarding within the pub-
+     lic body, and to structure the parameters and boundaries of what citizens
+     are likely to perceive as corruption simply by serving as the point of ref-
+     erence for establishing what constitutes the normal and pathological in
+     such matters.
+          There are a great many potential corruptions of the public by the pri-
+
+
+
+26   Peter Bratsis
+vate that are not included in the rules discussed above, and this can only       Everybody knows
+be interpreted as a sign that they fall within the “normal” side of the equa-
+tion. It could easily be argued that members of the Congress are corrupt               that Bush as
+when they vote according to the private interests of constituents in their
+districts, or that a president is corrupt when he appoints his friends to            public servant
+public office, and so forth. We find nothing against these types of activities
+                                                                                         cannot be
+in the existing rules of separation, although in both cases it could be a vio-
+lation of the rules if appearances are not maintained.16 The pragmatic
+                                                                                   abstracted from
+requisites of bourgeois politics necessitate that private interests be every-
+where within the public but that everyone categorize these short-circuits          Bush as private
+as being normal and desirable.
+     In this respect, the rules of separation found in Leviticus and those          citizen, that his
+found in Washington, D.C., are not based on some truth existing in nature
+or society but are attempts to formalize and ritualize the meanings and                     religious
+categorizations through which society maps its understandings and per-
+ceptions. The attempt to explain the rules of separation by reference to         fundamentalism,
+the “real” dirtiness imminent in the object or activity itself is thus neces-
+sarily bound to failure. Crabs and oysters are no more dirty, from the per-               corporate
+spective of nutrition or biology, than are salmon and tuna. Clientalism is
+                                                                                     alliances, and
+no more dirty from the perspective of the interests it articulates than are
+pluralist interest group arrangements. Again, to go back to Douglas, it is                 personal
+only in reference to the system of ideas that these rules make sense and
+their object is nothing more than the material constitution and reproduc-        affiliations directly
+tion of the system of ideas.
+                                                                                         impact his
+
+ Cynicalism, Corporations, and Conflict: Tentative Conclusions                          conduct as
+
+That political corruption as such has never been completely outlawed in                   president.
+modern societies thus makes perfect sense. The whole point of the dis-
+course and practices surrounding corruption has been to make most cases
+of private regarding within the public acceptable and normal by identify-
+ing only some forms of private regarding as corrupt. The rules and rituals
+of separation that function to maintain the purity of the categories of
+public and private also support the contemporary legal fiction that public
+servants act not as concrete individuals but as articulations of the abstract
+body of the polity and, accordingly, are neutral, objective, and free from
+the passions and interests that may plague their private existence.17 The
+pragmatic problem here is that everybody knows this to be a fiction.
+Everybody knows that Bush as public servant cannot be abstracted from
+Bush as private citizen, that his religious fundamentalism, corporate
+alliances, and personal affiliations directly impact his conduct as president.
+
+
+
+                                              The Construction of Corruption                       27
+     The logic operant here is one of cynicism; we know that the idea of a pub-
+     lic that is free of private interests and passions is fictional, nonetheless, we
+     demand that all involved act as if this were not the case. We demand that
+     the illusion of a real and substantive public be maintained even though we
+     may not fully believe it.
+          The question of corporate corruption is simply an extension of these
+     principles. Rather than dealing with the eternal polity, we now deal with
+     another abstract body, the corporation. The corporation never dies or
+     suffers from the infirmities of old age and vice; it is a legal and fictional
+     subject that we speak of as acting, even though we all know that it does
+     not exist as a real body and that its actions are no more than the actions of
+     individuals who happen to occupy positions within it. If the idea of cor-
+     porate corruption has any precision, then, it alludes to the actions taken by
+     individuals that go against the purity of this classification, for example,
+     when individuals fail to maintain the fictional division between themselves
+     as private, concrete, self-interested individuals and as public, corporate
+     servants working on behalf of the shareholders/constituents of said cor-
+     poration.18
+          The popularity of the anticorruption stance, whether it be applied to
+     politics or corporations, is largely a product of the tension between what
+     we know to be true and what we desire to be true. We all know that mod-
+     ern politics as well as economic life are about clashes of self-interests,
+     about maximizing profits and utility, and that these arenas are rife with
+     antagonisms and animosities. The problem is, the public/private divide
+     has asserted that we, as members of the polity, are bound to each other by
+     common interests, that through our abstract bodies as members of the
+     body politic we lead an unalienated and harmonious existence with our
+     fellow citizens. The tension between the nationalist fantasies that support
+     this fiction of the polity unified through common interests and destinies
+     and the reality of society is the common trauma that has led to projects
+     across the political spectrum that seek to realize this harmonious unity of
+     the polity. The only significant difference between them is what they
+     understand the problem to be: greedy corporations, pathological individ-
+     uals, government apparatuses run amuck, and so on. In all cases the impli-
+     cation is that there is a pathological presence in society; something is out
+     of place.
+          The popularity of anticorruption discourse is also a testament to the
+     success of the rituals and rules of separation in regard to the categories of
+     public and private. Rather than reject the categories as bourgeois fantasies
+     designed to support the fiction of the polity, the discontented seek to pro-
+     duce social change by way of and through these categories. As has been
+     demonstrated here, even the academic literature on corruption has taken
+
+
+
+28   Peter Bratsis
+the categories of public and private to be natural, essential, universal, indis-
+putable, and inescapable. Thus, the question of corruption has remained
+largely a technocratic one, involving managing things properly so that
+everything stays where it should be; the state stays out of our private lives,
+corporations stay accountable to the public, Americans stay in their corner
+of the world, and so forth. What is always missing is the “ought” function,
+the positing of things in terms of what ought to be rather than in terms of
+keeping things in their proper place. The shift from the traditional to the
+modern notion of corruption has coincided with our relinquishing the
+question of ought to bourgeois political ontology. The radical position today
+is not to obsess over corporate corruption and remain trapped by the fal-
+lacy that if only some procedures were reformed and greed kept in check
+the public interest could be realized. The radical position today is to reject
+the categories of public and private as they are presently constituted and to
+expose all the questions that have been subsumed by the discourse on cor-
+ruption. The task at hand today is to go beyond the moralistic, techno-
+cratic, and formalistic positions that the concept of corruption leads us to.
+The real problem is not that something is out of place; it is that there is no
+political process through which we can posit what we think the good soci-
+ety is, in order to know if we are moving in the proper direction or are in a
+state of diaphthora. Illusions of purity and the desire for order have replaced
+real politics; that is the problem.
+
+
+
+                                                                            Notes
+
+Many of the ideas and arguments presented here were developed during numerous
+discussions with Constantine Tsoukalas, without whose input and encourage-
+ment this essay would not have been possible. Stanley Aronowitz, John Bowman,
+Andreas Karras, Lenny Markovitz, Eleni Natsiopoulou, Frances Fox Piven, and
+Yannis Stavrakakis have read earlier versions of this essay and have provided
+important comments and suggestions. This essay has also benefited greatly from
+the input of Randy Martin and the Social Text editorial collective.
+
+      1. For a discussion of the various ways that political corruption has been
+defined, see Heidenheimer, Johnston, and LeVine (1989). They argue that there
+are three ways: “public office centered,” as a deviation from the requisites of
+public office; “market centered,” as rent-seeking activity by civil servants; and
+“public interest centered”’ as action that does damage to the public interest. All
+three of these definitions contain the idea that the public is subverted by the pri-
+vate.
+      2. Aristotle sometimes identifies four types of constitution, including oli-
+garchy in the list and replacing polity with democracy.
+      3. The standard definition of diaphthora can be found in the Liddle-Scott
+Greek-English lexicon, which is available online at www.perseus.tufts.edu.
+
+
+
+                                                  The Construction of Corruption       29
+          4. Peter Euben (1989) has equated the term stasis, not diaphthora, with polit-
+     ical corruption. Stasis refers to the destruction and fracturing of the political
+     community, and thus can also easily be thought of as diaphthora. As with diaph-
+     thora, stasis does not imply any question of public-private transgression.
+          5. This brief discussion of the categories of public and private necessarily
+     skips over many important questions and debates. A much more extended dis-
+     cussion of these points is needed to demonstrate the full import and causes of
+     this rise of the public-private split. Toward this end, and in addition to Kan-
+     torowicz, Norbert Elias’s The Civilizing Process (Malden, Mass.: Blackwell,
+     2000), particularly the discussions of how the king becomes transformed from a
+     feudal lord into a public functionary, is a seminal text.
+          6. Marcel Mauss’s The Gift (1990) is also relevant to this question. Accord-
+     ing to Mauss, “The very word ‘interest’ is itself recent, originally an accounting
+     technique: the Latin word interest was written on account books against the sums
+     of interest that had to be collected. In ancient systems of morality of the most
+     epicurean kind it is the good and pleasurable that is sought after, and not mater-
+     ial utility. The victory of rationalism and mercantilism was needed before the
+     notions of profit and the individual, raised to the level of principles, were intro-
+     duced. One can almost date — since Mandeville’s The Fable of the Bees— the tri-
+     umph of the notion of individual interest. Only with great difficulty and the use
+     of periphrasis can these two words be translated into Latin, Greek, or Arabic”
+     (76). See also Louis Dumont (1977) on the rise of these ideas.
+          7. The question of corruption is particularly confusing in the case of Machi-
+     avelli because already present in his work is the public-private split and the ques-
+     tion of interests, as when he states, “So the senators sent two ambassadors to beg
+     him to set aside private enmities, and in the public interest to make the nomina-
+     tion” (523). In this context, it is easy to accept Shumer’s argument that the sub-
+     version of the public by the private is one dimension of corruption for Machi-
+     avelli. But, even if we accept this argument, Hirschman is still correct in his
+     assessment, and the concept of corruption found in Machiavelli is still traditional
+     because private interests in this context function as bribery did in the earlier
+     example, as something that decreases virtue. Thus, private interests are bad in
+     themselves, and corruption is not simply the improper presence of private inter-
+     ests within the public. For example, the idea Shumer puts forth that average cit-
+     izens are corrupted by their privatization is completely unthinkable from the
+     point of view of the modern understanding of corruption. It does not make sense
+     in the modern context to say, for example, that voters are corrupt because they
+     vote according to their private interests. In fact, it is never possible to say that pri-
+     vate citizens are ever corrupt in the modern sense of the term (although they can
+     certainly be corrupting, as when they tempt public officials with bribes and
+     favors). This difference between the traditional and the modern understanding of
+     corruption is further examined in the next section of this essay.
+          8. Given that the modern concept of corruption becomes thinkable at any
+     point after the rise of the public-private split, it seems possible, in opposition to
+     both Mauss and Hirschman, that the modern use of the term occurs well before
+     either Mandeville (Mauss’s argument —The Fable of the Bees was published in 1714
+     with the revealing subtitle Private Vices, Publick Benefits) or the late eighteenth/
+     early nineteenth century (Hirschman’s argument). For example, Francis Bacon
+     was convicted of political corruption qua bribery in 1621. He famously con-
+
+
+
+
+30   Peter Bratsis
+fessed, “I am guilty of corruption and do renounce all defense.” Given the dom-
+inance of the two bodies doctrine in Elizabethan England and the relative novelty
+of convicting a judge for bribery (at that time, it was common for judges to
+receive gifts from winning parties), it seems likely that already with Bacon we
+have the use of the term of corruption in the modern sense. The important point
+here is that the rise of the modern concept of corruption should not be thought
+of as an event but, rather, as a process that begins with the rise of the two bodies
+doctrine and becomes fully realized by the time of the bourgeois revolutions of
+the eighteenth and nineteenth centuries.
+      9. Note the similarity of this understanding of corruption with the claim of
+bin Laden et al. that the presence of Westerners in the Middle East is a corrup-
+tion of the sacred spaces of Islam. There is nothing bad or evil about Americans
+as such; the problem is that they are out of place. The same logic has been used
+by German fascists; the basic political problem here is that things are out of
+place, and the political project of Nazism is to return things to their “proper”
+order. The problem with regard to the Jews and Gypsies is that there is no
+“proper” space to return them to; thus they are always a corruption. The only
+“solution” is to eliminate them altogether.
+      10. In addition to nearly all the contributions in what is undoubtedly the
+best-known and most authoritative collection of readings on the subject, Heiden-
+heimer, Johnston, and LeVine’s Political Corruption: A Handbook (1989), there
+are hundreds of essays in this tradition to be found in the many mainstream jour-
+nals that cater to area studies and comparative politics, particularly in reference
+to Asia, South America, Africa, and Eastern and Southern Europe.
+      11. Nearly all commentators on political corruption, including van Klavern,
+would readily admit that corruption occurs even in liberal capitalist societies.
+The main question is whether it exists as a transgression of accepted rules and
+institutional norms or whether is exists in a systemic way. Similarly, the question
+is often presented as one of frequency; corruption exists everywhere but there are
+pathological elements in underdeveloped societies that result in it being much
+more common there than in the developed world. Huntington (1989) says, “Cor-
+ruption obviously exists in all societies, but it is also obviously more common in
+some societies than in others and more common at some times in the evolution of
+a society than at other times” (377).
+      12. Douglas, mistakenly, assumes that frogs are clean because they are not
+listed by name in the relevant sections of Leviticus. She explains the apparent
+anomaly of a lizard being clean as a result of frogs having four feet and jumping
+(as opposed to other lizards, which do not have four feet and swarm and creep).
+That frogs, despite their having four feet and hopping, are unclean can easily be
+explained by their amphibious nature.
+      13. The common dictum “cleanliness is next to godliness,” apparently
+derived from an old Hebrew proverb, makes sense in this context.
+      14. The partial exception in some states within Australia (New South Wales,
+Queensland, and Western Australia). All three have recently passed laws against
+corruption that are very broad and general.
+      15. Obviously, this general prohibition against linking gifts to past or future
+actions simply requires that the exchange not be explicitly linked to actions; giv-
+ing a gift or contribution is fine as long as it is not presented as an exchange for
+some action.
+
+
+
+
+                                                   The Construction of Corruption       31
+           16. As with the savings and loan scandals of the late 1980s, it is almost
+     always acceptable for members of Congress to lend support to business interests,
+     but when it appears as being too much support, whatever that may be judged to
+     be, it can be said to violate the rules of separation precisely because people judge
+     it as too much, because it does not “reflect creditably” on the state apparatuses.
+     When it comes to having supported savings and loans that failed and cost tax-
+     payers billions of dollars, it appears that the threshold for what constitutes too
+     much is lower than usual. In this respect, it may very well be the case that the
+     only reason Shuster was investigated and reproved by the CSOC is because the
+     Journal of Commerce published an article raising suspicions about Shuster’s activ-
+     ities and because he was also the object of an investigation by the 60 Minutes tele-
+     vision program.
+           17. It should be noted that the two bodies doctrine not only establishes the
+     modern split of the public and private but also makes possible the modern fiction
+     of the corporation. This was recognized by Kantorowicz and he documents the
+     rise of the legal fiction of the corporation (1957, 291– 313). See also Stoljar 1973.
+           18. Of course there is much more going on when it comes to corporate cor-
+     ruption. Rules regarding accounting practices, stock trades, and the like are con-
+     stantly being adjusted and fought over in the ever shifting demarcation of what
+     constitutes a normal presence of private regarding in corporate life. Similarly, the
+     normatively loaded term of corruption comes to stigmatize a whole ensemble of
+     practices and moralizes these transgressions as the product of “evil” and “greedy”
+     individuals.
+
+
+
+                                                                           References
+
+     Arendt. Hannah. 1968. The origins of totalitarianism. San Diego, Calif.: Harvest
+          Books.
+     Aristotle. 1958. The politics of Aristotle. London: Oxford University Press.
+     Canguilhem, Georges. 1991. The normal and the pathological. New York: Zone
+          Books.
+     Committee on Standards of Official Conduct (U.S. House of Representatives).
+          2000a. In the matter of Representative E. G. “Bud” Shuster. Washington, D.C.:
+          U.S. Government Printing Office.
+     ———. 2000b. Letter of 4 October 2000 to Representative Bud Shuster. Wash-
+          ington, D.C.
+     ———. 2001. Highlights of House Ethics Rules. Washington, D.C.: U.S. Govern-
+          ment Printing Office.
+     Douglas, Mary. 1966. Purity and danger. London: Routledge.
+     Dumont, Louis. 1977. From Mandeville to Marx. Chicago: University of Chicago
+          Press.
+     Elias, Norbert. 2000. The civilizing process. Rev. ed. Malden, Mass.: Blackwell.
+     Euben, Peter. 1989. Political science and political corruption. In Political theory
+          and conceptual change, edited by T. Ball, J. Farr, and R. L. Hanson. Cam-
+          bridge, England: Cambridge University Press.
+     Foucault, Michel. 1965. Madness and civilization: A history of insanity in the age of
+          reason, translated by Richard Howard. New York: Pantheon.
+     Friedrich, Carl. 1989. Corruption concepts in historical perspective. In Political
+
+
+
+32   Peter Bratsis
+     corruption: A handbook, edited by Arnold J. Heidenheimer, Michael John-
+     ston, and Victor T. LeVine. New Brunswick, N.J.: Transaction.
+Habermas, Jürgen. 1991. The structural transformation of the public sphere. Cam-
+     bridge, Mass.: MIT Press.
+Harvey, F. D. 1985. Dona Ferentes: Some aspects of bribery in Greek politics.
+     History of political thought 6, nos. 1-2: 76 –117.
+Heidenheimer, Arnold J., Michael Johnston, and Victor T. LeVine. 1989. Terms,
+     concepts, and definitions: An introduction. In Political corruption: A hand-
+     book, edited by Arnold J. Heidenheimer, Michael Johnston, and Victor T.
+     LeVine. New Brunswick, N.J.: Transaction.
+Hirschman, Albert. 1977. The passions and the interests. Princeton, N.J.: Princeton
+     University Press.
+Huntington, Samuel. 1989. Modernization and corruption. In Political corruption:
+     A handbook, edited by Arnold J. Heidenheimer, Michael Johnston, and Victor
+     T. LeVine. New Brunswick, N.J.: Transaction.
+Kantorowicz, Ernst. 1957. The king’s two bodies. Princeton, N.J.: Princeton Uni-
+     versity Press.
+Machiavelli, Niccolo. 1970. The discourses. New York: Penguin.
+Mauss, Marcel. 1990. The gift. New York: W. W. Norton.
+Noonan, John T. 1984. Bribes. Cambridge, England: Cambridge University
+     Press.
+Nye, Joseph. 1989. Corruption and political development: A cost-benefit analy-
+     sis. In Political corruption: A handbook, edited by Arnold J. Heidenheimer,
+     Michael Johnston, and Victor T. LeVine. New Brunswick, N.J.: Transac-
+     tion.
+Philp, Mark. 1997. Defining political corruption. In Political corruption, edited by
+     Paul Heywood. Oxford, England: Blackwell.
+Shumer, Sara. 1979. Machiavelli: Republican politics and its corruption. Political
+     Theory 7, no. 1: 5 – 34.
+Stoljar, S. J. 1973. Groups and entities. Canberra: Australian National University
+     Press.
+van Klaveren, Jacob. 1989. Corruption: The special case of the United States. In
+     Political corruption: A handbook, edited by Arnold J. Heidenheimer, Michael
+     Johnston, and Victor T. LeVine. New Brunswick, N.J.: Transaction.
+
+
+
+
+                                                  The Construction of Corruption       33
+

@@ -1,0 +1,772 @@
+040   smith/46.4 (633-650)           9/15/05        11:29 AM         Page 635
+
+
+
+
+                                                         
+                                  D A N I E L                 W .         S M I T H
+
+
+                       The Inverse Side of the Structure:
+                         ZHizhek on Deleuze on Lacan*
+
+            I N AN INTERVIEW IN 1995, shortly before his death, Gilles Deleuze was asked by
+            French scholar Didier Eribon about his relationship with Jacques Lacan. In
+            response, Deleuze told the following story:
+                 Lacan noticed me when he devoted a session of his seminar to my book
+                 on Sacher-Masoch [1967].1 I was told—although I never knew any-
+                 thing more than this—that he had devoted more than an hour to my
+                 book. And then he came to a conference at Lyon, where I was then teach-
+                 ing. He gave an absolutely unbelievable lecture. . . . It was there that he
+                 uttered his famous formula, “Psychoanalysis can do everything except
+                 make an idiot seem intelligible.” After the conference, he came to our place
+                 for dinner. And since he went to bed very late, he stayed a long time. I
+                 remember: it was after midnight and he absolutely had to have a special
+                 whisky. It was truly a nightmare, that night.
+                    My only great encounter with him was after the appearance of Anti-
+                 Oedipus [1972].2 I’m sure he took it badly. He must have held it against
+                 us, Félix and me. But finally, a few months later, he summoned me—
+                 there’s no other word for it. He wanted to see me. And so I went. He
+                 made me wait in his antechamber. It was filled with people, I didn’t
+                 know if they were patients, admirers, journalists. . . . He made me wait
+                 a long time—a little too long, all the same—and then he finally
+                 received me. He rolled out a list of all his disciples, and said that they
+                 were all worthless [nuls] (the only person he said nothing bad about
+                 was Jacques-Alain Miller). It made me smile, because I recalled Bin-
+                 swanger telling the story of a similar scene: Freud saying bad things
+
+            *In this issue’s review section, Daniel W. Smith and Eleanor Kaufman review Slavoj ZHizhek’s Organs
+            without Bodies: On Deleuze and Consequences (New York: Routledge, 2004, pp. xii + 217. $21.95
+            paper) and ZHizhek responds. Such review fora, of which this is the first, will be a regular feature of
+            Criticism.
+
+            Criticism, Fall 2004, Vol. 46, No. 4, pp. 635– 650
+            Copyright © 2005 Wayne State University Press, Detroit, MI 48201
+
+                                                             635
+040   smith/46.4 (633-650)       9/15/05      11:29 AM      Page 636
+
+
+
+
+            636                                Daniel W. Smith
+                  about Jones, Abraham, etc. And Binswanger was shrewd enough to
+                  assume that Freud would say the same thing about him when he wasn’t
+                  there. So Lacan was speaking, and everyone was condemned, except
+                  Miller. And then he said to me, “What I need is someone like you” [C’est
+                  quelqu’un comme vous qu’il me faut.].3
+
+                  This is a revealing anecdote, for at least two reasons. First, one might say that
+            the disciple Lacan wound up “getting” was not Gilles Deleuze but Slavoj ZHizhek
+            (among others), which puts ZHizhek’s encounter with Deleuze in Organs without
+            Bodies (hereafter, OB) in an interesting retrospective light. Second, and more
+            importantly, Deleuze’s personal encounter with Lacan took place after the publi-
+            cation of Anti-Oedipus (hereafter, AO) in 1972. Anti-Oedipus presents, among
+            other things, a famous critique (though not rejection) of psychoanalysis, which
+            Deleuze and Guattari pursued, in part, by means of an engagement with Lacan’s
+            work. In this sense one could say that Deleuze was indeed a Lacanian, but in the
+            exact same manner that he was a Spinozist or a Leibnizian: he was neither a slav-
+            ish follower nor a dogmatic reader of Lacan, but followed the internal trajectory
+            of Lacan’s thought to the point where he would push it to its “differential” limit
+            (Deleuze’s all-too-well-known image of philosophical “buggery,” which makes
+            thinkers produce their own “monstrous” children). Despite Deleuze’s initial wor-
+            ries about Lacan’s reaction to Anti-Oedipus, Lacan obviously did not dismiss the
+            book. On the contrary, not only was his reading of the book the apparent basis of
+            his “summons” to Deleuze, but he even seems to have been influenced by Anti-
+            Oedipus in his own thinking. ZHizhek himself suggests that Lacan’s later work (after
+            Seminar XI in 1964) is marked by an increased interest in the theory of the drives
+            and anti-Oedipal themes (OB 102, 176). Given the complex status of the
+            drives that one finds elaborated in Anti-Oedipus (for instance, the thesis that the
+            “drives are part of the infrastructure itself,” AO 63), one can assume that Lacan
+            saw Deleuze neither as an antagonistic critic, nor even a potential bearer of ortho-
+            doxy (à la Miller), but rather a highly original fellow traveler.
+                  This is what makes Organs without Bodies a bit of a disappointment, as well
+            as a sharp departure from Lacan’s own relationship to Deleuze. It is not so much
+            that only about a quarter of ZHizhek’s book (if that) is actually devoted to Deleuze,
+            and the rest is ZHizhek doing his own thing. It is not even so much that ZHizhek mis-
+            reads Deleuze on this or that point: Deleuze himself wrote that “encounters
+            between independent thinkers always occur in a blind zone,” and this is certainly
+            true of the encounter between ZHizhek and Deleuze.4 The disappointment is that
+            even though ZHizhek describes Organs without Bodies as “a Lacanian book on
+            Deleuze” (OB xi), he winds up saying nothing whatsoever about Deleuze’s own
+            work on Lacan. This, perhaps, is just a thwarted expectation: I had hoped to find
+            in ZHizhek’s book a kind of guide through the complexities of the Deleuze-Lacan
+            encounter, yet nothing of the sort appears in the book. Instead, early on, ZHizhek
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 637
+
+
+
+
+                                      The Inverse Side of the Structure                           637
+            quickly and curtly dismisses Anti-Oedipus as “arguably Deleuze’s worst book”
+            (21) and immediately turns his attention elsewhere.
+                  In this, Organs without Bodies bears a strange resemblance to Alain Badiou’s
+            1997 book, Deleuze: The Clamor of Being. Badiou had seen Deleuze as his primary
+            rival in developing an “ontology of the multiple,” and he opens his book by
+            expressly declaring that the source of his controversy with Deleuze was their dif-
+            fering philosophical conceptions of “multiplicities.”5 Yet as one reads on, one
+            quickly discovers that the book does not contain a single discussion of Deleuze’s
+            theory of multiplicities; it ignores the topic entirely. Instead, Badiou is content
+            simply to reiterate, ad nauseum, the dubious claim that Deleuze is really just a
+            thinker of “the One”—almost like a politician avoiding reporters’ questions by
+            doggedly sticking to his talking points. ZHizhek admits that he relied “extensively”
+            on Badiou’s reading of Deleuze (OB 20n), and he rather slavishly adopts its the-
+            ses and winds up reproducing a number of its errors regarding “univocity” and
+            “vitalism” (Deleuze, ZHizhek dutifully repeats, is “the last great philosopher of the
+            One” [121; cf. 28]). But the resemblance to Badiou is stylistic as well as substan-
+            tive, since one finds a similar strategy of avoidance and displacement in ZHizhek’s
+            book—a “Lacanian” book on Deleuze that does not contain a single discussion of
+            Deleuze’s reading of Lacan. Taking up Deleuze’s own image, ZHizhek claims that he
+            is engaging in a kind of “Hegelian [and, one might add, Lacanian] buggery of
+            Deleuze” (48, italics in original). The ultimate aim of his book is to show us that
+            Deleuze is “much closer to psychoanalysis and Hegel” (xi) than we might have
+            expected—in other words, that Deleuze is really a kind of ZHizhekian avant la lettre
+            (69). As a result, ZHizhek’s reading of Deleuze, at its most positive, is often little more
+            than a transcription of Deleuze’s concepts into ZHizhek’s own Lacanian (and
+            Hegelian) terminology. One does not begrudge ZHizhek his project—he is certainly
+            one of the most engaging and prolific thinkers alive today—but then one won-
+            ders why the detour through Deleuze was necessary at all, except as a kind of
+            exercise in pop-Hegelian sublation.
+                  Nonetheless, there is a serious “reading” of Deleuze taking place in the midst
+            of all the buggery. ZHizhek issues his perfunctory dismissal of Anti-Oedipus (1972)
+            in order to elevate Logic of Sense (1969) to the status of Deleuze’s pivotal work (no
+            doubt, once again, in deference to the master, since Lacan also discussed Logic of
+            Sense in a session of his seminar). Deleuze himself summarized the fundamental
+            question he was attempting to address in the Logic of Sense in the following man-
+            ner: “How can we maintain both that sense produces even the states of affairs in
+            which it is embodied [sense as a principle of the production of beings], and that it
+            is itself produced by these states of affairs or the actions and passions of bodies
+            [sense as an impassive effect of material causes]?”6 ZHizhek feigns a certain surprise
+            that no one (before him) had perceived this tension (production versus effect)
+            that lies at the heart of Logic of Sense, and he claims that it in fact holds the key to
+            Deleuze’s entire work (OB 21). The “conceptual edifice” of Deleuze’s philosophy,
+040   smith/46.4 (633-650)       9/15/05      11:29 AM      Page 638
+
+
+
+
+            638                                Daniel W. Smith
+            ZHizhek argues, oscillates between these two “logics” of sense (or of the event),
+            which are “fundamentally incompatible” (20). “Is this opposition not that of
+            materialism versus idealism? In Deleuze this means: The Logic of Sense versus
+            Anti-Oedipus” (21). Put summarily, one finds two competing ontologies in
+            Deleuze—one good, the other bad and naïve: “sense as effect” is the good ontol-
+            ogy, “sense as production” is the bad ontology. Sense as “effect” is good because it
+            is Lacanian: the event is the irruption of the Real within the domain of causality
+            (produced by a “quasi-cause,” which ZHizhek revealingly identifies as both “the
+            exact equivalent of Lacan’s objet petit a” [27] as well as Deleuze’s “name for the
+            Lacanian ‘phallic signifier’” [93]—thereby conflating the two poles of Lacan’s
+            theory of desire that Deleuze kept separate). “The basic premise of Deleuze ontol-
+            ogy [in Logic of Sense] is precisely that corporeal causality is not complete. In the
+            emergence of the New, something occurs that cannot be described at the level of
+            corporeal causes and effect” (27). This something is the event, that is, “the point
+            of non-sense sustaining the flow of sense . . . [which] fills in the gap of corporeal
+            causality” (28, 27). This gap entails a “positive notion of lack, a ‘generative’
+            absence” (35), “an irreducible crack in the edifice of Being” (41). This gap is the
+            true domain of politics, since it marks the difference between “the explosion of
+            revolutionary Events” and the “‘objective’ material/socioeconomic processes tak-
+            ing place in reality” (32). Hence the dualism that Badiou establishes between
+            “being” and “event.”
+                  For this reason, the sole interpretive question that arises for ZHizhek is this:
+            how and why did Deleuze move from the beautifully Lacanian Logic of Sense to
+            the misguided and non-Lacanian Anti-Oedipus? The response to this question ini-
+            tially seems ad hominem: the culprit is the Félix Guattari virus that infected
+            Deleuze’s thought. Like many others (Derrida, Badiou), ZHizhek makes a rather easy
+            distinction between the “good” Deleuze (the solo Deleuze) and the “bad” Deleuze
+            (Deleuze with Guattari). Guattari’s influence was partly political; the solo
+            Deleuze, ZHizhek notes, was “a highly elitest author, indifferent to politics” (OB 20).
+            Deleuze himself admitted that Anti-Oedipus had indeed marked a profound
+            transformation in his work: “For my part, I made a sort of move into politics
+            around May 68, as I came into contact with specific problems, through Guattari,
+            through Foucault, through Elie Sambar. Anti-Oedipus was from beginning to end
+            a book of political philosophy.”7 But behind the ad hominem musings there lies
+            a more substantive claim: “The only serious philosophical question is what inher-
+            ent impasse caused Deleuze to turn toward Guattari?” (20). According to ZHizhek,
+            the impasse was precisely the tension between the good ontology and the bad
+            ontology: “Was Deleuze not pushed toward Guattari because Guattari repre-
+            sented an alibi, an easy escape from the deadlock of his previous position” (21).
+            The easy escape was the abandoning of a good Lacanian ontology (event as effect)
+            for a bad Guattarian ontology (event as production and becoming): “Deleuze
+            deploys the One-Substance as the indifferent medium of multitude” (33). Such,
+            in short, is the upshot of the story that one finds in ZHizhek’s brief engagement with
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 639
+
+
+
+
+                                      The Inverse Side of the Structure                          639
+            Deleuze: a good Lacanian moment in Logic of Sense is immediately betrayed by
+            Anti-Oedipus and the evil Félix Guattari. If Deleuze had stuck with the insights of
+            Logic of Sense, he would have been able to enter into a becoming-ZHizhek, and not
+            wandered off into the desert of Guattari.
+                  But would it be possible to follow Lacan himself and read Anti-Oedipus as
+            something other than Deleuze’s worst book? How can we understand Lacan’s own
+            positive reaction to Anti-Oedipus? Is there perhaps a fidelity to Lacan’s thought in
+            Anti-Oedipus that is more profound than the rather easy appropriation found in
+            Logic of Sense? ZHizhek is certainly correct to sense a shift in Deleuze’s thought
+            between Logic of Sense and Anti-Oedipus. “The surface-depth problem [of Logic of
+            Sense] no longer concerns me,” Deleuze remarked in a 1973 interview. “What
+            interests me now are the relations between a full body, a body without organs, and
+            flows that migrate.”8 And ZHizhek is also correct to sense that this shift had some-
+            thing to do with Deleuze’s association with Guattari. Deleuze later explained:
+            “Oddly enough, it wasn’t me who rescued Félix from psychoanalysis; he rescued
+            me. In my study on Masoch, and then in Logic of Sense, I thought I’d discovered
+            things about the specious unity of sadism and masochism, or about events, that
+            contradicted psychoanalysis but could be reconciled with it. Félix, on the other
+            hand, had been and was still a psychoanalyst, a student of Lacan’s, but like a ‘son’
+            who already knew that reconciliation was impossible. Anti-Oedipus marks a
+            break.”9 But what ZHizhek does not seem to realize (as Lacan obviously did) is that
+            Deleuze’s break with psychoanalysis was brought about by none other than Lacan
+            himself. Anti-Oedipus is, from start to finish, a reading of Lacan, and no doubt it
+            would have had Lacan’s name in the title had not so much else been going on in
+            the book. Lacan is often presented as having effected a linguistic and structural
+            reinterpretation of Freud. For Deleuze, however, this is not where Lacan’s signifi-
+            cance lies. “It’s all very well to say to us: you understand nothing, Oedipus, it’s not
+            daddy-mummy, it’s the symbolic, the law, the arrival of culture, it’s the effect of the
+            signifier, it’s the finitude of the subject, it’s the ‘lack-of-being’ [manqué-à-être]
+            which is life.”10 Lacan’s significance, rather, lies in the way in which he was able to
+            push psychoanalysis to the point of its auto-critique, and it is precisely this Lacan-
+            ian critique of psychoanalysis that Deleuze and Guattari take up and pursue in
+            Anti-Oedipus. “There are problems that troubled Freud toward the end of his life:
+            something is not right with psychoanalysis, something is stuck. Freud thought
+            that it was becoming endless, the cure looked interminable, it was going nowhere.
+            And Lacan was the first to indicate how far things had to be revamped.”11 Despite
+            its reputation, Anti-Oedipus does not contain a single negative comment about
+            Lacan, although it is occasionally critical of the direction his thought was taken by
+            certain of his disciples, and of the orthodoxy that grew up around him.
+                  This is all the more reason to regret the fact that ZHizhek, as a Lacanian, chose to
+            overlook the Deleuze-Lacan encounter and to dismiss Anti-Oedipus in a way that
+            Lacan himself did not. Perhaps someday a reader with the competence to do so will
+            analyze the outlines and the consequences of this encounter.12 Lacking that
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 640
+
+
+
+
+            640                                 Daniel W. Smith
+            competence, I can at least list a number of points that might be relevant to such an
+            analysis, some of which ZHizhek has touched on, at least in passing, in his book.
+
+
+                                     Immanence and Transcendence
+
+                  Deleuze has presented himself, famously, as a philosopher of immanence, and
+            his critique of psychoanalysis is undertaken from the perspective of immanence.
+            What Is Philosophy? identifies three types of transcendence that have been constant
+            temptations away from immanence: (1) contemplation, or the transcendence of the
+            Idea (Plato); (2) reflection, or the transcendence of the Subject (Kant); and then (3)
+            a third type, which we might call the transcendence of the Breach or Rupture. “In
+            this modern moment,” Deleuze writes, “we are no longer satisfied with thinking
+            immanence as immanent to a transcendent; we want to think transcendence within
+            the immanent, and it is from immanence that a breach is expected.”13 In other
+            words, to cite some well-known examples, it is from within immanence itself that
+            one now seeks to locate “inconsistency” or the “void” (Badiou), or from which one
+            seeks to find a “gap” or “rupture” within immanence, the “irruption” of the Real.
+            Whatever the terminology, Deleuze suggests, it is always the same model—”mak-
+            ing us think that immanence is a prison from which the Transcendent will save
+            us.”14 ZHizhek candidly admits that this modern model of transcendence is his own
+            model: “‘Transcendence’ is the illusory reflection of the fact that the immanence of
+            phenomena is ruptured, broken, inconsistent” (OB 61). This new conception of
+            transcendence, he notes, no longer refers either to a Beyond (God) or a Subject, but
+            rather to “the gap within immanence” (62). Immanence is what is given, what is
+            actual; we therefore need to discover the breach, the rupture, the gap, the torsion
+            or twist, that will save us from the actuality of the immanent (Being as multiple)
+            through an irruption of the new (the Event, the transcendence within immanence).
+            ZHizhek then asks the necessary question: “What if this gap in immanence is what
+            Deleuze cannot accept?” (61). And ZHizhek is indeed correct: Deleuze does not accept
+            this modern appeal to transcendence in psychoanalytic thought. “How many inter-
+            pretations of Lacanianism,” Deleuze asks, “overtly or secretly pious, have in this
+            manner invoked . . . a gap in the Symbolic? . . . Despite some fine books by certain
+            disciples of Lacan, we wonder if Lacan’s thought really goes in this direction” (AO
+            83, 53). In other words, it is out of fidelity to Lacan’s thought that Deleuze rejects the
+            appeal to a gap in immanence.
+
+
+                                           The Status of the Real
+
+                  How then does Deleuze break with this model? In certain respects, what is
+            at stake in this question is the status of the Real, in the Lacanian sense, and ZHizhek
+            recognizes this. “What matters to Deleuze is not virtual reality but the reality of the
+            virtual (which, in Lacanian terms, is the Real)” (OB 3). In fact, Deleuze and Guat-
+            tari explicitly characterize Anti-Oedipus as being, from start to finish, a theory of
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 641
+
+
+
+
+                                      The Inverse Side of the Structure                          641
+            the Real. “We were unable to posit any difference in nature, any border line, any
+            limit at all between the Imaginary and the Symbolic. . . . The true difference in
+            nature is not between the Symbolic and the Imaginary, but between the Real
+            machinic element, which constitutes desiring-production, and the structural
+            whole of the Imaginary and the Symbolic, which merely forms a myth and its
+            variants” (AO 83). The aim of the book, they tell us, is “to renew, at the level of the
+            Real, the tie between the analytic machine, desire, and production” (53). In their
+            language, the Real = desiring - production. The unconscious “is neither Imagi-
+            nary nor Symbolic, it is the Real in itself, the ‘impossible real’ and its produc-
+            tion. . . . The machines of desire . . . constitute the Real in itself, beyond or beneath
+            the Symbolic as well as the Imaginary” (53). (Deleuze and Guattari will nonethe-
+            less insist that “the real is not impossible; on the contrary, within the Real every-
+            thing is possible, everything becomes possible. . . . It is only in the structure [the
+            symbolic] that the fusion of desire with the impossible is performed, with lack
+            defined as castration” [27, 306]). What is it that allows Deleuze to link the Real
+            with the theory of desire in this manner (desire = production)?
+
+
+                                       The Kantian Theory of Desire
+
+                  Anti-Oedipus can be said to find its primary model in the Critique of Practical Rea-
+            son, since it was Kant who first defined the faculty of desire as a productive faculty (“a
+            faculty which, by means of its representations, is the cause of the actuality of the
+            objects of those representations”).15 We know why Kant defined desire in terms of
+            production: the problem of freedom concerns the operation by which a free being
+            can be the cause of something that is not reducible to the causal determinism of
+            mechanism. Of course, Kant was aware that real objects could be produced only by
+            an external causality and external mechanisms; in what he called “pathological” pro-
+            ductions of desire, what is produced is merely a psychic reality (having a fantastic, hal-
+            lucinatory, or delirious object) (AO 25). Nonetheless, this was Kant’s Copernican
+            Revolution in practical philosophy: desire is no longer defined in terms of lack (I
+            desire something because I don’t have it), but rather in terms of production (I produce
+            the object because I desire it). The fundamental thesis of Anti-Oedipus is a stronger
+            variant of Kant’s claim; Kant pushed to his necessary conclusion: “If desire produces,
+            its product is real,” and not merely a fantasy (26). “There is no particular form of exis-
+            tence that can be labeled ‘psychic reality’” (27). Indeed, Deleuze states this conclu-
+            sion in explicitly Lacanian terms: “The objective being of desire is the Real in and of
+            itself” (the subject itself is a product of desire) (27).
+
+
+                                           Desire and Immanence
+
+                 But Deleuze is clearly not a Kantian in any straightforward sense. For Kant,
+            the fundamental question concerns the higher form (nonpathological) of the fac-
+            ulty of desire: a faculty has a higher form when it finds within itself the law of its
+040   smith/46.4 (633-650)         9/15/05      11:29 AM       Page 642
+
+
+
+
+            642                                  Daniel W. Smith
+            own exercise, and thus functions autonomously. The higher form of desire is
+            what Kant calls the “will”: desire becomes will when it is determined by the rep-
+            resentation of a pure form (the moral law), which is the pure form of a universal
+            legislation (the categorical imperative). In Kant, however, freedom, as the “fact”
+            of morality, requires as it postulates the three great transcendent Ideas of the Soul,
+            the World, and God. It is precisely the transcendence of the Moral Law that ren-
+            ders its object unknowable and elusive. Was this not what Lacan himself showed
+            in his famous essay “Kant avec Sade,” to which Deleuze admits his indebted-
+            ness?16 Anti-Oedipus can thus be said to have effected an immanent inversion of
+            Kant (though it is no longer concerned with the synthesis of consciousness, but
+            with the syntheses of the unconscious). In the first two chapters of Anti-Oedipus,
+            Deleuze provides a purely immanent characterization of the three syntheses of
+            the unconscious—connection (which forms a counter-Self, and no longer a Soul),
+            conjunction (which forms a “chaosmos” and no longer a World), and disjunction
+            (which exchanges its theological principle for a diabolical one)—and shows how
+            desire (as the principle of production) constitutes the Real by tracing series and
+            trajectories following these syntheses within a given social assemblage. “The Real
+            is the end product, the result of the passive syntheses that engineer partial syn-
+            theses of desire as auto-production of the unconscious.”17
+
+
+                                              Lacan’s Oscillation
+
+                  But, Deleuze asks, was not Lacan’s own thought already moving in this
+            immanent direction in 1972? In Anti-Oedipus, Deleuze and Guattari identified
+            two poles in Lacan’s theory of desire (which ZHizhek seems to conflate): “Lacan’s
+            admirable theory of desire appears to us to have two poles: one related to ‘the
+            object small a’ as a desiring-machine, which defines desire in terms of a real pro-
+            duction, thus going beyond any idea of need and any idea of fantasy; and the
+            other related to the ‘great Other’ as a signifier, which reintroduces a certain notion
+            of lack” (AO 27n). The innovation of Anti-Oedipus was that it attempted to follow
+            the first path laid out by Lacan (an immanent concept of desire related to the objet
+            petit a), despite the efforts of Lacan’s “first disciples” (83) to push his thought in
+            the second “Oedipal” direction (desire related to the transcendence of the phal-
+            lic signifier). Deleuze and Guattari admit that the oscillation between these two
+            poles of desire was present within Lacan’s own thought:
+
+                  We owe to Jacques Lacan the discovery of this fertile domain of a code
+                  of the unconscious, incorporating the entire chain—or several
+                  chains—of sense: a discovery thus totally transforming analysis . . . The
+                  chains are called “signifying chains” because they are made up of signs,
+                  but these signs are not themselves signifying. . . . If the first disciples were
+                  tempted to re-close the Oedipal [Symbolic] yoke, didn’t they do so to
+040   smith/46.4 (633-650)       9/15/05      11:29 AM      Page 643
+
+
+
+
+                                     The Inverse Side of the Structure                         643
+                 the extent that Lacan seemed to maintain a kind of projection of the sig-
+                 nifying chains onto a despotic signifier? . . . The signs of desire, being
+                 non-signifying, become signifying in representation only in terms of a
+                 signifier of absence or lack.” (38, 83, italics added)
+
+            Following Lacan, Anti-Oedipus thus attempts to analyze the means by which the
+            legitimate and immanent syntheses of desire (partial connections, inclusive dis-
+            junctions, polyvocal conjunctions—the Real production of desire, the objet petit
+            a) are inverted and converted into illegitimate and transcendent syntheses (global
+            connections, exclusive disjunctions, biunivocal conjunctions—the Oedipal or
+            Symbolic representation of desire via the “phallic signifier”).
+
+
+                                    Lacan’s Anti-Oedipal Trajectory
+
+                  But once again, despite this oscillation, was it not Lacan himself who was
+            pushing psychoanalysis away from Oedipus and the Symbolic? ZHizhek complains
+            that “what Deleuze presents as ‘Oedipus’ is a rather ridiculous simplification, if
+            not an outright falsification, of Lacan’s position” (OB 80), pointing to the constant
+            references to “au-delà de l’Oedipe” in the last decades of Lacan’s teaching. But
+            Deleuze and Guattari would agree with this latter characterization—in their eyes,
+            Lacan is himself the great anti-Oedipal thinker (they approvingly cite Lacan’s
+            1970 claim that “I have never spoken of an Oedipus complex” [AO 53n]). Lacan,
+            they write, “was not content to turn, like the analytic squirrel, inside the wheel of
+            the Imaginary and the Symbolic” (308). The Real is the internal limit to any
+            process of symbolization, but it was not enough for Lacan to describe the Real,
+            negatively, as a resistant kernel within the symbolic process upon whose inter-
+            nalized exclusion the symbolic is constituted (negation or exclusion as constitu-
+            tive). Rather, Lacan was pushing psychoanalysis to “the point of its self critique”
+            (310), where the Real would be able to appear in all its positivity: “the point
+            where the structure, beyond the images that fill it [fantasies] and the Symbolic
+            that conditions it within representation, reveals its reverse side as a positive prin-
+            ciple of nonconsistency that dissolves it” (311, italics added). Deleuze and Guattari
+            thus present Anti-Oedipus as continuing a trajectory that was initiated by Lacan
+            himself. “It was inopportune to tighten the nuts and bolts where Lacan had just
+            loosened them . . . The object (small o) erupts at the heart of the structural equi-
+            librium in the manner of an infernal machine, the desiring-machine” (83).
+
+
+                                       The Real and Schizophrenia
+
+                 Deleuze’s term for the Real is “schizophrenia as a pure process” (which must
+            be distinguished from the schizophrenic as a clinical entity), and it is with this con-
+            cept that Deleuze takes Lacan’s thought to its limit and conclusion. “It is this entire
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 644
+
+
+
+
+            644                                 Daniel W. Smith
+            reverse side of the [symbolic] structure that Lacan discovers . . . schizophrenizing
+            the analytic field, instead of oedipalizing the psychotic field” (AO 309). Following
+            directions indicated by Lacan himself, Anti-Oedipus attempts to describe the Real
+            in all its positivity: differential partial objects or intensities that enter into indirect
+            syntheses; pure positive multiplicities where everything is possible (transverse
+            connections, polyvocal conjunctions, included disjunctions); signs of desire that
+            compose a signifying chain, but which are themselves non-signifying, and so on
+            (309). The domain of the Real is a “sub-representative field” (300), but Deleuze
+            does not hesitate to claim that “we have the means to penetrate the sub-
+            representational” (italics added).18 Conversely, if the Real is the sub-representative,
+            then “illusion” (if one wants to retain this word) only appears afterward, in the
+            actual: it is only within the symbolic (representation) that desire appears nega-
+            tively as lack, as castration. It is for this reason that Deleuze suggests that schizo-
+            phrenia provides a better clue to the nature of the unconscious and the Real than
+            neurosis: psychotics resist therapeutization because they have a libido that is too
+            liquid or viscous, they resist entry into the symbolic (foreclosure), mistaking
+            words for things. But “rather than being a resistance of the ego, this is the intense
+            outcry of all of desiring-production” (67). Some of Deleuze’s most profound texts
+            (such as “Louis Wolfson; or, The Procedure”) are those that analyze the specifically
+            schizophrenic uses of language, which push language to its limit and lay waste its
+            significations, designations, and translations.19 Deleuze suggests that the usual
+            negative diagnostic criteria that have been proposed for schizophrenia—dissoci-
+            ation, detachment from reality, autism—are, above all, useful terms for not listen-
+            ing to schizophrenics. But in the end, this problem is not specific to
+            schizophrenics: “we are all libidos that are too viscous and too fluid . . . [which]
+            bears witness to the non-oedipal quality of the flows of desire” (67; cf. 312).
+
+
+                                         The Body without Organs
+
+                 Hence, whereas Logic of Sense was content to remain at the surface of sense
+            (like Lewis Carroll), Anti-Oedipus can be said to have plunged into the depth of
+            bodies (Artaud): the logic of the passive syntheses (the Real) ultimately finds its
+            model in the body—or more precisely, the “body without organs.”20 This well-
+            known but complex Deleuzian notion has three fundamental components.
+            Schizophrenics experience their organs in a nonorganic manner, that is, as ele-
+            ments or singularities that are connected to other elements in the complex func-
+            tioning of a “machinic assemblage” (connective synthesis). But the breakdown of
+            these organ-machines reveals a second theme—that of the body without organs,
+            a nonproductive surface upon which the anorganic functioning of the organs is
+            stopped dead in a kind of catatonic stupor (disjunctive synthesis). These two
+            poles—the vital anorganic functioning of the organs and their frozen catatonic
+            stasis, with all the variations of attraction and repulsion that exist between
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 645
+
+
+
+
+                                      The Inverse Side of the Structure                          645
+            them—can be said to translate the entire anguish of the schizophrenic, which in
+            turn points to a third theme, that of intensive variations (conjunctive synthesis).
+            These poles are never separate from each other, but generate between them various
+            forms in which sometimes repulsion dominates, and sometimes attraction: the
+            paranoid form of schizophrenia (repulsion), and its miraculating or fantastic form
+            (attraction). Schizophrenics tend to experience these oscillating intensities (manic
+            rises in intensity, depressive falls in intensity . . . ) in an almost pure state. Beneath
+            the hallucinations of the senses (“I see,” “I hear”) and the deliriums of thought (“I
+            think”), there is something more profound, a feeling of intensity—that is, a becom-
+            ing or a transition (“I feel”). A gradient is crossed, a threshold is surpassed or
+            retreated from, a migration is brought about: “I feel that I am becoming woman,” “I
+            feel that I am becoming god,” “I feel that I am becoming pure matter. . . .” The inno-
+            vation of Anti-Oedipus is to have penetrated into this sub-representative, schizo-
+            phrenic domain of the body without organs and made use of it as the model for the
+            unconscious itself. The analysis of this unconscious entails a corresponding prac-
+            tice that Deleuze and Guattari will term “schizoanalysis.”
+
+
+                                   Psychoanalysis and Schizoanalysis
+
+                  What then is the difference between psychoanalysis and schizoanalysis? “Psy-
+            choanalysis settles on the imaginary [fantasy] and structural [symbolic] represen-
+            tatives of reterritorialization, while schizoanalysis follows the machinic indices of
+            deterritorialization” (AO 316). One can only admire the enthusiasm with which
+            ZHizhek analyzes the first movement, particularly in his section the “phallus” (the
+            “organ without a body” of the title) (see OB 87–95). The phallus, as the signifier of
+            castration, is what effects a desexualization of the libido, and makes possible the
+            “impossible” passage of the body (the drives) into symbolic thought, the passage
+            from bodily depth to surface event (symbolic castration). Deleuze and Guattari
+            could no doubt even agree with ZHizhek’s claim that Oedipus is an “operator of deter-
+            ritorialization” (83), insofar as every movement of deterritorialization (of the
+            drives) is accompanied by a reterritorialization (onto the symbolic). “Schizophre-
+            nia as a process, deterritorialization as a process,” they write, “is inseparable from
+            the stases that interrupt it, aggravate it, or make it turn in circles, and reterritori-
+            alize it into neurosis, perversion, and psychosis” (the latter being the three main
+            categories in Lacan’s diagnostic schema) (AO 318). Oedipus and castration are
+            indeed realities that psychoanalysis did not invent. But schizoanalysis, by con-
+            trast, moves in the exact opposite direction and seeks to locate the indices of deter-
+            ritorialization, within these reterritorializations, in a completely different manner
+            than psychoanalysis: “not the gaping wound represented in castration [the gap in
+            immanence], but the myriad little connections, disjunctions, and conjunctions”
+            that constitute the real movement of the immanent process of desire (314). Put
+            crudely, psychoanalysis begins with the symbolic and seeks out the “gaps” that
+040   smith/46.4 (633-650)       9/15/05     11:29 AM      Page 646
+
+
+
+
+            646                               Daniel W. Smith
+            mark the irruption of an “impossible” Real; whereas schizoanalysis starts with the
+            Real as the immanent process of desire and seeks to mark both the interruptions
+            of this process (reterritorializations) and its continuations and transformations
+            (becomings, intensities . . . ).
+
+
+                                       The Assembling of Desire
+
+                 The fundamental concept in Deleuze’s theory of desire is thus the concept of
+            the assemblage [agencement]. There exists a common but misguided critique of
+            Deleuze and Guattari that claims that in subtracting desire from lack, the law, and
+            castration, they wind up invoking a state of nature, a desire that would be a nat-
+            ural and spontaneous reality that winds up being repressed by society.21 But
+            Deleuze and Guattari’s argument is precisely the opposite: there is no desire other
+            than assembled [agencé] desire. “Desire is never either a ‘natural’ or a ‘sponta-
+            neous’ determination . . . never a ‘natural reality,’” writes Deleuze, but always
+            results from “a highly developed, engineered setup [montage] rich in interac-
+            tions,” and it can neither be grasped nor conceived apart from a determined social
+            assemblage or apparatus.22 Desire, as “desiring-production,” is both productive
+            and produced. Within any given assemblage of desire, there are, on the one hand,
+            rigid lines of sedimentation and reterritorialization that tend to “normalize”
+            desire, to “represent” or “symbolize” it; and then, on the other hand, there are
+            supple lines of creativity and deterritorialization (lines of flight or escape) that
+            allow the assemblage to transform itself, or even to break down in favor of a future
+            assemblage. These two types of vectors are immanent to any process of desire, to
+            every “desiring-machine.” What mechanisms of repression crush is not desire as
+            a natural given, but precisely these cutting edges of assemblages of desire (the
+            production of the new).23 The question at every moment concerns the vector that
+            desire is in the process of constructing or assembling (deterritorialization and
+            reterritorialization). But yet again, one must stress that it was Lacan himself who
+            posed the question of desire in terms of these two poles or vectors: “In Lacan, the
+            symbolic organization of the structure, with its exclusions that come from the
+            function of the signifier, has as its reverse side the real inorganization of desire”
+            (AO 328, italics added; cf. 39).
+
+
+                              Desexualization and Political Philosophy
+
+                 Finally, a brief comment about the relationship between Deleuze’s political
+            philosophy and his theory of desire. Freud held strongly to the hypothesis that
+            the libido does not invest the sociopolitical field except on the condition that it
+            be “desexualized” or “sublimated”—a hypothesis that ZHizhek takes up and
+            defends (“Sexuality can universalize itself only by way of desexualization” [OB
+            91]). Deleuze and Guattari explicitly reject this Freudian principle. “Our entire
+040   smith/46.4 (633-650)        9/15/05      11:29 AM       Page 647
+
+
+
+
+                                      The Inverse Side of the Structure                          647
+            hypothesis is, on the contrary, that the social field is invested by a sexual libido as
+            such, and that this is in fact the fundamental activity of the libido.”24 The concepts
+            of sublimation and desexualization are linked to the implicit familialism of psy-
+            choanalysis. “At least in the beginning,” the argument goes, the unconscious is
+            expressed in familial relations, and social relations only arise afterward. “‘Sym-
+            bolic castration’ is a way for the subject to be thrown out of the family network,
+            propelled into a wider social network” (83). Against this familiar Freudian notion,
+            Deleuze and Guattari not only argue that the libido directly invests social
+            relations without any mediation (such as introjection/projection, desexualization/
+            sublimation, or symbolization), but that this investment is there from the start,
+            at the level of the drives. One of the most profound and far-reaching theses of
+            Anti-Oedipus is that the libidinal economy of Freud and the political economy of
+            Marx are one and the same economy (“affects or drives form part of the infra-
+            structure itself” [AO 53]), even if they have different regimes. The concept of the
+            assemblage is itself derived from this insight. It is not through a desexualizing
+            extension that the libido invests sociopolitical relation; “on the contrary, it is
+            through a restriction, a blockage, and a reduction that the libido is made to
+            repress its flows in order to contain them in the narrow cells of the type ‘couple,’
+            ‘family,’ ‘person,’ ‘objects’” (293). In effect, this thesis is the basis of the political
+            philosophy Deleuze begins to develop in Anti-Oedipus and continues in A Thou-
+            sand Plateaus, although ZHizhek seems largely oblivious to it. Hence, it is difficult to
+            know what ZHizhek means when he characterizes Deleuze as “the ideologist of late
+            capitalism” (184), since he says nothing of either Deleuze’s analysis of capitalism
+            or his critique of the concept of ideology.
+                 These points, to be sure, hardly constitute a reading of Anti-Oedipus, one of
+            Deleuze’s most difficult and ambitious texts, and can do little more than point
+            toward the direction of future work. But what is striking about Anti-Oedipus is the
+            degree to which Deleuze and Guattari fully admit their indebtedness to Lacan
+            and describe their project as an attempt to take Lacan’s profound thought to its
+            differential and immanent conclusion. As Deleuze explained:
+
+                 Félix had talked to me about what he was already calling “desiring-
+                 machines”: he had a whole theoretical and practical conception of the
+                 unconscious as a machine, of the schizophrenic unconscious. So I
+                 myself thought he had gone further than I had. But for all his uncon-
+                 scious machinery, he was still talking in terms of structures, signifiers,
+                 the phallus, and so on. That was hardly surprising, since he owed so
+                 much to Lacan (just as I did). But I felt it would all work even better if
+                 one found the right concepts, instead of using notions that didn’t even
+                 come from Lacan’s creative side, but from an orthodoxy built up around
+                 him. Lacan himself says, “I’m not getting much help.” We thought we’d
+                 give him some schizophrenic help. And there’s no question that we’re
+040   smith/46.4 (633-650)        9/15/05      11:29 AM      Page 648
+
+
+
+
+            648                                 Daniel W. Smith
+                  all the more indebted to Lacan, once we’ve dropped notions like struc-
+                  ture, the symbolic, or the signifier, which are thoroughly misguided
+                  [mauvaises], and which Lacan himself has always managed to turn on their
+                  head in order to show their inverse side.25
+            In this sense, Deleuze can be seen as one of Lacan’s most profound, but also most
+            independent, disciples, inventing a whole new set of concepts to describe the
+            inverse side of the symbolic structure. He followed a completely different path
+            than the other disciples, such as Jacques-Alain Miller, the keeper of orthodoxy;
+            Alain Badiou, who gives an axiomatic treatment of the symbolic; or ZHizhek him-
+            self, the Lacanian reader of contemporary culture. The admiration Lacan and
+            Deleuze had for each other’s work was obviously deep and full of respect. Deleuze
+            once wrote: “My ideal, when I write about an author, would be to write nothing
+            that could cause him sadness,” and this was no doubt true of his treatment of
+            Lacan in Anti-Oedipus.26 In return, Lacan once said of a book critical of his work,
+            “I have never been so well read—with so much love,” and one can almost imag-
+            ine him making the same remark of Anti-Oedipus.27 Perhaps one day, someone
+            with the competence and patience will provide us with a more complete reading
+            of the way in which Deleuze took up and developed Lacan’s thought—and per-
+            haps the way in which Lacan took up and develops Deleuze’s insights in his later
+            work. ZHizhek, unfortunately, is not that person. Organs without Bodies: Deleuze and
+            Consequences is a fascinating romp through the ZHizhekian universe, full of pene-
+            trating insights and illuminating jokes, but as a reading of Deleuze it adds little to
+            our understanding. The best place we have to go, still, for a Lacanian apprecia-
+            tion of Deleuze is not ZHizhek, but rather . . . Lacan himself.
+
+                                                                                  Purdue University
+
+
+                                                     Notes
+             1. Gilles Deleuze, Masochism: Coldness and Cruelty, trans. Jean McNeil (New York: Zone
+                Books, 1989).
+             2. Gilles Deleuze and Félix Guattari, Anti-Oedipus: Capitalism and Schizophrenia, trans.
+                Robert Hurley, Mark Seem, and Helen R. Lane (1972; Minneapolis: University of Min-
+                nesota Press, 1983).
+             3. “Le ‘Je me souviens’ de Gilles Deleuze” (interview by Didier Eribon) in Le Nouvel
+                Observateur 1619 (16–22 November 1995), 50–51.
+             4. Gilles Deleuze, Foucault, trans. Sean Hand (Minneapolis: University of Minnesota
+                Press, 1886), 42. Deleuze was speaking of Virilio’s relation to Foucault.
+             5. See Alain Badiou, Deleuze: The Clamor of Being, trans. Louise Burchill (Minneapolis:
+                University of Minnesota Press, 2000), 3–4.
+             6. Gilles Deleuze, Logic of Sense, trans. Mark Lester and Charles Stivale; ed. Constantin
+                V. Boundas (New York: Columbia University Press, 1988), 124. See also p. 96: “How
+040   smith/46.4 (633-650)          9/15/05       11:29 AM       Page 649
+
+
+
+
+                                        The Inverse Side of the Structure                               649
+                are we to reconcile these two contradictory aspects [of sense]? On one hand, we have
+                impassibility in relation to states of affairs and neutrality in relation to propositions; on
+                the other hand, we have the power of genesis in relation to propositions and in rela-
+                tion to states of affairs themselves.”
+             7. Gilles Deleuze “Control and Becoming,” interview with Antonio Negri, in Negotia-
+                tions, 1972–1990, trans. Martin Joughin (New York: Columbia University Press,
+                1995), 170. Elie Sambar was the editor of the Revue des études palestiniennes.
+             8. Gilles Deleuze, Desert Islands and Other Texts, 1953–1974, ed. David Lapoujade, trans.
+                Michael Taormina (New York: Semiotext(e), 2004), 261, in the discussion following
+                “Nomad Thought.”
+             9. Deleuze, “On Philosophy,” in Negotiations, 144.
+            10. Gilles Deleuze and Claire Parnet, Dialogues, trans. Hugh Tomlinson and Barbara Hab-
+                berjam (New York: Columbia University Press, 1987), 81.
+            11. Deleuze, “Capitalism and Schizophrenia,” in Desert Islands, 234.
+            12. Eugene Holland’s Deleuze and Guattari’s Anti-Oedipus: Introduction to Schizoanalysis
+                (New York: Routledge, 1999) is an excellent analysis of Anti-Oedipus, though it treats
+                Deleuze’s links with Lacan only in passing (see, e.g., 89–91).
+            13. Gilles Deleuze and Félix Guattari, What Is Philosophy? trans. Hugh Tomlinson and
+                Graham Burchell (New York: Columbia University Press, 1991), 47.
+            14. Ibid.
+            15. Immanuel Kant, Critique of Judgment, trans. James Creed Meredith (Oxford: Oxford
+                University Press, 1952), Introduction, 3, footnote 1, 16.
+            16. Jacques Lacan, “Kant avec Sade, in Écrits (Paris: Seuil, 1966), 765–90. For Deleuze’s
+                use of Lacan’s reading of Sade, see his “Humor, Irony, and the Law,” in Masochism,
+                81–90.
+            17. Deleuze and Guattari, Anti-Oedipus, 26–27. At one point, Deleuze and Guattari
+                describe the project of Anti-Oedipus in explicitly Kantian terms: “In what he termed
+                the critical revolution, Kant intended to discover criteria immanent to understanding
+                so as to distinguish the legitimate and the illegitimate uses of the syntheses of con-
+                sciousness. In the name of transcendental philosophy (immanence of criteria), he
+                therefore denounced the transcendent use of the syntheses such as appeared in meta-
+                physics. In a like fashion, we are compelled to say that psychoanalysis has its meta-
+                physics—its name is Oedipus. And that a revolution—this time materialist—can
+                proceed only by way of a critique of Oedipus, by denouncing the illegitimate use of
+                the syntheses of the unconscious as found in Oedipal psychoanalysis, so as to redis-
+                cover a transcendental unconscious defined by the immanence of its criteria, and a
+                corresponding practice that we shall call schizoanalysis” (75).
+            18. Deleuze, “The Method of Dramatization,” in Desert Islands, 115.
+            19. See Gilles Deleuze, “Louis Wolfson; or, The Procedure,” in Essays Critical and Clinical,
+                trans. Daniel W. Smith and Michael A. Greco (Minneapolis: University of Minnesota
+                Press, 1997), 7–22. See also Anti-Oedipus, 310: “Elisabeth Roudinesco has clearly
+                seen that, in Lacan, the hypothesis of an unconscious-as-language does not closet the
+                unconscious in a linguistic structure, but leads linguistics to the point of its auto-
+                critique, by showing how the structural organization of signifiers still depends on a
+                despotic Great Signifier acting as an archaism.”
+040   smith/46.4 (633-650)         9/15/05      11:29 AM       Page 650
+
+
+
+
+            650                                  Daniel W. Smith
+            20. In Logic of Sense, the distinction between surface and depth is paralleled in the differ-
+                ence between Lewis Carroll (surface) and Antonin Artaud (depth), but Deleuze’s pref-
+                erence for Artaud and the dimension of depth (rather than surface) is already evident:
+                “We would not give a page of Artaud for all of Carroll. Artaud is alone in having been
+                an absolute depth in literature, and in having discovered a vital body and the prodi-
+                gious language of this body” (93).
+            21. Judith Butler, for instance, characterizes Deleuze and Guattari’s conception of desire
+                as “an originary unrepressed libidinal diversity subject to the prohibitive laws of cul-
+                ture,” an ahistorical or “pre-cultural ideal” à la Rousseau or Montesquieu, a “natural
+                eros which has subsequently been denied by a restrictive culture,” arguing that
+                Deleuze and Guattari promise “a liberation of that more original, bounteous desire.”
+                See Judith Butler, Subjects of Desire (New York: Columbia University Press, 1999),
+                214–15, 206. ZHizhek, happily, does not fall into this trap.
+            22. See Gilles Deleuze, “Desire and Pleasure,” in Foucault and His Interlocutors, ed. Arnold
+                I. Davidson (Chicago: University of Chicago Press, 1997), 185–86, and Gilles
+                Deleuze and Félix Guattari, A Thousand Plateaus, trans. Brian Massumi (Minneapolis:
+                University of Minnesota Press, 1981), 215.
+            23. See Deleuze, “Desire and Pleasure,” 186.
+            24. See Deleuze, seminar of 21 December 1971. Transcripts of many of Deleuze seminars
+                are available online at www.webdeleuze.com, thanks to the efforts of Richard Pinhas.
+            25. Deleuze, “On Anti-Oedipus,” in Negotiations, 13–14, translation modified; italics
+                added.
+            26. Deleuze and Parnet, Dialogues, 119.
+            27. Jacques Lacan, On Feminine Sexuality, the Limits of Love and Knowledge: The Seminar of
+                Jacques Lacan, Book 20, Encore, ed. Jacques-Alain Miller, trans. Bruce Fink (New York:
+                Norton, 1999), 62. I would like to thank Emily Zakin for this reference. Lacan was
+                speaking of Jean-Luc Nancy and Philippe Lacoue-Labarthe, The Title of the Letter: A
+                Reading of Lacan [1973], trans. François Raffoul and David Pettigrew (Albany: SUNY
+                Press, 1992).
+
