@@ -1,0 +1,4 @@
+= flatpak =
+
+
+[[flatpak usb sideload repo]]

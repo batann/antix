@@ -1,0 +1,11 @@
+= GPT Code =
+
+
+=== ChatGTP on Installing Archivebox on Linux ===
+[[ChatGTP on Installing Archivebox on Linux]]
+=== Chat GTP on installing Docker ===
+[[Chat GTP on installing Docker]]
+=== Installing Tyni Core OS incl XGUI and WIFI ===
+[[Installing Tyni Core OS incl XGUI and WIFI]]
+=== Vimwiki Folder and Directory Structure GPT ===
+[[Vimwiki Folder and Directory Structure GPT]]

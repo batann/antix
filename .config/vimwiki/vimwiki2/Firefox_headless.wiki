@@ -1,0 +1,21 @@
+= Firefox headless =
+`
+You can't run Firefox without all the Gtk libraries it requires, but that's easily solved by installing the libraries. Normally you would install Firefox through a package management system and this would pull in all the required libraries.
+
+To run Firefox normally, you need an X server (that's the part that displays the windows and their contents, as opposed to things like Gtk which are libraries that the applicattion uses to build the content). That's something you wouldn't usually run on a server. There are a very few things you can do in Firefox without an X server, I don't know if Selenium is one of them.
+
+To run Firefox on your server, run a “virtual” X server. A simple one is Xvfb (virtual framebuffer X server). It's in the X.org server distribution. Sample usage:
+`
+Xvfb :19 -screen 0 1024x768x16 &
+export DISPLAY=:19
+firefox &
+
+
+
+
+
+=== You can ===
+	use a Firefox in a virtual framebuffer:
+` xvfb-run -a firefox `
+	use == SlimerJS == (a embedded Gecko/rendering engine from Firefox) with xcfb,
+	use == PhantomJS == as embedded WebKit without the need for a display and selenium support via == GhostDriver == - if WebKit is OK for you.

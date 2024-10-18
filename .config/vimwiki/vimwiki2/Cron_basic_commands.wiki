@@ -1,0 +1,107 @@
+= Contents =
+        - [[#16 cron commands]]
+        - [[#16 basic cron command in Linux with Examples]]
+                - [[#1. How to schedule a cronjob for a particular time daily]]
+                - [[#2. How to list the crontab entry?]]
+                - [[#3. How to modify the cronjob for a different user?]]
+                - [[#How to list different user crontab entries?]]
+                - [[#How to schedule a cronjob for every single minute?]]
+                - [[#How to schedule a cronjob twice a day?]]
+                - [[#How to schedule a cronjob every 10 minutes?]]
+                - [[#How to schedule a cronjob for selective days?]]
+                - [[#How to schedule a cronjob for selective months?]]
+                - [[#How to use a special string in cron?]]
+                - [[#How to schedule a cronjob using @yearly special string?]]
+                - [[#How to schedule a cronjob using @monthly special string?]]
+                - [[#How to schedule a cronjob using @daily special string?]]
+                - [[#How to schedule a cronjob using @hourly special string?]]
+                - [[#How to execute a script/command after every reboot using @reboot special string?]]
+
+= 16 cron commands =
+
+
+= 16 basic cron command in Linux with Examples =
+
+== How to schedule a cronjob for a particular time daily ==
+
+	crontab -e
+
+	30 01 s s s   /usr/scripts/rsync_svnvmback.sh >/dev/null 2>&1
+
+== How to list the crontab entry? ==
+
+    crontab -l 30 01 s  s s /usr/scripts/rsync_svnvmback.sh >/dev/null 2>&1 
+
+== How to modify the cronjob for a different user? ==
+
+    crontab -u linuxteck -e 30 01 s  s  /usr/scripts/rsync_svnvmback.sh 
+
+== How to list different user crontab entries? ==
+
+    crontab -u linuxteck -l 30 01 s  s  s  /usr/scripts/rsync_svnvmback.sh 
+
+== How to schedule a cronjob for every single minute? ==
+
+    crontab -e s  s  s  s  s  /usr/scripts/rsync_svnvmback.sh 
+
+== How to schedule a cronjob twice a day? == 
+
+	00  06,20  s  s  s  /usr/scripts/mysqldump.sh >/dev/null 2>&1
+
+
+== How to schedule a cronjob every 10 minutes? ==
+
+	(The below entry can execute the command/script every 10 minutes consecutively)
+
+	s/10 s  s  s  s  /usr/scripts/rsync_svnvmback.sh
+
+== How to schedule a cronjob for selective days? == 
+	0 23  s  s  fri,sun  /usr/scripts/rsync_svnvmback.sh
+
+== How to schedule a cronjob for selective months? == 
+	0 23 s  jan,jul  s /usr/scripts/rsync_svnvmback.sh
+
+
+== How to use a special string in cron? == 
+
+
+	Keyword             Equivalent              Meaning
+	@yearly                    0 0 1 1 s       --> Execute once in a year
+	@monthly                0 0 1 s  s       --> Execute once in a month
+	@daily                      0 0 s  s  s       --> Execute once in a day
+	@hourly                   0 s  s  s  s      --> Execute once in a hour
+	@reboot                   --                     --> Execute once at
+	startup
+
+== How to schedule a cronjob using @yearly special string? == 
+
+	(The @yearly short code is equivalent to '0 0 1 1  s' )
+	
+	@yearly  /usr/scripts/yearly_archival.sh
+
+== How to schedule a cronjob using @monthly special string? == 
+
+	(The @monthly short code is equivalent to '0 0 1 s  s' )
+
+	@monthly  /usr/scripts/monthly-backup.sh
+
+== How to schedule a cronjob using @daily special string? == 
+
+	(The @daily short code is equivalent to '0 0 s s s' )
+
+	@daily  /usr/scripts/daily-temp.sh
+
+== How to schedule a cronjob using @hourly special string? == 
+
+	(The @hourly short code is equivalent to '0 s s s s' )
+
+	@hourly  /usr/scripts/hourly_rsync_svnvmback.sh
+
+== How to execute a script/command after every reboot using @reboot special string? ==
+
+	(The @reboot short code can be used to execute a set of commands/scripts after every restart of the server. For eg: After the reboot, we can execute a command /script to check the status of services like DNS, Apache status, etc.)
+
+	@reboot /usr/scripts/bootup_service_status.sh
+
+	Note: The above crontab script will be executed after every reboot. Here I have added the commands in the script to check the status of 'httpd, named, dhcpd' etc so that it will display the list of all the service status.
+

@@ -1,0 +1,105 @@
+
+w3m: Can't load dump.
+Calmar on: Fritz Chess (Chessbase.com) runs under Linux with WINE !!!
+
+I strongly suggest ICC or of course FICS
+
+Because chessbase is obviously a shitty company. I have a original CD. However
+they won't help to recover the nick or let me make a new one - DESPITE a valid
+Serial-Nr.
+
+They wanted a buy-reciept - what I don't have anymore. Why would they care, I
+have the orignal Software CD+Cover and original Serial Number etc.
+
+Als unlike in the past, there are not that many good players anymore to kibitz.
+
+So they shall have their 'meanness' in their own throat hopefully.
+
+Ich empfehle den ICC oder natuerlich den FICS und rate von Chessbase ab.
+
+Ich bin im Besitze einer gueltigen Seriennummer - nur ging der Nick verloren -
+anscheined geloescht meinten die. Die Seriennummer ist aber immer noch gueltig!
+Die helfen aber auf keine Weise, ausser ich wuerde den Kaufbeleg noch haben,
+was ich nicht habe.
+
+Aber ich habe alles originale, CD, Booklet, Seriennummer etc - daran zweifeln
+auch die nicht.
+
+Also wenn die nicht imstande sind den alten verloeren Nick wieder herzustellen,
+wieso kann ich keinen neuen machen? Fuer was zum Kuckuck habe ich eine gueltige
+Seriennummer??
+
+So sitze ich also auf dem Schaden.
+
+Ausserdem hat es wesentlich die besseren Spieler auf ICC - zwecks Kibitzen.
+Wird wohl auch seinen Grund haben - und das obwohl die Software ansich
+eigentlich fast besser ist als die ICC Varianten.
+
+So moege deren 'Geiz ist geil' und Kundenunfreundlichkeit doch in deren eigenen
+Kehlen steckenbleiben - fair ist fair.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Some Useful Links:
+
+  • http://www.winehq.com/ The Home of 'Wine'!
+  • http://www.chesslecture.com / Great Chess-Videos of all sorts (by IM/GM's)!
+    Huge Archive as well
+
+
+If you want to run Fritz 8/chessbase on Linux with the help of wine .. well it
+works on my machine:
+
+Installation:
+
+  • OS-Info: I have a linuxfromscratch.org in the version 5.0 running.
+  • With about all the packages which are in beyond.linuxfromscratch.org (e.g.:
+    Xfree 4.3.01,..
+  • I downloaded Wine-20041018.tar.gz, extracted the package with
+
+          tar -xzf Wine-20031212.tar.gz
+
+    moved into the package dir with:
+
+          cd wine-20041018
+
+    installed the package with:
+
+          ./tools/wineinstall
+
+  • I let the script make "make depend && make && make install".
+  • Then I let the script create the .wine/config file and I answered YES when
+    it asked me if I want a 'ONLY-Wine installation'.
+  • I provided the sript with a path to my 'artificial C: windows drive' when
+    it asked me about it. I have chosen ~/c (/home/calmar/c in my case) .. what
+    finally installed the packages in /usr/local and the 'fake C: drive in '/
+    home/calmar/c.
+  • I mounted the Fritz CD-Rom, and did a wine Setup.exe. That broke down with
+    an error message, that I need to copy a [windows]/winnt/system32/
+    stdole32.tlb to the fake Win-Drive. In my case : ~/c/windows/system. So I
+    did that (I had win2000 just on an other partition ... for webdevelopment,
+    I need IE). Then I tried again a 'wine Setup.exe' on the CD, and the
+    install process finished successfully!
+
+    Now I can execute Fritz with:
+
+          wine ~/c/Program
+          Files/ChessBase/ChessProgram8/ChessProgram8.exe
+
+    or create a script file, and place this anywhere into your $PATH
+
+          cat > fritz <<EOF
+          #!/bin/bash
+          wine /home/"username"/c/Program\
+          Files/ChessBase/ChessProgram8/ChessProgram8.exe
+          EOF
+          chmod a+x fritz
+
+have fun!
+
+
+please report errors or comments to calmar's mailbox .. thanks!
+
+Fritz in action on GNU Linux
+
+

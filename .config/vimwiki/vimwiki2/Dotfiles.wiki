@@ -1,0 +1,12 @@
+= dotfiles =
+
+https://wiki.archlinux.org/title/Dotfiles
+buku -p 849
+https://www.linkedin.com/pulse/exploring-dot-files-linux-customizing-your-user-environment
+buku -p 850
+https://yadm.io/docs/examples#
+buku -p 851
+https://www.freecodecamp.org/news/build-your-own-dotfiles-manager-from-scratch/
+buku -p 852
+https://www.freecodecamp.org/news/tag/linux/
+buku -p 853

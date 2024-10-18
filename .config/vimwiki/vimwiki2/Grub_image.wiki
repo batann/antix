@@ -1,0 +1,71 @@
+= Contents =
+    - [[#Grub-image]]
+            - [[#Install Dependencies:]]
+            - [[#Create a GRUB Image:]]
+            - [[#Mount the partition containing your ISOs.]]
+            - [[#Copy ISOs to the GRUB Image:]]
+            - [[#Install GRUB to the Image:]]
+            - [[#Configure GRUB:]]
+            - [[#Unmount Partitions:]]
+
+= Grub-image =
+
+
+=== Install Dependencies: ===
+Ensure you have the necessary tools installed. On a Debian-based system, you can use:
+``
+sudo apt-get install grub-pc grub-image xorriso
+``
+=== Create a GRUB Image: ===
+Run the following command to create a GRUB image:
+``
+grub-image --grub-setup=/bin/true
+``
+This will generate a file named grub.img.
+
+=== Mount the partition containing your ISOs. ===
+For example:
+``
+sudo mount /dev/sdX1 /mnt/iso_partition
+``
+=== Copy ISOs to the GRUB Image: ===
+Copy the contents of the ISOs to the GRUB image:
+``
+sudo cp -r /mnt/iso_partition/* /mnt/grub_partition/boot
+``
+=== Install GRUB to the Image: ===
+
+``sudo grub-install --no-floppy --force --modules="normal part_msdos ext2 iso9660 biosdisk" --boot-directory=/mnt/grub_partition/boot /dev/sdX
+``
+Replace /dev/sdX with the correct device for your GRUB partition.
+
+=== Configure GRUB: ===
+Create a grub.cfg file in the /mnt/grub_partition/boot/grub/ directory with the following content:
+``
+set timeout=10
+set default=0
+
+menuentry "ISO 1" {
+    set isofile="/boot/your_iso_file1.iso"
+    loopback loop $isofile
+    linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=$isofile splash --
+    initrd (loop)/casper/initrd.lz
+}
+
+menuentry "ISO 2" {
+    set isofile="/boot/your_iso_file2.iso"
+    loopback loop $isofile
+    linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=$isofile splash --
+    initrd (loop)/casper/initrd.lz
+}
+``
+# Add more entries for each ISO
+Update the entries with the correct paths to your ISO files.
+
+=== Unmount Partitions: ===
+Unmount the partitions:
+``
+sudo umount /mnt/iso_partition
+``
+Now, you can use grub.img to boot multiple ISOs from GRUB.
+

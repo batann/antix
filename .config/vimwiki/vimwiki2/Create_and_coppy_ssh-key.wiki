@@ -1,0 +1,145 @@
+= Contents =
+        - [[#How to Use Public Key Authentication with SSH]]
+        - [[#Generating SSH Key Pair]]
+                - [[#1. Open the terminal (CTRL+ALT+T).]]
+                - [[#2. Check for existing keys with:]]
+                        - [[#ls -l ~/.ssh/id*]]
+                - [[#3. Create the directory using the mkdir command for storing the new key pair:]]
+                        - [[#mkdir ~/.ssh]]
+                - [[#4. Change the permissions to 700:]]
+                        - [[#chmod 700 ~/.ssh]]
+                - [[#5. The following command starts the key generator:]]
+                        - [[#ssh-keygen]]
+                - [[#6. Finally, enter a passphrase to secure the key. Press Enter and confirm the]]
+                - [[#7. Lastly, the program prints out information about where the keys are stored.]]
+                - [[#8. Confirm the keys are in the directory by checking the contents:]]
+                        - [[#ls -l ~/.ssh/]]
+                - [[#1. On the server machine, check if the ~/.ssh folder exists:]]
+                        - [[#ls -l ~/.ssh/]]
+                        - [[#mkdir ~/.ssh]]
+                        - [[#chmod 700 ~/.ssh]]
+                - [[#2. Create a file called authorized_keys in the ~/.ssh directory:]]
+                        - [[#touch authorized_keys]]
+                        - [[#chmod 600 ~/.ssh/authorized_keys]]
+                - [[#3. Next, open the authorized_keys file using a text editor. Copy the public key]]
+                - [[#In Linux, use this command to copy the key automatically:]]
+                        - [[#ssh-copy-id <username>@<host>]]
+
+= How to Use Public Key Authentication with SSH =
+
+
+
+
+The SSH public key authentication has four steps:
+
+1. Generate a private and public key, known as the key pair. The private key
+stays on the local machine.
+
+2. Add the corresponding public key to the server.
+
+3. The server stores and marks the public key as approved.
+
+4. The server allows access to anyone who proves the ownership of the
+corresponding private key.
+
+The model assumes the private key is secured. Adding a passphrase to encrypt
+the private key adds a layer of security good enough for most user-based cases.
+For automation purposes, key management software and practices apply since the
+private key stays unprotected otherwise.
+
+= Generating SSH Key Pair =
+
+Generate the SSH key pair on the local server using OpenSSH. The basic
+instructions for Linux, macOS, and Windows are outlined below.
+
+== 1. Open the terminal (CTRL+ALT+T). ==
+
+== 2. Check for existing keys with: ==
+
+=== ls -l ~/.ssh/id* ===
+
+If there are keys already, the output shows the directory contents:
+
+Listing contents of the .ssh folderListing contents of the .ssh folder
+
+Generating new keys overwrites the current ones by default. However, stating a
+new name for the keys saves them to different files.
+
+If there are no existing keys, the output indicates the folder does not exist:
+
+Output message of no .ssh directoryOutput message of no .ssh directory
+
+== 3. Create the directory using the mkdir command for storing the new key pair: ==
+
+=== mkdir ~/.ssh ===
+
+== 4. Change the permissions to 700: ==
+
+=== chmod 700 ~/.ssh ===
+
+== 5. The following command starts the key generator: ==
+
+=== ssh-keygen ===
+
+The output prints out a message, indicating the command ran successfully. Next,
+the program asks where to save the file:
+
+Output of the ssh-keygen commandOutput of the ssh-keygen command
+
+The default directory and file for key storage is /home/<username>/.ssh/id_rsa.
+If you have existing keys you want to keep, enter a new file name. Otherwise,
+press Enter to save in the default location. If any keys already exist in this
+location, the program overwrites the data.
+
+== 6. Finally, enter a passphrase to secure the key. Press Enter and confirm the ==
+passphrase once more when requested. The password is required any time you use
+the key for authentication.
+
+Entering a passphrase for ssh-keygenEntering a passphrase for ssh-keygen
+
+== 7. Lastly, the program prints out information about where the keys are stored. ==
+Additionally, a digital and a graphic representation print to the console too.
+ 
+
+Output of generated keys from ssh-keygenOutput of generated keys from
+ssh-keygen
+
+== 8. Confirm the keys are in the directory by checking the contents: ==
+
+ === ls -l ~/.ssh/ ===
+
+
+The directory now contains two files:
+
+  • id_rsa is the private key.
+  • id_rsa.pub is the public key.
+
+
+== 1. On the server machine, check if the ~/.ssh folder exists: ==
+
+=== ls -l ~/.ssh/ ===
+
+If the directory is non-existent, create the folder:
+
+=== mkdir ~/.ssh ===
+
+Next, change the permissions with:
+
+=== chmod 700 ~/.ssh ===
+
+== 2. Create a file called authorized_keys in the ~/.ssh directory: ==
+
+=== touch authorized_keys ===
+
+Change the permissions:
+
+=== chmod 600 ~/.ssh/authorized_keys ===
+
+== 3. Next, open the authorized_keys file using a text editor. Copy the public key ==
+contents into the authorized_keys file. For multiple users and keys, copy each
+new key onto a new line. Save the file and close.
+
+== In Linux, use this command to copy the key automatically: ==
+
+=== ssh-copy-id <username>@<host> ===
+

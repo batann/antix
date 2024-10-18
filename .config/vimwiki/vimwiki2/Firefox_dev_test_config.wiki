@@ -1,0 +1,6 @@
+i
+
+
+https://github.com/mut-ex/minimal-functional-fox
+using firefox dev in /opt/firefox_dev/chrome
+

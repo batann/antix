@@ -1,0 +1,125 @@
+=HTML CSS=
+
+Mar 11, 2020
+
+·
+4 min read
+
+VIM for web-development (HTML/CSS) in 2020
+
+
+This article is about more than typing fast.
+
+Why would you want to use an editor that is almost 30 years old? Because it has
+come to stay, and isn’t it better to learn something that will stick around?
+Well, also because it is damn powerful.
+
+VIM is free and open source, VIM is probably already installed in your computer
+(if you are running UNIX). And VIM can be hard. But it does not have to be
+painful! In fact, it can make writing HTML and CSS a much nicer experience.
+
+Working every day with HTML and CSS made me look for plugins and configuration
+tweaks that allow me to move fast within and through files, maneuvering and
+editing those nice and readable chunks of indented HTML. OK, maybe they aren’t
+always that nice.
+
+VIM to the rescue.
+
+There are many approaches to VIM, some like to keep it minimal and some like to
+experiment with many plugins. We will not delve into this discussion:pick and
+choose from what you find useful in this post. Also strive to get better at
+vanilla VIM: it’s our safe haven. (Isn’t cit for changing inside a tag awesome
+by itself?)
+
+To follow this tutorial, you should be familiar with installing VIM plugins. I
+will be using vim-plug as my plugin manager of choice, just as I do in my
+personal work. Follow the link to understand how to install the plugins. If
+you’re starting with VIM, this YouTube series can help get you up and running
+
+All the code in this article goes into your .vimrc (for VIM) or init.vim (for
+neoVIM). The code that has the following structure is supposed to be inserted
+inside your plugin block:
+
+Plug ‘git-user/git-repo'
+
+Let’s see some action.
+
+ 1. emmet-vim Emmet uses css style syntax to spit big blocks of HTML: not much
+    typing and a lot done. Fast. Of course emmet is not exclusive for VIM, in
+    fact it comes already bundled with VSCode (Who’s asking?). But it goes
+    specially well with VIM flexible and configurable approach to editing.
+
+
+Isn’t that much better than typing it all?
+
+We can have emmet installed only for HTML and CSS:
+
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+You can pick whichever keyboard shortcut you want. Following this example I’ve
+assigned emmet leader key to ‘,’
+
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_leader_key=’,’
+
+2. tagalong Emmet allows us to have a lot of code, quickly. But who gets it
+right on the first time? Using tagalong we can change the opening tag and
+automatically change the corresponding closing one.
+
+
+The fun starts when the text can’t fit in your window.
+
+It is nice to have some visual feedback when the text is edited, therefore we
+can allow tagalong to send us a message once the editing is done.
+
+let g:tagalong_verbose = 1
+
+3. vim-surround What about deciding we have to surround our element with yet
+another one? Sounds like something you could have to do? vim-surround will let
+us enter visual line mode, select a block of text and wrap it with another
+element.
+
+
+Where did that aside come from!?
+
+
+Here it is.
+
+4. ALE (Asynchronous Lint Engine) Just because we are using a piece of software
+released 28 years ago, that doesn’t mean we can’t benefit from modern
+as-you-type linting and fixing. In fact, ALE supports many linters, crossing
+the bridge between the UNIX extensibility and modularity that we know and love
+to our editor of choice.
+
+
+Give me a break, ALE! Err… not really, please don’t.
+
+Plug ‘dense-analysis/ale’ 
+
+For better debugging, I will let ALE only use the linters and fixer explicitly
+defined: this will help us try out new tools and know what is doing the best
+job for us at the moment, or even use specific project directives.
+
+let g:ale_fixers = {
+ \ ‘html’: [‘prettier’],
+ \ ‘css’: [‘stylelint’],
+ \}let g:ale_linters = {
+ \ ‘html’: [‘htmlhint’],
+ \ ‘css’: [‘stylelint’],
+ \}
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+
+The linw3m: Can't load dump.
+ters should be installed on your computer and available on your path.
+Check the guidelines of the tool you’ll be using on how to do that.
+
+:ALEInfo from vim will show the suggested, available and enabled linters/
+fixers, that can be extremely helpful installing and getting our linter/fixer
+working.
+
+Besides all these neat plugins, what I like the most about VIM is that it makes
+you think about how your code is structured: source code is text, but it is a
+much more structured kind of text than prose. We should take advantage of this
+fact when dealing with it.

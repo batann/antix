@@ -1,0 +1,146 @@
+= Contents =
+    - [[#Docker]]
+            - [[#Setting up Docker:]]
+            - [[#Install Docker:]]
+            - [[#Configuring Docker:]]
+    - [[#Basic Docker Commands:]]
+            - [[#Pull a Docker image:]]
+            - [[#List all containers (including stopped):]]
+
+= Docker =
+=== Setting up Docker: ===
+
+=== Setting Docker up on MX ===
+Get Docker repository key
+``
+wget -O docker.gpg  https://download.docker.com/linux/debian/gpg
+``
+Verify Docker public KeyID : 0x8D81803C0EBFCD88
+Manually:
+``
+gpg   --keyid-format 0xlong docker.gpg 2>/dev/null
+pub   rsa4096/0x8D81803C0EBFCD88 2017-02-22 [SCEA]
+      9DC858229FC7DD38854AE2D88D81803C0EBFCD88
+uid                             Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096/0x7EA0A9C3F273FCD8 2017-02-22 [S]
+``
+Add Docker repo-key to apt’s keyring
+Check public-key and add to apt trusted keyring:
+``
+gpg  --keyid-format 0xlong docker.gpg 2>/dev/null | grep -sq 0x8D81803C0EBFCD88 && sudo apt-key add docker.gpg
+``
+
+Add Docker repository to apt’s sources.list
+============================================
+# For MX 21:
+CODENAME=bullseye
+# For MX 19 :
+CODENAME=buster
+# For MX 18 :
+CODENAME=stretch
+--------------------------------------------
+
+###MX-32 CODENAME=bookworm
+============================================
+``
+echo "deb [arch=amd64] https://download.docker.com/linux/debian $CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list
+
+sudo apt update
+sudo apt install docker-ce
+
+``
+
+
+=== Install Docker: ===
+``
+sudo apt-get update
+sudo apt-get install docker.io
+``
+Start and Enable Docker service:
+``
+sudo systemctl start docker
+sudo systemctl enable docker
+``
+Add your user to the docker group:
+``
+sudo usermod -aG docker $USER
+``
+Log out and log back in for changes to take effect.
+
+=== Configuring Docker: ===
+
+Configure Docker to start on boot:
+Ensure Docker starts automatically:
+``
+sudo systemctl is-enabled docker
+``
+Docker Daemon Configuration (Optional):
+Edit the Docker daemon configuration:
+``
+sudo nano /etc/docker/daemon.json
+``
+Example: Set a custom daemon log level:
+``
+json
+{
+  "log-level": "debug"
+}
+``
+Restart Docker to apply changes:
+``
+sudo systemctl restart docker
+``
+= Basic Docker Commands: =
+
+=== Pull a Docker image: ===
+``
+docker pull IMAGE_NAME
+``
+Run a Docker container:
+``
+docker run IMAGE_NAME
+``
+List running containers:
+``
+docker ps
+``
+=== List all containers (including stopped): ===
+``
+docker ps -a
+``
+Stop a running container:
+``
+docker stop CONTAINER_ID
+``
+Remove a container:
+``
+docker rm CONTAINER_ID
+``
+Remove a Docker image:
+``
+docker rmi IMAGE_NAME
+``
+
+= Alpine Image =
+
+Pull the Alpine Linux image:
+
+docker pull alpine
+Run a container based on the Alpine image:
+
+docker run -it alpine /bin/sh
+This command starts an interactive session (-it) using the /bin/sh shell in the Alpine container.
+
+Inside the Alpine container:
+You'll be inside the Alpine container now. You can perform actions like installing packages, configuring settings, etc.
+
+Exit the container:
+When you're done, exit the container using:
+
+exit
+List all containers (including stopped):
+
+docker ps -a
+Remove the Alpine container (if needed):
+
+docker rm CONTAINER_ID

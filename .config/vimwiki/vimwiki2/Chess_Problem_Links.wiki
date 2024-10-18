@@ -1,0 +1,152 @@
+
+
+=== Download Chess PGN ===
+
+   Welcome in my PGN section. You will find here Grand Master chess games
+   in PGN format. I choose the games where one of the players has more
+   than 2400 points, without forgotten, of course, the oldest games. The
+   numbers between brackets give the average elo for every PGN files.
+
+=== GrandMaster games ===
+
+           Name                Elo         Years    Games   Size
+   Alekhine, Alexander   2540-2700 [2651] 1904-1946  2,408 [2]450 Kb
+   [3]more...
+   Adams, Michael        2165-2851 [2679] 1998-2005    609 [4]130 Kb
+   Anand, Viswanathan    2018-2851 [2726] 1999-2005    719 [5]137 Kb
+   Ivanchuk, Vassily     2058-2849 [2669] 1984-2009  2,614 [6]527 Kb
+   Karpov, Anatoly       2203-2849 [2675] 1972-2005    531 [7]116 Kb
+   Kasparov, Gary        1907-2851 [2751] 1979-2005    549 [8]111 Kb
+   Kosteniuk, Alexandra  2004-2731 [2443] 1994-2007    470 [9]105 Kb
+   [10]more...
+   Morozevich, Alexander 2213-2851 [2635] 1990-2006    985 [11]222 Kb
+   Shirov, Alexei        2135-2851 [2684] 1992-2005    816 [12]130 Kb
+   Topalov, Veselin      2053-2851 [2658] 1988-2008  1,599 [13]328 Kb
+
+=== Games by Chess Opening ECO Codes ===
+
+   Name Elo Years Games Size
+   A02-Gambit From Accepted 2085-2630 [2397] 1792-2008 133 [14]25 Kb
+   B00-Nimzowitsch 1981-2765 [2438] 1858-2006 1,116 [15]243 Kb
+   B02-Alekhine 2000-2838 [2454] 1905-2006 3,356 [16]706 Kb
+   B10-Caro-Kann, Exchange 2043-2802 [2465] 1960-2005 1,645 [17]345 Kb
+   C11-French: Burn 2104-2851 [2554] 1871-2005 1,163 [18]234 Kb
+   C15-French: Winawer 2042-2851 [2526] 1792-2005 3,190 [19]616 Kb
+   C41-Philidor 2024-2830 [2454] 1846-2005 1,125 [20]243 Kb
+   C46-Three Knights 2051-2775 [2481] 1841-2006 2,131 [21]394 Kb
+   C47-Four Knights 2051-2809 [2462] 1842-2005 1,088 [22]223 Kb
+   C54-Giuoco Piano (Italian Game) 1950-2851 [2482] 1837-2007 2,270
+   [23]456 Kb [24]more...
+   C63-Yanish Gambit (Schliemann Defence) 1994-2794 [2435] 1853-2007 660
+   [25]136 Kb [26]more...
+
+=== Misc. ===
+
+          Name               Elo         Years    Games    Size
+   Oldest games                         1610-1899  6,759 [27]1 257 Kb
+   Miniatures          2053-2772 [2426] 1842-2005    607 [28]143 Kb
+   World Championships                  1886-1985    685 [29]143 Kb
+
+[30]Bruno's
+Chess Problem of The Day
+
+Connection
+
+   __________ __________ login
+   [31]Register | [32]Password
+
+Search
+
+   _______________ Go
+
+Navigation
+
+     * [33]Today Checkmate
+     * [34]All Checkmates
+     * [35]Chess News
+     * [36]Chess Articles
+     * [37]Download PGN
+     * [38]Chess Directory
+     * [39]f-Friends: VIP...
+     * [40]Contact
+
+Sponsors
+
+Bruno's
+Chess Problem of The Day
+
+   [41]Mesure d'audience ROI frequentation par Analyse d'audience
+     * [42]Bruno's Home
+     * [43]Chess Problems
+     * [44]Old Mates
+     * [45]Chess News
+     * [46]Articles
+     * [47]PGN Area
+     * [48]Directory
+     * [49]Map
+     *
+
+   [50]Jump to US site of Bruno Chess Problem [51]Bruno Chess Problem en
+   français
+
+   ICRA Label XHTML 1.0 - W3C Validate
+
+   [52](c) 2000-2023  My-Free-Games.com .. [53]Privacy PolicyAll rights
+   reserved. Reprinting, other using of materials of this site requires a
+   reference to it or to the author.
+
+References
+
+   1. https://chessproblem.my-free-games.com/chess/Links/CMlabels.rdf
+   2. https://chessproblem.my-free-games.com/PGN/Alekhine.zip
+   3. https://chessproblem.my-free-games.com/chess/games/ChessArticle.php?art=Alekhine
+   4. https://chessproblem.my-free-games.com/PGN/Adams.zip
+   5. https://chessproblem.my-free-games.com/PGN/Anand.zip
+   6. https://chessproblem.my-free-games.com/PGN/Ivanchuk.zip
+   7. https://chessproblem.my-free-games.com/PGN/Karpov.zip
+   8. https://chessproblem.my-free-games.com/PGN/Kasparov.zip
+   9. https://chessproblem.my-free-games.com/PGN/Kosteniuk.zip
+  10. https://chessproblem.my-free-games.com/chess/games/ChessArticle.php?art=Kosteniuk
+  11. https://chessproblem.my-free-games.com/PGN/Morozevich.zip
+  12. https://chessproblem.my-free-games.com/PGN/Shirov.zip
+  13. https://chessproblem.my-free-games.com/PGN/Topalov.zip
+  14. https://chessproblem.my-free-games.com/PGN/A02.zip
+  15. https://chessproblem.my-free-games.com/PGN/B00.zip
+  16. https://chessproblem.my-free-games.com/PGN/B02.zip
+  17. https://chessproblem.my-free-games.com/PGN/B10.zip
+  18. https://chessproblem.my-free-games.com/PGN/C11.zip
+  19. https://chessproblem.my-free-games.com/PGN/C15.zip
+  20. https://chessproblem.my-free-games.com/PGN/C41.zip
+  21. https://chessproblem.my-free-games.com/PGN/C46.zip
+  22. https://chessproblem.my-free-games.com/PGN/C47.zip
+  23. https://chessproblem.my-free-games.com/PGN/C54.zip
+  24. https://chessproblem.my-free-games.com/chess/games/ChessArticle.php?art=C54A
+  25. https://chessproblem.my-free-games.com/PGN/C63.zip
+  26. https://chessproblem.my-free-games.com/chess/games/ChessArticle.php?art=C63
+  27. https://chessproblem.my-free-games.com/PGN/1610-1899.zip
+  28. https://chessproblem.my-free-games.com/PGN/Miniatures.zip
+  29. https://chessproblem.my-free-games.com/PGN/WCC.zip
+  30. http://chessproblem.my-free-games.com/
+  31. https://chessproblem.my-free-games.com/chess/games/ChessUser.php
+  32. https://chessproblem.my-free-games.com/chess/games/ChessUser.php?act=pwd
+  33. https://chessproblem.my-free-games.com/chess/games/Day.php
+  34. https://chessproblem.my-free-games.com/chess/games/Chess-Year.php?year=2000
+  35. https://chessproblem.my-free-games.com/chess/games/Chess-News.php
+  36. https://chessproblem.my-free-games.com/chess/games/ChessArticles.php
+  37. https://chessproblem.my-free-games.com/chess/games/Download-PGN.php
+  38. https://chessproblem.my-free-games.com/chess/games/Chess-Links.php
+  39. https://www.facebook.com/brunoschess.bukayev
+  40. https://chessproblem.my-free-games.com/chess/games/Contact.php
+  41. http://www.xiti.com/xiti.asp?s=207338
+  42. https://chessproblem.my-free-games.com/chess/games/Welcome.php
+  43. https://chessproblem.my-free-games.com/chess/games/Day.php
+  44. https://chessproblem.my-free-games.com/chess/games/Chess-Year.php?year=2000
+  45. https://chessproblem.my-free-games.com/chess/games/Chess-News.php
+  46. https://chessproblem.my-free-games.com/chess/games/ChessArticles.php
+  47. https://chessproblem.my-free-games.com/chess/games/Download-PGN.php
+  48. https://chessproblem.my-free-games.com/chess/games/Chess-Links.php
+  49. https://chessproblem.my-free-games.com/chess/games/Map.php
+  50. https://chessproblem.my-free-games.com/chess/games/Download-PGN.php
+  51. https://chessproblem.my-free-games.com/chess/fr/Download-PGN.php
+  52. http://www.my-free-games.com/
+  53. https://chessproblem.my-free-games.com/chess/games/policy.php

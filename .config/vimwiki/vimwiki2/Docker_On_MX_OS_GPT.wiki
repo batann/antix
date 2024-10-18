@@ -1,0 +1,50 @@
+Update Package Lists: Ensure your system's package lists are up to date by running:
+arduino
+Copy code
+sudo apt update   // For Debian/Ubuntu based systems
+or
+arduino
+Copy code
+sudo yum update   // For CentOS/RHEL based systems
+Install Dependencies: Docker requires some dependencies to be installed. Install them using:
+arduino
+Copy code
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common   // For Debian/Ubuntu based systems
+or
+kotlin
+Copy code
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2   // For CentOS/RHEL based systems
+Add Docker's Official GPG Key: This ensures that the software you're downloading is from Docker's official repository. Run:
+arduino
+Copy code
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -   // For Debian/Ubuntu based systems
+or
+ruby
+Copy code
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo   // For CentOS/RHEL based systems
+Set Up Docker Repository: Add Docker's official repository to your system's software sources:
+csharp
+Copy code
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"   // For Debian/Ubuntu based systems
+or
+arduino
+Copy code
+sudo yum-config-manager --enable docker-ce-nightly   // For CentOS/RHEL based systems
+Install Docker Engine: Finally, install Docker itself:
+arduino
+Copy code
+sudo apt install docker-ce   // For Debian/Ubuntu based systems
+or
+arduino
+Copy code
+sudo yum install docker-ce   // For CentOS/RHEL based systems
+Start and Enable Docker: Start the Docker service and enable it to start on boot:
+bash
+Copy code
+sudo systemctl start docker
+sudo systemctl enable docker
+Verify Installation: Check that Docker is installed correctly by running:
+css
+Copy code
+docker --version
+Once Docker is installed, you can start using it to manage containers on your system.

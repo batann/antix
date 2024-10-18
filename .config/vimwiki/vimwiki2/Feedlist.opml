@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+  <head>
+    <title>Liferea Feed List Export</title>
+  </head>
+  <body>
+    <outline title="Example Feeds" text="Example Feeds" description="Example Feeds" type="folder">
+      <outline title="News" text="News" description="News" type="folder">
+        <outline title="Ars Technica" text="Ars Technica" description="Ars Technica" type="rss" xmlUrl="https://feeds.arstechnica.com/arstechnica/index" htmlUrl="https://arstechnica.com"/>
+        <outline title="Imported feed list" text="Imported feed list" description="Imported feed list" type="folder"/>
+        <outline title="Slashdot" text="Slashdot" description="Slashdot" type="rss" xmlUrl="https://rss.slashdot.org/Slashdot/slashdotMain" htmlUrl="https://slashdot.org/"/>
+        <outline title="BBC" text="BBC" description="BBC" xmlUrl="https://feeds.bbci.co.uk/news/rss.xml?edition=int" htmlUrl=""/>
+        <outline title="Science" text="Science" description="Science" xmlUrl="https://www.sciencenews.org/feed" htmlUrl=""/>
+      </outline>
+      <outline title="Knowledge" text="Knowledge" description="Knowledge" type="folder">
+        <outline title="Aeon" text="Aeon" description="Aeon" type="rss" xmlUrl="https://aeon.co/feed.rss" htmlUrl="https://aeon.co"/>
+        <outline title="Quanta Magazine" text="Quanta Magazine" description="Quanta Magazine" type="rss" xmlUrl="https://api.quantamagazine.org/feed/" htmlUrl="https://www.quantamagazine.org"/>
+      </outline>
+      <outline title="Open Source" text="Open Source" description="Open Source" type="folder">
+        <outline title="Planet Debian" text="Planet Debian" description="Planet Debian" type="rss" xmlUrl="https://planet.debian.org/rss20.xml" htmlUrl="https://planet.debian.org/"/>
+        <outline title="Liferea Blog" text="Liferea Blog" description="Liferea Blog" type="atom" xmlUrl="https://feeds.feedburner.com/LifereaBlog" htmlUrl="https://lzone.de/liferea/blog/"/>
+        <outline title="Planet GNOME" text="Planet GNOME" description="Planet GNOME" xmlUrl="https://planet.gnome.org/atom.xml" htmlUrl=""/>
+      </outline>
+      <outline title="Podcasts" text="Podcasts" description="Podcasts" type="folder">
+        <outline title="EscapePod" text="EscapePod" description="EscapePod" xmlUrl="https://escapepod.org/feed/atom/" htmlUrl=""/>
+      </outline>
+      <outline title="Music Blogs" text="Music Blogs" description="Music Blogs" type="folder">
+        <outline title="Free Music Archive" text="Free Music Archive" description="Free Music Archive" xmlUrl="https://freemusicarchive.org/recent.atom" htmlUrl=""/>
+        <outline title="Gorilla vs. Bear" text="Gorilla vs. Bear" description="Gorilla vs. Bear" xmlUrl="https://www.gorillavsbear.net/category/mp3/feed/" htmlUrl=""/>
+        <outline title="KEXP" text="KEXP" description="KEXP" xmlUrl="http://feeds.kexp.org/kexp/songoftheday" htmlUrl=""/>
+        <outline title="Fluxblog" text="Fluxblog" description="Fluxblog" xmlUrl="http://www.fluxblog.org/" htmlUrl=""/>
+      </outline>
+      <outline title="Comics" text="Comics" description="Comics" type="folder">
+        <outline title="xkcd" text="xkcd" description="xkcd" xmlUrl="https://xkcd.com/atom.xml" htmlUrl=""/>
+      </outline>
+    </outline>
+    <outline title="New Subscription" text="New Subscription" description="New Subscription" xmlUrl="tweeper https://twitter.com/Batan12982" htmlUrl=""/>
+    <outline title="Feeds of Petar Batan from Inoreader [https://www.inoreader.com]" text="Feeds of Petar Batan from Inoreader [https://www.inoreader.com]" description="Feeds of Petar Batan from Inoreader [https://www.inoreader.com]" type="folder">
+      <outline title="Federalna.ba  - BiH" text="Federalna.ba  - BiH" description="Federalna.ba  - BiH" type="rss" xmlUrl="http://www.federalna.ba/bhs/rss/41/bih" htmlUrl="http://www.federalna.ba/bhs/podkategorija/41/bih"/>
+      <outline title="Reuters: World News" text="Reuters: World News" description="Reuters: World News" type="rss" xmlUrl="http://feeds.reuters.com/Reuters/worldNews" htmlUrl="http://www.reuters.com/"/>
+      <outline title="3 Quarks Daily" text="3 Quarks Daily" description="3 Quarks Daily" type="rss" xmlUrl="https://www.3quarksdaily.com/feed" htmlUrl="https://3quarksdaily.com/"/>
+      <outline title="The Mozilla Blog" text="The Mozilla Blog" description="The Mozilla Blog" type="rss" xmlUrl="http://blog.mozilla.com/feed/" htmlUrl="https://blog.mozilla.org/en/"/>
+      <outline title="Quartz » Ideas" text="Quartz » Ideas" description="Quartz » Ideas" type="rss" xmlUrl="http://qz.com/re/ideas/feed/" htmlUrl="http://qz.com/"/>
+      <outline title="The Conversation" text="The Conversation" description="The Conversation" type="atom" xmlUrl="https://theconversation.com/articles.atom" htmlUrl="https://theconversation.com"/>
+      <outline title="Quartz » Lifestyle" text="Quartz » Lifestyle" description="Quartz » Lifestyle" type="rss" xmlUrl="http://qz.com/re/lifestyle/feed" htmlUrl="http://qz.com/"/>
+      <outline title="Quartz" text="Quartz" description="Quartz" type="rss" xmlUrl="http://qz.com/feed/" htmlUrl="https://qz.com"/>
+      <outline title="Mozilla Links" text="Mozilla Links" description="Mozilla Links" type="rss" xmlUrl="http://feeds.feedburner.com/MozillaLinks" htmlUrl="http://mozillalinks.org/"/>
+      <outline title="Mozilla Security Blog" text="Mozilla Security Blog" description="Mozilla Security Blog" type="rss" xmlUrl="https://blog.mozilla.org/security/feed/" htmlUrl="https://blog.mozilla.org/security/"/>
+      <outline title="Inoreader blog" text="Inoreader blog" description="Inoreader blog" type="rss" xmlUrl="https://www.inoreader.com/blog/feed" htmlUrl="https://www.inoreader.com/blog"/>
+      <outline title="CNN – Top Stories" text="CNN – Top Stories" description="CNN – Top Stories" type="rss" xmlUrl="http://rss.cnn.com/rss/cnn_topstories.rss" htmlUrl="https://www.cnn.com/index.html"/>
+      <outline title="Reuters: Top News" text="Reuters: Top News" description="Reuters: Top News" type="rss" xmlUrl="http://feeds.reuters.com/reuters/topNews" htmlUrl="http://www.reuters.com/"/>
+      <outline title="The New Yorker" text="The New Yorker" description="The New Yorker" type="rss" xmlUrl="http://www.newyorker.com/services/rss/feeds/everything.xml" htmlUrl="https://www.newyorker.com"/>
+      <outline title="BBC News" text="BBC News" description="BBC News" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/rss.xml" htmlUrl="https://www.bbc.co.uk/news/"/>
+      <outline title="The New York Times" text="The New York Times" description="The New York Times" type="rss" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml" htmlUrl="https://www.nytimes.com"/>
+      <outline title="TIME" text="TIME" description="TIME" type="rss" xmlUrl="https://time.com/feed/" htmlUrl="https://time.com"/>
+      <outline title="Colossal" text="Colossal" description="Colossal" type="rss" xmlUrl="http://feeds.feedburner.com/colossal" htmlUrl="https://www.thisiscolossal.com/"/>
+      <outline title="Reuters: Politics" text="Reuters: Politics" description="Reuters: Politics" type="rss" xmlUrl="http://feeds.reuters.com/Reuters/PoliticsNews" htmlUrl="http://www.reuters.com/"/>
+      <outline title="Washington Post: Breaking News, World, US, DC News &amp; Analysis" text="Washington Post: Breaking News, World, US, DC News &amp; Analysis" description="Washington Post: Breaking News, World, US, DC News &amp; Analysis" type="rss" xmlUrl="http://feeds.washingtonpost.com/rss/world" htmlUrl="https://www.washingtonpost.com"/>
+      <outline title="Robert Reich" text="Robert Reich" description="Robert Reich" type="rss" xmlUrl="http://robertreich.org/rss" htmlUrl="https://robertreich.org/"/>
+      <outline title="NYT &gt; Arts" text="NYT &gt; Arts" description="NYT &gt; Arts" type="rss" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/Arts.xml" htmlUrl="https://www.nytimes.com/section/arts"/>
+      <outline title="Decision Science News" text="Decision Science News" description="Decision Science News" type="rss" xmlUrl="http://feeds.feedburner.com/DecisionScienceNews" htmlUrl="http://www.decisionsciencenews.com"/>
+      <outline title="WSJ: World News" text="WSJ: World News" description="WSJ: World News" type="rss" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" htmlUrl="http://online.wsj.com/page/2_0006.html"/>
+      <outline title="POLITICO - TOP Stories" text="POLITICO - TOP Stories" description="POLITICO - TOP Stories" type="rss" xmlUrl="http://www.politico.com/rss/politicopicks.xml" htmlUrl="https://www.politico.com/"/>
+      <outline title="FactCheck.org" text="FactCheck.org" description="FactCheck.org" type="rss" xmlUrl="http://www.factcheck.org/feed/" htmlUrl="https://www.factcheck.org/"/>
+      <outline title="NYT &gt; Art &amp; Design" text="NYT &gt; Art &amp; Design" description="NYT &gt; Art &amp; Design" type="rss" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/ArtandDesign.xml" htmlUrl="https://www.nytimes.com/section/arts/design"/>
+      <outline title="World news | The Guardian" text="World news | The Guardian" description="World news | The Guardian" type="rss" xmlUrl="http://feeds.guardian.co.uk/theguardian/world/rss" htmlUrl="https://www.theguardian.com/world"/>
+      <outline title="The Sydney Morning Herald News Headlines" text="The Sydney Morning Herald News Headlines" description="The Sydney Morning Herald News Headlines" type="rss" xmlUrl="http://feeds.smh.com.au/rssheadlines/top.xml" htmlUrl="http://www.smh.com.au/"/>
+      <outline title="Politics - The Huffington Post" text="Politics - The Huffington Post" description="Politics - The Huffington Post" type="rss" xmlUrl="http://www.huffingtonpost.com/feeds/verticals/politics/index.xml" htmlUrl="https://www.huffpost.com/news/politics"/>
+      <outline title="The Partially Examined Life Philosophy Podcast" text="The Partially Examined Life Philosophy Podcast" description="The Partially Examined Life Philosophy Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/partiallyexaminedlife/blog" htmlUrl="https://partiallyexaminedlife.com"/>
+      <outline title="philosophy" text="philosophy" description="philosophy" type="atom" xmlUrl="http://www.reddit.com/r/philosophy/.rss" htmlUrl="https://www.reddit.com/r/philosophy/"/>
+      <outline title="European Union | The Guardian" text="European Union | The Guardian" description="European Union | The Guardian" type="rss" xmlUrl="http://www.guardian.co.uk/world/eu/rss" htmlUrl="https://www.theguardian.com/world/eu"/>
+      <outline title="Journal of Political Philosophy" text="Journal of Political Philosophy" description="Journal of Political Philosophy" type="rss" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1467-9760" htmlUrl="https://onlinelibrary.wiley.com/journal/14679760?af=R"/>
+      <outline title="Philosophy Tube" text="Philosophy Tube" description="Philosophy Tube" type="atom" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ" htmlUrl="https://www.youtube.com/channel/UC2PA-AKmVpU6NKCGtZq_rKQ"/>
+      <outline title="DW | News &amp; Politics" text="DW | News &amp; Politics" description="DW | News &amp; Politics" type="rss" xmlUrl="http://inoreader-dw/GK-Inoreader-NewsPolitics.21641-media" htmlUrl="http://www.dw.com/english/?maca=en-GK-Inoreader-NewsPolitics-21641-xml-media"/>
+      <outline title="DW | Culture" text="DW | Culture" description="DW | Culture" type="rss" xmlUrl="http://inoreader-dw/GK-Inoreader-Culture.21643-media" htmlUrl="http://www.dw.com/s-1441?maca=en-GK-Inoreader-Culture-21643-xml-media"/>
+      <outline title="Privacy" text="Privacy" description="Privacy" type="folder">
+        <outline title="BitDefender Security Center" text="BitDefender Security Center" description="BitDefender Security Center" type="rss" xmlUrl="http://www.bitdefender.com/syndicate/Security/latestSecurityArticles-rss10.xml" htmlUrl="http://www.bitdefender.com/"/>
+        <outline title="Privacy Online News" text="Privacy Online News" description="Privacy Online News" type="rss" xmlUrl="https://www.privateinternetaccess.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.privateinternetaccess.com%2Fblog%2F&amp;format=xml" htmlUrl="https://www.privateinternetaccess.com/blog"/>
+        <outline title="CNET News - Security &amp; Privacy" text="CNET News - Security &amp; Privacy" description="CNET News - Security &amp; Privacy" type="rss" xmlUrl="http://news.cnet.com/8300-1009_3-83.xml" htmlUrl=" https://www.cnet.com/#ftag=CAD590a51e"/>
+        <outline title="Privacy and Freedom in the Information Age" text="Privacy and Freedom in the Information Age" description="Privacy and Freedom in the Information Age" type="atom" xmlUrl="https://www.reddit.com/r/privacy/.rss" htmlUrl="https://www.reddit.com/r/privacy/"/>
+        <outline title="privacytools.io" text="privacytools.io" description="privacytools.io" type="atom" xmlUrl="https://www.reddit.com/r/privacytoolsIO/.rss" htmlUrl="https://www.reddit.com/r/privacytoolsIO/"/>
+        <outline title="Privacy International" text="Privacy International" description="Privacy International" type="rss" xmlUrl="https://www.privacyinternational.org/rss.xml" htmlUrl="http://www.privacyinternational.org/"/>
+        <outline title="The Complete Privacy &amp; Security Podcast" text="The Complete Privacy &amp; Security Podcast" description="The Complete Privacy &amp; Security Podcast" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" htmlUrl="https://soundcloud.com/user-98066669"/>
+        <outline title="Mozilla Privacy Blog" text="Mozilla Privacy Blog" description="Mozilla Privacy Blog" type="rss" xmlUrl="https://blog.mozilla.org/privacy/feed/" htmlUrl="https://blog.mozilla.org/netpolicy/"/>
+        <outline title="The Tutanota Blog" text="The Tutanota Blog" description="The Tutanota Blog" type="rss" xmlUrl="https://tutanota.com/blog/feed.xml" htmlUrl="https://tutanota.com/blog"/>
+        <outline title="Tutanota" text="Tutanota" description="Tutanota" type="atom" xmlUrl="https://www.reddit.com/r/tutanota/.rss" htmlUrl="https://www.reddit.com/r/tutanota/"/>
+        <outline title="Mailfence Blog" text="Mailfence Blog" description="Mailfence Blog" type="atom" xmlUrl="https://blog.mailfence.com/feed/atom/" htmlUrl="https://blog.mailfence.com/"/>
+        <outline title="ProtonMail Blog" text="ProtonMail Blog" description="ProtonMail Blog" type="rss" xmlUrl="https://protonmail.com/blog/feed" htmlUrl="https://protonmail.com/blog"/>
+        <outline title="ProtonMail Blog" text="ProtonMail Blog" description="ProtonMail Blog" type="rss" xmlUrl="https://protonmail.ch/blog/feed" htmlUrl="https://blog.protonmail.ch/"/>
+        <outline title="ProtonVPN Blog" text="ProtonVPN Blog" description="ProtonVPN Blog" type="rss" xmlUrl="https://protonvpn.com/blog/feed/" htmlUrl="https://protonvpn.com/blog/"/>
+        <outline title="ProtonMail - end-to-end encrypted email" text="ProtonMail - end-to-end encrypted email" description="ProtonMail - end-to-end encrypted email" type="atom" xmlUrl="https://www.reddit.com/r/ProtonMail/.rss" htmlUrl="https://www.reddit.com/r/ProtonMail/"/>
+        <outline title="Quartz" text="Quartz" description="Quartz" type="rss" xmlUrl="https://cms.qz.com/feed/" htmlUrl="https://qz.com"/>
+      </outline>
+      <outline title="Philo and such" text="Philo and such" description="Philo and such" type="folder">
+        <outline title="Brain Pickings" text="Brain Pickings" description="Brain Pickings" type="rss" xmlUrl="http://feedproxy.google.com/brainpickings/rss" htmlUrl="http://www.brainpickings.org/"/>
+        <outline title="Cultural Weekly" text="Cultural Weekly" description="Cultural Weekly" type="html5" xmlUrl="http://www.culturalweekly.com/feed" htmlUrl="http://www.culturalweekly.com/feed"/>
+        <outline title="Dan Ariely" text="Dan Ariely" description="Dan Ariely" type="rss" xmlUrl="http://www.predictablyirrational.com/?feed=rss2" htmlUrl="http://danariely.com/"/>
+        <outline title="Statistical Modeling, Causal Inference, and Social Science" text="Statistical Modeling, Causal Inference, and Social Science" description="Statistical Modeling, Causal Inference, and Social Science" type="rss" xmlUrl="http://feeds.feedburner.com/StatisticalModelingCausalInferenceAndSocialScience" htmlUrl="https://statmodeling.stat.columbia.edu"/>
+        <outline title="Farnam Street" text="Farnam Street" description="Farnam Street" type="rss" xmlUrl="http://feeds.feedburner.com/68131" htmlUrl="https://fs.blog/"/>
+        <outline title="Pearson's Critical Thinking Blog" text="Pearson's Critical Thinking Blog" description="Pearson's Critical Thinking Blog" type="rss" xmlUrl="http://critical-thinkers.com/feed/" htmlUrl="http://critical-thinkers.com/"/>
+        <outline title="Logic+Emotion" text="Logic+Emotion" description="Logic+Emotion" type="atom" xmlUrl="http://feeds.feedburner.com/Logicemotion" htmlUrl="https://darmano.typepad.com/logic_emotion/"/>
+        <outline title="The Art of Non-Conformity" text="The Art of Non-Conformity" description="The Art of Non-Conformity" type="rss" xmlUrl="http://chrisguillebeau.com/feed/" htmlUrl="https://chrisguillebeau.com"/>
+        <outline title="Visual Business Intelligence" text="Visual Business Intelligence" description="Visual Business Intelligence" type="rss" xmlUrl="http://www.perceptualedge.com/blog/?feed=rss2" htmlUrl="http://www.perceptualedge.com/blog"/>
+        <outline title="Core77" text="Core77" description="Core77" type="rss" xmlUrl="http://feeds.feedburner.com/core77/blog" htmlUrl="http://core77.com/home/rss"/>
+        <outline title="Behance Featured Projects" text="Behance Featured Projects" description="Behance Featured Projects" type="rss" xmlUrl="http://feeds.feedburner.com/behance/vorr" htmlUrl="http://www.behance.net"/>
+        <outline title="Overcoming Bias" text="Overcoming Bias" description="Overcoming Bias" type="rss" xmlUrl="http://www.overcomingbias.com/feed" htmlUrl="https://www.overcomingbias.com"/>
+        <outline title="TEDTalks (video)" text="TEDTalks (video)" description="TEDTalks (video)" type="rss" xmlUrl="https://www.ted.com/feeds/talks.rss" htmlUrl="https://www.ted.com/talks"/>
+        <outline title="kottke.org" text="kottke.org" description="kottke.org" type="atom" xmlUrl="http://feeds.kottke.org/main" htmlUrl="http://kottke.org/"/>
+        <outline title="Big Think" text="Big Think" description="Big Think" type="rss" xmlUrl="http://feeds.feedburner.com/bigthink/main" htmlUrl="https://bigthink.com/"/>
+        <outline title="Stanford Encyclopedia of Philosophy" text="Stanford Encyclopedia of Philosophy" description="Stanford Encyclopedia of Philosophy" type="rss" xmlUrl="http://plato.stanford.edu/rss/sep.xml" htmlUrl="https://plato.stanford.edu/"/>
+        <outline title="Online Papers in Philosophy" text="Online Papers in Philosophy" description="Online Papers in Philosophy" type="atom" xmlUrl="http://www.umsu.de/wo/opp.rss" htmlUrl="http://www.philosophicalprogress.org/"/>
+        <outline title="Philosophy News" text="Philosophy News" description="Philosophy News" type="rss" xmlUrl="http://www.philosophynews.com/syndication.axd" htmlUrl="https://philosophynews.com/"/>
+        <outline title="Error Statistics Philosophy" text="Error Statistics Philosophy" description="Error Statistics Philosophy" type="rss" xmlUrl="http://errorstatistics.com/feed/" htmlUrl="https://errorstatistics.com"/>
+        <outline title="Blog (Philosophy, Adventure, Arts, Web Development) · Jens Oliver Meiert" text="Blog (Philosophy, Adventure, Arts, Web Development) · Jens Oliver Meiert" description="Blog (Philosophy, Adventure, Arts, Web Development) · Jens Oliver Meiert" type="rss" xmlUrl="http://meiert.com/en/feed/" htmlUrl="https://meiert.com/en/"/>
+        <outline title="Object-Oriented Philosophy" text="Object-Oriented Philosophy" description="Object-Oriented Philosophy" type="rss" xmlUrl="http://doctorzamalek2.wordpress.com/feed/" htmlUrl="https://doctorzamalek2.wordpress.com"/>
+        <outline title="Radical Philosophy" text="Radical Philosophy" description="Radical Philosophy" type="rss" xmlUrl="http://www.radicalphilosophy.com/feed" htmlUrl="https://www.radicalphilosophy.com"/>
+        <outline title="Philosophy Now" text="Philosophy Now" description="Philosophy Now" type="rss" xmlUrl="http://philosophynow.org/rss" htmlUrl="https://philosophynow.org"/>
+        <outline title="philosophy bites" text="philosophy bites" description="philosophy bites" type="atom" xmlUrl="https://nigelwarburton.typepad.com/philosophy_bites/atom.xml" htmlUrl="https://nigelwarburton.typepad.com/philosophy_bites/"/>
+        <outline title="New APPS: Art, Politics, Philosophy, Science" text="New APPS: Art, Politics, Philosophy, Science" description="New APPS: Art, Politics, Philosophy, Science" type="atom" xmlUrl="http://www.newappsblog.com/atom.xml" htmlUrl="https://www.newappsblog.com/"/>
+        <outline title="Internet Encyclopedia of Philosophy" text="Internet Encyclopedia of Philosophy" description="Internet Encyclopedia of Philosophy" type="rss" xmlUrl="http://www.iep.utm.edu/feed/" htmlUrl="https://iep.utm.edu"/>
+        <outline title="Philosophy Bites" text="Philosophy Bites" description="Philosophy Bites" type="rss" xmlUrl="http://www.philosophybites.libsyn.com/rss" htmlUrl="http://www.philosophybites.com/"/>
+        <outline title="Philosophy, et cetera" text="Philosophy, et cetera" description="Philosophy, et cetera" type="atom" xmlUrl="http://pixnaps.blogspot.com/feeds/posts/default" htmlUrl="http://www.philosophyetc.net/"/>
+        <outline title="Steven Landsburg | The Big Questions: Tackling the Problems of Philosophy with Ideas from Mathematics, Economics, and Physics" text="Steven Landsburg | The Big Questions: Tackling the Problems of Philosophy with Ideas from Mathematics, Economics, and Physics" description="Steven Landsburg | The Big Questions: Tackling the Problems of Philosophy with Ideas from Mathematics, Economics, and Physics" type="rss" xmlUrl="http://www.thebigquestions.com/feed/" htmlUrl="https://www.thebigquestions.com"/>
+        <outline title="Leiter Reports:  A Philosophy Blog" text="Leiter Reports:  A Philosophy Blog" description="Leiter Reports:  A Philosophy Blog" type="atom" xmlUrl="http://leiterreports.typepad.com/blog/atom.xml" htmlUrl="https://leiterreports.typepad.com/blog/"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

@@ -1,0 +1,50 @@
+
+
+alignment = 'top_left'
+background = false
+border_width = 1
+cpu_avg_samples = 2
+default_color = 'white'
+default_outline_color = 'white'
+default_shade_color = 'white'
+draw_borders = false
+draw_graph_borders = true
+draw_outline = false
+draw_shades = false
+use_xft = true
+font = 'DejaVu Sans Mono:size=10'
+gap_x = 10
+gap_y = 10
+minimum_height = 400
+minimum_width = 600
+net_avg_samples = 2
+no_buffers = true
+out_to_console = false
+out_to_stderr = false
+extra_newline = false
+own_window = true
+own_window_type = 'normal'
+own_window_transparent = false
+own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager'
+stippled_borders = 0
+update_interval = 2.0
+uppercase = false
+use_spacer = 'none'
+
+${color white}${alignc}Keybindings${color}${alignr}Commands
+${color white}${alignc}-------------------------${color}${alignr}----------------------
+${color white}${alignc}Ctrl + a${color}${alignr}Select all
+${color white}${alignc}Ctrl + c${color}${alignr}Copy
+${color white}${alignc}Ctrl + d${color}${alignr}Mark for deletion
+${color white}${alignc}Ctrl + e${color}${alignr}Edit
+${color white}${alignc}Ctrl + f${color}${alignr}Find/search
+${color white}${alignc}Ctrl + n${color}${alignr}Create new directory
+${color white}${alignc}Ctrl + s${color}${alignr}Toggle selection
+${color white}${alignc}Ctrl + v${color}${alignr}Paste
+${color white}${alignc}Ctrl + w${color}${alignr}Close current tab or pane
+${color white}${alignc}Ctrl + x${color}${alignr}Cut
+
+
+
+
+

@@ -1,0 +1,12 @@
+= i2p =
+
+[[i2p_install]]
+[[i2p-guide]]
+[[i2p_tools]]
+[[i2p_search]]
+[[i2p_outproxy]]
+
+[[i2pd_configuration]]
+[[i2p_tunnel_configuration]]
+
+[[i2p_Configuration_for_Chromium]]

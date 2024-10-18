@@ -1,0 +1,20 @@
+= find =
+
+ffmpeg -i input.mp4 -ss 00:05:20 -t 00:10:00 -c:v copy -c:a copy output1.mp4
+
+
+===sed_command===
+[[sed_command]]
+
+
+
+=== the_AWK_command ===
+[[the_AWK_command]]
+=== Awk ===
+[[Awk]]
+=== sed command===
+[[sed command]]
+===cron===
+[[cron basic commands]]
+=== xfconf-query ===
+[[xfconf-query]]

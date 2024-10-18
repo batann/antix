@@ -1,0 +1,443 @@
+= Contents =
+    - [[#FZF Vim integration]]
+        - [[#Installation]]
+        - [[#Summary]]
+        - [[#<code>:FZF[!]</code>]]
+            - [[#Configuration]]
+                - [[#Examples]]
+                    - [[#Explanation of <code>g:fzf_colors</code>]]
+        - [[#<code>fzf#run</code>]]
+        - [[#<code>fzf#wrap</code>]]
+            - [[#Global options supported by <code>fzf#wrap</code>]]
+        - [[#Tips]]
+            - [[#fzf inside terminal buffer]]
+            - [[#Starting fzf in a popup window]]
+            - [[#Hide statusline]]
+        - [[#LICENSE|License]]
+
+= FZF Vim integration =
+
+<span id="installation"></span>
+<span id="fzf-vim-integration"></span>
+== Installation ==
+
+Once you have fzf installed, you can enable it inside Vim simply by adding the directory to <code>&amp;runtimepath</code> in your Vim configuration file. The path may differ depending on the package manager.
+
+<syntaxhighlight lang="vim">" If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
+
+" If installed using Homebrew on Apple Silicon
+set rtp+=/opt/homebrew/opt/fzf
+
+" If you have cloned fzf on ~/.fzf directory
+set rtp+=~/.fzf</syntaxhighlight>
+If you use [https://github.com/junegunn/vim-plug vim-plug], the same can be written as:
+
+<syntaxhighlight lang="vim">" If installed using Homebrew
+Plug '/usr/local/opt/fzf'
+
+" If installed using Homebrew on Apple Silicon
+Plug '/opt/homebrew/opt/fzf'
+
+" If you have cloned fzf on ~/.fzf directory
+Plug '~/.fzf'</syntaxhighlight>
+But if you want the latest Vim plugin file from GitHub rather than the one included in the package, write:
+
+<syntaxhighlight lang="vim">Plug 'junegunn/fzf'</syntaxhighlight>
+The Vim plugin will pick up fzf binary available on the system. If fzf is not found on <code>$PATH</code>, it will ask you if it should download the latest binary for you.
+
+To make sure that you have the latest version of the binary, set up post-update hook like so:
+
+<syntaxhighlight lang="vim">Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }</syntaxhighlight>
+<span id="summary"></span>
+== Summary ==
+
+The Vim plugin of fzf provides two core functions, and <code>:FZF</code> command which is the basic file selector command built on top of them.
+
+# '''<code>fzf#run([spec dict])</code>'''
+#* Starts fzf inside Vim with the given spec
+#* <code>:call fzf#run({'source': 'ls'})</code>
+# '''<code>fzf#wrap([spec dict]) -&gt; (dict)</code>'''
+#* Takes a spec for <code>fzf#run</code> and returns an extended version of it with additional options for addressing global preferences (<code>g:fzf_xxx</code>)
+#** <code>:echo fzf#wrap({'source': 'ls'})</code>
+#* We usually ''wrap'' a spec with <code>fzf#wrap</code> before passing it to <code>fzf#run</code>
+#** <code>:call fzf#run(fzf#wrap({'source': 'ls'}))</code>
+# '''<code>:FZF [fzf_options string] [path string]</code>'''
+#* Basic fuzzy file selector
+#* A reference implementation for those who don’t want to write VimScript to implement custom commands
+#* If you’re looking for more such commands, check out [https://github.com/junegunn/fzf.vim fzf.vim] project.
+
+The most important of all is <code>fzf#run</code>, but it would be easier to understand the whole if we start off with <code>:FZF</code> command.
+
+<span id="fzf"></span>
+== <code>:FZF[!]</code> ==
+
+<syntaxhighlight lang="vim">" Look for files under current directory
+:FZF
+
+" Look for files under your home directory
+:FZF ~
+
+" With fzf command-line options
+:FZF --reverse --info=inline /tmp
+
+" Bang version starts fzf in fullscreen mode
+:FZF!</syntaxhighlight>
+Similarly to [https://github.com/kien/ctrlp.vim ctrlp.vim], use enter key, <code>CTRL-T</code>, <code>CTRL-X</code> or <code>CTRL-V</code> to open selected files in the current window, in new tabs, in horizontal splits, or in vertical splits respectively.
+
+Note that the environment variables <code>FZF_DEFAULT_COMMAND</code> and <code>FZF_DEFAULT_OPTS</code> also apply here.
+
+<span id="configuration"></span>
+=== Configuration ===
+
+* <code>g:fzf_action</code>
+** Customizable extra key bindings for opening selected files in different ways
+* <code>g:fzf_layout</code>
+** Determines the size and position of fzf window
+* <code>g:fzf_colors</code>
+** Customizes fzf colors to match the current color scheme
+* <code>g:fzf_history_dir</code>
+** Enables history feature
+
+<span id="examples"></span>
+==== Examples ====
+
+<syntaxhighlight lang="vim">" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" An action can be a reference to a function that processes selected lines
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val, "lnum": 1 }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Default fzf layout
+" - Popup window (center of the screen)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
+" - Popup window (center of the current window)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true } }
+
+" - Popup window (anchored to the bottom of the current window)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
+
+" - down / up / left / right
+let g:fzf_layout = { 'down': '40%' }
+
+" - Window using a Vim command
+let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_layout = { 'window': '-tabnew' }
+let g:fzf_layout = { 'window': '10new' }
+
+" Customize fzf colors to match your color scheme
+" - fzf#wrap translates this to a set of `--color` options
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+" Enable per-command history
+" - History files will be stored in the specified directory
+" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
+"   'previous-history' instead of 'down' and 'up'.
+let g:fzf_history_dir = '~/.local/share/fzf-history'</syntaxhighlight>
+<span id="explanation-of-gfzf_colors"></span>
+===== Explanation of <code>g:fzf_colors</code> =====
+
+<code>g:fzf_colors</code> is a dictionary mapping fzf elements to a color specification list:
+
+<pre>element: [ component, group1 [, group2, ...] ]</pre>
+<ul>
+<li><p><code>element</code> is an fzf element to apply a color to:</p>
+{|
+!width="50%"| Element
+!width="50%"| Description
+|-
+| <code>fg</code> / <code>bg</code> / <code>hl</code>
+| Item (foreground / background / highlight)
+|-
+| <code>fg+</code> / <code>bg+</code> / <code>hl+</code>
+| Current item (foreground / background / highlight)
+|-
+| <code>preview-fg</code> / <code>preview-bg</code>
+| Preview window text and background
+|-
+| <code>hl</code> / <code>hl+</code>
+| Highlighted substrings (normal / current)
+|-
+| <code>gutter</code>
+| Background of the gutter on the left
+|-
+| <code>pointer</code>
+| Pointer to the current line (<code>&gt;</code>)
+|-
+| <code>marker</code>
+| Multi-select marker (<code>&gt;</code>)
+|-
+| <code>border</code>
+| Border around the window (<code>--border</code> and <code>--preview</code>)
+|-
+| <code>header</code>
+| Header (<code>--header</code> or <code>--header-lines</code>)
+|-
+| <code>info</code>
+| Info line (match counters)
+|-
+| <code>spinner</code>
+| Streaming input indicator
+|-
+| <code>query</code>
+| Query string
+|-
+| <code>disabled</code>
+| Query string when search is disabled
+|-
+| <code>prompt</code>
+| Prompt before query (<code>&gt;</code>)
+|-
+| <code>pointer</code>
+| Pointer to the current line (<code>&gt;</code>)
+|}
+</li>
+<li><p><code>component</code> specifies the component (<code>fg</code> / <code>bg</code>) from which to extract the color when considering each of the following highlight groups</p></li>
+<li><p><code>group1 [, group2, ...]</code> is a list of highlight groups that are searched (in order) for a matching color definition</p></li></ul>
+
+For example, consider the following specification:
+
+<syntaxhighlight lang="vim">  'prompt':  ['fg', 'Conditional', 'Comment'],</syntaxhighlight>
+This means we color the '''prompt''' - using the <code>fg</code> attribute of the <code>Conditional</code> if it exists, - otherwise use the <code>fg</code> attribute of the <code>Comment</code> highlight group if it exists, - otherwise fall back to the default color settings for the '''prompt'''.
+
+You can examine the color option generated according the setting by printing the result of <code>fzf#wrap()</code> function like so:
+
+<syntaxhighlight lang="vim">:echo fzf#wrap()</syntaxhighlight>
+<span id="fzfrun"></span>
+== <code>fzf#run</code> ==
+
+<code>fzf#run()</code> function is the core of Vim integration. It takes a single dictionary argument, ''a spec'', and starts fzf process accordingly. At the very least, specify <code>sink</code> option to tell what it should do with the selected entry.
+
+<syntaxhighlight lang="vim">call fzf#run({'sink': 'e'})</syntaxhighlight>
+We haven’t specified the <code>source</code>, so this is equivalent to starting fzf on command line without standard input pipe; fzf will use find command (or <code>$FZF_DEFAULT_COMMAND</code> if defined) to list the files under the current directory. When you select one, it will open it with the sink, <code>:e</code> command. If you want to open it in a new tab, you can pass <code>:tabedit</code> command instead as the sink.
+
+<syntaxhighlight lang="vim">call fzf#run({'sink': 'tabedit'})</syntaxhighlight>
+Instead of using the default find command, you can use any shell command as the source. The following example will list the files managed by git. It’s equivalent to running <code>git ls-files | fzf</code> on shell.
+
+<syntaxhighlight lang="vim">call fzf#run({'source': 'git ls-files', 'sink': 'e'})</syntaxhighlight>
+fzf options can be specified as <code>options</code> entry in spec dictionary.
+
+<syntaxhighlight lang="vim">call fzf#run({'sink': 'tabedit', 'options': '--multi --reverse'})</syntaxhighlight>
+You can also pass a layout option if you don’t want fzf window to take up the entire screen.
+
+<syntaxhighlight lang="vim">" up / down / left / right / window are allowed
+call fzf#run({'source': 'git ls-files', 'sink': 'e', 'left': '40%'})
+call fzf#run({'source': 'git ls-files', 'sink': 'e', 'window': '30vnew'})</syntaxhighlight>
+<code>source</code> doesn’t have to be an external shell command, you can pass a Vim array as the source. In the next example, we pass the names of color schemes as the source to implement a color scheme selector.
+
+<syntaxhighlight lang="vim">call fzf#run({'source': map(split(globpath(&rtp, 'colors/*.vim')),
+            \               'fnamemodify(v:val, ":t:r")'),
+            \ 'sink': 'colo', 'left': '25%'})</syntaxhighlight>
+The following table summarizes the available options.
+
+{|
+!width="25%"| Option name
+!width="12%"| Type
+!width="62%"| Description
+|-
+| <code>source</code>
+| string
+| External command to generate input to fzf (e.g. <code>find .</code>)
+|-
+| <code>source</code>
+| list
+| Vim list as input to fzf
+|-
+| <code>sink</code>
+| string
+| Vim command to handle the selected item (e.g. <code>e</code>, <code>tabe</code>)
+|-
+| <code>sink</code>
+| funcref
+| Reference to function to process each selected item
+|-
+| <code>sinklist</code> (or <code>sink*</code>)
+| funcref
+| Similar to <code>sink</code>, but takes the list of output lines at once
+|-
+| <code>options</code>
+| string/list
+| Options to fzf
+|-
+| <code>dir</code>
+| string
+| Working directory
+|-
+| <code>up</code>/<code>down</code>/<code>left</code>/<code>right</code>
+| number/string
+| (Layout) Window position and size (e.g. <code>20</code>, <code>50%</code>)
+|-
+| <code>tmux</code>
+| string
+| (Layout) fzf-tmux options (e.g. <code>-p90%,60%</code>)
+|-
+| <code>window</code> (Vim 8 / Neovim)
+| string
+| (Layout) Command to open fzf window (e.g. <code>vertical aboveleft 30new</code>)
+|-
+| <code>window</code> (Vim 8 / Neovim)
+| dict
+| (Layout) Popup window settings (e.g. <code>{'width': 0.9, 'height': 0.6}</code>)
+|}
+
+<code>options</code> entry can be either a string or a list. For simple cases, string should suffice, but prefer to use list type to avoid escaping issues.
+
+<syntaxhighlight lang="vim">call fzf#run({'options': '--reverse --prompt "C:\\Program Files\\"'})
+call fzf#run({'options': ['--reverse', '--prompt', 'C:\Program Files\']})</syntaxhighlight>
+When <code>window</code> entry is a dictionary, fzf will start in a popup window. The following options are allowed:
+
+* Required:
+** <code>width</code> [float range [0 ~ 1]] or [integer range [8 ~ ]]
+** <code>height</code> [float range [0 ~ 1]] or [integer range [4 ~ ]]
+* Optional:
+** <code>yoffset</code> [float default 0.5 range [0 ~ 1]]
+** <code>xoffset</code> [float default 0.5 range [0 ~ 1]]
+** <code>relative</code> [boolean default v:false]
+** <code>border</code> [string default <code>rounded</code> (<code>sharp</code> on Windows)]: Border style
+*** <code>rounded</code> / <code>sharp</code> / <code>horizontal</code> / <code>vertical</code> / <code>top</code> / <code>bottom</code> / <code>left</code> / <code>right</code> / <code>no[ne]</code>
+
+<span id="fzfwrap"></span>
+== <code>fzf#wrap</code> ==
+
+We have seen that several aspects of <code>:FZF</code> command can be configured with a set of global option variables; different ways to open files (<code>g:fzf_action</code>), window position and size (<code>g:fzf_layout</code>), color palette (<code>g:fzf_colors</code>), etc.
+
+So how can we make our custom <code>fzf#run</code> calls also respect those variables? Simply by ''“wrapping”'' the spec dictionary with <code>fzf#wrap</code> before passing it to <code>fzf#run</code>.
+
+* '''<code>fzf#wrap([name string], [spec dict], [fullscreen bool]) -&gt; (dict)</code>'''
+** All arguments are optional. Usually we only need to pass a spec dictionary.
+** <code>name</code> is for managing history files. It is ignored if <code>g:fzf_history_dir</code> is not defined.
+** <code>fullscreen</code> can be either <code>0</code> or <code>1</code> (default: 0).
+
+<code>fzf#wrap</code> takes a spec and returns an extended version of it (also a dictionary) with additional options for addressing global preferences. You can examine the return value of it like so:
+
+<syntaxhighlight lang="vim">echo fzf#wrap({'source': 'ls'})</syntaxhighlight>
+After we ''“wrap”'' our spec, we pass it to <code>fzf#run</code>.
+
+<syntaxhighlight lang="vim">call fzf#run(fzf#wrap({'source': 'ls'}))</syntaxhighlight>
+Now it supports <code>CTRL-T</code>, <code>CTRL-V</code>, and <code>CTRL-X</code> key bindings (configurable via <code>g:fzf_action</code>) and it opens fzf window according to <code>g:fzf_layout</code> setting.
+
+To make it easier to use, let’s define <code>LS</code> command.
+
+<syntaxhighlight lang="vim">command! LS call fzf#run(fzf#wrap({'source': 'ls'}))</syntaxhighlight>
+Type <code>:LS</code> and see how it works.
+
+We would like to make <code>:LS!</code> (bang version) open fzf in fullscreen, just like <code>:FZF!</code>. Add <code>-bang</code> to command definition, and use <code>&lt;bang&gt;</code> value to set the last <code>fullscreen</code> argument of <code>fzf#wrap</code> (see <code>:help &lt;bang&gt;</code>).
+
+<syntaxhighlight lang="vim">" On :LS!, <bang> evaluates to '!', and '!0' becomes 1
+command! -bang LS call fzf#run(fzf#wrap({'source': 'ls'}, <bang>0))</syntaxhighlight>
+Our <code>:LS</code> command will be much more useful if we can pass a directory argument to it, so that something like <code>:LS /tmp</code> is possible.
+
+<syntaxhighlight lang="vim">command! -bang -complete=dir -nargs=? LS
+    \ call fzf#run(fzf#wrap({'source': 'ls', 'dir': <q-args>}, <bang>0))</syntaxhighlight>
+Lastly, if you have enabled <code>g:fzf_history_dir</code>, you might want to assign a unique name to our command and pass it as the first argument to <code>fzf#wrap</code>.
+
+<syntaxhighlight lang="vim">" The query history for this command will be stored as 'ls' inside g:fzf_history_dir.
+" The name is ignored if g:fzf_history_dir is not defined.
+command! -bang -complete=dir -nargs=? LS
+    \ call fzf#run(fzf#wrap('ls', {'source': 'ls', 'dir': <q-args>}, <bang>0))</syntaxhighlight>
+<span id="global-options-supported-by-fzfwrap"></span>
+=== Global options supported by <code>fzf#wrap</code> ===
+
+* <code>g:fzf_layout</code>
+* <code>g:fzf_action</code>
+** '''Works only when no custom <code>sink</code> (or <code>sinklist</code>) is provided'''
+*** Having custom sink usually means that each entry is not an ordinary file path (e.g. name of color scheme), so we can’t blindly apply the same strategy (i.e. <code>tabedit some-color-scheme</code> doesn’t make sense)
+* <code>g:fzf_colors</code>
+* <code>g:fzf_history_dir</code>
+
+<span id="tips"></span>
+== Tips ==
+
+<span id="fzf-inside-terminal-buffer"></span>
+=== fzf inside terminal buffer ===
+
+On the latest versions of Vim and Neovim, fzf will start in a terminal buffer. If you find the default ANSI colors to be different, consider configuring the colors using <code>g:terminal_ansi_colors</code> in regular Vim or <code>g:terminal_color_x</code> in Neovim.
+
+<syntaxhighlight lang="vim">" Terminal colors for seoul256 color scheme
+if has('nvim')
+  let g:terminal_color_0 = '#4e4e4e'
+  let g:terminal_color_1 = '#d68787'
+  let g:terminal_color_2 = '#5f865f'
+  let g:terminal_color_3 = '#d8af5f'
+  let g:terminal_color_4 = '#85add4'
+  let g:terminal_color_5 = '#d7afaf'
+  let g:terminal_color_6 = '#87afaf'
+  let g:terminal_color_7 = '#d0d0d0'
+  let g:terminal_color_8 = '#626262'
+  let g:terminal_color_9 = '#d75f87'
+  let g:terminal_color_10 = '#87af87'
+  let g:terminal_color_11 = '#ffd787'
+  let g:terminal_color_12 = '#add4fb'
+  let g:terminal_color_13 = '#ffafaf'
+  let g:terminal_color_14 = '#87d7d7'
+  let g:terminal_color_15 = '#e4e4e4'
+else
+  let g:terminal_ansi_colors = [
+    \ '#4e4e4e', '#d68787', '#5f865f', '#d8af5f',
+    \ '#85add4', '#d7afaf', '#87afaf', '#d0d0d0',
+    \ '#626262', '#d75f87', '#87af87', '#ffd787',
+    \ '#add4fb', '#ffafaf', '#87d7d7', '#e4e4e4'
+  \ ]
+endif</syntaxhighlight>
+<span id="starting-fzf-in-a-popup-window"></span>
+=== Starting fzf in a popup window ===
+
+<syntaxhighlight lang="vim">" Required:
+" - width [float range [0 ~ 1]] or [integer range [8 ~ ]]
+" - height [float range [0 ~ 1]] or [integer range [4 ~ ]]
+"
+" Optional:
+" - xoffset [float default 0.5 range [0 ~ 1]]
+" - yoffset [float default 0.5 range [0 ~ 1]]
+" - relative [boolean default v:false]
+" - border [string default 'rounded']: Border style
+"   - 'rounded' / 'sharp' / 'horizontal' / 'vertical' / 'top' / 'bottom' / 'left' / 'right'
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }</syntaxhighlight>
+Alternatively, you can make fzf open in a tmux popup window (requires tmux 3.2 or above) by putting fzf-tmux options in <code>tmux</code> key.
+
+<syntaxhighlight lang="vim">" See `man fzf-tmux` for available options
+if exists('$TMUX')
+  let g:fzf_layout = { 'tmux': '-p90%,60%' }
+else
+  let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+endif</syntaxhighlight>
+<span id="hide-statusline"></span>
+=== Hide statusline ===
+
+When fzf starts in a terminal buffer, the file type of the buffer is set to <code>fzf</code>. So you can set up <code>FileType fzf</code> autocmd to customize the settings of the window.
+
+For example, if you open fzf on the bottom on the screen (e.g. <code>{'down': '40%'}</code>), you might want to temporarily disable the statusline for a cleaner look.
+
+<syntaxhighlight lang="vim">let g:fzf_layout = { 'down': '30%' }
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler</syntaxhighlight>
+<span id="license"></span>
+

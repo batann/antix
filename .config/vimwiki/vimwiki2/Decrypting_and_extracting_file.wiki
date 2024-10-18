@@ -1,0 +1,33 @@
+=decrypting and extracting a file=
+
+
+== Decrypting and extracting a file ==
+
+If you want to extract the original file while decrypting it, strangely enough,
+you issue the gpg command with no options.
+`
+$ ls`
+cfile.txt.gpg
+`$ gpg cfile.txt.gpg`
+< Passphrase prompt >
+gpg: WARNING: no command supplied.  Trying to guess what you mean ...
+gpg: AES encrypted data
+gpg: encrypted with 1 passphrase
+`$ ls`
+cfile.txt  cfile.txt.gpg
+
+You have restored your original file, and both the encrypted and decrypted
+versions exist.
+
+[ Thinking about security? Check out this complimentary guide to boosting
+hybrid cloud security and protecting your business. ] 
+
+Wrap up
+
+Of course, gpg has many more options than I've shown here. But these three are
+easy-to-use encryption and decryption options that will get you started
+protecting your files right away. I will demonstrate some of the other options
+in a future article unless one of you wants to do that and submit it to Enable
+Sysadmin for publication. Write the editorial team at
+enable-sysadmin@redhat.com and tell us how you use the gpg command.
+

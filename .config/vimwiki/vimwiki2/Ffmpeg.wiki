@@ -1,0 +1,13 @@
+
+_In case we want to automatically process (batch process) all .WEBM video files in a folder we can use the following:_
+
+for FILE in *.webm; do
+    echo -e "Processing video '\e[32m$FILE\e[0m'";
+    ffmpeg -i "${FILE}" -vn -ab 128k -ar 44100 -y "${FILE%.webm}.mp3";
+done;
+
+
+
+_The following command will find all webm files that are in the current directory and in all sub-folders and extract the audio to mp3 format._
+
+find . -type f -iname "*.webm" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -ab 128k -ar 44100 -y "${FILE%.webm}.mp3";' _ '{}' \;

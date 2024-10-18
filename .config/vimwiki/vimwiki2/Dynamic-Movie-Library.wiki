@@ -1,0 +1,90 @@
+Here is a bash script that will dynamically create an `index.html` file with the structure you provided, replacing placeholders with the movies and thumbnails from the specified directories:
+
+```bash
+<code>
+#!/bin/bash
+
+# Directories
+LIBRARY_DIR="library"
+MOVIES_DIR="/media/batan/100/Videos"
+THUMBNAILS_DIR="/media/batan/100/thumbnails"
+
+# Start of HTML
+cat << EOF > $LIBRARY_DIR/index.html
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Movie library</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+Template Name: Moviewp
+Author: Vincenzo Piromalli (fr0zen)
+Website: https://fr0zen.store/
+Contact: vincenzo.piromalli@gmail.com
+Purchase: https://fr0zen.store/moviewp/
+Support: https://fr0zen.store/contact/
+-->
+<body class="overview">
+...
+EOF
+
+# Loop over movies
+for MOVIE in $MOVIES_DIR/*; do
+  MOVIE_NAME=$(basename "$MOVIE")
+  THUMBNAIL="$THUMBNAILS_DIR/${MOVIE_NAME%.*}.jpg"
+
+  # Add movie to HTML
+  cat << EOF >> $LIBRARY_DIR/index.html
+  <div class="item">
+    <a href="$MOVIE">
+      <div class="item-flip">
+        <div class="item-inner">
+          <img src="$THUMBNAIL" alt="$MOVIE_NAME">
+        </div>
+        <div class="item-details">
+          <div class="item-details-inner">
+            <h2 class="movie-title">$MOVIE_NAME</h2>
+            <p class="movie-description">Description for $MOVIE_NAME</p>
+            <div class="watch-btn">
+              <div class="imdb-rating" data-content="6.3">
+                <i class="fa fa-star"></i>6.3</div>
+              <span class="movie-date">2020</span>
+              <span>Play</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+EOF
+done
+
+# End of HTML
+cat << EOF >> $LIBRARY_DIR/index.html
+...
+</body>
+</html>
+EOF
+```
+</code>
+This script first writes the start of the HTML to `index.html` in the `library` directory. It then loops over each movie in the `Videos` directory, adding an item for each movie to the HTML. Finally, it appends the end of the HTML to `index.html`.
+
+Please replace `Description for $MOVIE_NAME` and `2020` with the actual description and date for each movie.
+
+You can run this script in a terminal with `bash script_name.sh`, replacing `script_name.sh` with the name of the script file. Make sure to give it execute permissions with `chmod +x script_name.sh` before running it. Also, please ensure that the paths to the directories are correct and accessible. If they are relative paths, they should be relative to the location where you run the script from. If they are absolute paths, they should start with `/`.
+
+Please note that this script assumes that each movie has a corresponding thumbnail image in the `thumbnails` directory with the same name (except for the extension, which should be `.jpg`). If this is not the case, you may need to modify the script accordingly.
+
+Also, this script does not handle special characters in filenames well. If your movie or thumbnail filenames contain special characters, you may need to handle those cases separately.
+
+This script does not check if the movie file or thumbnail file exists before adding it to the HTML. If a file does not exist, the resulting HTML will have broken image links or links to non-existent movie files. You may want to add checks to ensure the files exist before adding them to the HTML.
+
+This is a simple script and does not include any error handling. If you plan to use this script in a production environment, you should add appropriate error handling and possibly refactor the script for maintainability and efficiency.
+
+This script is provided as is and without any warranties. It is up to you to test the script and ensure it works for your needs.
+
+Please let me know if you have any questions or need further assistance.

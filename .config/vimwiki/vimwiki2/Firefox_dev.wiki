@@ -1,0 +1,5 @@
+
+
+=== installed as firefox_dev in /opt ===
+== Command: ==
+/opt/firefox_dev/firefox %u

@@ -1,0 +1,13 @@
+| file:///home/batan/vimwiki     |
+|                                |
+| file:///home/batan/page/       |
+|                                |
+| file:///home/batan/page/diary/ |
+|                                |
+| file:///-                      |
+			  
+			 
+			 
+			 
+	|home/batan/page/
+	

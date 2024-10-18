@@ -1,0 +1,263 @@
+= Contents =
+        - [[#Recommended Firefox add-ons]]
+                        - [[#Why Open Source software is important to privacy]]
+                        - [[#WebExtensions]]
+                        - [[#Browser Fingerprinting]]
+                        - [[#Extension limitations]]
+                        - [[#Recommended Firefox Privacy and Security add-ons]]
+                - [[#uBlock Origin]]
+                - [[#Privacy Badger]]
+                - [[#HTTPS Everywhere]]
+                - [[#NoScript]]
+                - [[#uMatrix]]
+                - [[#Cookie AutoDelete]]
+                - [[#BetterPrivacy]]
+                - [[#Random Agent Spoofer]]
+                - [[#Canvas Defender]]
+                - [[#Decentraleyes]]
+                - [[#Bloody Vikings!]]
+                - [[#Mailvelope]]
+                - [[#keepasshttp-connector]]
+                                                - [[#Please check out my KeePass Review for further details.]]
+
+= Recommended Firefox add-ons =
+
+
+
+=== Why Open Source software is important to privacy ===
+
+Another reason for its popularity among privacy-heads is the large number of
+add-ons available that can greatly improve the privacy and security of your
+browsing. In addition to this, it is possible to access Firefox’s deep
+configuration settings in order to tweak its privacy and security parameters.
+
+=== WebExtensions ===
+
+In recent months Firefox has transitioned away from its old add-ons framework
+to WebExtensions.  As of Firefox 57 "Quantum", it is only possible to use
+WebExtensions add-ons. Most of the add-ons listed below have been transitioned
+to WebExtensions, or are expected to in the near future.
+
+Please see Are we WebExtensions yet? for the latest news about which add-ons
+have been updated to the new platform.
+
+Check out our guide to Firefox VPN web extensions for a detailed look at the
+best ones to use.
+
+=== Browser Fingerprinting ===
+
+The way in which your browser is configured (especially the browser plugins
+used), together with details of your Operating System, allows you to be
+uniquely identified and tracked with a worryingly high degree of accuracy.
+
+A particularly insidious (and ironic) aspect of this is that the more measures
+you take to avoid tracking (for example by using the plugins listed below), the
+more unique your browser fingerprint becomes.
+
+The best defense against browser fingerprinting is to use as common and plain
+vanilla an OS and browser as possible. The hardened Tor browser with Tor
+disabled is the usual recommendation here. However, we do cover some
+alternative secure web browsers in our secure browsers guide.
+
+Unfortunately, this leaves you open to other forms of attack. It also reduces
+the day-to-day functionality of your computer to such an extent that most of us
+will find the idea impractical.
+
+
+=== Extension limitations ===
+
+Remember, a VPN browser extension will only secure your web browser! Any other
+apps (like Skype, Outlook, and your video games) won't benefit from its
+encryption – and you'll need to install a full VPN client onto your device in
+order to secure your entire network.
+
+ 
+
+=== Recommended Firefox Privacy and Security add-ons ===
+
+All Firefox add-ons are free and open source software (FOSS).
+
+== uBlock Origin ==
+
+uBlock Origin is a lightweight but powerful ad-blocker that pulls double duty
+as an anti-tracking add-on. It uses a number of blocking lists to filter
+unwanted content from appearing in your browser. The lists it comes with are
+pretty good, but I recommend also adding those compiled by EasyList and Fanboy.
+
+Blocking ads and tracking scripts can break some web pages, making uBlock
+Origin’s on-the-fly whitelisting feature very handy. You can also toggle which
+types of elements are blocked (pop-ups, large media elements, cosmetic elements
+and remote fonts), or use the Element picker and Element Zapper modes to
+customize what is permitted to run on a web page.
+
+uBlock Origin works very well in tandem with  Privacy Badger, and I recommend
+using both together. It is also worth noting to avoid confusion, that uBlock
+Origin is recommended over the very similar uBlock add-on.
+
+== Privacy Badger ==
+
+Developed by the Electronic Frontier Foundation (EFF), this is an excellent
+anti-tracking add-on that does double-duty as an ad-blocker. Although there is
+some overlap in function, Privacy Badger and uBlock Origin complement each
+other and are best run together.
+
+Rather than using blocklists, Privacy Badger keeps track of scripts that are
+embedded in web pages. If it detects that a source is tracking you, it "springs
+into action, telling your browser not to load any more content from that
+source".
+
+Privacy Badger allows you see which tracking scripts are present on a web page
+and which ones are actually tracking you. You can then decide how to deal with
+them (block, block cookies, or allow), or let Privacy Badger decide.
+
+== HTTPS Everywhere ==
+
+An essential tool. HTTPS Everywhere was developed by the Electronic Frontier
+Foundation and tries to ensure that you always connect to websites using a
+secure HTTPS connection -  if one is available.
+
+It works because many websites can accept HTTPS connections, but use regular
+insecure HTTP ones by default.  Just be aware that if no HTTPS connection is
+possible, HTTPS Everywhere will default to an insecure HTTP connection
+(although this can be changed in its settings).
+
+It is, therefore, a good idea to keep an eye on the padlock icon in the URL
+that shows whether you are using an HTTPS connection.
+
+== NoScript ==
+
+NoScript is a potent tool that gives you unparalleled control over what scripts
+are run on your browser. However, many websites will not play game with
+NoScript, and it requires a fair bit of technical knowledge to configure and
+tweak it to work the way you want it to.
+
+It is easy to add exceptions to a whitelist, but even this requires some
+understanding of the risks that might be involved. Not for the casual user
+then, but for web-savvy power-users, NoScript is challenging to beat.
+
+Note that if you use NoScript, you do not also need to use uBlock Origin +
+privacy Badger or uMatrix.
+
+See here for some tips on getting the best out of NoScript. The last one is
+particularly worth paying attention to. It is worth keeping NoScript installed
+even if you "Allow Scripts Globally", as this still protects against nasty
+things such as cross-site scripting and clickjacking
+
+== uMatrix ==
+
+Developed by the team behind uBlock Origin, uMatrix is something of a half-way
+house between that and NoScript. It provides a great deal of customizable
+protection but requires a fair bit of work and know-how to set up correctly.
+
+uMatrix is not as hard to configure as NoScript and does not break as many
+sites. But neither is it as comprehensive.
+
+Note that if you use uMatrix, then it is not necessary to also use uBlock
+Origin + Privacy Badger or NoScript.
+
+== Cookie AutoDelete ==
+
+A drop-in replacement for the popular but now defunct Self-Destructing Cookies,
+ Cookie AutoDelete automatically deletes HTTP (regular) cookies when you close
+the browser tab that set them. This provides a high level of protection from
+tracking via cookies without "breaking" websites.
+
+Cookie AutoDelete also provides some protection against Flash/zombie cookies
+and ETags, and cleans DOM storage (although it can't clean local storage yet).
+
+Note that Cookie AutoDelete and BetterPrivacy complement each other, and I
+recommend running them both together.
+
+== BetterPrivacy ==
+
+This add-on controls Flash cookies. It should be configured to remove these
+automatically on a regular basis.
+
+There is an argument that BetterPrivacy is now redundant as Flash is used much
+less by websites than it used to be. Personally, I think it is still worth
+running. It is recommended to run this add-on and Self-Destructing Cookies
+together.
+
+Note that at time of writing BetterPrivacy has been removed by its author from
+official Firefox Add-on website. The WebExtensions version is in beta, however,
+so we should hopefully see it reappear soon.
+
+== Random Agent Spoofer ==
+
+A web browser user agent tells website what type of computer, what OS, and what
+browser you are using. Many sites use this information to optimize their pages
+to improve user experience, but this information can be used for browser
+fingerprinting.
+
+Random Agent Spoofer randomly changes what user agent information is given to a
+website. For example, it can tell a website that you are accessing it on an
+iPhone using Safari, rather than on a PC using Firefox.
+
+Note that there is some debate on how effective Random Agent Spoofer and
+similar add-ons are at preventing Browser Fingerprinting.  It is true that
+using an unmodified generic browser such as the Tor Browser is almost certainly
+better in this regard. But if you are using other add-ons which make your
+browser more unique, changing your user agent is probably useful.
+
+== Canvas Defender ==
+
+Canvas fingerprinting is the most common form of browser fingerprinting. It
+uses a script that asks your browser to draw a hidden image, and uses tiny
+variations in how the image is drawn to generate a unique ID code which can
+then be used to track you. Canvas Defender helps prevent this by creating a
+unique and persistent noise that hides your real canvas fingerprint.
+
+Note that at the time of writing, Mozilla has promised upcoming versions of
+Firefox will feature built-in canvas fingerprinting protection. If and when
+this becomes available, Canvas Defender should become redundant, Until then,
+however, I strongly recommend its use.
+
+== Decentraleyes ==
+
+This add- aims to improve your privacy while browsing by hosting CND resources
+locally. When your browser requests one of these CDN resources, the application
+is blocked, and you are served up a local version instead.
+
+If the above just sounds like techno-babble to you, please check out my
+Decentraleyes Review for a full explanation.
+
+== Bloody Vikings! ==
+
+Bloody Vikings is an easy-peasy way to create temporary email addresses.
+
+Just right-click in an email registration field, select ‘Bloody Vikings’ (or
+expand to see a choice of services), and a newly generated email address will
+be inserted into the field while a new browser tab opens to the temporary
+mailbox.
+
+== Mailvelope ==
+
+PGP is by far the most secure way to send private emails. But it is a pain in
+the butt to use. Such a significant pain, in fact, that few people bother.
+Mailvelope is a browser add-on that allows end-to-end PGP encryption within
+Firefox.
+
+It works with popular browser-based webmail services such as Gmail, Hotmail,
+Yahoo!, and GMX. It makes using PGP about as painless as it gets. However, it
+is not as secure as using PGP with a dedicated email client. Check out my
+detailed look at Mailvelope here.
+
+== keepasshttp-connector ==
+
+KeePassis a fantastic open source password manager. keepasshttp-connector is a
+Firefox add-on that brings full browser integration to KeePass.
+
+====== Please check out my KeePass Review for further details. ======
+
+ Privacy Settings
+
+Firefox allows quite fine-grained control of its privacy settings, but to do
+this requires accessing its advanced configuration settings using about:config.
+I describe how to do this, plus provide an extensive list of privacy-related
+settings below.
+
+Privacy Settings, however, allows you easy ‘one-click’ control of many of these
+settings using a simple GUI interface. Because it merely flips configuration
+settings, you can install the add-on, disable whichever settings you prefer,
+and then uninstall Privacy Settings to save browser resources.
+

@@ -1,0 +1,55 @@
+= Chromium-Headless =
+
+
+	- Run it in headless mode:
+``
+        chromium-browser --headless --disable-gpu --remote-debugging-port=9222
+        ``
+    - Let's break down the flags:
+        - `--headless`: Runs **Chromium** in headless mode (without a visible UI).
+        - `--disable-gpu`: Temporarily needed if running on Windows (not required on Linux).
+        - `--remote-debugging-port=9222`: Specifies the port for remote debugging. You can choose any available port.
+
+	- Common Tasks with Command Line Flags
+    	- Here are some useful command line flags for common tasks:
+
+    - **Print the DOM**:
+        - To print the `document.body.innerHTML` to stdout:
+            ``
+        chromium-browser --headless --disable-gpu --dump-dom
+            ``
+
+    - Create a PDF:
+        - To create a PDF of a web page:
+            ``
+        chromium-browser --headless --disable-gpu --print-to-pdf
+            ``
+
+    - Take Screenshots:
+        - To capture a screenshot of a page:
+            ``
+            chromium-browser --headless --disable-gpu --screenshot
+            ``
+        - You can specify the window size using 
+		``
+		--window-size:
+        chromium-browser --headless --disable-gpu --screenshot --window-size=1280,1696``  
+		# Standard letterhead size
+        ``chromium-browser --headless --disable-gpu --screenshot --window-size=412,732    ``
+		# Nexus 5x size
+            
+
+Remember to adjust the commands based on your specific needs. **Chromium** in headless mode is useful for automated testing, server environments, and other scenarios where a visible UI is not required. 🚀🌐
+
+Source: Conversation with Bing, 2/18/2024
+(1) Getting Started with Headless Chrome.https://developer.chrome.com/blog/headless-chrome/.
+(2) How to Run a Headless Chrome Browser | Matthew Edgar. https://www.matthewedgar.net/headless-browser/.
+(3) Run Chromium with command-line switches - The Chromium Projects. https://www.chromium.org/developers/how-tos/run-chromium-with-flags/.
+(4) Headless Chromium - Google Open Source. https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md.
+(5) Any way to start Google Chrome in headless mode?. https://stackoverflow.com/questions/9210765/any-way-to-start-google-chrome-in-headless-mode.
+(6) undefined. https://www.chromestatus.com.
+(7) undefined. https://www.chromestatus.com/.
+(8) undefined. http://example.com.
+(9) Running chrome headless on linux without xorg - Stack Overflow. https://stackoverflow.com/questions/47014350/running-chrome-headless-on-linux-without-xorg.
+(10) undefined. https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md.
+(11) undefined. https://browserless.io.

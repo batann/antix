@@ -1,0 +1,185 @@
+
+= website: =
+https://bbs.archlinux.org/viewtopic.php?id=234778
+
+set nocompatible
+set ignorecase
+set smartcase
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+set backup		" keep a backup file
+set backupdir=/home/bladt/.tmp/vim
+set directory=/home/bladt/.tmp/vim/swp
+
+set history=100		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+set relativenumber	" display relative line numbers
+set nu			" set current line number to its absolute number
+set splitright		" window splits are right or below the current. This is the exact opposite of the default
+set undofile
+set undodir=/home/bladt/.tmp/vim/undo
+
+runtime macros/matchit.vim " enable tag-jumping in html and similar, with %
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  "set rtp+=~/.vim/bundle/Vundle.vim
+  "call vundle#begin('~/.vim/bundle')
+  "Plugin 'ctrlp.vim'
+  "Plugin 'fsharp/vim-fsharp'
+  "Plugin 'artur-shaik/vim-javacomplete2'
+  "call vundle#end()
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  "delete existing mappings
+  au!
+
+  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+  autocmd Filetype java,haskell setlocal nospell
+  autocmd Filetype html set ts=4 sw=4
+  autocmd FileType tex setlocal textwidth=80
+  autocmd FileType tex nnoremap <cr> : call LatexMake() <cr>
+  autocmd FileType tex syntax spell toplevel
+  autocmd FileType text setlocal textwidth=80
+  autocmd FileType markdown setlocal textwidth=80
+  autocmd FileType ruby setlocal ts=2 sw=2 et
+  autocmd FileType eruby setlocal ts=2 sw=2 et
+  autocmd FileType fsharp,javascript setlocal ts=4 sw=4 et
+  autocmd FileType go :iabbrev <buffer> ret return
+  autocmd FileType go :iabbrev <buffer> return NOPENOPENOPE
+  autocmd FileType java :iabbrev <buffer> ret return
+  autocmd FileType haskell setlocal ts=8 sw=4 softtabstop=4 et shiftround nospell
+  autocmd FileType java :iabbrev <buffer> return NOPENOPENOPE
+  autocmd BufReadPost,BufWritePre *.html.erb :execute 'normal gg=G'
+  autocmd BufReadPost,BufWritePost *.go call GoFmt()
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  " Also don't do it when the mark is in the first line, that is the default
+  " position when opening a file.
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+
+  augroup END
+
+endif " has("autocmd")
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+set autoindent		" always set autoindenting on
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+
+"set the style of the "set list" command
+set listchars=tab:»·,eol:$,trail:·,extends:#
+set list
+
+set statusline=%y\ \[%{&ff}\]\ L:%4l\/%04.4L\ C\:%2c\-%-2v%=\ %<%F\%5r\ %m
+set laststatus=2
+set t_Co=256
+set background=light
+colorscheme jellybeans
+highlight CursorLineNr ctermfg=130
+
+hi statusline ctermfg=black
+hi statusline ctermbg=grey
+
+hi clear SpellBad
+hi clear SpellCap
+hi clear SpellRare
+hi SpellBad cterm=underline
+hi SpellBad ctermfg=DarkRed
+hi SpellCap cterm=underline
+set spell
+
+set ofu=syntaxcomplete#Complete
+set nojoinspaces
+
+let mapleader =","
+nnoremap <C-n> : nohl<cr>
+nnoremap <C-l><C-a> : call LanguageToggle()<cr>
+"uppercase a word
+inoremap <c-u> <esc>gUawea
+":lcd changes the dir of the window only. %:p is the path of the file, %:p:h
+"is the dir of the file
+nnoremap <leader>ev :vsp /home/bladt/repos/configs/vimrc<cr>:lcd %:p:h<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+"mappings for paired characters, placing the cursor between them in insert
+"mode etc
+inoremap " ""<esc>i
+inoremap <leader>" "
+inoremap { {}<esc>i
+inoremap <leader>{ {
+nnoremap ( viw<esc>a)<esc>hbi(<esc>lel
+inoremap ( ()<esc>i
+inoremap <leader>( (
+inoremap [ []<esc>i
+inoremap <leader>[ [
+"regular p and o mappings, but with an added empty line. Awesome pasting
+"function definitions etc.
+nnoremap <leader>p o<esc>p
+nnoremap <leader>P O<esc>P
+"recommended esc mapping, pretty useless when capslock is <esc>
+inoremap jk <esc>wa
+
+function! LanguageToggle()
+	if(&spelllang == "en")
+		setlocal spell spelllang=da
+	else
+		setlocal spell spelllang=en
+	endif
+endfunc
+
+function! LatexMake()
+	write
+	silent make!
+	silent make!
+	redraw!
+endfunc
+
+function! GoFmt()
+	let aread = &autoread
+	set autoread
+	silent !gofmt -w %
+	let &autoread = aread
+	redraw!
+endfunc
+
+" bash-like filename completion in :-commands
+set wildmode=longest,list,full
+set wildignorecase

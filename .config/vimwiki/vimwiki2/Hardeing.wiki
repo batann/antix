@@ -1,0 +1,15 @@
+
+
+_Part of my os hardening project_
+
+[[i2p]]
+[[nextdns]]
+[[iptables]]
+[[apparmore]]
+[[fail2ban]]
+[[hosts_file]]
+[[snadboxing]]
+[[librewolf]]
+
+
+_i2p_encrypted_apt_updates_

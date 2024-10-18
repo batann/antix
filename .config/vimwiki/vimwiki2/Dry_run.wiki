@@ -1,0 +1,43 @@
+= Dry Run =
+
+Starting live-usb-maker 2.41.19-2302
+PRETEND MODE ENABLED
+Will use target device /dev/sdc (28.9G Kingston DataTraveler_3.0)
+Will use source file /home/batan/Desktop/Software/MX-21.3_x64.iso
+Distro: MX-21.3_x64 Wildflower January 15, 2023
+Found grub config 2.0
+
+                    Total      Used     Extra
+   entire drive  28.9 GiB 28.9 GiB     1 MiB
+ main partition  28.4 GiB 1.86 GiB  26.6 GiB
+ uefi partition   460 MiB   30 MiB   430 MiB
+Ready to make live-usb on device sdc
+... by copying file /home/batan/Desktop/Software/MX-21.3_x64.iso
+live-usb-maker 2.41.19-2302: partition-clear >> partition-clear
+p> dd status=none if=/dev/zero of=/dev/sdc bs=512 count=34
+p> dd status=none if=/dev/zero of=/dev/sdc bs=512 count=34 seek=64
+p> dd status=none conv=notrunc if=/dev/zero of=/dev/sdc bs=512 count=34 seek=60538847
+p> partprobe /dev/sdc
+live-usb-maker 2.41.19-2302: partition-make >> partition-make
+Using gpt partitioning
+p> parted --script --align optimal /dev/sdc unit MiB mklabel gpt
+p> dd status=none if=/dev/zero of=/dev/sdc seek=1024 bs=1K count=128
+p> parted --script --align optimal /dev/sdc unit MiB mkpart primary 1 29099
+p> parted --script --align optimal /dev/sdc unit MiB set 1 legacy_boot on
+p> dd status=none if=/dev/zero of=/dev/sdc seek=29797376 bs=1K count=128
+p> parted --script --align optimal /dev/sdc unit MiB mkpart primary 29099 29558
+p> parted --script --align optimal /dev/sdc unit MiB set 2 esp on
+p> parted --script --align optimal /dev/sdc unit MiB disk_set pmbr_boot on
+p> partprobe /dev/sdc
+p> wait_for_file /dev/sdc1
+live-usb-maker 2.41.19-2302: makefs-bios >> makefs-bios
+p> mkfs.ext4 -F -O ^64bit -m0 -i16384 -J size=32 /dev/sdc1
+p> tune2fs -L mxlinux /dev/sdc1
+p> wait_for_file /dev/sdc2
+live-usb-maker 2.41.19-2302: makefs-uefi >> makefs-uefi
+p> mkfs.vfat -F 32 -n MX-UEFI /dev/sdc2
+p> partprobe /dev/sdc
+p> wait_for_file /dev/sdc1
+ > mkdir -p ./main
+ > mount -t ext4 /dev/sdc1 ./main
+mount: /run/live-usb-maker/main: mount(2) system call failed: Cannot allocate memory.

@@ -1,0 +1,34 @@
+= Contents =
+        - [[#Usefull Links Chess Database]]
+                        - [[#Mate in 2]]
+                        - [[#Mate in 3]]
+                        - [[#Mate in 4]]
+        - [[#Mate in 4]]
+        - [[#download-PNG]]
+                        - [[#python script to download chess.com archive]]
+                        - [[#Script to make use of chess.com API]]
+
+= Usefull Links Chess Database =
+
+
+
+
+Chess Puzzles
+=== Mate in 2 ===
+[[Mate in 2]]
+=== Mate in 3 ===
+[[Mate in 3]]
+=== Mate in 4 ===
+[[Mate in 4]]
+
+=================================
+https://chessproblem.my-free-games.com/chess/games/Download-PGN.php
+Links Incl Downloadable Chess Data Bases:
+[[Chess Problem Links]]
+[[download-PNG]]
+=================================
+Chess Code
+=== python script to download chess.com archive ===
+[[ChessPNGparser.py]]
+=== Script to make use of chess.com API ===
+[[Script to make use of chess API]]

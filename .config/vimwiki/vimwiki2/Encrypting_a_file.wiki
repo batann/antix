@@ -1,0 +1,57 @@
+=encrypting a file=
+
+
+
+The quick method for encrypting a file is to issue the gpg command with the -c
+
+(create) option:
+
+`$ echo This is an encryption test > file1.txt`
+
+`$ gpg -c file1.txt`
+
+ lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk
+ x Enter passphrase                                     x
+ x                                                      x
+ x                                                      x
+ x Passphrase: ***********_____________________________ x
+ x                                                      x
+ x       <OK>                              <Cancel>     x
+ mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+
+ lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk
+ x Please re-enter this passphrase                      x
+ x                                                      x
+ x Passphrase: ***********_____________________________ x
+ x                                                      x
+ x       <OK>                              <Cancel>     x
+ mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+
+`$ ls
+
+file1.txt file1.txt.gpg
+`
+
+Image
+IT Automation ebook
+Download now
+
+Encrypting a file with gpg leaves the original file intact, file1.txt, and adds
+the telltale .gpg extension to the newly encrypted file. You should probably
+remove the original file, file1.txt, so that the encrypted one is the sole
+source of the information contained in it. Alternatively, if you're going to
+share the encrypted version, you can rename it before sharing.
+
+The .gpg extension isn't required, but it does let the user know which
+decryption tool to use to read the file. You can rename the file to anything
+you want.
+`
+$ file file2.txt.gpg
+file2.txt.gpg: GPG symmetrically encrypted data (AES cipher)
+``
+$ mv file2.txt.gpg testfile01.doc
+``
+$ file testfile01.doc
+testfile01.doc: GPG symmetrically encrypted data (AES cipher)
+`
+

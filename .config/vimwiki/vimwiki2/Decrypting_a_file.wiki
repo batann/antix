@@ -1,0 +1,39 @@
+= decrypting a file =
+
+=== Decrypting a file ===
+
+Decrypting a file means that you remove the encryption to read the file's
+contents. There's no extraction of content or creation of the original file
+when you decrypt.
+
+`$ cat cfile.txt`
+
+This is an encryption and decryption test
+
+`$ gpg -c cfile.txt`
+
+< Set passphrase and repeat passphrase >
+
+`$ ls`
+
+`$ cfile.txt cfile.txt.gpg`
+`
+$ rm cfile.txt`
+
+
+`$ gpg -d cfile.txt.gpg`
+gpg: AES encrypted data
+gpg: encrypted with 1 passphrase
+This is an encryption and decryption test
+
+`$ ls`
+cfile.txt.gpg
+
+`$ cat cfile.txt.gpg`
+o@yAw?D??^a??!s?????;??!?v9-3, ???XA??!?9v?}???
+Ž??m??1./fKˡ??R???:j?F?|?AS?O
+
+Note that there was no passphrase prompt to decrypt the file. If you want to be
+prompted to enter the password to decrypt the file again, you'll have to wait
+ten minutes, which is the default timeout value.
+

@@ -1,0 +1,291 @@
+				= How to make Firefox More Secure Using about:config =
+
+
+
+
+
+		Built into Firefox are a number of "under the hood" settings. These can be
+		changed to improve your privacy and security when browsing.
+		
+		To access Firefox’s advanced configuration settings, type about:config into the
+		search bar, and hit enter.
+		
+		While it might be possible to do some damage, this warning seems a bit strong
+		to us! Click "I accept the risk!" if you are feeling brave enough.
+		
+		You will now see the configuration screen, with Preference Name’s listed in
+		alphabetical order (by default).
+		
+		To change a boolean entry (i.e. it has a true/false value), simply double-click
+		anywhere on the entry line. To change an integer (i.e. numeric value),
+		double-click the entry and enter a numeric value.
+		
+		To change a string value, double-click the entry and enter the required text.
+		
+		When you see an option in bold in the about:config pane, it has been changed
+		from its default value.
+		
+		Where an entry is marked with an asterisk*, I strongly suggest that you follow
+		my advice.
+		
+		Warning: Some websites rely on features we discuss disabling for security
+		reasons below. Disabling these features will therefore "break" some websites
+		(causing problems when using them, or even causing them to refuse to load
+		altogether).
+		
+		The good news is that simply re-enabling the relevant features will un-break
+		the affected websites, so you may require some trial-and-error to find the
+		right balance between maximum security and accessing the services you use.
+		
+	=== browser.privatebrowsing.autostart ===
+		
+		The Private Browsing mode was introduced to stop you leaving any embarrassing
+		trails of what you have been up to for other users of your browser to find.
+		Most importantly it stops (most) cookies and does not record any History of
+		websites you have visited or forms you have filled in.
+		
+		The critical thing to remember is that Private Browsing is excellent for
+		protecting your privacy from others using the same computer, but does little to
+		protect someone from the outside seeing what you get up to (e.g. your ISP).
+		
+		Even if you are the sole user of a computer, it is still a good idea to always
+		surf the internet in Private Browsing mode, thanks to its cookie blocking
+		features in particular.
+		
+		By setting this Preference to true you will automatically start Firefox in
+		Private Browsing mode, so you will never forget to turn it on.
+		
+	=== browser.safebrowsing.phishing.enabled* ===
+		
+		Firefox ships with the Google Safe Browsing extension built-in and enabled by
+		default. Designed to prevent phishing, it compares the websites you visit to a
+		Google-run blacklist. This means that Google is constantly able to track you.
+		
+		If you have installed our recommended Firefox extensions (see above) then you
+		will gain no additional protection from Google Safe Browsing, while telling
+		Google a great deal about your browsing history. I therefore strongly recommend
+		that you turn it off by setting the value to false.
+		
+	=== browser.safebrowsing.malware.enabled* ===
+		
+		Safe Browsing (now renamed Phishing Protection) is basically a version of
+		Google Safe Browsing licensed to Mozilla (but which still reports to Google).
+		I, therefore, recommend that you set it to false, for the same reasons as
+		above. Click here for the Mozilla help entry.
+		
+		Note that there are a lot of browser.safebrowsing.xxx settings, and it may be
+		worth going through them all and disabling them/deleting their string values.
+		
+	=== browser.startup.homepage ===
+		
+		By default, Firefox will start on the Mozilla Firefox Start Page, displaying a
+		Google search box. Google (along with most major commercial search engines such
+		as Bing! and Yahoo!) stores a great deal of information about you, including a
+		record of the searches you make.
+		
+		To start on a different page, simply enter the website address of your
+		preferred choice. I use StartPage, but please check out our Privacy Search
+		Engines Group Review for a rundown of the best options available. Click here
+		for the Mozilla help entry.
+		
+	=== browser.startup.page ===
+		
+		If you prefer to start Firefox on a blank page, change this setting to ‘0
+		
+	=== datareporting.healthreport.uploadEnabled ===
+		
+		You can see details about your Firefox browser’s performance and stability any
+		time by reviewing the Firefox Health Report (Firefox tab -> Help -> Firefox
+		Health Report). By default, this report is periodically sent to Mozilla (in
+		anonymous aggregate form) to help it understand problems and plan future
+		developments.
+		
+		For maximum security, you should prevent this by setting this entry to false
+		(you will still be able to see your report, it just won’t be sent to Mozilla).
+		
+	=== dom.event.clipboardevents.enabled* ===
+		
+		If you cut, copy or paste something from a website, then the website owners can
+		get notified of exactly which part of a webpage you have cut, copied or pasted.
+		If they wish, they can then record or modify the text, or prevent you from
+		copying (etc.). They can also prevent you from pasting text into online forms.
+		
+		By setting this entry to false you prevent websites knowing where you pasted
+		their text, and as a side benefit will be able to bypass restrictions on
+		cutting and pasting).
+		
+	=== dom.storage.enabled* ===
+		
+		I discuss the dangers of DOM storage (also known as web storage) in "More
+		things that go bump in the night: HTTP ETags, Web Storage, and ‘history
+		stealing". Basically, this way of storing information within web browsers is
+		one of the most pernicious methods used by commercial internet companies to
+		track you across the web and is growing in popularity as netizens become more
+		aware of the danger of ‘regular’ cookies.
+		
+		Fortunately, DOM storage is easy to turn off by setting this entry to false.
+		
+		Update: Thanks to feedback from readers, it is clear that setting
+		dom.storage.enabled to false can "break" some website. Changing this setting
+		should, therefore, be done with caution.
+		
+	=== geo.enabled* ===
+		
+		When you visit a "location-aware" website you will be asked if you want to
+		share your location. If you answer yes then Firefox will send information about
+		nearby wireless access points and your computer’s IP address to Google Location
+		Service, and then pass that information on to the website (a random client
+		identifier is also assigned by Google, which expires every 2 weeks).
+		
+		Although you should be asked every time this happens, and need to give your
+		explicit consent, you can prevent giving consent accidentally or through
+		carelessness by turning this feature off (set the value to false). Click here
+		for the Mozilla help entry.
+		
+		=== geo.wifi.uri ===
+		
+		This setting determines the geolocation service used (Google Location Service
+		by default). If you set geo.enabled (above) to false, then this setting
+		shouldn’t matter. If it makes you feel better, however, then you can change it
+		to 127.0.0.1 (also known as localhost or the ‘loopback address’).
+		
+		In theory, this setting could point to an alternative service, but none such
+		really exist at the moment. Click here for the Mozilla help entry.
+		
+		=== media.peerconnection.enabled ===
+		
+		Web Real-Time Communication (WebRTC) is a potentially useful standard that
+		allows browsers to incorporate features such as voice calling, video chat, and
+		P2P file sharing directly into your browser.
+		
+		A good example of this is the new Firefox Hello video and chat client that lets
+		you talk securely to anyone else using an up-to-date Firefox, Chrome, or Opera
+		browser, without the need to download any add-on or configure any new settings.
+		
+		Unfortunately for VPN users, WebRTC allows a website (or other WebRTC service)
+		to directly detect your host machine’s true IP address, regardless of whether
+		you are using a proxy server or VPN. Some modern VPN clients will block WebRCT
+		leaks, but it is safest to disable in your browser entirely. To do so, change
+		this value to false.
+		
+		=== network.cookie.cookieBehavior ===
+		
+		If you use a good cookie manager such as Cookie AutoDelete (recommended), then
+		you will not need to touch this preference. If not, then it is probably a good
+		idea to set it to ‘1’ (only cookies from the originating server are allowed).
+		
+		=== network.cookie.lifetimePolicy ===
+		
+		Again, using the Cookie AutoDelete add-on is probably the best policy, but if
+		you prefer not to, then you can control when cookies expire by setting this
+		setting to ‘2’ (the cookie expires at the end of the session (when the browser
+		closes)).
+		
+		=== network.dns.disablePrefetch ===
+		
+		Firefox improves page load times by resolving domain names ‘proactively and in
+		parallel’ (i.e. it pre-fetches the information).  In their paper ‘DNS
+		Prefetching and Its Privacy Implications: When Good Things Go Bad’, Srinivas
+		Krishnan and Fabian Monrose argue that this practice can lead to "privacy
+		threats that are ripe for abuse. More specifically… where it is possible to
+		infer the likely search terms issued by clients using a given DNS resolver".
+		
+		DNS prefetching can be turned off by setting this value to true. If you can’t
+		find this setting then you will have to add it manually by right-clicking on
+		the about:config screen, selecting ‘New’ -> ‘Boolean’ and entering ‘
+		network.dns.disablePrefetch’ into the dialog box.
+		
+		=== network.http.sendRefererHeader ===
+		
+		When you click on a hyperlink, the page you go to can request information about
+		the page you clicked the link from. This information is contained in the
+		‘referer header’, and can be used to track you across a website.
+		
+		Furthermore, Javascript scripts can "see" and reference the referrer header if
+		this setting is turned on. Although Mozilla cautions that disabling referrer
+		headings may cause problems with some websites, we advise changing the setting
+		to ‘0’ (never send the referer header or set ‘document.referrer’).
+		
+		=== network.http.sendSecureXSiteReferrer* ===
+		
+		More or less the same as the entry above, except that it allows you to be
+		tracked across websites. You can disable this setting by changing the value to
+		false.
+		
+		=== network.prefetch-next* ===
+		
+		Firefox speeds up the browsing process by scanning links on a webpage, and
+		pre-downloading linked-to webpages when idle. Although disabling this
+		preference will slow down browsing somewhat, from a privacy perspective you
+		really should set it to false. .
+		
+		=== privacy.donottrackheader.enabled* ===
+		
+		Most modern browsers now support a "Do not track’ feature, which asks websites
+		not to track you, and Firefox is no exception. While this should most certainly
+		be turned on (set to true), you should be aware that compliance from websites
+		is entirely voluntary. So the protection it affords can be considered fairly
+		minimal.
+		
+		=== privacy.donottrackheader.value* ===
+		
+		While the privacy.donottrackheader.enabled (above) setting determines whether a
+		‘Do not track’ instruction is sent to a website, this setting determines what
+		that instruction actually says.
+		
+		You should, therefore, set it to 1 to request that websites do not track you (a
+		header stating consent to being tracked is sent to all websites if
+		privacy.donottrackheader.enabled is set True).
+		
+		=== privacy.trackingprotection.enabled ===
+		
+		This enables a blocklist based on Disconnect’s blocklist, to help prevent
+		cross-site tracking. Once Tracking Protection is activated, you will see a
+		shield in your address bar whenever Firefox is blocking either tracking domains
+		or mixed content.
+		
+		As a side-benefit, this setting also causes pages to load 44 percent quicker on
+		average, data usage drops by 29 percent when connecting to the top 200 Alexa
+		websites, and the number of HTTP cookies stored by the browser falls by 67.5%.
+		
+		=== toolkit.telemetry.enabled ===
+		
+		Telemetry covers all sorts of statistical data related to your browser’s
+		performance, usage, and responsiveness. Firefox can send anonymous reports with
+		this data to Mozilla, which is of great assistance to developers, and for this
+		reason, you may consider turning it on, but for maximum privacy, you should
+		check that it is false. Click here for the Mozilla help entry.
+		
+		Additional Notes
+		
+		Private Browsing (aka incognito mode)
+		
+		Like most modern browsers, Firefox offers a Private Browsing mode.
+		Unfortunately, this feature is often poorly understood. This can be very
+		dangerous.
+		
+		When you open a Private Window, pages you visit are not added to the browser’s
+		History, text you enter into forms and search bars is not saved, passwords,
+		downloads, cookies, and temporary internet files are also not saved.
+		
+		This makes Private Browsing great at hiding what you get up to on the internet
+		from family members and others who have access to your computer. There is a
+		reason private browsing is often referred to as porn mode!
+		
+		Firefox 57+ enables Tracking Protection in Private Browsing by default, but in
+		general, Private Browsing does not hide what you get up to on the internet from
+		your ISP. Nor does it hide your real IP address from websites you visit.
+		
+		Private Browsing is therefore great for hiding what you get up to online from
+		your family, but will not hide what you get up to online from anyone else. To
+		hide what you get up to online from the rest of the world, you need to use a
+		VPN or Tor.
+		
+		Firefox Privacy Conclusion
+		
+		Firefox is an excellent browser for privacy and security, but there are lots of
+		things you can do make it even more so! The elephant in the room is that
+		modifying your Firefox browser in many ways makes you more unique, and
+		therefore more susceptible to browser fingerprinting techniques. Unfortunately
+		there is currently no way to square this circle.
+		

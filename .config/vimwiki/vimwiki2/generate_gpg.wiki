@@ -1,0 +1,671 @@
+
+How-To Geek
+
+How-To Geek logo
+Newsletter
+Sign In
+Trending Windows PC Optimization iPhone Android Streaming Deals
+
+  •
+      □ Desktop
+          ☆ Windows
+          ☆ Mac
+          ☆ Linux
+          ☆ Chromebook
+      □ Mobile
+          ☆ Android
+          ☆ iPhone
+          ☆ Carriers
+      □ Hardware
+          ☆ Computer Hardware
+          ☆ Wi-Fi & Networking
+          ☆ Smart Home
+          ☆ eReaders
+          ☆ Audio
+          ☆ TVs
+      □ Web
+          ☆ Web Apps
+          ☆ Social Media
+          ☆ Computer History
+          ☆ Cyber Security
+          ☆ Google
+          ☆ Microsoft
+          ☆ Privacy & Security
+      □ Cutting Edge
+          ☆ EVs
+          ☆ Virtual Reality
+          ☆ AI & Machine Learning
+          ☆ Cryptocurrency
+      □ Lifestyle
+          ☆ Gaming
+          ☆ Streaming
+          ☆ Photography
+          ☆ DIY
+      □ Reviews
+      □ Buying Guides
+      □ Deals
+
+  • Join Our Team
+  • Newsletter
+  • Advertise with us
+  • Sign In
+
+  •
+  •
+  •
+  •
+  •
+  •
+  •
+  •
+
+  • Join Our Content Team
+  • Home
+  • Contact Us
+  • Terms
+  • Privacy
+  • Copyright
+  • About Us
+  • Fact Checking Policy
+  • Corrections Policy
+  • Ethics Policy
+  • Ownership Policy
+  • Owned & Operated by Valnet Inc.
+
+Copyright © 2024 www.howtogeek.com
+[                    ]
+  • Home
+  • Hardware
+
+How to Encrypt and Decrypt Files With GPG on Linux
+
+By Dave McKay
+Published Jul 12, 2019
+
+Use Linux's gpg command to keep your secrets safe.
+
+[img_5c94224b1cfd7]
+
+Quick Links
+
+  • Generating Your Keys
+
+  • Generating a Revocation Certificate
+
+  • Importing Someone Else's Public Key
+
+  • Verifying and Signing a Key
+
+  • How To Share Your Public Key
+
+  • Encrypting FIles
+
+  • Decrypting Files
+
+  • Refreshing Your Keys
+
+  • Privacy is a Hot Topic
+
+Protect your privacy with the Linux gpg command. Use world-class encryption to
+keep your secrets safe. We'll show you how to use gpg to work with keys,
+encrypt files, and decrypt them.
+
+GnuPrivacy Guard (GPG) allows you to securely encrypt files so that only the
+intended recipient can decrypt them. Specifically, GPG complies with the 
+OpenPGP standard. It is modeled on a program called Pretty Good Privacy (PGP).
+PGP was written in 1991 by Phil Zimmerman.
+
+GPG relies on the idea of two encryption keys per person. Each person has a
+private key and a public key. The public key can decrypt something that was
+encrypted using the private key.
+
+To send a file securely, you encrypt it with your private key and the
+recipient's public key. To decrypt the file, they need their private key and
+your public key.
+
+You'll see from this that public keys must be shared. You need to have the
+public key of the recipient in order to encrypt the file, and the recipient
+needs your public key to decrypt it. There is no danger in making your public
+keys just that---public. In fact, there are Public Key Servers for that very
+purpose, as we shall see. Private keys must be kept private. If your public key
+is in the public domain, then your private key must be kept secret and secure.
+
+There are more steps involved in setting up GPG than there are in using it.
+Thankfully, you usually need only set it up once.
+
+Generating Your Keys
+
+The gpg command was installed on all of the Linux distributions that were
+checked, including Ubuntu, Fedora, and Manjaro.
+
+You don't have to use GPG with email. You can encrypt files and make them
+available for download, or pass them physically to the recipient. You do need
+to associate an email address with the keys you generate, however, so choose
+which email address you are going to use.
+
+Here is the command to generate your keys. The
+
+--full-generate-key
+
+option generates your keys in an interactive session within your terminal
+window. You will also be prompted for a passphrase. Make sure you remember what
+the passphrase is. Three or four simple words joined together with punctuation
+is a good and robust model for passwords and passphrases.
+
+gpg --full-generate-key
+
+gpg --full-generate-key in a terminal window
+
+You will be asked to pick an encryption type from a menu. Unless you have a
+good reason not to, type 1 and press Enter.
+
+You must choose a bit-length for the encryption keys. Press Enter to accept the
+default.
+
+key generation questions in a terminal window
+
+You need to specify how long the key should last. If you are testing the
+system, enter a short duration like 5 for five days. If you are going to keep
+this key, enter a longer duration like 1y for one year. The key will last 12
+months and so will need renewing after one year. Confirm your choice with a Y.
+
+You must enter your name and your email address. You can add a comment if you
+wish.
+
+key generation questions in a terminal window
+
+You will be prompted for your passphrase. You will need the passphrase whenever
+you work with your keys, so make sure you know what it is.
+
+key generation questions in a terminal window
+
+Click the OK button when you have entered your passphrase. You'll see this
+window as you work with gpg, so make sure you remember your passphrase.
+
+The key generation will take place, and you will be returned to the command
+prompt.
+
+gpg key generation completed in a terminal window
+
+Generating a Revocation Certificate
+
+If your private key becomes known to others, you will need to disassociate the
+old keys from your identity, so that you can generate new ones. To do this, you
+will require a revocation certificate. We'll do this now and store it somewhere
+safe.
+
+The --output option must be followed by the filename of the certificate you
+wish to create. The --gen-revoke option causes gpg to generate a revocation
+certificate. You must provide the email address that you used when the keys
+were generated.
+
+gpg --output ~/revocation.crt --gen-revoke dave-geek@protonmail.com
+
+gpg --output ~/revocation.crt --gen-revoke dave-geek@protonmail.com in a
+terminal window
+
+You will be asked to confirm you wish to generate a certificate. Press Y and
+hit Enter.  You will be asked for the reason you are generating the
+certificate. As we're doing this ahead of time, we don't know for sure. Press 1
+as a plausible guess and hit Enter.
+
+You can enter a description if you wish. Press Enter twice to end your
+description.
+
+You will be asked to confirm your settings, press Y and hit Enter.
+
+gpg certificate questions in a terminal window
+
+The certificate will be generated. You will see a message reinforcing the need
+to keep this certificate safe.
+
+It mentions someone called Mallory. Cryptography discussions have long used Bob
+and Alice as the two people communicating. There are other supporting
+characters. Eve is an eavesdropper, Mallory is a malicious attacker. All we
+need to know is we must keep the certificate safe and secure.
+
+As a minimum, let's remove all permissions apart from ours from the
+certificate.
+
+chmod 600 ~/revocation.crt
+
+chmod 600 ~/revocation.crt  in a terminal window
+
+Let's check with ls to see what the permission are now:
+
+ls -l
+
+http://cryptocouple.com/ in a terminal window
+
+That's perfect. No one apart from the file owner---us---can do anything with
+the certificate.
+
+Importing Someone Else's Public Key
+
+To encrypt a message so that only the recipient can decrypt it, we must have
+the recipient's public key.
+
+If you have been provided with their key in a file, you can import it with the
+following command. In this example, the key file is called "mary-geek.key."
+
+gpg --import mary-geek.key
+
+gpg --full-generate-key in a terminal window
+
+The key is imported, and you are shown the name and email address associated
+with that key. Obviously, that should match the person you received it from.
+
+gpg --full-generate-key in a terminal window
+
+There is also the possibility that the person you need a key from has uploaded
+their key to a public key server. These servers store people's public keys from
+all over the world. The key servers synchronize with one another periodically
+so that keys are universally available.
+
+The MIT public key server is a popular key server and one that is regularly
+synchronized, so searching there should be successful. If someone has only
+recently uploaded a key, it might take a few days to appear.
+
+The --keyserver option must be followed by the name of the key server you wish
+to search. The --search-keys option must be followed by either the name of the
+person you are searching for or their email address.  We'll use the email
+address:
+
+gpg --keyserver pgp.mit.edu --search-keys mary-geek@protonmail.com
+
+key generation questions in a terminal window
+
+Matches are listed for you and numbered. To import one, type the number and
+press Enter. In this case, there is a single match, so we type 1 and press
+Enter.
+
+key generation questions in a terminal window
+
+The key is imported, and we are shown the name and email address associated
+with that key.
+
+Verifying and Signing a Key
+
+If you have been handed a public key file by someone known to you, you can
+safely say it belongs to that person. If you've downloaded it from a public key
+server, you may feel the need to verify that the key belongs to the person it
+is meant to.
+
+The --fingerprint option causes gpg to create a short sequence of ten sets of
+four hexadecimal characters. You can ask the person to send you the fingerprint
+of their key.
+
+You can then use the --fingerprint option to generate the same fingerprint
+sequence of hexadecimal characters and compare them. If they match, you know
+that the key belongs to that person.
+
+gpg --fingerprint mary-geek@protonmail.com
+
+gpg --full-generate-key in a terminal window
+
+The fingerprint is generated.
+
+gpg --full-generate-key in a terminal window
+
+When you're satisfied that the key is genuine and is owned by the person it is
+supposed to be associated with, you can sign their key.
+
+If you don't do this, you can still use it to encrypt and decrypt messages from
+and to that person. But gpg will ask you every time whether you wish to proceed
+because the key is unsigned. We'll use the aptly named --sign-key option and
+provide the email address of the person, so that gpg knows which key to sign.
+
+gpg --sign-key mary-geek@protonmail.com
+
+gpg --full-generate-key in a terminal window
+
+You'll see information about the key and the person, and will be asked to
+verify you really want to sign the key. Press Y and hit Enter to sign the key.
+
+gpg --full-generate-key in a terminal window
+
+How To Share Your Public Key
+
+To share your key as a file, we need to export it from the gpg local key store.
+To do this, we'll use the --export option, which must be followed by the email
+address that you used to generate the key. The --output option must be followed
+by the name fo the file you wish to have the key exported into. The --armor
+option tells gpg to generate ASCII armor output instead of a binary file.
+
+gpg --output ~/dave-geek.key --armor --export dave-geek@protonmail.com
+
+gpg --full-generate-key in a terminal window
+
+We can take a look inside the key file with less.
+
+less dave-geek.key
+
+gpg --full-generate-key in a terminal window
+
+The key is shown in all its glory:
+
+gpg --full-generate-key in a terminal window
+
+You can also share your public key on a public key server. The --send-keys
+option sends the key to the keyserver. The --keyserver option must be followed
+by the web address of the public key server. To identify which key to send, the
+fingerprint for the key must be provided on the command line. Note there are no
+spaces between the sets of four characters.
+
+(You can see the fingerprint for your key by using the --fingerprint option.)
+
+gpg --send-keys --keyserver pgp.mit.edu 31A4E3BE6C022830A804DA0EE9E4D6D0F64EEED4
+
+gpg --full-generate-key in a terminal window
+
+You'll get confirmation that the key has been sent.
+
+key generation questions in a terminal window
+
+Encrypting FIles
+
+We're finally ready to encrypt a file and send it to Mary. The file is called
+Raven.txt.
+
+The --encrypt option tells gpg to encrypt the file, and the --sign option tells
+it to sign the file with your details. The --armor option tells gpg to create
+an ASCII file. The -r (recipient) option must be followed by the email address
+of the person you're sending the file to.
+
+gpg --encrypt --sign --armor -r mary-geek@protonmail.com
+
+key generation questions in a terminal window
+
+The file is created with the same name as the original, but with ".asc"
+appended to the file name. Let's have a look inside it.
+
+less Raven.txt.asc
+
+key generation questions in a terminal window
+
+The file is completely illegible, and can only be decrypted by someone who has
+your public key and Mary's private key. The only person to have both of those
+should be Mary.
+
+key generation questions in a terminal window
+
+We can now send the file to Mary confident that no one else can decrypt it.
+
+Decrypting Files
+
+Mary has sent a reply. It is in an encrypted file called coded.asc. We can
+decrypt it very easily using the --decrypt option. We are going to redirect the
+output into another file called plain.txt.
+
+Note that we don't have to tell gpg who the file is from. It can work that out
+from the encrypted contents of the file.
+
+gpg --decrypt coded.asc > plain.txt
+
+key generation questions in a terminal window
+
+Let's look at the plain.txt file:
+
+less plain.txt
+
+key generation questions in a terminal window
+
+The file has been successfully decrypted for us.
+
+key generation questions in a terminal window
+
+Refreshing Your Keys
+
+Periodically, you can ask gpg to check the keys it has against a public key
+server and to refresh any that have changed. You might do this every few months
+or when you receive a key from a new contact.
+
+The --refresh-keys option causes gpg to perform the check. The --keyserver
+option must be followed by the key server of your choice. Once the keys have
+been synchronized between the public key servers, it shouldn't matter which one
+you choose.
+
+gpg --keyserver pgp.mit.edu --refresh-keys
+
+key generation questions in a terminal window
+
+gpg responds by listing the keys it checks and letting you know if any have
+changed and been updated.
+
+key generation questions in a terminal window
+
+Privacy is a Hot Topic
+
+Privacy is never far from the news these days. Whatever your reasons for
+wanting to keep your information secure and private, gpg provides a simple
+means to apply incredibly strong encryption to your files and communications.
+
+There are other ways to use gpg. You can get a plugin for Thunderbird called
+Enigmail. It hooks right into your gpg configuration to allow you encrypt email
+messages from inside Thunderbird.
+
+┌──────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬┐
+│          │Linux Commands                                                                                                                                                                                                                                                                                                                                       ││
+├──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼┤
+│          │tar·pv· cat·tac·chmod ·grep ·  diff· sed·ar· man·pushd·popd·fsck·testdisk·seq·                                                                                                                                                                                                                                                                       ││
+│          │fd·pandoc·cd·$PATH·awk·join·jq·fold·uniq·journalctl·tail·stat·ls·fstab·echo·                                                                                                                                                                                                                                                                         ││
+│Files     │less·chgrp·chown·rev·look·strings·type·rename·zip·unzip·mount·umount·install·                                                                                                                                                                                                                                                                        ││
+│          │fdisk·mkfs ·rm·rmdir ·rsync ·df ·gpg ·vi ·nano ·mkdir ·du ·ln ·patch ·convert ·                                                                                                                                                                                                                                                                      ││
+│          │rclone·shred·srm ·scp ·gzip·chattr ·cut ·find ·umask ·wc · tr                                                                                                                                                                                                                                                                                        ││
+├──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼┤
+│          │alias ·screen· top· nice·renice· progress·strace·systemd·tmux·chsh·history·at·                                                                                                                                                                                                                                                                       ││
+│          │batch·free·which·dmesg·chfn·usermod·ps· chroot·xargs·tty·pinky·lsof·vmstat·                                                                                                                                                                                                                                                                          ││
+│Processes │timeout·wall·yes·kill·sleep·sudo·su·time ·groupadd·usermod ·groups ·lshw ·                                                                                                                                                                                                                                                                           ││
+│          │shutdown·reboot·halt·poweroff ·passwd ·lscpu ·crontab ·date ·bg ·fg ·pidof ·                                                                                                                                                                                                                                                                         ││
+│          │nohup ·pmap                                                                                                                                                                                                                                                                                                                                          ││
+├──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼┤
+│Networking│netstat·ping·traceroute·ip·ss·whois·fail2ban·bmon·dig·finger·nmap·ftp· curl·                                                                                                                                                                                                                                                                         ││
+│          │wget ·who·whoami·w ·iptables ·ssh-keygen · ufw ·arping ·firewalld                                                                                                                                                                                                                                                                                    ││
+└──────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴┘
+
+RELATED: Best Linux Laptops for Developers and Enthusiasts
+
+Readers like you help support How-To Geek. When you make a purchase using links
+on our site, we may earn an affiliate commission. Read More.
+
+The Best Tech Newsletter Around
+
+[                    ]
+[Subscribe]
+
+By subscribing, you agree to our Privacy Policy and may receive occasional deal
+communications; you can unsubscribe anytime.
+
+Share Share Share Share Share
+Copy
+Email
+Share
+Share Share Share Share Share
+Copy
+Email
+Link copied to clipboard
+Related Topics
+
+  • Hardware
+  • Cloud & Internet
+  • Features
+  • Linux & macOS Terminal
+  • Linux
+  • Encryption
+
+About The Author
+Dave McKay • Freelance Journalist (417 Articles Published)
+
+
+Dave McKay first used computers when punched paper tape was in vogue, and he
+has been programming ever since. After over 30 years in the IT industry, he is
+now a full-time technology journalist. During his career, he has worked as a
+freelance programmer, manager of an international software development team, an
+IT services project manager, and, most recently, as a Data Protection Officer.
+Dave is a Linux evangelist and open source advocate. Expect detailed how-to's,
+distribution reviews, and Linux-centric editorials.
+
+Close
+
+Recommended Articles
+
+Person wearing the Google Pixel Watch 2 showing the home screen
+
+Hardware
+
+Google Pixel Watch 2 Review: Baby Steps Are Still Steps
+
+Does Google's second attempt at a smartwatch make enough improvements?
+
+Tribit Stormbox Flow Angled View on table
+
+Hardware
+
+Tribit StormBox Flow Review: An Alternative Bluetooth Speaker to Bose or Sonos
+
+A basic Bluetooth speaker for easy carrying that undercuts the price of similar
+products.
+
+TrackPoint on the Lenovo ThinkPad Z16 Gen 2 AMD.
+
+Hardware
+
+5 Products Designs That Haven't Changed in Decades
+
+If it ain't broke, don't fix it.
+
+Close up of the Free Pro 3 earbuds
+
+Hardware
+
+EarFun Free Pro 3 Review: Solid ANC Earbuds at a Shockingly Good Price
+
+With the Free Pro 3, EarFun continues to prove that you don't need to spend
+much for a great, fun-sounding set of earbuds with impressive features.
+
+A concerned looking bearded gamer peering at the screen.
+
+Video Games
+
+You Should Protect Your Gaming Accounts like a Bank Account, Here's How
+
+Don't risk hundreds or thousands of dollars worth of games being stolen.
+
+AnkerMake six nozzle 3d printer at IFA 2023
+
+Hobbies
+
+How To 3D Print in Multiple Colors
+
+The future of 3D printing looks more colorful than ever.
+
+  • Android
+
+  • iPhone
+
+A Pixel 6 dialer open.
+
+How to Block a Number on Android
+
+2 days ago
+
+A smartphone on the right with the screen locked, showing the Glanceable
+directions functionality, and another on the left, showing Google maps.
+
+Glanceable Directions is the Best New Google Maps Feature in Ages
+
+3 days ago
+
+Person holding the Samsung Galaxy S24+ showing the lock screen.
+
+How to Take a Screenshot on an Android Phone or Tablet
+
+3 days ago
+
+Google Maps and Waze logos.
+
+Waze vs Google Maps: Which One Is Really Better?
+
+3 days ago
+
+The Samsung Galaxy S22 Ultra in black, white, and red with the S Pen.
+
+Galaxy AI Features Are Coming to Older Samsung Phones
+
+4 days ago
+
+The Android 15 logo over a photo of a Google Pixel Fold.
+
+Android 15 Beta 1 Has Arrived
+
+4 days ago
+See More
+
+Front and rear view of some flagship smartphones.
+
+Don't Skip the Flagship; Why Top-Class Smartphones Are Still Worth Your Money
+
+5 days ago
+
+The Apple App Store icon over a photo of an iPhone.
+
+Don’t Take Apple’s New Game Emulation Policy at Face Value
+
+Apr 8, 2024
+
+Charging an iPhone on the wireless charging pad on top of the UGreen 100W
+2-in-1 GaN Charger.
+
+You Don't Need a Bigger Phone Battery, Here's Why
+
+Apr 7, 2024
+
+A smartphone on w3m: Can't load dump.
+an office desk, with books, a laptop, and a wall with several
+notepads behind
+
+This Is the Best Markdown and Note-Taking App You've Never Heard Of
+
+Apr 6, 2024
+
+Google Circle to Search running on a Samsung Galaxy S24 Ultra.
+
+Phones Keep Getting Bigger—and It's Our Fault
+
+Apr 6, 2024
+
+Belkin BoostCharge Pro (Qi2) with no devices on it
+
+Belkin BoostCharge Pro (Qi2) Review: Iconic 3-in-1 iPhone Charger Refreshed
+
+Apr 5, 2024
+See More
+
+Trending Now
+
+The back of an iPhone 15.
+
+SetApp Will Be An Alternative App Store for iPhones
+
+The redesigned Google TV Home Screen.
+
+Google TV Unveils Its Redesigned Home Screen
+
+Samsung MSD Cards 2024
+
+Samsung's New microSD Cards Promise "SSD-Like Performance"
+
+  • Join Our Content Team
+  • Home
+  • Contact Us
+  • Terms
+  • Privacy
+  • Copyright
+  • About Us
+  • Fact Checking Policy
+  • Corrections Policy
+  • Ethics Policy
+  • Ownership Policy
+  • Owned & Operated by Valnet Inc.
+
+Copyright © 2024 www.howtogeek.com

@@ -1,0 +1,54 @@
+==zulucrypt-cli encrypt partition==
+
+
+
+interface (GUI). You can also build the program yourself. If you only need the
+command-line interface (CLI), then you can simply leave the GUI out.
+
+Rising Star
+
+The software has become more widely distributed since it became a part of the
+Canonical archive in Ubuntu 15.10. Since the release of version 18, it also
+comes with Linux Mint (Listing 1). Meantime, zuluCrypt has also found a place
+in the package sources for Debian, Fedora, openSUSE, Gentoo, and Arch User
+Repository (AUR). On their website, the developers make all of the most
+recently published packages (currently version 5.0) for Debian and Ubuntu
+available for downloading (see the Test box).
+
+Listing 1
+
+=== Automatic Installation ===
+
+$ sudo apt install zulucrypt-gui zulucryw3m: Can't load dump.
+pt-cli tcplay cryptsetup
+
+==== Test ====
+
+After consulting with the developers, the test refers to the advanced version
+of the future version that will be coming out from the project's Git branch.
+The advanced version was built with the openSUSE Build Service (OBS) [6]. It
+corrects some of the errors in the translation and documentation. Ubuntu users
+should definitely make use of this because the old 4.7.7 version is still
+installed from the Ubuntu 16.04's package manager. The developer promised that
+a new and stable version would be available around this article's publication
+date.
+
+To set up the prerequisites, you should install the packages cryptsetup and
+tcplay . These packages are not automatically part of the zuluCrypt
+installation. Even so, the software will not function properly without them. If
+you are not using a Qt environment like KDE or LXQt, then the package
+administration will pull in libqtcore4 and libqt4-network . Listing 2 shows
+manual installation on a Debian based distribution. In this example, it is
+"Xenial." If you are on a 32-bit system, you should go to the second line and
+replace amd64 with i386 .
+
+Listing 2
+
+=== Manual Installation ===
+
+$ tar xf zuluCrypt-5.0.0-ubuntu-16.04-Xenial_Xerus.tar.xz
+$ cd zuluCrypt-5.0.0-ubuntu-16.04-Xenial_Xerus/amd64
+$ sudo dpkg -i *.deb
+$ sudo apt install -f
+$ sudo apt install tcplay cryptsetup
+

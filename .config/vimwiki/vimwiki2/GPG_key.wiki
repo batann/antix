@@ -1,0 +1,41 @@
+= Contents =
+        - [[#GPG encryption]]
+                                - [[#encrypting a file]]
+                                - [[#decrypting a file]]
+                                - [[#decrypting and extracting a file]]
+                                - [[#generate gpg-key]]
+                                - [[#generatin a revocation certificate]]
+                                - [[#importing someone elses certificate]]
+                                - [[#verifying and siging a key]]
+                                - [[#share your key]]
+                                - [[#refreshing your keys]]
+
+= GPG encryption =
+
+
+====encrypting a file====
+[[encrypting a file]]
+
+====decrypting a file====
+[[decrypting a file]]
+
+====decrypting and extracting a file====
+[[decrypting and extracting file]]
+
+====generate gpg-key====
+[[generate gpg-key]]
+
+====generatin a revocation certificate====
+[[generatin a revocation certificate]]
+
+====importing someone elses certificate====
+[[importing someone elses certificate]]
+
+====verifying and siging a key====
+[[verifying and siging a key]]
+
+====share your key====
+[[share your key]]
+
+==== refreshing your keys====
+[[refreshing your keys]]

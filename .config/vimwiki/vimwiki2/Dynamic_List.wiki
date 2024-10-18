@@ -1,0 +1,297 @@
+= Yad Dyamic List =
+
+
+[logo_group]Groups
+Conversations
+All groups and messages
+[Search conversations][                    ]
+Send feedback to Google
+Help
+
+Sign in
+Groups
+
+yad-common
+
+Conversations
+About
+Privacy • Terms
+
+
+
+
+
+Dynamic Yad --list?
+
+27 views
+Skip to first unread message
+
+Dancehall Echo's profile photo
+
+Dancehall Echo
+
+unread,
+May 24, 2023, 11:10:43 PMMay 24
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Link
+Report message as abuse
+Sign in to report message as abuse
+Show original message
+Either email addresses are anonymous for this group or you need the view member
+email addresses permission to view the original message
+to yad-c...@googlegroups.com
+
+Good morning,
+I would like to know if it is possible to make the number of entries in a
+--list dynamic, that is to say that the number of this one would change
+according to the results of a command line. there could be one then the next
+time four for example.
+THANKS.
+Julio C. Neves's profile photo
+
+Julio C. Neves
+
+unread,
+May 26, 2023, 12:19:00 AMMay 26
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Link
+Report message as abuse
+Sign in to report message as abuse
+Show original message
+Either email addresses are anonymous for this group or you need the view member
+email addresses permission to view the original message
+to yad-c...@googlegroups.com
+
+The script below is part of a text (pt_BR) that shows what I think you want
+
+$ cat form9.yad
+
+# Showing how to populate form fields and close
+
+#+ the script with a button defined by the program
+
+
+function Popula {
+
+[[ $1 == Others ]] &&
+
+echo '2:Pear!Grape!Apple!Melon' ||
+
+echo '2:Orange!Tangerine!Lemon!Acerola'
+
+}; export -f Popula
+
+
+yad --form --columns 2 --center --no-buttons \
+
+--field Fruta:CB '^Citrics!Others' \
+
+--field Escolha:CB '' \
+
+--field gtk-ok:FBTN '@bash -c "Popula %1"' \
+
+--field gtk-apply:FBTN '@bash -c "echo %2 > /dev/tty
+
+kill -USR2 $YAD_PID"'
+
+Abraços,
+Julio
+» Quer ser promovido? Aprenda Shell e seja o melhor admin da sua empresa
+» Curso no formato presencial ou EAD com aulas ao vivo
+Veja detalhes em: https://www.dicas-l.com.br/shell-linux
+
+Nossos treinamentos te certificarão e podem ser
+em sua cidade. Nossa empresa é 100% regulamentada.
+
+
+
+
+
+
+    --
+    You received this message because you are subscribed to the Google Groups
+    "yad-common" group.
+    To unsubscribe from this group and stop receiving emails from it, send an
+    email to yad-common+...@googlegroups.com.
+    To view this discussion on the web visit https://groups.google.com/d/msgid/
+    yad-common/
+    CACn-JBPWs6F18Uvfi%3DfnEywHB1%3DLdPo2pmSH2NEJgOPdKY3csQ%40mail.gmail.com.
+
+mutch...@gmail.com's profile photo
+
+mutch...@gmail.com
+
+unread,
+May 31, 2023, 7:14:24 AMMay 31
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Link
+Report message as abuse
+Sign in to report message as abuse
+Show original message
+Either email addresses are anonymous for this group or you need the view member
+email addresses permission to view the original message
+to yad-common
+I don't know if this helps. I use yad to provide a GUI for downloading
+instructional or copyright-free YouTube videos using yt-dlp. My script allows
+the option to choose both the video and audio formats from a yad list, and
+depending on the resolution and format of the video owner's original file,
+different formats are available to download. This means that the yad lists can
+be of different sizes for different videos.
+
+I first issue the yt-dlp command with the switch -F to get a list of the
+video's available formats and store them in the array "formats". I split the
+output into the video and audio formats and present them separately so that I
+can choose exactly what I want to download.
+
+I use arrays to present the format data to the yad command.
+
+Here is the code snippew3m: Can't load dump.
+t for creating a yad list command for the audio streams
+available from a video, which is not elegant but it works in bash:
+
+************************************************************************************************************
+
+# Get formats available
+mapfile -t formats < <( (yt-dlp -F "$link") )
+
+# Send all available formats to the log
+echo "Formats available:" >> "$log";printf '%s\n' "${formats[@]}" >> "$log"
+
+# Extract audio formats from the formats array
+ifs=$IFS;IFS=$'\n'; aformats=($(printf '%s\n' "${formats[@]}" |sed '/audio/!d'|
+sort -k1 -n));IFS=$ifs
+
+# Get number of indices in the array and create the command suffix (asuf) for
+yad. This adds the indices required
+for i in ${!aformats[@]}; do asuf="$asuf""\$element$i $i "; done
+
+# Remove trailing index number in command (else the yad list shows a blank
+entry at the end)
+asuf="$(echo "$asuf"|rev|cut -d" " -f3-|rev)"
+
+# Start to create command for the audio list. In "yad_command_1a" the "1a," 1
+refers to the first part of the command, a stands for audio
+yad_command_1a="yad --list --center --height="400" --width="800" --title=\
+"$format_title\" --window-icon="$yt_arrow" --radiolist --column=\"Select\"
+--column=\"Choose the audio format (normally 140, m4a):\" --button=\" Cancel\"
+\!\"$cancel_icon\":252 --button=\"  OK\"\!\"$ok_icon\":0 TEXT "
+
+# Add the suffix to the command
+yad_command=${yad_command_1a}${asuf}
+
+# Set variable (element{x}) for each element
+ifs=$IFS;IFS=""
+for i in "${!aformats[@]}"; do declare "element${i}"=$(printf '%s\n' "$
+{aformats[i]}"); done
+
+# Put the available formats into yad
+while [[ -z "$aselected" ]]; do aselected=$(eval "$yad_command");rc=$?;[[ $rc
+-eq 252 ]] && { echo -e "Cancelled\n\n" >> "$log";exit 0; };done;aselected=$
+(echo $aselected|awk -F '[| ]' '{print $2}')
+echo "Audio format selected = $aselected" >> "$log"
+aformat="$aselected"
+
+************************************************************************************************************
+
+
+
+TEMP.jpg
+
+The formatting of the printed text is not perfect (which it is in the log
+file!), but it works.
+
+I hope this helps. I am sure there are better ways of managing the arrays!
+
+Dancehall Echo's profile photo
+
+Dancehall Echo
+
+unread,
+May 31, 2023, 10:17:49 PMMay 31
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Link
+Report message as abuse
+Sign in to report message as abuse
+Show original message
+Either email addresses are anonymous for this group or you need the view member
+email addresses permission to view the original message
+to yad-c...@googlegroups.com
+hi,
+this will help me a lot.
+thanks!
+
+
+[AIorK4wyeUMV]
+ 
+Dancehall Echo
+
+Web Site Promoting Reggae, Dancehall And Soca Music.
+
+Sur Le Net:
+www.dancehallecho.net
+
+Réseaux sociaux:
+Facebook
+Twitter
+Google +
+
+
+
+
+
+
+
+
+    --
+
+    You received this message because you are subscribed to the Google Groups
+    "yad-common" group.
+    To unsubscribe from this group and stop receiving emails from it, send an
+    email to yad-common+...@googlegroups.com.
+
+    To view this discussion on the web visit https://groups.google.com/d/msgid/
+    yad-common/669a3365-c4ca-4540-9d32-3858b9f9395bn%40googlegroups.com.
+
+Reply all
+Reply to author
+Forward
+
+0 new messages
+
+Search
+Clear search
+Close search
+Google apps
+Main menu
