@@ -1,0 +1,619 @@
+Write
+
+Sign in
+
+Top highlight
+50 cool Bash scripts! and what they do …
+William Maina
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+
+William Maina
+·
+
+Follow
+Published in
+
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+·
+6 min read
+·
+Oct 7, 2023
+
+Hey there! So, you’ve heard of Bash before, right? It’s like the “cool kid” of the command-line world, somewhat akin to the Windows Command Prompt (CMD), but with a twist. If you’re nodding along but haven’t really delved into it, you’re in for a treat!
+
+Think of Bash as your trusty sidekick for navigating and controlling your computer via text commands. It’s used by virtually every major tech company and system developers worldwide. You see, the magic of Bash lies in its simplicity and efficiency. With just a few well-placed keystrokes, you can zip through tasks, manage files, and automate processes much faster than clicking around with a mouse and a graphical user interface (GUI).
+
+Even if you’re on a Windows machine, fear not! You can tap into the power of Bash through Windows Subsystem for Linux (WSL), and suddenly, you’ll find yourself effortlessly conquering tasks that used to feel daunting. So, if you’ve been hesitating, it’s time to dive in and discover how Bash can supercharge your computing experience. Trust me, it’s worth it!
+
+That said, Here’s a list of 50 common Bash scripts along with explanations of their use that you could try since we learn by doing:
+
+Hello World:
+
+#!/bin/bash
+echo "Hello, World!"
+
+Explanation: A basic script that prints “Hello, World!” to the terminal.
+
+File Backup
+
+#!/bin/bash
+source_dir="/path/to/source"
+backup_dir="/path/to/backup"
+timestamp=$(date +%Y%m%d%H%M%S)
+backup_file="backup_$timestamp.tar.gz"
+tar -czvf "$backup_dir/$backup_file" "$source_dir"
+
+Explanation: Creates a timestamped backup of a directory using tar compression.
+
+Directory Listing
+
+#!/bin/bash
+ls -l
+
+Explanation: Lists files and directories in the current directory with details.
+
+File Count
+
+#!/bin/bash
+file_count=$(ls | wc -l)
+echo "Number of files: $file_count"
+
+Explanation: Counts the number of files in the current directory.
+
+Disk Usage
+
+#!/bin/bash
+df -h
+
+Explanation: Displays disk usage information.
+
+System Info
+
+#!/bin/bash
+uname -a
+
+Explanation: Prints system information, including the kernel version
+
+File Rename
+
+#!/bin/bash
+old_name="old.txt"
+new_name="new.txt"
+mv "$old_name" "$new_name"
+
+Explanation: Renames a file from “old.txt” to “new.txt.”
+
+File Permissions
+
+#!/bin/bash
+file="file.txt"
+chmod +x "$file"
+
+Explanation: Grants execute permission to a file.
+
+User Info
+
+#!/bin/bash
+username=$(whoami)
+echo "Current user: $username"
+
+Explanation: Prints the username of the current user.
+
+Process List
+
+#!/bin/bash
+ps aux
+
+Explanation: Lists all running processes.
+
+Process Kill
+
+#!/bin/bash
+process_id=12345
+kill -9 "$process_id"
+
+Explanation: Kills a process by its process ID.
+
+Check Internet Connection
+
+#!/bin/bash
+ping -c 5 google.com
+
+Explanation: Checks internet connectivity by pinging Google.
+
+Disk Cleanup
+
+#!/bin/bash
+du -sh /var/log/*
+rm -rf /var/log/*
+
+Explanation: Displays disk usage of log files and then deletes them
+
+System Shutdown
+
+#!/bin/bash
+shutdown -h now
+
+Explanation: Shuts down the system immediately.
+
+System Reboot
+
+#!/bin/bash
+reboot
+
+Explanation: Reboots the system.
+
+File Search
+
+#!/bin/bash
+search_dir="/path/to/search"
+search_term="pattern"
+grep -r "$search_term" "$search_dir"
+
+Explanation: Searches for a specified pattern recursively in files.
+
+Disk Space Alert
+
+#!/bin/bash
+threshold=90
+current_usage=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')
+if [ "$current_usage" -ge "$threshold" ]; then
+    echo "Disk space is running low!"
+else
+    echo "Disk space is okay."
+fi
+
+Explanation: Monitors disk space usage and provides an alert if it exceeds a specified threshold.
+
+Check Service Status
+
+#!/bin/bash
+service_name="nginx"
+if systemctl is-active --quiet "$service_name"; then
+    echo "$service_name is running."
+else
+    echo "$service_name is not running."
+fi
+
+Explanation: Checks if a system service is running.
+
+System Backup Script
+
+#!/bin/bash
+source_dir="/path/to/source"
+backup_dir="/path/to/backup"
+timestamp=$(date +%Y%m%d%H%M%S)
+backup_file="backup_$timestamp.tar.gz"
+tar -czvf "$backup_dir/$backup_file" "$source_dir"
+
+Explanation: Creates a timestamped backup of a directory, similar to the intermediate script but without user prompts.
+
+Log Rotation
+
+#!/bin/bash
+log_file="/path/to/logfile.log"
+max_log_size=10M
+if [ -f "$log_file" ]; then
+    current_size=$(du -b "$log_file" | awk '{print $1}')
+    if [ "$current_size" -ge "$max_log_size" ]; then
+        mv "$log_file" "$log_file.old"
+        touch "$log_file"
+    fi
+fi
+
+Explanation: Rotates log files by renaming them when they reach a specified size.
+
+User Management
+
+#!/bin/bash
+username="newuser"
+password="password123"
+useradd "$username"
+echo "$username:$password" | chpasswd
+
+Explanation: Creates a new user and sets their password.
+
+File Encryption
+
+#!/bin/bash
+file_to_encrypt="file.txt"
+gpg -c "$file_to_encrypt"
+
+Explanation: Encrypts a file using GPG.
+
+File Decryption
+
+#!/bin/bash
+encrypted_file="file.txt.gpg"
+gpg -d "$encrypted_file" > "decrypted_file.txt"
+
+Explanation: Decrypts an encrypted file.
+
+File Compression
+
+#!/bin/bash
+compressed_file="compressed_file.tar.gz"
+tar -xzvf "$compressed_file"
+
+Explanation: Compresses a file using tar and gzip.
+
+File Decompression
+
+#!/bin/bash
+compressed_file="compressed_file.tar.gz"
+tar -xzvf "$compressed_file"
+
+Explanation: Decompresses a file compressed with tar and gzip.
+
+CSV File Processing
+
+#!/bin/bash
+input_csv="data.csv"
+output_file="output.txt"
+awk -F ',' '{print $1,$2}' "$input_csv" > "$output_file"
+
+Explanation: Extracts specific columns from a CSV file and saves them to a new file.
+
+Log Analysis
+
+#!/bin/bash
+log_file="access.log"
+unique_ips=$(awk '{print $1}' "$log_file" | sort -u | wc -l)
+error_count=$(grep -c 'ERROR' "$log_file")
+echo "Unique IPs: $unique_ips"
+echo "Total Errors: $error_count"
+
+Explanation: Analyzes an access log file, counting unique IP addresses and error occurrences.
+
+Send Email Alert
+
+#!/bin/bash
+email="user@example.com"
+subject="Alert"
+message="Disk space is running low!"
+echo "$message" | mail -s "$subject" "$email"
+
+Explanation: Sends an email alert.
+
+Database Backup
+
+#!/bin/bash
+db_name="mydb"
+backup_file="backup.sql"
+mysqldump -u username -p$password "$db_name" > "$backup_file"
+
+Explanation: Creates a MySQL database backup.
+
+SSH Key Generation
+
+#!/bin/bash
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/mykey
+
+Explanation: Generates an SSH key pair.
+
+SSH Key Copy
+
+#!/bin/bash
+ssh-copy-id user@hostname
+
+Explanation: Copies an SSH public key to a remote server for passwordless login.
+
+File Comparison
+
+#!/bin/bash
+file1="file1.txt"
+file2="file2.txt"
+if cmp -s "$file1" "$file2"; then
+    echo "Files are identical."
+else
+    echo "Files are different."
+fi
+
+Explanation: Compares two files to check if they are identical.
+
+Cron Job Example
+
+#!/bin/bash
+backup_dir="/path/to/backup"
+timestamp=$(date +%Y%m%d%H%M%S)
+backup_file="backup_$timestamp.tar.gz"
+tar -czvf "$backup_dir/$backup_file" /path/to/source
+
+Explanation: A script that can be scheduled as a cron job to automate backups at regular intervals.
+
+Folder Synchronization
+
+#!/bin/bash
+source_dir="/path/to/source"
+destination_dir="/path/to/destination"
+rsync -av "$source_dir/" "$destination_dir/"
+
+Explanation: Synchronizes the contents of two directories using rsync.
+
+URL Download
+
+#!/bin/bash
+url="https://example.com/file.txt"
+output_file="downloaded_file.txt"
+wget "$url" -O "$output_file"
+
+Explanation: Downloads a file from a URL using wget.
+
+Input Validation
+
+#!/bin/bash
+read -p "Enter a number: " number
+if [[ ! "$number" =~ ^[0-9]+$ ]]; then
+    echo "Invalid input. Please enter a number."
+else
+    echo "You entered: $number"
+fi
+
+Explanation: Validates user input to ensure it is a number.
+
+String Manipulation
+
+#!/bin/bash
+string="Hello, World!"
+uppercase_string=$(echo "$string" | tr '[:lower:]' '[:upper:]')
+echo "$uppercase_string"
+
+Explanation: Converts a string to uppercase.
+
+File Watcher
+
+#!/bin/bash
+directory="/path/to/watch"
+inotifywait -m -r -e create,modify,delete "$directory" |
+while read path action file; do
+    echo "File $file was $action."
+done
+
+Explanation: Watches a directory for file changes using inotifywait.
+
+JSON Parsing
+
+#!/bin/bash
+json_string='{"name": "John", "age": 30}'
+name=$(echo "$json_string" | jq -r '.name')
+age=$(echo "$json_string" | jq -r '.age')
+echo "Name: $name, Age: $age"
+
+Explanation: Parses JSON data and extracts specific fields using jq.
+
+Zip File Compression
+
+#!/bin/bash
+file_to_compress="file.txt"
+zip "compressed_file.zip" "$file_to_compress"
+
+Explanation: Compresses a file using ZIP compression.
+
+Zip File Extraction
+
+#!/bin/bash
+zip_file="compressed_file.zip"
+unzip "$zip_file"
+
+Explanation: Extracts files from a ZIP archive.
+
+PDF Conversion
+
+#!/bin/bash
+input_file="document.docx"
+output_file="document.pdf"
+libreoffice --headless --convert-to pdf "$input_file"
+
+Explanation: Converts a document to PDF using LibreOffice.
+
+CSV to Excel
+
+#!/bin/bash
+input_csv="data.csv"
+output_xlsx="data.xlsx"
+ssconvert "$input_csv" "$output_xlsx"
+
+Explanation: Converts a CSV file to an Excel (XLSX) file using Gnumeric’s ss convert.
+
+File Splitting
+
+#!/bin/bash
+input_file="large_file.txt"
+split -b 1M "$input_file" "split_file"
+
+Explanation: Joins split files to reconstruct the original file.
+
+File Joining
+
+#!/bin/bash
+cat split_file* > "large_file.txt"
+
+Explanation: Joins split files to reconstruct the original file.
+
+IP Address Validation
+
+#!/bin/bash
+read -p "Enter an IP address: " ip_address
+if [[ $ip_address =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+    echo "Valid IP address: $ip_address"
+else
+    echo "Invalid IP address."
+fi
+
+Explanation: Validates user input as an IP address.
+
+URL Validation
+
+#!/bin/bash
+read -p "Enter a URL: " url
+if [[ $url =~ ^(http|https)://[A-Za-z0-9.-/]+$ ]]; then
+    echo "Valid URL: $url"
+else
+    echo "Invalid URL."
+fi
+
+Explanation: Validates user input as a URL.
+
+File Permissions Report
+
+#!/bin/bash
+find /path/to/files -type f -exec ls -l {} \; > permissions_report.txt
+
+Explanation: Creates a report of file permissions for all files in a directory
+
+Password Generator
+
+#!/bin/bash
+length=12
+characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"
+password=$(head /dev/urandom | tr -dc "$characters" | head -c "$length")
+echo "Generated Password: $password"
+
+Explanation: Generates a random password of specified length using characters from a set.
+
+These scripts cover a wide range of common tasks in Bash scripting, from basic file operations to more advanced tasks like JSON parsing and PDF conversion. Beginners can start with the simpler scripts and gradually move on to more complex ones as they gain familiarity with Bash.
+Bash
+Bash Script
+Development
+Systems Engineering
+
+William Maina
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+Written by William Maina
+149 Followers
+·Writer for
+
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+
+William Maina. Bsc. Math/CS, founder Ibconcept Agency, Future Employer, Dynamic Entrepreneur, Digital Trailblazing Professional
+More from William Maina and 𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+Understanding System Requirements for Software Development
+William Maina
+
+William Maina
+
+in
+
+Bootcamp
+Understanding System Requirements for Software Development
+Creating System Requirements for Software: A Comprehensive Guide
+5 min read·Nov 8, 2023
+
+8 ChatGPT Prompts That Will Blow Your Mind and Transform Your Life
+Anish Singh Walia
+
+Anish Singh Walia
+
+in
+
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+8 ChatGPT Prompts That Will Blow Your Mind and Transform Your Life
+AI and technology are not just tools; they are companions in our journey of evolution. Together, they create a landscape where our lives…
+7 min read·Feb 26, 2024
+
+51
+Top 8 ChatGPT Prompts That Will Make You More Productive Than a Team of 20 Employees
+Anish Singh Walia
+
+Anish Singh Walia
+
+in
+
+𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+Top 8 ChatGPT Prompts That Will Make You More Productive Than a Team of 20 Employees
+AI isn’t just artificial; it’s authentically driving a productivity revolution. With ChatGPT, efficiency becomes second nature, and…
+7 min read·Jan 19, 2024
+
+90
+Common Types of LLMs: Exploring Parallelism and Beyond
+William Maina
+
+William Maina
+
+in
+
+Bootcamp
+Common Types of LLMs: Exploring Parallelism and Beyond
+Language models have seen significant advancements in recent years, with various architectures and approaches emerging. In this article, we…
+4 min read·Jul 17, 2023
+
+See all from William Maina
+See all from 𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨
+Recommended from Medium
+Modern Git Commands and Features You Should Be Using
+Martin Heinz
+
+Martin Heinz
+
+in
+
+ITNEXT
+Modern Git Commands and Features You Should Be Using
+It’s not 2005 anymore and git offers more than just add, commit, push and pull. Let’s explore all the new, modern git commands, that you…
+·6 min read·Mar 4, 2024
+
+16
+You’re Decent At Python If You Can Answer These 7 Questions Correctly
+Liu Zuo Lin
+
+Liu Zuo Lin
+You’re Decent At Python If You Can Answer These 7 Questions Correctly
+# No cheating pls!!
+·6 min read·Mar 6, 2024
+
+14
+Lists
+Growth Marketing
+11 stories·91 saves
+General Coding Knowledge
+20 stories·1070 saves
+Modern Marketing
+103 stories·522 saves
+Medium's Huge List of Publications Accepting Submissions
+281 stories·2317 saves
+Nobody wants to work with our best engineer
+Jacob Bennett
+
+Jacob Bennett
+
+in
+
+The Atomic Engineer
+Nobody wants to work with our best engineer
+Kindness is underrated.
+·2 min read·Mar 8, 2024
+
+95
+What’s the Difference Between localhost and 127.0.0.1?
+Oliver Foster
+
+Oliver Foster
+
+in
+
+Stackademic
+What’s the Difference Between localhost and 127.0.0.1?
+My article is open to everyone; non-member readers can click this link to read the full text.
+·8 min read·Feb 2, 2024
+
+11
+Are You Smart Enough To Find The Radius?
+Bella Lockhart
+
+Bella Lockhart
+
+in
+
+Intuition
+Are You Smart Enough To Find The Radius?
+A Fun Geometry Challenge
+·3 min read·Feb 4, 2024
+
+71
+BASH/Linux Interview Question for DevOps Engineers
+Preetam Meena
+
+Preetam Meena
+BASH/Linux Interview Question for DevOps Engineers
+1. What are the various types of variables used in shell scripting?
+7 min read·Jan 8, 2024

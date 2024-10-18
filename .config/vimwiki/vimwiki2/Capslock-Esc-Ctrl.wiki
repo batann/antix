@@ -1,0 +1,28 @@
+I'm using the following lines in my ~/.xprofile on Ubuntu 20.04 to map Capslock to ESC and Ctrl:
+
+# make CapsLock behave like Ctrl:
+setxkbmap -option ctrl:nocaps
+# make short-pressed Ctrl behave like Escape:
+xcape -e 'Control_L=Escape'
+which works perfectly fine for me.
+
+My issue is that it does not survive suspend/resume reliably. For this, I've tried 2 different solutions:
+
+1. Via a script capsmap put into /usr/lib/systemd/system-sleep/
+#!/bin/bash
+
+case "$1" in
+    pre)
+      #code execution BEFORE sleeping/hibernating/suspending
+    ;;
+    post)
+      #code execution AFTER resuming
+      /usr/bin/echo "executing: /usr/bin/setxkbmap -option ctrl:nocaps"
+      /usr/bin/setxkbmap -option ctrl:nocaps
+      /usr/bin/echo "executing: /usr/bin/xcape -e 'Control_L=Escape'"
+      /usr/bin/xcape -e 'Control_L=Escape'
+
+    ;;
+esac
+
+exit 0

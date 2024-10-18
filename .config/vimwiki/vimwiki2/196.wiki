@@ -1,0 +1,8 @@
+
+= disable key =
+
+== get code ==
+xev event keyboard
+
+== disable key ==
+xmmodmap -e 'keycode 50='

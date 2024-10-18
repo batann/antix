@@ -1,0 +1,146 @@
+
+= Custom ISO = 
+
+It's possible to create a custom bootable ISO by following the procedure below.
+
+We need the loop module to be loaded
+``
+ modprobe loop
+``
+Install the artools group (3 packages) and iso-profiles:
+``
+ pacman -S artools iso-profiles
+``
+Use the following to generate ~/artools-workspace:
+``
+ buildiso -p <profile> -q
+``
+Currently, <profile> can be either base (default) or lxqt. Copy /etc/artools/artools-base.conf, /etc/artools/artools-iso.conf, and /etc/artools/artools-pkg.conf to ~/.config/artools
+
+Copy the the /usr/share/artools/iso-profiles folder to ~/artools-workspace/
+
+Modify the copied folder and file to customise the ISO. Inside base and lxqt there are live-overlay and desktop-overlay subfolders; The contents of the former are overlaid on the live session and of the latter on the installed system. Test the output:
+``
+ buildiso -p <profile> -q
+``
+If all goes well, create the ISO:
+``
+ buildiso -p <profile>
+``
+This will create the ISO in ~/artools-workspace/iso, which you can either burn to CD/DVD using your favourite program or dd it to USB (etcher found in AUR works well for USB sticks).
+
+To install the ISO without fetching updates during installation, set netinstall = no from the initial grub menu (this is the default from artools 0.9.5 onwards
+
+Boot to your selected desktop and start calamares.
+Contents [hide]
+Advanced switch usage
+Additional configuration options
+Tips
+    To add personal packages or packages from Archlinux's AUR
+Troubleshooting
+    Note to ZFS users
+    Signature from "Artix Buildbot <buildbot@artixlinux.org>" is invalid
+Advanced switch usage
+
+If you wish to alter the filesytem prior to ISO completion. Use the -x switch
+
+ -x                 Build chroot only
+
+Build artools/buildiso/lxqt/artix/livefs
+``
+ buildiso -p lxqt -x
+``
+/snip/
+
+ ==> WARNING: Continue squash: buildiso -p base -sc ...
+
+Make any filesystem changes now
+``
+  sudo sed -i 's|#rc_parallel="NO"|rc_parallel="YES"|' artools/buildiso/lxqt/artix/rootfs/etc/rc.conf
+``
+Build artools/buildiso/lxqt/iso/LiveOS/rootfs.img
+
+ -s                 Squash chroot only
+ -c                 Disable clean work dir
+``
+buildiso -p lxqt -sc
+``
+Use the -b switch for boot filesystem
+
+ -b                 Generate iso boot only
+
+Build artools/buildiso/lxqt/artix/bootfs
+``
+buildiso -p lxqt -bc
+``
+Make your edits to boot now
+
+Set default timezone
+``
+ sudo sed -i 's|def_timezone="UTC"|def_timezone="America/Denver"|' artools/buildiso/lxqt/iso/boot/grub/defaults.cfg
+``
+Disable boot time checksum for .sfs files:
+``
+    sudo sed -i 's|checksum=y|checksum=n|' artools/buildiso/lxqt/iso/boot/grub/kernels.cfg
+``
+Generate the ISO artools-workspace/iso/lxqt/artix-lxqt-openrc-2019-12-15-14:49-x86_64.iso
+``
+ $ buildiso -p lxqt -zc
+ ==> Finished building [lxqt]
+  --> Time build: 0.27 minutes
+``
+Additional configuration options
+
+Both, pacman.conf and makepkg.conf (for chroots) are loaded from
+``
+ /usr/share/artools/{makepkg,pacman-*}.conf
+``
+and can be overridden by dropping them in
+``
+ $HOME/.config/artools/
+``
+Add your custom repo to
+``
+ $HOME/.config/artools/pacman-default.conf 
+``
+-OR-
+``
+ $HOME/.config/artools/pacman-gremlins.conf
+``
+Tips
+To add personal packages or packages from Archlinux's AUR
+
+If you use buildiso -p PROFILE -x you can use artix-chroot (formerly artools-chroot) to enter the rootfs
+and install packages manually, allowing one to install custom packages or AUR packages. To do so:
+``
+ artix-chroot  /var/lib/artools/buildiso/base/artix/rootfs 
+ pacman -S artix-grub-live
+``
+Troubleshooting
+Note to ZFS users
+
+The bootfs step fails, due to the incompatibility of buildiso and ZFS. To ge around this, you need to create a ZFS block device. In the following example zroot is used as the ZFS pool name.
+``
+ zfs create -V 10G zroot/buildiso
+``
+Next you need to create a filesystem compatible with buildiso:
+``
+ mkfs.ext2 /dev/zvol/zroot/buildiso
+``
+Finally, you need to mount it to the location that buildiso places its files:
+``
+ mount /dev/zvol/zroot/buildiso /var/lib/artools
+``
+Signature from "Artix Buildbot <buildbot@artixlinux.org>" is invalid
+
+You can try to either:
+
+    Run buildiso again
+    Clear pacman cache (pacman -Scc)
+    Or refresh the build ISO keys: 
+``
+ sudo pacman -S artix-keyring
+ sudo pacman-key --populate artix
+ sudo pacman-key --lsign-key 78C9C713EAD7BEC69087447332E21894258C6105
+
+``

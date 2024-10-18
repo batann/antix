@@ -1,0 +1,187 @@
+
+= 363_Hybrid_ISO_from_Bunsen_OS_260MB =
+_Live Build on Bunsen Labs Operating System. Size 260 MG,boots to LIVE like a well oiled Mashine_
+== PERSISTANCE INSTALL ==
+_using MX-live-usb-maker_
+
+
+
+
+=== ===================================================================== ===
+/usr/local/bin/live-usb-maker gui -N --data-first=60,vfat -C off --from=/media/batan/bansen/home/batan/live-build/live-image-amd64.hybrid.iso -t /dev/sdc
+        program: live-usb-maker
+        started: Fri Dec 29 11:58:41 PM AEDT 2023
+        version: 2.41.19-2302 (Sat, 25 Feb 2023 12:45:10 -0500)
+         kernel: 6.1.0-16-amd64
+             OS: MX 23.1 (Libretto)
+      found lib: /usr/local/lib/cli-shell-utils/cli-shell-utils.bash
+    lib version: 2.41.05-2302 (Sat, 25 Feb 2023 12:45:10 -0500)
+
+ === --------------------------------------------------------------------- ===
+
+Found man page: live-usb-maker.1
+Will use target device /dev/sdc (7.2G Verbatim STORE N GO)
+Will use source file /media/batan/bansen/home/batan/live-build/live-image-amd64.hybrid.iso
+Found grub config 1.0
+Estimated extfs overhead for 2901M is 5M
+
+                    Total      Used     Extra
+   entire drive  7.21 GiB 7.21 GiB     0 MiB
+ data partition  4.33 GiB    0 MiB  4.33 GiB
+ main partition  2.83 GiB  307 MiB  2.53 GiB
+ uefi partition    50 MiB   17 MiB    33 MiB
+
+Will create a leading vfat data partition
+Ready to make live-usb on device sdc
+... by copying file /media/batan/bansen/home/batan/live-build/live-image-amd64.hybrid.iso
+
+>> partition-clear
+Total bytes: 7740583936
+Total blocks: 15118328
+ > dd status=none if=/dev/zero of=/dev/sdc bs=512 count=34
+ > dd status=none if=/dev/zero of=/dev/sdc bs=512 count=34 seek=64
+ > dd status=none conv=notrunc if=/dev/zero of=/dev/sdc bs=512 count=34 seek=15118294
+ > partprobe /dev/sdc
+
+>> partition-make
+Using msdos partitioning
+ > parted --script --align optimal /dev/sdc unit MiB mklabel msdos
+ > dd status=none if=/dev/zero of=/dev/sdc seek=1024 bs=1K count=128
+ > parted --script --align optimal /dev/sdc unit MiB mkpart primary 1 4429
+ > dd status=none if=/dev/zero of=/dev/sdc seek=4535296 bs=1K count=128
+ > parted --script --align optimal /dev/sdc unit MiB mkpart primary 4429 7329
+ > parted --script --align optimal /dev/sdc unit MiB set 2 boot on
+ > dd status=none if=/dev/zero of=/dev/sdc seek=7504896 bs=1K count=128
+ > parted --script --align optimal /dev/sdc unit MiB mkpart primary 7329 7378
+ > parted --script --align optimal /dev/sdc unit MiB set 3 esp on
+ > partprobe /dev/sdc
+
+>> makefs-data
+ > wait_for_file /dev/sdc1
+
+>> makefs-data
+Make vfat filesystem
+ > mkfs.vfat -F 32 -n USB-DATA /dev/sdc1
+mkfs.fat 4.2 (2021-01-31)
+ > partprobe /dev/sdc1
+ > wait_for_file /dev/sdc2
+
+>> makefs-bios
+ > mkfs.ext4 -O ^64bit -m0 -i16384 -J size=32 /dev/sdc2
+mke2fs 1.47.0 (5-Feb-2023)
+64-bit filesystem support is not enabled.  The larger fields afforded by this feature enable full-strength checksumming.  Pass -O 64bit to rectify.
+Creating filesystem with 742400 4k blocks and 185840 inodes
+Filesystem UUID: a37f586a-391c-452a-a90e-a089a5eb7d8f
+Superblock backups stored on blocks:
+	32768, 98304, 163840, 229376, 294912
+
+Allocating group tables:  0/23     done
+Writing inode tables:  0/23     done
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/23     done
+
+ > tune2fs -L Live-usb /dev/sdc2
+tune2fs 1.47.0 (5-Feb-2023)
+ > wait_for_file /dev/sdc3
+
+>> makefs-uefi
+ > mkfs.vfat -F 32 -n LIVE-UEFI /dev/sdc3
+mkfs.fat 4.2 (2021-01-31)
+ > partprobe /dev/sdc
+ > wait_for_file /dev/sdc2
+ > mkdir -p /run/live-usb-maker/main
+ > mount -t ext4 /dev/sdc2 /run/live-usb-maker/main
+ > wait_for_file /dev/sdc3
+ > mkdir -p /run/live-usb-maker/uefi
+ > mount -t vfat /dev/sdc3 /run/live-usb-maker/uefi
+ > wait_for_file /dev/sdc1
+ > mkdir -p /run/live-usb-maker/data
+ > mount -t vfat /dev/sdc1 /run/live-usb-maker/data
+
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sdc1      vfat  4.4G  4.0K  4.4G   1% /run/live-usb-maker/data
+/dev/sdc2      ext4  2.8G   24K  2.8G   1% /run/live-usb-maker/main
+/dev/sdc3      vfat   49M   512   49M   1% /run/live-usb-maker/uefi
+
+
+>> copy-uefi
+copy from iso to uefi partition
+files [Ee][Ff][Ii] boot/{grub,uefi-mt} version
+ > mkdir -p /run/live-usb-maker/uefi/boot
+ > cp --no-dereference --preserve=mode,links --recursive /run/live-usb-maker/iso/boot/grub /run/live-usb-maker/uefi/boot
+ > cp --no-dereference --preserve=mode,links --recursive /run/live-usb-maker/iso/EFI /run/live-usb-maker/uefi/.
+Fix Dell uefi memtest bug
+ > cp /run/live-usb-maker/uefi/EFI/BOOT/grubx64.efi /run/live-usb-maker/uefi/EFI/BOOT/fallback.efi
+
+>> copy-main
+ > rm -rf /run/live-usb-maker/main/boot.orig
+copy from iso to main partition
+vm.dirty_bytes = 20000000
+Warning: Could not find a initrd file!
+copy /live/vmlinuz
+ > cpio -pdm --quiet /run/live-usb-maker/main/
+ > e4defrag -v ./live/vmlinuz
+e4defrag 1.47.0 (5-Feb-2023)
+ext4 defragmentation for ./live/vmlinuz
+[1/1][1/1]./live/vmlinuz:	100%  extents: 1 -> 1	[ OK ]
+ Success:			[1/1]
+copy remaining files ...
+ > cpio -pdm --quiet /run/live-usb-maker/main/
+copy pids: 36414 36417
+vm.dirty_bytes = 20000000
+vm.dirty_ratio = 0
+ > write_file /run/live-usb-maker/main/made-by-live-usb-maker   created: Sat Dec 30 12:01:18 AM AEDT 2023
+  program: live-usb-maker
+  version: 2.41.19-2302 (Sat, 25 Feb 2023 12:45:10 -0500)
+ > dd status=none if=/dev/urandom of=/run/live-usb-maker/main/antiX/random-seed bs=512 count=1
+dd: failed to open '/run/live-usb-maker/main/antiX/random-seed': No such file or directory
+ > chmod 600 /run/live-usb-maker/main/antiX/random-seed
+chmod: cannot access '/run/live-usb-maker/main/antiX/random-seed': No such file or directory
+ > rm -rf /run/live-usb-maker/main/.disk
+
+>> uuids
+Using antiX/MX grub config 1.0
+ > mkdir -p /run/live-usb-maker/main/antiX
+ > write_file /run/live-usb-maker/main/antiX/esp-uuid 29CE-61F8
+ > sed -ri 1,/^\s*menuentry/s/(^\s*menuentry)/search --no-floppy --set=root --fs-uuid a37f586a-391c-452a-a90e-a089a5eb7d8f\n\n\1/ /run/live-usb-maker/uefi/boot/grub/grub.cfg
+ > sed -ri s/^#-+esp\s*// /run/live-usb-maker/uefi/boot/grub/grub.cfg
+ > sed -ri s/(root=\(hd0,)[0-9]\)/\13)/ /run/live-usb-maker/uefi/boot/grub/grub.cfg
+ > mkdir -p /run/live-usb-maker/main/antiX
+ > write_file /run/live-usb-maker/main/antiX/data-uuid 28B1-7A71
+
+>> install
+extlinux version 6.04
+ > dd status=none bs=440 count=1 iflag=fullblock conv=notrunc of=/dev/sdc
+Warning: Create syslinux directory from isolinux
+ > cp -r /run/live-usb-maker/main/isolinux /run/live-usb-maker/main/syslinux
+ > mv /run/live-usb-maker/main/syslinux/isolinux.bin /run/live-usb-maker/main/syslinux/syslinux.bin
+ > mv /run/live-usb-maker/main/syslinux/isolinux.cfg /run/live-usb-maker/main/syslinux/syslinux.cfg
+ > rm -f /run/live-usb-maker/main/syslinux/hdt.c32
+ > rm -f /run/live-usb-maker/main/syslinux/ldlinux.c32
+ > rm -f /run/live-usb-maker/main/syslinux/libcom32.c32
+ > rm -f /run/live-usb-maker/main/syslinux/libgpl.c32
+ > rm -f /run/live-usb-maker/main/syslinux/libmenu.c32
+ > rm -f /run/live-usb-maker/main/syslinux/libutil.c32
+ > rm -f /run/live-usb-maker/main/syslinux/syslinux.bin
+ > rm -f /run/live-usb-maker/main/syslinux/vesamenu.c32
+ > cp /usr/lib/syslinux/modules/bios/chain.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/gfxboot.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/vesamenu.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/ldlinux.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/libcom32.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/libmenu.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/libutil.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/linux.c32 /run/live-usb-maker/main/syslinux/
+ > cp /usr/lib/syslinux/modules/bios/menu.c32 /run/live-usb-maker/main/syslinux/
+ > write_file /run/live-usb-maker/main/syslinux/version 6.04
+ > extlinux -i /run/live-usb-maker/main/syslinux
+/run/live-usb-maker/main/syslinux is device /dev/sdc2
+
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sdc1      vfat  4.4G  4.0K  4.4G   1% /run/live-usb-maker/data
+/dev/sdc2      ext4  2.8G  303M  2.5G  11% /run/live-usb-maker/main
+/dev/sdc3      vfat   49M   21M   28M  43% /run/live-usb-maker/uefi
+
+>> done
+
+live-usb-maker took 2 minutes and 44 seconds.

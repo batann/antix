@@ -1,0 +1,17 @@
+= BixbyDevelopers =
+
+
+
+
+Home:
+==============================================
+https://bixbydevelopers.com/
+Github:
+==============================================
+https://github.com/bixbydevelopers
+Bixby Developer Studio:
+==============================================
+wget https://bixby-studio.s3.amazonaws.com/stable-c4f5c975-1d91-4065-b661-633de7275e11/BixbyStudio-8.22.0-r23n.1426149-linux.deb
+Developers Guid:
+==============================================
+https://bixbydevelopers.com/dev/docs/bhs-dev-guide/developers

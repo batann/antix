@@ -1,0 +1,19 @@
+automate ISO creation
+should be possible with:
+dialog
+mx-snapshot
+crontab
+
+1)	Weekly
+2) 	Create User Demo
+	a) `sudo useradd demo -s /bin/bash -g sudo -m `
+	b) `sudo passwd demo`
+3) 	Create Admin user incl password,home, /bin/bash add to sudo group:
+	a) `sudo useradd demo -s /bin/bash -g sudo -m && echo "demo:demo" |sudo chpasswd`
+4) 	Ignore User (batan) and /home/batan
+5) 	Have two ISO on HD
+6) 	Remove the oldest ISO
+7) 	Create New ISO leaving two on HD again
+8) 	Inform and seek confirmation from current user
+
+

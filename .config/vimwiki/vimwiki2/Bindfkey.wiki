@@ -1,0 +1,3 @@
+==bindFkey==
+https://stackoverflow.com/questions/4200800/in-bash-how-do-i-bind-a-function-key-to-a-command
+bind '"\e[24~":"foobar"'

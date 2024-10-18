@@ -1,0 +1,39 @@
+=MX23 Repositories=
+
+
+1. Should have gpg created, if not:
+
+	gpg --full
+_follow along_
+
+2. Get and install  the MX23 gpg key archive:
+
+	curl -O https://mxrepo.com/mx/repo/pool/main/m/mx23-archive-keyring/mx23-archive-keyring_2023.6.6_all.deb
+	sudo dpkg -i mx23-archive-keyring_2023.6.6_all.deb
+
+3. Add the repository list to the existing ones by:
+
+sudo touch /etc/apt/sources.list.d/mx.list
+sudo vim /etc/apt/sources.list.d/mx.list
+
+4. Add the following to your new file:
+
+# MX Community Main and Test Repos
+deb http://mxrepo.com/mx/repo/ bookworm main non-free
+#deb http://mxrepo.com/mx/testrepo/ bookworm test
+
+#ahs hardware stack repo
+deb http://mxrepo.com/mx/repo/ bookworm ahs
+
+5. Update Your System:
+
+
+	sudo apt update && sudo apt upgrade -y
+
+6. Install Anything you like!!!
+
+
+CAUTION
+=======
+
+In case of most Operating Systems other then the obvious MX and possibly few exeptions of debian based distros, this is most likely to brake your system or cause other inconviniences

@@ -1,0 +1,293 @@
+.
+├── 01.wiki
+├── 02.wiki
+├── 03.wiki
+├── 04.wiki
+├── 10Usefule Commands.wiki
+├── 15 find eg's.wiki
+├── 196.wiki
+├── 205.wiki
+├── 223.wiki
+├── 25 Commands.wiki
+├── 277.wiki
+├── aa.wiki
+├── Accessible PDFs and PDF archiving standards.wiki
+├── adding_mx23_repos.wiki
+├── Alchemy Recipes.wiki
+├── ALIS.wiki
+├── AlpineOS.wiki
+├── ANSI color codes.wiki
+├── apache2 config.wiki
+├── Arch Linux.wiki
+├── article netrw.wiki
+├── Articles GPT.wiki
+├── a.txt
+├── auto ISO.wiki
+├── automation.wiki
+├── Bash Autocomplete Mods.wiki
+├── Bash Autocomplete scripts.wiki
+├── bash scripts.wiki
+├── best vs code shortcuts.wiki
+├── bindFkey.wiki
+├── buku examples.wiki
+├── buku export.wiki
+├── buku install.wiki
+├── buku manual.wiki
+├── buku.wiki
+├── calcurse.wiki
+├── ChatGPT on Open Source Software.wiki
+├── ChatGPT on the Future of Open Source Software.wiki
+├── Chat GPT.wiki
+├── Chat GTP on Existance preceeding Substance.wiki
+├── Chat GTP on Human Dignity.wiki
+├── ChatGTP on Installing Archivebox on Linux.wiki
+├── Chat GTP on installing Docker.wiki
+├── Chat GTP on Modern Day Technology and its effect on the sciance of Psycology.wiki
+├── Chess Problem Links.wiki
+├── chess.wiki
+├── Chunked HTML.wiki
+├── code editor HTML CSS.wiki
+├── COMMANDS REVISE.wiki
+├── commands.wiki
+├── countdown in bash.wiki
+├── countdown.sh.wiki
+├── count.sh.wiki
+├── create and coppy ssh-key.wiki
+├── create ssh key.wiki
+├── cron basic commands.wiki
+├── Custom Readers.wiki
+├── Custom styles.wiki
+├── dashboard.wiki
+├── date
+├── decrypting a file.wiki
+├── decrypting and extracting file.wiki
+├── diary
+│   ├── 2023-03-10.wiki
+│   ├── 2023-03-13.wiki
+│   ├── 2023-03-14.wiki
+│   ├── 2023-03-21.wiki
+│   ├── 2023-03-26.wiki
+│   ├── 2023-03-27.wiki
+│   ├── 2023-03-28.wiki
+│   ├── 2023-03-30.wiki
+│   ├── 2023-04-01.wiki
+│   ├── 2023-04-02.wiki
+│   ├── 2023-04-10.wiki
+│   ├── 2023-04-11.wiki
+│   ├── 2023-04-12.wiki
+│   ├── 2023-04-14.wiki
+│   ├── 2023-04-17.wiki
+│   ├── 2023-04-18.wiki
+│   ├── 2023-04-19.wiki
+│   ├── 2023-04-20.wiki
+│   ├── 2023-04-21.wiki
+│   ├── 2023-05-16.wiki
+│   ├── 2023-05-27.wiki
+│   ├── 2023-05-28.wiki
+│   ├── 2023-06-03.wiki
+│   ├── 2023-06-04.wiki
+│   ├── 2023-06-05.wiki
+│   ├── 2023-06-14.wiki
+│   ├── 2023-08-20.wiki
+│   ├── 2023-08-22.wiki
+│   ├── 2023-08-25.wiki
+│   ├── 2023-08-26.wiki
+│   └── diary.wiki
+├── directories.wiki
+├── directory structure.wiki
+├── dotfiles.wiki
+├── [[download-PNG.wiki
+├── dry run.wiki
+├── Dynamic List.wiki
+├── emmet-vim tutorial.wiki
+├── encrypting a file.wiki
+├── encrypt partition.wiki
+├── encrypt partition w luks.wiki
+├── everythin.rss.wiki
+├── Extensions.wiki
+├── facts health.wiki
+├── feedlist.opml
+├── ffmpeg.wiki
+├── File Commands.wiki
+├── fin.sh.wiki
+├── firefox about_config.wiki
+├── Firefox_dev test config.wiki
+├── Firefox Dev.wiki
+├── firefox-esr about_config.wiki
+├── Firefox headless.wiki
+├── Fixed Header eg.wiki
+├── flags & parameters.wiki
+├── Flatpak list.wiki
+├── Friz.wiki
+├── github-desktop.wiki
+├── github viper.wiki
+├── Github.wiki
+├── google API.wiki
+├── google-calendar.wiki
+├── GPG key.wiki
+├── gtk-firefox.wiki
+├── homepage.html.wiki
+├── homepage.index.wiki
+├── homepage.wiki
+├── HTML tags.wiki
+├── HTML to exec bash script.wiki
+├── Indentified Triggers.wiki
+├── index.wiki
+├── inst1.sh.wiki
+├── inst2.sh.wiki
+├── inst3.sh.wiki
+├── inst4.sh.wiki
+├── inst5.sh.wiki
+├── inst6.sh.wiki
+├── Installing Tyni Core OS incl XGUI and WIFI.wiki
+├── integrage buku.wiki
+├── integrate wiki.wiki
+├── Intheam.wiki
+├── isosnap.wiki
+├── iso.wiki
+├── kernel.wiki
+├── LAMP server.wiki
+├── LAMP set Up.wiki
+├── LC backup.wiki
+├── LFS.wiki
+├── links_downloaded.rss.wiki
+├── links_hidden.rss.wiki
+├── links_upvoted.rss.wiki
+├── Links.wiki
+├── list of usefull Flatpaks.wiki
+├── list-shopping.wiki
+├── list task.wiki
+├── lum.wiki
+├── manage shared mwemory.wiki
+├── Mariadb.wiki
+├── Mate in 2.wiki
+├── Mate in 3.wiki
+├── Mate in 4.wiki
+├── media
+│   └── batan
+├── mentions_of_your_username.rss.wiki
+├── Menu Bash.wiki
+├── MoveRoot.wiki
+├── mx-cleanup.wiki
+├── mx.repo.wiki
+├── mx-software.wiki
+├── mx-usb-install.wiki
+├── Neomutt-wizard.wiki
+├── Neovim Cheatsheet.wiki
+├── Neovimcraft.wiki
+├── Neovim.wiki
+├── Nexcloud Server on Alpine OS.wiki
+├── nextcloud Alpine OS.wiki
+├── nextcloud on Debian12.wiki
+├── nextcloud.wiki
+├── NixOS.wiki
+├── notify-send.wiki
+├── Obsidian Icon Names.wiki
+├── Options.wiki
+├── Pandoc Manual.wiki
+├── pandoc.wiki
+├── persisten install.wiki
+├── persistent install.wiki
+├── PHP.wiki
+├── piratebay.wiki
+├── poinf.sh.wiki
+├── Postinstall script.wiki
+├── ppa.wiki
+├── privacy optimized settings.wiki
+├── Privoxy and Tor on Mxlinux.wiki
+├── PROJECTS_WIKI.wiki
+├── PS3 SKU_MODELS.wiki
+├── Q4OS community.wiki
+├── Q4OS commutnity.wiki
+├── Q4OS documentation.wiki
+├── Q4OS.wiki
+├── qoutes.wiki
+├── Random Commands Vim.wiki
+├── random commands.wiki
+├── random tmux commands.wiki
+├── Read.wiki
+├── Recommendations GPT.wiki
+├── Reddit.wiki
+├── refreshing your keys.wiki
+├── rendom  commands that i will forget.wiki
+├── resize.sh.wiki
+├── RSS FEED.wiki
+├── RTL8812 aircrack-ng.wiki
+├── RTL8812.wiki
+├── Running Pandoc as a Web Server.wiki
+├── security.wiki
+├── sed command.wiki
+├── Setting up A Network Monitoring and Inventory System.wiki
+├── setup symc links.wiki
+├── share your key.wiki
+├── Skyrim.wiki
+├── Slideshow.wiki
+├── spacevim.wiki
+├── spacewin.wiki
+├── speaker test.wiki
+├── stopwatch
+│   └── countdown.wiki
+├── structure.wiki
+├── structure wiki.wiki
+├── Switch Parametars.wiki
+├── Syntax highlighting.wiki
+├── Systemd.wiki
+├── Tag HTML referrence.wiki
+├── Tamplates.wiki
+├── Taskwarrior Server Config.wiki
+├── Taskwarrior.wiki
+├── The Power Of G.wiki
+├── this.wiki
+├── tmux.wiki
+├── ToDo on snapshot.wiki
+├── todo.txt-cli-again-addon.wiki
+├── todo.txt-cli.wiki
+├── Top 10 Audio and Video Editing.wiki
+├── Top 10 Open Source Utillity Apps.wiki
+├── Top 20 Privacy Focused Websites.wiki
+├── Top 20 Privacy focuset Open Source Software.wiki
+├── Top 50 Open Source Apps.wiki
+├── Top 50 Open Source Network Monitoring Tools.wiki
+├── Top 50 Websites Linux.wiki
+├── Top Free Linux Books.wiki
+├── Top Pi-Hole Alternatives.wiki
+├── tree.wiki
+├── tutanota.wiki
+├── TWBM.wiki
+├── Twitter.wiki
+├── unread_messages.rss.wiki
+├── USB wipe.wiki
+├── verifying and siging a key.wiki
+├── video.software.wiki
+├── video vim.wiki
+├── Vim addons for Code.wiki
+├── VimAwesome.wiki
+├── vim bash script.wiki
+├── vim cheat.wiki
+├── Vim Commands.wiki
+├── Vim COurses.wiki
+├── vim like  firefox like config for w3m.wiki
+├── Vim Project Managemet Adons.wiki
+├── vimrc.wiki
+├── vim startup page.wiki
+├── Vim-Taskwarrior Commands.wiki
+├── Vim.wiki
+├── Vimwiki Cheatsheet.wiki
+├── vimwiki.directory_structure.wiki
+├── vimwiki.wiki
+├── Visual Studio Code cheatsheet.wiki
+├── w3m cheatsheet.wiki
+├── works.sh.wiki
+├── xfce4 backup.wiki
+├── Xfce Desktop Environment obn Alpine.wiki
+├── xterm.wiki
+├── Yad eg.wiki
+├── yad file select.wiki
+├── Yad html.wiki
+├── yad.wiki
+├── yad with html.wiki
+├── your_front_page.rss.wiki
+├── your_saved_links.rss.wiki
+└── zulusafe commands.wiki
+
+5 directories, 286 files

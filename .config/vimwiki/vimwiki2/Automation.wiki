@@ -1,0 +1,28 @@
+= automation =
+
+wtype/stable 0.4-3 amd64
+  xdotool type for wayland
+
+xautomation/stable 1.09-4 amd64
+  Control X from the command line, and find things on the screen
+
+xdotool/stable 1:3.20160805.1-5 amd64
+  simulate (generate) X11 keyboard/mouse input events
+
+ydotool/stable 0.1.8-3 amd64
+  Command-line automation tool - cli
+
+ydotoold/stable 0.1.8-3 amd64
+  Command-line automation tool - daemon
+
+
+
+
+
+
+
+
+
+
+xdotool
+

@@ -1,0 +1,137 @@
+= Contents =
+        - [[#10 Usefull Commads]]
+                - [[#Some Useful Linux/Bash Commands]]
+                        - [[#Useful aliases:]]
+                                - [[#Colorize output:]]
+                                - [[#Quick shredding of files:]]
+                                - [[#Use a long listing format:]]
+                                - [[#Show public ip:]]
+                                - [[#Grep history:]]
+                                - [[#Usage:]]
+                        - [[#Miscellaneous Commands]]
+                                - [[#Run command 10 times:]]
+                                - [[#Tree output to html:]]
+                                - [[#Make parent directories if not already exist:]]
+                                - [[#Create complex directory tree:]]
+                                - [[#Suppress the output and error message of a cron task:]]
+                                - [[#Sort file and output to same file:]]
+                                - [[#Abort a pending shutdown command:]]
+                                - [[#Find out all the jpg images and archive it:]]
+                                - [[#Keep command running after logout:]]
+                                - [[#Pretty print json from curl:]]
+                                - [[#Print the last 10 lines of a log file in real time:]]
+                                - [[#show all aliases in current shell]]
+
+= 10 Usefull Commads =
+
+
+
+
+== Some Useful Linux/Bash Commands ==
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+=== Useful aliases: ===
+
+Here are just a few useful Bash aliases. I will be making a post going over my
+own .bashrc soon that will go voer many more and in mroe detail.
+
+==== Colorize output: ====
+
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+
+==== Quick shredding of files: ====
+
+alias rms='shred -uz'
+
+==== Use a long listing format: ====
+
+alias ll='ls -la'
+
+==== Show public ip: ====
+
+alias myip='curl http://ipecho.net/plain; echo'
+
+==== Grep history: ====
+
+alias hs='history | grep'
+
+==== Usage: ====
+
+$ hs test
+ 1883  emacs test.R
+ 1900  less test.R
+ 2003  history | grep test
+ 2008  hs test
+
+Now you can use !2008 to repeat command #2008
+
+=== Miscellaneous Commands ===
+
+==== Run command 10 times: ====
+
+for i in {1..10}; do commandNameHere; done
+
+==== Tree output to html: ====
+
+tree -H '.' -L 1 --noreport --charset utf-8 > index.html
+
+mkdir and cd into it (add to .bashrc):
+
+mkcd() { mkdir -p $1; cd $1 }
+
+==== Make parent directories if not already exist: ====
+
+mkdir -p ~/example/music/rock/classic
+
+==== Create complex directory tree: ====
+
+mkdir -p ~/music/{jazz/{acid,gypsy},folk/{celtic,american},disco,rock/
+{classic,punk,prog}
+
+Suppress standard output using > /dev/null:
+
+./shell-script.sh > /dev/null
+
+==== Suppress the output and error message of a cron task: ====
+
+30 1 * * * command > /dev/null 2>&1
+
+==== Sort file and output to same file: ====
+
+sort -o myfile.txt myfile.txt
+
+==== Abort a pending shutdown command: ====
+
+shutdown -c
+
+==== Find out all the jpg images and archive it: ====
+
+find / -name *.jpg -type f -print | xargs tar -cvzf images.tar.gz
+
+==== Keep command running after logout: ====
+
+After you execute a command (or shell script) in the background using &, if you
+logout from the session, the command will get killed. use nohup to keep process
+alive after logout.
+
+nohup ./my-shell-script.sh &
+
+==== Pretty print json from curl: ====
+
+curl http://localhost:8081 | json_pp
+
+==== Print the last 10 lines of a log file in real time: ====
+
+tail -n10 -f logfile.log
+
+==== show all aliases in current shell ====
+
+alias
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
