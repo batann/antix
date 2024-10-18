@@ -34,10 +34,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">LC-Linux</h3>
 
   <p align="center">
-    project_description
+    Work in progress,
+    intended was a light-weight linux distribution based on AntiX-base-OS
+    but it seems to....
     <br />
     <a href="https://github.com/batann/antix"><strong>Explore the docs »</strong></a>
     <br />
