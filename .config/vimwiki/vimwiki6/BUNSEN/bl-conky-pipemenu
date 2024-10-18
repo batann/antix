@@ -1,0 +1,157 @@
+#!/bin/bash
+#    bl-conky-pipemenu - an Openbox pipemenu for manipulating conky
+#    Copyright (C) 2015 damo <damo@bunsenlabs.org>
+#                  2016-2021 John Crawley <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HELP='    bl-conky-pipemenu an Openbox Pipe Menu for use with conky
+    It should normally be called from an openbox menu or jgmenu.
+
+Options:
+    -h --help   show this message
+
+    If bl-conky-pipemenu is called with no options (the usual method),
+    it will output an xml openbox pipemenu for handling conky sessions.
+
+For more information, see "man conky"
+and "Help & Resources">"Conky" in the BunsenLabs menu.
+'
+# look for a help option somewhere
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    esac
+done
+
+BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+
+CONKYPATH="$HOME/.config/conky"
+BLDEFAULT="$CONKYPATH/BL-Default-conky.conf"
+CONKYDEFAULT="$CONKYPATH/conky.conf"
+SESSIONS="$CONKYPATH/saved-sessions"
+HELPFILE="/usr/share/bunsen/docs/helpfiles/helpfile-conkytint2-manager.txt"
+
+if ! . "$BL_COMMON_LIBDIR/bl-includes" 2> /dev/null; then
+    echo "Error: Failed to source bl-includes in $BL_COMMON_LIBDIR" >&2
+    exit 1
+fi
+
+declareDependencies yad
+
+getSessions(){  # read any saved sessions from saved-sessions file
+    menuItem "Default Startup Session" "bl-conky-session"
+    if [ -r "$SESSIONS" ]
+    then
+        while read -r session ;do
+            [[ -z $session ]] && continue
+            menuItem "${session#${CONKYPATH}/}" "bl-conky-session '$session'"
+        done < "$SESSIONS"
+    fi
+}
+
+loadChooser(){
+    if type bl-conky-manager &>/dev/null;then
+        menuItem "Conky Manager" "bl-conky-manager"
+    fi
+}
+
+loadReload(){
+    if type bl-conky-session &>/dev/null;then
+        menuItem "Reload Startup Session" "bl-conky-session"
+    fi
+}
+
+loadEditSubmenu(){
+    local pid command CPATH CONKY
+    menuSubmenu "EditConky" "Edit Conkys"
+        if type bl-conky-edit &>/dev/null;then  # bl-conky-edit script found
+            menuItem "Conky Editor" "bl-conky-edit"
+        fi
+        menuItem "Default conkyrc" "bl-text-editor '$BLDEFAULT'"
+        if pgrep -x -u "$USER" conky >/dev/null;then
+            menuSubmenu "RunningConky" "Running Conkys"
+            while read -r pid; do
+                mapfile -d '' -t command < "/proc/${pid}/cmdline" # use NULL delimiter to split cmdline into array 'command'
+                for i in "${!command[@]}"; do
+                    [[ ${command[i]} = '-c' ]] && { CPATH="${command[i+1]}"; break;}
+                    [[ ${command[i]} = '--config='* ]] && { CPATH="${command[i]#--config=}"; break;}
+                done
+                CONKY=${CPATH#${CONKYPATH}/}
+                if [[ -z $CPATH ]];then
+                    CPATH="$CONKYDEFAULT"
+                    CONKY="Default conky.conf"
+                fi
+                menuItem "$CONKY" "bl-text-editor ${CPATH@Q}"
+            done < <(pgrep -x 'conky' -u "$USER")
+            menuSubmenuEnd
+        fi
+    menuSubmenuEnd
+}
+
+loadMove(){
+    if type bl-conkymove &>/dev/null;then
+        menuItem "Move a Conky" "bl-conkymove"
+    fi
+}
+
+loadNewsession(){
+    if type bl-conky-manager &>/dev/null;then
+        menuItem "New Conky Session" "bl-conky-manager -z"
+    fi
+}
+
+loadSavedsessionSubmenu(){
+    if type bl-conky-session &>/dev/null;then
+        menuSubmenu "Sessions" "Saved Sessions"
+        getSessions
+        menuSubmenuEnd
+    fi
+}
+
+loadStartupChooser(){
+    if type bl-conky-manager >/dev/null && type bl-conky-session  >/dev/null;then
+        menuItem "Choose startup session" "bl-conky-manager --choose-startup"
+    fi
+}
+
+checkHelpfile(){
+    DLG="yad --text-info --center --borders=20 \
+    --title='BunsenLabs Conky and Tint2 Manager Help' \
+    --window-icon=distributor-logo-bunsenlabs \
+    --filename=$HELPFILE --fontname=Monospace \
+    --width=650 --height=700 \
+    --button=OK:0"
+    if [[ -e $HELPFILE ]];then
+        menuItem "Conky Manager Help" "$DLG"
+    fi
+}
+
+menuStart "Conkymenu" "Conky"
+loadChooser
+loadEditSubmenu
+menuSeparator
+loadMove
+menuSeparator
+loadReload
+loadNewsession
+loadSavedsessionSubmenu
+loadStartupChooser
+menuSeparator
+checkHelpfile
+menuEnd

@@ -1,0 +1,712 @@
+#!/bin/bash
+#
+#    bl-user-setup: a script to populate a new user's HOME directory
+#    using template files from /usr/share/bunsen/skel/
+#    Copyright: 2015-2021 John Crawley <john@bunsenlabs.org>
+#               2019      Johan Malm <jgm323@gmail.com>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HELP="bl-user-setup is a script to populate a new user's HOME directory
+using files from /usr/share/bunsen/skel
+
+Usage:  bl-user-setup [-h|--help][--force|--yes][--reset][-v|--verbose]
+
+This script is run non-interactively on a user's first login,
+and on subsequent logins to check for new default configurations
+in /usr/share/bunsen/skel that may have come from a package upgrade.
+User set configurations will not be modified without permission.
+
+It can also be run manually with custom options.
+The most common manual use case is to run with no options,
+in which case the algorithm described below is followed,
+except that users will also be consulted in cases 3) and 4).
+
+In all cases backups will be made of any files which are overwritten.
+
+A log is made at HOME/.cache/bunsen/bl-setup/log
+
+Options:
+-h --help
+    Show this message and exit.
+--force --yes
+    Assume all prompts answered 'Yes'.
+--reset
+    Restore all files to the default state in /usr/share/bunsen/skel,
+    but ask user before overwriting files.
+    (Add --force or --yes to skip confirmations.)
+--refresh
+    Follow default behaviour, as with no options passed.
+    (This is kept only for backward compatibility.)
+-v --verbose
+    Send more information to log file and terminal.
+
+The following two options are not usually of interest to users:
+
+--auto
+    This is run on each user login.
+    Do a quick check for any change to skel contents,
+    exit if there is nothing new, or if there are changes
+    ask the user for permission to apply the algorithm below.
+--install
+    Implies --force.
+    Run non-interactive file import only on first login.
+
+*ALGORITHM*
+For --auto operation:
+
+Compare the contents of /usr/share/bunsen/skel (here called 'skel')
+with the contents on the previous run of this script.
+If there has been no change, exit immediately.
+
+If there is new content:
+
+1) Copy in any new directories.
+
+2) Copy in any new symlinks, if they do not already exist (no overwrites).
+
+3) Copy in any new files.
+
+4) If file in skel has changed, and user's file is still in default state,
+silently update file.
+
+5) If skel file and user file have both changed (or user has removed file),
+ask user for instructions.
+
+6) If a file has been removed from skel, do not remove it from HOME.
+"
+
+readonly USER=${USER}
+
+readonly TARGETDIR="${HOME}"
+readonly skeldir="/usr/share/bunsen/skel"
+readonly confdir="${HOME}/.config/bunsen"
+readonly datadir="${HOME}/.local/share/bunsen/bl-setup"
+readonly cachedir="${HOME}/.cache/bunsen/bl-setup"
+
+readonly flagfile="$confdir/bl-setup"
+readonly logfile="$cachedir/log"
+
+########################################
+
+main() {
+    # if help option anywhere in args, output $HELP and exit immediately
+    for i in "$@"
+    do
+        case "$i" in
+        -h|--help)
+            printf '%b\n' "$HELP"
+            exit 0
+            ;;
+        esac
+    done
+
+    logged=f
+    args="$*"
+
+    pre_checks
+
+    BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+    if ! . "$BL_COMMON_LIBDIR/yad-includes" 2> /dev/null; then
+        die "Failed to locate yad-includes in $BL_COMMON_LIBDIR"
+    fi
+    yad_common_args+=('--title=BunsenLabs User Setup' '--buttons-layout=spread')
+
+    mkdir -p "$TARGETDIR" "$confdir" "$cachedir" "$datadir"
+
+    # move any stored local skel data to new location
+    for i in "$cachedir"/skel{.dirs,.files,.links,sum}
+    do
+    [[ -f "$i" ]] || continue
+    if [[ -f "${datadir}/${i##*/}" ]]
+    then
+        log "removing old file ${i##*/} from $cachedir, already in $datadir"
+    else
+        log "found ${i##*/} in ${cachedir}, moving to $datadir"
+        mv --no-clobber "$i" "$datadir" || die "Failed to move $i from $cachedir to $datadir"
+    fi
+    rm -f "$i"
+    done
+
+    g_force=f
+    g_reset=f
+    g_auto=f
+    g_verbose=f
+    g_install=f
+    have_filecache=f
+
+    wholeskelsum=$( tar --mtime='@0' -cf - -C "${skeldir%/*}" "${skeldir##*/}" | md5sum )
+    wholeskelsum=${wholeskelsum%% *}
+
+    for opt in "$@"
+    do
+        case "$opt" in
+        --install)
+            [[ -f "$flagfile" ]] && exit 0
+            g_force=t
+            g_install=t
+            ;;
+        --auto)
+            g_auto=t
+            check_skel_sum
+            ;;
+        ''|--refresh)
+            :
+            ;;
+        --force|--yes)
+            g_force=t
+            ;;
+        --reset)
+            g_reset=t
+            ;;
+        -v|--verbose)
+            g_verbose=t
+            ;;
+        -h|--help)
+            printf '%b\n' "$HELP"
+            exit 0
+            ;;
+        *)
+            die "$1 is not a valid option"
+            ;;
+        esac
+    done
+
+    bkp_sfx=".$(date +"%Y%m%d-%H%M%S").usersetup~"
+
+    check_skel_contents
+
+    copy_dirs
+    copy_links
+    copy_files
+
+    echo "Do not delete this file.
+
+If it is not present, the import of config files from $skeldir
+will be repeated, overwriting any user modifications.
+(However, backups will be made of overwritten files.)" > "$flagfile"
+
+    # Update record of skel checksum if script finishes with no errors
+    echo "$wholeskelsum" > "$datadir/skelsum"
+}
+
+##############
+
+log() {
+    local msg=
+    if [[ $logged = f ]]
+    then
+        msg="############
+Running $0 $args at $(date)
+$*"
+    else
+        msg="$*"
+    fi
+    echo "$msg" >> "$logfile"
+    [[ -t 1 && $g_verbose = t ]] && {
+        printf '\033[32m=>\033[m %s\n' "$msg"
+    }
+    logged=t
+}
+
+notify() {
+    if [[ -t 1 ]]
+    then
+        echo "$*"
+    elif [[ $g_install = f ]]
+    then
+        notify-send -t 20000 'user-setup' "$*"
+    fi
+}
+
+die() {
+    log "ERROR: $*"
+    printf '%b\n' "$0: ERROR: $*" >&2
+    [[ -t 1 ]] || {
+        local msg="<b>User Setup</b>
+
+ERROR: $*"
+        yad_error "$msg"
+    }
+    exit 1
+}
+
+# Any extra aguments (eg relabelled buttons) will be passed to yad_question.
+# They will be ignored if on a terminal.
+ask_yesno() {
+    local message="$1"
+    shift 1
+    if [[ -t 0 && -t 1 ]] # on terminal
+    then
+        echo $'\n'"$message"
+        while true
+        do
+            echo "y: Yes
+n: No
+(Default is Yes.)"
+            read -r -p 'Y/n: '
+            case "${REPLY^}" in
+            Y|'') return 0;;
+            N) return 1;;
+            esac
+        done
+    else
+        msg="<b>User Setup</b>
+
+$message"
+        yad_question  "$msg" "$@"
+    fi
+}
+
+# compare 2 files, opening new terminal window if needed
+# If --title is passed it will be used as title of a new terminal (if opened).
+# Usage: differ [--title] firstfile secondfile
+differ () {
+    local title firstfile secondfile gui diffcmd
+    if [[ $1 = '--title' ]]
+    then
+        title=$2
+        shift 2
+    fi
+    firstfile=$1
+    secondfile=$2
+    # if a GUI diff is available, use that instead
+    for gui in meld kompare diffuse
+    do
+        hash "$gui" 2>/dev/null && {
+            "$gui" "$firstfile" "$secondfile" &
+            return
+        }
+    done
+    diffcmd=(colordiff -s -u)
+    type colordiff >/dev/null || diffcmd=(diff -s -u)
+    diffcmd+=("$firstfile" "$secondfile")
+    if [[ -t 0 && -t 1 ]] # on terminal
+    then
+        "${diffcmd[@]}"
+    else
+        local termname termcmd
+        [[ -n $title ]] || title="Diff of $firstfile and $secondfile"
+        termname=$( readlink -f "$( which x-terminal-emulator )" )
+        termname=${termname##*/}
+        badterm_msg="$0: cannot display file diff with new window ${termname}."
+        case $termname # cope with terminal inconsistencies
+        in
+            lxterminal)
+                termcmd=(lxterminal --no-remote -T "$title" -e) # otherwise lxterminal does not start a new process
+                ;;
+            mate-terminal.wrapper)
+                termcmd=(mate-terminal --disable-factory -t "$title" -x) # mate-terminal.wrapper does not support --disable-factory
+                ;;
+            gnome-terminal.wrapper)
+                termcmd=(gnome-terminal --wait -t "$title" --) # gnome-terminal.wrapper does not support --wait
+                ;;
+            tilix.wrapper)
+                termcmd=(tilix --new-process -t "$title" -e) # tilix.wrapper does not support --new-process
+                ;;
+            qterminal|terminology)
+                echo "$badterm_msg" >&2
+                return 1
+                ;;
+            *)
+                termcmd=(x-terminal-emulator -T "$title" -e) # the normal case
+                ;;
+        esac
+
+        "${termcmd[@]}" bash -c '"$@"; echo -e "\nPress any key to close"; read -srn1' _ "${diffcmd[@]}"
+    fi
+}
+
+cleantmp() {
+    [[ -d $tmpdir && $tmpdir = /tmp/* ]] && rm -rf "$tmpdir"
+}
+
+# pass file in skel which has changed
+ask_overwrite() {
+    local skelfile targetfile name tmpdir tmpsrc msg ret
+    skelfile=$1
+    name=${skelfile#${skeldir}/}
+    name=${name%.template}
+    targetfile=${TARGETDIR}/${name}
+    name='~/'$name # for display to user
+    if [[ $skelfile = *.template ]]
+    then
+        tmpdir=$( mktemp -d )
+        tmpsrc=${tmpdir}/${skelfile#${skeldir}/}
+        tmpsrc=${tmpsrc%.template}
+        mkdir -p "${tmpsrc%/*}"
+        sed "s|%USERHOME%|$HOME|g" "$skelfile" > "$tmpsrc"
+        skelfile=$tmpsrc
+    fi
+    if [[ -t 0 && -t 1 ]] # on terminal
+    then
+        local dflt=1
+        local prompt='y/N/a/s/d: '
+        case $overwrite_dflt in
+        Yes)
+            dflt=0
+            prompt='Y/n/a/s/d: '
+            ;;
+        esac
+
+        echo $'\n'"$overwrite_msg1
+${name}
+$overwrite_msg2"
+
+        msg="y: ${overwrite_yesname}
+n: Skip this one
+a: Do all
+s: Skip all
+d: View difference
+(Default is '${overwrite_dflt}'.)"
+        while true
+        do
+            echo "$msg"
+            read -r -p "$prompt"
+            case "${REPLY^}" in
+            '') cleantmp; return $dflt;;
+            Y) cleantmp; return 0;;
+            N) cleantmp; return 1;;
+            A) cleantmp; return 2;;
+            S) cleantmp; return 3;;
+            D) differ "$targetfile" "$skelfile";;
+            esac
+        done
+    else
+        difftitle="Diff of $name in HOME and skel"
+        msg="<b>User Setup</b>
+
+$overwrite_msg1
+<b>${name}</b>
+$overwrite_msg2
+"
+
+# Meld is very slow to return the prompt after being closed, so in the function differ()
+# it is forked so user does not have to wait for the popup to reappear.
+# This makes the popup annoyingly get in front of meld while comparing two files
+# unless the yad --on-top option (set in yad-includes) is cancelled:
+        while true
+        do
+            yad_question "$msg" --on-top=0 --button="${overwrite_yesname}":0 --button='Skip':1 --button='Do All':2 --button='Skip All':3 --button='View Diff':4
+            ret=$?
+            case $ret in
+            0|1|2|3)
+                cleantmp; return $ret;;
+            4) differ --title "$difftitle" "$targetfile" "$skelfile";;
+            esac
+        done
+    fi
+}
+
+##############
+
+pre_checks () {
+    # Do not apply BL configs to the root account.
+    (( $(id -u) == 0 )) && die "USER is root, abort"
+
+    # Check for the user home directory
+    [[ -d "$HOME" ]] || die "User home directory <${HOME}> is not set or not a directory."
+
+    # Check for the target directory (set to $HOME except for testing)
+    [[ -d "$TARGETDIR" ]] || die "Target directory <${TARGETDIR}> is not set or not a directory."
+
+    # Check for source (skel) directory
+    [[ -d "$skeldir" ]] || die "Source directory <${skeldir}> is not set or not a directory."
+}
+
+check_skel_sum() {
+    if [[ -f $datadir/skelsum ]]
+    then
+        # If skel directory unchanged since last run, exit.
+        [[ $wholeskelsum = $( <"$datadir/skelsum" ) ]] && exit 0
+        log "Config files in skel changed, consulting user about import."
+        ask_yesno "Some config files may have been updated in a recent package upgrade.
+Would you like to import these changes into your HOME directory?
+(Files you have edited will not be overwritten without permission.)
+
+You also have the option of running 'bl-user-setup' at a later time.
+" '--button=Not Now:1'
+        [[ $? = 1 ]] && {
+            log "User declined a config file update."
+            echo "$wholeskelsum" > "$datadir/skelsum" # so user doesn't get repeated prompts
+            exit 0
+        }
+    else
+        log "Offering to build local data cache..."
+        ask_yesno "bl-user-setup has detected that you do do not yet have stored data
+so cannot check if the BunsenLabs default config files have changed.
+For each file, you will be asked if you want to use the default version,
+or keep your current file (if it is different).
+New files will be silently imported.
+
+This check will not need to be repeated, but if you prefer, you can
+run 'bl-user-setup --help' at any time later to see the available options.
+
+Check files now?"
+        [[ $? = 1 ]] && {
+            log "No skel md5sum data file found, but user declined a config file check."
+            echo "$wholeskelsum" > "$datadir/skelsum" # so user doesn't get repeated prompts
+            exit 0
+        }
+    fi
+}
+
+# Directories and links will only be added to the "to_copy" lists
+# if they are new arrivals in skeldir.
+#
+# Files will also be added if the md5sum has changed.
+check_skel_contents() {
+    dirs_to_copy=()
+    mapfile -t new_skel_dirs < <( find "$skeldir" -mindepth 1 -type d )
+    if [[ -f $datadir/skel.dirs && $g_reset = f ]]
+    then
+        mapfile -t old_skel_dirs < "$datadir/skel.dirs"
+        mapfile -t dirs_to_copy < <(comm -13 <(printf '%s\n' "${old_skel_dirs[@]}" | sort) <(printf '%s\n' "${new_skel_dirs[@]}" | sort))
+    else
+        dirs_to_copy=("${new_skel_dirs[@]}")
+    fi
+
+    links_to_copy=()
+    mapfile -t new_skel_links < <( find "$skeldir" -type l )
+    if [[ -f $datadir/skel.links && $g_reset = f ]]
+    then
+        mapfile -t old_skel_links < "$datadir/skel.links"
+        mapfile -t links_to_copy < <(comm -13 <(printf '%s\n' "${old_skel_links[@]}" | sort) <(printf '%s\n' "${new_skel_links[@]}" | sort))
+    else
+        links_to_copy=("${new_skel_links[@]}")
+    fi
+
+    files_to_copy=()
+    declare -Ag new_skel_files old_skel_files
+    while read -r sum file # assuming no files in skel have linebreaks in names (spaces are OK)
+    do
+        new_skel_files[$file]="$sum"
+    done < <( find "$skeldir" -type f -exec md5sum '{}' '+' )
+    [[ -f $datadir/skel.files ]] && have_filecache=t
+    if [[ $have_filecache = t && $g_reset = f ]]
+    then
+        while read -r sum file
+        do
+            old_skel_files[$file]="$sum"
+        done < "$datadir/skel.files"
+        for i in "${!new_skel_files[@]}"
+        do
+            [[ "${new_skel_files[$i]}" = "${old_skel_files[$i]}" ]] && continue
+            files_to_copy+=("$i")
+        done
+    else
+        files_to_copy=("${!new_skel_files[@]}")
+    fi
+
+    if [[ ${#files_to_copy[@]} = 0 && ${#dirs_to_copy[@]} = 0 && ${#links_to_copy[@]} = 0 ]]
+    then
+        log "The contents of $skeldir have not changed."
+        notify 'No files need to be changed'
+    fi
+}
+
+copy_dirs() {
+    for dir in "${dirs_to_copy[@]}"
+    do
+        destdir="$TARGETDIR/${dir#$skeldir/}"
+        [[ -d $destdir ]] && continue
+        log "Making new directory $destdir"
+        mkdir -p "$destdir" || die "Unable to create directory $destdir"
+        notify "Made new directory $destdir"
+    done
+    # Update data after copying directories
+    printf '%s\n' "${new_skel_dirs[@]}" > "$datadir/skel.dirs"
+}
+
+copy_links() {
+    for link in "${links_to_copy[@]}"
+    do
+        destlink="$TARGETDIR/${link#$skeldir/}"
+        if [[ -e $destlink ]]
+        then
+            log "$destlink exists: not importing symlink."
+        else
+            log "Making new symlink $destlink"
+            cp --no-dereference "$link" "$destlink" || die "Unable to import symlink $destlink"
+            log "( $destlink points to $( readlink -n "$destlink" ) )"
+            notify "Made new symlink $destlink pointing to $( readlink -n "$destlink" )"
+        fi
+    done
+    # Update data after copying links
+    printf '%s\n' "${new_skel_links[@]}" > "$datadir/skel.links"
+}
+
+# Check if an identical backed-up file already exists, and if so,
+# return 1, otherwise return 0 (do backup).
+need_backup(){
+    local file bkp_file
+    file=$1
+    for bkp_file in "${file}"*~
+    do
+        [[ -f $bkp_file ]] || continue
+        cmp "$file" "$bkp_file" >/dev/null 2>&1 && {
+            log "$file already has identical copy ${bkp_file}, no need to backup"
+            return 1
+        }
+    done
+    return 0
+}
+
+copy_file() {
+    local src dest
+    src=$1
+    dest=$2
+    dest=${dest%.template} # if dest has .template ending, remove it
+    if [[ -e "${dest}" ]]
+    then
+        if need_backup "$dest"
+        then
+            log "Overwriting ${dest}, backing up old file as ${dest}${bkp_sfx}"
+            mv "${dest}" "${dest}${bkp_sfx}" || die "Unable to backup ${dest}"
+        else
+            log "Overwriting ${dest}, identical backup already exists."
+        fi
+    else
+        log "Importing new file ${dest}"
+    fi
+    if [[ $src = *.template ]]
+    then
+        sed "s|%USERHOME%|$HOME|g" "$src" > "$dest" || die "Unable to import $dest"
+    else
+        cp "$src" "$dest" || die "Unable to import $dest"
+    fi
+}
+
+copy_files() {
+    for file in "${files_to_copy[@]}"
+    do
+        destfile="$TARGETDIR/${file#$skeldir/}"
+
+        cachesum=0
+        if [[ $have_filecache = t ]]
+        then
+            cachesum=${old_skel_files[$file]:-0}
+        fi
+
+        skelsum=${new_skel_files[$file]:-0}
+        [[ $skelsum = 0 ]] && die "$file not found in $skeldir"
+
+        usersum=0
+        if [[ -f $destfile ]]
+        then
+            usersum=$(md5sum "$destfile")
+            usersum=${usersum%% *}
+        elif [[ -f "${destfile%.template}" ]]
+        then # reverse sed to get md5sum of original template file
+            usersum=$( sed "s|$HOME|%USERHOME%|g" "${destfile%.template}" | md5sum )
+            usersum=${usersum%% *}
+        fi
+
+        [[ $usersum = "$skelsum" ]] && continue # files are identical
+
+        if [[ $g_force = t ]]
+        then
+            copy_file "$file" "$destfile" # copy_file handles templates too
+            continue
+        fi
+
+        overwrite_dflt='Skip this one'
+        overwrite_yesname='Overwrite'
+        if [[ $have_filecache = t ]]
+        then
+            if [[ $cachesum = 0 && $usersum = 0 ]] # new file from skel
+            then
+                if [[ $g_auto = t ]]
+                then
+                    log "New file: $file, copying"
+                    copy_file "$file" "$destfile"
+                    notify "Imported new file ${destfile#$TARGETDIR/}"
+                    continue
+                else
+                    log "New file: set default 'Yes'"
+                    overwrite_msg1='There is a new config file:'
+                    overwrite_msg2='Import this file?'
+                    overwrite_yesname='Import'
+                    overwrite_dflt='Yes'
+                fi
+            elif [[ ${cachesum} = "${usersum}" ]] # user has not modified file
+            then
+                if [[ $g_auto = t ]]
+                then
+                    log "User file ${destfile%.template} unchanged from default, copying new file."
+                    copy_file "$file" "$destfile"
+                    notify "Updated file ${destfile#$TARGETDIR/}"
+                    continue
+                else
+                    log "User file ${destfile%.template} unchanged: set default 'Yes'"
+                    overwrite_msg1='You have not edited this file:'
+                    overwrite_msg2='But there is a new version available.
+Overwrite with the new version?'
+                    overwrite_dflt='Yes'
+                fi
+            else
+                log "User has modified or removed ${destfile%.template}."
+                overwrite_msg1='You have modified or removed this file:'
+                overwrite_msg2='Overwrite with the new version?'
+            fi
+        else # (cannot test for unmodified file without local data, only for new file)
+            if [[ ! -e "$destfile" ]] # new file from skel
+            then
+                if [[ $g_auto = t ]]
+                then
+                    log "New file: $file, copying"
+                    copy_file "$file" "$destfile"
+                    notify "Imported new file ${destfile#$TARGETDIR/}"
+                    continue
+                else
+                    log "No data: need to confirm user choice about ${destfile%.template}."
+                    log "New file: set default 'Yes'"
+                    overwrite_dflt='Yes'
+                    overwrite_msg1='The BL default skel directory has this new file:'
+                    overwrite_msg2='Import the BL version?'
+                    overwrite_yesname='Import'
+                fi
+            else
+                log "No data: need to confirm user choice about ${destfile%.template}."
+                overwrite_msg1='This BL default file is different from yours:'
+                overwrite_msg2='Import the BL default version?'
+                overwrite_yesname='Import'
+            fi
+        fi
+
+        ask_overwrite "$file"
+        case $? in
+        0)
+            copy_file "$file" "$destfile" # copy_file handles templates too
+            ;;
+        1)
+            log "Not overwriting ${destfile%.template}"
+            ;;
+        2)
+            copy_file "$file" "$destfile"
+            g_force=t
+            ;;
+        3)
+            break
+            ;;
+        esac
+    done
+    # Update local data after copying files
+    for i in "${!new_skel_files[@]}"
+    do
+        printf '%s  %s\n' "${new_skel_files[$i]}" "$i"
+    done > "$datadir/skel.files"
+}
+
+main "$@"

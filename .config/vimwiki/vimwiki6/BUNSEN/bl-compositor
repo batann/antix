@@ -1,0 +1,176 @@
+#!/bin/bash
+#    bl-compositor: an Openbox Pipe Menu for use with a standalone compositor
+#    Copyright (C) 2012 Philip Newborough   <corenominal@corenominal.org>
+#    Copyright (C) 2013 Aleks-Daniel Jakimenko
+#    Copyright (C) 2015-2021 John Crawley    <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# some backward compatibility
+new_compositor='picom'
+old_compositor='compton'
+
+# $compositor must be set before this is run
+setConfFiles() {
+    # luckily paths are the same for picom and compton
+    user_conf="$HOME/.config/${compositor}.conf"
+    skel_user_conf="/usr/share/bunsen/skel/.config/${compositor}.conf" # provided by bunsen-configs
+    default_user_conf="/usr/share/doc/${compositor}/examples/${compositor}.sample.conf" # provided by compositor
+    sys_conf="/etc/bunsen/${compositor}-startup" # provided by bunsen-configs
+}
+
+HELP="    bl-compositor an Openbox Pipe Menu for use with a standalone compositor
+    It can be called from an openbox menu or jgmenu.
+
+Options (usually passed from the menu):
+    -h --help   show this message
+    --start     start the compositor and restart tint2, if running
+    --restart   restart the compositor, if running, and restart tint2
+    --stop      stop the compositor
+    --edit      open the compositor config file in a text editor
+    --watch     restart the compositor whenever the config file is modified
+    (--watch is useful for debugging)
+
+If bl-compositor is called with no options (the usual method),
+it will output an xml openbox pipemenu for handling compositing.
+
+The default compositor is now picom,
+but this pipemenu also supports compton.
+
+See ~/.config/{picom,compton}.conf,
+/etc/bunsen/{picom,compton}-startup
+and \"man {picom,compton}\" for configuration options.
+"
+
+########################################################################
+
+# Look for help option, display and exit to avoid builddeps with help2man.
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    esac
+done
+
+errExit() {
+    echo '    <openbox_pipe_menu>
+        <separator label=\"$*"/>
+    </openbox_pipe_menu>'
+    echo "${0}: $*" >&2
+    exit 1
+}
+
+# Kill only with exact match, and only if process belongs to executor.
+# Returns success even if process is not running.
+# Usage: safeKill <processname>
+safeKill() {
+    local procname pid
+    procname=$1
+    pid=$( pgrep -x -u "$USER" "$procname" ) || return 0
+    kill "$pid" || return 1
+    tail -f /dev/null --pid="$pid" # wait for process to terminate
+}
+
+if hash "$new_compositor" 2>/dev/null; then
+    compositor=$new_compositor
+    safeKill "$old_compositor"
+elif hash "$old_compositor" 2>/dev/null; then
+    compositor=$old_compositor
+else
+    errExit 'No supported compositor found.'
+fi
+
+# uses global $compositor
+setConfFiles
+
+BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+
+if ! . "$BL_COMMON_LIBDIR/bl-includes" 2> /dev/null; then
+    echo $"Error: Failed to source bl-includes in $BL_COMMON_LIBDIR" >&2
+    exit 1
+fi
+
+startComp() {
+    local EXECXCOMP="$compositor"
+    # Look for system startup file, add any compositor options set there.
+    [[ -r $sys_conf ]] && {
+        while read -r line
+        do
+            line=${line%%\#*}
+            [[ $line = *[^[:blank:]]* ]] || continue
+            EXECXCOMP+=" ${line}"
+        done < "$sys_conf"
+    }
+    $EXECXCOMP &
+}
+
+if [[ $1 = '--edit' ]]; then
+    if [[ ! -f $user_conf ]]; then
+        if [[ -f $skel_user_conf ]]; then
+            cp "$skel_user_conf" "$user_conf"
+        else
+            cp "$default_user_conf" "$user_conf"
+        fi
+    fi
+    if hash bl-text-editor;then
+        bl-text-editor "$user_conf"
+    else
+        x-terminal-emulator -T "edit ${user_conf##*/}" -e nano "$user_conf"
+    fi
+elif [[ $1 = '--start' ]]; then
+    if ! pgrep -x -u "$USER" "$compositor" >/dev/null; then
+        startComp
+        sleep 1
+        bl-restart tint2 || true
+    else
+        echo "$0 --start: $compositor already running" >&2
+    fi
+elif [[ $1 = '--stop' ]]; then
+    safeKill "$compositor"
+    bl-restart tint2 || true
+elif [[ $1 = '--restart' ]]; then
+    if pgrep -x -u "$USER" "$compositor" >/dev/null; then
+        safeKill "$compositor" # dont use 'bl-restart $compositor' here because we want to re-parse $sys_conf in startComp()
+        "$0" --start
+    else # nothing to restart
+        echo "$0 --restart: $compositor is not running" >&2
+    fi
+elif [[ $1 = '--watch' ]]; then
+    while inotifywait -e close_write "$user_conf" -e close_write "$sys_conf"; do
+        "$0" --restart
+    done
+else
+    # Output Openbox menu
+    menuStart
+    menuSeparator "$compositor"
+    menuItem 'Edit Compositing Settings' "$0 --edit"
+    if [[ -f "$sys_conf" ]]; then
+        if hash bl-text-editor;then
+            menuItem 'Edit Compositing system settings (root)' "pkexec bl-text-editor $sys_conf"
+        else
+            menuItem 'Edit Compositing system settings (root)' "x-terminal-emulator -T \"edit ${sys_conf##*/}\" -e sudo nano \"$sys_conf\""
+        fi
+    fi
+    menuSeparator
+    if ! pgrep -x -u "$USER" "$compositor" >/dev/null; then
+        menuItem 'Enable Compositing' "$0 --start"
+    else
+        menuItem 'Restart Compositing' "$0 --restart"
+        menuItem 'Disable Compositing' "$0 --stop"
+    fi
+    menuEnd
+fi

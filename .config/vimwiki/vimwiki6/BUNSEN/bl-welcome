@@ -1,0 +1,633 @@
+#!/bin/bash
+# Post installation script
+
+set -o nounset # do not accept unset variables
+
+HELP='    bl-welcome an interactive system configuration script
+
+Options:
+    -h --help   show this message
+
+If bl-welcome is called in a terminal with no options (the usual method),
+it will start an interactive process whereby the user can
+adjust system configurations and install packages.
+
+The main steps are:
+    Update apt information and make a sanity-check of apt sources.
+    ("inxi -r" will list your sources too)
+
+    Check system for some possible tweaks.
+
+    Offer to install a firmware checker and add necessary firmware.
+
+    Offer to install a package update checker.
+
+    Offer to enable Debian and/or Bunsenlabs backport repositories.
+
+    Offer to install various other software.
+
+    Apply the chosen changes to the system.
+'
+
+grep -q '\<boot=live\>' /proc/cmdline && { echo "$0: This script is not meant to be run in a live session." >&2; exit 0;}
+
+# Contents of these arrays will be executed at the "deferred-actions" page.
+pkgs_to_install=()
+pkgs_to_install_norecs=()
+pkgs_to_remove=()
+pre_functions_to_execute=() # executed before package installs
+post_functions_to_execute=() # executed after package installs
+
+restart=false
+aptbug=false # There is an issue with urxvt when it is launched with an -e option
+# to run a script (eg this script) which uses sudo, while redirecting output (as this script does).
+# An apt prompt will jump straight to "abort".
+# To work around it, if urxvt is set as x-terminal-emulator, the user will be prompted
+# to run 'bl-welcome' in a new terminal window which pops up.
+# See function hasAptAbortBug() below, and $aptbug which is checked in the "intro" page.
+# See https://forums.bunsenlabs.org/viewtopic.php?pid=130964#p130964
+# and https://lists.debian.org/debian-user/2023/12/msg01267.html
+# TODO: in future releases, check if urxvt still suffers from this issue.
+
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    --firstrun)
+        [[ -e $HOME/.config/bunsen/bl-welcome ]] && exit 0
+        ;;
+    --restart)
+        restart=true
+        ;;
+    --aptbug)
+        aptbug=true
+        ;;
+    '')
+        ;;
+    *)
+        echo "${i}: no such option" >&2
+        exit 1
+        ;;
+    esac
+done
+
+#TEXTDOMAIN=bl-welcome # might be used in future for translations
+
+BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+BL_WELCOME_LIBDIR='/usr/lib/bunsen/welcome'
+
+if ! . "$BL_COMMON_LIBDIR/bl-includes" 2> /dev/null; then
+    echo $"Error: Failed to source bl-includes in $BL_COMMON_LIBDIR" >&2
+    exit 1
+fi
+
+# Debian release that this BunsenLabs system is based on (lowercase)
+debian_base=bookworm
+# set this too, it's used in a sanity test (no longer needed)
+#debian_version=12
+
+# (lowercase too)
+bunsen_codename=boron
+
+# default url for added Debian backports etc.
+default_mirror='https://deb.debian.org/debian'
+
+# used when restoring missing repos
+default_deb_sec_mirror="https://deb.debian.org/debian-security"
+deb_sec_suite="${debian_base}-security"
+# NOTE buster used this:
+#deb_security_source="https://deb.debian.org/debian-security ${debian_base}/updates"
+# so a Lithium backport would need:
+#deb_sec_suite="${debian_base}/updates"
+
+# url for added BunsenLabs backports
+bunsen_mirror='https://pkg.bunsenlabs.org/debian'
+
+# matches most mirrors
+# add (?=.*debian) at beginning to insist on 'debian' somewhere (needs PCRE)
+# no longer used
+#mirror_regex='https?://([[:alnum:]_-]+\.)+[[:alnum:]]+(/[[:alnum:]._-]+)*/?'
+
+# matches BunsenLabs url, http or https
+# no longer used
+#bunsen_regex='https?://pkg.bunsenlabs.org/debian'
+
+# suffix for any backed-up files
+bkp_sfx=".$(date +"%Y%m%d-%H%M%S").welcome~"
+
+# pages (in BL_WELCOME_LIBDIR) that bl-welcome will run through
+STEPS_FIRST=('intro' 'warning' 'apt-update-check-upgrade')
+STEPS_UNDERSTOOD=('intro' 'apt-update-check-upgrade')
+STEPS_RESTART=('restart')
+STEPS_BASIC=('system-tweaks' 'install-isenkram' 'install-apt-update-checker' 'add-debian-backports' 'add-bunsen-backports' 'install-bluetooth' 'install-java-packages' 'devel')
+STEPS_DEVEL=('devel-install-version-control-tools' 'devel-install-lamp-stack' 'devel-install-packaging-tools')
+
+log_dir="$HOME/.cache/bunsen-welcome"
+mkdir -p "$log_dir"
+logfile="$log_dir"/bl-welcome.log
+
+####### log functions #######
+
+log() {
+    echo "
+${1-}
+" >> "$logfile"
+}
+
+warnlog() {
+    echo "######## WARNING ########
+${1-}
+------------------------------------------------" >> "$logfile"
+}
+
+# inhibit the popup terminal for non-sudo users
+# they can still try to run the script with 'bl-welcome'
+if ! [[ -t 0 && -t 1 && -t 2 ]]
+then # not attached to terminal
+    groups | grep -q 'sudo' || {
+        echo "$0: This script can only be run by users with sudo access." >&2
+        log "This script can only be run by users with sudo access."
+        createFlag 'bl-welcome'
+        exit 0
+    }
+fi
+
+####### functions #######
+
+sourcePage() {
+    if [[ ! -r "$BL_WELCOME_LIBDIR/$1" ]]; then
+        echo $"Error: Unable to read $1 in $BL_WELCOME_LIBDIR" >&2
+        exit 1
+    fi
+    . "$BL_WELCOME_LIBDIR/$1"
+}
+
+# prints something like: -------[ page 1 of 10 ]-------
+header() {
+    local width=$(tput cols 2>/dev/tty)
+    local headerLength=$((width - 8)) # 8 is for '[  ]' and 2 spaces margins
+    local headerText=$(printf $"page %d of %d" "$STEP" "$STEPS")
+    local dashesStart=$( printf "%$(( (headerLength - ${#headerText}) / 2 ))s" )
+    local dashesEnd=$( printf "%$(( (headerLength - ${#headerText}) / 2 + (headerLength - ${#headerText}) % 2 ))s" )
+    echo "  ${dashesStart// /-}[ ${headerText} ]${dashesEnd// /-}"$'\n'
+}
+
+# scroll previous page off the screen
+scrollScreen() {
+    start=1
+    end=$(tput lines)
+     for  (( c=start; c<=end; c++ ))
+    do
+    tput cud1               # line feed
+    sleep 0.01
+    done
+    tput home
+}
+
+# Usage: setupPage title text [prompt [prompt-extra-arg]]
+# Omit prompt for noninteractive page.
+setupPage() {
+    scrollScreen
+    header
+    say "${1^^}
+${1//?/-}
+
+$2
+"
+    [[ ${3-} ]] || { sleep 2;return 0;}
+    prompt "  $3" "${4:-}"
+    return $?
+}
+
+# trigger* functions prepare lists for actions at the "deferred-actions" step.
+
+# This is the easiest function to use for a page installing one or more packages.
+# Usage: triggerInstallPage title text package...
+# example: triggerInstallPage 'LibreOffice suite' 'This will install libreoffice' 'libreoffice'
+# Returns 0 if package added to install list,
+# 2 if package(s) already installed or install declined,
+# 1 if there was an error.
+triggerInstallPage() {
+    local title=$"install"" $1"
+    local text="$1 has already been installed."
+    allInstalled "${@:3}" && {
+        setupPage "$title" "$text"
+        return 2
+    }
+    text="$2"$'\n\n'$"If you choose to do this, the following packages will be installed:""
+
+    ${*:3}
+
+"$"Note: additional packages listed as dependencies will also be installed."
+
+    local prompt=$"Would you like to install"" ${1}?"
+
+    if setupPage "$title" "$text" "$prompt" 'N'
+    then
+        if triggerInstall "${@:3}"
+        then
+            return 0
+        else
+            say '...going to next page.' 1
+        fi
+    else
+        return 2
+    fi
+    return 1
+}
+
+# usage: triggerInstall [--apt-get-option] <package> [<packages>]
+triggerInstall() {
+    local norecs=false
+    case ${1-} in
+    --no-install-recommends)
+        norecs=true
+        shift
+        ;;
+    -*)
+        echo "${1}: this apt option is not supported by triggerInstall()" >&2
+        return 1
+        ;;
+    '')
+        echo "No package has been sent to triggerInstall()" >&2
+        return 1
+        ;;
+    esac
+    if [[ $norecs = true ]]
+    then
+        pkgs_to_install_norecs+=("$@")
+    else
+        pkgs_to_install+=("$@")
+    fi
+    say "$* has been added to the install list for installation later." 3
+}
+
+# usage: triggerRemove <package> [<packages>]
+triggerRemove() {
+    [[ -n ${1-} ]] || { echo "No package has been sent to triggerRemove()" >&2; return 1;}
+    pkgs_to_remove+=("$@")
+    say "$* has been added to the removal list for execution later." 3
+}
+
+# usage: triggerRunPreFunction <function> [<functions>]
+# note: functions are not checked for existence here, because they may be added by subsequently sourced pages
+triggerRunPreFunction(){
+    [[ -n ${1-} ]] || { echo "No function passed to triggerRunPreFunction()" >&2; return 1;}
+    pre_functions_to_execute+=("$@")
+    say "function(s) $* will be run later, before installing packages." 3
+}
+
+# no arguments used - adds Apt_Update (wrapper round safeUpdate) to beginning of pre_functions_to_execute
+triggerAptUpdate(){
+    [[ "${pre_functions_to_execute[0]-}" = Apt_Update ]] || {
+        pre_functions_to_execute=(Apt_Update "${pre_functions_to_execute[@]}")
+    }
+    say 'Apt_Update will be run later, before installing packages.' 3
+}
+
+# cosmetic wrapper round safeUpdate
+Apt_Update(){
+    say 'Updating apt data...' 1
+    safeUpdate || say 'Continuing in spite of update problems...' 3
+}
+
+# usage: triggerRunPostFunction <function> [<functions>]
+triggerRunPostFunction(){
+    [[ -n ${1-} ]] || { echo "No function passed to triggerRunPostFunction()" >&2; return 1;}
+    post_functions_to_execute+=("$@")
+    say "function(s) $* will be run later, after installing packages." 3
+}
+
+# Usage: promptTriggerInstall name description [--apt-get-option] package [package...]
+# To have some defined function - functionname - run first, use:
+# promptTriggerInstall --setup functionname name desc...
+# This function is only needed in cases when triggerInstallPage is inappropriate.
+promptTriggerInstall() {
+    local setupFunction=
+    if [[ $1 = '--setup' ]]; then
+        if [[ -n ${2-} && $(type -t "$2") = 'function'  ]]; then
+            setupFunction="$2"
+            shift 2
+        else
+            say "Error: ${2-} is not a function."
+            return 1
+        fi
+    fi
+
+    tput clear
+    local title="INSTALL ${1^^}"
+    say "
+$title
+${title//?/-}
+
+$2
+"
+
+    prompt '  Add to the install list?' || return 1
+
+    if [[ -n $setupFunction ]]; then
+        triggerRunPreFunction "$setupFunction" || return 1 # run setup function later, if it exists
+    fi
+
+    triggerInstall "${@:3}" || return 1
+}
+
+# wrapper function in case future scripts want to do the test differently
+# lsb-release is now a direct dependency of bunsen-welcome
+usingDebStable() {
+    local reported_codename=$( lsb_release -cs )
+    case ${reported_codename,,} in
+    "$debian_base"|"$bunsen_codename") return 0 ;;
+    esac
+    log "'lsb_release -cs' reported wrong codename: $reported_codename"
+    return 1
+}
+
+# even if usingDebStable succeeds, system still might be using Debian Testing
+usingDebTesting(){
+    local debfile debver regex
+    debfile='/etc/debian_version'
+    [[ -r "$debfile" ]] || {
+        log "$debfile is unreadable"
+        return 1
+    }
+    debver=$( < "$debfile" )
+    regex='/[[:blank:]]*sid[[:blank:]]*$' # testing will have <release>/sid
+    [[ "$debver" =~ $regex ]] && return 0
+    return 1
+}
+
+# This function is used in 'apt-update-check-upgrade' and 'restart'.
+# https://manpages.debian.org/testing/apt/apt_preferences.5.en.html
+# generate global array repo_status based on state of 'apt-cache policy' at this point
+# generated repo_status keys are:
+# debian_{main,contrib,non-free,non-free-firmware} (each component is tested and recorded separately)
+# deb_sec_{"} (debian security)
+# deb_update_{"} (debian updates)
+# deb_prop_{"} (debian proposed updates)
+# deb_bkpt_{"} (debian backports)
+# bunsen_main (bunsenlabs)
+# bunsen_bkpt_main (bunsenlabs backports)
+# (bunsenlabs only provide "main" packages at the moment)
+# Any other repositories found are given keys of unknown_<some number>
+getRepoStatus() {
+    log 'Running getRepoStatus to check apt policy'
+    unset repo_status
+    declare -gA repo_status
+    local -a policy
+    local i line src
+    mapfile -t policy < <(apt-cache policy)
+    for ((i=0;i<${#policy[@]};i++))
+    do
+        line=${policy[i]}
+        [[ $line =~ (([voanlcb]=[- _[:alnum:]]+(,|$))+) ]] || continue
+        src="${policy[i-1]}"
+        line="${BASH_REMATCH[0]}"
+        line="${line// /\\ }"
+        log "Processing line: $line"
+        local v o a n l c b # version origin archive/suite codename label component architecture
+        unset v o a n l c b
+        eval "${line//,/ }"
+        case "${o-}" in
+        '')
+            continue # first entry is /var/lib/dpkg/status, release a=now
+            ;;
+        Debian)
+            case $n in
+            "${debian_base}")
+                case $l in # in Buster, security codename is "buster" so need to check label
+                Debian)
+                    repo_status[debian_$c]=$src
+                    log "Found Debian ${debian_base} $c repository recognized by apt."
+                    ;;
+                Debian-Security)
+                    repo_status[deb_sec_$c]=$src
+                    log "Found Debian ${debian_base}-Security $c repository recognized by apt."
+                    ;;
+                *)
+                    repo_status[unknown_$i]=$src
+                    log "Found unknown repository $i recognized by apt, policy line: $src."
+                    ;;
+                esac
+                ;;
+            "${debian_base}-security") # in Bullseye, security codename is "bullseye-security"
+                repo_status[deb_sec_$c]=$src
+                log "Found Debian ${debian_base}-Security $c repository recognized by apt."
+                ;;
+            "${debian_base}-updates")
+                repo_status[deb_update_$c]=$src
+                log "Found Debian ${debian_base}-Updates $c repository recognized by apt."
+                ;;
+            "${debian_base}-proposed-updates")
+                repo_status[deb_prop_$c]=$src
+                log "Found Debian ${debian_base}-Proposed-Updates $c repository recognized by apt."
+                ;;
+            *)
+                repo_status[unknown_$i]=$src
+                log "Found unknown repository $i recognized by apt, policy line: $src."
+            esac
+            ;;
+        'Debian Backports')
+            [[ $n = "${debian_base}-backports" ]] && {
+                repo_status[deb_bkpt_$c]=$src
+                log "Found Debian ${debian_base}-Backports $c repository recognized by apt."
+            }
+            ;;
+        bunsenlabs)
+            case $n in
+            "${bunsen_codename}")
+                repo_status[bunsen_$c]=$src
+                log "Found BunsenLabs ${bunsen_codename} $c repository recognized by apt."
+                ;;
+            "${debian_base}-backports")
+                repo_status[bunsen_bkpt_$c]=$src
+                log "Found BunsenLabs ${bunsen_codename} Backports $c repository recognized by apt."
+                ;;
+            *)
+                repo_status[unknown_$i]=$src
+                log "Found unknown repository $i recognized by apt, policy line: $src."
+                ;;
+            esac
+            ;;
+        *)
+            repo_status[unknown_$i]=$src
+            log "Found unknown repository $i recognized by apt, policy line: $src."
+            ;;
+        esac
+    done
+    getAptTargets # check configured repositories that apt might not have recognized because they are empty
+}
+
+# this function no longer used
+# regardless of debian repo status, check local user apt sources configuration for config or non-free
+# for now, only check Debian repos for contrib or non-free in user sources
+# pass source line (from eg ${repo_status[debian_main]}) as $1 and component to check for as $2
+# optionally, to check other release (like backports) from same origin, pass origin src as $1 + component as $2 + different release name as $3
+checkAptTargets() {
+    local src component repo_uri release
+    # indextargets is global but unset after running checkRepos()
+    [[ -n ${indextargets-} ]] || indextargets=$(apt-get indextargets --no-release-info --format '$(RELEASE)|$(COMPONENT)|$(REPO_URI)' 'Identifier: Packages')
+    src=${1-}
+    component=${2-}
+    read -r _ repo_uri release _ _ <<< "$src"
+    release=${release%/*}
+    [[ -n ${3-} ]] && release=$3
+    log "$component was found missing from $release + $repo_uri in apt policy - checking local configs"
+    grep --quiet --fixed-strings "${release}|${component}|${repo_uri}" <<< "$indextargets" || {
+        log "$release + $repo_uri $component not found in user apt sources"
+        return 1
+    }
+    log "$release $component found in user apt sources"
+}
+
+# Fill out repo_status array with parsed data from sources files,
+# even if apt policy in getRepoStatus has not yet recognized the repos.
+# This happens when a repo is empty, as with security and backports
+# during the testing phase.
+# This data is not tested by an actual download of a Release file
+# so there is no check for typos etc.
+getAptTargets() {
+    log 'Running getAptTargets to check for possibly empty but configured repositories.'
+    local release component uri
+    # indextargets is global but unset after running checkRepos()
+    [[ -n ${indextargets-} ]] || indextargets=$(apt-get indextargets --no-release-info --format '$(RELEASE)|$(COMPONENT)|$(REPO_URI)' 'Identifier: Packages')
+    while IFS='|' read -r release component uri
+    do
+        case "$release" in
+        "${debian_base}")
+            [[ -z ${repo_status[debian_$component]-} ]] && {
+                repo_status[debian_$component]="$uri"
+                log "Debian $component not recognized by apt, but found in config files."
+            }
+            ;;
+        "${debian_base}-security")
+            [[ -z ${repo_status[deb_sec_$component]-} ]] && {
+                repo_status[deb_sec_$component]="$uri"
+                log "Debian ${debian_base}-Security $component not recognized by apt, but found in config files."
+            }
+            ;;
+        "${debian_base}-updates")
+            [[ -z ${repo_status[deb_update_$component]-} ]] && {
+                repo_status[deb_update_$component]="$uri"
+                log "Debian ${debian_base}-Updates $component not recognized by apt, but found in config files."
+            }
+            ;;
+        "${debian_base}-proposed-updates")
+            [[ -z ${repo_status[deb_prop_$component]-} ]] && {
+                repo_status[deb_prop_$component]="$uri"
+                log "Debian ${debian_base}-Proposed-Updates $component not recognized by apt, but found in config files."
+            }
+            ;;
+        "${debian_base}-backports") # these entries could be BL or Debian
+            case "$uri" in
+                *pkg.bunsenlabs.org*)
+                    [[ -z ${repo_status[bunsen_bkpt_$component]-} ]] && {
+                        repo_status[deb_bkpt_$component]="$uri"
+                        log "Bunsenlabs ${debian_base}-Backports $component not recognized by apt, but found in config files."
+                    }
+                ;;
+                *)
+                    [[ -z ${repo_status[deb_bkpt_$component]-} ]] && {
+                        repo_status[deb_bkpt_$component]="$uri"
+                        log "Debian ${debian_base}-Backports $component not recognized by apt, but found in config files."
+                    }
+                ;;
+            esac
+            ;;
+        "${bunsen_codename}")
+            [[ -z ${repo_status[bunsen_$component]-} ]] && {
+                repo_status[bunsen_$component]="$uri"
+                log "BunsenLabs ${bunsen_codename} $component not recognized by apt, but found in config files."
+            }
+            ;;
+        "${bunsen_codename}-backports") # such entries do not exist atm
+            [[ -z ${repo_status[bunsen_bkpt_$component]-} ]] && {
+                repo_status[bunsen_bkpt_$component]="$uri"
+                log "BunsenLabs ${bunsen_codename} Backports $component not recognized by apt, but found in config files."
+            }
+            ;;
+        esac
+    done <<< "$indextargets"$'\n' # final newline needed so read does not return error
+}
+
+# See note at top, near 'aptbug=false'.
+# https://forums.bunsenlabs.org/viewtopic.php?pid=130964#p130964
+# https://lists.debian.org/debian-user/2023/12/msg01267.html
+hasAptAbortBug() {
+    local termname
+    [[ -t 0 && -t 1 && -t 2 ]] && return 1 # bug does not appear if terminal is already open
+    termname=$( readlink -f "$( command -v x-terminal-emulator )" )
+    [[ ${termname##*/} = urxvt ]] || return 1 # only urxvt suffers
+    # To check if use_pty is set in sudoers needs root permission, which has not yet been granted, so just assume it is.
+    # (If use_pty is not set, there is no issue.)
+    return 0
+}
+
+####### end functions #######
+
+if [[ $restart = true ]]
+then
+    log "Restarting bl-welcome for $USER at $(date)"
+else
+    if hasAptAbortBug
+    then
+        log "There is an issue when using the terminal emulator urxvt with its output redirected.
+To work around this, a new terminal window will be opened, and the user asked to run 'bl-welcome' manually."
+        terminalCheck -T 'WELCOME!' '--aptbug'
+    else
+        terminalCheck -T 'WELCOME!'
+    fi
+    exec > >( tee -ia "$logfile" ) 2>&1
+    log '
+
+######################################################'
+    log "Starting bl-welcome for $USER at $(date)"
+fi
+
+if [[ $( id -u ) -eq 0 ]]; then
+    echo $"Error: This script should not be run directly by root." >&2
+    exit 1
+fi
+
+usingDebStable || {
+    echo "Error: This script should be run only on a BunsenLabs system based on Debian ${debian_base^}." >&2
+    exit 1
+}
+
+createFlag 'bl-welcome'
+
+if [[ $restart = true ]]; then
+    STEPS_BASIC=("${STEPS_RESTART[@]}" "${STEPS_BASIC[@]}")
+elif [[ -e $HOME/.config/bunsen/bl-welcome-understood ]]; then
+    STEPS_BASIC=("${STEPS_UNDERSTOOD[@]}" "${STEPS_BASIC[@]}")
+else
+    STEPS_BASIC=("${STEPS_FIRST[@]}" "${STEPS_BASIC[@]}")
+fi
+
+(( STEPS = ${#STEPS_BASIC[@]} + ${#STEPS_DEVEL[@]} + 2 )) # +2 is for deferred-actions and fini
+
+# Run through steps
+STEP=1
+
+DEVEL=false
+
+for curStep in "${STEPS_BASIC[@]}"; do
+    sourcePage "$curStep"
+    ((STEP++))
+done
+
+if $DEVEL; then
+    for curStep in "${STEPS_DEVEL[@]}"; do
+        sourcePage "$curStep"
+        ((STEP++))
+    done
+fi
+
+sourcePage deferred-actions
+STEP=$STEPS
+sourcePage fini
+
+exit 0

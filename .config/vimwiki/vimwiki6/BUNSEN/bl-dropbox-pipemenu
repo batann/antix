@@ -1,0 +1,218 @@
+#!/bin/bash
+#    bl-dropbox-pipemenu: an Openbox pipemenu for use with Dropbox
+#    Copyright (C) 2012 Philip Newborough <corenominal@corenominal.org>
+#    Copyright (C) 2013 Aleks-Daniel Jakimenko
+#    Copyright (C) 2015-2024  John Crawley <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Directory to install the dropbox cli interface, dropbox.py.
+# If dropbox.py is in user's $PATH they can use that command
+# to control dropbox. Otherwise, use the absolute path /path/to/dropbox.py
+USER_DBPY_DIR="$HOME/bin"
+USER_DBPY="$USER_DBPY_DIR/dropbox"
+# If dropbox.py is already installed, link to that,
+# so executable is named "dropbox".
+[[ -x "$USER_DBPY_DIR/dropbox.py" && ! -e "$USER_DBPY_DIR/dropbox" ]] && {
+    ln -s dropbox.py "$USER_DBPY_DIR/dropbox"
+}
+
+
+REMOTE_DBPY='https://linux.dropbox.com/packages/dropbox.py'
+
+USER_DB_DIR="$HOME/.dropbox-dist/"
+
+HELP='    bl-dropbox-pipemenu an Openbox Pipe Menu for use with dropbox
+    It should normally be called from an openbox menu.
+
+Options:
+    -h --help   show this message
+
+    If bl-dropbox-pipemenu is called with no options (the usual method),
+    it will output an xml openbox pipemenu for installing and using dropbox.
+
+    For installation, the dropbox python utility dropbox.py
+    is downloaded from dropbox and run with the arguments "start -i".
+
+See the dropbox website https://www.dropbox.com and
+https://www.dropboxforum.com/
+https://help.dropbox.com/
+for more information.
+'
+# look for a help option somewhere
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    esac
+done
+
+PROMPT_DELAY_TEXT='It is a good idea to add a delay before autostarting Dropbox
+so that your system can establish a working network connection.
+
+Select the number of seconds to delay Dropbox autostarting.
+Click "Cancel" to cancel the autostart.'
+PROMPT_DELAY_VARIANTS=(FAlSE 0 FALSE 10 FALSE 20 FALSE 30 FALSE 40 FALSE 50 TRUE 60)
+
+BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+
+for i in bl-includes yad-includes
+do
+    if ! . "$BL_COMMON_LIBDIR/$i" 2> /dev/null; then
+        echo "Error: Failed to source $i in $BL_COMMON_LIBDIR" >&2
+        exit 1
+    fi
+done
+
+declareDependencies wget
+
+yad_common_args+=('--title=Dropbox Installation' '--image=dropbox')
+
+dropbox_is_installed() {
+    [[ -x "$USER_DB_DIR/dropboxd" ]] || return 1
+    return 0
+}
+
+get_dropbox.py() {
+    [[ -e "$USER_DBPY" ]] && {
+        if [[ -x "$USER_DBPY" ]]; then
+            return 0
+        else
+            { echo "$0: $USER_DBPY exists but is not executable." >&2; return 1;}
+        fi
+    }
+    mkdir -p "$USER_DBPY_DIR"
+    notify-send -i dialog-information 'Dropbox Installation' 'Fetching Dropbox frontend dropbox.py...'
+    wget -O "$USER_DBPY" "$REMOTE_DBPY" || { echo "$0: dropbox.py download failed." >&2; return 1;}
+    [[ -f "$USER_DBPY" ]] || { echo "$0: $USER_DBPY does not exist." >&2; return 1;}
+    chmod 755 "$USER_DBPY" || { echo "$0: failed to set permissions on $USER_DBPY" >&2; return 1;}
+    return 0
+}
+
+# --------------------------------------------------------------------
+# manipulation
+# --------------------------------------------------------------------
+
+if [[ $1 = '--start-dropbox' ]]; then
+    "$USER_DBPY" start
+
+elif [[ $1 = '--stop-dropbox' ]]; then
+    "$USER_DBPY" stop
+
+elif [[ $1 = '--install-dropbox' ]]; then
+    yad_question 'This script will install Dropbox.\nDo you want to proceed?' || exit 0
+
+    # use dropbox.py to install dropbox
+    get_dropbox.py || {
+        echo "$0: failed to fetch dropbox.py" >&2
+        yad_error 'Failed to fetch dropbox.py'
+        exit 1
+    }
+
+    allInstalled python3-gpg || {
+        yad_question 'We need to install the package python3-gpg.\nDo you want to proceed?' || exit 0
+        tmpFile=$(mktemp --tmpdir=/tmp)
+        bl-install --file "$tmpFile" 'python3-gpg'
+        #sleep 0.3 # allow time for bl-install to write to $tmpFile (now done in bl-install)
+        retval=$(<"$tmpFile")
+        [[ -f $tmpFile && $tmpFile = /tmp/* ]] && rm "$tmpFile"
+        [[ $retval -ne 0 ]] && {
+            echo "$0: failed to install python3-gpg." >&2
+            yad_error 'Failed to install python3-gpg.'
+            exit 1
+        }
+    }
+
+    allInstalled thunar-dropbox-plugin || {
+        yad_question "You might consider also installing the package thunar-dropbox-plugin,\
+\nwhich adds some dropbox-specific context-menu items for Thunar.
+\nWould you like to install this?" && {
+            tmpFile=$(mktemp --tmpdir=/tmp)
+            bl-install --name 'context-menu items from Dropbox for Thunar' --file "$tmpFile"  --no-install-recommends thunar-dropbox-plugin
+            #sleep 0.3 # allow time for bl-install to write to $tmpFile (now done in bl-install)
+            retval=$(<"$tmpFile")
+            [[ -f $tmpFile && $tmpFile = /tmp/* ]] && rm "$tmpFile"
+            [[ $retval -ne 0 ]] && {
+                echo "$0: failed to install thunar-dropbox-plugin." >&2
+                yad_error 'Failed to install thunar-dropbox-plugin.'
+            }
+        }
+    }
+
+    "$USER_DBPY" start --install
+    dropbox_is_installed || {
+        yad_error 'Dropbox installation failed.'
+        exit 1
+    }
+    notify-send -i dialog-information 'Dropbox Installation' 'Dropbox has been installed.'
+    yad_info "Dropbox CLI frontend dropbox.py has been installed in $USER_DBPY_DIR.
+Run '$USER_DBPY help' to view options.
+(If $USER_DBPY_DIR is in your PATH, then the path $USER_DBPY_DIR can be omitted.)
+
+There is also a Dropbox pipemenu in the default BunsenLabs menu,
+which you might want to consider enabling.
+See ~/.config/jgmenu/prepend.csv
+"
+
+    yad_question 'Dropbox can be started automatically when you start your session. Would you like to autostart Dropbox when you login?'
+    if [[ $? = 0 ]]; then # add to autostart
+        ans=$(yad --image=dropbox --list --radiolist "${yad_common_args[@]}" --text="$PROMPT_DELAY_TEXT" --print-column=2 --separator='' --column='Pick':RD --column='Seconds:':NUM "${PROMPT_DELAY_VARIANTS[@]}")
+        if [[ $? = 0 ]]; then
+            cat <<DRBX >> "$HOME/.config/bunsen/autostart"
+
+# Autostart the Dropbox daemon
+(sleep ${ans}s; $USER_DBPY start) &
+
+DRBX
+        fi
+    fi
+    yad_question 'Do you wish to start the Dropbox client now?' || exit 0
+    "$USER_DBPY" start
+
+elif [[ $1 ]]; then
+    echo "$0: no such option $*" >&2
+    exit 1
+
+else
+    # pipemenu stuff
+    menuStart
+    if ! dropbox_is_installed; then
+        menuItem 'Install Dropbox' "$0 --install-dropbox"
+    else
+        if hash jq
+        then
+            dropbox_folder="$( jq -r '.["personal"].path' "$HOME/.dropbox/info.json" )"
+        else
+            dropbox_folder="$HOME/Dropbox"
+        fi
+        [[ -d "$dropbox_folder" ]] &&
+            menuItem 'Open Dropbox Folder' "bl-file-manager \"$dropbox_folder\""
+
+#        if "$USER_DBPY" running; then
+        if pgrep -x dropbox >/dev/null; then
+            menuItem 'Stop Dropbox' "$0 --stop-dropbox"
+        else
+            menuItem 'Start Dropbox' "$0 --start-dropbox"
+        fi
+        menuSeparator
+        menuItem 'Dropbox CLI utility help' "x-terminal-emulator -T '${USER_DBPY##*/} help' -e sh -c '$USER_DBPY help; bash'"
+        menuItem 'Launch Dropbox Website' 'x-www-browser https://www.dropbox.com/home'
+    fi
+    menuItem 'Dropbox Terms' 'x-www-browser https://www.dropbox.com/terms'
+    menuEnd
+fi
+exit 0

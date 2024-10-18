@@ -1,0 +1,326 @@
+#!/usr/bin/env bash
+#
+#    bl-exit: Bunsenlabs exit dialog, offering various exit options
+#     via both GUI and CLI
+#    Copyright: 2019 MXStuff.org <init.choice@mxstuff.org>
+#               2019 hhh <hsumen@bunsenlabs.org>
+#               2019-2024 John Crawley <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+########################################################################
+##                                                                    ##
+## Init and desktop agnostic "yad" based Logout/Exit dialogue.        ##
+##                                                                    ##
+## Written in response to the seemingly widely held belief that       ##
+## 'systemctl' is what you _have_ to use for power operations if you  ##
+## have systemd, regardless that dbus calls are arguably superior.    ##
+##                                                                    ##
+## Since systemd users like systemd specific commands so much, here's ##
+## a system exit dialogue that uses systemd's calls for every power   ##
+## or session control action, while remaining compatible with         ##
+## non-systemd systems.                                               ##
+##                                                                    ##
+## Originally written for Bunsenlabs "Lithium" by Bearded_Blunder     ##
+## <init.choice@mxstuff.org> February 2019                            ##
+##                                                                    ##
+## Copyright © 2019 MXStuff.org <init.choice@mxstuff.org>             ##
+##                                                                    ##
+## This program is free software. It comes without any warranty, to   ##
+## the extent permitted by applicable law. You can redistribute it    ##
+## and/or modify it under the terms of the Do What The Fuck You Want  ##
+## To Public License, Version 2, as published by Sam Hocevar. See     ##
+## http://www.wtfpl.net/ for more details.                            ##
+##                                                                    ##
+########################################################################
+
+### Usage ###
+USAGE="\nbl-exit [OPTION]\n\n\
+With no arguments default yad (GUI) or text menu at a TTY\n\n\
+Only one argument is read, they cannot be combined\n\
+    -h --help\tShow this help\n\
+    -k --lock\tLock screen\tDoes not work for a tty session\n\
+    -l --logout\tLogout\t\tAlso works for tty.\n\
+    -s --suspend\tSuspend\tState determined by ACPI S0 S1 or S3\n\
+    -i --hibernate\tSuspend to Disk\tRequires enough swap to store RAM\n\
+    -y --hybrid\tHybrid Sleep\tACPI must support sleep state S3\n\
+    -u --suspend-hibernate\tSuspend then Hibernate\tThis option is untested\n\
+    -b --reboot\tReboot\n\
+    -p --poweroff\tShut down\n\n\
+
+NOTE: Screen locking is done via loginctl, and only available if
+called directly as 'bl-exit --lock'.
+In BunsenLabs the bl-lock utility is also available.
+
+See: https://forums.bunsenlabs.org/viewtopic.php?id=9042
+for a discussion of Hibernate options.
+"
+
+lock_tty_msg="Error: Graphical environment needed for screen locking.
+It can be done with the vlock package installed, using the
+command 'vlock'. This script does not handle that case.
+If you have a graphical environment running the probable cause
+of seeing this message is that no display manager is installed.
+"
+
+########################################################################
+
+# Default settings:
+
+# Some screen locking software does not listen for logind calls,
+# screen locking then fails, for such screen lockers set
+# LOCK_SCREEN_COMMAND="what-locks-screen  --now"
+LOCK_SCREEN_COMMAND=""
+# Known tested examples: "i3lock", "slock", "xscreensaver-command -lock"
+
+# Which buttons to show in yad dialog by default.
+# These can be changed in the config file /etc/bl-exit/bl-exit.conf
+declare -A showbutton
+showbutton=(
+    [logout]=true
+    [lock]=true
+    [suspend]=true
+    [hibernate]=false
+    [hybrid-sleep]=false
+    [suspend-then-hibernate]=false
+    [reboot]=true
+    [poweroff]=true
+)
+
+# Sysadmins can change the above configurations by editing this file:
+config_file=/etc/bl-exit/bl-exit.conf
+
+########################################################################
+
+# Configuration of yad buttons - labels, icons and commands:
+declare -A yadbutton
+yadbutton=(
+    [logout]='--button= _Logout!system-log-out:bash -c "logoutctl terminate-session"'
+    [lock]='--button= Loc_k Screen!system-lock-screen:bash -c "logoutctl lock-session"'
+    [suspend]='--button= _Suspend!system-suspend:bash -c "logoutctl suspend"'
+    [hibernate]='--button= H_ibernate!system-hibernate:bash -c "logoutctl hibernate"'
+    [hybrid-sleep]='--button= H_ybrid Sleep!system-hibernate:bash -c "logoutctl hybrid-sleep"'
+    [suspend-then-hibernate]='--button= Suspend then Hibernate!system-hibernate:bash -c "logoutctl suspend-then-hibernate"'
+    [reboot]='--button= Re_boot!system-reboot:bash -c "logoutctl reboot"'
+    [poweroff]='--button= _Power Off!system-shutdown:bash -c "logoutctl poweroff"'
+)
+
+########################################################################
+#                  Compatibility function details                      #
+#                                                                      #
+# logoutctl() takes the following `systemctl` arguments:               #
+#                                                                      #
+# poweroff reboot suspend hibernate hybrid-sleep                       #
+#  suspend-then-hibernate                                              #
+#                                                                      #
+# Other systemctl arguments are not transferred to the elogind project #
+# and will break if a similar systemctl || loginctl approach is used.  #
+#                                                                      #
+# Also takes $LOCK_SCREEN_COMMAND if defined in config to handle       #
+# screen lockers which don't respond to `loginctl lock-session`        #
+#                                                                      #
+# loginctl lock-/terminate-session is handled here both to provide     #
+# central yad closing and for non-standard screen-lock compatibiliy.   #
+#                                                                      #
+########################################################################
+
+# This function will likely later be moved to bl-includes in bunsen-common.
+# see https://forums.bunsenlabs.org/viewtopic.php?id=5570
+#
+# Usage: parse_config <file> [<default array name>]
+# If no default array name is given, it defaults to 'config'.
+# If there are [section] headers in file, following entries will be
+#  put in array of that name.
+# Config arrays may exist already and will be appended to or overwritten.
+# If preexisting array is not associative, function exits with error.
+# New arrays will be created as needed, and remain in the environment.
+parse_config(){
+    [[ -f $1 ]] || { echo "$1 is not a file." >&2;return 1;}
+    local -n config_array="${2:-config}"
+    declare -Ag "${!config_array}" || return 1
+    local line key value comment_regex section_regex entry_regex
+    comment_regex="^[[:blank:]]*#.*$"
+    section_regex="^[[:blank:]]*\[[[:blank:]]*([[:alpha:]_][[:alnum:]_]*)[[:blank:]]*\][[:blank:]]*(#.*)?$"
+    entry_regex="^[[:blank:]]*([[:alpha:]_][[:alnum:]_-]*)[[:blank:]]*=[[:blank:]]*('[^']+'|\"[^\"]+\"|[^#[:blank:]]+)[[:blank:]]*(#.*)*$"
+    while read -r line
+    do
+        [[ -n $line ]] || continue
+        [[ $line =~ $comment_regex ]] && continue
+        [[ $line =~ $section_regex ]] && {
+            local -n config_array=${BASH_REMATCH[1]}
+            declare -Ag "${!config_array}" || return 1
+            continue
+        }
+        [[ $line =~ $entry_regex ]] || continue
+        key=${BASH_REMATCH[1]}
+        value=${BASH_REMATCH[2]#[\'\"]} # strip quotes
+        value=${value%[\'\"]}
+        config_array["${key}"]="${value}"
+    done < "$1"
+}
+
+
+########################################################################
+
+logoutctl(){
+    if [[ -n $YAD_PID ]]; then
+        kill -SIGUSR1 $YAD_PID
+    fi
+    case $1 in
+        cancel )
+            echo -e "\ncancelled"
+            exit 0 ;;
+        lock-session )
+            echo -e "\n$1"
+            [[ -n "$LOCK_SCREEN_COMMAND" ]] && $LOCK_SCREEN_COMMAND || loginctl $1 $XDG_SESSION_ID
+            exit $? ;;
+        terminate-session )
+            echo  -e "\n$1"
+            loginctl $1 $XDG_SESSION_ID
+            exit $? ;;
+        suspend | hibernate | hybrid-sleep | suspend-then-hibernate | reboot | poweroff )
+            echo -e "\n$1"
+            # The systemd or elogind compatibility magic.   #
+            [[ $(command -v systemctl) ]] && systemctl "$1" || loginctl "$1"
+            exit $? ;;
+    esac
+}
+export -f logoutctl
+
+# tests
+on_terminal(){
+    if [[ -t 0 ]]
+    then
+        if [[ -t 1 && -t 2 ]]
+        then
+            return 0
+        else
+            echo "${0}: STDIN is on terminal, but not STDOUT or STDERR" >&2
+            exit 1
+        fi
+    else
+        return 1
+    fi
+}
+#on_graphical_session(){
+#    case "$( loginctl show-session -p Type $XDG_SESSION_ID )"
+#    in
+#        'Type=x11'|'Type=wayland')
+#            return 0
+#            ;;
+#        'Type=tty')
+#            return 1
+#            ;;
+#        *)
+#            echo "$0: unable to determine session type." >&2
+#            exit 1
+#            ;;
+#    esac
+#}
+on_graphical_session(){
+    [[ -n $DISPLAY || -n $WAYLAND_DISPLAY ]] && return 0
+    return 1
+}
+
+# only display this on a TTY
+tty_menu(){
+    clear
+    PS3="Please choose an option "
+    select option in Logout Suspend Hibernate Hybrid-Sleep Suspend-then-Hibernate Reboot Power-Off Quit-Dialogue
+    do
+        case $option in
+            Logout)        logoutctl terminate-session;;
+            Suspend)       logoutctl suspend;;
+            Hibernate)     logoutctl hibernate;;
+            Hybrid-Sleep)  logoutctl hybrid-sleep;;
+            Suspend-then-Hibernate) logoutctl suspend-then-hibernate;;
+            Reboot)        logoutctl reboot;;
+            Power-Off)     logoutctl poweroff;;
+            Quit-Dialogue) echo 'exit cancelled';;
+        esac
+        break
+    done
+}
+
+# can only use this in a graphical session
+yad_gui() {
+    buttons=()
+    for b in logout lock suspend hibernate hybrid-sleep suspend-then-hibernate reboot poweroff
+    do
+        case "${showbutton[$b],,}" in
+            true|yes|y|1)
+            buttons+=("${yadbutton[$b]}") ;;
+        esac
+    done
+    yad --class=WmanExit --title "Exit" --close-on-unfocus --undecorated --center --on-top --borders=10 --window-icon=system-log-out \
+    "${buttons[@]}"
+}
+
+[[ -r "$config_file" ]] && parse_config "$config_file"|| echo "${0}: failed to parse $config_file, using default settings." >&2
+[[ -n "${settings[LOCK_SCREEN_COMMAND]}" ]] && LOCK_SCREEN_COMMAND=${settings[LOCK_SCREEN_COMMAND]}
+
+case "$1" in
+    -h|--help)
+        echo -e "$USAGE"
+        ;;
+    -k|--lock)
+        if on_graphical_session
+        then
+            logoutctl lock-session
+        else
+            echo "$0: $lock_tty_msg" >&2
+            exit 1
+        fi
+        ;;
+    -l|--logout)
+        logoutctl terminate-session
+        ;;
+    -s|--suspend)
+        logoutctl suspend
+        ;;
+    -i|--hibernate)
+        logoutctl hibernate
+        ;;
+    -y|--hybrid)
+        logoutctl hybrid-sleep
+        ;;
+    -u| --suspend-hibernate)
+        logoutctl suspend-then-hibernate
+        ;;
+    -b|--reboot)
+        logoutctl reboot
+        ;;
+    -p|--poweroff)
+        logoutctl poweroff
+        ;;
+    '')
+        if on_terminal
+        then
+            tty_menu
+        elif on_graphical_session
+        then
+            yad_gui
+        else
+            echo "$0: No exit option passed,
+and unable to display exit menu." >&2
+            exit 1
+        fi
+        ;;
+    *)
+        echo "$0: Unknown operation $1"
+        echo -e "$USAGE"
+        exit 1
+        ;;
+esac
+

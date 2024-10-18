@@ -1,0 +1,168 @@
+#!/bin/sh
+#    bl-alternatives: a script to manage BunsenLabs alternatives.
+#    Copyright: 2015 Craig Oakes <bunsen@craigoakes.com>
+#               2017-2019 John Crawley <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+usage()
+{
+    cat <<EOF
+Usage: $EXECNAME <action>
+  Perform the given action to manage BunsenLabs alternatives.  Superuser
+  permission required to make changes.
+Action:
+  help      show help (also --help)
+  install   install BunsenLabs alternatives with default packages
+  list      list all assigned BunsenLabs alternatives
+  remove    remove all assigned BunsenLabs alternatives
+  update    update BunsenLabs alternatives with typical installed packages
+EOF
+}
+
+BLFILEMANAGER=bl-file-manager
+BLIMAGEVIEWER=bl-image-viewer
+BLMEDIAPLAYER=bl-media-player
+BLTEXTEDITOR=bl-text-editor
+BLALTS="$BLFILEMANAGER $BLIMAGEVIEWER $BLMEDIAPLAYER $BLTEXTEDITOR"
+
+OTHERFM="caja dolphin nautilus pcmanfm spacefm xfe"
+OTHERIV="eog eom geeqie gpicview gthumb mirage viewnior"
+OTHERMP="banshee dragonplayer celluloid gxine kaffeine parole \
+    smplayer totem"
+OTHERTE="emacs gedit jedit kate medit mousepad scite"
+
+# Notes:
+#
+# gvim handled special (wrapper and man page names differ)
+#
+# mpv likewise, with bl-mpv wrapper
+#
+# Built-in bl-cli-editor (calls 'editor' in 'x-terminal-emulator')
+#  is given a lower priority.
+
+
+BLPRIO=40
+STDPRIO=30
+SUBPRIO=25
+
+MAN1=/usr/share/man/man1
+
+bunsen_alt()
+#  Set bunsen alternatives
+{
+    update_alt /usr/bin/thunar $MAN1/thunar.1.gz $BLFILEMANAGER $BLPRIO
+    update_alt /usr/bin/ristretto $MAN1/ristretto.1.gz $BLIMAGEVIEWER $BLPRIO
+    update_alt /usr/bin/vlc $MAN1/vlc.1.gz $BLMEDIAPLAYER $BLPRIO
+    update_alt /usr/bin/geany $MAN1/geany.1.gz $BLTEXTEDITOR $BLPRIO
+}
+
+update_alt()
+#  Install given binary (and optional man page) as alternative when present,
+#  or remove given binary when package missing (or not executable).
+{
+    local BINPATH=$1
+    local MANPATH=$2            # optional, may be empty ""
+    local ALTNAME=$3
+    local PRIO=$4
+
+    if [ ! -x "$BINPATH" ] ; then
+        update-alternatives --list $ALTNAME 2>&1 | \
+        grep -q $BINPATH || return 0
+        update-alternatives --remove $ALTNAME $BINPATH 2>/dev/null
+    else
+        update-alternatives --list $ALTNAME 2>/dev/null | \
+        grep -q $BINPATH && return 0
+        local ALTPATH=/usr/bin/$ALTNAME
+        if [ -f "$MANPATH" ] ; then
+            local ALTMANPATH=/usr/share/man/man1/$ALTNAME.1.gz
+            update-alternatives --quiet --install $ALTPATH $ALTNAME $BINPATH \
+                $PRIO --slave $ALTMANPATH ${ALTMANPATH##*/} $MANPATH
+        else
+            update-alternatives --quiet --install $ALTPATH $ALTNAME $BINPATH \
+                $PRIO
+        fi
+    fi
+}
+
+
+EXECNAME=${0##*/}
+ACTION=$1
+
+case $ACTION in
+install)
+    [ `id -u` != 0 ] && echo "Must be superuser" >&2 && exit 0
+    bunsen_alt
+    for ALT in $BLALTS ; do
+    update-alternatives --auto $ALT
+    done
+    ;;
+list)
+    for ALT in $BLALTS ; do
+        LINK=`readlink /etc/alternatives/$ALT`
+    if [ "$LINK" ] ; then
+        printf "%-22.22s uses %s\n" $ALT $LINK
+        update-alternatives --list $ALT | xargs printf "    %s\n"
+    else
+        printf "%-22.22s unused\n" $ALT
+    fi
+    done
+    ;;
+remove)
+    [ `id -u` != 0 ] && echo "Must be superuser" >&2 && exit 0
+    for ALT in $BLALTS ; do
+        update-alternatives --remove-all $ALT
+    done
+    ;;
+update)
+    [ `id -u` != 0 ] && echo "Must be superuser" >&2 && exit 0
+    bunsen_alt
+    for BLPROG in $OTHERFM ; do
+        update_alt /usr/bin/$BLPROG $MAN1/$BLPROG.1.gz $BLFILEMANAGER $STDPRIO
+    done
+    for BLPROG in $OTHERIV ; do
+        update_alt /usr/bin/$BLPROG $MAN1/$BLPROG.1.gz $BLIMAGEVIEWER $STDPRIO
+    done
+    # mpv: wrapper doesn't match man page name
+    if type mpv >/dev/null 2>&1;then
+        chmod -f +x /usr/bin/bl-mpv
+    else
+        chmod -f -x /usr/bin/bl-mpv
+    fi
+    update_alt /usr/bin/bl-mpv $MAN1/mpv.1.gz $BLMEDIAPLAYER $STDPRIO
+    for BLPROG in $OTHERMP ; do
+        update_alt /usr/bin/$BLPROG $MAN1/$BLPROG.1.gz $BLMEDIAPLAYER $STDPRIO
+    done
+    # gvim: wrapper doesn't match man page name
+    if type gvim >/dev/null 2>&1;then
+        chmod -f +x /usr/bin/bl-gvim
+    else
+        chmod -f -x /usr/bin/bl-gvim
+    fi
+    update_alt /usr/bin/bl-gvim $MAN1/gvim.1.gz $BLTEXTEDITOR $STDPRIO
+    # bl-cli-editor gets lower priority and 'editor' man page
+    update_alt /usr/bin/bl-cli-editor $MAN1/editor.1.gz $BLTEXTEDITOR $SUBPRIO
+    for BLPROG in $OTHERTE ; do
+        update_alt /usr/bin/$BLPROG $MAN1/$BLPROG.1.gz $BLTEXTEDITOR $STDPRIO
+    done
+    ;;
+""|*help|-h)
+    usage
+    ;;
+*)
+    echo "Unknown action ($ACTION)" >&2
+    ;;
+esac
+
+exit 0

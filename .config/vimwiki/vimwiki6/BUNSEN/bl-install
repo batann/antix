@@ -1,0 +1,174 @@
+#!/bin/bash
+#    bl-install: a wrapper round the promptInstall() function in bl-includes
+#    It may be called by other scripts or menus
+#    to install Debian packages in a popup terminal window.
+#    ( It is not needed in a script known to be running in a terminal;
+#     in that case, just use promptInstall() )
+#
+#    Copyright (C) 2016-2019 John Crawley    <john@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HELP='bl-install: a wrapper round the promptInstall() function in bl-includes
+
+Usage:  bl-install [-n "name of app(s)"] [-m "message text"] [-f "/path/to/file"] [--setup "function_name"] [apt option] package [package...]
+
+    -h --help                   show this message and exit
+    -n --name       <string>    descriptive name of package(s) to be installed
+    -m --message    <string>    message to display to user before installing
+    -f --file       <filepath>  file to hold return value of script on exit
+    --setup         <function_name>  function to run before installation
+
+Specified options may be provided in any order.
+If -n, -m or -f are used, they must be followed by an argument.
+If -n or -m are absent they will be generated automatically.
+If -f is set, the script will write its exit return value there,
+so a calling script can test for success.
+If --setup is used, <function_name> must exist as a function in the
+environment, so will probably have to be exported by the calling script.
+
+All other arguments are taken as apt-get options or package names to install.
+
+This script will open a terminal window to run the installer,
+and write the return value to a temporary file. (This is needed because
+there is no other way to query the return value of a process which
+was run in a new terminal.)
+This is useful if launching from a GUI, but in a script known to be
+already running in a terminal, it is not needed;
+the promptInstall() function from bl-includes is enough.
+'
+# if help option anywhere in args, output $HELP and exit immediately
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    esac
+done
+
+BL_COMMON_LIBDIR='/usr/lib/bunsen/common'
+
+trap 'send_return' EXIT
+
+send_return(){
+    local retval=$?
+    [[ -z "$retfile" ]] && return "$retval"
+    echo "$retval" > "$retfile" || {
+        echo "$0: unable to write to $retfile" >&2
+        return 1
+    }
+    sleep 0.3 # allow time to write to $retfile before exiting
+}
+
+if ! . "$BL_COMMON_LIBDIR/bl-includes" 2> /dev/null; then
+    echo $"Error: Failed to locate bl-includes in $BL_COMMON_LIBDIR" >&2
+    exit 1
+fi
+
+name=
+message=
+retfile=
+f_args=()
+s_args=()
+args=()
+packages=()
+
+while [[ ${1+x} = x ]]
+do
+    case "$1" in
+    -n|--name)
+        name="$2"
+        shift 2
+        ;;
+    -m|--message)
+        message="$2"
+        shift 2
+        ;;
+    -f|--file)
+        retfile="$2"
+        f_args+=( "$1" "$2" )
+        shift 2
+        ;;
+    --setup)
+        function_name="$2"
+        s_args+=( "$1" "$2" )
+        shift 2
+        ;;
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    -t|--target-release|--default-release|-c|--config-file|-o|--option) # apt-get options taking a value
+        args+=( "$1" "$2" )
+        shift 2
+        ;;
+    -*) # other apt-get options
+        args+=("$1")
+        shift
+        ;;
+    *)
+        args+=("$1")
+        packages+=("$1") # assume any other argument is a package
+        shift
+        ;;
+    esac
+done
+
+[[ ${#packages[@]} -gt 0 ]] || {
+    echo "$0: no packages specified"$'\n' >&2
+    echo "$HELP"
+    exit 1
+}
+
+[[ -n $name ]] || {
+    words=(${packages[0]//-/ })
+    name="${words[*]^}"
+}
+
+[[ -n $message ]] || {
+    message="This script will install $name"
+}
+
+# When using -e, lxterminal or terminator will swallow --name
+# and following arg from succeeding command line,
+# so use -n instead.
+# Only "--name" seems affected by this bug.
+# Most other terminals are OK.
+
+terminalCheck -T "Install $name" -n "$name" --message "$message" "${f_args[@]}" "${s_args[@]}" "${args[@]}"
+
+for i in "${packages[@]}"
+do
+    [[ $i =~ ^[[:lower:][:digit:]][[:lower:][:digit:]+.-]+$ ]] || {
+        say "$i is not a valid Debian package name"$'\n' >&2
+        echo "$HELP"
+        exit 1
+    }
+done
+
+allInstalled "${packages[@]}" && {
+    say "$name: already installed"
+    sleep 2
+    exit 0
+}
+
+if [[ -n $function_name && $(type -t "$function_name") = 'function' ]]; then
+    "$function_name" || errorExit "Setup function $function_name failed"
+fi
+
+promptInstall "$name" "$message" "${args[@]}" || errorExit 'Install failed or abandoned.'
+
+exit

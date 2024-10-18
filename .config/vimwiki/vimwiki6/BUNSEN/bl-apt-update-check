@@ -1,0 +1,128 @@
+#!/bin/bash
+#
+#    bl-apt-update-check
+#    display apt update notifications
+#
+#    Copyright: 2023 John Crawley <john@bunsenlabs.org>
+#               2023 David Wyckoff <sleekmason@gmail.com>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#    Reference: https://sourceforge.net/p/yad-dialog/wiki/NotificationIcon/
+#               https://groups.google.com/g/yad-common/c/DT8q1vJ-yOQ?pli=1
+
+HELP="bl-apt-update-check is a script to check if package upgrades are available,
+and if so, display a notification and system tray icon to the user.
+The user can then open a terminal to view the details, and take desired action.
+This script can be triggered by an apt update action, or by a timer.
+
+Optional arguments:
+    -h | --help    Show this message
+"
+
+case $1 in
+--help|-h)
+    echo "$HELP"
+    exit
+    ;;
+esac
+
+on_exit() {
+    echo "quit" >&"$yad_fd" # close yad
+    rm -f "${PIPE}"
+    rm -rf "${PIPE%/*}"
+    exec {yad_fd}>&-
+    exec {lockfile_fd}>&-
+    :>"$lockfile" # lockfile holds pid while script is running, otherwise empty
+}
+
+# Check if pid belongs to an instance of this script, even if run via a symlink.
+# Not perfect but should cover many cases, and error out otherwise.
+check_pid() {
+    local pid=$1
+    local script path cmd
+    kill -s 0 "$pid" || { echo "${0}: cannot find PID ${pid}" >&2 ; exit 1;}
+    script=$( readlink -e "${BASH_SOURCE:-$0}" ) || { echo "${0}: failed to find path to this script" >&2 ; exit 1;}
+    mapfile -d '' -t cmd < "/proc/${pid}/cmdline"
+    path=${cmd[-1]} # this script takes no arguments, so it is the last part of the command line
+    if [[ $path = /* ]]
+    then
+        path=$(readlink -e "$path")
+    elif path=$(type -p "$path") # resolve a command in $PATH
+    then
+        path=$(readlink -e "$path")
+    else
+        path=$( readlink -e /proc/"${pid}"/cwd/"$path" ) # assume path is relative to working directory
+    fi
+    [[ "$path" = "$script" ]] || { echo "${0}: PID ${pid} seems to belong to a different process: ${path}" >&2 ; exit 1;}
+}
+
+(( $(id -u) >= 1000 )) || { echo "${0}: this script should only be run by a normal user" >&2 ; exit 1;}
+
+# If there is a previous icon still not closed, kill it (and replace it if still needed).
+lockdir="/run/lock/$(id -u)" # separate lockdir for each user
+mkdir -p "$lockdir" || { echo "${0}: failed to create lock directory $lockdir" >&2 ; exit 1;}
+lockfile="$lockdir/bl-apt-update-check-lock"
+exec {lockfile_fd}<>"$lockfile" ||  { echo "${0}: failed to set file descriptor '$lockfile_fd' to $lockfile" >&2 ; exit 1;}
+tries=3 # give up if cannot get lock
+(( i=1 ))
+until flock -n "$lockfile_fd" # http://mywiki.wooledge.org/BashFAQ/045
+do
+    (( i > tries )) && { echo "${0}: failed to kill old process" >&2 ; exit 1;}
+    echo "${0}: another instance is running, now killing it" >&2
+    oldpid=$(<"$lockfile")
+    check_pid "$oldpid"
+    kill "$oldpid"
+    tail -f /dev/null --pid="$oldpid" # https://forums.bunsenlabs.org/viewtopic.php?pid=114592#p114592
+    (( i++ )) # one repetition should be enough in fact
+done
+
+printf '%s' "$$" > "$lockfile" # using lockfile to store pid
+
+trap on_exit EXIT
+
+show-upgrades(){
+#    trap on_exit EXIT
+#    [[ -p "$PIPE" ]] || { echo "${0}: there is no fifo $PIPE" >&2 ; exit 1;}
+#    exec {yad_fd}<>"$PIPE" ||  { echo "${0}: show-upgrades(): failed to set file descriptor '$yad_fd' to $PIPE" >&2 ; exit 1;}
+    x-terminal-emulator -T 'Available Package Upgrades' -e bash -c 'printf "%s\n" "Available upgrades:"
+    apt list --upgradeable
+    printf "\n%s\n"  "Held packages:"
+    apt-mark showhold
+    printf "\n%s\n" "Press Enter for a bash shell, Q to quit"
+    read -srn1 REPLY
+    case "$REPLY" in q|Q) exit;; esac
+    bash'
+#    exit
+# TODO: close yad icon when terminal window is closed
+}
+
+dir=$(mktemp --tmpdir --directory "${0##*/}".XXXXXXXX) || { echo "${0}: could not make temp dir" >&2 ; exit 1;}
+PIPE="${dir}/yadpipe"
+mkfifo "$PIPE" || { echo "${0}: could not make fifo $PIPE" >&2 ; exit 1;}
+exec {yad_fd}<> "$PIPE" ||  { echo "${0}: failed to set file descriptor '$yad_fd' to $PIPE" >&2 ; exit 1;}
+
+#export PIPE
+#export yad_fd
+#export -f on_exit
+export -f show-upgrades
+
+num_upgrades=$(( $( apt list --upgradable 2>/dev/null | wc -l ) - $( apt-mark showhold | wc -l ) -1 ))
+if (( num_upgrades > 0 )); then
+    notify-send  -t 15000 --urgency low "$num_upgrades Upgrades(s) Currently Available"
+    yad --notification --listen --image="software-update-available" \
+    --text="Package Upgrades - Right-Click For Options" \
+    --menu="Show Available Upgrades!bash -c show-upgrades!applications-other|Quit!quit!application-exit" \
+    --command="notify-send  -t 15000 --urgency normal '$num_upgrades Upgrades(s) Currently Available'" <&"$yad_fd"
+fi
