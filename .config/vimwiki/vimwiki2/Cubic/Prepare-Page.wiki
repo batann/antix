@@ -1,0 +1,15 @@
+The Cubic Prepare Page automatically analyzes your customizations and prepares advanced options for the next steps in the customization process:
+
+* Identify disk boot kernels
+* Identify installed packages
+* Create the package manifest for a typical install †
+* Create the package manifest for a minimal install ††
+* Save the package manifest
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Prepare%20Page.png" width="600"/>
+
+This page will automatically transition to the next page when it is done.
+
+† An alert icon (?) next to this step means that Ubiquity is not installed.
+
+†† An alert icon (?) next to this step means that Ubiquity is not installed, or the version of Ubiquity is less than 18.04, which does not support Minimal installs.

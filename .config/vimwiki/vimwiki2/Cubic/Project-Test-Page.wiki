@@ -1,0 +1,25 @@
+The QEMU † emulator will launch automatically and boot the generated ISO for testing purposes.
+
+Note: It is not recommended to run Cubic inside a virtual machine, because the QEMU emulator will not have access to the host system's CPU virtualization capabilities, and performance will be severely degraded. Instead, install and run Cubic directly on your host machine.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Project%20Test%20Page.png" width="600"/>
+
+The Cubic Test page displays information about the ISO running in the emulator, including the custom disk file name, directory path, version, volume id, release, and disk name. If you clicked the Test button on the Project page, this information will reflect the previously generated disk image, and may not match your changes on the Project page. If you clicked the Test button on the Finish page, this information will reflect the newly generated disk image and will match your changes on the Project page.
+
+Clicking the folder icon next to the custom disk file name opens a file browser displaying this file. Clicking the folder icon next to the checksum file name opens a file browser displaying this file.
+
+If the emulator launched successfully, a "Stop" button will appear in the header bar. Clicking the "Stop" button will terminate the emulator and automatically navigate to the previous page.
+
+If the emulator could not be launched, the message, "Error. Unable to test the generated disk image," will be displayed, and a "Back" button will appear in the header bar. Clicking the "Back" button will navigate to the previous page.
+
+Cubic automatically selects necessary parameters and options to start the emulator. System memory is allocated automatically based on available memory, while reserving at least 512 GB for the system. The emulator has access to all CPU cores and audio is delivered through a simulated Intel 82801AA AC97 Audio compatible sound card and a simulated Intel HD Audio Controller and HDA codec.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Emulator.png" width="600"/>
+
+Ctrl-Alt-G or Ctrl-Alt can be used to toggle mouse capture, if necessary (such as when customizing a server ISO). The actual key combination will be shown at the top of the emulator window, whenever the mouse and keyboard input are captured by the emulator.
+
+When the emulator exits, Cubic will automatically navigate to the previous page. If you had clicked Test button on the Project page, Cubic will automatically navigate to the Project page. If you had clicked Test button on the Finish page, Cubic will automatically navigate to the Finish page.
+
+The emulator may be exited by shutting down the OS being tested or by clicking the "Stop" button on this page. Note that exiting Cubic also exits the emulator.
+
+† QEMU is an open source machine emulator and virtualizer. See https://www.qemu.org for further information. You may report QEMU bugs at https://gitlab.com/qemu-project/qemu/-/issues.

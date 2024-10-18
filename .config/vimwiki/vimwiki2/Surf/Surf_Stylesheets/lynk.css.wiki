@@ -1,0 +1,29 @@
+= Lynx-like colors =
+== Description ==
+Colors similar to the lynx web browser
+
+~/.surf/styles/default.css
+<code>
+* {
+	border-color: grey !important;
+	background-color: black !important;
+	background-image: black !important;
+	color: grey !important;
+}
+
+h1,h2,h3,h4,a {
+	color: green !important;
+}
+
+*:focus,h1:focus,h2:focus,h3:focus,h4:focus {
+	color: yellow !important;
+}
+
+img, video {
+	opacity: 0.3;
+}
+
+img:hover, video:hover {
+	opacity: 1;
+}
+</code>

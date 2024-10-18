@@ -1,0 +1,5 @@
+The Cubic Extract Page analyzes the original ISO, copies important files used to boot the ISO, and extracts the compressed Linux file system from the original ISO.
+
+This page will automatically transition to the next page when it is done.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Extract%20Page.png" width="600"/>

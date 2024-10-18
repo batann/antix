@@ -1,0 +1,17 @@
+On the Cubic Finish Page, information about the customized disk image will be displayed.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Finish%20Page.png" width="600"/>
+
+Click the Test button to test the generated ISO. The QEMU † emulator will launch and boot into the new ISO. If you do not have enough memory to permit testing, you will not see the Test button.
+
+Click the Back button to make changes and generate a new ISO file.
+
+Clicking the folder icon next to the custom disk file name opens a file browser displaying this file. Clicking the folder icon next to the checksum file name opens a file browser displaying this file.
+
+If you want to delete all project working files (in order to save disk space) check the "Delete all project files..." checkbox. Although the generated *.iso file and corresponding *.md5 checksum file will not be deleted, you will not be able to continue customizing this project in the future.
+
+However, if you chose to keep all project files, you will be able to continue customizing your project in the future.
+
+Click the Close button to exit Cubic.
+
+† QEMU is an open source machine emulator and virtualizer. See https://www.qemu.org for further information. You may report QEMU bugs at https://gitlab.com/qemu-project/qemu/-/issues.

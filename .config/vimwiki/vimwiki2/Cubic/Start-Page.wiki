@@ -1,0 +1,11 @@
+On the Cubic Start Page, select a directory for your customization project.
+
+Each Cubic project must have its own project directory.
+
+Create a new folder for your project using the file chooser dialog, if needed.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Start%20Page.png" width="600"/>
+
+Ensure that the directory you select is on a partition that supports Linux file names.
+
+Directories on NTFS or FAT partitions or mounted remote directories can not be selected.

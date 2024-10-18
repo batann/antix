@@ -1,0 +1,21 @@
+The Cubic Compression Page allows you to select the algorithm used to compress your customized Linux file system. For most users, it is OK to proceed with the default algorithm, gzip.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Compression%20Page.png" width="600"/>
+
+Five † options are offered on this page.
+
+1. lz4 (fast compression algorithm)
+2. lzo (Lempel–Ziv–Oberhumer algorithm)
+3. gzip (default GNU DEFLATE algorithm)
+4. zstd (Zstandard algorithm)
+5. xz (Lempel–Ziv–Markov chain algorithm)
+
+Generally, algorithms listed towards the top left of the chart deliver less compression, so the resulting file size is larger. But the compression tends to complete faster and use less CPU resources.
+
+Algorithms listed towards the bottom right of the chart tend to deliver more compression, so the resulting file size is smaller. But the compression tends to take longer and use more CPU resources.
+
+The final disk image produced by Cubic includes the compressed Linux file system and other files. Cubic supports ISOs up to 8 Terabytes in size, but if you need a smaller `*.iso` file to fit on your media, such as CD, DVD, or USB stick, selecting a higher compression algorithm may contribute to a smaller final disk image.
+
+Note that the relative ordering of the algorithms listed on Cubic's Compression page is representative and may vary based on the files being compressed and on your system hardware. For example, gzip may take longer than zstd on some machines, so it may be useful to experiment with different algorithms to identify the most appropriate one for your needs.
+
+† The lzma algorithm was removed in Cubic version 2023.04.80. Lzma is a deprecated version of xz (Lempel–Ziv–Markov chain algorithm) and is not supported by squashfs.

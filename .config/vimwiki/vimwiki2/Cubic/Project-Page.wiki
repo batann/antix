@@ -1,0 +1,13 @@
+On the Cubic Project Page, click on the folder icon in the Original section to select an ISO image to customize. Information about your project will be automatically filled out for you. You can change information about your customized ISO, or you can accept the recommended defaults.
+
+If you chose to change some of the values, the related parameters will automatically be updated as you type. The Undo and Redo buttons only affect the fields in the Custom section. The Refresh button allows you to update the version of your new ISO to today's date, and clicking this button will replace all occurrences of the old version in the Custom fields with the new version.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Project%20Page.png" width="600"/>
+
+For an existing project with a previously generated ISO, click the Test button to test the previously generated ISO. The QEMU † emulator will launch and boot into the new ISO. If there is no previously generated ISO for your project, or if you do not have enough memory to permit testing, you will not see the Test button.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Project%20Page%20Existing%20Project.png" width="600"/>
+
+Click on the delete icon in the header bar to delete an existing project.
+
+† QEMU is an open source machine emulator and virtualizer. See https://www.qemu.org for further information. You may report QEMU bugs at https://gitlab.com/qemu-project/qemu/-/issues.

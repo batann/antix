@@ -1,0 +1,26 @@
+The Cubic Options Page features three tabs:
+
+1. [Kernel](https://github.com/PJ-Singh-001/Cubic/wiki/Options-Page#kernel-tab)
+2. [Preseed](https://github.com/PJ-Singh-001/Cubic/wiki/Options-Page#preseed-tab)
+3. [Boot](https://github.com/PJ-Singh-001/Cubic/wiki/Options-Page#boot-tab)
+
+## Kernel Tab
+If you have installed additional kernels in the [virtual environment](https://github.com/PJ-Singh-001/Cubic/wiki/Terminal-Page), they will be listed on the Kernel Tab. You can chose to use one of these as the boot kernel for your new live ISO. It's a good idea to just accept the recommended default on this page.
+
+This is **not** the kernel that your customized Linux system will use. *This kernel will only be used to bootstrap your new Live ISO.*
+
+Regardless of which kernel you select on this page to bootstrap your Live ISO, your customized Linux system will use the kernel you installed and configured as default in the [virtual environment](https://github.com/PJ-Singh-001/Cubic/wiki/Terminal-Page). (The default kernel is usually the last kernel you have installed).
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Options%20Page%20Kernel%20Tab.png" width="600"/>
+
+Note that the ISO Boot files will automatically be updated with your selected kernel files (`vmlinuz` and `initrd`). Cubic will automatically correct the file extension (`initrd.lz`, `initrd.gz`, etc.) even if your original ISO had the wrong file extension. If you want to change this extension, see Answer "How to change the extension of the initrd file?" (https://answers.launchpad.net/cubic/+question/693009).
+
+## Preseed Tab
+The Preseed Tab allows you to create, edit, or delete Preseed files. Files created with a `*.sh` extension will automatically be assigned executable permissions.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Options%20Page%20Preseed%20Tab.png" width="600"/>
+
+## Boot Tab
+The Boot Tab allows you to update the boot parameters used while booting the customized Live ISO. These files are automatically updated to reflect the correct kernel files (vmlinuz and initrd). Files created with a `*.sh` extension will automatically be assigned executable permissions.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Options%20Page%20Boot%20Tab%202.png" width="600"/>

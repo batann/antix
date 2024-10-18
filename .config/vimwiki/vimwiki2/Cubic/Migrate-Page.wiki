@@ -1,0 +1,7 @@
+The Cubic Migrate Page appears if you have selected an existing project that was created using a previous version of Cubic.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Migrate%20Page.png" width="600"/>
+
+All projects created with a version of Cubic prior to version 2020.05 must be migrated in order to continue customizing them. Simply click the Migrate button, and this one-time step will update the legacy project and automatically transition to the Cubic Project page. Once a project is migrated to the current release of Cubic, it can not be opened using an older version of Cubic.
+
+If you are using a version control system or backup software to keep a copy of your Cubic project, be sure to update it to match the new Cubic project file structure.

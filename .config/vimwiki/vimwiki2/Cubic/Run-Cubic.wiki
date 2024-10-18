@@ -1,0 +1,43 @@
+## Launcher
+Cubic can be started by simply clicking on the application launcher icon.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/cubic_128x128.png" height="64"/>
+
+Since Cubic is a graphical user interface application, this is the preferred way to launch Cubic.
+
+## Command Line
+Cubic can also be started by using the command-line.
+
+    cubic [-h] [-l] [-v] [-V] [directory] [iso]
+
+The `cubic` command accepts two optional positional arguments:
+
+- `directory`
+
+    The directory for a new or existing project. For a new project, the directory should be empty.
+
+- `iso`
+
+    The original ISO file for a new project. If `directory` is an existing project, this argument will be ignored.
+
+The `cubic` command accepts four optional arguments:
+
+- `-h, --help`
+
+    Shows the help message and exits.
+
+- `-l, --log`
+
+    Outputs a formatted log to the project directory.
+
+    (The log does not include Cubic startup information because a project directory must be selected first. To view Cubic startup information use `-v` or `--verbose` to show output on the console.)
+
+- `-v, --verbose`
+
+    Outputs a formatted log to the console. The log is 80 columns wide and can be useful for debugging.
+
+- `-V, --version`
+
+    Prints the Cubic version, author, and website, and exits.
+
+Cubic may not be run using `sudo` or as `root` because it is graphical user interface application.

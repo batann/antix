@@ -1,0 +1,40 @@
+The Cubic Terminal Page is a virtual environment where you can customize your Linux file system. You will need to use the command line, but because you are logged in as a root user, you do not need to use `sudo` when typing commands.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Terminal%20Page.png" width="600"/>
+
+Note that there are no active services in this virtual environment, as you would find in an actual running OS. This is because the terminal in Cubic is not a "running" OS. It is just a secure, isolated file system that you have root access to, in order to edit, add, or delete files. Thus, services such as `systemd`, `X11`, `snapd`, etc. can not run in the virtual environment in Cubic.
+
+Any changes you make to the file system are applied immediately. When you are done making your changes, click the Next button. Remember, you can always come back to the terminal environment for this project to make additional customizations in the future.
+
+If you accidentally exit the virtual environment, it will automatically restart.
+
+DNS lookups may not work in this environment, and you may not be able to use apt due to a "Name or service not known" error. This is because the link `/etc/resolv.conf` points to `/run/systemd/resolve/stub-resolv.conf`. But `stub-resolv.conf` does not exist.
+
+To resolve this, execute the following command...
+
+    mkdir /run/systemd/resolve/
+    echo "nameserver 127.0.1.1
+    search network" | tee /run/systemd/resolve/resolv.conf
+    ln -sr /run/systemd/resolve/resolv.conf /run/systemd/resolve/stub-resolv.conf
+
+Here are a few examples of customizing Ubuntu using the command line...
+
+You may use the nano text editor to edit files. For example, to edit the sources repositories list, type
+
+    nano /etc/apt/sources.list
+
+To exit nano, type <kbd>Ctrl</kbd>+<kbd>X</kbd> and you will be prompted to save the file. Type <kbd>Y</kbd> to save the file, and press <kbd>Enter</kbd> to accept the default file name. Otherwise, type <kbd>N</kbd> to cancel saving the file.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Terminal%20Page%20Nano.png" width="600"/>
+
+You can copy files or directories into the _current directory_ by dragging them onto the terminal window, by using the copy button in the header bar, or by using the right-click context menu. Although Cubic currently does not support copying files over the network, you can use the `rcp` or `scp` commands within the terminal environment to copy network files.
+
+The right-click context menu also allows you to select all text, copy text, and paste text in the terminal. Additionally, the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> can be used to select all text, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> can be used to copy text, and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> can be used to paste text.
+
+Here is an example to copy additional wallpapers into your customized environment.
+
+    cd /usr/share/backgrounds
+
+Then simply drag the new wallpapers onto the Cubic window.
+
+Tip: Be sure to list the new wallpapers in an XML file under `/usr/share/gnome-background-properties`, so they will be listed in the Change Background dialog when the user right-clicks on his/her desktop.

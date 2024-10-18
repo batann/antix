@@ -1,0 +1,9 @@
+On the Cubic Generate Page, Cubic will automatically package your customizations into a new `*.iso` disk image. The progress and results of each step are shown. Note that the "Compress the customized Linux filesystem" step may take a long time, depending on the chosen compression algorithm and your system hardware. (You may want to open System Monitor to track your CPU utilization during this step).
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Generate%20Page.png" width="600"/>
+
+You may click the Back button at any time to interrupt this process in order to update previous selections or navigate to the virtual environment and make additional changes or customizations you may have overlooked.
+
+The maximum ISO size is 8 Terabytes, so ISOs larger than 4gb can be created using Cubic.
+
+This page will automatically transition to the next page when it is done.

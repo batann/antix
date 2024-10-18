@@ -1,0 +1,26 @@
+= Contents =
+    - [[#Suckless Surf Files]]
+
+= Suckless Surf Files =
+
+[[adblock_hosts]]
+[[autologin]]
+[[autorefresh]]
+[[bmarks]]
+[[bmarks_history]]
+[[easier_key]]
+[[easy_links]]
+[[edit_source]]
+[[feeds]]
+[[hidde_applets]]
+[[kiosk_mode]]
+[[link_hints]]
+[[middle_click_link]]
+[[not_flash]]
+[[quick_search]]
+[[simple_bookmarking]]
+[[simple_bookmarking_redux]]
+[[simpleread]]
+[[smart_download]]
+[[surfraw_as_searchengine]]
+[[untarget]]

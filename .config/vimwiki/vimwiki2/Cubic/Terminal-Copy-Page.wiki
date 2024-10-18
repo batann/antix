@@ -1,0 +1,15 @@
+You can copy files or directories into the _current directory_ by dragging them onto the terminal window, using the right-click context menu, or by clicking the Copy files button in the header bar . Note that the context menu also allows you to copy or paste text in the terminal (<kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>C</kbd> and <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>V</kbd> can also be used to copy or paste text).
+
+Here is an example to copy additional wallpapers into your customized environment.
+
+    cd /usr/share/backgrounds
+
+Then simply drag the new wallpapers onto the Cubic window.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Terminal%20Copy%20Page.png" width="600"/>
+
+Tip: Be sure to list the new wallpapers in an XML file under `/usr/share/gnome-background-properties`, so they will be listed in the Change Background dialog when the user right-clicks on their desktop.
+
+Note that the Cubic GUI currently does not support copying files over the network, but you can use the `rcp` or `scp` commands from within the terminal environment.
+
+This page will automatically transition to the next page when it is done.

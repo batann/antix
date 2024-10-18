@@ -1,0 +1,45 @@
+Cubic can be installed on distributions based on:
+- Ubuntu 18.04.5 Bionic Beaver and above
+- Debian 11 Bullseye and above
+
+### <img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/ubuntu-logo.png" height="48"/> Ubuntu and Derivatives
+
+Install Cubic using the following commands:
+
+    sudo apt-add-repository universe
+    sudo apt-add-repository ppa:cubic-wizard/release
+    sudo apt update
+    sudo apt install --no-install-recommends cubic
+
+Note: The `--no-install-recommends` option should be used to prevent the packages that Cubic depends on from installing additional unnecessary software.
+
+On some systems you may first need to manually add the repository key for Cubic:
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7579F80E494ED3406A59DF9081525E2B4F1283B
+
+### <img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/debian-logo.png" height="32"/> Debian and Derivatives
+
+Install `dpkg` version 1.21 or higher. Note that Debian `bookworm` already includes `dpkg` version 1.21.20. 
+
+If you are running Debian `bullseye`, you can temporarily use the `bookworm` repositories to install `dpkg` version 1.21.20 and its required (newer) dependencies. _However, be careful with this hack, as this may break your system._
+
+    cd /etc/apt
+    cp sources.list sources.list.original
+    sed -i "s|bullseye|bookworm|g" sources.list
+    apt update
+
+    apt install dpkg
+
+    cp sources.list.original sources.list
+    apt update
+
+(Remember to use `sudo` for the above commands, if you are not `root`).
+
+Once you have `dpkg` version 1.21 or higher, install Cubic.
+
+    echo "deb https://ppa.launchpadcontent.net/cubic-wizard/release/ubuntu/ jammy main" | tee /etc/apt/sources.list.d/cubic-wizard-release.list
+    sudo curl -S "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x081525e2b4f1283b" | sudo gpg --batch --yes --dearmor --output /etc/apt/trusted.gpg.d/cubic-wizard-ubuntu-release.gpg
+    apt update
+    apt install cubic
+
+(Remember to use `sudo` for the `tee` and `apt` commands, if you are not `root`).

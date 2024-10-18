@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/nwg-shell/assets/css/style.css?v=ccc1577958c24e99855e39b03e51e3a8d0cbcba1">
+    <link rel="shortcut icon" type="image/x-icon" href="/nwg-shell/favicon.ico">
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>nwg-shell | Installer &amp; meta-package for the nwg-shell project: a GTK3-based shell for sway and Hyprland Wayland compositors</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="nwg-shell" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Installer &amp; meta-package for the nwg-shell project: a GTK3-based shell for sway and Hyprland Wayland compositors" />
+<meta property="og:description" content="Installer &amp; meta-package for the nwg-shell project: a GTK3-based shell for sway and Hyprland Wayland compositors" />
+<link rel="canonical" href="https://nwg-piotr.github.io/nwg-shell/" />
+<meta property="og:url" content="https://nwg-piotr.github.io/nwg-shell/" />
+<meta property="og:site_name" content="nwg-shell" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="nwg-shell" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Installer &amp; meta-package for the nwg-shell project: a GTK3-based shell for sway and Hyprland Wayland compositors","headline":"nwg-shell","name":"nwg-shell","url":"https://nwg-piotr.github.io/nwg-shell/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/nwg-shell/">
+          <h1>nwg-shell</h1>
+        </a>
+        <h2>Installer & meta-package for the nwg-shell project: a GTK3-based shell for sway and Hyprland Wayland compositors</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/nwg-piotr/nwg-shell" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <div align="right"><a href="https://matrix.to/#/#nwg-shell:matrix.org">Live chat</a>&nbsp;|&nbsp;<a href="https://www.reddit.com/r/nwg_shell">Reddit</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a>
+</div>
+
+<h1 id="nwg-shell-project">nwg-shell project</h1>
+<iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+
+<p><a href="https://liberapay.com/nwg/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" /></a></p>
+
+<p><strong>The nwg-shell project aims to create a consistent, GTK3-based user interface for the <a href="https://github.com/swaywm/sway">sway</a> Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. The shell contains 4 predefined <a href="desktop-styles">desktop styles</a>, which can be freely modified by the user.</strong></p>
+
+<p><strong>Starting from the 0.5.x version, nwg-shell also offers support for the <a href="https://github.com/hyprwm/Hyprland">Hyprland</a> Wayland compositor. All the component apps are Hyprland-ready, and the shell comes with 4 hyprland-* desktop styles. Hyprland support is an addition to the shell, not a standalone feature.</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png" alt="nwg-shell-header.png" /></p>
+
+<p>The project is intended for users of all skill levels. Beginners will find four ready-made and immediately working desktop styles to choose from. Advanced users will get a set of tools to build their own GTK-based user interface.</p>
+
+<blockquote>
+  <p>I strongly discourage manual editing of .dotfiles. There’s a GUI for that. The configuration files are in json format, which does not forgive mistakes.</p>
+</blockquote>
+
+<p>The user interface mostly consists of dedicated software, but also uses several great third party products, that perfectly fit. Many thanks to their authors for favorable attitude towards feature requests.</p>
+
+<p>The default (preinstalled) terminal emulator is <a href="https://codeberg.org/dnkl/foot">foot</a> by Daniel Eklöf. This does not mean that I consider other terminals worse, but that I had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user’s choice. The author’s subjective recommendation might be mousepad, thunar, and firefox, but it doesn’t really make much difference.</p>
+
+<p>On the backend side there’s a lot of third party Free Open Source Software. I’ll try to list all the applications and libraries in Credits.</p>
+
+<p>If you want to share an idea, find a solution to a problem or discuss the project in general, please join <a href="https://github.com/nwg-piotr/nwg-shell/discussions"><strong>Discussion</strong></a>.</p>
+
+<h1 id="toc">TOC</h1>
+
+<ul>
+  <li>What’s inside
+    <ul>
+      <li><a href="desktop-styles">Desktop styles</a></li>
+      <li><a href="nwg-hello">Login manager: nwg-hello</a></li>
+      <li><a href="nwg-panel">Panel: nwg-panel</a></li>
+      <li><a href="nwg-drawer">Launcher: nwg-drawer</a></li>
+      <li><a href="nwg-dock">Dock: nwg-dock</a></li>
+      <li><a href="nwg-menu">Alternative launcher: nwg-menu</a></li>
+      <li><a href="swaync">Notification center: swaync</a></li>
+      <li><a href="gtklock">Screen locker: gtklock</a></li>
+      <li><a href="azote">Wallpaper management: Azote</a></li>
+      <li><a href="nwg-look">Look and feel: nwg-look</a></li>
+      <li><a href="nwg-displays">Display management: nwg-displays</a></li>
+      <li><a href="nwg-shell-config">Shell settings: nwg-shell-config</a></li>
+      <li><a href="nwg-readme-browser">Documentation: nwg-readme-browser</a></li>
+      <li><a href="utilities-and-scripts">Utilities and scripts</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/nwg-piotr/nwg-shell/wiki">Installation</a></li>
+  <li><a href="derivatives">nwg-shell on Arch derivatives</a></li>
+  <li><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Recent updates</a></li>
+  <li><a href="contribution">Contributing</a>
+    <ul>
+      <li><a href="contribution#translations">Translations</a></li>
+    </ul>
+  </li>
+  <li><a href="https://nwg-piotr.github.io/nwg-shell#credits">Credits</a></li>
+  <li><a href="https://nwg-piotr.github.io/nwg-shell#contact">Contact</a></li>
+</ul>
+
+<h1 id="credits">Credits</h1>
+
+<p>This collection of software depends on numerous third-party programs and libraries, that have not been mentioned above:</p>
+
+<ul>
+  <li><a href="https://sr.ht/~kennylevinsen/wlsunset">wlsunset</a> by Kenny Levinsen</li>
+  <li><a href="https://github.com/wmww/gtk-layer-shell">gtk-layer-shell</a> by Sophie Winter</li>
+  <li><a href="https://github.com/gotk3/gotk3">gotk3</a> by Conformal Systems LLC</li>
+  <li><a href="https://github.com/dlasky/gotk3-layershell">gotk3-layershell</a> by <a href="https://github.com/dlasky/gotk3-layershell/commits?author=dlasky">@dlasky</a> (Dan, thanks again!)</li>
+  <li><a href="https://github.com/joshuarubin/go-sway">go-sway</a> by Joshua Rubin</li>
+  <li><a href="https://github.com/allan-simon/go-singleinstance">go-singleinstance</a> by 2015 Allan Simon</li>
+  <li><a href="https://github.com/altdesktop/i3ipc-python">python-i3ipc</a> by Tony Crisci</li>
+  <li><a href="https://github.com/giampaolo/psutil">python-psutil</a> by Jay Loden, Dave Daeschler &amp; Giampaolo Rodola</li>
+  <li><a href="https://github.com/geopy/geopy">python-geopy</a> by Kostya Esmukov</li>
+  <li><a href="https://github.com/rhinstaller/dasbus">python-dasbus</a> by Red Hat Installer Engineering Team</li>
+  <li><a href="https://github.com/stephica/netifaces">python-netifaces</a> by Alastair Houghton</li>
+  <li><a href="https://github.com/psf/requests">python-requests</a> by Python Software Foundation</li>
+  <li><a href="https://github.com/Hummer12007/brightnessctl">brightnessctl</a> by Mykyta Holuakha</li>
+  <li><a href="https://github.com/rockowitz/ddcutil">ddcutil</a> by Sanford Rockowitz</li>
+  <li><a href="https://github.com/altdesktop/playerctl">playerctl</a> by Tony Crisci</li>
+  <li><a href="https://sr.ht/~emersion/wlr-randr">wlr-randr</a> by Simon Ser</li>
+  <li><a href="https://www.freedesktop.org/wiki/Software/PulseAudio">PulseAudio</a>, <a href="http://www.bluez.org">bluez-utils</a>, and probably more, which I forgot to mention here. Please forgive me, if so.</li>
+</ul>
+
+<p><a href="https://gitlab.gnome.org/GNOME/gtk">GTK</a> and related libraries are a free and open-source cross-platform widget toolkit for creating graphical user interfaces, developed by The GNOME Project.</p>
+
+<p><a href="https://github.com/swaywm/sway">sway</a> is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault.</p>
+
+<div style="padding: 10px 0"></div>
+
+<p><img src="https://github.com/nwg-piotr/nwg-shell-resources/raw/master/resources/logo.svg" width="32" align="left" style="vertical-align: inline; padding: 0px 10px 0px 0px" />The author of the <a href="https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg">project logo</a> is <a href="https://github.com/edskeye">edskeye</a>.</p>
+
+<p>The artwork used on this site is licensed under the terms of the <a href="https://github.com/nwg-piotr/nwg-shell-wallpapers/blob/main/LICENSE">Creative Commons Zero v1.0 Universal license</a>, and has been contributed by:</p>
+
+<ul>
+  <li><a href="https://forum.archlabslinux.com/u/badkarma/summary">@badkarma</a> on the ArchLabs Linux forum</li>
+  <li><a href="https://github.com/sgse">SGS</a></li>
+  <li><a href="https://github.com/nwg-piotr">nwg-piotr</a></li>
+</ul>
+
+<h1 id="contact">Contact</h1>
+
+<ul>
+  <li>nwg.piotr(at)gmail.com</li>
+  <li><a href="https://forum.archlabslinux.com/u/nwg">forum.archlabslinux.com/u/nwg</a></li>
+  <li><a rel="me" href="https://fosstodon.org/@nwgpiotr">@nwgpiotr@fosstodon.org</a></li>
+  <li><a href="https://www.reddit.com/user/nwg-piotr">reddit.com/user/nwg-piotr</a></li>
+</ul>
+
+<h1 id="this-project-is-supported-by">This project is supported by</h1>
+
+<p><a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." /></a></p>
+
+<p>Copyright © 2000-2022 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.</p>
+
+      </section>
+    </div>
+  </body>
+</html>

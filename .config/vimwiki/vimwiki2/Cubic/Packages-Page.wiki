@@ -1,0 +1,15 @@
+The Cubic Packages Page lists all packages installed in your customized Linux file system. This page is only shown if [Ubiquity](https://packages.ubuntu.com/bionic/ubiquity) is installed.
+
+This page is used to configure the the behavior of the Ubiquity installer. Packages with a check mark next to them will be automatically removed by Ubiquity. Although all packages listed on this page will be available in the customized Live environment, check marked packages will not be available in your installed OS.
+
+This page is _not_ used to install or remove packages from your customized Linux file system. Instead, you must use `apt install` or `apt remove` on the [Terminal Page](https://github.com/PJ-Singh-001/Cubic/wiki/Terminal-Page) to add or remove packages.
+
+<img src="https://github.com/PJ-Singh-001/Cubic/blob/release/screenshots/Cubic%20Packages%20Page.png" width="600"/>
+
+The minimal install option was introduced in Ubuntu 18.04. If your installer supports both Typical and Minimal installs, you will see two columns with check boxes. You can remove the minimal install option by turning off the "＋Minimal" switch in the header bar. If your installer does not support Minimal installs, or you have turned off the "＋Minimal" switch in the header bar, you will see one column with check boxes for a Typical install.
+
+Packages that are checked will be removed once the OS has been installed. If you do not want Ubiquity to remove a package, simply un-check that package. When you select a package to be removed for a Typical install, the package will automatically be removed for a Minimal install as well.
+
+Be careful when selecting packages for removal, because additional dependent packages may also be removed, and these will not be indicated in the list.
+
+It's a good idea to just accept the recommended defaults on this page.
