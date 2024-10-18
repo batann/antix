@@ -1,0 +1,175 @@
+
+= Menu Script GPT =
+
+Old Script:
+<code>
+ #/bin/bash
+
+
+		E='echo -e';e='echo -en';trap "R;exit" 2
+		ESC=$( $e "\e")
+		TPUT(){ $e "\e[${1};${2}H";}
+		CLEAR(){ $e "\ec";}
+		CIVIS(){ $e "\e[?25l";}
+		DRAW(){ $e "\e%@\e(0";}
+		WRITE(){ $e "\e(B";}
+		MARK(){ $e "\e[7m";}
+		UNMARK(){ $e "\e[27m";}
+		R(){ CLEAR ;stty sane;$e "\ec\e[30;46m\e[J";};
+		HEAD(){ DRAW
+			for each in $(seq 1 15);do
+			$E " x                      x"
+			done
+			WRITE;MARK;TPUT 1 5
+			$E "  Usefull Software  ";UNMARK;}
+			i=0; CLEAR; CIVIS;NULL=/dev/null
+			FOOT(){ MARK;TPUT 15 5
+			printf " Privacy Matters   ";UNMARK;}
+			ARROW(){ read -s -n3 key 2>/dev/null >&2
+			if [[ $key = $ESC[A ]];then echo up;fi
+			if [[ $key = $ESC[B ]];then echo dn;fi;}
+
+		M0(){ TPUT 3 10; $e "DASH";}
+	    	M1(){ TPUT 4 10; $e "Firefox";}
+	    	M2(){ TPUT 5 10; $e "Falkon";}
+	    	M3(){ TPUT 6 10; $e "Chess";}
+	    	M4(){ TPUT 7 10; $e "DuckGo";}
+	    	M5(){ TPUT 8 10; $e "Cmus";}
+		M6(){ TPUT 9 10; $e "Ranger";}
+		M7(){ TPUT 10 10; $e "Terminal";}
+		M8(){ TPUT 11 10; $e "Clean";}
+		M9(){ TPUT 12 10; $e "Update";}
+	        M10(){ TPUT 13 10; $e "EXIT";}
+		    LM=10
+   MENU(){ for each in $(seq 0 $LM);do M${each};done;}
+   POS(){ if [[ $cur == up ]];then ((i--));fi
+           if [[ $cur == dn ]];then ((i++));fi
+           if [[ $i -lt 0   ]];then i=$LM;fi
+           if [[ $i -gt $LM ]];then i=0;fi;}
+	REFRESH(){ after=$((i+1)); before=$((i-1))
+           if [[ $before -lt 0  ]];then before=$LM;fi
+           if [[ $after -gt $LM ]];then after=0;fi
+           if [[ $j -lt $i      ]];then UNMARK;M$before;else UNMARK;M$after;fi
+           if [[ $after -eq 0 ]] || [ $before -eq $LM ];then
+           UNMARK; M$before; M$after;fi;j=$i;UNMARK;M$before;M$after;}
+	INIT(){ R;HEAD;FOOT;MENU;}
+     SC(){ REFRESH;MARK;$S;$b;cur=`ARROW`;}
+     ES(){ MARK;$e "ENTER = main menu ";$b;read;INIT;};INIT
+	while [[ "$O" != " " ]]; do case $i in
+
+
+
+0) S=M0;SC;if [[ $cur == "" ]];then R;$e "\n$(sudo -u batan bash /home/batan/16/menu/start.sh)\n";ES;fi;;
+1) S=M1;SC;if [[ $cur == "" ]];then R;$e "\n$(firefox)\n";ES;fi;;
+2) S=M2;SC;if [[ $cur == "" ]];then R;$e "\n$(falkon)\n";ES;fi;;
+3) S=M3;SC;if [[ $cur == "" ]];then R;$e "\n$(firefox chess.com)\n";ES;fi;;
+4) S=M4;SC;if [[ $cur == "" ]];then R;$e "\n$(falkon duckduckgo.com)\n";ES;fi;;
+5) S=M5;SC;if [[ $cur == "" ]];then R;$e "\n$(xfce4-terminal --geometry=50x30-0-0 -e 'cmus')\n";ES;fi;;
+6) S=M6;SC;if [[ $cur == "" ]];then R;$e "\n$(xfce4-terminal --geometry=80x40+0+0 -e 'ranger')\n";ES;fi;;
+7) S=M7;SC;if [[ $cur == "" ]];then R;$e "\n$(xfce4-terminal --geometry=60x40+0+0 --hide-borders --hide-menubar --hide-scrollbar -e 'tmux new-session \; splitw -v -p10 'sudo -u batan bash /home/batan/16/menu/scripts/select.sh'\;' )\n";ES;fi;;
+8) S=M8;SC;if [[ $cur == "" ]];then R;$e "\n$(sudo apt autoremove --purge && sudo apt autoclean && sudo apt clean && sudo sweeper --automatic)\n";ES;fi;;
+9) S=M9;SC;if [[ $cur == "" ]];then R;$e "\n$(sudo apt update && sudo apt upgrade -y)\n";ES;fi;;
+10) S=M10;SC;if [[ $cur == "" ]];then R;exit 0;fi;;
+
+	esac;
+	POS;
+done
+
+
+
+</code>
+
+
+GPT suggestions:
+
+To add a submenu to your Bash script menu, you can follow these steps:
+
+    Define a new function for your submenu. This function will be responsible for displaying the submenu options and handling user input.
+
+    Modify your main menu function to include an option for accessing the submenu.
+
+    Handle the user's choice in the main menu function and call the submenu function if the user selects it.
+
+Here's an example of how to add a simple submenu called "Submenu" to your existing script:
+
+
+
+<code>
+bash
+
+#!/bin/bash
+
+# ... (previous code)
+
+# Function for the submenu
+Submenu() {
+    local sub_choice
+
+    while true; do
+        CLEAR
+        TPUT 3 10
+        $e "SUBMENU"
+        TPUT 4 10
+        $e "1. Option 1"
+        TPUT 5 10
+        $e "2. Option 2"
+        TPUT 6 10
+        $e "3. Back to Main Menu"
+        TPUT 7 10
+        $e "Enter your choice: "
+
+        read -r sub_choice
+
+        case $sub_choice in
+            1)
+                # Add submenu option 1 logic here
+                ;;
+            2)
+                # Add submenu option 2 logic here
+                ;;
+            3)
+                break  # Return to the main menu
+                ;;
+            *)
+                echo "Invalid choice. Please select a valid option."
+                ;;
+        esac
+    done
+}
+
+# ... (rest of the code)
+
+# Modify your main menu function to include the submenu option
+MENU() {
+    for each in $(seq 0 $LM); do
+        M${each}
+    done
+    TPUT 14 10
+    $e "S. Submenu"
+}
+
+# ... (rest of the code)
+
+while [[ "$O" != " " ]]; do
+    case $i in
+        0)
+            # ... (previous code)
+            ;;
+        11)
+            Submenu  # Call the submenu function when the user selects it
+            INIT  # Return to the main menu after exiting the submenu
+            ;;
+    esac
+    POS
+done
+
+</code>
+
+In this modified script:
+
+    We define a Submenu function that displays submenu options and handles user input.
+    We add a submenu option to the main menu by modifying the MENU function.
+    When the user selects the submenu option (index 11 in this example), we call the Submenu function to display the submenu.
+    After the submenu exits (when the user selects "Back to Main Menu"), we return to the main menu using the INIT function.
+
+You can replace the placeholder comments with actual logic for your submenu options and customize the submenu as needed for your specific use case.

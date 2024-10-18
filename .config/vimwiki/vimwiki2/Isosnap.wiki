@@ -1,0 +1,483 @@
+mx-snapshot version: 23.8
+lsb_release -i | cut -f2
+lsb_release -r | cut -f2
+lsb_release -c | cut -f2
+/usr/share/mx-snapshot/scripts/snapshot-bootparameter.sh | tr '
+' ' '
++++ QString Settings::getFilename() const +++
++++ void Settings::selectKernel() +++
++++ void MainWindow::setup() +++
++++ void MainWindow::loadSettings() +++
+ls -1 /boot/vmlinuz-* | wc -l
+2
+
++++ void MainWindow::listFreeSpace() +++
+stat --file-system --format=%T "/home"
+ext2/ext3
+
+df -k --output=avail "/home" |tail -n1
+1118252
+
+- Free space on /home, where snapshot folder is placed: 1.07GiB
+
+The free space should be sufficient to hold the compressed data from / and /home
+
+      If necessary, you can create more available space
+      by removing previous snapshots and saved copies:
+      0 snapshots are taking up 0 of disk space.
+
+df -k --output=used / |tail -n1
+8825232
+
+mountpoint -q /home
++++ void MainWindow::listFreeSpace() +++
+stat --file-system --format=%T "/media/batan/DATA/ISO"
+QXcbConnection: XCB error: 3 (BadWindow), sequence: 1722, resource id: 12529988, major code: 40 (TranslateCoords), minor code: 0
+msdos
+
+df -k --output=avail "/media/batan/DATA/ISO" |tail -n1
+74706912
+
+- Free space on /media/batan/DATA/ISO, where snapshot folder is placed: 71.25GiB
+
+find "/media/batan/DATA/ISO/snapshot" -maxdepth 1 -type f -name '*.iso' -exec du -shc {} + |tail -1 |awk '{print $1}'
+4.6G
+
+The free space should be sufficient to hold the compressed data from / and /home
+
+      If necessary, you can create more available space
+      by removing previous snapshots and saved copies:
+      2 snapshots are taking up 4.6G of disk space.
+
+find "/media/batan/DATA/ISO/snapshot" -maxdepth 1 -type f -name '*.iso' -exec du -shc {} + |tail -1 |awk '{print $1}'
+4.6G
+
++++ void Settings::selectKernel() +++
+EXCLUDE ALL true
++++ void Settings::excludeDesktop(bool) +++
+runuser batan -c "xdg-user-dir DESKTOP"
+/home/batan/Desktop
+
++++ void Settings::excludeDocuments(bool) +++
+runuser batan -c "xdg-user-dir DOCUMENTS"
+/home/batan/Documents
+
++++ void Settings::excludeDownloads(bool) +++
+runuser batan -c "xdg-user-dir DOWNLOAD"
+/home/batan/Downloads
+
++++ void Settings::excludeMusic(bool) +++
+runuser batan -c "xdg-user-dir MUSIC"
+/home/batan/Music
+
++++ void Settings::excludeNetworks(bool) +++
++++ void Settings::excludePictures(bool) +++
+runuser batan -c "xdg-user-dir PICTURES"
+/home/batan/Pictures
+
++++ void Settings::excludeSteam(bool) +++
++++ void Settings::excludeVideos(bool) +++
+runuser batan -c "xdg-user-dir VIDEOS"
+/home/batan/Videos
+
++++ void Settings::excludeVirtualBox(bool) +++
++++ void Settings::excludeDesktop(bool) +++
+runuser batan -c "xdg-user-dir DESKTOP"
+/home/batan/Desktop
+
++++ void Settings::excludeDocuments(bool) +++
+runuser batan -c "xdg-user-dir DOCUMENTS"
+/home/batan/Documents
+
++++ void Settings::excludeDownloads(bool) +++
+runuser batan -c "xdg-user-dir DOWNLOAD"
+/home/batan/Downloads
+
++++ void Settings::excludeMusic(bool) +++
+runuser batan -c "xdg-user-dir MUSIC"
+/home/batan/Music
+
++++ void Settings::excludeNetworks(bool) +++
++++ void Settings::excludePictures(bool) +++
+runuser batan -c "xdg-user-dir PICTURES"
+/home/batan/Pictures
+
++++ void Settings::excludeSteam(bool) +++
++++ void Settings::excludeVideos(bool) +++
+runuser batan -c "xdg-user-dir VIDEOS"
+/home/batan/Videos
+
++++ void Settings::excludeVirtualBox(bool) +++
+grep ^CONFIG_SQUASHFS_LZ4=y /boot/config-6.1.0-12-amd64
+CONFIG_SQUASHFS_LZ4=y
+
++++ bool Settings::checkSnapshotDir() const +++
+chown $(logname):$(logname) "//media/batan/DATA/ISO/snapshot"
+QXcbConnection: XCB error: 3 (BadWindow), sequence: 2267, resource id: 12532643, major code: 40 (TranslateCoords), minor code: 0
++++ bool Settings::checkTempDir() +++
++++ bool Settings::isOnSupportedPart(const QString&) const +++
+stat --file-system --format=%T "/media/batan/DATA/ISO/snapshot"
+msdos
+
+detected partition "msdos" supported part: false
++++ QString Settings::largerFreeSpace(const QString&, const QString&) const +++
+stat -c '%d' /home
+2072
+
+stat -c '%d' /tmp
+2072
+
+stat --file-system --format=%T "/tmp/mx-snapshot-bvYDVInm"
+ext2/ext3
+
+df -k --output=avail "/tmp/mx-snapshot-bvYDVInm" |tail -n1
+1118236
+
+Work directory is placed in "/tmp"
++++ void Settings::otherExclusions() +++
++++ void Work::setupEnv() +++
+mountpoint /boot
+/boot is not a mountpoint
+
++++ bool Work::checkInstalled(const QString&) +++
+dpkg -s mx-installer |grep Status
+dpkg-query: package 'mx-installer' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files.
+
+Installing mx-installer
+apt-get update
+Hit:1 http://security.debian.org bookworm-security InRelease
+
+Hit:2 http://deb.debian.org/debian bookworm InRelease
+
+Hit:3 http://deb.debian.org/debian bookworm-updates InRelease
+
+Hit:4 https://mxrepo.com/mx/repo bookworm InRelease
+
+Hit:5 https://q4os.org/q4repo q4os-5-0-cn InRelease
+
+Hit:6 https://q4os.org/qtderepo bookworm InRelease
+
+Hit:7 https://q4os.org/qextrepo bookworm-firefox-cn InRelease
+
+Reading package lists...
+
+
+apt-get install -y mx-installer
+Reading package lists...
+
+
+Building dependency tree...
+
+Reading state information...
+
+
+The following additional packages will be installed:
+
+  efibootmgr flags-common gazelle-installer-data-mx gparted gparted-common
+
+  grub-efi-amd64-bin grub-efi-amd64-signed grub-efi-ia32-bin libzxcvbn0
+  shim-helpers-amd64-signed shim-signed shim-signed-common shim-unsigned
+
+  system-keyboard-qt
+
+Suggested packages:
+  gpart kpartx mtools reiser4progs udftools
+Recommended packages:
+  secureboot-db
+
+The following NEW packages will be installed:
+
+  efibootmgr flags-common gazelle-installer-data-mx gparted gparted-common
+
+  grub-efi-amd64-bin grub-efi-amd64-signed grub-efi-ia32-bin libzxcvbn0
+
+  mx-installer shim-helpers-amd64-signed shim-signed shim-signed-common
+  shim-unsigned system-keyboard-qt
+
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,709 kB of archives.
+After this operation, 69.1 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 efibootmgr amd64 17-2 [27.6 kB]
+
+Get:2 http://deb.debian.org/debian bookworm/main amd64 gparted-common all 1.3.1-1 [1,711 kB]
+
+Get:3 http://deb.debian.org/debian bookworm/main amd64 gparted amd64 1.3.1-1 [831 kB]
+
+Get:5 http://deb.debian.org/debian bookworm/main amd64 grub-efi-amd64-bin amd64 2.06-13 [1,574 kB]
+
+Get:9 http://deb.debian.org/debian bookworm/main amd64 grub-efi-amd64-signed amd64 1+2.06+13 [1,258 kB]
+
+Get:10 http://deb.debian.org/debian bookworm/main amd64 grub-efi-ia32-bin amd64 2.06-13 [1,464 kB]
+
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libzxcvbn0 amd64 2.5+dfsg-1 [862 kB]
+
+Get:12 http://deb.debian.org/debian bookworm/main amd64 shim-unsigned amd64 15.7-1 [436 kB]
+
+Get:13 http://deb.debian.org/debian bookworm/main amd64 shim-helpers-amd64-signed amd64 1+15.7+1 [302 kB]
+
+Get:14 http://deb.debian.org/debian bookworm/main amd64 shim-signed-common all 1.39+15.7-1 [12.8 kB]
+
+Get:15 http://deb.debian.org/debian bookworm/main amd64 shim-signed amd64 1.39+15.7-1 [325 kB]
+
+Get:4 https://mxrepo.com/mx/repo bookworm/main amd64 gazelle-installer-data-mx all 23.08mx23 [93.1 kB]
+
+Get:6 https://mxrepo.com/mx/repo bookworm/main amd64 flags-common all 23.07.02 [172 kB]
+
+Get:7 https://mxrepo.com/mx/repo bookworm/main amd64 system-keyboard-qt amd64 23.04.05mx23 [123 kB]
+
+Get:8 https://mxrepo.com/mx/repo bookworm/main amd64 mx-installer amd64 23.9mx23 [518 kB]
+
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+
+Fetched 9,709 kB in 4s (2,515 kB/s)
+
+Selecting previously unselected package efibootmgr.
+(Reading database ... 184455 files and directories currently installed.)
+Preparing to unpack .../00-efibootmgr_17-2_amd64.deb ...
+Unpacking efibootmgr (17-2) ...
+Selecting previously unselected package gazelle-installer-data-mx.
+Preparing to unpack .../01-gazelle-installer-data-mx_23.08mx23_all.deb ...
+Unpacking gazelle-installer-data-mx (23.08mx23) ...
+Selecting previously unselected package gparted-common.
+Preparing to unpack .../02-gparted-common_1.3.1-1_all.deb ...
+Unpacking gparted-common (1.3.1-1) ...
+Selecting previously unselected package gparted.
+Preparing to unpack .../03-gparted_1.3.1-1_amd64.deb ...
+Unpacking gparted (1.3.1-1) ...
+Selecting previously unselected package grub-efi-amd64-bin.
+Preparing to unpack .../04-grub-efi-amd64-bin_2.06-13_amd64.deb ...
+Unpacking grub-efi-amd64-bin (2.06-13) ...
+Selecting previously unselected package grub-efi-amd64-signed.
+Preparing to unpack .../05-grub-efi-amd64-signed_1+2.06+13_amd64.deb ...
+Unpacking grub-efi-amd64-signed (1+2.06+13) ...
+Selecting previously unselected package grub-efi-ia32-bin.
+Preparing to unpack .../06-grub-efi-ia32-bin_2.06-13_amd64.deb ...
+Unpacking grub-efi-ia32-bin (2.06-13) ...
+Selecting previously unselected package libzxcvbn0:amd64.
+Preparing to unpack .../07-libzxcvbn0_2.5+dfsg-1_amd64.deb ...
+Unpacking libzxcvbn0:amd64 (2.5+dfsg-1) ...
+Selecting previously unselected package flags-common.
+Preparing to unpack .../08-flags-common_23.07.02_all.deb ...
+Unpacking flags-common (23.07.02) ...
+Selecting previously unselected package system-keyboard-qt.
+Preparing to unpack .../09-system-keyboard-qt_23.04.05mx23_amd64.deb ...
+Unpacking system-keyboard-qt (23.04.05mx23) ...
+Selecting previously unselected package mx-installer.
+Preparing to unpack .../10-mx-installer_23.9mx23_amd64.deb ...
+Unpacking mx-installer (23.9mx23) ...
+Selecting previously unselected package shim-unsigned.
+Preparing to unpack .../11-shim-unsigned_15.7-1_amd64.deb ...
+Unpacking shim-unsigned (15.7-1) ...
+Selecting previously unselected package shim-helpers-amd64-signed.
+Preparing to unpack .../12-shim-helpers-amd64-signed_1+15.7+1_amd64.deb ...
+Unpacking shim-helpers-amd64-signed (1+15.7+1) ...
+Selecting previously unselected package shim-signed-common.
+Preparing to unpack .../13-shim-signed-common_1.39+15.7-1_all.deb ...
+Unpacking shim-signed-common (1.39+15.7-1) ...
+Selecting previously unselected package shim-signed:amd64.
+Preparing to unpack .../14-shim-signed_1.39+15.7-1_amd64.deb ...
+Unpacking shim-signed:amd64 (1.39+15.7-1) ...
+Setting up libzxcvbn0:amd64 (2.5+dfsg-1) ...
+Setting up efibootmgr (17-2) ...
+Setting up grub-efi-amd64-signed (1+2.06+13) ...
+Setting up grub-efi-ia32-bin (2.06-13) ...
+Setting up gazelle-installer-data-mx (23.08mx23) ...
+Setting up flags-common (23.07.02) ...
+Setting up gparted-common (1.3.1-1) ...
+Setting up shim-signed-common (1.39+15.7-1) ...
+No DKMS packages installed: not changing Secure Boot validation state.
+Setting up grub-efi-amd64-bin (2.06-13) ...
+Setting up shim-unsigned (15.7-1) ...
+Setting up system-keyboard-qt (23.04.05mx23) ...
+Setting up gparted (1.3.1-1) ...
+Setting up shim-helpers-amd64-signed (1+15.7+1) ...
+Setting up mx-installer (23.9mx23) ...
+Setting up shim-signed:amd64 (1.39+15.7-1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for libc-bin (2.36-9+deb12u1) ...
+Processing triggers for man-db (2.11.2-2) ...
+Processing triggers for mailcap (3.70+nmu1) ...
+echo /home/*/Desktop |xargs -n1 cp /usr/share/applications/minstall.desktop 2>/dev/null
+echo /home/*/Desktop/minstall.desktop |xargs -n1 sed -i 's/^NoDisplay=true/NoDisplay=false/'
+chmod 777 /home/*/Desktop/minstall.desktop
+chmod 755 /etc/skel/Desktop/Installer.desktop
+installed-to-live -b /.bind-root start bind=/home live-files version-file adjtime read-only
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+/.bind-root
+
+Calculating total size of excluded files...
+du -sxc {/.bind-root/lost+found,/.bind-root/tmp,/.bind-root/dev/,/.bind-root/media/,/.bind-root/mnt/,/.bind-root/sys/,/.bind-root/proc/,/.bind-root/run/,/.bind-root/boot/grub/,/.bind-root/etc/crypttab,/.bind-root/etc/machine-id,/.bind-root/etc/resolv.conf,/.bind-root/root/.cache,/.bind-root/root/.dbus,/.bind-root/root/.gconf,/.bind-root/root/.sudo_as_admin_successful,/.bind-root/var/cache/apt/archives/*.deb,/.bind-root/var/cache/apt/archives/partial/,/.bind-root/var/cache/apt/*.bin,/.bind-root/var/cache/debconf/*-old,/.bind-root/var/cache/lightdm,/.bind-root/var/cache/samba/browse.dat,/.bind-root/var/lib/apt/lists/,/.bind-root/var/lib/apt/periodic/,/.bind-root/var/lib/dbus/machine-id,/.bind-root/var/lib/dhcp/,/.bind-root/var/lib/dpkg/*-old,/.bind-root/var/lib/lightdm/.cache,/.bind-root/var/lib/lightdm/.Xauthority,/.bind-root/var/lib/NetworkManager/,/.bind-root/var/lib/sudo/,/.bind-root/var/log/,/.bind-root/var/log/samba/,/.bind-root/var/mail/,/.bind-root/var/spool/mail/,/.bind-root/var/spool/anacron/,/.bind-root/var/tmp/,/.bind-root/home/*/.cache/mozilla/firefox/*/cache2/,/.bind-root/home/*/.cache/mozilla/firefox/*/thumbnails/,/.bind-root/home/*/.cache/thumbnails/,/.bind-root/home/*/.dbus,/.bind-root/home/*/.sudo_as_admin_successful,/.bind-root/home/*/.local/share/Trash/,/.bind-root/home/*/.bash_history,/.bind-root/home/*/.lesshst,/.bind-root/home/*/.local/share/recently-used.xbel,/.bind-root/home/*/.xsession-errors,/.bind-root/home/*/Desktop/,/.bind-root/home/*/Documents/,/.bind-root/home/*/Documents/.,/.bind-root/home/*/Downloads/,/.bind-root/home/*/Downloads/.,/.bind-root/home/*/Music/,/.bind-root/home/*/Music/.,/.bind-root/etc/NetworkManager/system-connections/,/.bind-root/home/*/Pictures/,/.bind-root/home/*/Pictures/.,/.bind-root/home/*/Videos/,/.bind-root/home/*/Videos/.,/.bind-root/home/*/Desktop/,/.bind-root/home/*/Documents/,/.bind-root/home/*/Documents/.,/.bind-root/home/*/Downloads/,/.bind-root/home/*/Downloads/.,/.bind-root/home/*/Music/,/.bind-root/home/*/Music/.,/.bind-root/etc/NetworkManager/system-connections/,/.bind-root/home/*/Pictures/,/.bind-root/home/*/Pictures/.,/.bind-root/home/*/Videos/,/.bind-root/home/*/Videos/.,/.bind-root/tmp/mx-snapshot-bvYDVInm} 2>/dev/null |tail -1 |cut -f1
+1565848
+
+Calculating size of root...
+du -sx /.bind-root 2>/dev/null |tail -1 |cut -f1
+8891092
+
+SIZE ROOT     8891092
+SIZE EXCLUDES 1565848
+COMPRESSION   52
+SIZE NEEDED   3809126
+SIZE FREE     74706912
+
++++ void Work::checkNoSpaceAndExit(quint64, quint64, const QString&) +++
+Needed space: 3809126
+Free space  : 74706912 on "/media/batan/DATA/ISO/snapshot"
+stat -c '%d' /media/batan/DATA/ISO/snapshot
+2054
+
+stat -c '%d' /tmp/mx-snapshot-bvYDVInm
+2072
+
++++ void Work::checkNoSpaceAndExit(quint64, quint64, const QString&) +++
+Needed space: 3809126
+Free space  : 1118236 on "/tmp/mx-snapshot-bvYDVInm"
+Error There's not enough free space on your target disk, you need at least 3.63GiB
+You have 1.07GiB free space on /tmp/mx-snapshot-bvYDVInm
+If you are sure you have enough free space rerun the program with -o/--override-size option
+Cleaning...
+Done

@@ -1,0 +1,8 @@
+downloader
+
+== yt-dlp based script ==
+	- [ ] create directory _inside Music directory_
+	- [ ] start a process to monitor dir
+	- [ ] start an blank terminal that shows dir content
+	- [ ] create user input entry field
+	- [ ] 

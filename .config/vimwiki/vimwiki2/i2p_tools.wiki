@@ -1,0 +1,26 @@
+= Contents =
+    - [[#I2P_tools]]
+        - [[#I2P-Bote:]]
+        - [[#I2P Snark:]]
+        - [[#I2P IRC:]]
+        - [[#Syndie:]]
+        - [[#MuWire:]]
+
+= I2P_tools =
+
+== I2P-Bote: ==
+
+Description: I2P-Bote is a secure and decentralized email system built on top of I2P. It provides end-to-end encryption, ensuring private and anonymous communication.
+== I2P Snark: ==
+
+Description: I2P Snark is a decentralized and anonymous file-sharing application for the I2P network. It allows users to share files securely while preserving anonymity.
+== I2P IRC: ==
+
+Description: I2P IRC (Internet Relay Chat) is a secure and anonymous chat service within the I2P network. It provides a platform for real-time communication while maintaining user privacy.
+== Syndie: ==
+
+Description: Syndie is a decentralized forum and blog platform designed for I2P. It enables users to create and participate in discussions while ensuring anonymity and censorship resistance.
+== MuWire: ==
+
+Description: MuWire is a peer-to-peer file-sharing application designed for I2P. It allows users to share files securely and anonymously over the I2P network.
+These tools enhance privacy and anonymity when used in conjunction with I2P, 

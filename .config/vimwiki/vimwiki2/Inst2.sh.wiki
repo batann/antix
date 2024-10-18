@@ -1,0 +1,64 @@
+=inst2.sh=
+
+#!/bin/bash
+
+menu=("speedtest-cli| apt install    "
+"kdeconnect| apt install    "
+"zsh| apt install    "
+"ufw| apt install    "
+"guake| apt install    "
+"tmux| apt install    "
+"yad| apt install    "
+"zulucrypt-cli| apt install    "
+"zulucrypt-gui| apt install    "
+"zulusafe-cli| apt install    "
+"libzulucryptpluginmanager1.0.0| apt install    "
+"libzulucrypt-plugins| apt install    "
+"nodau | apt install    "
+"pwman3 | apt install    "
+"bwn-ng | apt install    "
+"calcurse| apt install    "
+"vnstat | apt install    "
+"viper-browser | apt install    "
+"vlc | apt install    "
+"firefox-esr | apt install    "
+"viper-browser | apt install    "
+"mpv | apt install    "
+"vimoucompleteme| apt install    "
+"speedtest-cli | apt install    "
+"obsidian-2-gtk-theme | apt install    "
+"obsidian-icon-theme | apt install    "
+"falkon | apt install    "
+"kodi kodi-repository-kodi | apt install    "
+)
+
+yad_opts=( 
+	--title="RD2" 
+	--text="Install the rest of available software from aptitude" 
+	--form 
+	--button="Install" --button="Be a Pussy" 
+	--image="logo.png"
+)
+
+
+for m in "${menu[@]}"
+do
+  yad_opts+=( --field="${m%|*}:CHK" )
+done
+
+IFS='|' read -ra ans < <( yad "${yad_opts[@]}" )
+
+for i in "${!ans[@]}"
+do
+  if [[ ${ans[$i]} == TRUE ]]
+  then
+    m=${menu[$i]}
+    name=${m%|*}
+    cmd=${m#*|}
+    echo "selected: $name ($cmd)"
+    $cmd
+
+
+  fi
+done
+

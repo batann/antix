@@ -1,0 +1,16 @@
+= Mariadb =
+== Create User Password ==
+
+=== Hash the password ===
+SELECT PASSWORD ('Ba7an?12982');
+
+=== Create the User ===
+CREATE USER batan@localhost;
+
+=== Set Password ===
+SET PASSWORD FOR batan@localhost = '1F1F3705771879A35128BF67EE079FB378401743';
+
+=== Delete User ===
+DROP USER batan@localhost
+
+

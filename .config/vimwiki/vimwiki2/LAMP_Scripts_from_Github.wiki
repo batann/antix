@@ -1,0 +1,7 @@
+= Contents =
+    - [[#LAMP_Scripts_from_Github]]
+
+= LAMP_Scripts_from_Github =
+
+[[lyquix-owner_lamp-ubuntu16.sh]]
+[[lyquix-owner_lamp-ubuntu18.sh]]

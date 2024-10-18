@@ -1,0 +1,28 @@
+To install and configure MPD (Music Player Daemon) and ncmpcpp on Linux, follow these steps:
+
+ 1 Install MPD:
+    • Open a terminal.
+    • Run the following command to install MPD: sudo apt-get install mpd
+ 2 Configure MPD:
+    • Open the MPD configuration file using a text editor: sudo nano /etc/mpd.conf
+    • Modify the following lines in the configuration file:
+       • Set the user to your username (batan): user "batan"
+       • Set the music_directory to your media directory: music_directory    "/media/batan/100"
+    • Save the changes and exit the text editor (press Ctrl+X, then Y, then Enter).
+ 3 Create the MPD database directory:
+    • Run the following command to create the MPD database directory: mkdir ~/.mpd
+    • Set the ownership of the directory to your user: sudo chown -R batan:batan ~/.mpd
+ 4 Configure ncmpcpp:
+    • Install ncmpcpp by running the following command: sudo apt-get install ncmpcpp
+    • Open the ncmpcpp configuration file using a text editor: nano ~/.ncmpcpp/config
+    • Modify the following lines in the configuration file:
+       • Set the mpd_host to localhost: mpd_host = "localhost"
+       • Set the mpd_port to the default MPD port (6600): mpd_port = "6600"
+    • Save the changes and exit the text editor (press Ctrl+X, then Y, then Enter).
+ 5 Start MPD:
+    • Run the following command to start MPD: mpd
+ 6 Launch ncmpcpp:
+    • Open a new terminal window.
+    • Run the following command to launch ncmpcpp: ncmpcpp
+
+You should now have MPD and ncmpcpp installed and co

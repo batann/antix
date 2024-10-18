@@ -1,0 +1,19 @@
+= Contents =
+            - [[#LAMP server]]
+            - [[#Nextcloud]]
+            - [[#Automating Lamp Install and config]]
+            - [[#Nextcloud_Instal_Config]]
+
+=== LAMP server ===
+[[LAMP_server]]
+[[apache2 config]]
+[[Mariadb]] _Hash Password Tips_
+=== Nextcloud ===
+[[Nextcloud]]
+=== Automating Lamp Install and config ===
+[[ICE_Lamp_Script]]
+=== Nextcloud_Instal_Config ===
+[[Nextcloud_Instal_Config]] _Bard_
+
+LAMP_Scripts_from_Github
+[[LAMP_Scripts_from_Github]]

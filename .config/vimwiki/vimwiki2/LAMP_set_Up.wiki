@@ -1,0 +1,296 @@
+=LAMP Set Up=
+
+
+== LAMP setup ==
+
+
+This page describes how to install LAMP, which stands for Linux Apache MariaDB
+PHP. For this purpose, you need to set up:
+
+  • a working Apache2 webserver;
+  • a configured MariaDB database server;
+  • PHP for work with Apache; and finally
+  • phpMyAdmin with a configured pmadb database.
+
+The needed time for the whole installation is around 20 minutes but it may
+depend on the performance of your Internet connection. This will require you
+spend some time in the terminal to properly set up.
+
+== Getting root access ==
+
+To get root access, open a terminal and enter the following command:
+
+    ====== su – ======
+
+After entering a valid password, the prompt should turn red and end with a #.
+
+== Apache ==
+
+The following is a step-by-step process to install the Apache2 webserver that
+will be used in a basic LAMP setup.
+
+== Installing Apache2 ==
+
+First of all, make sure you have root access and enter the following as root:
+
+    ====== apt install apache2 ======
+
+== Starting Apache2 Service ==
+
+To start the Apache server, enter the following as root
+
+    ====== service apache2 start ======
+
+If you ever want to restart the Apache server:
+
+    ====== service apache2 restart ======
+
+To stop the apache2 service:
+
+    ====== service apache2 stop ======
+
+To automatically start the apache service after reboot
+
+    ====== update-rc.d apache2 defaults ======
+
+Testing the installation
+
+Debian and consequently MX build of Apache2 stores the html pages under /var/
+www/html/
+
+Now point your favorite Web browser to: ‘localhost’ or 127.0.0.1. You should
+see the default Apache2 welcome page.
+
+====== [Apache2-MX18-20190725-1024x727] ======
+
+== Firewall ==
+
+By default MX Linux does not enable the firewall, however, if you intend on
+using the firewall you will have to open the appropriate ports.
+
+For unencrypted, http, traffic, open port 80 on the firewall
+
+For encrypted, https, traffic, open port 443
+
+== PHP ==
+
+Hypertext Preprocessor is a server-side scripting language designed for Web
+development, but also used as a general-purpose programming language.
+
+== Installation ==
+
+Ensure you have root access and run the following command to install the PHP
+module for php7
+
+    ====== apt install libapache2-mod-php7.0 ======
+
+Although it may have already been enabled, enable mod-php by executing:
+
+    ====== a2enmod php7.0 ======
+
+PHP installation is complete
+
+== Restart the Webserver ==
+
+Now that PHP is installed, restart the apache2 webserver:
+
+    ====== service apache2 restart ======
+
+== Test the Installation ==
+
+In order to verify that PHP is properly working, create a index.php file into
+the /var/www/html/ folder with the following content:
+
+====== <?php ======
+====== phpinfo(); ======
+====== ?> ======
+
+Now, point your browser to ‘localhost/index.php’. You should see a page
+containing a table with all PHP settings displayed.
+
+====== [php7-MX18-20190725-1024x726] ======
+
+== MariaDB ==
+
+MariaDB is an alternative package for MySQL, so further on the name mysql is
+used.
+
+== Installation ==
+
+Ensure you have root access and enter:
+
+    ====== apt install mariadb-server ======
+
+Start the MariaDB server
+
+As root user run the command in terminal:
+
+    ====== service mysql start ======
+
+Ensure that the server will start at every boot:
+
+    ====== update-rc.d mysql defaults ======
+
+Should you need to restart mysql, execute
+
+    ====== service mysql restart ======
+
+To stop the service
+
+    ====== service mysql stop ======
+
+Configure the MariaDB/MySql server
+
+To configure the MariaDB server with improved security, please use the script
+mysql_secure_installation provided. Hereafter is the description of the full
+process.
+
+    ====== mysql_secure_installation ======
+
+    stackstackstackstack
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+
+SERVERS IN PRODUCTION USE! PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we’ll need the current password for
+the root user. If you’ve just installed MariaDB, and you haven’t set the root
+password yet, the password will be blank, so you should just press enter here.
+Enter current password for root (enter for none):
+
+Just press Enter here.
+
+OK, successfully used password, moving on…
+
+Setting the root password ensures that nobody can log into the MariaDB root
+user without the proper authorization. Set root password? [Y/n] y
+
+Just enter y here.
+
+New password:
+
+Enter the password for root now.
+
+Re-enter new password:
+
+Enter the password confirmation.
+
+Password updated successfully!
+
+Reloading privilege tables.. … Success! By default, a MariaDB installation has
+an anonymous user, allowing anyone to log into MariaDB without having to have a
+user account created for them. This is intended only for testing, and to make
+the installation go a bit smoother. You should remove them before moving into a
+production environment. Remove anonymous users? [Y/n]
+
+Answer y to remove anonymous users.
+
+… Success!
+
+Normally, root should only be allowed to connect from ‘localhost’. This ensures
+that someone cannot guess at the root password from the network. Disallow root
+login remotely? [Y/n]
+
+Answer y now.
+
+… Success!
+
+By default, MariaDB comes with a database named ‘test’ that anyone can access.
+This is also intended only for testing, and should be removed before moving
+into a production environment. Remove test database and access to it? [Y/n]
+
+Answer y.
+
+– Dropping test database…
+
+… Success! – Removing privileges on test database… … Success! Reloading the
+privilege tables will ensure that all changes made so far will take effect
+immediately. Reload privilege tables now? [Y/n]
+
+Answer y.
+
+… Success!
+
+Cleaning up… All done! If you’ve completed all of the above steps, your MariaDB
+installation should now be secure. Thanks for using MariaDB!
+
+MariaDB has now been successfully Configured
+
+Should you need to set a new password for MairaDB, as root:
+
+    ====== mysqladmin -u root password ======
+    ====== Password: <enter your password> ======
+    ====== Confirm new password: <enter same password> ======
+
+Log in to the client
+
+Now you can log in into the server client by executing
+
+    ====== mysql -u root -p ======
+    ====== Enter password: ======
+
+Then give your password.
+
+You will be given some output similar to this:
+
+Welcome to the MariaDB monitor. Commands end with ; or \g.
+Your MariaDB connection id is 71 Server version: 10.1.38-MariaDB-0+deb9u1
+Debian 9.8
+
+Copyright (c) 2000, 2015, Oracle, MariaDB Corporation Ab and others.
+
+Type ‘help;’ or ‘\h’ for help. Type ‘\c’ to clear the current input statement.
+
+MariaDB [(none)]>
+
+To go back to the terminal, enter:
+
+    ====== exit ======
+
+== phpMyAdmin ==
+
+What is phpMyAdmin? phpMyAdmin, also known as pma, is a tool to administrate
+your databases from a Web interface.
+
+== Installation ==
+
+As root user, in the terminal run:
+
+    ====== apt install phpmyadmin ======
+
+This will install several packages and request to restart your webservice
+
+====== [myphpadmin-restart-apache-20190725-1024x728] ======
+
+Select to configure database for phpmyadmin with dconfig-common, and select
+Forward.
+
+====== [myphpadmin-configure-database-20190725-1024x728] ======
+
+Enter your password for the MySQL. You will also be asked to enter it again.
+w3m: Can't load dump.
+
+====== [myphpadmin-password-20190725-1024x727] ======
+
+== Log into phpMyAdmin ==
+
+== To log in to phpMyAdmin: ==
+
+Navigate to localhost/phpMyAdmin
+
+Enter the username: phpmyadmin
+and the root password of your mysql server
+
+====== [myphpadmin-login-screen-20190725-1024x727] ======
+
+Click on the ‘go’ button
+
+====== [myphpadmin-web-interface-20190725-1-1024x727] ======
+
+That’s all! You can now administer your databases from a Web interface.
+
+Documentation about using phpMyAdmin can be found on the phpMyAdmin website.
+
+Congratulations, a properly configured LAMP server has been successfully
+installed.
+

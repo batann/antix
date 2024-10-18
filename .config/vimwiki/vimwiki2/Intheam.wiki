@@ -1,0 +1,75 @@
+= Contents =
+        - [[#Intheam Config]]
+                - [[#Syncronization]]
+                - [[#iCal Feed]]
+                - [[#RSS Feed]]
+
+= Intheam Config =
+==Syncronization==
+_Files provided by "intheam"_
+file:///home/batan/.task/private.certificate.pem
+file:///home/batan/.task/private.key.pem
+file:///home/batan/.task/ca.cert.pem
+_config by "intheam"_
+add the following to:
+/home/batan/.taskrc
+<code>
+taskd.certificate=/path/to/private.certificate.pem
+taskd.key=/path/to/private.key.pem
+taskd.ca=/path/to/ca.cert.pem
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/tel.petar/a2b0048a-7b75-41b6-a00e-1a7fb60ef4f1
+taskd.trust=strict
+</code>
+Syncing for the first time, run:
+<code>task sync init</code>
+Syncing as per usual:
+<code>sync task</code>
+== iCal Feed ==
+_Turn this feature on to gain access to two different iCal feeds that you can add to either your Google Calendar or any other calendaring application that supports the iCal standard._
+    Task Due Dates iCal Feed URL	https://inthe.am/api/v1/task/ical/due/fc9f6a7c-c070-4473-aff0-c27429122c48
+    Task Waiting Dates iCal Feed URL	https://inthe.am/api/v1/task/ical/waiting/fc9f6a7c-c070-4473-aff0-c27429122c48
+== RSS Feed ==
+_Turn this feature on to gain access to an RSS feed listing your most urgent tasks._
+	Feed URL	https://inthe.am/api/v1/task/feed/fc9f6a7c-c070-4473-aff0-c27429122c48/
+
+
+
+
+
+RSS Feed:
+==========
+https://inthe.am/api/v1/task/feed/fc9f6a7c-c070-4473-aff0-c27429122c48/
+
+
+
+iCal Feed:
+===========
+
+Task Due Dates iCal Feed URL	
+https://inthe.am/api/v1/task/ical/due/fc9f6a7c-c070-4473-aff0-c27429122c48
+
+Task Waiting Dates iCal Feed URL	
+https://inthe.am/api/v1/task/ical/waiting/fc9f6a7c-c070-4473-aff0-c27429122c48
+
+
+API
+===
+
+API Key	f6e9c8b7e65c371ffd2b579c2c0c96d07bd280dc
+
+
+path to...	
+===========
+		+====================================+
+		| private.certificate.pem | ~/.task/ |
+		| private.key.pem         | ~/.task/ |
+		| ca.cert.pem             | ~/.task  |
+		+====================================+
+
+
+
+
+
+
+

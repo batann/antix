@@ -1,0 +1,17 @@
+= Contents =
+        - [[#I2P Search:]]
+        - [[#Yacy on I2P:]]
+        - [[#ParaZite:]]
+
+
+
+== I2P Search: ==
+
+Description: I2P Search is a dedicated search engine designed for the I2P network. It allows users to search for content within the I2P ecosystem while respecting privacy and anonymity.
+== Yacy on I2P: ==
+
+Description: Yacy is a decentralized search engine, and there is a version specifically configured to operate on the I2P network. It provides users with the ability to search for content without relying on centralized servers.
+== ParaZite: ==
+
+Description: ParaZite is a well-known link index and search engine that operates on the I2P network. It is designed to index content within the I2P ecosystem, offering users a way to discover various sites.
+These search engines help users explore and find content within the I2P network while preserving their anonymity. Keep in mind that the availability and performance of these search engines may vary, and it's recommended to explore them to see which one suits your preferences.

@@ -1,0 +1,11 @@
+
+live-usb-maker
+_download link appimage_
+wget https://github.com/MX-Linux/lum-qt-appimage/releases/download/19.11.02/live-usb-maker-qt-19.11.02.x86_64.AppImage.tar.gz
+
+
+wget https://github.com/dolphinoracle/lum-qt-appimage/archive/refs/heads/master.zip
+
+
+-github:
+https://github.com/dolphinoracle/lum-qt-appimage

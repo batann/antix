@@ -1,0 +1,456 @@
+= i2p-guide =
+
+
+   == What is I2P ==
+
+   The Invisible Internet Project (I2P) is a decentralized anonymizing
+   network built using [120]Java on similar principles to Tor, but which
+   was designed from the ground up as a self-contained darknet.
+
+   I2P is effectively an internet within an internet. Once connected you
+   can send email, browse websites, use blogging and forum software, host
+   websites, take advantage of decentralized file storage, engage in
+   anonymous real-time chat, and much more. As noted, you can also surf
+   the open web anonymously, but I2P is probably not the best tool for the
+   job in this regard.
+
+
+   == I2P Torrenting and I2P Snark ==
+
+   I2P torrenting is becoming increasingly popular, and there is a torrent
+   client exclusively designed for I2P. [121]I2PSnark is basically a
+   torrent client for the I2P network that uses the BitTorrent protocol.
+   It is also a torrent creator that delivers metainfo.torrent files
+   equipped with an in-built tracker.
+
+   We also must note that ProPrivacy does not in any way condone or
+   encourage the downloading of copyrighted material. If you want more
+   information about staying secure, check out our [122]best VPN for
+   torrenting guide.
+
+
+   == I2P Bote ==
+
+   I2P has two main messaging services, one of them is I2P Bote. It’s a
+   service for secure and anonymous messaging, therefore you are not able
+   to send messages for the "visible” Internet. It automatically encrypts
+   messages, and it is possible to have multiple email accounts with only
+   one click. It is the most secure way for communication, and its
+   popularity is on the rise.
+
+== How To Use I2P? ==
+
+   The official I2P website is very techie-orientated, and in our view it
+   doesn't do a good job of explaining in simple, newbie-friendly terms.
+
+   Therefore we composed a brief guide on how to use I2P, to get you up
+   and running with the I2P Darknet in Windows (since that is the system
+   we run). If security is a top priority for you, then you should not use
+   Windows (or OSX), instead opting for a Linux distro (and preferably a
+   security-oriented one such as Tails or Liberté Linux). Even better, use
+    Ipredia OS, a Linux distro based on I2P, with websites and services
+   only accessible through an I2P proxy tunnel.
+
+== How To Set Up And Connect ==
+
+    1. [123]Download and install Java – I2P is written in the Java
+       programming language, so to run it you will need to have Java
+       installed. It is quite likely that you already have this on your
+       system, but if not, then download the latest version and install it
+       (if you are not sure then skip this step for a minute, and come
+       back if I2P refuses to run).
+    2. [124]Download, install and run I2P.
+    3. When you run I2P, a console window will open. If you need help,
+       then you can copy and paste the log files from here, which will be
+       useful to anyone assisting you.
+       I2P Setup
+    4. A browser window will also open on the I2P Router Console page to
+       let you know that you have connected successfully to the IP2
+       network. You may initially have to wait a few minutes while the
+       software finds peers and connects tunnels to them.
+       I2P Browser
+    5. Once done, the Router Console will show that you are fully
+       connected.
+       I2P Router Console Connected
+
+== I2P Browser ==
+
+   In order to browse eepsites in the I2P network, your browser must be
+   configured for that purpose. On the I2P website you can also find
+   [125]a useful guide for the configuration settings of some popular
+   browsers like Internet Explorer or Firefox.
+
+   It can be done in any browser, but as we consider Internet Explorer to
+   be insecure, and Chrome an open window for Google spying, we will use
+   Firefox (the process is similar regardless of browser).
+    1. Go to Firefox -> Options -> Advanced tab -> Network tab ->
+       Connection Settings.
+    2. Check the ‘Manual proxy configuration’ box and enter the following
+       values: HTTP Proxy: 127.0.0.1, Port: 4444. It is also a good idea
+       to add ‘localhost, 127.0.0.1 to the ‘No Proxy for’ box.
+       Firefox Settings for I2P
+    3. OK your way back out of Settings and you are done!
+    4. It is commonly recommended that you use the Firefox Extension
+       "FoxyProxy" to change proxy settings quickly if you use I2P often.
+       That is a great idea, but we experienced connection problems when
+       we tried it (which may be the fault of our highly kinked Firefox
+       browser).
+    5. You should now be able to connect to I2P websites, known as
+       eepsites which have the .i2p suffix. Enter the address of any
+       eepsite (one of the .i2p links in the Router Console window is a
+       good place to start).
+       I2P Websites
+    6. At first, you will not have any eepsites in your router’s Address
+       book so you will need the help of a ‘jump’ service. The reasons for
+       this are somewhat technical, but all you need do is click one of
+       the jump service links. If a link doesn’t work, try another (we had
+       much better luck using the second link down).
+       eepsite Addressbook
+    7. Click on "Save [website] to router address book and continue to
+       eepsite", and the eepsite should load. Unfortunately, when you
+       first start using I2P, you may have to go through this process a
+       few times.
+
+== I2P Ready To Use ==
+
+   You should now be connected to an eepsite, and are ready to explore the
+   I2P darknet. A good place to start finding new eepsites is the
+   eepsite.com search engine. Enjoy!
+
+   A great deal of information (including info on configuring firewall
+   ports) is available from the main website but is beyond the scope of
+   this beginners guide. If you have further questions about I2P, what it
+   is good for, and what alternatives are out there, then read on!
+
+== Be secure on the dark web ==
+
+   We recommend that you use a VPN service before downloading encrypted
+   browsers I2P or Tor in order to cover your tracks. Find out more in our
+   [126]best VPN for the dark web article.
+
+== Tor ==
+
+   Tor sits in a slightly odd position, as it was designed primarily to
+   access the visible internet anonymously. That, however, is one of its
+   primary weaknesses. There are a limited number of exit nodes, which
+   makes it easy to block these exit nodes, to set up ‘honeypot’ exit
+   nodes to monitor traffic (although the way in which the [127]onion
+   router works should still ensure that the end user remains anonymous),
+   and to perform [128]‘end-to-end-timing’ attacks to uncover the identity
+   of Tor users.
+
+   In response to this, Tor has developed its Hidden Services protocol,
+   which allows Tor-only websites (.onion) and services to exist entirely
+   within the Tor network so that users do not have to access the visible
+   web through potentially dangerous exit nodes at all. Tor Hidden
+   Services therefore also acts as a Dark Web and is by far the most
+   popular such service.
+
+   However, because Tor was not originally designed as a darknet,
+   alternatives such as I2P and Freenet, which were created from the
+   ground-up as darknets, offer distinct advantages.
+
+VPN vs. Tor vs. I2P – Which one should you use?
+
+   == VPN vs Tor vs I2P ==
+
+   The simplest answer is that it depends on what you want to do.
+   Fortunately, nothing is stopping you using all three depending on the
+   task at hand, which is the approach we would advocate.
+
+== VPN ==
+
+   For general internet use, VPN is fast and easy to use, while providing
+   a high degree of privacy. We firmly believe that people should VPN all
+   the time by default to prevent dragnet surveillance by the likes of the
+   NSA. It is also ideal for P2P downloading.
+
+== Tor ==
+
+   If you need to interact with the outside world as anonymously as
+   possible then Tor cannot be beaten. For example, if you are a
+   whistleblower and want to contact a journalist. You can add further
+   layer of anonymity by connecting to Tor through a VPN service.
+
+   Although Tor Hidden Services are not as secure or fast as I2P, their
+   relative popularity can make them more fun and it may be important to
+   website owners looking for visitors. It is also older, has more
+   developers, and is better funded.
+
+== I2P ==
+
+   Technically it is the superior option if you want to access the Dark
+   Web, and is our tool of choice for this. Although not as popular as Tor
+   Hidden Services, it is still very sociable (and much more so than rival
+   Freenet), and is an excellent choice for P2P downloading. Like Tor, it
+   is a good free option for accessing the visible web anonymously for
+   free (and maybe faster), but the limited number of outproxies mean that
+   it is also much less anonymous when used in this way.
+
+== VPN and Tor ==
+
+   VPN and Tor are two ways to stay anonymous and preserve your privacy
+   when online. Each has its strengths and weaknesses, which we discuss in
+   some detail in this article. The bottom line is that Tor is extremely
+   secure but very slow and unsuitable for P2P downloading, while VPN is
+   less secure because it relies on trusting your VPN provider, but is
+   much faster, is excellent for P2P downloading, and generally provides a
+   better web browsing experience.
+
+   What both these technologies have in common is that they are primarily
+   concerned with accessing the publicly indexed ‘visible’ (or ‘surface’)
+   web.
+
+== I2P vs. Tor ==
+
+   I2P vs Tor Mini Infographic
+     * While Tor uses a centralized directory to manage the overall ‘view’
+       of the network, as well as gather and report statistics, I2P uses a
+       distributed peer-to-peer model
+     * Unlike Tor Onion routing, I2P uses Garlic routing, which encrypts
+       multiple messages together to make it more difficult for attackers
+       to perform traffic analysis
+     * In contrast with Tor, I2P tunnels are uni-directional, so incoming
+       traffic and outgoing traffic are completely separate, which
+       improves anonymity
+     * I2P uses packet switching instead of Tor’s circuit switching, which
+       means transparent load balancing of messages across multiple peers,
+       rather than a single path. Essentially, all peers participate in
+       routing for others
+     * I2Ps uses its own API rather than SOCKS which is used by Tor. This
+       helps to make I2P more secure than Tor.
+
+   As with Tor, users of I2P connect to each other using peer-to-peer
+   encrypted tunnels, but there are some fundamental technical
+   differences.
+
+   Just as Tor is primarily a tool designed to access the visible web
+   anonymously, but which can be used as a darknet, I2P is a Dark Web tool
+   that can also be used to access the surface web anonymously through
+   Outproxies (which are equivalent to [129]Tor Exit Nodes). However, I2P
+   Outproxies suffer similar weaknesses to Tor Exit Nodes, and the fact
+   that there are far fewer of them (as I2P has a much smaller user base)
+   means that they are potentially more open to attack.
+
+== Using I2P Conclusion ==
+
+   We hope that you have all the information and knowledge you need
+   regarding I2P! One thing to note is, just as with VPN and Tor, I2P does
+   not hide the fact that you are using the service, but does make it very
+   hard to discover what you get up to when connected to it. The result is
+   that if using hidden services, I2P is both much faster than using Tor
+   (it was designed with P2P downloading in mind), more secure, and more
+   robust.
+
+
+References
+
+   Visible links:
+   1. https://proprivacy.com/tools-hub
+   2. https://proprivacy.com/tools/blockedinchina
+   3. https://proprivacy.com/tools/haveibeenpwned
+   4. https://proprivacy.com/tools/password-strength-checker
+   5. https://proprivacy.com/tools/ruinmysearchhistory
+   6. https://proprivacy.com/tools/vpn-leak-tool
+   7. https://proprivacy.com/tools/what-is-my-ip
+   8. https://proprivacy.com/tools/world-privacy-report
+   9. https://proprivacy.com/about-us
+  10. https://proprivacy.com/about-us
+  11. https://proprivacy.com/disclaimer
+  12. https://proprivacy.com/contact-us
+  13. https://proprivacy.com/vpn
+  14. https://proprivacy.com/vpn/guides
+  15. https://proprivacy.com/vpn/guides/what-is-vpn-beginners-guide
+  16. https://proprivacy.com/vpn/comparison/best-vpn-services
+  17. https://proprivacy.com/vpn/comparison/best-cheap-vpn-service
+  18. https://proprivacy.com/vpn/comparison/unblock-netflix-vpn
+  19. https://proprivacy.com/vpn/comparison/best-vpns-for-uae
+  20. https://proprivacy.com/vpn/comparison/best-vpn-torrenting
+  21. https://proprivacy.com/vpn/comparison
+  22. https://proprivacy.com/vpn/reviews
+  23. https://proprivacy.com/vpn/review/expressvpn
+  24. https://proprivacy.com/vpn/review/nordvpn
+  25. https://proprivacy.com/vpn/review/privateinternetaccess
+  26. https://proprivacy.com/vpn/review/privatevpn
+  27. https://proprivacy.com/vpn/review/surfshark
+  28. https://proprivacy.com/vpn/review/ipvanish
+  29. https://proprivacy.com/vpn/review/cyberghost
+  30. https://proprivacy.com/adblocker
+  31. https://proprivacy.com/adblocker/guides
+  32. https://proprivacy.com/adblocker/comparison/best-ad-blockers
+  33. https://proprivacy.com/adblocker/comparison/adblock-chrome
+  34. https://proprivacy.com/adblocker/comparison/best-adblock-iphone
+  35. https://proprivacy.com/adblocker/guides/u-block-the-new-adblock
+  36. https://proprivacy.com/adblocker/comparison
+  37. https://proprivacy.com/adblocker/reviews
+  38. https://proprivacy.com/adblocker/review/privacybadger
+  39. https://proprivacy.com/adblocker/review/ublockorigin
+  40. https://proprivacy.com/adblocker/review/noscript
+  41. https://proprivacy.com/cloud
+  42. https://proprivacy.com/cloud/guides
+  43. https://proprivacy.com/cloud/comparison/5-best-cloud-backup
+  44. https://proprivacy.com/cloud/comparison/free-backup-services
+  45. https://proprivacy.com/cloud/comparison/cloud-backups-for-photographers
+  46. https://proprivacy.com/cloud/comparison/cloud-storage-mac
+  47. https://proprivacy.com/cloud/comparison/best-nas-backup
+  48. https://proprivacy.com/cloud/guides/how-secure-is-cloud-storage
+  49. https://proprivacy.com/cloud/comparison
+  50. https://proprivacy.com/cloud/reviews
+  51. https://proprivacy.com/cloud/review/synccom
+  52. https://proprivacy.com/cloud/review/nordlocker
+  53. https://proprivacy.com/cloud/review/idrive
+  54. https://proprivacy.com/cloud/review/livedrive
+  55. https://proprivacy.com/cloud/review/tresorit
+  56. https://proprivacy.com/cloud/review/mega
+  57. https://proprivacy.com/cloud/review/pcloud
+  58. https://proprivacy.com/password-manager
+  59. https://proprivacy.com/password-manager/guides
+  60. https://proprivacy.com/password-manager/comparison/best-password-managers
+  61. https://proprivacy.com/password-manager/comparison/free-password-managers
+  62. https://proprivacy.com/password-manager/comparison/5-password-managers-mac
+  63. https://proprivacy.com/password-manager/guides/keep-passwords-safe-with-password-managers
+  64. https://proprivacy.com/password-manager/comparison
+  65. https://proprivacy.com/password-manager/reviews
+  66. https://proprivacy.com/password-manager/review/dashlane
+  67. https://proprivacy.com/password-manager/review/roboform
+  68. https://proprivacy.com/password-manager/review/1password
+  69. https://proprivacy.com/password-manager/review/nordpass
+  70. https://proprivacy.com/password-manager/review/keeper
+  71. https://proprivacy.com/password-manager/review/stickypassword
+  72. https://proprivacy.com/password-manager/review/bitwarden
+  73. https://proprivacy.com/email
+  74. https://proprivacy.com/email/guides
+  75. https://proprivacy.com/email/comparison/secure-privacy-email-options
+  76. https://proprivacy.com/email/comparison/free-secure-email
+  77. https://proprivacy.com/email/comparison/gmail-alternatives
+  78. https://proprivacy.com/email/guides/delete-my-gmail-account-permanently
+  79. https://proprivacy.com/email/guides/digital-signature
+  80. https://proprivacy.com/email/comparison
+  81. https://proprivacy.com/email/reviews
+  82. https://proprivacy.com/email/review/startmail
+  83. https://proprivacy.com/email/review/protonmail
+  84. https://proprivacy.com/email/review/mailfence
+  85. https://proprivacy.com/email/review/hushmail
+  86. https://proprivacy.com/email/review/securemyemail
+  87. https://proprivacy.com/email/review/tutanota
+  88. https://proprivacy.com/email/review/posteo
+  89. https://proprivacy.com/vpn/guides/dd-wrt
+  90. https://proprivacy.com/password-manager/guides/open-source-proprietary-password-managers
+  91. https://proprivacy.com/guides/why-open-source-is-so-important
+  92. https://proprivacy.com/privacy-service/guides/windows-alternative
+  93. https://proprivacy.com/vpn/review/tunnelblick
+  94. https://proprivacy.com/password-manager/review/keepass
+  95. https://proprivacy.com/password-manager/review/passbolt
+  96. https://proprivacy.com/open-source/review/qbitorrent
+  97. https://proprivacy.com/password-manager/review/passwordsafe
+  98. https://proprivacy.com/privacy-service
+  99. https://proprivacy.com/privacy-service/guides
+ 100. https://proprivacy.com/privacy-service/comparison/most-secure-browsers
+ 101. https://proprivacy.com/antivirus/comparison/best-antivirus
+ 102. https://proprivacy.com/privacy-service/comparison/5-secure-private-messengers
+ 103. https://proprivacy.com/privacy-service/comparison/private-search-engines
+ 104. https://proprivacy.com/guides/the-ultimate-privacy-guide
+ 105. https://proprivacy.com/privacy-service/guides/ultimate-tor-browser-guide
+ 106. https://proprivacy.com/privacy-service/guides/which-linux-distro-best-for-privacy
+ 107. https://proprivacy.com/privacy-service/comparison
+ 108. https://proprivacy.com/privacy-service/reviews
+ 109. https://proprivacy.com/privacy-service/review/w10privacy
+ 110. https://proprivacy.com/vpn/review/fsecurefreedome
+ 111. https://proprivacy.com/vpn/review/disconnect
+ 112. https://proprivacy.com/privacy-service
+ 113. https://proprivacy.com/guides
+ 114. https://proprivacy.com/privacy-service/guides
+ 115. https://proprivacy.com/disclaimer
+ 116. https://proprivacy.com/guides
+ 117. https://proprivacy.com/privacy-service/guides/i2p-guide#comments
+ 118. https://proprivacy.com/author/douglas
+ 119. https://proprivacy.com/privacy-service/guides/i2p-guide#how-to-use-i2p
+ 120. https://en.wikipedia.org/wiki/Java_(programming_language)
+ 121. https://www.klomp.org/snark/
+ 122. https://proprivacy.com/vpn/comparison/best-vpn-torrenting
+ 123. https://www.java.com/en/download/
+ 124. https://geti2p.net/en/download
+ 125. https://geti2p.net/en/about/browser-config
+ 126. https://proprivacy.com/vpn/comparison/dark-web-vpn
+ 127. https://proprivacy.com/vpn/guides/tor-vs-vpn
+ 128. https://proprivacy.com/vpn/comparison/5-best-vpns-when-using-tor
+ 129. https://proprivacy.com/vpn/guides/tor-vs-vpn
+ 130. https://proprivacy.com/author/douglas
+ 131. javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=https://proprivacy.com/privacy-service/guides/i2p-guide&t=I2P Guide: How to Use I2P and More!', '_blank', 'width=600,height=400');void(0);
+ 132. javascript:window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title)+'&via=weareproprivacy', '_blank', 'width=600,height=500');void(0);
+ 133. javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&url=https://proprivacy.com/privacy-service/guides/i2p-guide&title=I2P Guide: How to Use I2P and More!&source=', '_blank', 'width=600,height=500');void(0);
+ 134. https://proprivacy.com/vpn/comparison/best-anonymous-vpn-services
+ 135. https://proprivacy.com/vpn/guides/using-vpn-tor-together
+ 136. https://proprivacy.com/privacy-service/guides/ultimate-tor-browser-guide
+ 137. https://proprivacy.com/privacy-service/guides/privacy-tools
+ 138. https://proprivacy.com/privacy
+ 139. https://proprivacy.com/privacy-service/guides/i2p-guide#what-is-i2p
+ 140. https://proprivacy.com/privacy-service/guides/i2p-guide#how-to-use-i2p
+ 141. https://proprivacy.com/privacy-service/guides/i2p-guide#tor
+ 142. https://proprivacy.com/privacy-service/guides/i2p-guide#vpn-vs-tor-vs-i2p
+ 143. https://proprivacy.com/privacy-service/guides/i2p-guide#using-i2p-conclusion
+ 144. https://proprivacy.com/comparison
+ 145. https://proprivacy.com/vpn/comparison
+ 146. https://proprivacy.com/cloud/comparison
+ 147. https://proprivacy.com/password-manager/comparison
+ 148. https://proprivacy.com/email/comparison
+ 149. https://proprivacy.com/adblocker/comparison
+ 150. https://proprivacy.com/privacy-service/comparison
+ 151. https://proprivacy.com/guides
+ 152. https://proprivacy.com/vpn/guides
+ 153. https://proprivacy.com/cloud/guides
+ 154. https://proprivacy.com/password-manager/guides
+ 155. https://proprivacy.com/email/guides
+ 156. https://proprivacy.com/adblocker/guides
+ 157. https://proprivacy.com/privacy-service/guides
+ 158. https://proprivacy.com/reviews
+ 159. https://proprivacy.com/vpn/reviews
+ 160. https://proprivacy.com/cloud/reviews
+ 161. https://proprivacy.com/password-manager/reviews
+ 162. https://proprivacy.com/email/reviews
+ 163. https://proprivacy.com/adblocker/reviews
+ 164. https://proprivacy.com/privacy-service/reviews
+ 165. https://proprivacy.com/images/our-team.jpg
+ 166. https://proprivacy.com/about-us
+ 167. https://proprivacy.com/interviewhub
+ 168. https://proprivacy.com/charities-we-support
+ 169. https://proprivacy.com/contact-us
+ 170. https://proprivacy.com/disclaimer
+ 171. https://proprivacy.com/privacy
+ 172. https://proprivacy.com/sitemap
+ 173. https://proprivacy.com/goto/expressvpn/popup_p.1.popup.cta_l.en_pid.8127
+ 174. https://proprivacy.com/goto/w10privacy/feedbackpopup_p.0.feedbackpopup.logo_l.en_pid.8127
+ 175. https://proprivacy.com/privacy-service/review/w10privacy
+ 176. https://proprivacy.com/goto/deleteme/feedbackpopup_p.1.feedbackpopup.logo_l.en_pid.8127
+ 177. https://proprivacy.com/privacy-service/review/deleteme
+ 178. https://proprivacy.com/goto/signal/feedbackpopup_p.2.feedbackpopup.logo_l.en_pid.8127
+ 179. https://proprivacy.com/privacy-service/review/signal
+ 180. https://proprivacy.com/goto/tor/feedbackpopup_p.3.feedbackpopup.logo_l.en_pid.8127
+ 181. https://proprivacy.com/privacy-service/review/tor
+
+   Hidden links:
+ 183. https://proprivacy.com/
+ 184. https://www.facebook.com/weareproprivacy
+ 185. https://twitter.com/weareproprivacy
+ 186. https://www.youtube.com/channel/UCM0VNOWHnCZaM4zc6RIvXxg
+ 187. https://www.instagram.com/weareproprivacy
+ 188. https://www.linkedin.com/company/weareproprivacy
+ 189. https://proprivacy.com/feed
+ 190. https://proprivacy.com/privacy-service/guides/i2p-guide
+ 191. https://proprivacy.com/privacy-service/guides/i2p-guide
+ 192. https://proprivacy.com/
+ 193. https://twitter.com/douglasjcrawf
+ 194. https://www.linkedin.com/in/douglas-crawford-6bb5a451/
+ 195. https://twitter.com/douglasjcrawf
+ 196. https://www.linkedin.com/in/douglas-crawford-6bb5a451/
+ 197. https://proprivacy.com/vpn/comparison/best-anonymous-vpn-services
+ 198. https://proprivacy.com/vpn/guides/using-vpn-tor-together
+ 199. https://proprivacy.com/privacy-service/guides/ultimate-tor-browser-guide
+ 200. https://proprivacy.com/privacy-service/guides/privacy-tools
+ 201. https://proprivacy.com/privacy-service/guides/i2p-guide
+ 202. https://www.facebook.com/weareproprivacy
+ 203. https://twitter.com/weareproprivacy
+ 204. https://www.youtube.com/channel/UCM0VNOWHnCZaM4zc6RIvXxg
+ 205. https://www.instagram.com/weareproprivacy
+ 206. https://www.linkedin.com/company/weareproprivacy
+ 207. https://proprivacy.com/feed

@@ -1,0 +1,174 @@
+
+mx-apps/mx 23.09.01mx23 all
+  metapackage for MX applets
+
+mx-apps-fluxbox/mx 23.09.01mx23 all
+  metapackage for MX applets
+
+mx-apps-kde/mx 23.09.01 all
+  metapackage for MX applets
+
+mx-boot-options/mx 23.8.01 amd64
+  mx-boot-options
+
+mx-bootrepair/mx 23.9 amd64
+  MX program to help with repair of boot problems.
+
+mx-cleanup/mx,now 23.7.01 amd64 [installed]
+  mx-cleanup
+
+mx-codecs/mx 23.7.02 amd64
+  restricted codecs installer
+
+mx-comfort-themes/mx 23.09.03 all
+  mx-comfort themes for MX Linux
+
+mx-conky/mx 23.7 amd64
+  MX Conky
+
+mx-conky-data/mx 20230701 all
+  conky themes for MX Conky
+
+mx-datetime/mx 23.7.04mx23 amd64
+  MX Date & Time
+
+mx-debian-firmware/mx 23.03.01mx23 all
+  metapackage that depends on Debian firmware shipped with MX Linux
+
+mx-desktop-menu-l10n/mx 23.07.01 all
+  provides desktop directory translations used in MX Linux
+
+mx-dockmaker/mx 23.7 amd64
+  Dockmaker for MX Linux
+
+mx-docs/mx 20230728+1 all
+  user manual for MX
+
+mx-fluxbox/mx 23.08.04 all
+  mx apps and configuration defaults for fluxbox (metapackage)
+
+mx-fluxbox-about/mx 21.03.01 all
+  MX-Fluxbox About
+
+mx-fluxbox-data/mx 23.08.04 all
+  mx apps and configuration defaults for fluxbox
+
+mx-fluxbox-data-pi/mx 21.02.02 all
+  mx apps and configuration defaults for fluxbox on pi
+
+mx-goodies/mx 23.09.01 all
+  Various useful scripts for MX.
+
+mx-gpg-keys/mx 23.09.04 all
+  public gpg keys for iso verification and alert messages
+
+mx-greybird-themes/mx 21.03.01 all
+  Greybird themes for MX Linux
+
+mx-icons-start/mx 18.05.01 all
+  additional start menu icons
+
+mx-idesktool/mx 23.07.13mx23 all
+  mx-idesktool
+
+mx-idevice-mounter/mx 0.1.5.15 all
+  GUI to Mount and Unmount iPhones and iPads
+
+mx-installer/mx,now 23.9mx23 amd64 [installed]
+  Customizable GUI installer for MX Linux and antiX Linux
+
+mx-iphone/mx 0.1mx21 all
+  Metapackage for iPhone as filesystem
+
+mx-iso-template/mx,now 23.07.02mx23 amd64 [installed,automatic]
+  MX ISO template
+
+mx-launcher-l10n/mx 23.05.01 all
+  mx launcher pkexec authentication localization
+
+mx-live-usb-maker/mx 23.7.02 amd64
+  mx-live-usb-maker
+
+mx-menu-editor/mx 22.10 amd64
+  MX Menu Editor
+
+mx-network-assistant/mx 23.7.01 amd64
+  MX program for network troubleshooting and configuration
+
+mx-packageinstaller/mx 23.9.01 amd64
+  MX Package Installer
+
+mx-packageinstaller-pkglist/mx 23.09.95mx23 all
+  Part of MX program for installing additional packages.
+
+mx-remaster/mx,now 23.05.02mx23 all [installed,automatic]
+  Tools for live persistence and remastering.
+
+mx-remastercc/mx 23.6 amd64
+  MX Remastercc
+
+mx-repo-list/mx 23.9.01 all
+  Part of MX program for managing repos.
+
+mx-repo-manager/mx 23.9 amd64
+  MX Repo Manager
+
+mx-rofi-manager/mx 23.06.29 all
+  Manager of rofi themes and settings
+
+mx-samba-config/mx 23.7 amd64
+  GUI for managing Samba shares and users
+
+mx-select-sound/mx 23.7 amd64
+  MX Select Sound
+
+mx-service-manager/mx 23.9.02 amd64
+  mx-service-manager
+
+mx-snapshot/mx,now 23.8 amd64 [installed]
+  MX Snapshot
+
+mx-sound-theme-borealis/mx 17.6mx16 all
+  Sound theme for mx-system-sounds
+
+mx-sound-theme-fresh-and-clean/mx 16.12mx16 all
+  Fresh and Clean sound theme packaged for mx-system-sounds
+
+mx-system/mx 23.07.10mx23 all
+  metapackage for packages needed for system functions
+
+mx-system-kde/mx 20.09.01 all
+  metapackage for packages needed for system functions on KDE-plasma
+
+mx-system-sounds/mx 23.7.01 amd64
+  MX System Sounds
+
+mx-tools/mx 23.7.01 amd64
+  MX Tools Launcher
+
+mx-tour/mx 23.7.02mx23 all
+  Take a tour of MX Linux 21
+
+mx-tweak/mx 23.09.01mx23 amd64
+  MX Tweak
+
+mx-tweak-data/mx 21.09.01mx21 all
+  Part of MX program for installing additional packages.
+
+mx-usb-unmounter/mx 23.02 amd64
+  mx-usb-unmounter
+
+mx-user/mx 23.9 amd64
+  MX User manager
+
+mx-viewer/mx 23.9 amd64
+  Displays a URL in a window
+
+mx-welcome/mx 23.05.02 amd64
+  MX Welcome
+
+mx-welcome-data/mx 23.06.01mx23 all
+  configuration information for mx-welcome
+
+mx23-archive-keyring/mx,now 2023.6.6 all [installed]
+  GnuPG archive keys of the MX-21 Linux archive

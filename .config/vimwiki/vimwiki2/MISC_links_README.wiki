@@ -1,0 +1,5 @@
+
+= MISC_links_README =
+https://vimawesome.com/?q=cat%3Acompletion
+http://www.gpick.org/blog/vim/as-dedicated-note-taking-application.html
+

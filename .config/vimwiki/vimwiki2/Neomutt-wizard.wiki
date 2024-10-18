@@ -1,0 +1,134 @@
+= Contents =
+        - [[#Neomutt-Wizard]]
+                        - [[#Dependencies]]
+                        - [[#Optional Dependencies]]
+                        - [[#Usage]]
+                - [[#Options usable when adding an account]]
+                        - [[#Providing arguments]]
+                        - [[#General Settings]]
+                        - [[#Additional functionality]]
+                        - [[#New stuff and improvements since the original release]]
+
+=Neomutt-Wizard=
+
+
+
+sudo apt install neomutt isync curl passpam-gnupg notmuch abookurlview
+git clone https://github.com/LukeSmithxyz/mutt-wizard
+cd mutt-wizard
+sudo make install
+
+
+=== Dependencies ===
+
+- `neomutt` - the email client. (If you are using Gentoo GNU/Linux, you will need the `sasl` use flag to be enabled)
+- `curl` - tests connections (required at install).
+- `isync` - downloads and syncs the mail (required if storing IMAP mail locally).
+- `msmtp` - sends the email.
+- `pass` - safely encrypts passwords (required at install).
+- `ca-certificates` - required for SSL. Probably installed already.
+
+
+ === Optional Dependencies ===
+
+- `pam-gnupg` - Automatically logs you into your GPG key on login so you will
+  never need to input your password once logged on to your system. Check the
+  repo and directions out [here](https://github.com/cruegge/pam-gnupg).
+- `lynx` - view HTML email in neomutt.
+- `notmuch` - index and search mail. Install it and run `notmuch setup`, tell
+  it that your mail is in `~/.local/share/mail/` (although `mw` will do this
+  automatically if you haven't set notmuch up before). You can run it in mutt
+  with <kbd>ctrl-f</kbd>. Run `notmuch new` to process new mail.
+- `abook` - a terminal-based address book. Pressing tab while typing an address
+  to send mail to will suggest contacts that are in your abook.
+- `urlview` - outputs urls in mail to browser.
+- `cronie` - (or any other major cronjob manager) to set up automatic mail
+  syncing.
+- `mpop` - If you want to use POP protocol instead of IMAP.
+
+
+=== Usage ===
+
+The mutt-wizard runs via the command `mw`. Once setup is complete, you'll use
+`neomutt` to access your mail.
+
+- `mw -a you@email.com` -- add a new email account
+- `mw -l` -- list existing accounts
+- `mw -d` -- choose an account to delete
+- `mw -D your@email.com` -- delete account settings without confirmation
+- `mw -t 30` -- toggle automatic mailsync to every 30 minutes
+- `mw -T` -- toggle mailsync without specifying minutes (default is 10)
+- `mw -r` -- reorder account shortcut numbers
+- `pass edit mw-your@email.com` -- revise an account's password
+- `mailsync` -- sync all configured email accounts. Also gives notifications of new mail and indexes new mail with notmuch silently.
+- `mailsync your@email.com` -- sync a particular (or several) email account(s).
+
+ == Options usable when adding an account ==
+
+ === Providing arguments ===
+
+- `-u` -- Give an account username if different from the email address.
+- `-n` -- A real name to be used by the account. Put in quotations if multiple
+  words.
+- `-i` -- IMAP server address
+- `-I` -- IMAP server port (otherwise assumed to be 993)
+- `-s` -- SMTP server address
+- `-S` -- SMTP server port (otherwise assumed to be 465)
+- `-m` -- Maximum number of emails to be kept offline. No maximum is default
+  functionality.
+- `-x` -- Account password. You will be prompted for it otherwise.
+
+ === General Settings ===
+
+- `-f` -- Assume mailbox names and force account configuration without
+  connecting online at all.
+- `-o` -- Configure mutt for an account, but do not keep mail offline.
+- `-p` -- Use POP protocol instead of IMAP (requires `mpop` installed).
+- `mailsync` gives visual messages of new mail by default. Or, set
+  `MAILSYNC_MUTE=1` as an environmental variable if you prefer not having them.
+  
+  
+  
+  
+  === Additional functionality ===
+
+- `pam-gnupg` - Automatically logs you into your GPG key on login, so you will
+  never need to input your password once logged on to your system. Check the
+  repo and directions out [here](https://github.com/cruegge/pam-gnupg).
+- `lynx` - View HTML email in neomutt.
+- `notmuch` - Index and search mail. Install it and run `notmuch setup`, tell it
+  that your mail is in `~/.local/share/mail/` (although `mw` will do this
+  automatically if you haven't set notmuch up before). You can run it in mutt
+  with <kbd>ctrl-f</kbd>. Run `notmuch new` to process new mail.
+- `abook` - A terminal-based address book. Pressing tab while typing an address
+  to send mail to will suggest contacts that are in your abook.
+- `urlview` - Outputs URLs in an email to your browser.
+
+ === New stuff and improvements since the original release ===
+
+- `mw` is now scriptable with command-line options and can run successfully
+  without any interaction, making it possible to deploy in a script.
+- `isync`/`mbsync` has replaced `offlineimap` as the backend. Offlineimap was
+  error-prone, bloated, used obsolete Python 2 modules, and required separate
+  steps to install the system.
+- `mw` is now an installed program instead of just a script needed to be kept in
+  your mutt folder.
+- `dialog` is no longer used and the interface is simply text commands.
+- More autogenerated shortcuts that allow quickly moving and copying mail
+  between boxes.
+- More elegant attachment handling. Image/video/pdf attachments without relying
+  on the neomutt instance.
+- abook integration by default.
+- The messy template files and other directories have been moved or removed,
+  leaving a clean config folder.
+- msmtp configs moved to `~/.config/` and mail default location moved to
+  `~/.local/share/mail/`, reducing mess in `~`.
+- `pass` is used as a password manager instead of separately saving passwords.
+- Script is POSIX sh compliant.
+- Error handling for the many people who don't read or follow directions. Fewer
+  errors generally.
+- Addition of a manual `man mw`
+- Now handles POP protocol via `mpop` for those who prefer it (add an account
+  with the `-p` option). POP configs are still generated automatically.
+
+  

@@ -1,0 +1,30 @@
+=LC backup=
+
+===xfce4 desktop backup===
+
+mkdir -p ~/.LC/backup/
+mkdir -p ~/.LC/backup/nvim/
+mkdir -p ~/.LC/backup/xfce4/
+mkdir -p ~/.LC/backup/Thunar/
+mkdir -p ~/.LC/backup/Icons
+mkdir -p ~/.LC/backup/Fonts
+mkdir -p ~/.LC/backup/background
+mkdir -p ~/.LC/backup/
+
+
+cp -R ~/.config/Thunar/ ~/.LC/backup/
+
+cp -R ~/.config/xfce4/ ~/.LC/backup/
+
+cp -R ~/.config/nvim/ ~/.LC/backup/
+
+sudo cp -R /usr/share/fonts /home/batan/.LC/backup/
+sudo cp -R /usr/share/icons/ /home/batan/.LC/backup/
+sudo cp -R /usr/share/background/ /home/batan/.LC/background/
+
+
+
+-still to do:
+	-yad checklist with multiple selectable colums for postinstall or LC specific package install
+	-yad checklist with a line specific command, see 13.sh
+	

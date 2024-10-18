@@ -1,0 +1,7 @@
+
+
+
+sudo apt install axel bleachbit buku chromium cmus ddgr espeak exuberant-ctags fairymax falkon festvox-us-slt-hts ffmpeg fzf gnome-software-plugin-flatpak grub-customizer grub-imageboot jq kodi kodi-repository-kodi lazpaint-qt5 links2 man2html mat2 megatools mpv neovim nodau openssh-server pandoc pipx pwman3 python3-pip ranger rename renameutils rofi speedtest-cli stacer stockfish sweeper tesseract-ocr timewarrior tldr trash-cli tree vim vit vnstat w3m xboard xcape xterm yt-dlp
+
+
+

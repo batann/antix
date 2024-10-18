@@ -1,0 +1,18 @@
+=inst6.sh=
+
+#!/bin/bash
+
+
+
+
+yad --checklist --title="Your Friendly AI 2.0" --text="Hold on to your hemerroids!" --width="400" --length="600" --image="logo.png" --button="accept" --button="decline" --list --seperator " | "--checklist --column="1/1" --column="I would like To" --column="a" --column="b" "1" "asd" "asd" "asd" "2" "asd" "asd" "asd" "3" "AD" "" "" "4" "ASD" "ASD" "ASD"
+  
+if [[ $? -eq 0 ]]; then
+
+/usr/bin/espeak "Blah blah"
+else
+	espeak "Decline your mum"
+
+  fi
+
+done

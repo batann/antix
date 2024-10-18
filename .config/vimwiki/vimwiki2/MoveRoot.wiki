@@ -1,0 +1,287 @@
+Move Root to new partition
+
+
+
+
+
+new Q4OS partition:
+/dev/sda9
+
+old Q4OS partition:
+sdb8 q4os (11gb)
+
+
+
+
+[13]Ubuntu Documentation
+
+     * [14]Official Documentation
+     * [15]Community Help Wiki
+     * [16]Contribute
+
+     * [17]Page History
+     * [18]Login to edit
+
+   _____________________ Search
+
+[19]MovingLinuxPartition
+     __________________________________________________________________
+
+   Contents
+    1. [20]Step 1: Booting through Rescue CD
+    2. [21]Step 2: Create new partition
+    3. [22]Step 3: Clone Ubuntu partition to new location
+    4. [23]Step 4: Generate and update UUID
+    5. [24]Step 5: Update grub and fstab
+    6. [25]Step 6: Update MBR to point the new grub
+    7. [26]See Also
+    8. [27]External Links
+
+   The purpose of this how-to is to describe how to move your Ubuntu Linux
+   partition to a different partition either in same hard-disk or
+   different hard-disk.
+
+   Many other article of same subject in Internet seems to be outdated on
+   following parts:
+    1. Grub2 (Ubuntu 9.10 and later)
+    2. UUID for partition identification (Ubuntu 6.10 and later)
+
+   Hence, the main purpose of this article to fill in the gap as well as
+   one stop reference for the entire steps.
+
+   Following are outlines of steps involved:
+     * Create new target partition
+     * Clone current Linux partition to target partition
+     * Generate and update UUID for target partition
+     * Update grub and fstab
+     * Update MBR to point the new grub.
+
+   Few assumptions I make are:
+    1. Your Ubuntu is 9.10 or later
+    2. Your Ubuntu is on ext4 partition (gparted should be to copy/paste
+       any other file-system as well, however these steps were tested on
+       ext4)
+    3. Your Ubuntu configuration is of standard (not too customized)
+    4. Grub2 is your boot loader
+    5. [28]SystemRescueCd - I prefer this rescue CD as it comes with
+       gparted utility
+    6. You are not changing swap partition
+
+   If any of above assumptions do not apply to your system, then you will
+   need to execute following steps with cautions.
+
+Step 1: Booting through Rescue CD
+
+     * A copy of [29]SystemRescueCd can be obtain from [30]here.
+     * Burn this to a CD
+     * And reboot the machine to boot from the rescue CD
+          + You may need to change configuration in your bios to enable
+            boot up from CD
+     * Choose default booting option and type "wizard" once it goes to
+       prompt
+     * Now you should have X desktop loaded.
+
+Step 2: Create new partition
+
+     * Launch gparted from start menu
+     * Using gparted create a new partition on your target hard-disk.
+          + Make sure the size new partition is same or bigger than your
+            current Ubuntu partition used space.
+          + You may also mount current Ubuntu partition to clean up
+            unnecessary files in the partition to reduce the size.
+
+shell> mkdir ~/ubuntu
+shell> mount /dev/sdZY ~/ubuntu
+or
+shell> mount /dev/hdZY ~/ubuntu
+# where ZY is your ubuntu partition's block device name (you can find this from
+gparted window)
+shell> cd ~/ubuntu
+     * And once you are done, make sure to unmount
+
+shell> umount ~/ubuntu
+
+Step 3: Clone Ubuntu partition to new location
+
+     * On gparted window, right-click on Ubuntu partition and select
+       "Copy"
+     * Then right-click on the new partition you have just created and
+       select "Paste"
+          + gparted will start step-by-step copy process. This may take a
+            while.
+          + You may also opt to use dd for the same purpose, but I prefer
+            gparted because
+               o It does calculate optimal way to copy over the data
+                 (block size)
+               o It able to verbose current progress status
+
+Step 4: Generate and update UUID
+
+     * Since step 3 copy and paste produce the new partition with exact
+       same UUID, this will conflict and grub not able to tell the
+       partitions apart. Hence we need to update UUID information on new
+       partition.
+     * Following is to check current UUID (You should notice duplicate
+       UUID)
+
+shell> blkid
+     * And following is to generate and update UUID.
+
+shell> tune2fs -U random /dev/sdZY
+or
+shell> tune2fs -U random /dev/hdZY
+# where ZY is your new partition's block device name (you can obtain this from g
+parted window)
+     * Verify UUID (All UUIDs should be unique now)
+
+shell> blkid
+
+Step 5: Update grub and fstab
+
+     * Reboot your system from Rescue system back to normal Ubuntu
+     * Once you have booted to your original Ubuntu, mount the partition
+       via gnome -> Places option
+     * Edit grub.cfg file from new partition.
+
+shell> gksu gedit /media/<new partition uuid>/boot/grub/grub.cfg &
+     * Note that you should edit grub.cfg from new partition and not from
+       "/boot/grub/grub.cfg"
+
+     * Using gedit, find and replace every "(hdX,Y)" appropriately
+          + X and Y should be replaced based on your new partition's
+            /dev/sdZY or /dev/hdZY, if Z is 'a' then X should be '0', if Z
+            is 'b' then X should be '1' and so on.
+     * Using gedit, find and replace every "--fs-uuid --set <UUID>" based
+       on new generated UUID.
+     * Also still within the same file, find and replace every 'menuentry
+       'Ubuntu..." to "menuentry 'UBUNTU...". This is just to verify which
+       grub is used for main boot menu. This will be overwritten by
+       grub-update later.
+     * Edit fstab file from new partition
+
+shell> gksu gedit /media/<new partition uuid>/etc/fstab &
+     * Note that you should edit grub.cfg from new partition and not from
+       "/etc/fstab"
+
+     * Using gedit, find and replace root mount point's (line with "/")
+       <UUID> based on new generated UUID.
+
+Step 6: Update MBR to point the new grub
+
+     * By now, you have 2 proper bootable Ubuntu in your system, and the
+       idea now is to make the new Ubuntu partition self bootable without
+       any dependencies to old Ubuntu partition. And to get ride the old
+       Ubuntu partition eventually.
+     * Before updating MBR, backup current MBR data
+
+shell> sudo dd if=/dev/sdZ of=~/sdZ.img bs=1 count=512
+or
+shell> sudo dd if=/dev/hdZ of=~/sdZ.img bs=1 count=512
+# where Z is your old Ubuntu partition's block device name
+# note that device name is without 'Y'; without partition id.
+     * Mount the partition via gnome -> Places option (if is not mounted)
+     * Run grub setup for new partition
+
+shell> sudo grub-install -d /media/<new partition uuid>/usr/lib/grub/[instance]
+/dev/sda
+
+   Where [instance] is the version you want to make bootable
+     * Update new ubuntu partition as bootable
+
+gnome> Run the "Disks" application
+     * Find and select your old Ubuntu partition to highlight the
+       partition
+     * Click the "Settings" gear button and select "Edit Mount Options"
+     * Uncheck "Mount at Startup" and click "OK"
+     * Find and select your new Ubuntu partition to highlight the
+       partition
+     * Click the "Settings" gear button and select "Edit Mount Options"
+     * Set "Automatic Mount Options" to OFF
+     * Check "Mount at startup"
+     * "Show in user interface" and "Require additional authorization to
+       mount" should NOT be checked
+     * Mount options should be "errors=remount-ro"
+     * Mount point should be "/"
+     * Click "OK"
+
+     * Reboot you machine again
+     * On booting, make sure new partition's grub menu is displayed as.
+
+1) UBUNTU...
+
+     * Finally, once rebooted successfully on new Ubuntu partition.
+     * Refresh the GRUB 2 menu
+
+sudo update-grub
+     * Make sure Ubuntu from new partition is perfectly fine before
+       deleting the old Ubuntu partition.
+     * In case to revert back to old Ubuntu partition, all you need to do
+       is restore the backed-up MBR image.
+
+shell> sudo dd if=~/sdZ.img of=/dev/sdZ bs=1 count=512
+or
+shell> sudo dd if=~/sdZ.img of=/dev/hdZ bs=1 count=512
+# where Z is your old Ubuntu partition's block device name
+# note that device name is without 'Y'; without partition id.
+
+See Also
+
+     * [31]Information on Grub2
+     * [32]Information on UUID
+     * [33]Moving partition via gparted
+
+External Links
+
+     * [34]Thanks to tact
+     * [35]How To Backup Operating Systems
+     __________________________________________________________________
+
+   [36]CategorySystem
+
+   MovingLinuxPartition (last edited 2020-03-23 10:04:38 by [37]rs2009)
+
+   The material on this wiki is available under a free license, see
+   [38]Copyright / License for details
+   You can contribute to this wiki, see [39]Wiki Guide for details
+
+References
+
+   1. https://help.ubuntu.com/community/MovingLinuxPartition?diffs=1&show_att=1&action=rss_rc&unique=0&page=MovingLinuxPartition&ddiffs=1
+   2. https://help.ubuntu.com/community/CommunityHelpWiki
+   3. https://help.ubuntu.com/community/MovingLinuxPartition?action=raw
+   4. https://help.ubuntu.com/community/MovingLinuxPartition?action=print
+   5. https://help.ubuntu.com/community/FindPage
+   6. https://help.ubuntu.com/community/TitleIndex
+   7. https://help.ubuntu.com/community/WordIndex
+   8. https://help.ubuntu.com/community/HelpOnFormatting
+   9. https://canonical.com/partners
+  10. https://ubuntu.com/community/support
+  11. https://ubuntu.com/community
+  12. https://ubuntu.com/
+  13. https://help.ubuntu.com/
+  14. https://help.ubuntu.com/
+  15. https://help.ubuntu.com/community/CommunityHelpWiki
+  16. https://ubuntu.com/community/contribute
+  17. https://help.ubuntu.com/community/MovingLinuxPartition?action=info
+  18. https://help.ubuntu.com/community/MovingLinuxPartition?action=login&login=1
+  19. https://help.ubuntu.com/community/MovingLinuxPartition
+  20. https://help.ubuntu.com/community/MovingLinuxPartition#Step_1:_Booting_through_Rescue_CD
+  21. https://help.ubuntu.com/community/MovingLinuxPartition#Step_2:_Create_new_partition
+  22. https://help.ubuntu.com/community/MovingLinuxPartition#Step_3:_Clone_Ubuntu_partition_to_new_location
+  23. https://help.ubuntu.com/community/MovingLinuxPartition#Step_4:_Generate_and_update_UUID
+  24. https://help.ubuntu.com/community/MovingLinuxPartition#Step_5:_Update_grub_and_fstab
+  25. https://help.ubuntu.com/community/MovingLinuxPartition#Step_6:_Update_MBR_to_point_the_new_grub
+  26. https://help.ubuntu.com/community/MovingLinuxPartition#See_Also
+  27. https://help.ubuntu.com/community/MovingLinuxPartition#External_Links
+  28. https://help.ubuntu.com/community/SystemRescueCd
+  29. https://help.ubuntu.com/community/SystemRescueCd
+  30. http://www.sysresccd.org/
+  31. https://help.ubuntu.com/community/Grub2
+  32. https://help.ubuntu.com/community/UsingUUID
+  33. https://help.ubuntu.com/community/HowtoPartition/MovingPartition
+  34. http://ubuntuforums.org/showthread.php?t=678629
+  35. http://en.wikibooks.org/wiki/How_To_Backup_Operating_Systems
+  36. https://help.ubuntu.com/community/CategorySystem
+  37. https://launchpad.net/~rs2009
+  38. https://help.ubuntu.com/community/License
+  39. https://help.ubuntu.com/community/WikiGuide

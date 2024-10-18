@@ -1,0 +1,118 @@
+= Kitty-Doc-Configuration =
+
+kitty.conf
+
+kitty is highly customizable, everything from keyboard shortcuts, to rendering frames-per-second. See below for an overview of all customization possibilities.
+
+You can open the config file within kitty by pressing ctrl+shift+f2 (⌘+, on macOS). A kitty.conf with commented default configurations and descriptions will be created if the file does not exist. You can reload the config file within kitty by pressing ctrl+shift+f5 (⌃+⌘+, on macOS) or sending kitty the SIGUSR1 signal with kill -SIGUSR1 $KITTY_PID. You can also display the current configuration by pressing ctrl+shift+f6 (⌥+⌘+, on macOS).
+
+kitty looks for a config file in the OS config directories (usually ~/.config/kitty/kitty.conf) but you can pass a specific path via the kitty --config option or use the KITTY_CONFIG_DIRECTORY environment variable. See kitty --config for full details.
+
+Comments can be added to the config file as lines starting with the # character. This works only if the # character is the first character in the line.
+
+Lines can be split by starting the next line with the \ character. All leading whitespace and the \ character are removed.
+
+You can include secondary config files via the include directive. If you use a relative path for include, it is resolved with respect to the location of the current config file. Note that environment variables are expanded, so ${USER}.conf becomes name.conf if USER=name. A special environment variable KITTY_OS is available, to detect the operating system. It is linux, macos or bsd. Also, you can use globinclude to include files matching a shell glob pattern and envinclude to
+include configuration from environment variables. For example:
+
+include other.conf
+# Include *.conf files from all subdirs of kitty.d inside the kitty config dir
+# globinclude kitty.d/**/*.conf
+# # Include the *contents* of all env vars starting with KITTY_CONF_
+# envinclude KITTY_CONF_*
+Note
+
+Syntax highlighting for kitty.conf in vim is available via vim-kitty.
+Fonts
+
+kitty has very powerful font management. You can configure individual font faces and even specify special fonts for particular characters.
+
+font_family, bold_font, italic_font, bold_italic_font
+
+font_family      monospace
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+You can specify different fonts for the bold/italic/bold-italic variants. To get a full list of supported fonts use the kitty +list-fonts command. By default they are derived automatically, by the OSes font system. When bold_font or bold_italic_font is set to auto on macOS, the priority of bold fonts is semi-bold, bold, heavy. Setting them manually is useful for font families that have many weight variants like Book, Medium, Thick, etc. For example:
+
+font_family      Operator Mono Book
+bold_font        Operator Mono Medium
+italic_font      Operator Mono Book Italic
+bold_italic_font Operator Mono Medium Italic
+
+font_size
+
+font_size 11.0
+
+Font size (in pts).
+
+force_ltr
+
+force_ltr no
+
+kitty does not support BIDI (bidirectional text), however, for RTL scripts, words are automatically displayed in RTL. That is to say, in an RTL script, the words “HELLO WORLD” display in kitty as “WORLD HELLO”, and if you try to select a substring of an RTL-shaped string, you will get the character that would be there had the string been LTR. For example, assuming the Hebrew word ירושלים, selecting the character that on the screen appears to be ם actually writes into the
+selection buffer the character י. kitty’s default behavior is useful in conjunction with a filter to reverse the word order, however, if you wish to manipulate RTL glyphs, it can be very challenging to work with, so this option is provided to turn it off. Furthermore, this option can be used with the command line program GNU FriBidi to get BIDI support, because it will force kitty to always treat the text as LTR, which FriBidi expects for terminals.
+
+symbol_map
+
+Has no default values. Example values are shown below:
+
+symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
+
+Map the specified Unicode codepoints to a particular font. Useful if you need special rendering for sthe cell background and foreground colors have very low contrast. Note that some themes set this value, so if you want to ovetext into the terminal. The supported paste actions are:
+
+quote-urls-at-prompt:
+
+    If the text being pasted is a URL and the cursor is at a shell prompt, automatically quote the URL (needs shell_integration).
+	replace-dangerous-control-codes
+
+	    Replace dangerous control codes from pasted text, without confirmation.
+		replace-newline
+
+		    Replace the newline character from pasted text, without confirmation.
+			confirm:
+
+			    Confirm the paste_selection
+				mouse_map shift+middle press grabbed discard_event
+
+				Start selecting text even when grabbed
+
+				mouse_map shift+left press ungrabbed,grabbed mouse_selection normal
+
+				Start selecting text in a rectangle even when grabbed
+
+				mouse_map ctrl+shift+alt+left press ungrabbed,grabbed mouse_selection rectangle
+
+				Select a word even when grabbed
+
+				mouse_map shift+left doublepress ungrabbed,grabbed mouse_selection word
+
+				Select a line even when grabbed
+
+				mouse_map shift+left triplepress ungrabbed,grabbed mouse_selection line
+
+				Select line from point even when grabbed
+
+				mouse_map ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point
+
+				Select from the clicked point to the end of the line even when grabbed. If you would like to select the word at the point and then extend to the rest of the line, change line_from_point to word_and_line_from_point.
+
+				Extend the current selection even when grabbed
+
+				mouse_map shift+right press ungrabbed,grabbed mouse_selection extend
+
+				Show clicked command output in pager
+
+				mouse_map ctrl+shift+right press ungrabbed terpreted relative to the kitty config directory. The logo is dkitty users.
+				hidden
+
+				    The tab bar is hidden. If you use thistive_tab_foreground   #000
+					active_tab_background   #eee
+					active_How much to dim text that has the DIM/FAINT attribute set. One play P3 color space, which will result in over saturated (brighh --program -
+
+					Select a path/filename and insert it into the terminal. Useful, for instance to run git commands on a filename output from a previous git command.
+
+					Open selected path
+
+					map ct

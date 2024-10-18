@@ -1,0 +1,50 @@
+=inst4.sh=
+
+#!/bin/bash
+
+menu=("vimwiki|mkdir /home/batan/.config/nvim/pack/vendor/start/vimwiki &&  git clone https://github.com/vimwiki/vimwiki.git /home/batan/.config/nvim/pack/vendor/start/vimwiki"
+"calendar |mkdir /home/batan/.config/nvim/pack/vendor/start/calendar &&  git clone https://github.com/itchyny/calendar.vim.git /home/batan/.config/nvim/pack/vendor/start/calendar"
+"taskwiki|mkdir /home/batan/.config/nvim/pack/vendor/start/taskwiki &&  git clone https://github.com/tools-life/taskwiki.git /home/batan/.config/nvim/pack/vendor/start/taskwiki --branch dev"
+"tabular |mkdir /home/batan/.config/nvim/pack/vendor/start/tabular &&  git clone https://github.com/godlygeek/tabular.git /home/batan/.config/nvim/pack/vendor/start/tabular"
+"calendar-vim |mkdir /home/batan/.config/nvim/pack/vendor/start/calendar-vim &&  git clone https://github.com/mattn/calendar-vim.git /home/batan/.config/nvim/pack/vendor/start/calendar-vim"
+"tagbar |mkdir /home/batan/.config/nvim/pack/vendor/start/tagbar &&  git clone https://github.com/majutsushi/tagbar /home/batan/.config/nvim/pack/vendor/start/tagbar"
+"vim-plugin-AnsiEsc |mkdir /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc &&  git clone https://github.com/powerman/vim-plugin-AnsiEsc /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc"
+"table-mode |mkdir /home/batan/.config/nvim/pack/vendor/start/table-mode &&  git clone https://github.com/dhruvasagar/vim-table-mode.git /home/batan/.config/nvim/pack/vendor/start/table-mode"
+"deoplete |mkdir /home/batan/.config/nvim/pack/vendor/start/deoplete &&  git clone https://github.com/Shougo/deoplete.nvim.git /home/batan/.config/nvim/pack/vendor/start/deoplete"
+"emmet-vim |mkdir /home/batan/.config/nvim/pack/vendor/start/emmet-vim &&  git clone https://github.com/mattn/emmet-vim.git /home/batan/.config/nvim/pack/vendor/start/emmet-vim"
+"ale |mkdir /home/batan/.config/nvim/pack/vendor/start/ale &&  git clone https://github.com/dense-analysis/ale.git /home/batan/.config/nvim/pack/vendor/start/ale"
+"HTML5-vim |mkdir /home/batan/.config/nvim/pack/vendor/start/html5-vim &&  git clone https://github.com/othree/html5.vim.git /home/batan/.config/nvim/pack/vendor/start/html5.vim"
+"Surround-Vim |mkdir /home/batan/.config/nvim/pack/vendor/start/surround-vim &&  git clone https://github.com/tpope/vim-surround.git /home/batan/.config/nvim/pack/vendor/start/surround-vim"
+"Speedread| git clone https://github.com/pasky/speedread.git"
+"Shalarm | git clone https://github.com/jahendrie/shalarm.git"
+"Vimix-Themes | git clone https://github.com/vinceliuice/vimix-gtk-themes.git"
+"Vimix-Icon-Themes |mkdir /home/batan/.config/nvim/pack/vendor/start/ &&   git clone https://github.com/vinceliuice/vimix-icon-theme.git"
+"Vimix-Icons| git clone https://github.com/vinceliuice/Graphite-gtk-theme.git"
+"Awsom-Vim-Colo| mkdir /home/batan/.config/nvim/pack/vendor/start/awsome-vim-colorschemes &&  git clone https://github.com/rafi/awesome-vim-colorschemes.git /home/batan/.config/nvim/pack/vendor/start/awsome-vim-colorschemes -y")
+
+
+yad_opts=( --form
+           --title="Software Installer"
+           --text="Install Software"
+           --image="logo.png"
+           --button="Install" --button="Exit" )
+
+for m in "${menu[@]}"
+do
+  yad_opts+=( --field="${m%|*}:CHK" )
+done
+
+IFS='|' read -ra ans < <( yad "${yad_opts[@]}" )
+
+for i in "${!ans[@]}"
+do
+  if [[ ${ans[$i]} == TRUE ]]
+  then
+    m=${menu[$i]}
+    name=${m%|*}
+    cmd=${m#*|}
+    echo "selected: $name ($cmd)"
+    $cmd
+  fi
+done
+

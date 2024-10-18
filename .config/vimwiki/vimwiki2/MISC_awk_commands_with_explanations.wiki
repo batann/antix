@@ -1,0 +1,65 @@
+== MISC_awk_commands_with_explanations ==
+
+<code>ls -1 | awk 'NR==1 {print} NR==2 || NR==4 {print ""} NR==3 {print}'</code>
+Explanation:
+============
+ls -1: This lists the files in the current directory with one entry per line.
+|: This pipe symbol sends the output of ls -1 (list of files) to the awk command.
+awk 'NR==1 {print} NR==2 || NR==4 {print ""} NR==3 {print}': This is the awk command that processes the piped output. Here's a breakdown of what it does:
+NR: This variable in awk refers to the current record number (line number) being processed.
+NR==1 {print}: This part checks if the current line number is 1 (first line). If yes, it prints the line using the print statement. This will print the first file from the ls -1 output.
+NR==2 || NR==4 {print ""}: This part checks if the current line number is either 2 or 4. If yes, it prints an empty line using print "". This creates the empty rows you want.
+NR==3 {print}: This part checks if the current line number is 3 (third line). If yes, it prints the line using the print statement. This will print the second file from the ls -1 output.
+Output:
+=======
+The command will display the list of files with empty lines in the second and fourth positions, effectively showing only the first and third files each on a separate line.
+<code>ls -1 | awk '{printf("%-2s|%6s|%2s|%6s|\n", $0, "", $1, "")}'</code>
+Explanation:
+============
+ls -1: This remains the same, listing files with one entry per line.
+|: This pipe symbol continues to send the output to awk.
+awk '{printf("%-2s|%6s|%2s|%6s|\n", $0, "", $1, "")}': This is the awk command with printf for formatted output. Here's a breakdown:
+printf: This function allows formatted printing within awk.
+"%-2s|%6s|%2s|%6s|\n": This is the format string for printf. It defines how the output will be structured:
+%-2s: This prints the current line ($0) left-aligned within a width of 2 characters.
+|: This prints a literal pipe symbol (|).
+%6s: This prints 6 spaces.
+|: This prints another literal pipe symbol (|).
+%2s: This prints the first character of the current line ($1[0]) right-aligned within a width of 2 characters. (You can adjust this to %1s if you only want the first digit).
+|: This prints another literal pipe symbol (|).
+\n: This prints a newline character.
+"": This is used twice to print empty strings within the format.
+Output:
+=======
+	When <code>ls -1</code> yields the following output:
+<code>10
+20
+30
+40
+50
+60
+70
+80</code>
+	This command will display the following:
+<code>10|    |20|     |
+30|    |40|     |
+50|    |60|     |
+70|    |80|     |</code>
+	In order to limmit each row to 10 charachters each, minor adjustments
+are required:
+<code>ls -1 | awk '{printf("%-10s|%10s|%10s|%10s|\n", $0, "", $1, "")}'</code>
+
+Explanation:
+============
+	The changes are minimal:
+	%-10s: This modifies the width for the first field ($0) and filename printing to be 10 characters. It left-aligns the content within the 10-character space.
+%10s: This modifies the width for the empty spaces and the first character printing to be 10 characters. This ensures consistent spacing and truncation if filenames exceed 10 characters.
+	This command will display the following output:
+<code>10          |          |20          |     |
+30          |          |40          |     |
+50          |          |60          |     |
+70          |          |80          |     |</code>
+	Now, each field is limited to a maximum of 10 characters. Filenames exceeding 10 characters will be truncated, and empty spaces will fill the remaining width.
+
+
+

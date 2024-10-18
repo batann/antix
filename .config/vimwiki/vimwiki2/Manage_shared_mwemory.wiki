@@ -1,0 +1,4 @@
+ipcrm -M 12345
+
+man ipcrm
+

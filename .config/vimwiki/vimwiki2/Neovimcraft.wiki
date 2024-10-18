@@ -1,0 +1,6670 @@
+= Neovimcraft =
+
+_link below:_
+[[aa]]
+
+
+
+
+=== NvChad ===
+
+github
+stars 18,693
+issues 0
+created 2 years ago / updated yesterday
+Blazing fast Neovim config providing solid defaults and a beautiful UI,
+enhancing your neovim experience.
+pluginpreconfigured-configuration
+
+=== LunarVim ===
+
+github
+stars 15,546
+issues 78
+created 5 years ago / updated 5 days ago
+🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
+pluginpreconfigured-configuration
+
+=== telescope.nvim ===
+
+github
+stars 10,887
+issues 265
+created 3 years ago / updated yesterday
+Find, Filter, Preview, Pick. All lua, all the time.
+pluginfuzzy-finder
+
+=== AstroNvim ===
+
+github
+stars 10,173
+issues 3
+created 2 years ago / updated 22 hours ago
+AstroNvim is an aesthetic and feature-rich neovim config that is extensible and
+easy to use with a great set of plugins
+pluginpreconfigured-configuration
+
+=== nvim-lspconfig ===
+
+github
+stars 7,904
+issues 52
+created 4 years ago / updated 7 hours ago
+Quickstart configs for Nvim LSP
+pluginlspneovim-0.5
+
+=== nvim-treesitter ===
+
+github
+stars 7,433
+issues 297
+created 3 years ago / updated 3 hours ago
+Nvim Treesitter configurations and abstraction layer
+pluginsyntax
+
+=== LazyVim ===
+
+github
+stars 7,280
+issues 27
+created 7 months ago / updated 12 days ago
+Neovim config for the lazy
+pluginpreconfigured-configuration
+
+=== packer.nvim ===
+
+github
+stars 6,884
+issues 308
+created 6 years ago / updated 7 months ago
+A use-package inspired plugin manager for Neovim. Uses native packages,
+supports Luarocks dependencies, written in Lua, allows for expressive config
+pluginplugin-manager
+
+=== lazy.nvim ===
+
+github
+stars 6,511
+issues 22
+created 9 months ago / updated 12 days ago
+💤 A modern plugin manager for Neovim
+pluginplugin-manager
+
+=== kickstart.nvim ===
+
+github
+stars 6,487
+issues 3
+created last year / updated 17 hours ago
+A launch point for your personal nvim configuration
+pluginpreconfigured-configuration
+
+=== nvim-cmp ===
+
+github
+stars 5,678
+issues 149
+created 2 years ago / updated yesterday
+A completion plugin for neovim coded in Lua.
+plugincompletion
+
+=== nvim-lua-guide ===
+
+github
+stars 5,471
+issues 18
+created 3 years ago / updated 8 months ago
+A guide to using Lua in Neovim
+pluginneovim-lua-development
+
+=== nvim-tree.lua ===
+
+github
+stars 5,361
+issues 60
+created 4 years ago / updated 5 days ago
+A file explorer tree for neovim written in lua
+pluginfile-explorer
+
+=== markdown-preview.nvim ===
+
+github
+stars 5,085
+issues 195
+created 5 years ago / updated last year
+markdown preview plugin for (neo)vim
+pluginprogramming-languages-supportmarkdown-and-latex
+
+=== mason.nvim ===
+
+github
+stars 5,056
+issues 85
+created last year / updated 2 days ago
+Portable package manager for Neovim that runs everywhere Neovim runs. Easily
+install and manage LSP servers, DAP servers, linters, and formatters.
+pluginlspneovim-0.5lsp-installer
+
+=== neorg ===
+
+github
+stars 4,277
+issues 98
+created 2 years ago / updated 2 days ago
+Modernity meets insane extensibility. The future of organizing your life in
+Neovim.
+pluginnote-taking
+
+=== lualine.nvim ===
+
+github
+stars 4,175
+issues 131
+created 3 years ago / updated 8 days ago
+A blazing fast and easy to configure neovim statusline plugin written in pure
+lua.
+pluginbars-and-linesstatusline
+
+=== tokyonight.nvim ===
+
+github
+stars 3,975
+issues 39
+created 2 years ago / updated 29 days ago
+🏙 A clean, dark Neovim theme written in Lua, with support for lsp, treesitter
+and lots of plugins. Includes additional themes for Kitty, Alacritty, iTerm and
+Fish.
+plugincolorschemetreesitter-colorschemes
+
+=== nvim-dap ===
+
+github
+stars 3,675
+issues 30
+created 3 years ago / updated 10 days ago
+Debug Adapter Protocol client implementation for Neovim
+plugindebugging
+
+trouble.nvim
+
+github
+stars 3,482
+issues 95
+created 2 years ago / updated 13 days ago
+🚦 A pretty diagnostics, references, telescope results, quickfix and location
+list to help you solve all the trouble your code is causing.
+pluginlspneovim-0.5diagnostics
+
+gitsigns.nvim
+
+github
+stars 3,382
+issues 66
+created 3 years ago / updated 2 days ago
+Git integration for buffers
+plugingit
+
+which-key.nvim
+
+github
+stars 3,290
+issues 136
+created 2 years ago / updated 14 days ago
+💥 Create key bindings that stick. WhichKey is a lua plugin for Neovim 0.5 that
+displays a popup with possible keybindings of the command you started typing.
+pluginkeybinding
+
+leap.nvim
+
+github
+stars 3,273
+issues 30
+created last year / updated 19 days ago
+Neovim's answer to the mouse 🦘
+pluginmotion
+
+nvim
+
+github
+stars 3,175
+issues 3
+created 2 years ago / updated 20 hours ago
+🍨 Soothing pastel theme for (Neo)vim
+plugincolorschemetreesitter-colorschemes
+
+coq_nvim
+
+github
+stars 3,103
+issues 140
+created 3 years ago / updated 5 days ago
+Fast as FUCK nvim completion. SQLite, concurrent scheduler, hundreds of hours
+of optimization.
+plugincompletion
+
+harpoon
+
+github
+stars 3,061
+issues 116
+created 3 years ago / updated 2 months ago
+null
+pluginmarks
+
+vim-sneak
+
+github
+stars 3,017
+issues 20
+created 10 years ago / updated 30 days ago
+The missing motion for Vim :athletic_shoe:
+pluginmotion
+
+indent-blankline.nvim
+
+github
+stars 2,966
+issues 46
+created 3 years ago / updated last month
+Indent guides for Neovim
+pluginformattingindent
+
+lspsaga.nvim
+
+github
+stars 2,950
+issues 1
+created 3 years ago / updated 19 minutes ago
+improve neovim lsp experience
+pluginlspneovim-0.5
+
+nvim-toggleterm.lua
+
+github
+stars 2,865
+issues 31
+created 3 years ago / updated 8 days ago
+A neovim lua plugin to help easily manage multiple terminal windows
+pluginterminal-integration
+
+kanagawa.nvim
+
+github
+stars 2,717
+issues 29
+created 2 years ago / updated 2 months ago
+NeoVim dark colorscheme inspired by the colors of the famous painting by
+Katsushika Hokusai.
+plugincolorschemetreesitter-colorschemes
+
+noice.nvim
+
+github
+stars 2,645
+issues 34
+created 11 months ago / updated 17 days ago
+💥 Highly experimental plugin that completely replaces the UI for messages,
+cmdline and the popupmenu.
+pluginutility
+
+Comment.nvim
+
+github
+stars 2,622
+issues 18
+created 2 years ago / updated 4 days ago
+:brain: :muscle: // Smart and powerful comment plugin for neovim. Supports
+treesitter, dot repeat, left-right/up-down motions, hooks, and more
+pluginediting-supportcomment
+
+bufferline.nvim
+
+github
+stars 2,592
+issues 28
+created 3 years ago / updated 3 hours ago
+A snazzy bufferline for Neovim
+pluginbars-and-linestabline
+
+mini.nvim
+
+github
+stars 2,569
+issues 9
+created 2 years ago / updated 3 days ago
+Library of 30+ independent Lua modules improving overall Neovim (version 0.7
+and higher) experience with minimal effort
+pluginsplit-and-window
+
+diffview.nvim
+
+github
+stars 2,519
+issues 26
+created 2 years ago / updated 8 days ago
+Single tabpage interface for easily cycling through diffs for all modified
+files for any git rev.
+plugingit
+
+neogit
+
+github
+stars 2,402
+issues 111
+created 3 years ago / updated 3 hours ago
+magit for neovim
+plugingit
+
+ChatGPT.nvim
+
+github
+stars 2,374
+issues 65
+created 8 months ago / updated 5 hours ago
+ChatGPT Neovim Plugin: Effortless Natural Language Generation with OpenAI's
+ChatGPT API
+pluginai
+
+orgmode
+
+github
+stars 2,315
+issues 128
+created 2 years ago / updated 17 days ago
+Orgmode clone written in Lua for Neovim 0.8+.
+pluginnote-taking
+
+nightfox.nvim
+
+github
+stars 2,294
+issues 14
+created 2 years ago / updated 11 days ago
+🦊A highly customizable theme for vim and neovim with support for lsp,
+treesitter and a variety of plugins.
+plugincolorschemetreesitter-colorschemes
+
+hop.nvim
+
+github
+stars 2,269
+issues 79
+created 3 years ago / updated 3 months ago
+Neovim motions on speed!
+pluginmotion
+
+nvim-notify
+
+github
+stars 2,257
+issues 34
+created 2 years ago / updated 2 months ago
+A fancy, configurable, notification manager for NeoVim
+pluginutility
+
+nvim-autopairs
+
+github
+stars 2,239
+issues 17
+created 3 years ago / updated 28 days ago
+autopairs for neovim written by lua
+pluginediting-support
+
+LuaSnip
+
+github
+stars 2,207
+issues 57
+created 2 years ago / updated 7 days ago
+Snippet Engine for Neovim written in Lua.
+pluginsnippet
+
+everforest
+
+github
+stars 2,036
+issues 3
+created 4 years ago / updated 4 days ago
+🌲 Comfortable & Pleasant Color Scheme for Vim
+plugincolorschemetreesitter-colorschemes
+
+todo-comments.nvim
+
+github
+stars 1,973
+issues 56
+created 2 years ago / updated 14 days ago
+✅ Highlight, list and search todo comments in your projects
+pluginediting-supportcomment
+
+rust-tools.nvim
+
+github
+stars 1,932
+issues 106
+created 2 years ago / updated last month
+Tools for better development in rust using neovim's builtin lsp
+plugincompletion
+
+nvim-surround
+
+github
+stars 1,904
+issues 12
+created last year / updated 6 days ago
+Add/change/delete surrounding delimiter pairs with ease. Written with :heart:
+in Lua.
+pluginsyntax
+
+neo-tree.nvim
+
+github
+stars 1,895
+issues 119
+created 2 years ago / updated 4 days ago
+Neovim plugin to manage the file system and other tree like structures.
+pluginfile-explorer
+
+refactoring.nvim
+
+github
+stars 1,833
+issues 22
+created 2 years ago / updated 16 days ago
+The Refactoring library based off the Refactoring book by Martin Fowler
+treesitter-basedprogramming-languages-supportediting-support
+
+plenary.nvim
+
+github
+stars 1,819
+issues 109
+created 3 years ago / updated 25 days ago
+plenary: full; complete; entire; absolute; unqualified. All the lua functions I
+don't want to write twice.
+pluginneovim-lua-development
+
+neoformat
+
+github
+stars 1,816
+issues 123
+created 7 years ago / updated 8 days ago
+:sparkles: A (Neo)vim plugin for formatting code.
+pluginformatting
+
+vim-be-good
+
+github
+stars 1,792
+issues 39
+created 3 years ago / updated 9 months ago
+vim-be-good is a nvim plugin designed to make you better at Vim Movements.
+plugingame
+
+barbar.nvim
+
+github
+stars 1,746
+issues 22
+created 3 years ago / updated last month
+The neovim tabline plugin.
+pluginbars-and-linestabline
+
+github-nvim-theme
+
+github
+stars 1,735
+issues 7
+created 2 years ago / updated 3 days ago
+Github's Neovim themes
+plugincolorschemetreesitter-colorschemes
+
+vim-illuminate
+
+github
+stars 1,691
+issues 4
+created 5 years ago / updated 10 days ago
+illuminate.vim - (Neo)Vim plugin for automatically highlighting other uses of
+the word under the cursor using either LSP, Tree-sitter, or regex matching.
+pluginbars-and-linescursorline
+
+octo.nvim
+
+github
+stars 1,668
+issues 37
+created 3 years ago / updated last month
+Edit and review GitHub issues and pull requests from the comfort of your
+favorite editor
+plugingitgithub
+
+dashboard-nvim
+
+github
+stars 1,646
+issues 18
+created 3 years ago / updated 16 days ago
+vim dashboard
+pluginstartup
+
+nvim-treesitter-context
+
+github
+stars 1,641
+issues 24
+created 3 years ago / updated 8 days ago
+Show code context
+pluginediting-support
+
+symbols-outline.nvim
+
+github
+stars 1,632
+issues 92
+created 2 years ago / updated 6 months ago
+A tree like view for symbols in Neovim using the Language Server Protocol.
+Supports all your favourite languages.
+pluginlspneovim-0.5
+
+nvim-dap-ui
+
+github
+stars 1,627
+issues 30
+created 2 years ago / updated 28 days ago
+A UI for nvim-dap
+plugindebugging
+
+lsp_signature.nvim
+
+github
+stars 1,586
+issues 51
+created 2 years ago / updated 17 days ago
+LSP signature hint as you type
+pluginlspneovim-0.5
+
+lightspeed.nvim
+
+github
+stars 1,555
+issues 26
+created 2 years ago / updated 10 months ago
+🌌 Next-generation motion plugin using incremental input processing, allowing
+for unparalleled speed with minimal interruptions (predecessor of leap.nvim)
+pluginmotion
+
+chadtree
+
+github
+stars 1,530
+issues 91
+created 3 years ago / updated 3 days ago
+File manager for Neovim. Better than NERDTree.
+pluginfile-explorer
+
+neotest
+
+github
+stars 1,463
+issues 38
+created 2 years ago / updated 18 days ago
+An extensible framework for interacting with tests within NeoVim.
+plugintest
+
+cellular-automaton.nvim
+
+github
+stars 1,453
+issues 11
+created 9 months ago / updated 6 months ago
+A useless plugin that might help you cope with stubbornly broken tests or
+overall lack of sense in life. It lets you execute aesthetically pleasing,
+cellular automaton animations based on the content of neovim buffer.
+plugingame
+
+nvim-ufo
+
+github
+stars 1,422
+issues 15
+created last year / updated 5 days ago
+Not UFO in the sky, but an ultra fold in Neovim.
+pluginutility
+
+conjure
+
+github
+stars 1,412
+issues 59
+created 5 years ago / updated 7 days ago
+Interactive evaluation for Neovim (Clojure, Fennel, Janet, Racket, Hy, MIT
+Scheme, Guile)
+pluginfennel
+
+gruvbox-material
+
+github
+stars 1,407
+issues 7
+created 4 years ago / updated 4 days ago
+Gruvbox with Material Palette
+plugincolorschemetreesitter-colorschemes
+
+nvim-web-devicons
+
+github
+stars 1,387
+issues 23
+created 3 years ago / updated 2 days ago
+lua `fork` of vim-web-devicons for neovim
+pluginicon
+
+nvim-treesitter-textobjects
+
+github
+stars 1,365
+issues 48
+created 3 years ago / updated 18 days ago
+null
+pluginsyntax
+
+neodev.nvim
+
+github
+stars 1,334
+issues 14
+created 2 years ago / updated yesterday
+💻 Neovim setup for init.lua and plugin development with full signature help,
+docs and completion for the nvim lua API.
+pluginneovim-lua-development
+
+copilot.lua
+
+github
+stars 1,320
+issues 6
+created last year / updated 22 hours ago
+Fully featured & enhanced replacement for copilot.vim complete with API for
+interacting with Github Copilot
+plugincompletion
+
+fidget.nvim
+
+github
+stars 1,286
+issues 34
+created 2 years ago / updated 24 days ago
+Standalone UI for nvim-lsp progress
+pluginlspneovim-0.5
+
+sonokai
+
+github
+stars 1,279
+issues 2
+created 3 years ago / updated 4 days ago
+High Contrast & Vivid Color Scheme based on Monokai Pro
+plugincolorschemetreesitter-colorschemes
+
+fzf-lua
+
+github
+stars 1,262
+issues 12
+created 2 years ago / updated 8 days ago
+Improved fzf.vim written in lua
+pluginfuzzy-finder
+
+vim
+
+github
+stars 1,251
+issues 9
+created 7 years ago / updated 2 months ago
+🧛🏻‍♂️ Dark theme for Vim
+plugincolorschemetreesitter-colorschemes
+
+nvim-bqf
+
+github
+stars 1,249
+issues 10
+created 3 years ago / updated 5 days ago
+Better quickfix window in Neovim, polish old quickfix window.
+plugindebuggingquickfix
+
+neovim
+
+github
+stars 1,208
+issues 3
+created 2 years ago / updated 14 days ago
+Soho vibes for Neovim
+plugincolorschemetreesitter-colorschemes
+
+go.nvim
+
+github
+stars 1,203
+issues 35
+created 2 years ago / updated 3 days ago
+A feature-rich Go development plugin, leveraging gopls, treesitter AST, Dap,
+and various Go tools to enhance the development experience.
+pluginprogramming-languages-supportgolang
+
+alpha-nvim
+
+github
+stars 1,197
+issues 25
+created 2 years ago / updated 26 days ago
+a lua powered greeter like vim-startify / dashboard-nvim
+pluginstartup
+
+nvim-spectre
+
+github
+stars 1,186
+issues 13
+created 2 years ago / updated 4 days ago
+Find the enemy and replace them with dark power.
+pluginsearch
+
+gruvbox.nvim
+
+github
+stars 1,158
+issues 10
+created 3 years ago / updated 8 days ago
+Lua port of the most famous vim colorscheme
+plugincolorschemelua-colorscheme
+
+sniprun
+
+github
+stars 1,149
+issues 7
+created 3 years ago / updated 13 days ago
+A neovim plugin to run lines/blocs of code (independently of the rest of the
+file), supporting multiples languages
+plugincode-runner
+
+dressing.nvim
+
+github
+stars 1,132
+issues 7
+created 2 years ago / updated 2 days ago
+Neovim plugin to improve the default vim.ui interfaces
+pluginutility
+
+vim-dirvish
+
+github
+stars 1,115
+issues 16
+created 8 years ago / updated 2 months ago
+Directory viewer for Vim :zap:
+file-explorerplugin
+
+lush.nvim
+
+github
+stars 1,104
+issues 12
+created 3 years ago / updated 8 days ago
+Create Neovim themes with real-time feedback, export anywhere.
+plugincolorschemecolorscheme-creation
+
+nvim-navic
+
+github
+stars 1,087
+issues 10
+created last year / updated 21 days ago
+Simple winbar/statusline plugin that shows your current code context
+pluginbars-and-lines
+
+flash.nvim
+
+github
+stars 1,086
+issues 19
+created 2 months ago / updated 20 days ago
+Navigate your code with search labels, enhanced character motions and
+Treesitter integration
+pluginmotion
+
+oceanic-next
+
+github
+stars 1,085
+issues 4
+created 8 years ago / updated 3 months ago
+Oceanic Next theme for neovim
+plugincolorschemetreesitter-colorschemes
+
+onedark.nvim
+
+github
+stars 1,078
+issues 45
+created 2 years ago / updated 4 days ago
+One dark and light colorscheme for neovim >= 0.5.0 written in lua based on
+Atom's One Dark and Light theme. Additionally, it comes with 5 color variant
+styles
+plugincolorschemetreesitter-colorschemes
+
+wilder.nvim
+
+github
+stars 1,074
+issues 47
+created 5 years ago / updated 12 months ago
+A more adventurous wildmenu
+plugincommand-line
+
+navigator.lua
+
+github
+stars 1,065
+issues 13
+created 2 years ago / updated 17 days ago
+Code analysis & navigation plugin for Neovim. Navigate codes like a breeze🎐
+Exploring LSP and 🌲Treesitter symbols a piece of 🍰 Take control like a boss 🦍
+pluginlspneovim-0.5
+
+lspkind.nvim
+
+github
+stars 1,061
+issues 17
+created 3 years ago / updated 3 months ago
+vscode-like pictograms for neovim lsp completion items
+pluginlspneovim-0.5
+
+oil.nvim
+
+github
+stars 1,058
+issues 6
+created 8 months ago / updated 2 days ago
+Neovim file explorer: edit your filesystem like a buffer
+pluginfile-explorer
+
+instant.nvim
+
+github
+stars 1,053
+issues 9
+created 3 years ago / updated last year
+collaborative editing in Neovim using built-in capabilities
+pluginutility
+
+nui.nvim
+
+github
+stars 1,034
+issues 10
+created 2 years ago / updated 22 days ago
+UI Component Library for Neovim.
+pluginneovim-lua-development
+
+zen-mode.nvim
+
+github
+stars 1,023
+issues 30
+created 2 years ago / updated 3 months ago
+🧘 Distraction-free coding for Neovim
+pluginediting-support
+
+nvim-ts-autotag
+
+github
+stars 1,016
+issues 18
+created 2 years ago / updated 2 months ago
+Use treesitter to auto close and auto rename html tag
+pluginediting-support
+
+aerial.nvim
+
+github
+stars 1,007
+issues 13
+created 3 years ago / updated 18 hours ago
+Neovim plugin for a code outline window
+pluginlspneovim-0.5
+
+CosmicNvim
+
+github
+stars 981
+issues 3
+created 2 years ago / updated 3 months ago
+CosmicNvim is a lightweight and opinionated Neovim config for web development,
+specifically designed to provide a 💫 COSMIC programming experience!
+pluginpreconfigured-configuration
+
+glow.nvim
+
+github
+stars 977
+issues 3
+created 3 years ago / updated 14 days ago
+A markdown preview directly in your neovim.
+pluginprogramming-languages-supportmarkdown-and-latex
+
+nyoom.nvim
+
+github
+stars 960
+issues 17
+created 2 years ago / updated 2 months ago
+A Neovim framework and doom emacs alternative for the stubborn martian hacker.
+Powered by fennel and the oxocarbon theme
+pluginpreconfigured-configuration
+
+neoscroll.nvim
+
+github
+stars 956
+issues 20
+created 2 years ago / updated yesterday
+Smooth scrolling neovim plugin written in lua
+pluginscrolling
+
+project.nvim
+
+github
+stars 951
+issues 57
+created 2 years ago / updated 4 months ago
+The superior project management solution for neovim.
+pluginproject
+
+formatter.nvim
+
+github
+stars 938
+issues 46
+created 3 years ago / updated 29 days ago
+null
+pluginformatting
+
+doom-nvim
+
+github
+stars 926
+issues 30
+created 2 years ago / updated last month
+A Neovim configuration for the advanced martian hacker
+pluginpreconfigured-configuration
+
+obsidian.nvim
+
+github
+stars 913
+issues 34
+created last year / updated 4 days ago
+Neovim plugin for Obsidian, written in Lua
+pluginnote-taking
+
+telekasten.nvim
+
+github
+stars 904
+issues 51
+created 2 years ago / updated 4 hours ago
+A Neovim (lua) plugin for working with a markdown zettelkasten / wiki and
+mixing it with a journal, based on telescope.nvim
+pluginnote-taking
+
+distant.nvim
+
+github
+stars 892
+issues 25
+created 2 years ago / updated 18 days ago
+🚧 (Alpha stage software) Edit files, run programs, and work with LSP on a
+remote machine from the comfort of your local environment 🚧
+pluginremote-development
+
+neogen
+
+github
+stars 887
+issues 12
+created 2 years ago / updated 2 months ago
+A better annotation generator. Supports multiple languages and annotation
+conventions.
+pluginediting-supportcomment
+
+twilight.nvim
+
+github
+stars 883
+issues 16
+created 2 years ago / updated 3 months ago
+🌅 Twilight is a Lua plugin for Neovim 0.5 that dims inactive portions of the
+code you're editing using TreeSitter.
+plugincolor
+
+vim-code-dark
+
+github
+stars 866
+issues 15
+created 6 years ago / updated 24 days ago
+Dark color scheme for Vim and vim-airline, inspired by Dark+ in Visual Studio
+Code
+plugincolorschemetreesitter-colorschemes
+
+CodeArt
+
+github
+stars 858
+issues 7
+created 3 years ago / updated 3 months ago
+Use NeoVim as general purpose IDE
+pluginpreconfigured-configuration
+
+hydra.nvim
+
+github
+stars 855
+issues 40
+created last year / updated 6 months ago
+Create custom submodes and menus
+pluginkeybinding
+
+nvim-ts-context-commentstring
+
+github
+stars 852
+issues 5
+created 2 years ago / updated 15 days ago
+Neovim treesitter plugin for setting the commentstring based on the cursor
+location in a file.
+pluginediting-supportcomment
+
+TrueZen.nvim
+
+github
+stars 850
+issues 17
+created 2 years ago / updated 2 months ago
+🦝 Clean and elegant distraction-free writing for NeoVim
+pluginediting-support
+
+legendary.nvim
+
+github
+stars 843
+issues 10
+created 2 years ago / updated last month
+🗺️ A legend for your keymaps, commands, and autocmds, with which-key.nvim
+integration
+pluginkeybinding
+
+material.nvim
+
+github
+stars 809
+issues 2
+created 2 years ago / updated last month
+:trident: Material colorscheme for NeoVim written in Lua with built-in support
+for native LSP, TreeSitter and many more plugins
+plugincolorschemetreesitter-colorschemes
+
+auto-session
+
+github
+stars 806
+issues 28
+created 3 years ago / updated yesterday
+A small automated session manager for Neovim
+pluginsession
+
+rest.nvim
+
+github
+stars 804
+issues 52
+created 2 years ago / updated 26 days ago
+A fast Neovim http client written in Lua
+pluginprogramming-languages-supportweb-development
+
+lazygit.nvim
+
+github
+stars 780
+issues 25
+created 3 years ago / updated 4 days ago
+Plugin for calling lazygit from within neovim.
+plugingit
+
+venn.nvim
+
+github
+stars 779
+issues 0
+created 2 years ago / updated 9 months ago
+Draw ASCII diagrams in Neovim
+pluginnote-taking
+
+heirline.nvim
+
+github
+stars 758
+issues 9
+created 2 years ago / updated 18 days ago
+Heirline.nvim is a no-nonsense Neovim Statusline plugin designed around
+recursive inheritance to be exceptionally fast and versatile.
+pluginbars-and-linesstatusline
+
+edge
+
+github
+stars 754
+issues 2
+created 4 years ago / updated 4 days ago
+Clean & Elegant Color Scheme inspired by Atom One and Material
+plugincolorschemetreesitter-colorschemes
+
+iron.nvim
+
+github
+stars 748
+issues 48
+created 7 years ago / updated 29 days ago
+Interactive Repl Over Neovim
+plugincode-runner
+
+bob
+
+github
+stars 746
+issues 5
+created 2 years ago / updated 8 days ago
+A version manager for neovim
+externalversion-manager
+
+nvim-neoclip.lua
+
+github
+stars 741
+issues 14
+created 2 years ago / updated 3 months ago
+Clipboard manager neovim plugin with telescope integration
+pluginregister
+
+oxocarbon.nvim
+
+github
+stars 725
+issues 16
+created last year / updated 2 months ago
+A dark and light Neovim theme written in fennel, inspired by IBM Carbon.
+treesitter-colorschemescolorscheme
+
+nvim-lint
+
+github
+stars 711
+issues 16
+created 2 years ago / updated 8 days ago
+An asynchronous linter plugin for Neovim complementary to the built-in Language
+Server Protocol support.
+pluginlspneovim-0.5
+
+rnvimr
+
+github
+stars 702
+issues 6
+created 4 years ago / updated 5 days ago
+Make Ranger running in a floating window to communicate with Neovim via RPC
+pluginfile-explorer
+
+mind.nvim
+
+github
+stars 698
+issues 20
+created 2 years ago / updated 5 months ago
+The power of trees at your fingertips.
+pluginnote-taking
+
+CodeGPT.nvim
+
+github
+stars 685
+issues 0
+created 5 months ago / updated 3 months ago
+CodeGPT is a plugin for neovim that provides commands to interact with ChatGPT.
+plugincompletionediting-support
+
+nvim-ide
+
+github
+stars 685
+issues 18
+created 11 months ago / updated 3 months ago
+A full featured IDE layer for Neovim. Heavily inspired by VSCode.
+pluginpreconfigured-configuration
+
+nvim-lightbulb
+
+github
+stars 673
+issues 3
+created 3 years ago / updated 22 days ago
+VSCode 💡 for neovim's built-in LSP.
+pluginlspneovim-0.5
+
+nvim-jdtls
+
+github
+stars 673
+issues 4
+created 3 years ago / updated 10 days ago
+Extensions for the built-in LSP support in Neovim for eclipse.jdt.ls
+pluginlspneovim-0.5
+
+nvim-scrollbar
+
+github
+stars 660
+issues 18
+created 2 years ago / updated 3 months ago
+Extensible Neovim Scrollbar
+pluginscrollingscrollbar
+
+falcon
+
+github
+stars 657
+issues 16
+created 6 years ago / updated 5 months ago
+A colour scheme for terminals, Vim and friends.
+plugincolorschemetreesitter-colorschemes
+
+nord.nvim
+
+github
+stars 656
+issues 23
+created 2 years ago / updated 5 months ago
+Neovim theme based off of the Nord Color Palette, written in lua with tree
+sitter support
+plugincolorschemetreesitter-colorschemes
+
+vim-nightfly-colors
+
+github
+stars 646
+issues 0
+created 4 years ago / updated 2 days ago
+A dark midnight theme for modern Neovim & classic Vim
+plugincolorschemetreesitter-colorschemes
+
+vim-moonfly-colors
+
+github
+stars 644
+issues 0
+created 6 years ago / updated 2 days ago
+A dark charcoal theme for modern Neovim & classic Vim
+plugincolorschemetreesitter-colorschemes
+
+FTerm.nvim
+
+github
+stars 632
+issues 16
+created 3 years ago / updated 9 months ago
+:fire: No-nonsense floating terminal plugin for neovim :fire:
+pluginterminal-integration
+
+flutter-tools.nvim
+
+github
+stars 626
+issues 28
+created 3 years ago / updated 18 days ago
+Tools to help create flutter apps in neovim using the native lsp
+pluginprogramming-languages-support
+
+git-blame.nvim
+
+github
+stars 613
+issues 6
+created 3 years ago / updated last month
+Git Blame plugin for Neovim written in Lua
+plugingit
+
+nvim-gdb
+
+github
+stars 607
+issues 7
+created 6 years ago / updated 3 hours ago
+Neovim thin wrapper for GDB, LLDB, PDB/PDB++ and BashDB
+plugindebugging
+
+nvim-hlslens
+
+github
+stars 606
+issues 7
+created 3 years ago / updated 5 days ago
+Hlsearch Lens for Neovim
+pluginsearch
+
+presence.nvim
+
+github
+stars 605
+issues 50
+created 3 years ago / updated 6 months ago
+Discord Rich Presence for Neovim
+pluginmedia
+
+dial.nvim
+
+github
+stars 603
+issues 6
+created 3 years ago / updated last month
+enhanced increment/decrement plugin for Neovim.
+pluginediting-support
+
+nvim-remote-containers
+
+github
+stars 593
+issues 8
+created 3 years ago / updated 10 days ago
+Develop inside docker containers, just like VSCode
+pluginremote-development
+
+treesj
+
+github
+stars 592
+issues 0
+created 9 months ago / updated 5 days ago
+Neovim plugin for splitting/joining blocks of code
+pluginediting-support
+
+paq-nvim
+
+github
+stars 588
+issues 20
+created 3 years ago / updated 5 days ago
+🌚 Neovim package manager
+pluginplugin-manager
+
+lsp-status.nvim
+
+github
+stars 587
+issues 20
+created 3 years ago / updated last year
+Utility functions for getting diagnostic status and progress messages from LSP
+servers, for use in the Neovim statusline
+pluginlspneovim-0.5
+
+vim
+
+github
+stars 576
+issues 0
+created 3 years ago / updated 4 months ago
+An ambitious theme for vim
+plugincolorschemetreesitter-colorschemes
+
+goto-preview
+
+github
+stars 572
+issues 8
+created 2 years ago / updated 23 days ago
+A small Neovim plugin for previewing definitions using floating windows.
+pluginlspneovim-0.5
+
+git-conflict.nvim
+
+github
+stars 570
+issues 8
+created last year / updated 3 months ago
+A plugin to visualise and resolve merge conflicts in neovim
+plugingit
+
+aniseed
+
+github
+stars 565
+issues 8
+created 4 years ago / updated last month
+Neovim configuration and plugins in Fennel (Lisp compiled to Lua)
+pluginfennel
+
+tabout.nvim
+
+github
+stars 562
+issues 3
+created 2 years ago / updated 4 months ago
+tabout plugin for neovim
+pluginmotion
+
+crates.nvim
+
+github
+stars 562
+issues 8
+created 2 years ago / updated 3 days ago
+A neovim plugin that helps managing crates.io dependencies
+plugindependency-management
+
+nvim-code-action-menu
+
+github
+stars 558
+issues 21
+created 2 years ago / updated 8 months ago
+Pop-up menu for code actions to show meta-information and diff preview
+pluginlspneovim-0.5
+
+marks.nvim
+
+github
+stars 555
+issues 34
+created 2 years ago / updated 5 months ago
+A better user experience for viewing and interacting with Vim marks.
+pluginmarks
+
+onedarkpro.nvim
+
+github
+stars 554
+issues 1
+created 2 years ago / updated 17 days ago
+🎨 Atom's iconic One Dark theme, for Neovim. Fully customisable, with Treesitter
+and LSP semantic token support
+plugincolorschemetreesitter-colorschemes
+
+registers.nvim
+
+github
+stars 538
+issues 7
+created 2 years ago / updated 4 months ago
+📑 Neovim plugin to preview the contents of the registers
+pluginregister
+
+cheatsheet.nvim
+
+github
+stars 536
+issues 23
+created 2 years ago / updated 2 years ago
+A cheatsheet plugin for neovim with bundled cheatsheets for the editor,
+multiple vim plugins, nerd-fonts, regex, etc. with a Telescope fuzzy finder
+interface!
+pluginutility
+
+nvim-regexplainer
+
+github
+stars 531
+issues 4
+created last year / updated 8 days ago
+Describe the regexp under the cursor
+pluginediting-support
+
+kommentary
+
+github
+stars 529
+issues 6
+created 3 years ago / updated 7 months ago
+Neovim commenting plugin, written in lua.
+pluginediting-supportcomment
+
+focus.nvim
+
+github
+stars 523
+issues 11
+created 2 years ago / updated 17 days ago
+Auto-Focusing and Auto-Resizing Splits/Windows for Neovim written in Lua. A
+full suite of window management enhancements. Vim splits on steroids!
+pluginsplit-and-window
+
+overseer.nvim
+
+github
+stars 517
+issues 10
+created last year / updated 10 days ago
+A task runner and job management plugin for Neovim
+plugincode-runner
+
+nvim-transparent
+
+github
+stars 511
+issues 3
+created 2 years ago / updated 9 days ago
+Remove all background colors to make nvim transparent
+plugincolor
+
+vgit.nvim
+
+github
+stars 508
+issues 5
+created 2 years ago / updated 5 months ago
+Visual git plugin for Neovim
+plugingit
+
+colorbuddy.nvim
+
+github
+stars 506
+issues 16
+created 6 years ago / updated last year
+Your color buddy for making cool neovim color schemes
+plugincolorschemecolorscheme-creation
+
+nv-ide
+
+github
+stars 501
+issues 4
+created 4 years ago / updated 8 days ago
+Neovim custom configuration, oriented for full stack developers (rails, ruby,
+php, html, css, SCSS, javascript)
+pluginpreconfigured-configuration
+
+nvim-navbuddy
+
+github
+stars 500
+issues 11
+created 5 months ago / updated 11 days ago
+A simple popup display that provides breadcrumbs feature using LSP server
+pluginlspneovim-0.5
+
+yanky.nvim
+
+github
+stars 497
+issues 10
+created last year / updated 20 days ago
+Improved Yank and Put functionalities for Neovim
+pluginediting-support
+
+typescript.nvim
+
+github
+stars 497
+issues 14
+created last year / updated last month
+A Lua plugin, written in TypeScript, to write TypeScript (Lua optional).
+pluginlspneovim-0.5
+
+VapourNvim
+
+github
+stars 492
+issues 17
+created 2 years ago / updated last year
+A NeoVim config for THE ULTIMATE vim IDE-like experience.
+pluginpreconfigured-configuration
+
+ccc.nvim
+
+github
+stars 485
+issues 1
+created 11 months ago / updated 2 months ago
+Color picker and highlighter plugin for Neovim.
+plugincolor
+
+SchemaStore.nvim
+
+github
+stars 484
+issues 4
+created 2 years ago / updated 2 days ago
+🛍 JSON schemas for Neovim
+pluginlspneovim-0.5
+
+vscode.nvim
+
+github
+stars 480
+issues 31
+created 2 years ago / updated 3 days ago
+Neovim/Vim color scheme inspired by Dark+ and Light+ theme in Visual Studio
+Code
+plugincolorschemetreesitter-colorschemes
+
+barbecue.nvim
+
+github
+stars 480
+issues 3
+created last year / updated 3 months ago
+A VS Code like winbar for Neovim
+pluginbars-and-lines
+
+smart-splits.nvim
+
+github
+stars 473
+issues 5
+created last year / updated 2 months ago
+🧠 Smart, seamless, directional navigation and resizing of Neovim + terminal
+multiplexer splits. Supports tmux, Wezterm, and Kitty. Think about splits in
+terms of "up/down/left/right".
+split-and-window
+
+lsp-format.nvim
+
+github
+stars 472
+issues 14
+created 3 years ago / updated 9 months ago
+A wrapper around Neovims native LSP formatting.
+pluginformatting
+
+glance.nvim
+
+github
+stars 464
+issues 7
+created 9 months ago / updated 14 days ago
+A pretty window for previewing, navigating and editing your LSP locations
+pluginlspneovim-0.5
+
+nabla.nvim
+
+github
+stars 462
+issues 3
+created 3 years ago / updated 4 months ago
+take your scientific notes :pencil2: in Neovim
+pluginnote-taking
+
+numb.nvim
+
+github
+stars 460
+issues 1
+created 2 years ago / updated 5 months ago
+Peek lines just when you intend
+pluginediting-support
+
+dropbar.nvim
+
+github
+stars 459
+issues 6
+created 3 months ago / updated yesterday
+IDE-like breadcrumbs, out of the box
+pluginbars-and-lines
+
+melange-nvim
+
+github
+stars 459
+issues 8
+created 3 years ago / updated 3 days ago
+🗡️ Warm color scheme for Neovim and beyond
+plugincolorschemetreesitter-colorschemes
+
+zenbones.nvim
+
+github
+stars 454
+issues 8
+created 2 years ago / updated last month
+🪨 A collection of contrast-based Vim/Neovim colorschemes
+plugincolorschemetreesitter-colorschemes
+
+mkdnflow.nvim
+
+github
+stars 453
+issues 27
+created 2 years ago / updated last month
+Fluent navigation and management of markdown notebooks
+pluginnote-taking
+
+nvim-luapad
+
+github
+stars 449
+issues 2
+created 3 years ago / updated 8 months ago
+Interactive real time neovim scratchpad for embedded lua engine - type and
+watch!
+pluginneovim-lua-development
+
+tmux.nvim
+
+github
+stars 448
+issues 11
+created 2 years ago / updated 2 months ago
+tmux integration for nvim features pane movement and resizing from within nvim.
+pluginsplit-and-windowtmux
+
+iswap.nvim
+
+github
+stars 443
+issues 12
+created 2 years ago / updated 2 months ago
+Interactively select and swap function arguments, list elements, and much more.
+Powered by tree-sitter.
+pluginediting-support
+
+nvim-colorizer.lua
+
+github
+stars 440
+issues 22
+created 2 years ago / updated 5 months ago
+Maintained fork of the fastest Neovim colorizer
+plugincolor
+
+dracula.nvim
+
+github
+stars 439
+issues 14
+created 2 years ago / updated 13 days ago
+Dracula colorscheme for neovim written in Lua
+plugincolorschemetreesitter-colorschemes
+
+AutoSave.nvim
+
+github
+stars 439
+issues 25
+created 2 years ago / updated 9 months ago
+🧶 Automatically save your changes in NeoVim
+pluginediting-support
+
+gh.nvim
+
+github
+stars 432
+issues 20
+created last year / updated 4 months ago
+A fully featured GitHub integration for performing code reviews in Neovim.
+plugingitgithub
+
+nvimux
+
+github
+stars 429
+issues 4
+created 7 years ago / updated last year
+Neovim as a TMUX replacement
+pluginsplit-and-windowtmux
+
+incline.nvim
+
+github
+stars 426
+issues 9
+created last year / updated 10 days ago
+🎈 Floating statuslines for Neovim
+pluginbars-and-linesstatusline
+
+lsp-colors.nvim
+
+github
+stars 426
+issues 4
+created 2 years ago / updated 5 months ago
+🌈 Plugin that creates missing LSP diagnostics highlight groups for color
+schemes that don't yet support the Neovim 0.5 builtin LSP client.
+pluginlspneovim-0.5diagnostics
+
+Shade.nvim
+
+github
+stars 421
+issues 31
+created 2 years ago / updated 2 years ago
+An Nvim lua plugin that dims your inactive windows
+plugincolor
+
+nvim-lsputils
+
+github
+stars 417
+issues 16
+created 3 years ago / updated 2 years ago
+Better defaults for nvim-lsp actions
+pluginlspneovim-0.5
+
+nvim-comment
+
+github
+stars 417
+issues 9
+created 3 years ago / updated last year
+A comment toggler for Neovim, written in Lua
+pluginediting-supportcomment
+
+windows.nvim
+
+github
+stars 411
+issues 19
+created last year / updated 7 months ago
+Automatically expand width of the current window. Maximizes and restore it. And
+all this with nice animations!
+pluginsplit-and-window
+
+neoai.nvim
+
+github
+stars 410
+issues 19
+created 4 months ago / updated last month
+Neovim plugin for intracting with GPT models from OpenAI
+pluginediting-support
+
+gesture.nvim
+
+github
+stars 410
+issues 0
+created 5 years ago / updated 5 days ago
+Mouse gesture plugin for neovim
+pluginmouse
+
+nvim-scrollview
+
+github
+stars 407
+issues 7
+created 3 years ago / updated 4 days ago
+A Neovim plugin that displays interactive vertical scrollbars and signs.
+pluginscrollingscrollbar
+
+snap
+
+github
+stars 405
+issues 34
+created 2 years ago / updated last year
+A fast finder system for neovim.
+pluginfuzzy-finder
+
+windline.nvim
+
+github
+stars 405
+issues 0
+created 2 years ago / updated 11 days ago
+Animation statusline, floating window statusline. Use lua + luv make some wind
+pluginbars-and-linesstatusline
+
+peek.nvim
+
+github
+stars 404
+issues 21
+created 10 months ago / updated 4 months ago
+Markdown preview plugin for Neovim
+pluginprogramming-languages-supportmarkdown-and-latex
+
+onenord.nvim
+
+github
+stars 403
+issues 0
+created 2 years ago / updated 2 months ago
+🏔️ A Neovim theme that combines the Nord and Atom One Dark color palettes for a
+more vibrant programming experience.
+plugincolorschemetreesitter-colorschemes
+
+nvim-treesitter-textsubjects
+
+github
+stars 403
+issues 7
+created 2 years ago / updated 8 days ago
+Location and syntax aware text objects which *do what you mean*
+pluginsyntax
+
+dirbuf.nvim
+
+github
+stars 399
+issues 19
+created 3 years ago / updated 11 months ago
+A file manager for Neovim which lets you edit your filesystem like you edit
+text
+pluginfile-explorer
+
+syntax-tree-surfer
+
+github
+stars 399
+issues 3
+created last year / updated 13 days ago
+A plugin for Neovim that helps you surf through your document and move elements
+around using the nvim-treesitter API.
+pluginmotiontreesitter-based
+
+tabby.nvim
+
+github
+stars 398
+issues 6
+created 2 years ago / updated 3 months ago
+A declarative, highly configurable, and neovim style tabline plugin. Use your
+nvim tabs as a workspace multiplexer!
+pluginbars-and-linestabline
+
+neuron.nvim
+
+github
+stars 395
+issues 21
+created 3 years ago / updated last year
+Make neovim the best note taking application
+pluginnote-taking
+
+gitlinker.nvim
+
+github
+stars 390
+issues 31
+created 2 years ago / updated 6 months ago
+A lua neovim plugin to generate shareable file permalinks (with line ranges)
+for several git web frontend hosts. Inspired by tpope/vim-fugitive's :GBrowse
+plugingit
+
+better-escape.nvim
+
+github
+stars 389
+issues 3
+created 2 years ago / updated 3 months ago
+Escape from insert mode without delay when typing
+pluginkeybinding
+
+DAPInstall.nvim
+
+github
+stars 387
+issues 25
+created 2 years ago / updated last year
+🐞 Debug Adapter Protocol manager for Neovim
+plugindebugging
+
+pretty-fold.nvim
+
+github
+stars 382
+issues 7
+created 2 years ago / updated last year
+Foldtext customization in Neovim
+pluginediting-support
+
+specs.nvim
+
+github
+stars 382
+issues 18
+created 2 years ago / updated 11 months ago
+👓 A fast and lightweight Neovim lua plugin to keep an eye on where your cursor
+has jumped.
+pluginmotion
+
+sqlite.lua
+
+github
+stars 382
+issues 15
+created 3 years ago / updated 4 months ago
+SQLite LuaJIT binding with a very simple api.
+pluginneovim-lua-development
+
+nvim-base16
+
+github
+stars 382
+issues 6
+created 2 years ago / updated 19 days ago
+Neovim plugin for building a sync base16 colorscheme. Includes support for
+Treesitter and LSP highlight groups.
+plugincolorschemetreesitter-colorschemes
+
+bufdelete.nvim
+
+github
+stars 380
+issues 0
+created 2 years ago / updated last month
+Delete Neovim buffers without losing window layout
+pluginsplit-and-window
+
+code_runner.nvim
+
+github
+stars 379
+issues 14
+created 2 years ago / updated 3 months ago
+Neovim plugin.The best code runner you could have, it is like the one in vscode
+but with super powers, it manages projects like in intellij but without being
+slow
+plugincode-runner
+
+live-command.nvim
+
+github
+stars 379
+issues 5
+created last year / updated 2 months ago
+The easiest way to create previewable commands in Neovim.
+pluginediting-support
+
+cokeline.nvim
+
+github
+stars 374
+issues 4
+created 2 years ago / updated yesterday
+:nose: A Neovim bufferline for people with addictive personalities
+pluginbars-and-linestabline
+
+inc-rename.nvim
+
+github
+stars 372
+issues 2
+created last year / updated 2 months ago
+Incremental LSP renaming based on Neovim's command-preview feature.
+pluginlspneovim-0.5
+
+nvim-ts-hint-textobject
+
+github
+stars 371
+issues 6
+created 2 years ago / updated 6 months ago
+Region selection with hints on the AST nodes of a document powered by
+treesitter
+pluginmotiontreesitter-based
+
+winshift.nvim
+
+github
+stars 370
+issues 1
+created 2 years ago / updated 11 months ago
+Rearrange your windows with ease.
+pluginsplit-and-window
+
+neovim-session-manager
+
+github
+stars 363
+issues 11
+created 2 years ago / updated 21 days ago
+A simple wrapper around :mksession.
+pluginsession
+
+vimpeccable
+
+github
+stars 362
+issues 9
+created 3 years ago / updated 2 years ago
+Neovim plugin that allows you to easily map keys directly to lua code inside
+your init.lua
+pluginneovim-lua-development
+
+hlargs.nvim
+
+github
+stars 359
+issues 4
+created 2 years ago / updated last month
+Highlight arguments' definitions and usages, using Treesitter
+pluginsyntax
+
+litee.nvim
+
+github
+stars 355
+issues 11
+created 2 years ago / updated 8 months ago
+A framework for building Neovim plugins
+pluginlspneovim-0.5
+
+tokyodark.nvim
+
+github
+stars 353
+issues 0
+created 2 years ago / updated 11 days ago
+A clean dark theme written in lua for neovim.
+plugincolorschemetreesitter-colorschemes
+
+satellite.nvim
+
+github
+stars 351
+issues 6
+created last year / updated 11 days ago
+Decorate scrollbar for Neovim
+pluginscrollingscrollbar
+
+nvim-metals
+
+github
+stars 348
+issues 17
+created 3 years ago / updated 24 days ago
+A Metals plugin for Neovim
+pluginlspneovim-0.5
+
+zk-nvim
+
+github
+stars 345
+issues 1
+created 2 years ago / updated last month
+Neovim extension for zk
+pluginnote-taking
+
+nnn.nvim
+
+github
+stars 343
+issues 0
+created 2 years ago / updated 2 months ago
+File manager for Neovim powered by nnn.
+pluginfile-explorer
+
+substitute.nvim
+
+github
+stars 342
+issues 10
+created 2 years ago / updated 22 days ago
+Neovim plugin introducing a new operators motions to quickly replace and
+exchange text.
+pluginediting-support
+
+nvim-cursorline
+
+github
+stars 340
+issues 7
+created 3 years ago / updated last year
+A plugin for neovim that highlights cursor words and lines
+pluginbars-and-linescursorline
+
+popup.nvim
+
+github
+stars 327
+issues 10
+created 3 years ago / updated 2 years ago
+[WIP] An implementation of the Popup API from vim in Neovim. Hope to upstream
+when complete
+pluginneovim-lua-development
+
+vim-enfocado
+
+github
+stars 324
+issues 1
+created 2 years ago / updated 24 days ago
+How themes should be.
+tree-sitter-supported-colorscheme
+
+nordic.nvim
+
+github
+stars 317
+issues 10
+created 7 months ago / updated yesterday
+🌒 Nord for Neovim, but warmer and darker. Supports a variety of plugins and
+other platforms.
+plugincolorschemetreesitter-colorschemes
+
+lir.nvim
+
+github
+stars 317
+issues 8
+created 3 years ago / updated 30 days ago
+Neovim file explorer
+pluginfile-explorer
+
+statuscol.nvim
+
+github
+stars 316
+issues 1
+created 9 months ago / updated 2 months ago
+Status column plugin that provides a configurable 'statuscolumn' and click
+handlers.
+pluginbars-and-lines
+
+Navigator.nvim
+
+github
+stars 316
+issues 7
+created 2 years ago / updated 6 months ago
+:sparkles: Smoothly navigate between neovim and terminal multiplexer(s)
+:sparkles:
+pluginsplit-and-windowtmux
+
+nvim_context_vt
+
+github
+stars 315
+issues 1
+created 2 years ago / updated last month
+Virtual text context for neovim treesitter
+pluginediting-support
+
+lvim
+
+github
+stars 315
+issues 0
+created 2 years ago / updated 23 hours ago
+LVIM IDE is a modular Neovim configuration written in LUA with full
+customization. LSP support for 60+ languages. Debug support for c, cpp, dart,
+elixir, go, haskell, java, javascript/typescript, lua, php, python, ruby, rust.
+preconfigured-configuration
+
+nvim-dev-container
+
+github
+stars 312
+issues 10
+created last year / updated 2 days ago
+Neovim dev container support - Mirror of https://codeberg.org/esensar/
+nvim-dev-container
+pluginremote-development
+
+editorconfig.nvim
+
+github
+stars 312
+issues 0
+created 2 years ago / updated 7 months ago
+EditorConfig plugin for Neovim
+pluginformatting
+
+codewindow.nvim
+
+github
+stars 311
+issues 14
+created 10 months ago / updated 19 days ago
+null
+pluginscrollingscrollbar
+
+gruvbox-baby
+
+github
+stars 302
+issues 4
+created 2 years ago / updated last month
+Gruvbox theme for neovim with full 🎄TreeSitter support.
+plugincolorschemetreesitter-colorschemes
+
+autoclose.nvim
+
+github
+stars 302
+issues 2
+created 2 years ago / updated 4 days ago
+A minimalist Neovim plugin that auto pairs & closes brackets
+pluginediting-support
+
+zephyr-nvim
+
+github
+stars 300
+issues 1
+created 3 years ago / updated 7 months ago
+A dark neovim colorscheme written in lua
+plugincolorschemetreesitter-colorschemes
+
+nvim-lspfuzzy
+
+github
+stars 300
+issues 1
+created 3 years ago / updated last month
+A Neovim plugin to make the LSP client use FZF
+pluginlspneovim-0.5
+
+nvim-nonicons
+
+github
+stars 300
+issues 9
+created 2 years ago / updated 6 months ago
+Icon set using nonicons for neovim plugins and settings
+pluginicon
+
+startup.nvim
+
+github
+stars 299
+issues 7
+created 2 years ago / updated 5 months ago
+A highly configurable neovim startup screen
+pluginstartup
+
+pounce.nvim
+
+github
+stars 298
+issues 7
+created 2 years ago / updated 2 months ago
+Incremental fuzzy search motion plugin for Neovim
+pluginmotion
+
+ts-node-action
+
+github
+stars 295
+issues 8
+created 7 months ago / updated 13 days ago
+Neovim Plugin for running functions on nodes.
+pluginediting-support
+
+telescope-undo.nvim
+
+github
+stars 295
+issues 3
+created 8 months ago / updated 2 months ago
+A telescope extension to view and search your undo tree 🌴
+pluginediting-support
+
+hotpot.nvim
+
+github
+stars 295
+issues 7
+created 2 years ago / updated 8 hours ago
+:stew: Carl Weathers #1 Neovim Plugin.
+pluginfennel
+
+nvim-fzf
+
+github
+stars 294
+issues 1
+created 3 years ago / updated 17 days ago
+A Lua API for using fzf in neovim.
+pluginfuzzy-finder
+
+virtual-types.nvim
+
+github
+stars 293
+issues 2
+created 3 years ago / updated 4 months ago
+Neovim plugin that shows type annotations as virtual text
+pluginlspneovim-0.5
+
+cheovim
+
+github
+stars 293
+issues 8
+created 2 years ago / updated 10 days ago
+Neovim configuration switcher written in Lua. Inspired by chemacs.
+pluginplugin-manager
+
+monokai.nvim
+
+github
+stars 289
+issues 9
+created 2 years ago / updated 7 months ago
+Monokai theme for Neovim written in Lua.
+plugincolorschemetreesitter-colorschemes
+
+colorful-winsep.nvim
+
+github
+stars 288
+issues 2
+created 9 months ago / updated 2 months ago
+Make your nvim window separators colorful
+pluginsplit-and-window
+
+nvim-various-textobjs
+
+github
+stars 282
+issues 1
+created 8 months ago / updated yesterday
+Bundle of two dozen new text objects for Neovim.
+editing-supportkeybindingtext-object
+
+neomux
+
+github
+stars 282
+issues 2
+created 4 years ago / updated 4 months ago
+Control Neovim from shells running inside Neovim.
+pluginterminal-integration
+
+nvcode-color-schemes.vim
+
+github
+stars 281
+issues 25
+created 3 years ago / updated 2 years ago
+A bunch of generated colorschemes (treesitter supported)
+plugincolorschemetreesitter-colorschemes
+
+nvim-lastplace
+
+github
+stars 280
+issues 0
+created 2 years ago / updated 15 days ago
+A Lua rewrite of vim-lastplace
+pluginediting-support
+
+package-info.nvim
+
+github
+stars 280
+issues 19
+created 2 years ago / updated 4 months ago
+✍️ All the npm/yarn/pnpm commands I don't want to type
+plugindependency-management
+
+easypick.nvim
+
+github
+stars 278
+issues 1
+created last year / updated 14 days ago
+A neovim plugin that lets you easily create Telescope pickers from arbitrary
+console commands
+pluginfuzzy-finder
+
+staline.nvim
+
+github
+stars 278
+issues 1
+created 2 years ago / updated 4 days ago
+A modern lightweight statusline and bufferline plugin for neovim in lua. Mainly
+uses unicode symbols for showing info.
+pluginbars-and-linesstatusline
+
+colortils.nvim
+
+github
+stars 276
+issues 6
+created last year / updated 4 months ago
+Some color utils for neovim
+plugincolor
+
+renamer.nvim
+
+github
+stars 275
+issues 4
+created 2 years ago / updated 11 months ago
+VS Code-like renaming UI for Neovim, writen in Lua.
+pluginediting-support
+
+NeoComposer.nvim
+
+github
+stars 272
+issues 2
+created 4 months ago / updated 14 days ago
+Neovim plugin that simplifies macros, enhancing productivity with harmony.
+pluginkeybindingutility
+
+one-small-step-for-vimkind
+
+github
+stars 272
+issues 0
+created 2 years ago / updated last month
+Debug adapter for Neovim plugins
+pluginneovim-lua-development
+
+no-neck-pain.nvim
+
+github
+stars 272
+issues 9
+created 10 months ago / updated 2 months ago
+☕ Dead simple plugin to center the currently focused buffer to the middle of
+the screen.
+editing-support
+
+hardtime.nvim
+
+github
+stars 271
+issues 0
+created 4 months ago / updated 23 hours ago
+A Neovim plugin helping you establish good command workflow and habit
+pluginworkflow
+
+elixir-tools.nvim
+
+github
+stars 267
+issues 16
+created last year / updated yesterday
+Neovim plugin for Elixir
+pluginlsp
+
+nvim-FeMaco.lua
+
+github
+stars 266
+issues 6
+created last year / updated 3 months ago
+Catalyze your Fenced Markdown Code-block editing!
+pluginprogramming-languages-supportmarkdown-and-latex
+
+netman.nvim
+
+github
+stars 266
+issues 46
+created 2 years ago / updated 4 months ago
+Neovim (Lua powered) Network Resource Manager
+pluginremote-development
+
+persisted.nvim
+
+github
+stars 266
+issues 2
+created 2 years ago / updated 3 hours ago
+💾 Simple session management for Neovim with git branching, autoloading and
+Telescope support
+pluginsession
+
+telescope-command-palette.nvim
+
+github
+stars 264
+issues 6
+created 2 years ago / updated 4 months ago
+Create key-bindings and watch them with telescope :telescope:
+pluginkeybinding
+
+nlsp-settings.nvim
+
+github
+stars 264
+issues 13
+created 2 years ago / updated last month
+A plugin for setting Neovim LSP with JSON or YAML files
+pluginlspneovim-0.5
+
+haskell-tools.nvim
+
+github
+stars 263
+issues 15
+created 10 months ago / updated 5 days ago
+Supercharge your Haskell experience in neovim!
+pluginlspneovim-0.5
+
+cybu.nvim
+
+github
+stars 261
+issues 3
+created last year / updated 3 months ago
+Neovim plugin that offers context when cycling buffers in the form of a
+customizable notification window.
+pluginutility
+
+knap
+
+github
+stars 260
+issues 7
+created last year / updated 17 days ago
+Neovim plugin for creating live-updating-as-you-type previews of LaTeX,
+markdown, and other files in the viewer of your choice.
+pluginprogramming-languages-supportmarkdown-and-latex
+
+snippets.nvim
+
+github
+stars 260
+issues 18
+created 3 years ago / updated 3 years ago
+null
+pluginsnippet
+
+clipboard-image.nvim
+
+github
+stars 259
+issues 12
+created 3 years ago / updated 9 months ago
+Neovim Lua plugin to paste image from clipboard.
+pluginmedia
+
+JABS.nvim
+
+github
+stars 258
+issues 11
+created 2 years ago / updated 3 months ago
+Just Another Buffer Switcher for Neovim
+pluginutility
+
+nvim-spider
+
+github
+stars 256
+issues 5
+created 5 months ago / updated 9 days ago
+Use the w, e, b motions like a spider. Move by subwords and skip insignificant
+punctuation.
+pluginkeybindingmotionediting-support
+
+nvim-luadev
+
+github
+stars 255
+issues 2
+created 5 years ago / updated 5 months ago
+REPL/debug console for nvim lua plugins
+pluginneovim-lua-development
+
+cinnamon.nvim
+
+github
+stars 255
+issues 8
+created last year / updated 8 months ago
+Smooth scrolling for ANY movement command 🤯. A Neovim plugin written in Lua!
+pluginscrolling
+
+SmoothCursor.nvim
+
+github
+stars 255
+issues 2
+created 11 months ago / updated 5 months ago
+null
+pluginmotion
+
+aquarium-vim
+
+github
+stars 253
+issues 2
+created 2 years ago / updated 6 months ago
+🌊 Aquarium, a simple vibrant dark theme for vim 🗒
+plugincolorschemetreesitter-colorschemes
+
+muren.nvim
+
+github
+stars 252
+issues 12
+created 4 months ago / updated 2 months ago
+Multiple replacements in neovim
+pluginsearch
+
+HighStr.nvim
+
+github
+stars 251
+issues 9
+created 2 years ago / updated 10 months ago
+🦎 A NeoVim plugin for highlighting visual selections like in a normal document
+editor!
+pluginediting-support
+
+guess-indent.nvim
+
+github
+stars 250
+issues 8
+created last year / updated 4 months ago
+Automatic indentation style detection for Neovim
+pluginformattingindent
+
+nvim-peekup
+
+github
+stars 248
+issues 1
+created 2 years ago / updated 6 months ago
+👀 dynamically interact with vim registers
+pluginregister
+
+scrollbar.nvim
+
+github
+stars 248
+issues 9
+created 3 years ago / updated last year
+scrollbar for neovim
+pluginscrollingscrollbar
+
+nvim-jqx
+
+github
+stars 247
+issues 0
+created 2 years ago / updated 5 months ago
+Populate the quickfix with json entries
+pluginprogramming-languages-support
+
+nvim-snippy
+
+github
+stars 246
+issues 5
+created 2 years ago / updated 3 months ago
+Snippet plugin for Neovim written in Lua
+pluginsnippet
+
+possession.nvim
+
+github
+stars 243
+issues 8
+created last year / updated 2 months ago
+Flexible session management for Neovim.
+pluginsession
+
+flatten.nvim
+
+github
+stars 242
+issues 1
+created 5 months ago / updated yesterday
+Open files and command output from neovim terminals in your current neovim
+instance
+pluginterminal-integration
+
+key-menu.nvim
+
+github
+stars 239
+issues 9
+created last year / updated 9 months ago
+Key mapping hints in a floating window
+pluginkeybinding
+
+aurora
+
+github
+stars 239
+issues 1
+created 3 years ago / updated 5 months ago
+A vivid dark theme for (Neo)Vim. Optimized for treesitter, LSP.
+plugincolorschemetreesitter-colorschemes
+
+mapx.nvim
+
+github
+stars 238
+issues 8
+created 2 years ago / updated last year
+🗺 A better way to create key mappings in Neovim
+pluginkeybinding
+
+themer.lua
+
+github
+stars 236
+issues 7
+created 2 years ago / updated 10 days ago
+A simple, minimal highlighter plugin for neovim
+plugincolorschemecolorscheme-creation
+
+command_center.nvim
+
+github
+stars 235
+issues 6
+created last year / updated 9 months ago
+Create and manage keybindings and commands in a more organized manner, and
+search them quickly through Telescope
+pluginkeybinding
+
+express_line.nvim
+
+github
+stars 234
+issues 15
+created 3 years ago / updated 2 years ago
+WIP: Statusline written in pure lua. Supports co-routines, functions and jobs.
+pluginbars-and-linesstatusline
+
+competitest.nvim
+
+github
+stars 232
+issues 7
+created 2 years ago / updated 14 days ago
+CompetiTest.nvim is a Neovim plugin to automate testcases management and
+checking for Competitive Programming
+plugingamecompetitive-programming
+
+nvim-miniyank
+
+github
+stars 229
+issues 11
+created 7 years ago / updated 4 years ago
+killring-alike plugin for neovim and vim 8 with no default mappings
+pluginutility
+
+color-picker.nvim
+
+github
+stars 229
+issues 6
+created last year / updated 3 months ago
+A powerful Neovim plugin that lets users choose & modify RGB/HSL/HEX colors.
+plugincolor
+
+tabline.nvim
+
+github
+stars 228
+issues 26
+created 2 years ago / updated 18 days ago
+A "buffer and tab" tabline for neovim
+pluginbars-and-linestabline
+
+nest.nvim
+
+github
+stars 225
+issues 10
+created 2 years ago / updated 2 years ago
+null
+pluginkeybinding
+
+portal.nvim
+
+github
+stars 222
+issues 3
+created 9 months ago / updated 5 months ago
+Neovim plugin for improved location list navigation
+pluginmotion
+
+pantran.nvim
+
+github
+stars 222
+issues 3
+created 2 years ago / updated 15 days ago
+Use your favorite machine translation engines without having to leave your
+favorite editor.
+pluginlanguage
+
+other.nvim
+
+github
+stars 217
+issues 4
+created last year / updated 9 days ago
+Open alternative files for the current buffer
+pluginutility
+
+fm-nvim
+
+github
+stars 215
+issues 8
+created 2 years ago / updated 10 months ago
+🗂 Neovim plugin that lets you use your favorite terminal file managers (and
+fuzzy finders) from within Neovim.
+pluginfile-explorer
+
+neoline.vim
+
+github
+stars 211
+issues 11
+created 3 years ago / updated 9 days ago
+Status Line for Neovim focused on beauty and performance ✅🖤💙💛
+pluginbars-and-linesstatusline
+
+nvim-highlite
+
+github
+stars 211
+issues 1
+created 3 years ago / updated 3 days ago
+A colorscheme generator that is "lite" on logic for the developer.
+plugincolorschemecolorscheme-creation
+
+neodim
+
+github
+stars 210
+issues 4
+created last year / updated 2 months ago
+Neovim plugin for dimming the highlights of unused functions, variables,
+parameters, and more
+pluginutility
+
+grapple.nvim
+
+github
+stars 207
+issues 13
+created 10 months ago / updated 5 months ago
+Neovim plugin for tagging important files
+pluginmarks
+
+nvim-lsp-setup
+
+github
+stars 206
+issues 2
+created last year / updated 22 days ago
+A simple wrapper for nvim-lspconfig and mason-lspconfig to easily setup LSP
+servers.
+pluginlspneovim-0.5
+
+comment-box.nvim
+
+github
+stars 206
+issues 3
+created 2 years ago / updated 22 days ago
+:sparkles: Clarify and beautify your comments using boxes and lines.
+pluginediting-supportcomment
+
+reach.nvim
+
+github
+stars 206
+issues 5
+created last year / updated 9 months ago
+Buffer, mark, tabpage, colorscheme switcher for Neovim
+pluginutility
+
+prettier.nvim
+
+github
+stars 204
+issues 3
+created 2 years ago / updated 2 months ago
+Prettier plugin for Neovim's built-in LSP client.
+pluginformatting
+
+yabs.nvim
+
+github
+stars 204
+issues 6
+created 2 years ago / updated last year
+Yet Another Build System/Code Runner for Neovim, written in lua
+plugincode-runner
+
+nvim
+
+github
+stars 203
+issues 1
+created last year / updated 14 days ago
+An excellent Neovim configuration, which is as powerful as Vscode, is lightning
+fast ⚡
+pluginpreconfigured-configuration
+
+telescope-zoxide
+
+github
+stars 201
+issues 7
+created 2 years ago / updated 6 months ago
+An extension for telescope.nvim that allows you operate zoxide within Neovim.
+pluginfuzzy-finder
+
+icon-picker.nvim
+
+github
+stars 199
+issues 2
+created last year / updated 3 months ago
+This is a Neovim plugin that helps you pick Nerd Font Icons, Symbols & Emojis
+pluginicon
+
+smart-open.nvim
+
+github
+stars 196
+issues 4
+created 11 months ago / updated 23 days ago
+Neovim plugin for fast file-finding
+fuzzy-finder
+
+advanced-git-search.nvim
+
+github
+stars 193
+issues 2
+created 5 months ago / updated 4 days ago
+Search your git history by commit message, content and author in Neovim
+plugingit
+
+poimandres.nvim
+
+github
+stars 193
+issues 4
+created last year / updated 22 days ago
+Poimandres colorscheme for Neovim written in Lua
+plugincolorschemetreesitter-colorschemes
+
+nvim-highlight-colors
+
+github
+stars 192
+issues 8
+created last year / updated 15 days ago
+Highlight colors for neovim
+plugincolor
+
+fzf-lsp.nvim
+
+github
+stars 192
+issues 8
+created 3 years ago / updated 6 months ago
+Enable the power of fzf fuzzy search for the neovim built in lsp
+pluginlspneovim-0.5
+
+nvim-coverage
+
+github
+stars 190
+issues 2
+created last year / updated 22 days ago
+Displays test coverage data in the sign column
+plugintest
+
+everblush.nvim
+
+github
+stars 183
+issues 1
+created last year / updated 3 months ago
+A port of everblush.vim but written in lua
+plugincolorschemetreesitter-colorschemes
+
+panvimdoc
+
+github
+stars 183
+issues 5
+created 2 years ago / updated 2 days ago
+Write documentation in pandoc markdown. Generate documentation in vimdoc.
+pluginprogramming-languages-supportmarkdown-and-latex
+
+nvim-gomove
+
+github
+stars 180
+issues 3
+created 2 years ago / updated last year
+A complete plugin for moving and duplicating blocks and lines, with complete
+fold handling, reindenting, and undoing in one go.
+pluginediting-support
+
+workspaces.nvim
+
+github
+stars 180
+issues 0
+created 2 years ago / updated 2 months ago
+a simple plugin to manage workspace directories in neovim
+pluginproject
+
+projections.nvim
+
+github
+stars 179
+issues 5
+created 9 months ago / updated last month
+A map to your filesystem
+pluginproject
+
+mkdir.nvim
+
+github
+stars 179
+issues 1
+created 2 years ago / updated last year
+This neovim plugin creates missing folders on save.
+pluginutility
+
+nvim-unception
+
+github
+stars 178
+issues 8
+created last year / updated 4 months ago
+A plugin that leverages Neovim's built-in RPC functionality to simplify opening
+files from within Neovim's terminal emulator without nesting sessions.
+pluginterminal-integration
+
+nvim-biscuits
+
+github
+stars 177
+issues 6
+created 2 years ago / updated 4 months ago
+A neovim port of Assorted Biscuits. Ends up with more supported languages too.
+pluginutility
+
+jester
+
+github
+stars 175
+issues 5
+created 2 years ago / updated 2 months ago
+A Neovim plugin to easily run and debug Jest tests
+plugintest
+
+trailblazer.nvim
+
+github
+stars 175
+issues 1
+created 7 months ago / updated 4 months ago
+TrailBlazer enables you to seemlessly move through important project marks as
+quickly and efficiently as possible to make your workflow blazingly fast ™.
+pluginmarks
+
+gkeep.nvim
+
+github
+stars 175
+issues 5
+created 2 years ago / updated 2 months ago
+Google Keep integration for Neovim
+pluginnote-taking
+
+bluloco.nvim
+
+github
+stars 175
+issues 19
+created 10 months ago / updated 12 days ago
+bluloco theme port for neovim
+tree-sitter-supported-colorscheme
+
+urlview.nvim
+
+github
+stars 174
+issues 1
+created 2 years ago / updated 3 months ago
+🔎 Neovim plugin for viewing all the URLs in a buffer
+pluginutility
+
+statusline.lua
+
+github
+stars 174
+issues 4
+created 3 years ago / updated 10 months ago
+A zero-config minimal statusline for neovim written in lua featuring awesome
+integrations and blazing speed!
+pluginbars-and-linesstatusline
+
+adwaita.nvim
+
+github
+stars 173
+issues 2
+created last year / updated 2 months ago
+Neovim colorscheme using Gnome Adwaita syntax
+plugincolorschemetreesitter-colorschemes
+
+nvim-blame-line
+
+github
+stars 173
+issues 6
+created 4 years ago / updated last year
+A small plugin that uses neovims virtual text to print git blame info at the
+end of the current line.
+plugingit
+
+Abstract
+
+github
+stars 171
+issues 2
+created 2 years ago / updated last month
+neovim as an IDE
+pluginpreconfigured-configuration
+
+roshnivim
+
+github
+stars 171
+issues 2
+created 2 years ago / updated last month
+neovim as an IDE
+pluginpreconfigured-configuration
+
+compiler.nvim
+
+github
+stars 170
+issues 1
+created 2 months ago / updated yesterday
+Neovim compiler for building and running your code without having to configure
+anything
+plugincode-runner
+
+import.nvim
+
+github
+stars 169
+issues 5
+created last year / updated 5 months ago
+A safe require override with niceties
+pluginneovim-lua-development
+
+doom-one.nvim
+
+github
+stars 169
+issues 8
+created 2 years ago / updated 8 months ago
+doom-emacs' doom-one Lua port for Neovim
+plugincolorschemetreesitter-colorschemes
+
+luatab.nvim
+
+github
+stars 168
+issues 5
+created 2 years ago / updated 2 years ago
+Tabline lua plugin for neovim
+pluginbars-and-linestabline
+
+nordic.nvim
+
+github
+stars 168
+issues 6
+created 3 years ago / updated 8 months ago
+A nord-esque colorscheme for neovim
+plugincolorschemetreesitter-colorschemes
+
+nvim-terminal.lua
+
+github
+stars 168
+issues 9
+created 4 years ago / updated 4 years ago
+A high performance filetype mode for Neovim which leverages conceal and
+highlights your buffer with the correct color codes.
+pluginterminal-integration
+
+feline.nvim
+
+github
+stars 167
+issues 0
+created 6 months ago / updated 2 months ago
+A minimal, stylish and customizable statusline, statuscolumn, and winbar for
+Neovim
+pluginbars-and-linesstatusline
+
+modicator.nvim
+
+github
+stars 165
+issues 3
+created 10 months ago / updated last month
+Cursor line number mode indicator
+pluginbars-and-linescursorline
+
+nvim-hardline
+
+github
+stars 165
+issues 1
+created 3 years ago / updated 24 days ago
+A simple Neovim statusline
+pluginbars-and-linesstatusline
+
+tangerine.nvim
+
+github
+stars 165
+issues 1
+created 2 years ago / updated 10 days ago
+🍊 Sweet Fennel integration for Neovim
+pluginfennel
+
+range-highlight.nvim
+
+github
+stars 165
+issues 9
+created 2 years ago / updated 2 years ago
+An extremely lightweight plugin (~ 120loc) that hightlights ranges you have
+entered in commandline.
+plugincolor
+
+blue-moon
+
+github
+stars 163
+issues 0
+created 3 years ago / updated 13 days ago
+A dark color scheme for Neovim derived from palenight and carbonight
+plugincolorschemetreesitter-colorschemes
+
+smartcolumn.nvim
+
+github
+stars 162
+issues 1
+created 6 months ago / updated 5 months ago
+A Neovim plugin hiding your colorcolumn when unneeded.
+pluginbars-and-lines
+
+search-replace.nvim
+
+github
+stars 159
+issues 3
+created 7 months ago / updated 7 months ago
+:monocle_face: A Neovim search and replace plugin that builds on the native
+search and replace experience.
+pluginsearch
+
+hypersonic.nvim
+
+github
+stars 159
+issues 0
+created 7 months ago / updated last month
+A Neovim plugin that provides an explanation for regular expressions.
+pluginediting-support
+
+telescope-tabs
+
+github
+stars 158
+issues 1
+created 10 months ago / updated 20 days ago
+Fly through your tabs in neovim ✈️
+pluginutility
+
+indent-o-matic
+
+github
+stars 157
+issues 0
+created 2 years ago / updated 2 months ago
+Dumb automatic fast indentation detection for Neovim written in Lua
+pluginformattingindent
+
+jaq-nvim
+
+github
+stars 156
+issues 10
+created 2 years ago / updated 10 months ago
+⚙️ Just Another Quickrun Plugin for Neovim in Lua
+plugincode-runner
+
+starry.nvim
+
+github
+stars 156
+issues 2
+created 2 years ago / updated 5 months ago
+A pack of modern nvim color schemes: material, moonlight, Dracula (blood),
+Monokai, Mariana, Emerald, earlysummer, middlenight_blue... Fully support
+Treesitter, LSP and a variety of plugins.
+plugincolorschemetreesitter-colorschemes
+
+image.nvim
+
+github
+stars 156
+issues 7
+created 2 years ago / updated 2 months ago
+🖼️ Image Viewer as ASCII Art for Neovim written in Lua
+pluginmedia
+
+diaglist.nvim
+
+github
+stars 155
+issues 5
+created 2 years ago / updated 11 months ago
+Live render workspace diagnostics in quickfix with current buf errors on top,
+buffer diagnostics in loclist
+pluginlspneovim-0.5diagnostics
+
+nvim-solarized-lua
+
+github
+stars 154
+issues 12
+created 2 years ago / updated 9 months ago
+solarized colorscheme in lua for nvim 0.5
+plugincolorschemetreesitter-colorschemes
+
+moonlight.nvim
+
+github
+stars 154
+issues 5
+created 2 years ago / updated 2 years ago
+Port of VSCode's Moonlight colorscheme for NeoVim written in Lua with built-in
+support for native LSP, TreeSitter and many more plugins
+plugincolorschemetreesitter-colorschemes
+
+galaxyline.nvim
+
+github
+stars 153
+issues 15
+created 2 years ago / updated 2 years ago
+neovim statusline plugin written in lua
+pluginbars-and-linesstatusline
+
+tsc.nvim
+
+github
+stars 152
+issues 4
+created 4 months ago / updated 9 days ago
+A Neovim plugin for seamless, asynchronous project-wide TypeScript
+type-checking using the TypeScript compiler (tsc)
+pluginprogramming-languages-support
+
+nvim-tetris
+
+github
+stars 150
+issues 4
+created 2 years ago / updated 2 years ago
+Bringing emacs' greatest feature to neovim - Tetris!
+plugingame
+
+nvim-plugin-template
+
+github
+stars 150
+issues 2
+created last year / updated 13 days ago
+A neovim plugin template for github repos
+externalboilerplate
+
+debugprint.nvim
+
+github
+stars 148
+issues 19
+created last year / updated 2 months ago
+Debugging in NeoVim the print() way!
+plugindebugging
+
+cosmic-ui
+
+github
+stars 146
+issues 1
+created 2 years ago / updated 7 months ago
+Cosmic-UI is a simple wrapper around specific vim functionality. Built in order
+to provide a quick and easy way to create a Cosmic UI experience with Neovim!
+pluginutility
+
+scnvim
+
+github
+stars 146
+issues 19
+created 5 years ago / updated last month
+Neovim frontend for SuperCollider.
+pluginmedia
+
+neon
+
+github
+stars 146
+issues 2
+created 2 years ago / updated 8 months ago
+Customizable coloscheme with dark and light options, vivid colors and easy on
+the eye.
+plugincolorschemetreesitter-colorschemes
+
+mellifluous.nvim
+
+github
+stars 146
+issues 0
+created last year / updated last month
+Pleasant and productive colorscheme for Neovim
+plugincolorschemetreesitter-colorschemes
+
+snippet-converter.nvim
+
+github
+stars 145
+issues 5
+created 2 years ago / updated 6 months ago
+Bundle snippets from multiple sources and convert them to your format of
+choice.
+pluginsnippet
+
+nvim-test
+
+github
+stars 144
+issues 19
+created 2 years ago / updated 3 months ago
+A Neovim wrapper for running tests
+plugintest
+
+gopher.nvim
+
+github
+stars 144
+issues 8
+created last year / updated 3 months ago
+Neovim plugin for make golang development easiest
+pluginprogramming-languages-supportgolang
+
+modus-theme-vim
+
+github
+stars 141
+issues 4
+created 3 years ago / updated 10 months ago
+Port of modus-themes in neovim
+plugincolorschemetreesitter-colorschemes
+
+carbon.nvim
+
+github
+stars 141
+issues 1
+created 2 years ago / updated 2 months ago
+The simple directory tree viewer for Neovim written in Lua.
+pluginfile-explorer
+
+toggletasks.nvim
+
+github
+stars 140
+issues 5
+created last year / updated 5 months ago
+Neovim task runner: JSON/YAML + toggleterm.nvim + telescope.nvim
+plugincode-runner
+
+sqls.nvim
+
+github
+stars 138
+issues 9
+created 3 years ago / updated 3 months ago
+Neovim plugin for sqls that leverages the built-in LSP client
+pluginprogramming-languages-support
+
+sad.nvim
+
+github
+stars 138
+issues 3
+created 2 years ago / updated 5 months ago
+Space Age seD in Neovim. A project-wide find and replace plugin for Neovim.
+pluginsearch
+
+deadcolumn.nvim
+
+github
+stars 137
+issues 3
+created 5 months ago / updated 2 months ago
+A neovim plugin that shows colorcolumn dynamically
+pluginbars-and-lines
+
+gist.nvim
+
+github
+stars 136
+issues 2
+created 5 months ago / updated 2 months ago
+Neovim plugin that allows you to create a Github Gist from the current file
+plugingistgitutility
+
+boo-colorscheme-nvim
+
+github
+stars 136
+issues 3
+created 3 years ago / updated 2 months ago
+Boo is a colorscheme for Neovim with handcrafted support for LSP, Tree-sitter.
+plugincolorschemetreesitter-colorschemes
+
+minimal.nvim
+
+github
+stars 136
+issues 1
+created last year / updated 9 months ago
+null
+plugincolorschemetreesitter-colorschemes
+
+nvim-genghis
+
+github
+stars 134
+issues 2
+created 9 months ago / updated 14 days ago
+Convenience file operations for neovim, written in lua.
+file-explorerutility
+
+cmake-tools.nvim
+
+github
+stars 134
+issues 4
+created last year / updated 4 hours ago
+CMake integration in Neovim
+plugincode-runner
+
+lean.nvim
+
+github
+stars 134
+issues 29
+created 3 years ago / updated 54 minutes ago
+neovim support for the Lean theorem prover
+pluginprogramming-languages-support
+
+calvera-dark.nvim
+
+github
+stars 133
+issues 3
+created 2 years ago / updated 2 years ago
+Calvera Dark Colorscheme for Neovim written in Lua with built-in support for
+native LSP, TreeSitter and many more plugins
+plugincolorschemetreesitter-colorschemes
+
+yaml.nvim
+
+github
+stars 132
+issues 1
+created 2 years ago / updated 30 days ago
+🍒 YAML toolkit for Neovim users
+pluginprogramming-languages-supportyaml
+
+rainbow-delimiters.nvim
+
+github
+stars 132
+issues 2
+created last month / updated 20 hours ago
+Rainbow delimiters for Neovim with Tree-sitter
+pluginediting-support
+
+auto-dark-mode.nvim
+
+github
+stars 131
+issues 1
+created 2 years ago / updated 9 days ago
+A Neovim plugin for macOS that automatically changes the editor appearance
+based on system settings.
+plugincolorschemecolorscheme-switchers
+
+buffer_manager.nvim
+
+github
+stars 131
+issues 0
+created last year / updated 23 days ago
+A simple plugin to easily manage Neovim buffers.
+pluginutility
+
+mdeval.nvim
+
+github
+stars 131
+issues 1
+created 2 years ago / updated 9 months ago
+Neovim plugin that evaluates code blocks inside documents
+pluginprogramming-languages-supportmarkdown-and-latex
+
+close-buffers.nvim
+
+github
+stars 131
+issues 8
+created 2 years ago / updated 2 years ago
+:bookmark_tabs: Delete multiple vim buffers based on different conditions
+pluginutility
+
+oh-lucy.nvim
+
+github
+stars 131
+issues 1
+created 9 months ago / updated 8 months ago
+Inspired by oh-lucy theme in vscodium, with few tweaks!
+plugincolorschemetreesitter-colorschemes
+
+swenv.nvim
+
+github
+stars 130
+issues 3
+created 11 months ago / updated 3 months ago
+Tiny plugin to quickly switch python virtual environments from within neovim
+without restarting.
+pluginprogramming-languages-support
+
+smart-pairs
+
+github
+stars 129
+issues 10
+created 2 years ago / updated last year
+Ultimate smart pairs written in lua!
+pluginediting-support
+
+guihua.lua
+
+github
+stars 128
+issues 1
+created 2 years ago / updated 17 days ago
+A GUI library for Neovim plugin developers
+pluginneovim-lua-development
+
+hlchunk.nvim
+
+github
+stars 128
+issues 1
+created 6 months ago / updated 9 hours ago
+This is the lua implementation of nvim-hlchunk, you can use this neovim plugin
+to highlight your indent line and the current chunk (context) your cursor
+stayed
+pluginformattingindent
+
+perfanno.nvim
+
+github
+stars 127
+issues 1
+created 2 years ago / updated 2 months ago
+NeoVim lua plugin that annotates source code with profiling information from
+perf or other profilers
+plugindebugging
+
+neosolarized.nvim
+
+github
+stars 126
+issues 3
+created 2 years ago / updated 8 days ago
+Truecolor solarized theme for neovim in Lua using colorbuddy
+plugincolorschemetreesitter-colorschemes
+
+lsp-lens.nvim
+
+github
+stars 126
+issues 5
+created 6 months ago / updated 27 days ago
+Neovim plugin for displaying references and difinition infos upon functions
+like JB's IDEA.
+pluginlspneovim-0.5
+
+vs-tasks.nvim
+
+github
+stars 125
+issues 5
+created 2 years ago / updated 2 months ago
+A telescope plugin that runs tasks similar to VS Code's task implementation.
+plugincode-runner
+
+mellow.nvim
+
+github
+stars 125
+issues 0
+created 10 months ago / updated last month
+A soothing dark color scheme for neovim and friends.
+plugincolorschemetreesitter-colorschemes
+
+.sea.nvim
+
+github
+stars 124
+issues 0
+created 6 years ago / updated 28 days ago
+21st-century Neovim configure. Mainly implemented by lua.
+pluginpreconfigured-configuration
+
+nvim-recorder
+
+github
+stars 122
+issues 1
+created 8 months ago / updated 12 days ago
+Enhance the usage of macros in Neovim.
+utilitykeybinding
+
+nvim-possession
+
+github
+stars 122
+issues 0
+created 7 months ago / updated last month
+📌 the no-nonsense session manager
+pluginsession
+
+yaml-companion.nvim
+
+github
+stars 121
+issues 4
+created last year / updated 5 months ago
+Get, set and autodetect YAML schemas in your buffers.
+pluginprogramming-languages-supportyaml
+
+NormalNvim
+
+github
+stars 120
+issues 1
+created 3 months ago / updated yesterday
+A normal NeoVim config
+pluginpreconfigured-configuration
+
+tree-climber.nvim
+
+github
+stars 117
+issues 0
+created last year / updated 10 months ago
+null
+pluginmotiontreesitter-based
+
+visual.nvim
+
+github
+stars 116
+issues 4
+created 25 days ago / updated 4 days ago
+First select, then edit. A helix/kakoune-like editing in neovim
+pluginediting-support
+
+term-edit.nvim
+
+github
+stars 116
+issues 7
+created 7 months ago / updated 12 days ago
+Allowing you to edit your command in the terminal just like any other buffers.
+pluginterminal-integration
+
+ultimate-autopair.nvim
+
+github
+stars 115
+issues 3
+created 6 months ago / updated 4 days ago
+A neovim autopair plugin designed to have all the features that an autopair
+plugin needs.
+pluginediting-support
+
+nvim-luaref
+
+github
+stars 115
+issues 0
+created 2 years ago / updated last year
+Add a vim :help reference for lua
+pluginneovim-lua-development
+
+commented.nvim
+
+github
+stars 115
+issues 4
+created 2 years ago / updated last year
+Neovim commenting plugin in Lua. Support operator, motions and more than 60
+languages! :fire:
+pluginediting-supportcomment
+
+bookmarks.nvim
+
+github
+stars 114
+issues 3
+created last year / updated 4 days ago
+Remember file locations and sort by time and frequency and support telescope.
+pluginutility
+
+nvim-cursorword
+
+github
+stars 114
+issues 0
+created 2 years ago / updated last year
+highlight the word under the cursor.
+pluginbars-and-linescursorline
+
+hbac.nvim
+
+github
+stars 113
+issues 1
+created 4 months ago / updated last month
+Heuristic buffer auto-close
+pluginutility
+
+nvim-early-retirement
+
+github
+stars 111
+issues 2
+created 4 months ago / updated 11 days ago
+Send buffers into early retirement by automatically closing them after x
+minutes of inactivity.
+pluginsplit-and-windowbuffer
+
+nvim-toggler
+
+github
+stars 111
+issues 1
+created 12 months ago / updated last month
+invert text in vim, purely with lua.
+pluginutility
+
+nvim-go
+
+github
+stars 110
+issues 2
+created 2 years ago / updated 4 months ago
+A minimal implementation of Golang development plugin for Neovim
+pluginprogramming-languages-supportgolang
+
+follow-md-links.nvim
+
+github
+stars 109
+issues 6
+created 2 years ago / updated 4 months ago
+Easily follow markdown links with this neovim plugin
+pluginprogramming-languages-supportmarkdown-and-latex
+
+nvim-terminal
+
+github
+stars 109
+issues 1
+created 3 years ago / updated last year
+A Lua-Neovim plugin that toggles a terminal
+pluginterminal-integration
+
+carbon-now.nvim
+
+github
+stars 108
+issues 1
+created last year / updated 16 days ago
+Create beautiful code snippets directly from your neovim terminal
+pluginsnippet
+
+cutlass.nvim
+
+github
+stars 108
+issues 1
+created 2 years ago / updated 3 months ago
+Plugin that adds a 'cut' operation separate from 'delete'
+pluginediting-support
+
+papis.nvim
+
+github
+stars 108
+issues 5
+created 10 months ago / updated 4 days ago
+Manage your bibliography from within your favourite editor
+pluginnote-taking
+
+nvim-revJ.lua
+
+github
+stars 107
+issues 5
+created 2 years ago / updated last year
+Nvim-plugin for doing the opposite of join-line (J) of arguments written in
+lua.
+pluginediting-support
+
+nii-nvim
+
+github
+stars 107
+issues 1
+created 2 years ago / updated 11 months ago
+A minimal neovim configuration
+preconfigured-configuration
+
+projectmgr.nvim
+
+github
+stars 106
+issues 0
+created last year / updated 4 months ago
+Quickly switch between projects and automate startup tasks.
+telescopesessionpluginutilityprojectstartup
+
+substrata.nvim
+
+github
+stars 106
+issues 1
+created 2 years ago / updated 10 months ago
+A cold, dark color scheme for Neovim
+plugincolorschemetreesitter-colorschemes
+
+sj.nvim
+
+github
+stars 106
+issues 0
+created 11 months ago / updated 5 days ago
+Search based navigation combined with quick jump features.
+pluginmotion
+
+reaper-keys
+
+github
+stars 104
+issues 2
+created 3 years ago / updated 2 years ago
+vim-bindings for Reaper
+pluginmedia
+
+FluoroMachine.nvim
+
+github
+stars 104
+issues 0
+created 11 months ago / updated last month
+Synthwave x Fluoromachine port for Neovim
+plugincolorschemetreesitter-colorschemes
+
+nvim-config-local
+
+github
+stars 103
+issues 2
+created 2 years ago / updated 2 months ago
+Secure load local config files for neovim
+pluginproject
+
+compiler-explorer.nvim
+
+github
+stars 102
+issues 1
+created 2 years ago / updated 2 months ago
+Run compilers and inspect assembly directly from Neovim with the help of https:
+//godbolt.org
+pluginmedia
+
+readline.nvim
+
+github
+stars 102
+issues 3
+created last year / updated 12 months ago
+Readline motions and deletions in Neovim
+pluginmotion
+
+sort.nvim
+
+github
+stars 102
+issues 1
+created 2 years ago / updated 4 months ago
+Sorting plugin for Neovim that supports line-wise and delimiter sorting.
+pluginediting-support
+
+sibling-swap.nvim
+
+github
+stars 102
+issues 0
+created 9 months ago / updated 5 days ago
+Neovim plugin for swaps closest siblings with Tree-Sitter
+pluginediting-support
+
+efmls-configs-nvim
+
+github
+stars 101
+issues 1
+created 2 years ago / updated 9 hours ago
+An unofficial collection of linters and formatters configured for
+efm-langserver to work with the builtin nvim-lsp
+pluginlspneovim-0.5
+
+one-nvim
+
+github
+stars 101
+issues 4
+created 3 years ago / updated 2 years ago
+Atom one theme
+plugincolorschemetreesitter-colorschemes
+
+gruvbuddy.nvim
+
+github
+stars 101
+issues 2
+created 3 years ago / updated 2 years ago
+Gruvbox colors using https://github.com/tjdevries/colorbuddy.vim
+plugincolorschemelua-colorscheme
+
+persistent-breakpoints.nvim
+
+github
+stars 101
+issues 1
+created last year / updated 29 days ago
+Neovim plugin for persistent breakpoints.
+plugindebugging
+
+nvim-markdown-preview
+
+github
+stars 100
+issues 10
+created 5 years ago / updated last year
+Markdown preview for neovim using pandoc and live-server
+pluginprogramming-languages-supportmarkdown-and-latex
+
+LspUI.nvim
+
+github
+stars 100
+issues 2
+created 7 months ago / updated 7 days ago
+A modern and useful UI plugin that wraps lsp operations.I think I might need to
+refactor this plugin
+pluginlspneovim-0.5
+
+cphelper.nvim
+
+github
+stars 100
+issues 2
+created 2 years ago / updated 2 months ago
+Neovim helper for competitive programming. Use https://sr.ht/~p00f/
+cphelper.nvim instead
+plugingamecompetitive-programming
+
+vlog.nvim
+
+github
+stars 100
+issues 3
+created 3 years ago / updated 3 years ago
+Single file, no dependency, easy copy & paste log file to add to your neovim
+lua plugins
+pluginneovim-lua-development
+
+one_monokai.nvim
+
+github
+stars 99
+issues 1
+created 2 years ago / updated last month
+One Monokai for Neovim
+plugincolorschemetreesitter-colorschemes
+
+yanil
+
+github
+stars 97
+issues 5
+created 3 years ago / updated last year
+Yet Another Nerdtree In Lua
+pluginfile-explorer
+
+rasmus.nvim
+
+github
+stars 96
+issues 3
+created last year / updated 24 days ago
+A color scheme for Neovim
+plugincolorschemetreesitter-colorschemes
+
+nvim-numbertoggle
+
+github
+stars 96
+issues 2
+created last year / updated 3 months ago
+Neovim plugin to automatically toggle between relative and absolute line
+numbers. Written in Lua.
+pluginutility
+
+onebuddy
+
+github
+stars 96
+issues 4
+created 3 years ago / updated 2 years ago
+Light and dark atom one theme
+plugincolorschemetreesitter-colorschemes
+
+textobj-diagnostic.nvim
+
+github
+stars 95
+issues 2
+created last year / updated 7 months ago
+NeoVim text object that finds diagnostics
+pluginlspneovim-0.5diagnostics
+
+web-tools.nvim
+
+github
+stars 95
+issues 0
+created 2 years ago / updated 6 months ago
+Neovim plugin for web developers
+pluginprogramming-languages-supportweb-development
+
+cmdbuf.nvim
+
+github
+stars 94
+issues 0
+created 3 years ago / updated 5 days ago
+Alternative command-line window plugin for neovim
+plugincommand-line
+
+nvim-comment-frame
+
+github
+stars 94
+issues 2
+created 2 years ago / updated 10 months ago
+Detects the language using treesitter and adds a comment block
+pluginediting-supportcomment
+
+present.nvim
+
+github
+stars 93
+issues 0
+created 2 years ago / updated last year
+Presentation plugin for neovim written in lua
+pluginmedia
+
+due.nvim
+
+github
+stars 93
+issues 0
+created 2 years ago / updated 7 months ago
+Neovim plugin for displaying due dates
+pluginnote-taking
+
+murmur.lua
+
+github
+stars 93
+issues 5
+created last year / updated 22 days ago
+super-fast cursor word highlighting with callbacks(I call them murmurs)
+included.
+pluginbars-and-linescursorline
+
+nvim-docs-view
+
+github
+stars 92
+issues 0
+created last year / updated 6 months ago
+A neovim plugin to display lsp hover documentation in a side panel.
+pluginlspneovim-0.5
+
+tabline-framework.nvim
+
+github
+stars 92
+issues 4
+created 2 years ago / updated 5 months ago
+User-friendly framework for building your dream tabline in a few lines of code.
+pluginbars-and-linestabline
+
+hibiscus.nvim
+
+github
+stars 92
+issues 0
+created last year / updated 24 days ago
+:hibiscus: Flavored Fennel Macros for Neovim
+pluginfennel
+
+align.nvim
+
+github
+stars 92
+issues 6
+created last year / updated 9 months ago
+A minimal plugin for NeoVim for aligning lines
+formatting
+
+sentiment.nvim
+
+github
+stars 91
+issues 4
+created 6 months ago / updated 3 months ago
+Enhanced matchparen.vim plugin for Neovim
+pluginediting-support
+
+nvoid
+
+github
+stars 90
+issues 0
+created 2 years ago / updated 22 days ago
+nvim with lua is cool
+pluginpreconfigured-configuration
+
+arctic.nvim
+
+github
+stars 90
+issues 1
+created last year / updated 4 months ago
+Neovim color schemes ported from VSCode Dark+ and Dark Modern with Treesitter
+and semantic token highlighting
+plugincolorschemetreesitter-colorschemes
+
+veil.nvim
+
+github
+stars 90
+issues 5
+created 5 months ago / updated 4 months ago
+A blazingly fast, animated, and infinitely customizeable startup / dashboard
+plugin
+pluginstartup
+
+nvim-lspupdate
+
+github
+stars 89
+issues 1
+created 3 years ago / updated 2 years ago
+Updates installed LSP servers, automatically
+pluginlspneovim-0.5lsp-installer
+
+tidy.nvim
+
+github
+stars 89
+issues 2
+created 2 years ago / updated 2 days ago
+A small Neovim plugin to remove trailing whitespace and empty lines at end of
+file on every save
+pluginformatting
+
+drex.nvim
+
+github
+stars 89
+issues 0
+created 2 years ago / updated last month
+Another directory/file explorer for Neovim written in Lua
+pluginfile-explorer
+
+diagflow.nvim
+
+github
+stars 88
+issues 1
+created last month / updated 13 days ago
+LSP diagnostics in virtual text at the top right of your screen
+diagnosticsplugin
+
+nvim-lazyman
+
+github
+stars 88
+issues 0
+created 5 months ago / updated 6 days ago
+Neovim configuration manager and Lazy/Lua/Mason based Neovim config. Manage
+multiple Neovim configurations with the lazyman command. ☕
+pluginpreconfigured-configuration
+
+nvim-lspinstall
+
+github
+stars 87
+issues 3
+created 3 years ago / updated 2 years ago
+null
+pluginlspneovim-0.5lsp-installer
+
+nvim-projectconfig
+
+github
+stars 87
+issues 2
+created 2 years ago / updated 2 years ago
+neovim projectconfig
+pluginproject
+
+dep
+
+github
+stars 85
+issues 7
+created 2 years ago / updated 8 months ago
+Correct neovim package manager
+pluginplugin-manager
+
+nord.nvim
+
+github
+stars 85
+issues 4
+created 8 months ago / updated 24 days ago
+An arctic, north-bluish clean and elegant Neovim theme.
+plugincolorschemetreesitter-colorschemes
+
+github-colors
+
+github
+stars 85
+issues 1
+created 2 years ago / updated 11 hours ago
+Yet another GitHub colorscheme
+plugincolorschemetreesitter-colorschemes
+
+fold-preview.nvim
+
+github
+stars 84
+issues 1
+created last year / updated 6 months ago
+Preview folds in float window
+pluginutility
+
+nvim-nu
+
+github
+stars 84
+issues 0
+created 2 years ago / updated 5 months ago
+Basic editor support for the nushell language
+pluginsyntax
+
+codeql.nvim
+
+github
+stars 84
+issues 0
+created 4 years ago / updated 2 months ago
+CodeQL plugin for Neovim
+plugingitgithub
+
+telescope-alternate.nvim
+
+github
+stars 82
+issues 2
+created 11 months ago / updated 7 days ago
+Alternate between common files using pre-defined regexp. Just map the patterns
+and starting navigating between files that are related.
+pluginproject
+
+diagnosticls-configs-nvim
+
+github
+stars 81
+issues 0
+created 2 years ago / updated 18 days ago
+An unofficial collection of different linter and formatter configurations for
+diagnostic-languageserver used for built-in nvim-lsp
+pluginlspneovim-0.5
+
+messages.nvim
+
+github
+stars 80
+issues 0
+created 11 months ago / updated 22 days ago
+Capture and show any messages in a customisable (floating) buffer
+pluginutility
+
+trim.nvim
+
+github
+stars 80
+issues 0
+created 3 years ago / updated 5 months ago
+This plugin trims trailing whitespace and lines.
+pluginformatting
+
+im-select.nvim
+
+github
+stars 80
+issues 2
+created last year / updated last month
+Switch Input Method automatically depends on Neovim's edit mode
+pluginediting-support
+
+lsp-progress.nvim
+
+github
+stars 80
+issues 2
+created 6 months ago / updated 21 days ago
+A performant lsp progress status for Neovim.
+pluginlspneovim-0.5
+
+plugin-template.nvim
+
+github
+stars 80
+issues 0
+created 2 years ago / updated last year
+A template to create Neovim plugins written in Lua
+externalboilerplate
+
+nvim-treesitter-cpp-tools
+
+github
+stars 79
+issues 4
+created 2 years ago / updated 5 months ago
+C++ Helper Snippets Using Treesitter
+treesitter-basedprogramming-languages-supportediting-support
+
+nvim-juliana
+
+github
+stars 79
+issues 2
+created last year / updated 5 days ago
+Port of Sublime's Mariana Theme to Neovim for short attention span devs.
+plugincolorschemetreesitter-colorschemes
+
+peepsight.nvim
+
+github
+stars 79
+issues 0
+created last year / updated 8 months ago
+Focus on one function at a time
+plugincolor
+
+NvPak
+
+github
+stars 79
+issues 5
+created 3 years ago / updated last month
+A clean config for neovim to be of particular complexity
+pluginpreconfigured-configuration
+
+highlight-current-n.nvim
+
+github
+stars 79
+issues 0
+created 2 years ago / updated 2 months ago
+Highlights the current /, ? or * match under your cursor when pressing n or N
+and gets out of the way afterwards.
+pluginsearch
+
+nvimesweeper
+
+github
+stars 79
+issues 0
+created 2 years ago / updated 5 months ago
+Play Minesweeper in your favourite text editor (Neovim 0.7+)
+plugingame
+
+actions-preview.nvim
+
+github
+stars 78
+issues 4
+created 10 months ago / updated 5 months ago
+Neovim plugin to preview LSP code action
+pluginlspneovim-0.5
+
+kitty-runner.nvim
+
+github
+stars 78
+issues 5
+created 2 years ago / updated 19 days ago
+A neovim plugin allowing you to easily send lines from the current buffer to
+another kitty terminal
+pluginterminal-integration
+
+jellybeans-nvim
+
+github
+stars 78
+issues 1
+created 2 years ago / updated last year
+A port of jellybeans colorscheme for neovim
+plugincolorschemelua-colorscheme
+
+quicknote.nvim
+
+github
+stars 78
+issues 2
+created 7 months ago / updated 3 days ago
+Quickly take notes, in-place
+pluginnote-taking
+
+moveline.nvim
+
+github
+stars 77
+issues 3
+created 6 months ago / updated last month
+Neovim plugin for moving lines up and down, written in Rust
+pluginediting-support
+
+impulse.nvim
+
+github
+stars 76
+issues 3
+created last year / updated last year
+notion.so client for neovim
+pluginnote-taking
+
+paperplanes.nvim
+
+github
+stars 76
+issues 2
+created 2 years ago / updated 10 months ago
+Neovim :airplane: Pastebins
+pluginutility
+
+abbreinder.nvim
+
+github
+stars 75
+issues 0
+created 2 years ago / updated last year
+Abbreviation reminder plugin for Neovim 0.5+
+pluginnote-taking
+
+midnight.nvim
+
+github
+stars 75
+issues 1
+created 3 months ago / updated 24 days ago
+:crescent_moon: A modern black neovim theme written in Lua, with comfortable
+color contrast for a pleasant visual experience, with LSP and treesitter
+support
+plugincolorschemetreesitter-colorschemes
+
+ranger.nvim
+
+github
+stars 74
+issues 4
+created 3 months ago / updated 5 days ago
+Ranger plugin for neovim
+pluginfile-explorer
+
+cobalt2.nvim
+
+github
+stars 73
+issues 1
+created 2 years ago / updated 2 months ago
+cobalt2 theme for neovim in Lua using colorbuddy
+plugincolorschemelua-colorscheme
+
+markmap.nvim
+
+github
+stars 73
+issues 0
+created 3 months ago / updated 2 days ago
+Visualize your Markdown as mindmaps with markmap
+pluginprogramming-languages-supportmarkdown-and-latex
+
+image_preview.nvim
+
+github
+stars 72
+issues 1
+created 10 months ago / updated 2 months ago
+Image Preview for Neovim 🖼
+pluginmedia
+
+stay-in-place.nvim
+
+github
+stars 72
+issues 1
+created last year / updated 7 months ago
+Neovim plugin that prevent cursor from moving when using shift and filter
+actions.
+pluginediting-support
+
+nap.nvim
+
+github
+stars 72
+issues 0
+created 6 months ago / updated last month
+Quickly move between next and previous NeoVim buffer, tab, file, quickfix,
+diagnostic, etc.
+pluginmotion
+
+vimdark
+
+github
+stars 70
+issues 0
+created 4 years ago / updated last year
+A dark theme for vim based on vim-monotonic and chrome's dark reader
+plugincolorschemetreesitter-colorschemes
+
+NeoRoot.lua
+
+github
+stars 70
+issues 3
+created 2 years ago / updated 6 months ago
+Yet another light-weight rooter written in Lua
+pluginproject
+
+neovim-tasks
+
+github
+stars 70
+issues 2
+created 11 months ago / updated 24 days ago
+A statefull task manager focused on integration with build systems.
+plugincode-runner
+
+luv-vimdocs
+
+github
+stars 69
+issues 0
+created 2 years ago / updated 6 months ago
+null
+pluginneovim-lua-development
+
+everforest-nvim
+
+github
+stars 69
+issues 2
+created 10 months ago / updated 2 days ago
+A Lua port of the Everforest colour scheme
+plugincolorschemetreesitter-colorschemes
+
+nvim-base16.lua
+
+github
+stars 69
+issues 2
+created 4 years ago / updated 4 years ago
+Programmatic lua library for setting base16 themes in Neovim.
+plugincolorschemecolorscheme-creation
+
+omni.vim
+
+github
+stars 69
+issues 2
+created 3 years ago / updated last year
+🎨 Omni color scheme for Neovim.
+plugincolorschemetreesitter-colorschemes
+
+splitjoin.nvim
+
+github
+stars 68
+issues 2
+created 6 months ago / updated 8 days ago
+🪓🧷 Split or join list-like syntax constructs
+pluginediting-support
+
+attempt.nvim
+
+github
+stars 68
+issues 0
+created last year / updated last month
+Manage temporary buffers
+pluginutility
+
+baleia.nvim
+
+github
+stars 68
+issues 3
+created 2 years ago / updated 4 months ago
+Colorize text with ANSI escape sequences (8, 16, 256 or TrueColor)
+pluginterminal-integration
+
+ofirkai.nvim
+
+github
+stars 68
+issues 11
+created 11 months ago / updated last month
+Color scheme for neovim, based on SublimeText 4 monokai
+plugincolorschemetreesitter-colorschemes
+
+Leetbuddy.nvim
+
+github
+stars 67
+issues 4
+created 7 months ago / updated 6 days ago
+Solve Leetcode problems within Neovim 🔥
+plugingamecompetitive-programming
+
+caskey.nvim
+
+github
+stars 67
+issues 5
+created 7 months ago / updated 7 months ago
+Declarative keymappings configuration using cascading trees
+pluginkeybinding
+
+mood-nvim
+
+github
+stars 66
+issues 0
+created last year / updated 4 days ago
+A Neovim configuration for Rails and Javascript
+pluginpreconfigured-configuration
+
+executor.nvim
+
+github
+stars 65
+issues 7
+created 10 months ago / updated 30 days ago
+null
+plugincode-runner
+
+karen-yank.nvim
+
+github
+stars 65
+issues 0
+created 9 months ago / updated 13 days ago
+Neovim Lua plugin to improve register handling with delete, cut and yank
+mappings.
+pluginregister
+
+langmapper.nvim
+
+github
+stars 64
+issues 1
+created 7 months ago / updated 11 days ago
+A plugin that makes Neovim more friendly to non-English input methods 🤝
+pluginkeybinding
+
+zenburn.nvim
+
+github
+stars 63
+issues 1
+created last year / updated 9 months ago
+Zenburn for the modern age
+plugincolorschemetreesitter-colorschemes
+
+roshnivim-cs
+
+github
+stars 63
+issues 4
+created 2 years ago / updated 3 months ago
+Colorscheme for (neo)vim written in lua, specially made for roshnivim with
+Tree-sitter support.
+plugincolorschemetreesitter-colorschemes
+
+hydrovim
+
+github
+stars 63
+issues 3
+created 3 years ago / updated 3 months ago
+➡️ Run python code inside Neovim
+plugincode-runner
+
+nvim-deus
+
+github
+stars 63
+issues 1
+created 3 years ago / updated 14 days ago
+vim-deus with treesitter support
+plugincolorschemetreesitter-colorschemes
+
+gh-actions.nvim
+
+github
+stars 63
+issues 2
+created 4 months ago / updated 19 days ago
+See status of workflows and dispatch runs directly in neovim
+plugingitgithub
+
+yop.nvim
+
+github
+stars 63
+issues 1
+created last year / updated 2 months ago
+make you some user operators for great good
+pluginutility
+
+NeoColumn.nvim
+
+github
+stars 62
+issues 0
+created 5 months ago / updated 3 months ago
+Neovim plugin that highlights individual characters with a toggleable
+ColorColumn.
+pluginbars-and-lines
+
+nvimgelion
+
+github
+stars 62
+issues 1
+created 4 months ago / updated 2 months ago
+Evangelion but for Vimmers
+plugincolorschemetreesitter-colorschemes
+
+nfnl
+
+github
+stars 62
+issues 1
+created last month / updated 54 minutes ago
+Enhance your Neovim with Fennel
+pluginfennel
+
+bad-practices.nvim
+
+github
+stars 61
+issues 1
+created 2 years ago / updated 2 years ago
+A plugin to help give up bad practices in vim.
+pluginworkflow
+
+boilit
+
+github
+stars 61
+issues 0
+created 2 years ago / updated 9 months ago
+create boilerplate structure for neovim plugins
+externalboilerplate
+
+neofs
+
+github
+stars 61
+issues 4
+created 3 years ago / updated last year
+A file manager for neovim
+pluginfile-explorer
+
+fcitx.nvim
+
+github
+stars 60
+issues 2
+created 2 years ago / updated last year
+A Neovim plugin writing in Lua to switch and restore fcitx state for each
+buffer.
+pluginediting-support
+
+kimbox
+
+github
+stars 60
+issues 0
+created 2 years ago / updated 4 days ago
+Kimbie Dark Neovim colorscheme
+plugincolorschemetreesitter-colorschemes
+
+fold-cycle.nvim
+
+github
+stars 59
+issues 0
+created last year / updated 4 months ago
+This neovim plugin allows you to cycle folds open or closed
+pluginutility
+
+markdowny.nvim
+
+github
+stars 58
+issues 1
+created 7 months ago / updated 6 months ago
+Markdown like keymaps for toggling text formatting
+keybinding
+
+format-on-save.nvim
+
+github
+stars 57
+issues 0
+created 28 days ago / updated 16 days ago
+Automatically formats files when saving using either LSP or shell utilities
+like prettierd or shfmt
+pluginformattinglsp
+
+nterm.nvim
+
+github
+stars 57
+issues 1
+created 3 years ago / updated last year
+neovim plugin to interact with the terminal
+pluginterminal-integration
+
+jupyter-kernel.nvim
+
+github
+stars 57
+issues 3
+created 6 months ago / updated 5 months ago
+Get (IPython) Jupyter kernel completion suggestions and object inspection into
+Neovim.
+pluginprogramming-languages-supportcode-runnerdebuggingcompletionjupyter
+
+virtcolumn.nvim
+
+github
+stars 57
+issues 0
+created last year / updated 12 months ago
+Display a line as the colorcolumn
+pluginutility
+
+nvim-cartographer
+
+github
+stars 56
+issues 0
+created 2 years ago / updated 2 months ago
+Create Neovim `:map`pings in Lua with ease!
+pluginkeybinding
+
+yarepl.nvim
+
+github
+stars 56
+issues 1
+created 2 months ago / updated 2 months ago
+Yet Another REPL, flexible, supporting multiple paradigms to interact with
+REPLs, project-level configs, working with tmux, telescope integration, and
+native dot repeat.
+plugincode-runner
+
+neovitality
+
+github
+stars 56
+issues 5
+created 3 years ago / updated 5 months ago
+null
+pluginpreconfigured-configuration
+
+keymap-amend.nvim
+
+github
+stars 55
+issues 3
+created last year / updated 11 months ago
+Amend the existing keymap in Neovim
+pluginkeybinding
+
+monochrome.nvim
+
+github
+stars 55
+issues 1
+created 2 years ago / updated 2 years ago
+A monochrome colorscheme for neovim
+plugincolorschemetreesitter-colorschemes
+
+sherbet.nvim
+
+github
+stars 55
+issues 1
+created 2 years ago / updated 8 months ago
+Neovim colorscheme written in Lua.
+plugincolorschemetreesitter-colorschemes
+
+NeoTerm.lua
+
+github
+stars 55
+issues 4
+created last year / updated 2 months ago
+You can attach a terminal-buffer for each buffer.
+pluginterminal-integration
+
+nvim-custom-diagnostic-highlight
+
+github
+stars 54
+issues 0
+created last year / updated 3 months ago
+Simple plugin to add Highlights based on diagnostics
+pluginlspneovim-0.5
+
+output-panel.nvim
+
+github
+stars 54
+issues 0
+created 4 months ago / updated last month
+A panel to view the logs from your LSP servers.
+pluginutility
+
+killersheep.nvim
+
+github
+stars 54
+issues 1
+created last year / updated last year
+Neovim port of killersheep (with blood!)
+plugingame
+
+exrc.nvim
+
+github
+stars 53
+issues 0
+created 2 years ago / updated 7 months ago
+Secure Project Local Config for Neovim
+pluginproject
+
+nvim-search-and-replace
+
+github
+stars 53
+issues 1
+created 2 years ago / updated 11 months ago
+Really simple plugin to search and replace multiple files
+pluginsearch
+
+web-dev.nvim
+
+github
+stars 52
+issues 1
+created 8 months ago / updated 5 months ago
+Small Neovim configuration written in Lua that is specifically designed for web
+development.
+pluginpreconfigured-configuration
+
+indentmini.nvim
+
+github
+stars 51
+issues 1
+created 4 months ago / updated 2 hours ago
+A minimal and blazing fast indentline plugin
+pluginformattingindent
+
+open.nvim
+
+github
+stars 51
+issues 2
+created 10 months ago / updated last month
+Open the current word with custom openers, GitHub shorthands for example.
+pluginmarks
+
+kiwi.nvim
+
+github
+stars 51
+issues 0
+created 29 days ago / updated 3 hours ago
+A stripped down VimWiki for neovim
+pluginnote-taking
+
+windex.nvim
+
+github
+stars 50
+issues 2
+created last year / updated last year
+🧼 Clean window maximizing, terminal toggling, window/tmux pane movements and
+more!
+pluginsplit-and-windowtmux
+
+reaper-nvim
+
+github
+stars 50
+issues 2
+created 3 years ago / updated 3 years ago
+Reaper plugin for neovim. Remote control your daw with almost 4000 actions
+without leaving your favourite text editor.
+pluginmedia
+
+bookmarks.nvim
+
+github
+stars 50
+issues 3
+created last year / updated last month
+A Bookmarks Plugin With Global File Store For Neovim Written In Lua.
+pluginmarks
+
+nvim-picgo
+
+github
+stars 49
+issues 0
+created last year / updated 8 months ago
+🥳🥳 A neovim plugin based on picgo-core, written in Lua. 🌲 Allows you to add
+pictures to various picture beds at any time, and they can be accessed from any
+corner of the Internet. 🎆
+pluginmedia
+
+nvim-tabline
+
+github
+stars 49
+issues 1
+created 2 years ago / updated 3 months ago
+nvim port of tabline.vim with Lua
+pluginbars-and-linestabline
+
+suave.lua
+
+github
+stars 49
+issues 8
+created 8 months ago / updated 3 months ago
+Multi-tabs project session automation
+pluginproject
+
+tmux-awesome-manager.nvim
+
+github
+stars 49
+issues 1
+created 9 months ago / updated 4 months ago
+TMUX Commands manager / runner for Neovim.
+pluginsplit-and-windowtmux
+
+rayso.nvim
+
+github
+stars 49
+issues 1
+created 2 months ago / updated last month
+A simple neovim plugin that enables you to instantly create snippets on ray.so
+pluginsnippet
+
+inline-fold.nvim
+
+github
+stars 48
+issues 1
+created last month / updated 11 days ago
+A neovim version of the inline fold plugin
+pluginutility
+
+ccls.nvim
+
+github
+stars 47
+issues 1
+created last year / updated 9 months ago
+Neovim plugin for ccls language server. Leverages off-spec extensions to LSP
+client with AST browser
+pluginlspneovim-0.5
+
+texmagic.nvim
+
+github
+stars 46
+issues 1
+created 2 years ago / updated last year
+null
+pluginlspneovim-0.5
+
+sudoku.nvim
+
+github
+stars 46
+issues 1
+created 7 months ago / updated 5 months ago
+null
+plugingame
+
+nvenv
+
+github
+stars 46
+issues 1
+created 2 years ago / updated 2 years ago
+A lightweight and blazing fast Neovim version manager.
+externalversion-manager
+
+themery.nvim
+
+github
+stars 44
+issues 0
+created 4 months ago / updated 28 days ago
+🎨 Convenient plugin to switch between themes installed in neovim through a
+menu.
+plugincolorschemecolorscheme-switchers
+
+blackjack.nvim
+
+github
+stars 43
+issues 1
+created 6 months ago / updated 4 months ago
+Classic Black Jack game in Neovim
+plugingame
+
+agrolens.nvim
+
+github
+stars 43
+issues 0
+created 5 months ago / updated 3 months ago
+Telescope extentions to view pre-defined/custom treesitter queries
+pluginsyntax
+
+memento.nvim
+
+github
+stars 43
+issues 0
+created 2 years ago / updated last year
+A NeoVim plugin which remembers where you've been
+pluginsearch
+
+battery.nvim
+
+github
+stars 43
+issues 7
+created last year / updated 19 days ago
+Neovim plugin to detect and view battery information
+statuslinediagnostics
+
+OneTerm.nvim
+
+github
+stars 42
+issues 3
+created 2 years ago / updated last year
+One terminal plugin to rule them all ! (eventually)
+pluginterminal-integration
+
+neoproj
+
+github
+stars 42
+issues 0
+created 7 months ago / updated 3 months ago
+🔥 Small yet powerful project manager for Neovim
+pluginproject
+
+gp.nvim
+
+github
+stars 42
+issues 2
+created 2 months ago / updated 2 days ago
+Gp (GPT Prompt) plugin for Neovim
+pluginai
+
+BufferTabs.nvim
+
+github
+stars 42
+issues 0
+created last month / updated 30 days ago
+A simple, fancy tabline for Neovim.
+pluginbars-and-linestabline
+
+miasma.nvim
+
+github
+stars 41
+issues 0
+created 2 months ago / updated 4 days ago
+a fog descends upon your editor ☁ dark color scheme inspired by the woods for
+vim and neovim
+plugincolorschemetreesitter-colorschemes
+
+nvim-hlchunk
+
+github
+stars 41
+issues 0
+created 2 years ago / updated 5 months ago
+hignlight chunk numbercolumn plug of nvim
+pluginformattingindent
+
+nvim-commaround
+
+github
+stars 40
+issues 0
+created 3 years ago / updated 7 months ago
+nvim plugin to toggle comments on and off
+pluginediting-supportcomment
+
+overlength.nvim
+
+github
+stars 40
+issues 1
+created last year / updated last year
+A small Neovim plugin to highlight too long lines
+plugincolor
+
+nvim-origami
+
+github
+stars 39
+issues 2
+created 15 days ago / updated 11 days ago
+Fold with relentless elegance.
+utilitymotionpluginediting-supportfolding
+
+neovim-boilerplate
+
+github
+stars 39
+issues 0
+created 3 months ago / updated 2 months ago
+Modern Neovim Boilerplate ✨
+starter-templates
+
+penvim
+
+github
+stars 38
+issues 1
+created last year / updated last year
+Project's root directory and documents Indentation detector with project based
+config loader
+pluginformattingindent
+
+nvim-alt-substitute
+
+github
+stars 38
+issues 0
+created 4 months ago / updated 14 days ago
+A substitute of vim's :substitute that uses lua patterns instead of vim regex.
+Supports incremental preview.
+plugincommand-lineediting-support
+
+nvim-colo
+
+github
+stars 38
+issues 0
+created 9 months ago / updated 3 months ago
+Theming utlilities for neovim. This is very experimental at the moment.
+colorschemetelescope
+
+vn-night.nvim
+
+github
+stars 38
+issues 1
+created 2 years ago / updated last year
+null
+plugincolorschemetreesitter-colorschemes
+
+penvim
+
+github
+stars 38
+issues 1
+created last year / updated last year
+Project's root directory and documents Indentation detector with project based
+config loader
+pluginproject
+
+gloombuddy
+
+github
+stars 37
+issues 0
+created 3 years ago / updated 2 years ago
+Gloom inspired theme for neovim
+plugincolorschemetreesitter-colorschemes
+
+space-nvim
+
+github
+stars 37
+issues 2
+created 3 years ago / updated 27 days ago
+null
+plugincolorschemetreesitter-colorschemes
+
+goimpl.nvim
+
+github
+stars 36
+issues 0
+created 2 years ago / updated last month
+Generate stub for interface on a type
+pluginprogramming-languages-supportgolang
+
+link-visitor.nvim
+
+github
+stars 36
+issues 0
+created last year / updated 5 months ago
+Let me help you open the links!
+pluginutility
+
+nvim-gfold.lua
+
+github
+stars 35
+issues 0
+created last year / updated 10 months ago
+nvim plugin using gfold to switch repo and have statusline component
+plugingit
+
+jazz.nvim
+
+github
+stars 35
+issues 4
+created 4 years ago / updated 4 years ago
+Acid + Impromptu = Jazz
+pluginutility
+
+nvim-strict
+
+github
+stars 35
+issues 0
+created 8 months ago / updated 5 months ago
+Strict, native code style formatting plugin for Neovim. Expose deep nesting,
+overlong lines, trailing whitespace, trailing empty lines, todos and
+inconsistent indentation.
+pluginformatting
+
+apprentice.nvim
+
+github
+stars 33
+issues 0
+created 2 years ago / updated 12 months ago
+Apprentice color scheme for Neovim written in Lua
+plugincolorschemetreesitter-colorschemes
+
+codeschool.nvim
+
+github
+stars 33
+issues 1
+created 2 years ago / updated 12 months ago
+Codeschool colorscheme for neovim written in lua with treesitter and built-in
+lsp support
+plugincolorschemetreesitter-colorschemes
+
+nvim-expand-expr
+
+github
+stars 33
+issues 0
+created 2 years ago / updated 2 years ago
+Expand and repeat expression to multiple lines for neovim.
+pluginediting-support
+
+sfm.nvim
+
+github
+stars 33
+issues 2
+created 8 months ago / updated 7 days ago
+The simple directory tree viewer for Neovim written in Lua
+pluginfile-explorer
+
+fzfx.nvim
+
+github
+stars 33
+issues 2
+created 16 days ago / updated 2 days ago
+E(x)tended commands missing in fzf.vim.
+pluginfuzzy-finder
+
+chartoggle.nvim
+
+github
+stars 33
+issues 1
+created 2 years ago / updated last year
+Toggle character in Neovim
+pluginutility
+
+easy-action
+
+github
+stars 33
+issues 0
+created 9 months ago / updated 9 months ago
+A Neovim plugin allows you to perform an action on where you can see.
+pluginmotion
+
+nvim-lines.lua
+
+github
+stars 33
+issues 0
+created 2 years ago / updated 4 months ago
+a neovim statusline & tabline plug
+pluginbars-and-linesstatusline
+
+nix-develop.nvim
+
+github
+stars 32
+issues 0
+created 7 months ago / updated 19 days ago
+Run `nix develop` without restarting neovim
+pluginutility
+
+phpactor.nvim
+
+github
+stars 32
+issues 6
+created last year / updated 5 months ago
+Lua version of the Phpactor vim plugin to take advantage of the latest Neovim
+features
+pluginprogramming-languages-support
+
+BufOnly.nvim
+
+github
+stars 32
+issues 0
+created 3 years ago / updated 2 years ago
+Lua/Neovim port of BufOnly.vim with some changes
+pluginutility
+
+nvim-goc.lua
+
+github
+stars 32
+issues 0
+created 2 years ago / updated 24 days ago
+Go Coverage for Neovim
+pluginprogramming-languages-supportgolang
+
+relative-toggle.nvim
+
+github
+stars 31
+issues 0
+created 5 months ago / updated 5 months ago
+Toggles smoothly between number and relative number, supports various number
+combinations
+pluginutility
+
+dusk.nvim
+
+github
+stars 31
+issues 0
+created last year / updated 28 days ago
+Dusk is a blazing fast Lua config suited for Full Stack Java development.
+pluginpreconfigured-configuration
+
+animation.nvim
+
+github
+stars 30
+issues 0
+created 11 months ago / updated 11 months ago
+Create animations in Neovim
+pluginneovim-lua-development
+
+s3edit.nvim
+
+github
+stars 30
+issues 0
+created 10 months ago / updated 2 months ago
+Edit files from S3 directly from Neovim
+pluginfile-explorer
+
+nvim-lsp-basics
+
+github
+stars 30
+issues 1
+created 2 years ago / updated last year
+Basic wrappers for LSP features
+pluginlspneovim-0.5
+
+ns-textobject.nvim
+
+github
+stars 30
+issues 3
+created 10 months ago / updated 3 months ago
+Awesome textobject plugin works with nvim-surround
+pluginediting-support
+
+vacuumline.nvim
+
+github
+stars 29
+issues 1
+created 2 years ago / updated last year
+A prebuilt configuration for galaxyline inspired by airline
+pluginbars-and-linesstatusline
+
+luarocks-tag-release
+
+github
+stars 29
+issues 10
+created 7 months ago / updated 4 days ago
+GitHub workflow for automatically generating Luarocks releases from tags
+pluginneovim-lua-development
+
+consolation.nvim
+
+github
+stars 29
+issues 1
+created 2 years ago / updated 2 years ago
+A general-purpose terminal wrapper and management plugin for neovim, written in
+lua
+pluginterminal-integration
+
+structrue-go.nvim
+
+github
+stars 28
+issues 0
+created last year / updated 10 months ago
+A better structured display of golang symbols information
+pluginprogramming-languages-supportgolang
+
+ariake-vim-colors
+
+github
+stars 28
+issues 0
+created 3 years ago / updated 2 years ago
+null
+plugincolorschemetreesitter-colorschemes
+
+nvim-smartbufs
+
+github
+stars 28
+issues 0
+created 2 years ago / updated 2 years ago
+Smart buffer management in neovim
+pluginbars-and-linestabline
+
+shenzhen-solitaire.nvim
+
+github
+stars 28
+issues 3
+created last year / updated 5 months ago
+Shenzhen I/O Solitaire, now in Neovim
+plugingame
+
+nvim-foldsign
+
+github
+stars 28
+issues 0
+created 6 months ago / updated 6 months ago
+Display folding info on sign column
+pluginutility
+
+lazy-nvim-starter
+
+github
+stars 27
+issues 1
+created 5 months ago / updated 5 months ago
+A somewhat minimal but structured jumping-off point for Neovim with Lazy.nvim
+starter-templates
+
+numbers.nvim
+
+github
+stars 27
+issues 0
+created last year / updated 11 months ago
+Toggles relativenumbers when not needed
+pluginutility
+
+qfview.nvim
+
+github
+stars 26
+issues 0
+created 21 days ago / updated 3 days ago
+Pretty quickfix/location view for Neovim
+plugindebuggingquickfix
+
+auto-pandoc.nvim
+
+github
+stars 26
+issues 0
+created 2 years ago / updated 12 days ago
+A neovim plugin leveraging pandoc to help you convert your markdown files. It
+takes pandoc options from yaml blocks.
+pluginprogramming-languages-supportmarkdown-and-latex
+
+format.nvim
+
+github
+stars 26
+issues 0
+created last month / updated 7 days ago
+An asynchronous, multitasking, and highly configurable formatting plugin.
+pluginformatting
+
+NeoNoName.lua
+
+github
+stars 26
+issues 2
+created 2 years ago / updated 2 months ago
+Layout preserving buffer deletion.
+pluginsplit-and-window
+
+auto-save.nvim
+
+github
+stars 26
+issues 0
+created 10 months ago / updated 15 days ago
+🧶 Automatically save your changes in NeoVim
+pluginediting-support
+
+unruly-worker
+
+github
+stars 26
+issues 1
+created 3 years ago / updated last year
+A ridiculously fun alternative nvim keymap for the workman keyboard layout
+pluginkeybinding
+
+vitesse.nvim
+
+github
+stars 25
+issues 0
+created 7 months ago / updated last month
+Vitesse theme for neovim in Lua using colorbuddy
+plugincolorschemetreesitter-colorschemes
+
+mix.nvim
+
+github
+stars 25
+issues 0
+created 2 years ago / updated 12 months ago
+A Mix Wrapper for Neovim
+pluginprogramming-languages-support
+
+usage-tracker.nvim
+
+github
+stars 25
+issues 0
+created 2 months ago / updated 9 days ago
+NeoVim plugin with which you can track the time you spent on files, projects,
+repos, filetypes
+pluginutility
+
+carrot.nvim
+
+github
+stars 25
+issues 0
+created last year / updated 4 months ago
+Evaluate Neovim Lua inside Markdown
+pluginprogramming-languages-supportmarkdown-and-latex
+
+lin.nvim
+
+github
+stars 25
+issues 1
+created 7 months ago / updated 7 days ago
+Lin Rongbin's Neovim Distribution
+pluginpreconfigured-configuration
+
+runner.nvim
+
+github
+stars 25
+issues 2
+created 6 months ago / updated last month
+A customizable Neovim plugin to run code inside the editor
+plugincode-runner
+
+dark_flat.nvim
+
+github
+stars 24
+issues 1
+created 2 months ago / updated 22 days ago
+null
+plugincolorschemetreesitter-colorschemes
+
+interestingwords.nvim
+
+github
+stars 22
+issues 1
+created 5 months ago / updated 2 months ago
+☀️ A vim plugin for highlighting and navigating through different words in a
+buffer.
+plugincolor
+
+goto-breakpoints.nvim
+
+github
+stars 22
+issues 0
+created 12 months ago / updated 5 months ago
+Cycle between breakpoints with keymappings for nvim-dap
+plugindebugging
+
+nvim-hybrid
+
+github
+stars 22
+issues 0
+created 3 years ago / updated 2 years ago
+A neovim colorscheme write in lua.
+plugincolorschemetreesitter-colorschemes
+
+everybody-wants-that-line.nvim
+
+github
+stars 22
+issues 0
+created last year / updated 5 months ago
+Minimalistic, informative and elegant statusline for neovim.
+statusline
+
+zephyrium
+
+github
+stars 22
+issues 0
+created 2 years ago / updated last year
+A dark color scheme for Vim, based on Zephyr, written in Lua
+plugincolorschemetreesitter-colorschemes
+
+translate.nvim
+
+github
+stars 21
+issues 0
+created 7 months ago / updated 24 days ago
+Highly configurable translation plugin for neovim.
+pluginlanguage
+
+rsync.nvim
+
+github
+stars 21
+issues 11
+created 4 months ago / updated 25 days ago
+neovim plugin which synchronises project with rsync on save.
+pluginremote-development
+
+scribe.nvim
+
+github
+stars 21
+issues 0
+created 10 months ago / updated 6 months ago
+An easy note taking plugin
+pluginnote-taking
+
+nx.nvim
+
+github
+stars 21
+issues 4
+created 6 months ago / updated 4 months ago
+Neovim API utility wrapper for more convenience with Lua keymaps, highlights,
+autocommands and options.
+pluginutility
+
+greyjoy.nvim
+
+github
+stars 20
+issues 1
+created 11 months ago / updated 4 months ago
+Launcher for Neovim
+plugincode-runner
+
+hierarchy-tree-go.nvim
+
+github
+stars 19
+issues 0
+created last year / updated 8 months ago
+Golang Hierarchy tree views.
+pluginprogramming-languages-supportgolang
+
+edit-markdown-table.nvim
+
+github
+stars 19
+issues 0
+created 3 months ago / updated 2 months ago
+Edit Markdown Tables from Neovim using Treesitter
+pluginprogramming-languages-supportmarkdown-and-latex
+
+gitlinker.nvim
+
+github
+stars 19
+issues 0
+created 6 months ago / updated 21 days ago
+A fork of ruifm's gitlinker, refactored with pattern based rule engine, windows
+support and other enhancements.
+plugingit
+
+nvim-hl-mdcodeblock.lua
+
+github
+stars 19
+issues 0
+created 3 months ago / updated 3 months ago
+a nvim plugin for hignlight markdown codeblock.
+pluginprogramming-languages-supportmarkdown-and-latex
+
+citruszest.nvim
+
+github
+stars 19
+issues 0
+created last month / updated 10 hours ago
+A vibrant and refreshing neovim colorscheme inspired by citrus fruits.
+plugincolorschemetreesitter-colorschemes
+
+compter.nvim
+
+github
+stars 18
+issues 1
+created 3 months ago / updated 2 months ago
+Power and extend the ability of and with customized patterns.
+pluginutility
+
+cryptoprice.nvim
+
+github
+stars 17
+issues 0
+created 2 years ago / updated last year
+NeoVim plugin with which you can check the price of your favourite cryptos
+pluginutility
+
+forem.nvim
+
+github
+stars 17
+issues 2
+created last year / updated last year
+Neovim plugin to read, write and post articles on Forem platforms like dev.to
+utility
+
+dap-utils.nvim
+
+github
+stars 17
+issues 0
+created last month / updated 23 days ago
+Better use of nvim-dap
+plugindebugging
+
+telescope-tmuxinator.nvim
+
+github
+stars 16
+issues 0
+created 3 years ago / updated 2 years ago
+Integration for tmuxinator with telescope.nvim.
+pluginsplit-and-windowtmux
+
+telescope-rooter.nvim
+
+github
+stars 16
+issues 0
+created 8 months ago / updated 8 months ago
+Change directory to project folder when using telescope and restore afterwards
+pluginproject
+
+gruvy
+
+github
+stars 16
+issues 0
+created 2 years ago / updated 2 years ago
+Gruvbuddy port independent of colorbuddy
+plugincolorschemetreesitter-colorschemes
+
+binary-swap.nvim
+
+github
+stars 16
+issues 0
+created 9 months ago / updated 5 days ago
+Neovim plugin for swapping operands and operators in binary expressions
+pluginediting-support
+
+decipher.nvim
+
+github
+stars 14
+issues 0
+created 8 months ago / updated 29 days ago
+A neovim plugin for encoding and decoding text
+utilitytext-objectplugin
+
+markdown-togglecheck
+
+github
+stars 14
+issues 1
+created 9 months ago / updated 4 months ago
+Simple neovim plugin to toggle checkboxes in markdown
+pluginprogramming-languages-supportmarkdown-and-latex
+
+NeoWell.lua
+
+github
+stars 14
+issues 3
+created 2 years ago / updated 3 months ago
+Well... I will fix this line later
+plugindebuggingquickfix
+
+nvim-toc
+
+github
+stars 14
+issues 0
+created 21 days ago / updated 21 days ago
+Generate markdown table of contents
+pluginprogramming-languages-supportmarkdown-and-latex
+
+bufignore.nvim
+
+github
+stars 14
+issues 0
+created 4 months ago / updated 3 months ago
+Unlist hidden buffers matching specified ignore sources.
+pluginutility
+
+apc.nvim
+
+github
+stars 13
+issues 2
+created 5 months ago / updated 5 months ago
+Plugin providing "A People's Calendar" for Neovim, written in lua.
+pluginutility
+
+paramount-ng.nvim
+
+github
+stars 13
+issues 0
+created last year / updated last year
+neovim-first paramount colorscheme
+plugincolorschemetreesitter-colorschemes
+
+tabs-vs-spaces.nvim
+
+github
+stars 13
+issues 4
+created 5 months ago / updated 4 months ago
+Hint and fix deviating indentation.
+pluginformatting
+
+sos.nvim
+
+github
+stars 13
+issues 13
+created 10 months ago / updated 3 months ago
+Never manually save/write a buffer again!
+pluginediting-support
+
+darkman.nvim
+
+github
+stars 12
+issues 2
+created 7 months ago / updated 6 months ago
+A neovim plugin for interfacing with the freedesktop dark mode standard
+plugincolorschemecolorscheme-switchers
+
+nvim
+
+github
+stars 12
+issues 0
+created 12 months ago / updated last month
+null
+pluginpreconfigured-configuration
+
+nvim-moonicipal
+
+github
+stars 11
+issues 1
+created 10 months ago / updated 6 months ago
+Task runner with focus on rapidly changing personal tasks
+plugincode-runner
+
+part-edit.nvim
+
+github
+stars 11
+issues 0
+created 7 months ago / updated 24 days ago
+Edit a part of a file individually
+pluginediting-support
+
+obsidian
+
+github
+stars 10
+issues 0
+created 15 days ago / updated 19 hours ago
+:book: Base Obsidian functionality in your Neovim
+pluginnote-taking
+
+divider.nvim
+
+github
+stars 10
+issues 0
+created 7 months ago / updated 23 days ago
+Divider line for neovim
+pluginediting-support
+
+neva
+
+github
+stars 10
+issues 1
+created 3 years ago / updated last year
+a neovim version manager
+externalversion-manager
+
+nvim-buffls
+
+github
+stars 9
+issues 0
+created 9 months ago / updated 4 months ago
+Add LSP functionality to specific Neovim buffers
+pluginlspneovim-0.5
+
+simpleIndentGuides.nvim
+
+github
+stars 9
+issues 0
+created 9 months ago / updated 7 months ago
+Indentation guides using the builtin variables.
+pluginformattingindent
+
+spectacle.nvim
+
+github
+stars 9
+issues 1
+created 3 months ago / updated 2 months ago
+Easily manage multiple sessions with telescope integration.
+pluginsession
+
+nvim-dr-lsp
+
+github
+stars 8
+issues 0
+created 2 months ago / updated 14 days ago
+Status line component showing the number of LSP definition and reference of the
+token under the cursor.
+pluginlspstatusline
+
+blinds.nvim
+
+github
+stars 8
+issues 1
+created 6 years ago / updated 11 months ago
+blinds.nvim emphasizes the current window by shading the non-active windows
+color
+
+AirSupport.nvim
+
+github
+stars 7
+issues 0
+created 7 months ago / updated 3 months ago
+A NeoVim addon which helps you to write your own shortcut reminders and forget
+them.
+pluginutility
+
+PS_manager.nvim
+
+github
+stars 6
+issues 0
+created 6 months ago / updated 6 months ago
+Multi-project management, switch pwd automatically.
+pluginproject
+
+minimal-tabline.nvim
+
+github
+stars 6
+issues 0
+created 2 years ago / updated 8 months ago
+A minimal tabline, that's it
+tabline
+
+gui-font-resize.nvim
+
+github
+stars 6
+issues 0
+created last year / updated last year
+Plugin for Neovim to easily resize all guifont option including the fallbacks
+fonts
+utility
+
+treesitter-utils
+
+github
+stars 6
+issues 0
+created 9 months ago / updated 4 months ago
+Treesitter methods to make my life less miserable
+pluginneovim-lua-development
+
+multiple-session.nvim
+
+github
+stars 6
+issues 0
+created 7 months ago / updated 27 days ago
+Session manager for neovim
+pluginsession
+
+music.nvim
+
+github
+stars 6
+issues 0
+created last year / updated 10 months ago
+play music/video on neovim
+mediautility
+
+yawnc.nvim
+
+github
+stars 6
+issues 0
+created 2 months ago / updated 2 months ago
+Yet Another pyWal Neovim Colorscheme
+plugincolorschemetreesitter-colorschemes
+
+togglr.nvim
+
+github
+stars 5
+issues 0
+created 10 years ago / updated last month
+Vim plugin that toggles values in the text
+pluginediting-supportutility
+
+nvim-channelot
+
+github
+stars 5
+issues 0
+created 9 months ago / updated 7 months ago
+Operate Neovim jobs from Lua coroutines
+pluginterminal-integration
+
+ModuleVim
+
+github
+stars 5
+issues 0
+created 2 years ago / updated last month
+A NeoVim configuration
+pluginpreconfigured-configuration
+
+SingleComment.nvim
+
+github
+stars 5
+issues 1
+created 7 months ago / updated last month
+Always single line, comment sensitive, indentation preserving commenting.
+pluginediting-supportcomment
+
+scriptify.nvim
+
+github
+stars 4
+issues 0
+created last month / updated last month
+Creates scripts files by adding shebang and making them executable
+pluginutility
+
+cmd-palette.nvim
+
+github
+stars 3
+issues 0
+created last year / updated 8 months ago
+A simple function to trigger otw3m: Can't load dump.
+her plugins, commands and custom functions
+utility
+
+cp-image.nvim
+
+github
+stars 3
+issues 0
+created 7 months ago / updated 28 days ago
+Quickly insert image in neovim
+pluginmedia
+
+nvim-cmp-rust
+
+github
+stars 3
+issues 0
+created 2 months ago / updated 7 days ago
+Useful nvim-cmp comparators for rust-analyzer
+plugincompletion
+
+git-sessions.nvim
+
+github
+stars 2
+issues 0
+created 9 months ago / updated 6 months ago
+Use nvim sessions with git branch
+sessiongit
+
+svgo.nvim
+
+github
+stars 1
+issues 0
+created 2 months ago / updated 2 months ago
+Optimize SVGs in Neovim
+pluginformatting
+
+bicolors
+
+github
+stars 0
+issues 0
+created 5 months ago / updated 5 months ago
+collection of bicolors themes for nvim
+treesitter-colorschemescolorscheme
+
+azy.nvim
+
+srht
+created 10 months ago / updated 2 months ago
+Simple and fast fuzzy finder for neovim
+fuzzy-finder
+
+complementree.nvim
+
+srht
+created 10 months ago / updated 2 months ago
+Flexible completion framework for neovim
+completion

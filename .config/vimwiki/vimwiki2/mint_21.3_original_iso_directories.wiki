@@ -1,0 +1,625 @@
+= mint_21.3_original_iso_directories =
+
+Directory listing of /
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/.DISK
+d---------   0    0    0            2048 Jan  9 2024 [     37 02]  .DISK
+/BOOT
+d---------   0    0    0            2048 Jan  9 2024 [     38 02]  BOOT
+/CASPER
+d---------   0    0    0            2048 Jan  9 2024 [     75 02]  CASPER
+/DISTS
+d---------   0    0    0            2048 Jan  9 2024 [     76 02]  DISTS
+/EFI
+d---------   0    0    0            2048 Jan  9 2024 [     82 02]  EFI
+/EFI.IMG;1
+----------   0    0    0          425984 Jan  9 2024 [1305636 00]  EFI.IMG;1
+/ISOLINUX
+d---------   0    0    0            4096 Jan  9 2024 [     84 02]  ISOLINUX
+/LIVE.;1
+----------   0    0    0               0 Jan  9 2024 [   2089 00]  LIVE.;1
+/MD5SUM.README;1
+----------   0    0    0             198 Jan  9 2024 [1306243 00]  MD5SUM.README;1
+/MD5SUM.TXT;1
+----------   0    0    0          107499 Jan  9 2024 [1306244 00]  MD5SUM.TXT;1
+/POOL
+d---------   0    0    0            2048 Jan  9 2024 [     86 02]  POOL
+
+Directory listing of /.DISK/
+d---------   0    0    0            2048 Jan  9 2024 [     37 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/.DISK/ARCHIVE_TRACE.;1
+----------   0    0    0               1 Jan  9 2024 [   4638 00]  ARCHIVE_TRACE.;1
+/.DISK/BASE_INSTALLABLE.;1
+----------   0    0    0               0 Jan  9 2024 [   2089 00]  BASE_INSTALLABLE.;1
+/.DISK/CD_TYPE.;1
+----------   0    0    0              15 Jan  9 2024 [   4639 00]  CD_TYPE.;1
+/.DISK/INFO.;1
+----------   0    0    0              52 Jan  9 2024 [   4640 00]  INFO.;1
+/.DISK/MKISOFS.;1
+----------   0    0    0             558 Jan  9 2024 [   4641 00]  MKISOFS.;1
+/.DISK/README.DISKDEFINES;1
+----------   0    0    0             247 Jan  9 2024 [   4642 00]  README.DISKDEFINES;1
+/.DISK/RELEASE_NOTES_URL.;1
+----------   0    0    0              43 Jan  9 2024 [   4643 00]  RELEASE_NOTES_URL.;1
+
+Directory listing of /BOOT/
+d---------   0    0    0            2048 Jan  9 2024 [     38 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/BOOT/GRUB
+d---------   0    0    0            2048 Jan  9 2024 [     39 02]  GRUB
+/BOOT/MEMTEST.;1
+----------   0    0    0          182800 Feb  6 2022 [   8197 00]  MEMTEST.;1
+/BOOT/MEMTEST32.BIN;1
+----------   0    0    0          138712 Jan  9 2024 [   8287 00]  MEMTEST32.BIN;1
+/BOOT/MEMTEST32.EFI;1
+----------   0    0    0          139776 Jan  9 2024 [   8355 00]  MEMTEST32.EFI;1
+/BOOT/MEMTEST64.BIN;1
+----------   0    0    0          144344 Jan  9 2024 [   8424 00]  MEMTEST64.BIN;1
+/BOOT/MEMTEST64.EFI;1
+----------   0    0    0          145408 Jan  9 2024 [   8495 00]  MEMTEST64.EFI;1
+
+Directory listing of /CASPER/
+d---------   0    0    0            2048 Jan  9 2024 [     75 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/CASPER/FILESYSTEM.MANIFEST;1
+----------   0    0    0           67416 Jan  9 2024 [   8566 00]  FILESYSTEM.MANIFEST;1
+/CASPER/FILESYSTEM.MANIFEST_REMOVE;1
+----------   0    0    0             350 Jan  9 2024 [   8599 00]  FILESYSTEM.MANIFEST_REMOVE;1
+/CASPER/FILESYSTEM.SIZE;1
+----------   0    0    0              11 Jan  9 2024 [   8600 00]  FILESYSTEM.SIZE;1
+/CASPER/FILESYSTEM.SQUASHFS;1
+----------   0    0    0      2515177472 Jan  9 2024 [   8601 00]  FILESYSTEM.SQUASHFS;1
+/CASPER/INITRD.LZ;1
+----------   0    0    0       125655394 Jan  9 2024 [1236715 00]  INITRD.LZ;1
+/CASPER/VMLINUZ.;1
+----------   0    0    0        11615272 Nov 14 2023 [1298071 00]  VMLINUZ.;1
+
+Directory listing of /DISTS/
+d---------   0    0    0            2048 Jan  9 2024 [     76 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/DISTS/JAMMY
+d---------   0    0    0            2048 Jan  9 2024 [     77 02]  JAMMY
+
+Directory listing of /EFI/
+d---------   0    0    0            2048 Jan  9 2024 [     82 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/EFI/BOOT
+d---------   0    0    0            2048 Jan  9 2024 [     83 02]  BOOT
+
+Directory listing of /ISOLINUX/
+d---------   0    0    0            4096 Jan  9 2024 [     84 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/ISOLINUX/BOOT.CAT;1
+----------   0    0    0            2048 Jan  9 2024 [   2090 00]  BOOT.CAT;1
+/ISOLINUX/CHAIN.C32;1
+----------   0    0    0           25048 Aug 11 2021 [1305844 00]  CHAIN.C32;1
+/ISOLINUX/HDT.C32;1
+----------   0    0    0          166400 Aug 11 2021 [1305857 00]  HDT.C32;1
+/ISOLINUX/ISOLINUX.BIN;1
+----------   0    0    0           38912 Aug 11 2021 [   4619 00]  ISOLINUX.BIN;1
+/ISOLINUX/ISOLINUX.CFG;1
+----------   0    0    0              38 Jan  9 2024 [1305939 00]  ISOLINUX.CFG;1
+/ISOLINUX/LDLINUX.C32;1
+----------   0    0    0          119284 Aug 11 2021 [1305940 00]  LDLINUX.C32;1
+/ISOLINUX/LIBCOM32.C32;1
+----------   0    0    0          169220 Aug 11 2021 [1305999 00]  LIBCOM32.C32;1
+/ISOLINUX/LIBGPL.C32;1
+----------   0    0    0           67444 Aug 11 2021 [1306082 00]  LIBGPL.C32;1
+/ISOLINUX/LIBMENU.C32;1
+----------   0    0    0           23944 Aug 11 2021 [1306115 00]  LIBMENU.C32;1
+/ISOLINUX/LIBUTIL.C32;1
+----------   0    0    0           23768 Aug 11 2021 [1306127 00]  LIBUTIL.C32;1
+/ISOLINUX/LIVE.CFG;1
+----------   0    0    0            1558 Jan  9 2024 [1306139 00]  LIVE.CFG;1
+/ISOLINUX/MEMTEST.CFG;1
+----------   0    0    0              84 Jan  9 2024 [1306140 00]  MEMTEST.CFG;1
+/ISOLINUX/MENU.C32;1
+----------   0    0    0           26148 Aug 11 2021 [1306141 00]  MENU.C32;1
+/ISOLINUX/MENU.CFG;1
+----------   0    0    0             268 Jan  9 2024 [1306154 00]  MENU.CFG;1
+/ISOLINUX/SPLASH.PNG;1
+----------   0    0    0          146219 Jan  9 2024 [1306155 00]  SPLASH.PNG;1
+/ISOLINUX/STDMENU.CFG;1
+----------   0    0    0             508 Jan  9 2024 [1306227 00]  STDMENU.CFG;1
+/ISOLINUX/UTILITIES.CFG;1
+----------   0    0    0              89 Jan  9 2024 [1306228 00]  UTILITIES.CFG;1
+/ISOLINUX/VESAMENU.C32;1
+----------   0    0    0           26664 Aug 11 2021 [1306229 00]  VESAMENU.C32;1
+
+Directory listing of /POOL/
+d---------   0    0    0            2048 Jan  9 2024 [     86 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     35 02]  ..
+/POOL/CONTRIB
+d---------   0    0    0            2048 Jan  9 2024 [     87 02]  CONTRIB
+/POOL/MAIN
+d---------   0    0    0            6144 Jan  9 2024 [     90 02]  MAIN
+
+Directory listing of /BOOT/GRUB/
+d---------   0    0    0            2048 Jan  9 2024 [     39 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     38 02]  ..
+/BOOT/GRUB/CONFIG.CFG;1
+----------   0    0    0             476 Jan  9 2024 [   4644 00]  CONFIG.CFG;1
+/BOOT/GRUB/EFI.IMG;1
+----------   0    0    0         5177344 Jan  9 2024 [   2091 00]  EFI.IMG;1
+/BOOT/GRUB/GRUB.CFG;1
+----------   0    0    0             901 Jan  9 2024 [   4645 00]  GRUB.CFG;1
+/BOOT/GRUB/I386_EFI
+d---------   0    0    0           34816 Jan  9 2024 [     40 02]  I386_EFI
+/BOOT/GRUB/LIVE_THEME
+d---------   0    0    0            2048 Jan  9 2024 [     57 02]  LIVE_THEME
+/BOOT/GRUB/LOOPBACK.CFG;1
+----------   0    0    0              27 Jan  9 2024 [   5655 00]  LOOPBACK.CFG;1
+/BOOT/GRUB/MEMTEST.CFG;1
+----------   0    0    0             501 Jan  9 2024 [   5656 00]  MEMTEST.CFG;1
+/BOOT/GRUB/THEME.CFG;1
+----------   0    0    0             419 Jan  9 2024 [   5657 00]  THEME.CFG;1
+/BOOT/GRUB/UNICODE.PF2;1
+----------   0    0    0         2392289 Dec 18 2022 [   5658 00]  UNICODE.PF2;1
+/BOOT/GRUB/X86_64_EFI
+d---------   0    0    0           34816 Jan  9 2024 [     58 02]  X86_64_EFI
+
+Directory listing of /DISTS/JAMMY/
+d---------   0    0    0            2048 Jan  9 2024 [     77 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     76 02]  ..
+/DISTS/JAMMY/CONTRIB
+d---------   0    0    0            2048 Jan  9 2024 [     78 02]  CONTRIB
+/DISTS/JAMMY/MAIN
+d---------   0    0    0            2048 Jan  9 2024 [     80 02]  MAIN
+/DISTS/JAMMY/RELEASE.;1
+----------   0    0    0            2482 Jan  9 2024 [1304337 00]  RELEASE.;1
+
+Directory listing of /EFI/BOOT/
+d---------   0    0    0            2048 Jan  9 2024 [     83 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     82 02]  ..
+/EFI/BOOT/BOOTIA32.EFI;1
+----------   0    0    0          380928 Jan  9 2024 [1304339 00]  BOOTIA32.EFI;1
+/EFI/BOOT/BOOTX64.EFI;1
+----------   0    0    0               0 Jan  9 2024 [   2089 00]  BOOTX64.EFI;1
+/EFI/BOOT/GRUBX64.EFI;1
+----------   0    0    0         2275208 Oct  2 2023 [1304525 00]  GRUBX64.EFI;1
+
+Directory listing of /POOL/CONTRIB/
+d---------   0    0    0            2048 Jan  9 2024 [     87 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     86 02]  ..
+/POOL/CONTRIB/B
+d---------   0    0    0            2048 Jan  9 2024 [     88 02]  B
+
+Directory listing of /POOL/MAIN/
+d---------   0    0    0            6144 Jan  9 2024 [     90 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     86 02]  ..
+/POOL/MAIN/A
+d---------   0    0    0            4096 Jan  9 2024 [     93 02]  A
+/POOL/MAIN/B
+d---------   0    0    0            2048 Jan  9 2024 [    113 02]  B
+/POOL/MAIN/C
+d---------   0    0    0            2048 Jan  9 2024 [    121 02]  C
+/POOL/MAIN/D
+d---------   0    0    0            2048 Jan  9 2024 [    132 02]  D
+/POOL/MAIN/E
+d---------   0    0    0            2048 Jan  9 2024 [    146 02]  E
+/POOL/MAIN/F
+d---------   0    0    0            2048 Jan  9 2024 [    153 02]  F
+/POOL/MAIN/G
+d---------   0    0    0            4096 Jan  9 2024 [    161 02]  G
+/POOL/MAIN/H
+d---------   0    0    0            2048 Jan  9 2024 [    192 02]  H
+/POOL/MAIN/I
+d---------   0    0    0            2048 Jan  9 2024 [    199 02]  I
+/POOL/MAIN/J
+d---------   0    0    0            2048 Jan  9 2024 [    205 02]  J
+/POOL/MAIN/K
+d---------   0    0    0            6144 Jan  9 2024 [    210 02]  K
+/POOL/MAIN/L
+d---------   0    0    0            2048 Jan  9 2024 [    256 02]  L
+/POOL/MAIN/LIBA
+d---------   0    0    0            2048 Jan  9 2024 [    270 02]  LIBA
+/POOL/MAIN/LIBB
+d---------   0    0    0            2048 Jan  9 2024 [    274 02]  LIBB
+/POOL/MAIN/LIBC
+d---------   0    0    0            2048 Jan  9 2024 [    276 02]  LIBC
+/POOL/MAIN/LIBD
+d---------   0    0    0            2048 Jan  9 2024 [    281 02]  LIBD
+/POOL/MAIN/LIBE
+d---------   0    0    0            2048 Jan  9 2024 [    288 02]  LIBE
+/POOL/MAIN/LIBF
+d---------   0    0    0            2048 Jan  9 2024 [    292 02]  LIBF
+/POOL/MAIN/LIBG
+d---------   0    0    0            2048 Jan  9 2024 [    295 02]  LIBG
+/POOL/MAIN/LIBI
+d---------   0    0    0            2048 Jan  9 2024 [    302 02]  LIBI
+/POOL/MAIN/LIBJ
+d---------   0    0    0            2048 Jan  9 2024 [    308 02]  LIBJ
+/POOL/MAIN/LIBK
+d---------   0    0    0            2048 Jan  9 2024 [    311 02]  LIBK
+/POOL/MAIN/LIBL
+d---------   0    0    0            2048 Jan  9 2024 [    313 02]  LIBL
+/POOL/MAIN/LIBM
+d---------   0    0    0            2048 Jan  9 2024 [    315 02]  LIBM
+/POOL/MAIN/LIBN
+d---------   0    0    0            2048 Jan  9 2024 [    318 02]  LIBN
+/POOL/MAIN/LIBO
+d---------   0    0    0            2048 Jan  9 2024 [    322 02]  LIBO
+/POOL/MAIN/LIBP
+d---------   0    0    0            2048 Jan  9 2024 [    324 02]  LIBP
+/POOL/MAIN/LIBQ
+d---------   0    0    0            2048 Jan  9 2024 [    331 02]  LIBQ
+/POOL/MAIN/LIBR
+d---------   0    0    0            2048 Jan  9 2024 [    333 02]  LIBR
+/POOL/MAIN/LIBS
+d---------   0    0    0            2048 Jan  9 2024 [    335 02]  LIBS
+/POOL/MAIN/LIBT
+d---------   0    0    0            2048 Jan  9 2024 [    347 02]  LIBT
+/POOL/MAIN/LIBU
+d---------   0    0    0            2048 Jan  9 2024 [    355 02]  LIBU
+/POOL/MAIN/LIBV
+d---------   0    0    0            2048 Jan  9 2024 [    359 02]  LIBV
+/POOL/MAIN/LIBW
+d---------   0    0    0            2048 Jan  9 2024 [    363 02]  LIBW
+/POOL/MAIN/LIBX
+d---------   0    0    0            4096 Jan  9 2024 [    367 02]  LIBX
+/POOL/MAIN/LIBZ
+d---------   0    0    0            2048 Jan  9 2024 [    400 02]  LIBZ
+/POOL/MAIN/M
+d---------   0    0    0            2048 Jan  9 2024 [    402 02]  M
+/POOL/MAIN/N
+d---------   0    0    0            2048 Jan  9 2024 [    416 02]  N
+/POOL/MAIN/O
+d---------   0    0    0            2048 Jan  9 2024 [    422 02]  O
+/POOL/MAIN/P
+d---------   0    0    0            4096 Jan  9 2024 [    429 02]  P
+/POOL/MAIN/Q
+d---------   0    0    0            4096 Jan  9 2024 [    462 02]  Q
+/POOL/MAIN/R
+d---------   0    0    0            2048 Jan  9 2024 [    478 02]  R
+/POOL/MAIN/S
+d---------   0    0    0            4096 Jan  9 2024 [    482 02]  S
+/POOL/MAIN/T
+d---------   0    0    0            2048 Jan  9 2024 [    506 02]  T
+/POOL/MAIN/U
+d---------   0    0    0            2048 Jan  9 2024 [    512 02]  U
+/POOL/MAIN/V
+d---------   0    0    0            2048 Jan  9 2024 [    519 02]  V
+/POOL/MAIN/W
+d---------   0    0    0            2048 Jan  9 2024 [    522 02]  W
+/POOL/MAIN/X
+d---------   0    0    0            4096 Jan  9 2024 [    533 02]  X
+/POOL/MAIN/Z
+d---------   0    0    0            2048 Jan  9 2024 [    552 02]  Z
+
+Directory listing of /BOOT/GRUB/I386_EFI/
+d---------   0    0    0           34816 Jan  9 2024 [     40 02]  .
+d---------   0    0    0            2048 Jan  9 2024 [     39 02]  ..
+/BOOT/GRUB/I386_EFI/ACPI.MOD;1
+----------   0    0    0            9852 Dec 18 2022 [   4646 00]  ACPI.MOD;1
+/BOOT/GRUB/I386_EFI/ADLER32.MOD;1
+----------   0    0    0            1260 Dec 18 2022 [   4651 00]  ADLER32.MOD;1
+/BOOT/GRUB/I386_EFI/AFSPLITTER.MOD;1
+----------   0    0    0            1472 Dec 18 2022 [   4652 00]  AFSPLITTER.MOD;1
+/BOOT/GRUB/I386_EFI/AHCI.MOD;1
+----------   0    0    0           15676 Dec 18 2022 [   4653 00]  AHCI.MOD;1
+/BOOT/GRUB/I386_EFI/ALL_VIDEO.MOD;1
+----------   0    0    0             500 Dec 18 2022 [   4661 00]  ALL_VIDEO.MOD;1
+/BOOT/GRUB/I386_EFI/AOUT.MOD;1
+----------   0    0    0             964 Dec 18 2022 [   4662 00]  AOUT.MOD;1
+/BOOT/GRUB/I386_EFI/APPLELDR.MOD;1
+----------   0    0    0            3240 Dec 18 2022 [   4663 00]  APPLELDR.MOD;1
+/BOOT/GRUB/I386_EFI/ARCHELP.MOD;1
+----------   0    0    0            2996 Dec 18 2022 [   4665 00]  ARCHELP.MOD;1
+/BOOT/GRUB/I386_EFI/ATA.MOD;1
+----------   0    0    0            5684 Dec 18 2022 [   4667 00]  ATA.MOD;1
+/BOOT/GRUB/I386_EFI/AT_KEYBOARD.MOD;1
+----------   0    0    0            4132 Dec 18 2022 [   4670 00]  AT_KEYBOARD.MOD;1
+/BOOT/GRUB/I386_EFI/BACKTRACE.MOD;1
+----------   0    0    0            1596 Dec 18 2022 [   4673 00]  BACKTRACE.MOD;1
+/BOOT/GRUB/I386_EFI/BFS.MOD;1
+----------   0    0    0            7056 Dec 18 2022 [   4674 00]  BFS.MOD;1
+/BOOT/GRUB/I386_EFI/BITMAP.MOD;1
+----------   0    0    0            2400 Dec 18 2022 [   4678 00]  BITMAP.MOD;1
+/BOOT/GRUB/I386_EFI/BITMAP_SCALE.MOD;1
+----------   0    0    0            3692 Dec 18 2022 [   4680 00]  BITMAP_SCALE.MOD;1
+/BOOT/GRUB/I386_EFI/BLOCKLIST.MOD;1
+----------   0    0    0            2068 Dec 18 2022 [   4682 00]  BLOCKLIST.MOD;1
+/BOOT/GRUB/I386_EFI/BOOT.MOD;1
+----------   0    0    0            2052 Dec 18 2022 [   4684 00]  BOOT.MOD;1
+/BOOT/GRUB/I386_EFI/BSD.MOD;1
+----------   0    0    0           31264 Dec 18 2022 [   4686 00]  BSD.MOD;1
+/BOOT/GRUB/I386_EFI/BSWAP_TEST.MOD;1
+----------   0    0    0            2264 Dec 18 2022 [   4702 00]  BSWAP_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/BTRFS.MOD;1
+----------   0    0    0           19296 Dec 18 2022 [   4704 00]  BTRFS.MOD;1
+/BOOT/GRUB/I386_EFI/BUFIO.MOD;1
+----------   0    0    0            2160 Dec 18 2022 [   4714 00]  BUFIO.MOD;1
+/BOOT/GRUB/I386_EFI/CAT.MOD;1
+----------   0    0    0            2916 Dec 18 2022 [   4716 00]  CAT.MOD;1
+/BOOT/GRUB/I386_EFI/CBFS.MOD;1
+----------   0    0    0            4092 Dec 18 2022 [   4718 00]  CBFS.MOD;1
+/BOOT/GRUB/I386_EFI/CBLS.MOD;1
+----------   0    0    0            3372 Dec 18 2022 [   4720 00]  CBLS.MOD;1
+/BOOT/GRUB/I386_EFI/CBMEMC.MOD;1
+----------   0    0    0            2512 Dec 18 2022 [   4722 00]  CBMEMC.MOD;1
+/BOOT/GRUB/I386_EFI/CBTABLE.MOD;1
+----------   0    0    0            1064 Dec 18 2022 [   4724 00]  CBTABLE.MOD;1
+/BOOT/GRUB/I386_EFI/CBTIME.MOD;1
+----------   0    0    0            2828 Dec 18 2022 [   4725 00]  CBTIME.MOD;1
+/BOOT/GRUB/I386_EFI/CHAIN.MOD;1
+----------   0    0    0           12492 Dec 18 2022 [   4727 00]  CHAIN.MOD;1
+/BOOT/GRUB/I386_EFI/CMDLINE_CAT_TEST.MOD;1
+----------   0    0    0            3024 Dec 18 2022 [   4734 00]  CMDLINE_CAT_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/CMP.MOD;1
+----------   0    0    0            1992 Dec 18 2022 [   4736 00]  CMP.MOD;1
+/BOOT/GRUB/I386_EFI/CMP_TEST.MOD;1
+----------   0    0    0            4608 Dec 18 2022 [   4737 00]  CMP_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/COMMAND.LST;1
+----------   0    0    0            3727 Dec 18 2022 [   4740 00]  COMMAND.LST;1
+/BOOT/GRUB/I386_EFI/CPIO.MOD;1
+----------   0    0    0            2748 Dec 18 2022 [   4742 00]  CPIO.MOD;1
+/BOOT/GRUB/I386_EFI/CPIO_BE.MOD;1
+----------   0    0    0            2848 Dec 18 2022 [   4744 00]  CPIO_BE.MOD;1
+/BOOT/GRUB/I386_EFI/CPUID.MOD;1
+----------   0    0    0            1696 Dec 18 2022 [   4746 00]  CPUID.MOD;1
+/BOOT/GRUB/I386_EFI/CRC64.MOD;1
+----------   0    0    0            1604 Dec 18 2022 [   4747 00]  CRC64.MOD;1
+/BOOT/GRUB/I386_EFI/CRYPTO.LST;1
+----------   0    0    0             936 Dec 18 2022 [   4748 00]  CRYPTO.LST;1
+/BOOT/GRUB/I386_EFI/CRYPTO.MOD;1
+----------   0    0    0            5004 Dec 18 2022 [   4749 00]  CRYPTO.MOD;1
+/BOOT/GRUB/I386_EFI/CRYPTODISK.MOD;1
+----------   0    0    0           11996 Dec 18 2022 [   4752 00]  CRYPTODISK.MOD;1
+/BOOT/GRUB/I386_EFI/CS5536.MOD;1
+----------   0    0    0            3856 Dec 18 2022 [   4758 00]  CS5536.MOD;1
+/BOOT/GRUB/I386_EFI/CTZ_TEST.MOD;1
+----------   0    0    0            1688 Dec 18 2022 [   4760 00]  CTZ_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/DATE.MOD;1
+----------   0    0    0            2148 Dec 18 2022 [   4761 00]  DATE.MOD;1
+/BOOT/GRUB/I386_EFI/DATEHOOK.MOD;1
+----------   0    0    0            1744 Dec 18 2022 [   4763 00]  DATEHOOK.MOD;1
+/BOOT/GRUB/I386_EFI/DATETIME.MOD;1
+----------   0    0    0            1996 Dec 18 2022 [   4764 00]  DATETIME.MOD;1
+/BOOT/GRUB/I386_EFI/DISK.MOD;1
+----------   0    0    0            2348 Dec 18 2022 [   4765 00]  DISK.MOD;1
+/BOOT/GRUB/I386_EFI/DISKFILTER.MOD;1
+----------   0    0    0           10420 Dec 18 2022 [   4767 00]  DISKFILTER.MOD;1
+/BOOT/GRUB/I386_EFI/DIV.MOD;1
+----------   0    0    0             932 Dec 18 2022 [   4773 00]  DIV.MOD;1
+/BOOT/GRUB/I386_EFI/DIV_TEST.MOD;1
+----------   0    0    0            5560 Dec 18 2022 [   4774 00]  DIV_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/DM_NV.MOD;1
+----------   0    0    0            1848 Dec 18 2022 [   4777 00]  DM_NV.MOD;1
+/BOOT/GRUB/I386_EFI/ECHO.MOD;1
+----------   0    0    0            1928 Dec 18 2022 [   4778 00]  ECHO.MOD;1
+/BOOT/GRUB/I386_EFI/EFIFWSETUP.MOD;1
+----------   0    0    0            1484 Dec 18 2022 [   4779 00]  EFIFWSETUP.MOD;1
+/BOOT/GRUB/I386_EFI/EFINET.MOD;1
+----------   0    0    0            6344 Dec 18 2022 [   4780 00]  EFINET.MOD;1
+/BOOT/GRUB/I386_EFI/EFI_GOP.MOD;1
+----------   0    0    0            8164 Dec 18 2022 [   4784 00]  EFI_GOP.MOD;1
+/BOOT/GRUB/I386_EFI/EFI_UGA.MOD;1
+----------   0    0    0            4712 Dec 18 2022 [   4788 00]  EFI_UGA.MOD;1
+/BOOT/GRUB/I386_EFI/EHCI.MOD;1
+----------   0    0    0           16308 Dec 18 2022 [   4791 00]  EHCI.MOD;1
+/BOOT/GRUB/I386_EFI/ELF.MOD;1
+----------   0    0    0            4152 Dec 18 2022 [   4799 00]  ELF.MOD;1
+/BOOT/GRUB/I386_EFI/EVAL.MOD;1
+----------   0    0    0            1404 Dec 18 2022 [   4802 00]  EVAL.MOD;1
+/BOOT/GRUB/I386_EFI/EXFAT.MOD;1
+----------   0    0    0            6152 Dec 18 2022 [   4803 00]  EXFAT.MOD;1
+/BOOT/GRUB/I386_EFI/EXFCTEST.MOD;1
+----------   0    0    0            1404 Dec 18 2022 [   4807 00]  EXFCTEST.MOD;1
+/BOOT/GRUB/I386_EFI/EXT2.MOD;1
+----------   0    0    0            6268 Dec 18 2022 [   4808 00]  EXT2.MOD;1
+/BOOT/GRUB/I386_EFI/EXTCMD.MOD;1
+----------   0    0    0            5076 Dec 18 2022 [   4812 00]  EXTCMD.MOD;1
+/BOOT/GRUB/I386_EFI/F2FS.MOD;1
+----------   0    0    0            6564 Dec 18 2022 [   4815 00]  F2FS.MOD;1
+/BOOT/GRUB/I386_EFI/FAT.MOD;1
+----------   0    0    0            6320 Dec 18 2022 [   4819 00]  FAT.MOD;1
+/BOOT/GRUB/I386_EFI/FDT.LST;1
+----------   0    0    0               0 Dec 18 2022 [   2089 00]  FDT.LST;1
+/BOOT/GRUB/I386_EFI/FILE.MOD;1
+----------   0    0    0           17500 Dec 18 2022 [   4823 00]  FILE.MOD;1
+/BOOT/GRUB/I386_EFI/FIXVIDEO.MOD;1
+----------   0    0    0            1928 Dec 18 2022 [   4832 00]  FIXVIDEO.MOD;1
+/BOOT/GRUB/I386_EFI/FONT.MOD;1
+----------   0    0    0           13360 Dec 18 2022 [   4833 00]  FONT.MOD;1
+/BOOT/GRUB/I386_EFI/FS.LST;1
+----------   0    0    0             219 Dec 18 2022 [   4840 00]  FS.LST;1
+/BOOT/GRUB/I386_EFI/GCRY_ARCFOUR.MOD;1
+----------   0    0    0            1644 Dec 18 2022 [   4841 00]  GCRY_ARCFOUR.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_BLOWFISH.MOD;1
+----------   0    0    0            8032 Dec 18 2022 [   4842 00]  GCRY_BLOWFISH.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_CAMELLIA.MOD;1
+----------   0    0    0           33388 Dec 18 2022 [   4846 00]  GCRY_CAMELLIA.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_CAST5.MOD;1
+----------   0    0    0           16324 Dec 18 2022 [   4863 00]  GCRY_CAST5.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_CRC.MOD;1
+----------   0    0    0           10628 Dec 18 2022 [   4871 00]  GCRY_CRC.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_DES.MOD;1
+----------   0    0    0           19200 Dec 18 2022 [   4877 00]  GCRY_DES.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_DSA.MOD;1
+----------   0    0    0            2252 Dec 18 2022 [   4887 00]  GCRY_DSA.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_IDEA.MOD;1
+----------   0    0    0            2948 Dec 18 2022 [   4889 00]  GCRY_IDEA.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_MD4.MOD;1
+----------   0    0    0            3144 Dec 18 2022 [   4891 00]  GCRY_MD4.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_MD5.MOD;1
+----------   0    0    0            3732 Dec 18 2022 [   4893 00]  GCRY_MD5.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_RFC2268.MOD;1
+----------   0    0    0            2348 Dec 18 2022 [   4895 00]  GCRY_RFC2268.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_RIJNDAEL.MOD;1
+----------   0    0    0           19440 Dec 18 2022 [   4897 00]  GCRY_RIJNDAEL.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_RMD160.MOD;1
+----------   0    0    0            8120 Dec 18 2022 [   4907 00]  GCRY_RMD160.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_RSA.MOD;1
+----------   0    0    0            2000 Dec 18 2022 [   4911 00]  GCRY_RSA.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_SEED.MOD;1
+----------   0    0    0           15208 Dec 18 2022 [   4912 00]  GCRY_SEED.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_SERPENT.MOD;1
+----------   0    0    0           17092 Dec 18 2022 [   4920 00]  GCRY_SERPENT.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_SHA1.MOD;1
+----------   0    0    0            8144 Dec 18 2022 [   4929 00]  GCRY_SHA1.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_SHA256.MOD;1
+----------   0    0    0            4312 Dec 18 2022 [   4933 00]  GCRY_SHA256.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_SHA512.MOD;1
+----------   0    0    0            8932 Dec 18 2022 [   4936 00]  GCRY_SHA512.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_TIGER.MOD;1
+----------   0    0    0           12340 Dec 18 2022 [   4941 00]  GCRY_TIGER.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_TWOFISH.MOD;1
+----------   0    0    0           36960 Dec 18 2022 [   4948 00]  GCRY_TWOFISH.MOD;1
+/BOOT/GRUB/I386_EFI/GCRY_WHIRLPOOL.MOD;1
+----------   0    0    0           24620 Dec 18 2022 [   4967 00]  GCRY_WHIRLPOOL.MOD;1
+/BOOT/GRUB/I386_EFI/GDB.MOD;1
+----------   0    0    0           25236 Dec 18 2022 [   4980 00]  GDB.MOD;1
+/BOOT/GRUB/I386_EFI/GELI.MOD;1
+----------   0    0    0            6060 Dec 18 2022 [   4993 00]  GELI.MOD;1
+/BOOT/GRUB/I386_EFI/GETTEXT.MOD;1
+----------   0    0    0            5060 Dec 18 2022 [   4996 00]  GETTEXT.MOD;1
+/BOOT/GRUB/I386_EFI/GFXMENU.MOD;1
+----------   0    0    0           41768 Dec 18 2022 [   4999 00]  GFXMENU.MOD;1
+/BOOT/GRUB/I386_EFI/GFXTERM.MOD;1
+----------   0    0    0           10116 Dec 18 2022 [   5020 00]  GFXTERM.MOD;1
+/BOOT/GRUB/I386_EFI/GFXTERM_BACKGROUND.MOD;1
+----------   0    0    0            2892 Dec 18 2022 [   5025 00]  GFXTERM_BACKGROUND.MOD;1
+/BOOT/GRUB/I386_EFI/GFXTERM_MENU.MOD;1
+----------   0    0    0            5008 Dec 18 2022 [   5027 00]  GFXTERM_MENU.MOD;1
+/BOOT/GRUB/I386_EFI/GPTSYNC.MOD;1
+----------   0    0    0            3920 Dec 18 2022 [   5030 00]  GPTSYNC.MOD;1
+/BOOT/GRUB/I386_EFI/GRUB.CFG;1
+----------   0    0    0             254 Jan  9 2024 [   5032 00]  GRUB.CFG;1
+/BOOT/GRUB/I386_EFI/GZIO.MOD;1
+----------   0    0    0            8976 Dec 18 2022 [   5033 00]  GZIO.MOD;1
+/BOOT/GRUB/I386_EFI/HALT.MOD;1
+----------   0    0    0            4356 Dec 18 2022 [   5038 00]  HALT.MOD;1
+/BOOT/GRUB/I386_EFI/HASHSUM.MOD;1
+----------   0    0    0            5392 Dec 18 2022 [   5041 00]  HASHSUM.MOD;1
+/BOOT/GRUB/I386_EFI/HDPARM.MOD;1
+----------   0    0    0            6608 Dec 18 2022 [   5044 00]  HDPARM.MOD;1
+/BOOT/GRUB/I386_EFI/HELP.MOD;1
+----------   0    0    0            2584 Dec 18 2022 [   5048 00]  HELP.MOD;1
+/BOOT/GRUB/I386_EFI/HEXDUMP.MOD;1
+----------   0    0    0            3168 Dec 18 2022 [   5050 00]  HEXDUMP.MOD;1
+/BOOT/GRUB/I386_EFI/HFS.MOD;1
+----------   0    0    0            7248 Dec 18 2022 [   5052 00]  HFS.MOD;1
+/BOOT/GRUB/I386_EFI/HFSPLUS.MOD;1
+----------   0    0    0            8336 Dec 18 2022 [   5056 00]  HFSPLUS.MOD;1
+/BOOT/GRUB/I386_EFI/HFSPLUSCOMP.MOD;1
+----------   0    0    0            3064 Dec 18 2022 [   5061 00]  HFSPLUSCOMP.MOD;1
+/BOOT/GRUB/I386_EFI/HTTP.MOD;1
+----------   0    0    0            5996 Dec 18 2022 [   5063 00]  HTTP.MOD;1
+/BOOT/GRUB/I386_EFI/IORW.MOD;1
+----------   0    0    0            2920 Dec 18 2022 [   5066 00]  IORW.MOD;1
+/BOOT/GRUB/I386_EFI/JFS.MOD;1
+----------   0    0    0            6252 Dec 18 2022 [   5068 00]  JFS.MOD;1
+/BOOT/GRUB/I386_EFI/JPEG.MOD;1
+----------   0    0    0            6840 Dec 18 2022 [   5072 00]  JPEG.MOD;1
+/BOOT/GRUB/I386_EFI/JSON.MOD;1
+----------   0    0    0            3592 Dec 18 2022 [   5076 00]  JSON.MOD;1
+/BOOT/GRUB/I386_EFI/KEYLAYOUTS.MOD;1
+----------   0    0    0            5080 Dec 18 2022 [   5078 00]  KEYLAYOUTS.MOD;1
+/BOOT/GRUB/I386_EFI/KEYSTATUS.MOD;1
+----------   0    0    0            1872 Dec 18 2022 [   5081 00]  KEYSTATUS.MOD;1
+/BOOT/GRUB/I386_EFI/LDM.MOD;1
+----------   0    0    0            6580 Dec 18 2022 [   5082 00]  LDM.MOD;1
+/BOOT/GRUB/I386_EFI/LEGACYCFG.MOD;1
+----------   0    0    0           31776 Dec 18 2022 [   5086 00]  LEGACYCFG.MOD;1
+/BOOT/GRUB/I386_EFI/LEGACY_PASSWORD_TEST.MOD;1
+----------   0    0    0           14436 Dec 18 2022 [   5102 00]  LEGACY_PASSWORD_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/LINUX.MOD;1
+----------   0    0    0           12988 Dec 18 2022 [   5110 00]  LINUX.MOD;1
+/BOOT/GRUB/I386_EFI/LINUX16.MOD;1
+----------   0    0    0            5952 Dec 18 2022 [   5117 00]  LINUX16.MOD;1
+/BOOT/GRUB/I386_EFI/LINUXEFI.MOD;1
+----------   0    0    0            6740 Dec 18 2022 [   5120 00]  LINUXEFI.MOD;1
+/BOOT/GRUB/I386_EFI/LOADBIOS.MOD;1
+----------   0    0    0            3088 Dec 18 2022 [   5124 00]  LOADBIOS.MOD;1
+/BOOT/GRUB/I386_EFI/LOADENV.MOD;1
+----------   0    0    0            5996 Dec 18 2022 [   5126 00]  LOADENV.MOD;1
+/BOOT/GRUB/I386_EFI/LOOPBACK.MOD;1
+----------   0    0    0            3068 Dec 18 2022 [   5129 00]  LOOPBACK.MOD;1
+/BOOT/GRUB/I386_EFI/LS.MOD;1
+----------   0    0    0            4024 Dec 18 2022 [   5131 00]  LS.MOD;1
+/BOOT/GRUB/I386_EFI/LSACPI.MOD;1
+----------   0    0    0            4772 Dec 18 2022 [   5133 00]  LSACPI.MOD;1
+/BOOT/GRUB/I386_EFI/LSEFI.MOD;1
+----------   0    0    0            3640 Dec 18 2022 [   5136 00]  LSEFI.MOD;1
+/BOOT/GRUB/I386_EFI/LSEFIMMAP.MOD;1
+----------   0    0    0            2704 Dec 18 2022 [   5138 00]  LSEFIMMAP.MOD;1
+/BOOT/GRUB/I386_EFI/LSEFISYSTAB.MOD;1
+----------   0    0    0            3096 Dec 18 2022 [   5140 00]  LSEFISYSTAB.MOD;1
+/BOOT/GRUB/I386_EFI/LSMMAP.MOD;1
+----------   0    0    0            1876 Dec 18 2022 [   5142 00]  LSMMAP.MOD;1
+/BOOT/GRUB/I386_EFI/LSPCI.MOD;1
+----------   0    0    0            4824 Dec 18 2022 [   5143 00]  LSPCI.MOD;1
+/BOOT/GRUB/I386_EFI/LSSAL.MOD;1
+----------   0    0    0            2672 Dec 18 2022 [   5146 00]  LSSAL.MOD;1
+/BOOT/GRUB/I386_EFI/LUKS.MOD;1
+----------   0    0    0            4424 Dec 18 2022 [   5148 00]  LUKS.MOD;1
+/BOOT/GRUB/I386_EFI/LUKS2.MOD;1
+----------   0    0    0           14488 Dec 18 2022 [   5151 00]  LUKS2.MOD;1
+/BOOT/GRUB/I386_EFI/LVM.MOD;1
+----------   0    0    0            8896 Dec 18 2022 [   5159 00]  LVM.MOD;1
+/BOOT/GRUB/I386_EFI/LZOPIO.MOD;1
+----------   0    0    0            4972 Dec 18 2022 [   5164 00]  LZOPIO.MOD;1
+/BOOT/GRUB/I386_EFI/MACBLESS.MOD;1
+----------   0    0    0            3364 Dec 18 2022 [   5167 00]  MACBLESS.MOD;1
+/BOOT/GRUB/I386_EFI/MACHO.MOD;1
+----------   0    0    0            7612 Dec 18 2022 [   5169 00]  MACHO.MOD;1
+/BOOT/GRUB/I386_EFI/MDRAID09.MOD;1
+----------   0    0    0            1916 Dec 18 2022 [   5173 00]  MDRAID09.MOD;1
+/BOOT/GRUB/I386_EFI/MDRAID09_BE.MOD;1
+----------   0    0    0            2008 Dec 18 2022 [   5174 00]  MDRAID09_BE.MOD;1
+/BOOT/GRUB/I386_EFI/MDRAID1X.MOD;1
+----------   0    0    0            1908 Dec 18 2022 [   5175 00]  MDRAID1X.MOD;1
+/BOOT/GRUB/I386_EFI/MEMRW.MOD;1
+----------   0    0    0            2944 Dec 18 2022 [   5176 00]  MEMRW.MOD;1
+/BOOT/GRUB/I386_EFI/MINICMD.MOD;1
+----------   0    0    0            3724 Dec 18 2022 [   5178 00]  MINICMD.MOD;1
+/BOOT/GRUB/I386_EFI/MINIX2.MOD;1
+----------   0    0    0            3732 Dec 18 2022 [   5180 00]  MINIX2.MOD;1
+/BOOT/GRUB/I386_EFI/MINIX2_BE.MOD;1
+----------   0    0    0            3864 Dec 18 2022 [   5182 00]  MINIX2_BE.MOD;1
+/BOOT/GRUB/I386_EFI/MINIX3.MOD;1
+----------   0    0    0            3700 Dec 18 2022 [   5184 00]  MINIX3.MOD;1
+/BOOT/GRUB/I386_EFI/MINIX3_BE.MOD;1
+----------   0    0    0            3864 Dec 18 2022 [   5186 00]  MINIX3_BE.MOD;1
+/BOOT/GRUB/I386_EFI/MINIX_BE.MOD;1
+----------   0    0    0            3764 Dec 18 2022 [   5188 00]  MINIX_BE.MOD;1
+/BOOT/GRUB/I386_EFI/MMAP.MOD;1
+----------   0    0    0            6856 Dec 18 2022 [   5190 00]  MMAP.MOD;1
+/BOOT/GRUB/I386_EFI/MODDEP.LST;1
+----------   0    0    0            5259 Dec 18 2022 [   5194 00]  MODDEP.LST;1
+/BOOT/GRUB/I386_EFI/MORSE.MOD;1
+----------   0    0    0            2364 Dec 18 2022 [   5197 00]  MORSE.MOD;1
+/BOOT/GRUB/I386_EFI/MPI.MOD;1
+----------   0    0    0           28528 Dec 18 2022 [   5199 00]  MPI.MOD;1
+/BOOT/GRUB/I386_EFI/MSDOSPART.MOD;1
+----------   0    0    0            2428 Dec 18 2022 [   5213 00]  MSDOSPART.MOD;1
+/BOOT/GRUB/I386_EFI/MULTIBOOT.MOD;1
+----------   0    0    0           13484 Dec 18 2022 [   5215 00]  MULTIBOOT.MOD;1
+/BOOT/GRUB/I386_EFI/MULTIBOOT2.MOD;1
+----------   0    0    0           15416 Dec 18 2022 [   5222 00]  MULTIBOOT2.MOD;1
+/BOOT/GRUB/I386_EFI/MUL_TEST.MOD;1
+----------   0    0    0            2016 Dec 18 2022 [   5230 00]  MUL_TEST.MOD;1
+/BOOT/GRUB/I386_EFI/NATIVEDISK.MOD;1
+----------   0    0    0            4576 Dec 18 2022 [   5231 00]  NATIVEDISK.MOD;1
+/BOOT/GRUB/I386_EFI/NET.MOD;1
+----------   0    0    0           84844 Dec 18 2022 [   5234 00]  NET.MOD;1
+/BOOT/GRUB/I386_EFI/NEWC.MOD;1
+----------   0    0    0            3004 Dec 18 2022 [   5276 00]  NEWC.MOD;1
+/BOOT/GRUB/I386_EFI/NORMAL.MOD;1
+----------   0    0    0          120384 Dec 18 2022 [   5278 00]  NORMAL.MOD;1
+/BOOT/GRUB/I386_EFI/NTFS.MOD;1
+----------   0    0    0           10228 Dec 18 2022 [   5337 00]  NTFS.MOD;1
+/BOOT/GRUB/I386_EFI/NTFSCOMP.MOD;1
+----------   0    0    0            4320 Dec 18 2022 [   5342 00]  NTFSCOMP.MOD;1
+/BOOT/GRUB/I386_EFI/ODC.MOD;1
+----------   0    0    0            2812 Dec 18 2022 [   5345 00]  ODC.MOD;1
+/BOOT/GRUB/I386_EFI/OFFSETIO.MOD;1
+----------   0    0    0            1488 Dec 18 2022 [   5347 00]  OFFSETIO.MOD;1
+/BOOT/GRUB/I386_EFI/OHCI.MOD;1
+----------   0    0    0           10488 Dec 18 2022 [   5348 00]  OHCI.MOD;1
+/BOOT/GRUB/I386_EFI/PARTMAP.LST;1
+----------   0    0    0             111 Dec 18 2022 [   5354 00]  PARTMAP.LST;1
+/BOOT/GRUB/I386_EFI/PARTTOOL.LST;1
+----------   0    0    0              17 Dec 18 2022 [   5355 00]  PARTTOO

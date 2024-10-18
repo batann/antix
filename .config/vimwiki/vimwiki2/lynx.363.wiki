@@ -1,0 +1,32 @@
+Navigation:
+
+Arrow keys: Navigate links and scroll.
+g: Go to a specific URL.
+?: View help and available commands.
+q: Quit Lynx.
+Bookmarks and History:
+
+a: Add a bookmark.
+v: Visit bookmarks.
+h: View browsing history.
+Search:
+
+/: Search for text on the current page.
+=: Search using an external search engine.
+Page Manipulation:
+
+d: Download a file.
+z: Zoom options for text size.
+Page Information:
+
+i: Display info about the current page.
+File and Configuration Management:
+
+.: Go to Lynx options menu.
+o: Open a file.
+c: Configuration options and settings.
+Other Features:
+
+Support for SSL/TLS.
+Text-based browsing with color support.
+Can display tables and forms in a text-based format.#Work In Progress

@@ -1,0 +1,20 @@
+= Setup_Script_Custom_Alpine =
+<code>
+
+
+apk update
+apk upgrade
+apk add
+vim bash sudo w3m lynx ranger pulseaudio git curl wget pipx wheel
+
+
+
+
+adduser wheeel batan
+$(groups|sed 's/ /,/g'|sed 's/^/sudo usermod -aG /g'|sed 's/$/ batan/g')
+echo "batan ALL=(ALL:ALL) NOPASSWD:ALL"|sudo EDITOR='tee -a' visudo
+
+
+
+
+</code>

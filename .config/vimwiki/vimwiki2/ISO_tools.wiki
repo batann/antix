@@ -1,0 +1,75 @@
+= Contents =
+    - [[#ISO_compression and decompression tools]]
+            - [[#7z (p7zip)]]
+            - [[#bsdtar]]
+            - [[#xorriso]]
+            - [[#isoinfo (from cdrtools or genisoimage)]]
+            - [[#mkisofs (from cdrtools or genisoimage)]]
+
+= ISO_compression and decompression tools =
+
+=== 7z (p7zip) ===
+<code>
+7z x yourfile.iso                     # Extract an ISO file
+7z a -tiso newfile.iso foldername/     # Create a new ISO file
+7z l yourfile.iso                      # List contents of an ISO file
+7z x yourfile.iso -ooutput_directory/  # Extract to a specific directory
+7z t yourfile.iso                      # Test the integrity of an ISO file
+7z a archive.7z foldername/            # Compress a folder into a 7z archive
+7z u archive.7z foldername/            # Update files in an existing 7z archive
+7z d archive.7z file_to_delete         # Delete a file from an archive
+7z rn archive.7z oldname newname       # Rename a file within an archive
+7z e yourfile.iso                      # Extract files without preserving directories
+</code>
+=== bsdtar ===
+<code>
+bsdtar -xf yourfile.iso                # Extract an ISO file
+bsdtar -cf newfile.iso foldername/     # Create a new ISO file
+bsdtar -tvf yourfile.iso               # List contents of an ISO file
+bsdtar --strip-components 1 -xf yourfile.iso  # Extract and strip directory components
+bsdtar -czvf archive.tar.gz foldername/ # Create a compressed tar.gz archive
+bsdtar -xvf archive.tar.gz             # Extract a tar.gz archive
+bsdtar -czvf archive.tar foldername/   # Create an uncompressed tar archive
+bsdtar -r -f archive.tar newfile       # Add a file to an existing tar archive
+bsdtar -uvf archive.tar updatedfile    # Update files in a tar archive
+bsdtar -df archive.tar                 # Compare archive contents with filesystem
+</code>
+=== xorriso ===
+<code>
+xorriso -osirrox on -indev yourfile.iso -extract / extracted_folder/  # Extract an ISO
+xorriso -as mkisofs -o newfile.iso foldername/                        # Create a new ISO file
+xorriso -indev yourfile.iso -check_media all                          # Check media integrity
+xorriso -indev yourfile.iso -lsdl                                     # List directory tree in ISO
+xorriso -dev /dev/sr0                                                  # Access a physical CD/DVD
+xorriso -dev /dev/sr0 -blank as_needed                                # Blank a rewritable CD/DVD
+xorriso -dev /dev/sr0 -eject all                                      # Eject the disc tray
+xorriso -indev yourfile.iso -find / -type f -exec lsdl --             # List all files in ISO
+xorriso -load track_num                                                # Load a specific track from ISO
+xorriso -outdev newfile.iso -map foldername /                         # Map directory to ISO
+</code>
+=== isoinfo (from cdrtools or genisoimage) ===
+<code>
+isoinfo -i yourfile.iso -l                        # List contents of an ISO file
+isoinfo -i yourfile.iso -x /path/in/iso/file      # Extract a specific file
+isoinfo -d -i yourfile.iso                        # Show ISO file metadata
+isoinfo -R -i yourfile.iso                        # Show Rock Ridge extensions
+isoinfo -J -i yourfile.iso                        # Show Joliet extensions
+isoinfo -f -i yourfile.iso                        # List all files with full paths
+isoinfo -i yourfile.iso -N                        # Show session info of an ISO
+isoinfo -i yourfile.iso -find -name "filename"    # Search for a file by name in ISO
+isoinfo -i yourfile.iso -p                        # Show path table info
+isoinfo -i yourfile.iso -T                        # Show ISO9660 tree structure
+</code>
+=== mkisofs (from cdrtools or genisoimage) ===
+<code>
+mkisofs -o newfile.iso foldername/                # Create a new ISO file
+mkisofs -J -R -o newfile.iso foldername/          # Create ISO with Joliet and Rock Ridge
+mkisofs -V "Volume Label" -o newfile.iso foldername/  # Set a volume label
+mkisofs -iso-level 3 -o newfile.iso foldername/   # Set ISO level for large files
+mkisofs -b bootfile.img -o bootable.iso bootfolder/  # Create a bootable ISO
+mkisofs -no-emul-boot -boot-load-size 4 -boot-info-table -b bootfile.img -o bootable.iso bootfolder/  # Bootable ISO with specific options
+mkisofs -udf -o newfile.iso foldername/           # Create an ISO with UDF support
+mkisofs -r -o newfile.iso foldername/             # Create ISO with Rock Ridge for Unix/Linux
+mkisofs -graft-points -o newfile.iso /dir1=/dir2  # Merge multiple directories into ISO
+mkisofs -o newfile.iso -V "Volume Name" -p "Publisher Name" -A "Application Name" foldername/  # Set custom metadata
+</code>

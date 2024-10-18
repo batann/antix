@@ -1,0 +1,87 @@
+= Contents =
+                - [[#Menu Bash]]
+                - [[#ToDos]]
+                - [[#Menu Functions]]
+                - [[#Current Structure:]]
+                - [[#Backup in /Root/menu.262.tar.gz]]
+
+== Menu Bash ==
+_Project:file:////home/batan/16/menu/start.sh_
+== ToDos ==
+- [X] Create Project Director y
+- [X] Create Sub Directories:
+	- [X] Scripts
+- [ ] Systmatic Function assignment useing the following table:
+
+
+== Prerequisites ==
+
+- [ ] Calendar.vim synced with google
+- [ ] TW enabled
+- [ ] 
+
+
+== Menu Functions ==
+
+| Nu | Menu1           | Menu2          | Menu3    |         |   |   |   |
+|----|-----------------|----------------|----------|---------|---|---|---|
+| 1  | Megasync        | Bookmarks      | Dash     |         |   |   |   |
+| 2  | Add Shoppinng   | TaskManagement | Firefox  | Vimwiki |   |   |   |
+| 3  | Taskwarrior     | Dashboard      | Falkon   |         |   |   |   |
+| 4  | Rofi drun       | Add Task       | Chess    |         |   |   |   |
+| 5  | Time            | Calendar       | DuckGo   |         |   |   |   |
+| 6  | Shopping        | Mail           | Cmus     |         |   |   |   |
+| 7  | Add to Buy      | Vimwiki        | Ranger   |         |   |   |   |
+| 8  | Task            | Split          | Terminal |         |   |   |   |
+| 9  | -               | Drun           | Clean    |         |   |   |   |
+| 10 | -               | Menu3          | Update   |         |   |   |   |
+|    | -               | Exit           | Exit     |         |   |   |   |
+
+
+== Menu Commands ==
+
+| Nu | Command1 | Command2 | Command3 |   |   |   |   |
+|----|----------|----------|----------|---|---|---|---|
+| 1  | ranger   |          |          |   |   |   |   |
+| 2  | cmus     |          |          |   |   |   |   |
+| 3  | terminal |          |          |   |   |   |   |
+| 4  | falkon   |          |          |   |   |   |   |
+| 5  | firefox  |          |          |   |   |   |   |
+| 6  | drun     |          |          |   |   |   |   |
+| 7  | turtle   |          |          |   |   |   |   |
+| 8  | note     |          |          |   |   |   |   |
+| 9  |          |          |          |   |   |   |   |
+| 10 |          |          |          |   |   |   |   |
+|    |          |          |          |   |   |   |   |
+
+== Current Structure: ==
+`
+├── menu
+│   ├── scripts
+│   │   ├── addtask.sh
+│   │   ├── bukuFZF.sh
+│   │   ├── ddgr.sh
+│   │   ├── fin.sh
+│   │   ├── install.sh
+│   │   ├── tm.sh
+│   │   └── tmux.sh
+│   ├── menu1.sh
+│   ├── menu2.sh
+│   ├── menu3.sh
+│   └── start.sh
+├── note
+│   ├── note2012.txt
+│   └── note.txt
+``
+
+
+
+`
+== Backup == 
+*/Root/menu.262.tar.gz*
+
+
+
+
+
+

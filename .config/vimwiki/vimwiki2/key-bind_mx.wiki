@@ -1,0 +1,36 @@
+	 *Keys lending themself to key-bind on MX-setup*
+    ===============================================
+
+# Key Sequence:
+===============
+
++------+----------------+
+| Key: | Sequence:      |
+|------+----------------|
+| F5   | ^[[15~         |
+| F6   | ^[[16~         |
+| F7   | ^[[17~         |
+| F8   | ^[[18~         |
+| F9   | ^[[20~         |
+| F12  | ^[[24~         |
++------+----------------+
+
+
+
+
+
+- Determin the key sequance:
+	_You can determine the character sequence emitted by a key by pressing Ctrl-v at the command line, then pressing the key you're interested in. On my system for F12, I get ^[[24~. The ^[ represents Esc. Different types of terminals or terminal emulators can emit different codes for the same key._
+	
+	
+	bind '"\e[24~":"foobar"'
+
+	bind '"\e[24~":"pwd\n"'
+
+	bind '"\e[24~":"\C-k \C-upwd\n"'
+
+	"\e[24~":"\C-k \C-upwd\n"
+
+
+	
+

@@ -1,0 +1,41 @@
+=inst5.sh=
+
+#!/bin/bash
+
+menu=("Flatpak |apt install flatpak && apt install flatpak gnome-software-plugin-flatpak -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+"Ungoogled Cromium| flatpak install flathub com.githuvb.Elston.UngoogledChromium -y"
+"Bitwarden| flatpak install flathub com.bitwarden.desktop -y"
+"MEGAsync| flatpak install flathub nz.mega.MEGAsync -y"
+"Tutanota|flatpak install flathub com.tutanota.Tutanota -y"
+"Color Pick| flatpak install flathub org.kryogenix.Pick -y"
+"Obsidian| flatpak install flahub md.obsidian.Obsidian"
+"VideoDownloader| flatpak install flathub com.github.unrud.VideoDownloader -y"
+)
+yad_opts=( --form
+           --title="Software Installer"
+           --text="Install Software"
+           --image="logo.png"
+           --button="Install" --button="Exit" )
+
+for m in "${menu[@]}"
+do
+  yad_opts+=( --field="${m%|*}:CHK" )
+done
+
+IFS='|' read -ra ans < <( yad "${yad_opts[@]}" )
+
+for i in "${!ans[@]}"
+do
+  if [[ ${ans[$i]} == TRUE ]]
+  then
+    m=${menu[$i]}
+    name=${m%|*}
+    cmd=${m#*|}
+    echo "selected: $name ($cmd)"
+    $cmd
+  fi
+done
+
+
+sudo bash inst6.sh
+

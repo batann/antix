@@ -1,0 +1,69 @@
+= Contents =
+    - [[#Kitty Pane Management Cheatsheet]]
+        - [[#Basic Pane Commands]]
+            - [[#Split horizontally:]]
+            - [[#Split vertically:]]
+            - [[#Close current pane:]]
+        - [[#Navigation]]
+            - [[#Move focus to the left pane:]]
+            - [[#Move focus to the right pane:]]
+            - [[#Move focus to the top pane:]]
+            - [[#Move focus to the bottom pane:]]
+        - [[#Resizing Panes]]
+            - [[#Increase pane width:]]
+            - [[#Decrease pane width:]]
+            - [[#Increase pane height:]]
+            - [[#Decrease pane height:]]
+        - [[#Sending Text to Panes]]
+            - [[#Send text to a specific window:]]
+        - [[#Session Management]]
+            - [[#Save current session:]]
+            - [[#Load saved session:]]
+        - [[#Example Usage]]
+            - [[#Split horizontally:]]
+            - [[#Split vertically in the new pane:]]
+            - [[#Send text to the second pane:]]
+
+= Kitty Pane Management Cheatsheet =
+== Basic Pane Commands ==
+=== Split horizontally: ===
+	kitty @ launch --type=horizontal
+=== Split vertically: ===
+	kitty @ launch --type=vertical
+=== Close current pane: ===
+    kitty @ close-window
+== Navigation ==
+=== Move focus to the left pane: ===
+	kitty @ neighbor left
+=== Move focus to the right pane: ===
+	kitty @ neighbor right
+=== Move focus to the top pane: ===
+	kitty @ neighbor up
+=== Move focus to the bottom pane: ===
+    kitty @ neighbor down
+== Resizing Panes ==
+=== Increase pane width: ===
+	kitty @ resize-window --axis=horizontal --increment=20
+=== Decrease pane width: ===
+	kitty @ resize-window --axis=horizontal --increment=-20
+=== Increase pane height: ===
+	kitty @ resize-window --axis=vertical --increment=10
+=== Decrease pane height: ===
+    kitty @ resize-window --axis=vertical --increment=-10
+== Sending Text to Panes ==
+=== Send text to a specific window: ===
+    kitty @ send-text --match title:MyWindow 'echo "Hello, World!"\n'
+== Session Management ==
+=== Save current session: ===
+	kitty @ save-layout my-session.conf
+=== Load saved session: ===
+    kitty @ restore-layout my-session.conf
+== Example Usage ==
+To create a simple horizontal and vertical split setup and send a command to a specific pane, you can do the following:
+=== Split horizontally: ===
+	kitty @ launch --type=horizontal
+=== Split vertically in the new pane: ===
+	kitty @ launch --type=vertical
+=== Send text to the second pane: ===
+	kitty @ send-text --match cmdline:my-command 'ls\n'
+These commands can be used in scripts or directly from the command line to manage Kitty panes efficiently.

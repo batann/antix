@@ -1,0 +1,8 @@
+
+= mx_23.2.iso.zsync_link =
+
+
+
+http://iso.mxrepo.com/Downloads/Final/MX-23.2/MX-23.2_x64.iso.zsync
+
+

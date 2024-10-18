@@ -1,0 +1,186 @@
+= kitty_mappable_actions =
+== Mappable actions ==
+
+The actions described below can be mapped to any key press or mouse action using the map and mouse_map directives in kitty.conf. For configuration examples, see the default shortcut links for each action. To read about keyboard mapping in more detail, see Making your keyboard dance.
+Copy/paste
+clear_selection
+
+Clear the current selection
+
+copy_and_clear_or_interrupt
+
+Copy the selected text from the active window to the clipboard and clear selection, if no selection, send SIGINT (aka ctrl+c)
+
+copy_ansi_to_clipboard
+
+Copy the selected text from the active window to the clipboard with ANSI formatting codes
+
+copy_or_interrupt
+
+Copy the selected text from the active window to the clipboard, if no selection, send SIGINT (aka ctrl+c)
+
+copy_to_clipboard
+
+Copy the selected text from the active window to the clipboard
+
+Default shortcuts using this action: ctrl+shift+c
+
+pass_selection_to_program
+
+Pass the selected text from the active window to the specified program
+
+Default shortcuts using this action: ctrl+shift+o
+
+paste
+
+Paste the specified text into the current window. ANSI C escapes are decoded.
+
+show_first_command_output_on_screen
+
+Show output from the first shell command on screen in a pager like less
+
+Requires Shell integration to work
+
+show_last_command_output
+
+Show output from the last shell command in a pager like less
+
+Requires Shell integration to work
+
+Default shortcuts using this action: ctrl+shift+g
+
+show_last_non_empty_command_output
+
+Show the last non-empty output from a shell command in a pager like less
+
+Requires Shell integration to work
+
+show_last_visited_command_output
+
+Show the first command output below the last scrolled position via scroll_to_prompt
+
+or the last mouse clicked command output in a pager like less
+
+Requires Shell integration to work
+
+show_scrollback
+
+Show scrollback in a pager like less
+
+Default shortcuts using this action: ctrl+shift+h
+
+copy_to_buffer
+
+Copy the selection from the active window to the specified buffer
+
+See Multiple copy/paste buffers for details.
+
+paste_from_buffer
+
+Paste from the specified buffer to the active window
+
+See Multiple copy/paste buffers for details.
+
+paste_from_clipboard
+
+Paste from the clipboard to the active window
+
+Default shortcuts using this action: ctrl+shift+v
+
+paste_from_selection
+
+Paste from the primary selection, if present, otherwise the clipboard to the active window
+
+Default shortcuts using this action: ctrl+shift+s
+Debugging
+dump_lines_with_attrs
+
+Show a dump of the current lines in the scrollback + screen with their line attributes
+
+close_shared_ssh_connections
+
+Close all shared SSH connections
+
+See share_connections for details.
+
+debug_config
+
+Show the effective configuration kitty is running with
+
+Default shortcuts using this action: ctrl+shift+f6
+
+show_kitty_env_vars
+
+Show the environment variables that the kitty process sees
+Layouts
+goto_layout
+
+Switch to the named layout
+
+In case there are multiple layouts with the same name and different options, specify the full layout definition or a unique prefix of the full definition.
+
+For example:
+
+map f1 goto_layout tall
+map f2 goto_layout fat:bias=20
+
+last_used_layout
+
+Go to the previously used layout
+
+layout_action
+
+Perform a layout specific action. See Arrange windows for details
+
+next_layout
+
+Go to the next enabled layout. Can optionally supply an integer to jump by the specified number.
+
+Default shortcuts using this action: ctrl+shift+l
+
+toggle_layout
+
+Toggle the named layout
+
+Switches to the named layout if another layout is current, otherwise switches to the last used layout. Useful to “zoom” a window temporarily by switching to the stack layout. For example:
+
+map f1 toggle_layout stack
+
+Marks
+remove_marker
+
+Remove a previously created marker
+
+scroll_to_mark
+
+Scroll to the next or previous mark of the specified type
+
+toggle_marker
+
+Toggle the current marker on/off
+
+create_marker
+
+Create a new marker
+Miscellaneous
+send_key
+
+Send the specified keys to the active window.
+
+Note that the key will be sent only if the current keyboard mode of the program running in the terminal supports it. Both key press and key release are sent. First prnagement
+close_other_tabs_in_os_window
+
+Close all the tabs in the current OS window other than the currently active tab
+
+close_tab
+
+Close the current tab
+
+Default shortcuts using this action: ctrl+shift+q
+
+detach_tab
+
+Detach a tab, moving it to anoth
+Reset window sizes undoing any dynamic resizing of windows
+
+re

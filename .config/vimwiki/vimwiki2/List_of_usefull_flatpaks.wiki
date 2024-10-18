@@ -1,0 +1,14 @@
+=Usefull Flatpaks=
+
+
+
+1. com.tutanota.Tutanota 						_#tutanota_
+2. nz.mega.MEGAsync 							_#megasync_
+3. com.bitwarden.desktop						_#bitwarden_
+4. com.github.unrud.VideoDownloader					_#downloader_
+5. com.github.Eloston.UngoogledChromium					_#ungoogled_
+6. io.github.dgsasha.Remembrance					#reminder
+7. org.kryogenix.Pick
+8. nz.mega.MEGAsync
+9. com.tutanota.Tutanota
+10. 

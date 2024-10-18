@@ -1,0 +1,49 @@
+= Kitty =
+[[Kitty_Sub.wiki|Kitty]]
+
+
+[[kitty_doc_configuration]]
+[[kitty_mappable_actions]]
+
+kitty 0.26.5 created by Kovid Goyal
+Linux think 6.1.0-21-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03) x86_64
+Welcome to MX Linux! Powered by Debian.
+PRETTY_NAME="MX 23.3 Libretto"
+DISTRIB_ID="MX"
+DISTRIB_RELEASE=23.3
+DISTRIB_CODENAME="Libretto"
+DISTRIB_DESCRIPTION="MX 23.3 Libretto"
+Running under: X11
+Frozen: False
+Paths:
+kitty: /usr/bin/kitty
+base dir: /usr/lib/kitty
+extensions dir: /usr/lib/kitty/kitty
+system shell: /usr/bin/bash
+Loaded config files:
+/etc/xdg/kitty/kitty.conf
+
+Config options different from defaults:
+update_check_interval 0.0
+
+Important environment variables seen by the kitty process:
+PATH                                /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+LANG                                en_US.UTF-8
+SHELL                               /usr/bin/bash
+DISPLAY                             :0.0
+USER                                batan
+XDG_SEAT                            seat0
+XDG_SESSION_TYPE                    x11
+XDG_SEAT_PATH                       /org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_CLASS                   user
+XDG_SESSION_ID                      1
+XDG_SESSION_PATH                    /org/freedesktop/DisplayManager/Session0
+XDG_RUNTIME_DIR                     /run/user/1000
+XDG_MENU_PREFIX                     xfce-
+XDG_CURRENT_DESKTOP                 XFCE
+XDG_SESSION_DESKTOP                 xfce
+XDG_GREETER_DATA_DIR                /var/lib/lightdm/data/batan
+XDG_VTNR                            7
+XDG_DATA_DIRS                       /usr/share/xfce4:/home/batan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CONFIG_DIRS                     /etc/xdg
+

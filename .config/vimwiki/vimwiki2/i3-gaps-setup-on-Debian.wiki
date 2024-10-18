@@ -1,0 +1,213 @@
+
+   #[1]lottalinuxlinks.com
+
+   [2]lottalinuxlinks.com [vw_scaled.png]
+
+   [ ]
+   [3]About[4]Gemini[5]Gopher[6]MODcast[7]Toots
+
+How to build and install i3-gaps from source on debian
+
+   Feb 6, 2021 | [8]i3, [9]i3-gaps, [10]debian, [11]FOSS
+
+   i3-gaps is a fork of the i3 window manager that is kept up to date with
+   upstream i3, and adds the feature of allowing you to have visible and
+   configurable gaps between windows. This feature is just eye candy, and
+   may or may not actually aid the user by providing some visible space
+   between windows (at the expense of some screen real estate) to make
+   clearer the distinction between adjacent windows. What cannot be argued
+   though, is that i3-gaps just looks better. Seriously though, it is just
+   regular i3 but with re-sizable gaps between windows that can be turned
+   on or off.
+
+   Debian does not have i3-gaps in their repos, just plain i3. If you are
+   running debian, and already have i3 from the debian repos installed,
+   and you want to use i3-gaps, I recommend uninstalling the version from
+   the debian repos before proceeding. The reason you want to do this is
+   that the i3-gaps binary is actually named i3, just like the non-gapped
+   i3 from which it is forked.
+
+   I don’t know why the forked version has the same name, but that’s OK.
+   You either want the gap option, or you don’t. If you want them bad
+   enough, just uninstall the i3 from the repo before proceeding.
+sudo apt purge i3
+
+   Before we go any further, and in the spirit of full disclosure, I
+   installed i3 in /usr/ instead of /usr/local/.
+   I know, I know…the instructions that follow though will assume that you
+   want to install i3-gaps in /usr/local/.
+
+   So, here is how to build from source and install i3-gaps on debian:
+
+   First install the dependencies:
+apt install meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0
+-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libx
+cb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstar
+tup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0
+ libxcb-shape0-dev
+
+   Then cd to the directory where you want to download the i3-gaps source
+   code and the run the following commands in the order shown.
+git clone https://github.com/Airblader/i3 i3-gaps
+
+cd i3-gaps
+
+mkdir -p build && cd build
+
+meson --prefix /usr/local
+
+ninja
+
+sudo ninja install
+
+   The meson –prefix option allows you to pick where you want to install
+   i3-gaps. In the above example, everything will be installed in
+   sub-directories of the /usr/local/ directory.
+
+   As I mentioned before, this binary will not be called i3-gaps, but it
+   will be called i3.
+
+   If you are like me, and don’t use a display manager, just edit your
+   .xinitrc file and comment out your current window manager and add the
+   following line:
+exec i3
+
+   If you are running a display manager you should be able to pick i3 from
+   the login screen. Remember it will be called i3, not i3-gaps.
+
+   Once installed, you will need to edit your config file
+   (~/.config/i3/config) to enable the gaps feature, since the config file
+   that comes with i3-gaps is the same one as the default non-gapped i3
+   from the repo. All you need to add is in the README.md at the
+   [12]i3-gaps github page. Note that the i3-gaps documentation states
+   that window titlebars need to be disabled in order for the gaps feature
+   to work. I think that recommendation may be out of date, as I have run
+   gaps with window titlebars enabled; but YMMV. I have since grown to
+   love windows without titlebars though, and keep my titlebars disabled..
+
+   Here is the pertinent part of my config file, and how I have the gaps
+   configured:
+# gaps
+# disable window titlebars
+for_window [class="^.*"] border pixel 0
+
+gaps inner 6
+gaps outer 2
+
+bindsym $mod+Shift+g gaps inner all set 6; gaps outer all set 2
+bindsym $mod+Shift+n gaps inner all set 0; gaps outer all set 0
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# Activate smart borders (always)
+#smart_borders on
+
+# Activate smart borders (only when there are effectively no gaps)
+#smart_borders no_gaps
+
+# Hide edge borders only if there is one window with no gaps
+hide_edge_borders smart_no_gaps
+
+# What follows here is optional and defines a mode that allows you to resize the
+ gaps on the fly.
+# Press $mod1+Shift+g to enter the gap mode. Choose o or i for modifying outer/i
+nner gaps.
+# Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for
+ current workspace).
+# If you also press Shift with these keys, the change will be global for all wor
+kspaces.
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod1+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+   If you like i3, you’ll love i3-gaps; even if you don’t love gaps, you
+   can just turn them off and it will be just like regular i3. That is a
+   win-win-win scenario.
+
+   -dsyates
+
+   (o\_!_/o)
+
+Comments
+
+   Use your Mastodon account to [13]comment on this post.
+
+   [14]Reply
+
+   (BUTTON) Load comments
+
+   You need JavaScript to view the comments.
+
+lottalinuxlinks.com
+
+   [15]Subscribe
+     * (o\_!_/o)
+     * [16]dsyates@lottalinuxlinks.com
+
+     * [17]dsyates
+     * [18]dsyates
+
+   The lottalinuxlinks.com linux user web blog is where an old linux user
+   rambles on about linux, FOSS, movies, books, and other geekery. This
+   work is licensed [19]CC BY-NC-SA 4.0. [20]Creative Commons License
+
+References
+
+   Visible links:
+   1. https://lottalinuxlinks.com/feed.xml
+   2. https://lottalinuxlinks.com/
+   3. https://lottalinuxlinks.com/about/
+   4. https://lottalinuxlinks.com/gemini/
+   5. https://lottalinuxlinks.com/gopher/
+   6. https://lottalinuxlinks.com/modcast/
+   7. https://fosstodon.org/@dsyates
+   8. https://lottalinuxlinks.com/tag/i3/
+   9. https://lottalinuxlinks.com/tag/i3-gaps/
+  10. https://lottalinuxlinks.com/tag/debian/
+  11. https://lottalinuxlinks.com/tag/foss/
+  12. https://github.com/Airblader/i3
+  13. https://fosstodon.org/@dsyates/105682739758995979
+  14. https://fosstodon.org/interact/105682739758995979?type=reply
+  15. https://lottalinuxlinks.com/feed.xml
+  16. mailto:dsyates@lottalinuxlinks.com
+  17. https://github.com/dsyates
+  18. https://fosstodon.org/@dsyates
+  19. http://creativecommons.org/licenses/by-nc-sa/4.0/
+  20. http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+   Hidden links:
+  22. https://lottalinuxlinks.com/how-to-build-and-install-i3-gaps-on-debian/

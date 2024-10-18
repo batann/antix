@@ -1,0 +1,36 @@
+=inst3.sh=
+
+#!/bin/bash
+
+menu=("Oolite |wget https://github.com/OoliteProject/oolite/releases/download/1.90/oolite-1.90.linux-x86_64.tgz"
+"Musikcube |wget https://github.com/clangen/musikcube/releases/download/0.98.0/musikcube_standalone_0.98.0_amd64.deb"
+"Bitwarden-Cli |wget https://github.com/bitwarden/cli/releases/download/v1.0.1/bw-linux-1.0.1.zip")
+
+
+yad_opts=( --form
+           --title="Software Installer"
+           --text="Install Software"
+           --image="logo.png"
+           --button="Install" --button="Exit" )
+
+for m in "${menu[@]}"
+do
+  yad_opts+=( --field="${m%|*}:CHK" )
+done
+
+IFS='|' read -ra ans < <( yad "${yad_opts[@]}" )
+
+for i in "${!ans[@]}"
+do
+  if [[ ${ans[$i]} == TRUE ]]
+  then
+    m=${menu[$i]}
+    name=${m%|*}
+    cmd=${m#*|}
+    echo "selected: $name ($cmd)"
+    $cmd
+  fi
+done
+
+sudo bash inst4.sh
+

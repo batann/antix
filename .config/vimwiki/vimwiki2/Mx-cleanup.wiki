@@ -1,0 +1,20 @@
+mx-cleanup version: 23.7.01
+logname
+lslogins --noheadings -u -o user | grep -vw root
+"batan\ndemo"
+grep 'find /var/log' /usr/bin/mx-cleanup-script | grep -Eo '\-ctime \+[0-9]{1,3}' | cut -f2 -d' '
+grep 'find /home/' /usr/bin/mx-cleanup-script | grep -Eo '\-ctime \+[0-9]{1,3}' | cut -f2 -d' '
+du -c /home/batan/.cache/* | tail -1 | cut -f1
+du -c /home/batan/.thumbnails/* | tail -1 | cut -f1
+du -s /home/$(logname)/.local/share/flatpak/ | cut -f1
+du -s /var/lib/flatpak/ | cut -f1
+63269 /usr/libexec/flatpak-portal
+du -s /home/$(logname)/.local/share/flatpak/ | cut -f1
+du -s /var/lib/flatpak/ | cut -f1
+du -s /var/cache/apt/archives/ | cut -f1
+du -s /var/cache/apt/archives/ | cut -f1
+find /var/log \( -name "*.gz" -o -name "*.old" -o -name "*.[0-9]" -o -name "*.[0-9].log" \) -type f -ctime +1 -atime +1 -exec du -sc '{}' + | tail -1 | cut -f1
+find /home/*/.local/share/Trash -mindepth 1 -ctime +1 -atime +1 -exec du -sc '{}' + | tail -1 | cut -f1
+CMD STR "rm -r /home/batan/.cache/* 2>/dev/null\nrm -r /home/batan/.thumbnails/* 2>/dev/null\nfind /var/log \\( -name \"*.gz\" -o -name \"*.old\" -o -name \"*.[0-9]\" -o -name \"*.[0-9].log\" \\) -ctime +1 -atime +1 -type f -delete 2>/dev/null\napt-get clean\nfind /home/*/.local/share/Trash -mindepth 1 -ctime +1 -atime +1 -delete\npgrep -a flatpak | grep -v flatpak-s || flatpak uninstall --unused --noninteractive"
+
+

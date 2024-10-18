@@ -1,0 +1,9 @@
+= LARBS =
+
+
+-	On fresh install of Arch or Artix OS
+<code>
+curl -LO larbs.xyz/larbs.sh
+sh larbs.sh
+</code>
+

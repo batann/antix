@@ -1,0 +1,96 @@
+= Contents =
+    - [[#I2P]]
+    - [[#i2p]]
+        - [[#Installation and Configuration of I2P on Linux:]]
+            - [[#Download I2P:]]
+            - [[#Start I2P:]]
+            - [[#Configure I2P:]]
+            - [[#Check Router Status:]]
+
+= I2P =
+
+
+Installation on Debian/Ubuntu Linux:
+	-> Add I2P Repository:
+
+Open a terminal.
+	-> Add the I2P repository to your package manager:
+`sudo echo "deb https://deb.i2p2.no/ stable main" >> /etc/apt/sources.list.d/i2p.list
+`
+	-> Import I2P Signing Key:
+
+	-> Import the I2P signing key to authenticate the packages:
+
+`wget https://geti2p.net/_static/i2p-debian-repo.key.asc
+sudo apt-key add i2p-debian-repo.key.asc`
+
+	-> Update and Install I2P:
+
+	-> Update your package list and install I2P:
+
+sudo apt-get update
+`sudo apt-get install i2p`
+Start I2P Service:
+
+	-> Start the I2P service:
+`sudo service i2p start
+`	-> Access I2P Router Console:
+
+Open a web browser and navigate to http://localhost:7657/
+Follow the instructions to configure and use the I2P router console.a
+
+##############################################################################################
+
+= i2p =
+== Installation and Configuration of I2P on Linux: ==
+=== Download I2P: ===
+
+Visit the I2P download page and choose the appropriate installer for your system.
+
+For Linux, you can download the Debian package or use the provided commands.
+
+# Example for Debian/Ubuntu-based systems
+```
+sudo apt-add-repository ppa:i2p-maintainers/i2p
+sudo apt-get update
+sudo apt-get install i2p
+```
+=== Start I2P: ===
+
+After installation, start the I2P router:
+```
+sudo service i2p start
+```
+Access I2P Console:
+
+Open a web browser and go to http://localhost:7657/ to access the I2P router console.
+=== Configure I2P: ===
+
+Follow the initial setup instructions on the console.
+Configure bandwidth settings based on your preferences.
+Connect to I2P Network:
+
+On the console, navigate to "Client Configuration" to configure your client settings.
+Adjust the "Outbound tunnels" and "Inbound tunnels" settings according to your preferences.
+Enable and Configure SAM Bridge (Optional):
+
+If you plan to use applications that require SAM (Socket And Messenger) API, enable and configure the SAM bridge in the console under "SAM Application Bridge."
+Integrate with Browser:
+
+For anonymous browsing, configure your browser to use the I2P proxy. Set the proxy settings to 127.0.0.1 at port 4444.
+Explore I2P Sites:
+
+Visit I2P sites by appending .i2p to the site's address. For example, http://example.i2p.
+Additional Settings (Optional):
+
+Explore additional settings on the console to customize I2P behavior based on your requirements.
+Restart I2P Router (Optional):
+
+After making significant changes, you might need to restart the I2P router for the changes to take effect:
+```
+sudo service i2p restart
+```
+=== Check Router Status: ===
+Monitor the router's status on the console to ensure it's connected and working properly.
+By following these steps, you should have I2P installed and configured on your Linux system. Remember to refer to the official documentation for any specific details or troubleshooting.
+

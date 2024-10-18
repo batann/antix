@@ -1,0 +1,9 @@
+= Contents =
+    - [[#Kitty]]
+
+= Kitty =
+
+[[Kitty_Pane_cheatsheet]]
+[[Kitty_doc_configuration]]
+[[Kitty_mappable_actions]]
+[[Kitty_variables]]

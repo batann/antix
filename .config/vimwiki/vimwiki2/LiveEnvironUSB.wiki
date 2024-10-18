@@ -1,0 +1,57 @@
+Create a Live BunsenLabs USB Drive With Persistent Storage
+Language GitHub
+
+Maintenance
+
+Shell script which install the latest BunsenLabs on a USB Key with persistence.
+
+MY needs for that USB key ?
+Boot on any computer
+Boot in a minute
+Fit on a 4Go USB key
+VERY stable (not daily use)
+With GUI
+Create with debug software available (gparted, ..)
+Very wide packages availables (APT or AUR)
+Could install the OS if needed
+Why BunsenLabs ?
+✔️ Boot on any computer
+✔️ Boot in a minute + ✔️ Boot in 1Go RAM
+✔️ Fit on a 4Go USB key ( ~ 1Go / 1Go20 for the system partition)
+✔️ VERY stable => Based on Debian stable
+✔️ With GUI => OpenBox
+✔️ Create with debug software available (gparted, ..)
+✔️ Very wide packages availables => Debian apt-get
+✔️ Could install the OS if needed => Persistence doesn't removed the ability to use the key as an install key
+Getting Started
+Distribution
+That script only work for arch based distros and debian based distros
+
+Installing
+While running of the script, packages (listed in the Built With part) will automatically be installed if needed.
+
+For Arch based distro : The Package manager pacman and yay will be used
+
+For Debian based distro : The Package manager apt-get will be used
+
+Running the script
+Simply, open a terminal and execute the script with root privileges
+
+cd /path/to/the/script
+sudo sh ./bl-livePersistent.sh
+At the beginning of the execution, you'll be prompt to choose your disk. Simply write the disk name (not the partition)
+
+Disk /dev/sda: 298.1 GiB, 320072933376 bytes, 625142448 sectors
+Disk /dev/sdb: 931.5 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk /dev/sdd: 3.8 GiB, 4051697664 bytes, 7913472 sectors
+Tell me what disk should be transform please
+
+>> sdc
+The script will also ask you to choose the architecture you prefer. Simply write the associated number
+
+What version of bl-Helium-4 do you want?
+1 = amd64
+2 = i386
+3 = i386, no PAE
+
+>> 1

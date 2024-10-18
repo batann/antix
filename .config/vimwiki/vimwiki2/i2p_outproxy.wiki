@@ -1,0 +1,36 @@
+
+Configuring an outproxy in I2P involves adjusting your browser settings or I2P router.
+Let’s explore the steps for different scenarios:
+
+
+		Using a Web Browser (Firefox or Chrome):
+		========================================
+	-	Firefox:
+Open Firefox and go to the Menu (top-right corner).
+Select Preferences.
+Scroll down to the Network Proxy section.
+Click on Settings.
+In the Connection Settings pop-up, choose Manual proxy configuration.
+Set both the HTTP and SSL Proxy to address 127.0.0.1 with port 4444.
+Ensure that the property media.peerConnection.ice.proxy_only is set to True in about:config.
+	-	Chrome:
+Create a new profile in Chrome specifically for I2P browsing (separate from the default profile).
+Install the I2PChrome.js extension in your newly-created profile.
+Detailed instructions may vary based on the specific Chrome variant and platform you’re using12.
+		Using I2P Router Console (StormyCloud Outproxy):
+		================================================
+Open your I2P router console page.
+Navigate to your Tunnel Manager.
+Open your HTTP Proxy configuration.
+Under the Outproxies section, specify the exit address as exit.stormycloud.i2p or 5d4s7pcvfdpftfk7npc7hllyujhufsdprtrf4o53i44rgsa2xbwa.b32.i2p3.
+		Using I2P Settings (Gedsh/InviZible):
+		=====================================
+Open the I2P Settings menu.
+Enable HTTP outproxy.
+Ensure you’re using the correct outproxy address (e.g., 4uhjrmilirueyiaps7qshnyhbamyxusyjcbiy6lwh7oq5wyqisbq.b32.i2p:8888)2.
+		Advanced Configuration (i2pd):
+		==============================
+If you’re using i2pd, modify the configuration file:
+Uncomment and set outproxy.enabled to true.
+Specify the outproxy address (usually 127.0.0.1) and port (e.g., 9050)4.
+Remember that configuring an outproxy bridges the I2P network with the Clearnet, so choose wisely based on your privacy needs and trust in the outproxy provider.
