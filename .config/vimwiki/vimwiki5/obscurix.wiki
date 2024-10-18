@@ -1,0 +1,178 @@
+= Obscurix OS =
+
+                                     == Usage ==
+
+   Obscurix is very easy to use. It uses XFCE as a desktop environment
+   that is pre-configured to look nice. It uses the Adapta-Nokto-Eta theme
+   and Papirus icon theme. The background comes from this [1]Reddit post.
+   Once you have booted into Obscurix, it will ask you if you want to use
+   a Tor bridge or not. If you select "No", you will connect directly to
+   the Tor network. If you select "Yes", it will ask you for the bridge
+   information which can be gotten from [2]https://bridges.torproject.org.
+   Once you have entered the correct information, you will connect to Tor
+   through a bridge. This hides Tor usage from your ISP and will help
+   bypass Tor blocks. If you enter the wrong information, Tor will fail to
+   start and you will have to reboot and enter the information in again.
+   After you have been prompted for bridges, it will ask if you want to
+   change the keyboard layout.
+   Web browsing can be done via the Tor Browser which is specially
+   configured to protect your privacy and anonymity. Downloads can only be
+   stored in /home/user/tor-browser_en-US/Browser/Downloads due to the
+   application confinement.
+   It is recommended to use the scurl or scurl-download programs in a
+   terminal for downloads. This a wrapper around curl that prevents https
+   downgrade attacks. Credit to Whonix for this
+   [3]https://github.com/Whonix/scurl.
+   Hexchat is installed by default for IRC chats. It is configured for
+   privacy and security as per
+   [4]https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat.
+   VLC is installed by default for watching videos.
+   Thunderbird is installed for emails and other chats. It uses a
+   configuration (a user.js file) hardened for privacy and security.
+   Evince is installed for viewing documents such as PDFs.
+   evince-thumbnailer and evince-previewer are disabled to reduce attack
+   surface and evince itself is sandboxed. Some functionality such as
+   automatically opening links in browsers is broken.
+   Gedit is installed for editing files. You cannot edit files outside of
+   your home directory due to the restrictions.
+   Eog is installed for image viewing. You cannot view images outside of
+   your home directory.
+   Electrum is installed for cryptocurrencies.
+   Keepassxc is installed for secure password management.
+
+== Boot Parameters ==
+
+   WARNING: Don't use these unless you know what you're doing.
+   Certain things can be configured via boot parameters. These are things
+   you can tell the kernel to do. They are configured at the boot loader.
+   When the screen pops up and asks you to boot into Obscurix, enter "tab"
+   to be able to edit the boot parameters and hit enter to boot. Don't
+   remove any or you will break things or worsen security.
+   Obscurix has a few custom boot parameters that can be used to configure
+   certain things. They are documented below.
+
+  nonet
+
+   Specifying the nonet boot parameter will disable all network access.
+   It does this by getting a list of network interfaces, setting them all
+   down, disabling Tor so the firewall blocks outgoing traffic, disabling
+   NetworkManager and adding iptables rules to block all outgoing traffic.
+
+  rootpw
+
+   Specifying the rootpw boot parameter will allow you to gain root
+   access. It adds the user to the "wheel" group, allows the wheel group
+   to use sudo and sets the user's password to "password". This allows you
+   to run any command as root by putting sudo before it and entering the
+   password.
+   Using su to switch to the root user or logging in as root from a tty is
+   still not possible.
+   This boot parameter will greatly decrease security by allowing any
+   program easy root access. It is highly recommended to restrict root
+   access after you've done whatever you needed root for.
+
+    Restricting Root Access Again
+
+   If you have used the rootpw boot parameter then you should restrict
+   root access again once you've done what you needed root for. This isn't
+   too hard and is documented below.
+   Open a terminal and run sudo su to get a root shell. Remove the user
+   from the "wheel" group by running
+
+   gpasswd -d user wheel
+
+   Now prevent users of the wheel group from using sudo by running visudo
+   and adding a # before %wheel ALL=(ALL) ALL. So now it should say,
+
+   #%wheel ALL=(ALL) ALL
+
+   Close the terminal and now root access will be restricted again. You
+   can test this if you want to.
+
+  nomacspoof
+
+   Specifying nomacspoof as a boot parameter will disable MAC address
+   spoofing. This can be useful if the network you are connecting to only
+   allows connections from certain MAC addresses.
+
+  ipfs/cjdns
+
+   Specifying ipfs or cjdns as boot parameters will enable IPFS or cjdns.
+   See [5]Non-Anonymous Networks for more details.
+
+  nozeronet/noi2p/nofreenet/notor
+
+   Specifying nozeronet, noi2p, nofreenet or notor as boot parameters will
+   disable Zeronet, I2P, Freenet or Tor. This can be useful if you don't
+   use them and want to disable them to free up system resources or reduce
+   attack surface.
+   Disabling Tor will mess up networking.
+
+  cow_spacesize
+
+   The cow_spacesize boot parameter controls the size of the root
+   filesystem. The default is 3G which should be enough for most but some
+   users may want to increase this. For example, to set it at 4G use
+   cow_spacesize=4G as a boot parameter.
+
+Installing New Software
+
+   If you wish to install new software, there are two ways you can do it.
+     * Modify the source code to include it (the most secure way)
+     * Install it with pacman or manually install it (the least secure
+       way)
+
+  Installing New Software with Pacman
+
+   To install new software with pacman you will need root privileges (see
+   the rootpw boot parameter above). First, update the system. This can be
+   done by running
+
+   sudo pacman -Syu
+
+   Now install the software with pacman
+
+   sudo pacman -S (package)
+
+   Replace (package) with the package name. This can take a long time,
+   depending on the speed of your internet connection and how old the iso
+   is.
+
+  Modifying the source code to include new software
+
+   To modify the source code to include new software, follow the building
+   instructions at [6]Downloading and Installing but before building, edit
+   the packages.x86_64 file to include the name of the new software. Make
+   sure the software is in the Arch Linux repositories before doing this.
+
+Bug Reports
+
+   As Obscurix is new software, it is not uncommon for there to be bugs.
+   If you find a bug, please report it at the issues section on [7]Github.
+   Before creating a new issue, check if the same bug has already been
+   reported.
+   When reporting, please give a detailed description of the error. Just
+   saying "X thing doesn't work" is not enough information to help me fix
+   the problem. Please also provide any relevant logs.
+   You will likely need to give the systemd logs which are very detailed.
+   To get these, you will need to have booted Obscurix with the rootpw
+   boot parameter and run journalctl in a terminal. Copy/paste the output
+   and hide any sensitive information if there is any. If you are worried
+   about there being sensitive information there and do not know how to
+   hide it, you can email the logs to me in private. Likely, the most
+   sensitive information would be what hardware you use which isn't that
+   useful to an adversary.
+   When sending large logs, please do not stick the whole thing in the
+   Github issue. Use a pastebin such as [8]Pastebin or [9]PrivateBin.
+
+References
+
+   1. https://www.reddit.com/comments/caiad9
+   2. https://bridges.torproject.org/
+   3. https://github.com/Whonix/scurl
+   4. https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
+   5. https://obscurix.github.io/anonymity-networks.html
+   6. https://obscurix.github.io/download.html
+   7. https://github.com/Obscurix/Obscurix/issues
+   8. https://pastebin.com/
+   9. https://privatebin.net/

@@ -1,0 +1,79 @@
+=== I3_Installation_Script.sh ===
+<code>
+#!/bin/bash
+setup-xorg-base
+#apk search xf86-input*
+#apk search xf86-video*
+#apk add xf86-video-fbdev xf86-video-vesa
+apk add dbus
+rc-update add dbus
+dbus-uuidgen > /var/lib/dbus/machine-id
+apk add i3wm i3status xterm
+addgroup batan video
+addgroup batan input
+startx /usr/bin/i3
+</code>
+== AwesomeWM ==
+apk add awesome xterm font-terminus dbus
+dbus-uuidgen > /var/lib/dbus/machine-id
+setup-xorg-base
+echo 'awesome' >> /home/batan/.xinitrc
+mkdir /home/batan/.config
+cp -r /etc/xdg/awesome  /home/batan/.config
+vi /home/batan/.config/awesome/rc.lua
+startx
+=== lc_awesome_alpine.sh ===
+apk add awesome xterm font-terminus dbus
+rc-update add dbus
+dbus-uuidgen > /var/lib/dbus/machine-id
+apk add xf86-input-synaptics
+apk search xf86-video*
+apk search xf86-input*
+setup-xorg-base
+echo 'awesome' >> /home/batan/.xinitrc
+mkdir /home/batan/.config
+cp -r /etc/xdg/awesome  /home/batan/.config
+vi /home/batan/.config/awesome/rc.lua
+startx
+=== DWM Installation Script ===
+#!/bin/bash
+apk add dwm dmenu st git make gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses dbus-x11 firefox-esr adwaita-gtk2-theme adwaita-icon-theme font-dejavu libxft-dev
+echo "exec dwm" >> /home/batan/.xinitrc
+touch /home/batan/.profile
+cat << 'EOL' > /home/batan/.profile
+if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]; then
+    startx
+fi
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+EOL
+=== TWM_Installation_Script.sh ===
+#!/bin/bash
+setup-xorg-base
+echo "exec twm" >> /home/batan/.xinitrc
+apk add twm xterm xbitmaps
+startx
+=== Customizing twm ===
+twm can be extensively modified. The default system-wide default configuration file for twm is `/usr/share/X11/twm/system.twmrc` and the per-user configuration is `~/.twmrc.` The user file completely overrides the system, so it's recommended to start modifications by copying the system-wide file to the per-user file.
+Some very basic customizations which many users do are below:
+=== Add basic alt+tab support ===
+The following can be added to the config enable basic alt+tab support for rapidly switching windows to the front:
+`"Tab" = m : root|window|frame|title : f.circleup`
+=== Add maximize, and close buttons ===
+First install some bitmaps for the buttons:
+`apk add xbitmaps`
+Then edit the config file and add the following:
+`Function "maximize" { f.fullzoom f.focus f.nop }
+RightTitleButton "icon"=f.function "maximize"
+RightTitleButton "xlogo11"=f.delete`
+
+

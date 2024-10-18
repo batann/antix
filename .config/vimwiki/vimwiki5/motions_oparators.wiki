@@ -1,0 +1,85 @@
+Certainly! Here's an extensive list of key bindings for motions and operators in Vim:
+Motions
+Basic Motions
+
+h: Move left.
+j: Move down.
+k: Move up.
+l: Move right.
+w: Move forward to the start of the next word.
+W: Move forward a WORD (non-whitespace characters).
+b: Move backward to the start of the previous word.
+B: Move backward a WORD.
+e: Move forward to the end of the current word.
+E: Move forward to the end of a WORD.
+0: Move to the beginning of the line.
+^: Move to the first non-whitespace character of the line.
+$: Move to the end of the line.
+gg: Move to the first line of the document.
+G: Move to the last line of the document.
+
+Line Motions
+
+fx: Move to the next occurrence of the character 'x' on the current line.
+Fx: Move to the previous occurrence of the character 'x' on the current line.
+;: Repeat the last f, F, ,, or ; motion.
+,: Repeat the last f, F, ,, or ; motion in the opposite direction.
+/{pattern}: Move to the next occurrence of {pattern} on the current line.
+?{pattern}: Move to the previous occurrence of {pattern} on the current line.
+
+Screen Motions
+
+Ctrl + u: Move half a screen up.
+Ctrl + d: Move half a screen down.
+Ctrl + b: Move one full screen up.
+Ctrl + f: Move one full screen down.
+
+Search Motions
+
+*: Move to the next occurrence of the word under the cursor.
+#: Move to the previous occurrence of the word under the cursor.
+n: Move to the next search result.
+N: Move to the previous search result.
+
+Operators
+Deleting
+
+x: Delete the character under the cursor.
+X: Delete the character before the cursor.
+dd: Delete the current line.
+dw: Delete from the cursor position to the start of the next word.
+db: Delete from the cursor position to the start of the previous word.
+D: Delete from the cursor position to the end of the line.
+:delete: Delete from the cursor position to the end of the line.
+:delete {motion}: Delete based on a specified motion.
+
+Changing
+
+cc: Change (replace) the entire line.
+cw: Change from the cursor position to the start of the next word.
+cb: Change from the cursor position to the start of the previous word.
+C: Change from the cursor position to the end of the line.
+:change: Change from the cursor position to the end of the line.
+:change {motion}: Change based on a specified motion.
+
+Yanking
+
+yy: Copy (yank) the current line.
+yw: Copy from the cursor position to the start of the next word.
+yb: Copy from the cursor position to the start of the previous word.
+y$: Copy from the cursor position to the end of the line.
+:yank: Yank from the cursor position to the end of the line.
+:yank {motion}: Yank based on a specified motion.
+
+Putting (Pasting)
+
+p: Paste the yanked or deleted text after the cursor.
+P: Paste the yanked or deleted text before the cursor.
+
+Indenting
+
+>>: Indent the current line.
+<<: Unindent the current line.
+={motion}: Auto-indent based on a specified motion.
+
+These key bindings cover a range of motions and operators in Vim for efficient text manipulation.

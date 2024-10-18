@@ -1,0 +1,57 @@
+
+        = kali_live_build_I =
+###READ:
+	- Method seems to be alright
+	- Links such as the github repo, hdwallpaper ect are all wrong or simply outdated!!!!
+##########################################################################################
+
+2) sudo apt-get install git live-build cdebootstrap devscripts
+
+3) git clone git://git.kail.org/live-build-config.git
+			 https://gitlab.com/kalilinux/build-scripts/live-build-config.git
+4) cd live-build-kali
+
+5) vim config/package-lists/kali.list.chroot
+	a) choose package top 10 _uncomment_
+	b) change desktop from KDE _comment_
+	c) change desktop to xfce4 _uncomment_
+	d) add custom packages
+		#CUSTOM PACKAGES
+			- openssh-server
+			- openssh-client
+			- vim
+			- ranger
+			- dialog
+			- yad
+			- ...
+
+6) add custom boot option to allow automatic installation of the ISO
+   by using a preconfigured preseed file.
+   	a) cat <<EOF > config/includes.binary/isolinux/install.cfg
+		> label install
+		> manu label ^Install Automated
+		> linux /install/intrid.gz
+		> append vga=788 -- quite file=/cdrom/install/preseed.cfg locale=en_US keymap=us hostmane=think domain=think.local
+		> EOF
+
+7) add a post installation "hook" to enable SSH boot at startup
+	a) echo update-rc.d -f ssh enable > config/hooks/01-start-ssh.chroot
+	b) chmod +x config/hooks/01-start-ssh.chroot
+
+8) overlay fils on the ISO filsystem. Replace default Kali wallpaper
+	a) mkdir -p config/includes.chroot/usr/share/wallpapers/kali/contents/images
+	b) wget "shifty image link"
+	c) mv "shifty_image.jpg" config/includes.chroot/usr/share/wallpapers/kali/contents/images
+
+9) Download a preseedfile from kali github and alter its content
+	a) mkdir -p config/debian-installer
+	b) wget https://raw.githubusercontent.com/offencive-security/kali-ux-preseed/master/kali-linux-full-unattended.preseed -0 config/debian-install/preseed.cfg
+	c) less config/debian-installer/preseed.cfg
+10) Add Debian packages for inclussion
+	a) mkdir config/packages
+	b) mv /root/"Nessus-6.2.deb config/packages/
+11) lb-build
+
+
+
+

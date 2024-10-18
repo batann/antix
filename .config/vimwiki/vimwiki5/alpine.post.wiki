@@ -1,0 +1,10 @@
+pipx
+w3m
+lynx
+python3-full
+
+browser-history
+edge-tts
+eg
+ddrtv
+

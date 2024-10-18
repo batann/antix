@@ -1,0 +1,52 @@
+lslogins --noheadings -u -o user | grep -vw root
+"batan"
+Load settings
+find /home/batan/.cache/ -type f -atime +2 -mtime +2 -exec du -sc '{}' + | tail -1 | cut -f1
+du -c /home/batan/.thumbnails/* | tail -1 | cut -f1
+du -s /home/$(logname)/.local/share/flatpak/ | cut -f1
+du -s /var/lib/flatpak/ | cut -f1
+Nothing unused to uninstall
+du -s /home/$(logname)/.local/share/flatpak/ | cut -f1
+du -s /var/lib/flatpak/ | cut -f1
+du -s /var/cache/apt/archives/ | cut -f1
+apt-get clean
+du -s /var/cache/apt/archives/ | cut -f1
+find /var/log -type f -exec du -sc '{}' + | tail -1 | cut -f1
+find /var/log -type f -exec sh -c "echo > '{}'" \;
+find /home/*/.local/share/Trash -mindepth 1 -exec du -sc '{}' + | tail -1 | cut -f1
+rm /etc/cron.daily/mx-cleanup
+rm /etc/cron.weekly/mx-cleanup
+rm /etc/cron.monthly/mx-cleanup
+rm /etc/cron.d/mx-cleanup
+
+
+clear
+tput civis
+ab=$(ls .local/share/Trash/files/|wc -l)
+echo -e "Total number of files in $HOME/.local/share/Trash/files/" $ab
+echo -e "====================================================================="
+echo -e "Enter [Any] to remove"
+read -n1 -p '   >>>   ' fgh
+for i in $(ls .local/share/Trash/files/);
+do
+clear
+echo $ab
+ sudo trash ~/.local/share/Trash/files/$i
+ (( ab -= 1 ))
+ done
+
+clear
+abc=$(find $HOME/.cache/ -type f)
+echo -e "Total number of files in $HOME/.cache/" $abc
+echo -e "====================================================================="
+echo -e "Enter [Any] to remove"
+read -n1 =p '   >>>   ' fgh
+for i in $(find /home/batan/.cache/ -type f)
+do
+trash $i
+ clear
+ echo $abc
+ (( abc -= 1 ))
+ done
+
+

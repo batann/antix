@@ -1,0 +1,53 @@
+Certainly! Here are some key combinations you can consider for custom mappings in Ranger, along with their potential actions:
+
+Ctrl + [Letter] combinations:
+
+Ctrl + a: Select all
+Ctrl + c: Copy
+Ctrl + d: Mark for deletion
+Ctrl + e: Edit (open in default editor)
+Ctrl + f: Find/search
+Ctrl + n: Create new directory
+Ctrl + s: Toggle selection
+Ctrl + v: Paste
+Ctrl + w: Close current tab or pane
+Ctrl + x: Cut
+Alt + [Letter] combinations:
+
+Alt + b: Bookmark current directory
+Alt + d: Bookmark manager
+Alt + e: Open terminal in current directory
+Alt + f: Toggle flat view
+Alt + g: Go to specified directory
+Alt + m: Toggle file permissions display
+Alt + s: Toggle sorting options
+Alt + t: Toggle hidden files visibility
+Alt + u: Go up one directory
+Alt + v: Toggle preview pane
+Shift + [Letter] combinations:
+
+Shift + a: Select all files with the same extension
+Shift + d: Toggle directory sorting
+Shift + e: Rename
+Shift + f: Toggle full screen
+Shift + g: Go to bottom of the directory
+Shift + m: Mark files based on a pattern
+Shift + n: Toggle line numbers display
+Shift + s: Select files matching a pattern
+Shift + t: Go to top of the directory
+Shift + u: Undo last action
+Ctrl + Shift + [Letter] combinations:
+
+Ctrl + Shift + d: Duplicate selected files
+Ctrl + Shift + e: Execute custom shell command
+Ctrl + Shift + f: Toggle filtering
+Ctrl + Shift + g: Go to specified bookmark
+Ctrl + Shift + n: Toggle file details display
+Ctrl + Shift + s: Toggle smooth scrolling
+Ctrl + Shift + t: Toggle tag display
+Ctrl + Shift + u: Redo last action
+Ctrl + Shift + v: View selected files in a pager
+Ctrl + Shift + w: Open current directory in a new tab
+These are just a few suggestions to get you started. You can mix and match these combinations based on your preferences and workflow in Ranger.
+
+

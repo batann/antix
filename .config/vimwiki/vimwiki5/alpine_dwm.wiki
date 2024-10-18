@@ -1,0 +1,101 @@
+= Contents =
+    - [[#DWM_on_ALPINE]]
+        - [[#Prerequisites]]
+        - [[#Installing from binary repository]]
+        - [[#Installing from source]]
+        - [[#Installing dependencies]]
+        - [[#Installing suckless tools dwm, dmenu, and st from source]]
+        - [[#Setting up your profile]]
+
+= DWM_on_ALPINE =
+
+== Prerequisites ==
+
+     * Install AlpineLinux
+     * Create a user account (optional but recommended)
+     * Enable the Community repository
+     * Install Xorg
+
+== Installing from binary repository ==
+
+   # apk add dwm dmenu st
+
+   This will install st
+
+== Installing from source ==
+
+== Installing dependencies ==
+
+   Note: git make gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses are needed to install suckless tools from
+   source.
+
+   dbus-x11 is needed for the dbus system (enables firefox running in dwm to open in a tile)
+   The last three adwaita-gtk2-theme adwaita-icon-theme font-dejavu are optional, but recommended for a nicer
+   looking firefox.
+
+   The command to install the dependencies:
+
+   # apk add ncurses
+   libxft-dev
+
+== Installing suckless tools dwm, dmenu, and st from source ==
+
+   Change to the /tmp directory.
+
+   $ cd /tmp
+
+   then execute:
+
+   # git clone https://git.suckless.org/dwm
+
+   Once downloaded, go to the dwm directory
+
+   # cd dwm
+
+   To install, run:
+
+   # make clean install
+
+   Next, go up one directory level
+
+   # cd ..
+
+   to install dmenu:
+
+   # git clone https://git.suckless.org/dmenu # cd dmenu # make clean install
+
+   Finally, go up one more directory level
+
+   # cd ..
+
+   to install st:
+
+   # git clone https://git.suckless.org/st # cd st # make clean install
+
+== Setting up your profile ==
+
+   Change to your home directory:
+
+   $ cd ~
+
+   Create or edit .xinitrc with at least the following:
+
+   Contents of ~/.xinitrc
+   exec dwm
+
+   Save the file and exit vi.
+
+   Next, create or edit .profile with at least the following:
+
+   Contents of ~/.profile
+   startx
+   Note: If you install additional programs that call your `$SHELL` with the POSIX `-l` login flag, you'll need
+   to make launching `startx` conditional, otherwise X will attempt to launch every time your shell is called
+   with the login flag.
+
+   Contents of ~/.profile
+   if ; then startx fi
+
+   Log out or reboot. dwm will run the next time you log in. Press Alt+p to launch dmenu. Type firefox then press
+   enter. Firefox will load and run in tile 9.
+

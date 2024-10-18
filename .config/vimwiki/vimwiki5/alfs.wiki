@@ -1,0 +1,69 @@
+
+
+
+site:
+exton linux
+
+
+
+###
+EXTON Build 221103
+####
+
+if grub is already present on hd, refrain from installing it with exton but
+add the following to grub.cfg:
+
+NOTE: You can install LFS EXTON on any normal computer. If you want to do that you should at first read my instruction How To dual boot, triple boot or multi boot Linux with Windows in a simple way and be happy. The Grub boot lines for LFS EXTON in /boot/grub/grub.cfg can look like this:
+#################################################
+menuentry ‘LFS EXTON 221103 (/dev/sda6)’ –class lfs –class gnu-linux –class gnu –class os $menuentry_id_option ‘gnulinux-simple-191fccec-4ecc-48b2-879d-504f9a2ad365’ {
+recordfail
+load_video
+insmod gzio
+if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+insmod part_gpt
+insmod ext2
+if [ x$feature_platform_search_hint = xy ]; then
+search –no-floppy –fs-uuid –set=root 191fccec-4ecc-48b2-879d-504f9a2ad365
+else
+search –no-floppy –fs-uuid –set=root 191fccec-4ecc-48b2-879d-504f9a2ad365
+fi
+linux /boot/vmlinuz-6.0.3-amd64-exton-rt14 root=/dev/sda6 ro
+initrd /boot/initrd.img-6.0.3-amd64-exton-rt14
+}
+###############################################
+
+Kernel
+------
+LFS EXTON uses my “special” kernel 6.0.3-amd64-exton-rt14. You can of course compile you own LFS kernel if you want.
+
+“Normal” use of the system
+You can also use LFS EXTON as any other “normal” Linux system. You can for example run Netflix in Firefox.
+
+Error during the boot process
+-----------------------------
+During the boot process you will see a error message about ssh. Just press ENTER and the boot process will continue. After a hard drive installation you can get rid of the error message by running the following commands as root.
+1. cd /etc/ssh
+2. ssh-keygen -A
+3. /etc/init.d/sshd start
+
+Sound in LFS EXTON
+------------------
+Use pavucontrol
+
+
+
+
+
+
+chroot commands:
+================
+
+
+sudo mount /dev/vda2 /mnt
+sudo mount /dev/vda1 /mnt/boot (edited)
+sudo mount -t proc proc /mnt/proc
+sudo mount --rbind /dev /mnt/dev/
+sudo mount --rbind /sys /mnt/sys
+sudo chroot /mnt/ /bin/bash
+grub-mkconfig -o /boot/grub/grub.cfg
+

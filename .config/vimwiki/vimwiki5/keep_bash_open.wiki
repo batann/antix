@@ -1,0 +1,120 @@
+How to keep Bash running after command execution
+http://unix.stackexchange.com/questions/123103/ddg#123112
+( exec sh -i 3<<SCRIPT 4<&0 <&3                                        ⏎
+    echo "do this thing"
+    echo "do that thing"
+  exec  3>&- <&4
+  SCRIPT
+)
+This is better done from a script though with exec $0. Or if one of those file descriptors directs to a terminal device that is not currently being used it will help - you've gotta remember, other processes wanna check that terminal, too.
+
+And by the way, if your goal is, as I assume it is, to preserve the script's environment after executing it, you'd probably be a lot better served with :
+
+. ./script
+The shell's .dot and bash's source are not one and the same - the shell's .dot is POSIX specified as a special shell builtin and is therefore as close to being guaranteed as you can get, though this is by no means a guarantee it will be there...
+
+Though the above should do as you expect with little issue. For instance, you can :
+
+ ( exec sh -i 3<<SCRIPT 4<&0 <&3                                        ⏎
+    echo "do this thing"
+    echo "do that thing"
+    $(cat /path/to/script)
+    exec  3>&- <&4
+    SCRIPT
+ )
+The shell will run your script and return you to the interactive prompt - so long as you avoid exiting the shell from your script, that is, or backgrounding your process - that'll link your i/o to /dev/null.
+
+DEMO:
+% printf 'echo "%s"\n' "These lines will print out as echo" \
+    "statements run from my interactive shell." \
+    "This will occur before I'm given the prompt." >|/tmp/script
+% ( exec sh -i 3<<SCRIPT 4<&0 <&3
+    echo "do this thing"
+    echo "do that thing"
+    $(cat /tmp/script)
+    exec  3>&- <&4
+SCRIPT
+)
+sh-4.3$ echo "do this thing"
+    do this thing
+sh-4.3$ echo "do that thing"
+    do that thing
+sh-4.3$ echo "These lines will print out as echo"
+    These lines will print out as echo
+sh-4.3$ echo "statements run from my interactive shell."
+    statements run from my interactive shell.
+sh-4.3$ echo "This will occur before I'm given the prompt."
+    This will occur before I'm given the prompt.
+sh-4.3$ exec  3>&- <&4
+sh-4.3$
+MANY JOBS
+It's my opinion that you should get a little more familiar with the shell's built-in task management options. @Kiwy and @jillagre have both already touched on this in their answers, but it might warrant further detail. And I've already mentioned one POSIX-specified special shell built-in, but set, jobs, fg, and bg are a few more, and, as another answer demonstrates trap and kill are two more still.
+
+If you're not already receiving instant notifications on the status of concurrently running backgrounded processes, it's because your current shell options are set to the POSIX-specified default of -m, but you can get these asynchronously with set -b instead:
+
+% man set
+    −b This option shall be supported if the implementation supports the
+         User  Portability  Utilities  option. It shall cause the shell to
+         notify the user asynchronously of background job completions. The
+         following message is written to standard error:
+             "[%d]%c %s%s\n", <job-number>, <current>, <status>, <job-name>
+
+         where the fields shall be as follows:
+
+         <current> The  character  '+' identifies the job that would be
+                     used as a default for the fg or  bg  utilities;  this
+                     job  can  also  be specified using the job_id "%+" or
+                     "%%".  The character  '−'  identifies  the  job  that
+                     would  become  the default if the current default job
+                     were to exit; this job can also  be  specified  using
+                     the  job_id  "%−".   For  other jobs, this field is a
+                     <space>.  At most one job can be identified with  '+'
+                     and  at  most one job can be identified with '−'.  If
+                     there is any suspended  job,  then  the  current  job
+                     shall  be  a suspended job. If there are at least two
+                     suspended jobs, then the previous job also shall be a
+   −m  This option shall be supported if the implementation supports the
+         User Portability Utilities option. All jobs shall be run in their
+         own  process groups. Immediately before the shell issues a prompt
+         after completion of the background job, a message  reporting  the
+         exit  status  of  the background job shall be written to standard
+         error. If a foreground job stops, the shell shall write a message
+         to  standard  error to that effect, formatted as described by the
+         jobs utility. In addition, if a job  changes  status  other  than
+         exiting  (for  example,  if  it  stops  for input or output or is
+         stopped by a SIGSTOP signal), the shell  shall  write  a  similar
+         message immediately prior to writing the next prompt. This option
+         is enabled by default for interactive shells.
+A very fundamental feature of Unix-based systems is their method of handling process signals. I once read an enlightening article on the subject that likens this process to Douglas Adams' description of the planet NowWhat:
+
+"In The Hitchhiker's Guide to the Galaxy, Douglas Adams mentions an extremely dull planet, inhabited by a bunch of depressed humans and a certain breed of animals with sharp teeth which communicate with the humans by biting them very hard in the thighs. This is strikingly similar to UNIX, in which the kernel communicates with processes by sending paralyzing or deadly signals to them. Processes may intercept some of the signals, and try to adapt to the situation, but most of them don't."
+
+This is referring to kill signals.
+
+% kill -l 
+> HUP INT QUIT ILL TRAP ABRT BUS FPE KILL USR1 SEGV USR2 PIPE ALRM TERM STKFLT CHLD CONT STOP TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH POLL PWR SYS
+At least for me, the above quote answered a lot of questions. For instance, I'd always considered it very strange and not at all intuitive that if I wanted to monitor a dd process I had to kill it. After reading that it made sense.
+
+I would say most of them don't try to adapt for good reason - it can be a far greater annoyance than it would be a boon to have a bunch of processes spamming your terminal with whatever information their developers thought might have been important to you.
+
+Depending on your terminal configuration (which you can check with stty -a), CTRL+Z is likely set to forward a SIGTSTP to the current foreground process group leader, which is likely your shell, and which should also be configured by default to trap that signal and suspend your last command. Again, as the answers of @jillagre and @Kiwy together show, there's no stopping you from tailoring this functionality to your purpose as you prefer.
+
+SCREEN JOBS
+So to take advantage of these features it's expected that you first understand them and customize their handling to your own needs. For example, I've just found this screenrc on Github that includes screen key-bindings for SIGTSTP:
+
+# hitting 'C-z C-z' will run Ctrl+Z (SIGTSTP, suspend as usual)
+bind ^Z stuff ^Z
+
+# hitting 'C-z z' will suspend the screen client
+bind z suspend
+That would make it a simple matter to suspend a process running as a child screen process or the screen child process itself as you wished.
+
+And immediately afterward:
+
+% fg  
+OR:
+
+% bg
+Would foreground or background the process as you preferred. The jobs built-in can provide you a list of these at any time. Adding the -l operand will include pid details.
+
+--mikeserv

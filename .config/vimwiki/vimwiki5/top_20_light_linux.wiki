@@ -1,0 +1,20 @@
+Lubuntu - A lightweight version of Ubuntu using the LXQt desktop environment, ideal for low-end systems1.
+Linux Lite - Designed for ease of use, this distro is perfect for beginners transitioning from Windows1.
+Puppy Linux - Extremely small and versatile, it can run entirely from RAM1.
+antiX - Known for running on very old hardware, it’s fast and efficient1.
+Tiny Core Linux - As the name suggests, it’s tiny and incredibly fast, with a minimalistic approach1.
+BunsenLabs Linux - A continuation of CrunchBang, it’s based on Debian and uses the Openbox window manager1.
+Peppermint OS - Combines cloud and local applications seamlessly, using the LXDE desktop environment1.
+MX Linux - A midweight distro that’s easy to use and highly customizable, based on Debian1.
+Bodhi Linux - Uses the Moksha desktop environment, which is lightweight and visually appealing1.
+SparkyLinux - Offers several lightweight editions, including LXQt and Openbox1.
+Q4OS - A Debian-based distro with a focus on performance and long-term stability2.
+Slax - A portable, lightweight distro that can run from a USB drive without installation2.
+Zorin OS Lite - A lightweight version of Zorin OS, designed to be fast and user-friendly2.
+Xubuntu - An official Ubuntu flavor using the Xfce desktop environment, known for its speed and simplicity2.
+Manjaro XFCE - A lightweight version of Manjaro Linux, using the XFCE desktop environment2.
+ArchBang - A lightweight Arch Linux-based distro with Openbox, designed for simplicity and speed2.
+Void Linux - An independent distro with a focus on simplicity and speed, using the runit init system2.
+LXLE - A lightweight version of Lubuntu, optimized for older hardware2.
+SliTaz - Extremely lightweight, it can run on very minimal hardware and is highly customizable2.
+Absolute Linux - Based on Slackware, it’s designed to be lightweight and easy to use2.

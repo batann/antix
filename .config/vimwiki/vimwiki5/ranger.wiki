@@ -1,0 +1,77 @@
+Certainly! **Ranger**, the terminal-based file manager, allows you to define custom commands and enhance its functionality. Here's how you can add your own commands:
+
+1. **Edit the `commands.py` file**:
+   - Open your `commands.py` file, which is usually located in `~/.config/ranger/commands.py`. If it doesn't exist, create it.
+   - You can use any text editor to modify this file.
+
+2. **Define a new command**:
+   - Inside `commands.py`, create a new class that inherits from `Command`. For example:
+     ```python
+     from ranger.api.commands import Command
+
+     class MyCustomCommand(Command):
+         def execute(self):
+             if not self.arg(1):
+                 self.fm.notify('Wrong number of arguments', bad=True)
+                 return
+             # Your custom logic here
+             self.fm.notify(f'You provided argument: {self.arg(1)}')
+     ```
+   - Customize the `execute` method to perform the desired action. You can access the program's state, including the current directory and selected files.
+
+3. **Save and reload Ranger**:
+   - Save your changes to `commands.py`.
+   - If Ranger is already running, you can reload the configuration by typing:
+     ```
+     :source ~/.config/ranger/rc.conf
+     ```
+
+4. **Create a keybinding (optional)**:
+   - To make your custom command more accessible, you can create a keybinding.
+   - Edit your `rc.conf` file (usually located in `~/.config/ranger/rc.conf`).
+   - Add a mapping that associates a key combination with your custom command. For example:
+     ```
+     map ,n console MyCustomCommand
+     ```
+     This maps `,n` to execute your `MyCustomCommand`.
+
+5. **Test your custom command**:
+   - Restart Ranger or reload the configuration.
+   - Now you can type `:MyCustomCommand myarg` to run your defined command.
+   - If you created a keybinding, use it to trigger your custom command.
+
+Remember to replace `MyCustomCommand` with your actual command name and adjust the logic inside the `execute` method according to your requirements. Enjoy your customized Ranger experience! 🚀🌟
+
+For more options and inspiration, you can explore the [official Ranger documentation](https://github.com/hut/ranger/blob/9c585e48e14525f11d2405ea0bb9b5eba92e63e9/ranger/config/commands.py).¹³
+
+Source: Conversation with Bing, 3/21/2024
+(1) How to define new commands in the ranger file manager?. https://superuser.com/questions/1048647/how-to-define-new-commands-in-the-ranger-file-manager.
+(2) Ranger on Linux – A Complete Terminal File Manager For Linux. https://www.linuxfordevices.com/tutorials/linux/ranger-file-manager.
+(3) terminal - Ranger cd into a folder (and invoke shell)? - Unix & Linux .... https://unix.stackexchange.com/questions/342064/ranger-cd-into-a-folder-and-invoke-shell.
+(4) Ranger Terminal file manager - Is it possible to run custom commands .... https://stackoverflow.com/questions/70121092/ranger-terminal-file-manager-is-it-possible-to-run-custom-commands-from-file.
+(5) undefined. https://github.com/hut/ranger/blob/9c585e48e14525f11d2405ea0bb9b5eba92e63e9/ranger/config/commands.py.
+(6) Ranger Cheatsheet · GitHub. https://gist.github.com/heroheman/aba73e47443340c35526755ef79647eb.
+(7) Ranger Custom Settings - Resek's Kingdom. https://resek4.github.io/2022/10/03/Ranger/.
+(8) ranger | ranger Commands | Man Pages | ManKier. https://www.mankier.com/1/ranger.
+(9) ranger - ArchWiki. https://wiki.archlinux.org/title/Ranger.
+
+
+
+
+######################################################################################
+
+from ranger.api.commands import Command
+
+class MegaputCommand(Command):
+    def execute(self):
+        # Get the path of the currently marked file
+        marked_files = self.fm.thistab.get_selection()
+        if marked_files:
+            file_path = marked_files[0].path
+            # Execute the 'megaput' command with the file path
+            self.fm.execute_command(f"megaput {file_path}")
+        else:
+            self.fm.notify("No file is currently marked.", bad=True)
+######################################################################################
+
+

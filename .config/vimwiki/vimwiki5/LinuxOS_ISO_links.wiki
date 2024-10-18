@@ -1,0 +1,7 @@
+
+
+
+https://repo.maboxlinux.org/iso/mabox-linux-24.03-Istredd-240313-linux66.iso
+https://mirror.math.princeton.edu/pub/siduction/iso/Standing_on_the_Shoulders_of_Giants/nox/siduction-2023.1.1-Standing_on_the_Shoulders_of_Giants-nox-amd64-202309091923.iso
+https://ixpeering.dl.sourceforge.net/project/exlight/exlight-64bit-sid-efi-e-0.25.4-refracta-calamares-2000mb-231005.iso
+

@@ -1,0 +1,19 @@
+
+
+git clone https://github.com/todotxt/todo.txt-cli.git
+cd todo*
+sudo make
+sudo make install
+sudo make test
+sudo make install CONFIG_DIR=/etc INSTALL_DIR=/usr/bin BASH_COMPLETION=/usr/share/bash-completion/completions
+
+
+
+
+
+
+	=	TODO.TXT.CLI	=
+github: https://github.com/todotxt/todo.txt-cli
+Page:	https://todotxt.org
+
+

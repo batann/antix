@@ -1,0 +1,35 @@
+
+Zsync
+May 18, 2017
+
+Background
+
+Zsync is a file transfer program that runs on the command line. It allows you to download a file from a remote server of which you already have an older copy on your computer. zsync uses one or more “input” files that you name with the “-i” option, that file is analysed and the data that is identical is reused and only the changes are downloaded.
+
+Installation
+
+It’s in the repos and can be installed in the usual manner.
+
+Usage
+
+Once installed, the program can be used following this model:
+
+zsync <file on your computer> <path to zsync file of higher version>
+
+Starting with MX-16.1, zsync files are uploaded with the ISOs.
+
+Example
+
+For instance, to upgrade the copy of MX-16.1 beta that you have to MX 16.1 final ( 64bit system):
+
+install zsync
+enter the folder where your base ISO (the one you want to update) is located
+open a terminal and paste in this command
+
+zsync -i MX-16.1-b1_x64.iso http://iso.mxrepo.com/Final/MX-16.1/<name of 64bit zsync file>
+
+NOTES
+
+you can use any MX release, but the more similar what you use is to the file to be downloaded the more time and bandwidth will be  saved.
+not all servers allow direct access; switch to the one in the example above, or find a different one in the ISO mirrors list that works for you.
+if a server gives an error when you first try running a zsync update, try using http instead of https

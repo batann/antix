@@ -1,0 +1,20 @@
+geti2p.net - The official I2P website, providing downloads, documentation, and news about the I2P network1.
+i2pforum.net - A forum for discussions about I2P, including technical support and community topics2.
+planet.i2p - An aggregator of blogs and news feeds related to I2P3.
+str4d.i2p - A blog with guides, services, and more about I2P3.
+bigbrother.i2p - A news source focusing on world events and privacy-related topics3.
+darkreboot.i2p - A personal blog mostly about love and privacy3.
+killyourtv.i2p - A wiki-like blog with how-tos, repositories, and documentation about I2P3.
+echelon.i2p - A blog and software repository for I2P-related projects3.
+gateway.i2p - A blog available over I2P, Onion, and Freenet3.
+peek-a-boo.i2p - A site with files about privacy3.
+allofthis.i2p - A blog reviewing various I2P sites3.
+sigterm.i2p - A blog about privacy, security, and related topics3.
+zzz.i2p - Forums for I2P software development and technical discussions3.
+ano+.i2p - Anonymous forums and social networking sites3.
+id3nt.i2p - A forum known as I2P’s "premier communications cult"3.
+slamspeech.i2p - NNTP-based forums with various topics3.
+i2pdbrowser.i2p - A browser bundle for I2P2.
+i2p-bote.i2p - A plugin for sending and receiving secure emails within I2P2.
+syndie.i2p - A client for creating and reading decentralized forums2.
+transmission-i2p.i2p - An anonymous torrent client for I2P2.

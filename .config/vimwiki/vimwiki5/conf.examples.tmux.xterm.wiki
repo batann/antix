@@ -1,0 +1,32 @@
+============
+=== tmux ===
+============
+
+=== CONFIG ===
+# Enable mouse support
+set -g mouse on
+# Set vim as the default editor
+set -g status-keys vim
+# set the status line's colors
+set -g status-style fg=white,bg=blue
+# Set different background color for active window
+set -g window-status-current-bg magenta
+To get list of global options
+
+=== COMMANDS ===
+# tmux show-options -g
+To get the list of window options
+# tmux show-options -w
+To get the list of server options
+# tmux show-options -s
+So you can add your custom values and bind
+
+=============
+=== XTERM ===
+=============
+
+=== .Xresources ===
+xterm*background:   black
+xterm*foreground:   white
+
+

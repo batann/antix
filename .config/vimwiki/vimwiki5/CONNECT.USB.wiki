@@ -1,0 +1,42 @@
+== *udev rules* ==
+
+1. *Identify the USB Device:*
+*vendor ID* *product ID*
+`lsusb`
+
+2. **Create a Udev Rule:**
+   Create a new udev rule file (e.g., `/etc/udev/rules.d/my_usb_rule.rules`) with the following content:
+   ```bash
+   # Replace <vendor_id> and <product_id> with the actual values
+   ATTRS{idVendor}=="<vendor_id>", ATTRS{idProduct}=="<product_id>", RUN+="/path/to/your/script.sh"
+   ```
+   In the above rule, replace `<vendor_id>` and `<product_id>` with the actual IDs of your USB device. Also, replace `/path/to/your/script.sh` with the path to the script you want to execute.
+
+3. **Create Your Script:**
+   Create the script (e.g., `/path/to/your/script.sh`) that you want to run when the USB device is connected. Make sure the script is executable (`chmod +x /path/to/your/script.sh`). For example:
+   ```bash
+   #!/bin/bash
+   echo "USB device connected: $DEVNAME" >> /var/log/usb_events.log
+   # Add your custom commands here
+   ```
+
+4. **Reload Udev Rules:**
+   After creating the rule, reload the udev rules using:
+   ```bash
+   sudo udevadm control --reload-rules
+   ```
+
+5. **Plug in the USB Device:**
+   Plug in the USB device, and udev should trigger your script.
+
+6. **Check the Log:**
+   The output of your script will be logged to `/var/log/usb_events.log`.
+
+Remember to replace placeholders like `<vendor_id>` and `<product_id>` with the actual values specific to your USB device. Adjust the script inside your `script.sh` file to perform the desired actions when the USB device is connected. 🚀
+
+Keep in mind that udev rules execute as root, so ensure your script handles permissions and security appropriately. If you want to run the script as a regular user, consider using `sudo -u <username>` in your script to switch to the desired user context.
+
+Source: Conversation with Bing, 3/19/2024
+(1) How to execute a shellscript when I plug-in a USB-device. https://unix.stackexchange.com/questions/65891/how-to-execute-a-shellscript-when-i-plug-in-a-usb-device.
+(2) How to run a script when a specific flash-drive is mounted?. https://askubuntu.com/questions/25071/how-to-run-a-script-when-a-specific-flash-drive-is-mounted.
+(3) Autorun a script after I plugged or unplugged a USB device. https://askubuntu.com/questions/284224/autorun-a-script-after-i-plugged-or-unplugged-a-usb-device.

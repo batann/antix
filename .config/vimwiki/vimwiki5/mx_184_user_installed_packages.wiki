@@ -1,0 +1,115 @@
+# UIP - User Installed Packages
+# Date:      Tue, 02 Jul 2024 11:35:00 +1000
+# Host:      think
+# System:    MX-23.3_x64 Libretto June 16, 2024
+#
+# List of user installed packages
+# Package name                                      Description
+
+apparmor-utils                                      utilities for controlling AppArmor
+at                                                  Delayed job execution and batch processing
+axel                                                light command line download accelerator
+bleachbit                                           delete unnecessary files from the system
+btop                                                Modern and colorful command line resource monitor that shows usage and stats
+buku                                                Powerful command-line bookmark manager
+cmus                                                lightweight ncurses audio player
+cubic                                               Wizard to create a customized Ubuntu Live ISO image.
+ddgr                                                DuckDuckGo from the terminal
+distrobox                                           Another tool for containerized command line environments on Linux
+docker-ce                                           Docker: the open-source application container engine
+falkon                                              lightweight web browser based on Qt WebEngine
+ffmpeg                                              Tools for transcoding, streaming and playing of multimedia files
+foremost                                            forensic program to recover lost files
+fortune-mod                                         provides fortune cookies on demand
+fortunes-debian-hints                               Debian Hints for fortune
+fzf                                                 general-purpose command-line fuzzy finder
+gnome-boxes                                         Simple GNOME app to access virtual systems
+gnome-games-app                                     Game browser and launcher for GNOME
+grub-customizer                                     GUI to configure GRUB2 and BURG
+inotify-tools                                       command-line programs providing a simple interface to inotify
+jpegoptim                                           utility to optimize jpeg files
+kitty                                               fast, featureful, GPU based terminal emulator
+kodi                                                Open Source Home Theatre (executable binaries)
+kodi-eventclients-dev                               Open Source Home Theatre (Event Client virtual dev package)
+kodi-eventclients-kodi-send                         Open Source Home Theatre (Event Client Kodi-SEND package)
+kodi-eventclients-ps3                               Open Source Home Theatre (Event Client PS3 package)
+kodi-eventclients-wiiremote                         Open Source Home Theatre (Event Client WII Remote support package)
+kodi-eventclients-zeroconf                          Open Source Home Theatre (Event Client ZeroConf script package)
+kodi-game-libretro-bsnes-mercury-accuracy           Kodi integration for bsnes-mercury accuracy core
+kodi-game-libretro-bsnes-mercury-balanced           Kodi integration for bsnes-mercury balanced core
+kodi-game-libretro-bsnes-mercury-performance        Kodi integration for bsnes-mercury performance core
+kodi-inputstream-adaptive                           Adaptive inputstream addon for Kodi
+kodi-inputstream-ffmpegdirect                       FFmpegDirect inputstream addon for Kodi
+kodi-inputstream-rtmp                               Kodi input stream addon for RTMP
+kodi-peripheral-joystick                            Kodi Joystick Library
+kodi-peripheral-xarcade                             X-Arcade Tankstick driver for Kodi
+kodi-repository-kodi                                Open Source Home Theatre (official addons repository feed)
+kodi-tools-texturepacker                            Open Source Home Theatre (TexturePacker skin development tool)
+kodi-vfs-libarchive                                 Libarchive VFS add-on for Kodi
+kodi-vfs-sftp                                       SSH File Transfer Protocol for Kodi
+kodi-visualization-fishbmc                          Fishbmc audio visualization addon for Kodi
+kodi-visualization-pictureit                        pictureit visualizer for Kodi
+kodi-visualization-shadertoy                        Shadertoy audio visualization for Kodi
+kodi-visualization-spectrum                         Spectrum visualizer addon for Kodi
+kodi-visualization-waveform                         Waveform audio visualization addon for Kodi
+lazpaint-gtk2                                       Image editor with raster and vector layers (gtk2)
+libretro-beetle-pce-fast                            Libretro wrapper for the Beetle PCE FAST core
+libretro-beetle-psx                                 Libretro wrapper for the Beetle PSX core
+libretro-beetle-vb                                  Libretro wrapper for the Beetle VB core
+libretro-beetle-wswan                               Libretro wrapper for the Beetle WSWAN core
+libretro-desmume                                    Libretro wrapper for DeSmuME
+libretro-gambatte                                   Libretro wrapper for Gambatte
+libretro-genesisplusgx                              Libretro wrapper for Genesis Plus GX
+libretro-gtk-1-dev                                  library for GTK+ libretro frontends - development files
+libretro-mgba                                       Libretro wrapper for mGBA
+libretro-nestopia                                   libretro wrapper for Nestopia
+libretro-snes9x                                     Libretro wrapper for Snes9x
+libsubid-dev                                        subordinate id handling library -- shared library
+lutris                                              video game preservation platform
+lynx                                                classic non-graphical (text-mode) web browser
+man2html                                            browse man pages in your web browser
+mat2                                                Metadata anonymisation toolkit v2
+megatools                                           Command-line client for the Mega cloud storage service
+meld                                                graphical tool to diff and merge files
+minidlna                                            lightweight DLNA/UPnP-AV server targeted at embedded systems
+mpv                                                 video player based on MPlayer/mplayer2
+mx-dockmaker                                        Dockmaker for MX Linux
+optipng                                             advanced PNG (Portable Network Graphics) optimizer
+pandoc                                              general markup converter
+pcsx2:i386                                          Playstation 2 emulator
+pcsxr                                               Sony PlayStation emulator
+pipx                                                execute binaries from Python packages in isolated environments
+playonlinux                                         front-end for Wine
+podman                                              engine to run OCI-based containers in Pods
+pulseaudio                                          PulseAudio sound server
+python3-full                                        Default Python Interpreter with complete class library
+python3-pip                                         Python package installer
+python3-tornado                                     scalable, non-blocking web server and tools - Python 3 package
+qpdf                                                tools for transforming and inspecting PDF files
+ranger                                              Console File Manager with VI Key Bindings
+rdfind                                              find duplicate files utility
+rename                                              Perl extension for renaming multiple files
+renameutils                                         Programs to make file renaming easier
+rhash                                               utility for computing hash sums and magnet links
+rofi                                                window switcher, run dialog and dmenu replacement
+speedtest-cli                                       Command line interface for testing internet bandwidth using speedtest.net
+stterm                                              simple terminal emulator for X
+suckless-tools                                      simple commands for minimalistic window managers
+sweeper                                             history and temporary file cleaner
+taskwarrior                                         feature-rich console based todo list manager
+tesseract-ocr                                       Tesseract command line OCR tool
+tldr                                                Haskell tldr client
+transmission-cli                                    lightweight BitTorrent client (command line programs)
+trash-cli                                           command line trashcan utility
+tree                                                displays an indented directory tree, in color
+tuned                                               daemon for monitoring and adaptive tuning of system devices
+vim                                                 Vi IMproved - enhanced vi editor
+w3m                                                 WWW browsable pager with excellent tables/frames support
+webkit2gtk-driver                                   WebKitGTK WebDriver support
+wine                                                Windows API implementation - standard suite
+wine-staging                                        WINE Is Not An Emulator - runs MS Windows programs
+xcape                                               Configure modifier keys to act as other keys when pressed and released
+xsel                                                command-line tool to access X clipboard and selection buffers
+xterm                                               X terminal emulator
+yt-dlp                                              downloader of videos from YouTube and other sites
+zenity                                              Display graphical dialog boxes from shell scripts

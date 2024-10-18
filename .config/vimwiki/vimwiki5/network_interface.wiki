@@ -1,0 +1,178 @@
+How to Restart Network Interface in Linux
+Author: Vivek Gite Last updated: April 9, 2024 9 comments
+See all GNU/Linux related FAQHow do I restart the network interface under Linux operating systems after making changes to IP configuration without rebooting the server?
+
+You can restart the networking service in Linux using various command. Use the following commands as per your Linux distribution to restart the networking service. You must run the command as root user either using sudo or su commands. The ifup command bring a network interface up. The ifdown command take a network interface down. You must be careful with ifdown command if you are using it over SSH based session.
+Tutorial details
+Difficulty level	Easy
+Root privileges	Yes
+Requirements	Linux terminal
+Category	Processes Management
+Prerequisites	Linux distribution
+OS compatibility	AlmaLinux • Alpine • Arch • Debian • Fedora • Mint • openSUSE • Pop!_OS • RHEL • Rocky • Slackware • Stream • SUSE • Ubuntu • WSL
+Est. reading time	3 minutes
+Restart Network Interface Using Command Lines in Linux (generic method)
+WARNING! These examples may result in loss of networking connectivity when run over ssh based sessions. Therefore for remote servers, use a console provided by your cloud service provider or IPMI. The nixCraft or author is not responsible for data loss.
+
+First, you can get a list of network interfaces on Linux using the ip command (or ifconfig command):
+ip link show
+ifconfig -a
+
+Then, the procedure to to turn off eth0 interface is as follows (replace the eth0 with your actual name). Run:
+ifdown eth0
+
+To turn on eth0 interface run:
+ifup eth0
+
+See ip address info using the ip command:
+ip a show eth0
+
+Restart Network Interface Using Command Lines in Linux
+If you get error such as ifup or ifdown command not found, then use the ip command to turn off and on interface named eth0 or enp0s31f6:
+sudo ip link set enp0s31f6 down
+sudo ip link set enp0s31f6 up
+sudo ip link show enp0s31f6
+
+Here is an example for eth0 interface:
+sudo ip link set eth0 down
+sudo ip link set eth0 up
+sudo ip link show eth0
+
+Finally, most Linux distro with systemd and NetworkManager supports the nmcli command to restart network interface. Here is syntax to restart the enp0s31f6 interfaces:
+sudo nmcli connection down enp0s31f6
+sudo nmcli connection up enp0s31f6
+ip link show enp0s31f6
+
+Debian / Ubuntu Linux restart network interface
+Use the following command to find out if you are using systemd networkd service, or networking or NetworkManager as service name with the systemd:
+systemctl list-unit-files --type=service --state=enabled
+systemctl list-unit-files --type=service --state=enabled | grep network
+
+Here is what I see on Debian Linux version 12 (systemd-networkd.service is the active service name):
+
+systemd-network-generator.service    enabled enabled
+systemd-networkd-wait-online.service enabled disabled
+systemd-networkd.service             enabled enabled
+Hence, the command to restart depends upon your version of Debian Linux. The latest version of Debian or Ubuntu Linux distro with systemd networkd service can use the following command:
+sudo systemctl restart systemd-networkd.service
+sudo systemctl status systemd-networkd.service
+
+Debian/Ubuntu Linux with networking services, run:
+sudo systemctl restart networking
+sudo systemctl status networking
+
+The latest version of Ubuntu or Debian service name changed to NetworkManager. Hence, use the systemctl command as follows:
+sudo systemctl restart NetworkManager
+sudo systemctl status NetworkManager
+
+On older (pre systemd) restart network interface, enter:
+sudo /etc/init.d/networking restart
+
+To stop and start use the following option (do not run them over remote ssh session as you will get disconnected):
+sudo /etc/init.d/networking stop
+sudo /etc/init.d/networking start
+
+Redhat (RHEL) / CentOS / Fedora / Suse / OpenSuse Linux – Restart network interface in Linux
+To restart network interface, enter:
+/etc/init.d/network restart
+
+To stop and start use the following option (do not run them over remote ssh session as you will get disconnected):
+/etc/init.d/network stop
+/etc/init.d/network start
+
+Fedora/RHEL/CentOS/Suse Linux with systemd, run:
+sudo systemctl restart network
+
+Again, The latest version of RHEL/CentOS/Rocy/Alma Linux service name changed to NetworkManager. Hence, use the systemctl command as follows:
+sudo systemctl restart NetworkManager
+
+Slackware Linux restart commands
+Type the following command:
+/etc/rc.d/rc.inet1 restart
+
+You can take down or restart particular interface such as eth1 as follows:
+/etc/rc.d/rc.inet1 eth1_restart
+/etc/rc.d/rc.inet1 eth1_start ### start eth1 ###
+/etc/rc.d/rc.inet1 eth1_stop ##stop eth1 ###
+
+How to see status of network/networking service
+Run command as per your Linux distro version:
+# CentOS/RHEL/Fedora/Rocky/Alma Linux #
+systemctl status network #old
+systemctl status NetworkManager #new
+# Debian/Ubuntu/Linux mint and co #
+systemctl status networking #old
+systemctl status NetworkManager #new
+# Suse/OpenSUSE Linux #
+systemctl status network
+# Alpine Linux #
+service networking status
+
+Sample outputs from OpenSUSE:
+
+* wicked.service - wicked managed network interfaces
+   Loaded: loaded (/usr/lib/systemd/system/wicked.service; enabled; vendor preset: disabled)
+   Active: active (exited) since Sat 2018-01-13 06:40:25 UTC; 1 weeks 3 days ago
+  Process: 93 ExecStart=/usr/sbin/wicked --systemd ifup all (code=exited, status=0/SUCCESS)
+ Main PID: 93 (code=exited, status=0/SUCCESS)
+    Tasks: 0 (limit: 512)
+   CGroup: /system.slice/wicked.service
+ 
+Jan 13 06:40:10 opensuse systemd[1]: Starting wicked managed network interfaces...
+Jan 13 06:40:25 opensuse wicked[93]: lo              up
+Jan 13 06:40:25 opensuse wicked[93]: eth0            up
+Jan 13 06:40:25 opensuse systemd[1]: Started wicked managed network interfaces.
+To see info about your ip address run:
+ifconfig -a
+
+OR
+ip a
+ip a show
+ip a show eth1
+
+How to restart the networking service on Gentoo
+Run the following for eth0:
+/etc/init.d/net.eth0 restart
+
+Restating networking service on Alpine Linux
+Use the service command:
+service networking restart
+# OR #
+/etc/init.d/networking restart
+
+Arch Linux restart networking
+Use the systemd-networkd.service on your Arch Linux. For example, on Linode cloud server, I use the following commands:
+# Restart it #
+sudo systemctl restart systemd-networkd.service
+# Get the status #
+systemctl status systemd-networkd.service
+
+Sample outputs:
+
+● systemd-networkd.service - Network Configuration
+     Loaded: loaded (/usr/lib/systemd/system/systemd-networkd.service; enabled;>
+     Active: active (running) since Tue 2022-02-15 19:58:13 UTC; 3 days ago
+TriggeredBy: ● systemd-networkd.socket
+       Docs: man:systemd-networkd.service(8)
+   Main PID: 245 (systemd-network)
+     Status: "Processing requests..."
+      Tasks: 1 (limit: 4690)
+     Memory: 3.0M
+        CPU: 1min 41.703s
+     CGroup: /system.slice/systemd-networkd.service
+             └─245 /usr/lib/systemd/systemd-networkd
+
+Feb 15 19:58:12 localhost systemd-networkd[245]: lo: Link UP
+Feb 15 19:58:12 localhost systemd-networkd[245]: lo: Gained carrier
+Feb 15 19:58:12 localhost systemd-networkd[245]: Enumeration completed
+Feb 15 19:58:13 localhost systemd[1]: Started Network Configuration.
+Feb 15 19:58:13 localhost systemd-networkd[245]: eth0: Link UP
+Feb 15 19:58:13 localhost systemd-networkd[245]: eth0: Gained carrier
+Feb 15 19:58:14 localhost systemd-networkd[245]: eth0: Gained IPv6LL
+Notice: journal has been rotated since unit was started, output may be incomple
+Summing up
+Over the years, Linux distros changed the way we manage networking services. I hope this guide helps you. If your Linux distro is not mentioned or the command is not working, post it below and I will reply you. For more info see the following manual pages using the help command or man command:
+man service
+man systemctl
+
+

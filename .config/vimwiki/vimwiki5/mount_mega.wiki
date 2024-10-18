@@ -1,0 +1,37 @@
+
+= Mount MEGA =
+ == **Rclone**: ==
+    
+	- **Rclone** 
+		is an open-source command-line program that allows you to sync files and directories to and from various cloud storage providers, including **MEGA**.
+    - First, create a new folder on your system where you'll mount the **MEGA** storage. For example, you can create a folder named `mega` in your user's home directory:
+      ``
+      mkdir ~/mega
+      ``
+    - To ensure reliable mounting, enable **Rclone File Caching**. This makes the cloud storage system behave more like a normal file system.
+    - Now, mount your remote **MEGA** storage using the following command (replace `remote-name` with the actual name you set up during **Rclone** configuration):
+      ``
+      rclone --vfs-cache-mode writes mount remote-name: ~/mega
+      ``
+      - The `--vfs-cache-mode writes` flag enables a write-cache mode. It writes files to a local cache in the background, allowing you to continue using your remote storage while files are being written.
+      - You can also run the command in the background by appending an ampersand (`&`):
+       ``
+        rclone --vfs-cache-mode writes mount remote-name: ~/mega &
+       ``
+    - Confirm if it's mounted using `df -h`.
+
+ == **MEGASync**: ==
+    - **MEGASync** 
+		provides a desktop app for syncing files with **MEGA**. You can download the binary package for **MEGASync** based on your Linux distribution (e.g., Ubuntu, Fedora, Debian) from their [official download page](https://itsfoss.com/install-mega-cloud-storage-linux/).
+
+Remember that these steps apply not only to **MEGA** but also to other cloud storage providers supported by **Rclone**. If you encounter any issues, feel free to ask for further assistance! 🌟
+
+
+- For more details, you can refer to the following resources:
+
+https://devsrealm.com/posts/37205b2356a4c74e/mounting-and-unmounting-cloud-storage-with-rclone-in-linux
+https://itsfoss.com/install-mega-cloud-storage-linux/
+https://forum.rclone.org/t/how-do-i-mount-mega-as-a-drive-with-rclone/13953
+https://devsrealm.com/posts/37205b2356a4c74e/mounting-and-unmounting-cloud-storage-with-rclone-in-linux
+https://itsfoss.com/install-mega-cloud-storage-linux/
+https://forum.rclone.org/t/how-do-i-mount-mega-as-a-drive-with-rclone/13953

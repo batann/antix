@@ -1,0 +1,14 @@
+
+sudo apt update
+sudo apt install neomutt pass isync abook ca-certificates 
+
+https://github.com/LukeSmithxyz/mutt-wizard.git
+cd mutt-wizard
+sudo make install
+
+
+# create gpg -full	_tel.petar@gmail.com_
+# add to pass       _pass init tel.petar@gmail.com_
+#			        _pass add tel.petar@gmail.com_		
+# add to mw     	_mw -a tel.petar@gmail.com_
+

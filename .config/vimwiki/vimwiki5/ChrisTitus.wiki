@@ -1,0 +1,79 @@
+= Contents =
+    - [[#CHrisTitus:]]
+
+CHrisTitus:
+===========
+
+	*Repositories:*
+	- Secure Linux
+	https://github.com/ChrisTitusTech/secure-linux.git
+	- Firewaall _ip tables_
+	https://github.com/ChrisTitusTech/firewallsetup.git
+	- AwesomWM4.3
+	https://github.com/ChrisTitusTech/titus-awesome.git
+	- Bootloader Themes
+	https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes.git
+	- YARU
+
+
+
+
+II) Firewall setup
+<code>
+		git clone https://github.com/ChrisTitusTech/firewallsetup.git
+		sudo apt install iptables-persistent
+		sudo /etc/init.d/netfilter-persistent save
+</code>
+III) Awesome WM
+<code>
+		sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins
+		materia-gtk-theme lxappearance xbacklight flameshot nautilus xfce4-power-manager pnmixer
+		network-manager-gnome policykit-1-gnome -y
+
+		wget -qO- https://git.io/papirus-icon-theme-install | sh
+		git clone --branch debian https://github.com/ChrisTitusTech/titus-awesome ~/.config/awesome
+		</code>
+
+
+IV) Top 5 Bootloader Themes
+<code>
+		git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes.git
+		cd Top*
+		sudo chmod u+x install.sh
+		sudo bash install.sh
+</code>
+V)  YORU
+
+	1) Awesome WM
+		a) 	Installing current Package Master as Recipient:
+		<code>
+		sudo apt build-dep awesome
+		git clone https://github.com/awesomewm/awesome
+		cd awesome
+		make package
+		cd build
+		sudo apt install ./*.deb
+		</code>
+
+	-or-
+		b)
+<code>
+		cd awesome
+		sudo make
+		sudo make install
+		git clone https://github.com/awesomeWM/awesome.git
+</code>
+
+	2) other dependencies:
+
+i<code>
+		sudo apt install picom-git wezterm rofi acpi acpid acpi_call upower lxappearance-gtk3 \
+		jq inotify-tools polkit-gnome xdotool xclip gpick ffmpeg blueman redshift \
+		pipewire pipewire-alsa pipewire-pulse alsa-utils brightnessctl feh maim \
+		mpv mpd mpc mpdris2 python3-mutagen ncmpcpp playerctl --needed
+</code>
+	3) Clone Configuration
+<code>
+		git clone --branch debian https://github.com/ChrisTitusTech/titus-awesome ~/.config/awesome
+</code>
+

@@ -1,0 +1,44 @@
+2024-05-11 04:28:47.760 DBG default: mx-boot-repair version: 24.4
+2024-05-11 04:28:47.925 DBG default: lsblk -ln -o NAME,SIZE,LABEL,MODEL -d -e 2,11 -x NAME | grep -E '^x?[h,s,v].[a-z]|^mmcblk|^nvme'
+2024-05-11 04:28:47.936 DBG default: "sda  298.1G        ST320LT007-9ZV142\nsdb  465.8G        WDC WD5000AAKX-60U6AA0\nsdc   29.1G MXLIVE SanDisk 3.2Gen1\nsdd    7.3G        STORE N GO"
+2024-05-11 04:28:47.936 DBG default: lsblk -ln -o NAME,SIZE,FSTYPE,MOUNTPOINT,LABEL -e 2,11 -x NAME | grep -E '^x?[h,s,v].[a-z][0-9]|^mmcblk[0-9]+p|^nvme[0-9]+n[0-9]+p'
+2024-05-11 04:28:47.950 DBG default: "sda1   700M vfat                         \nsda2     1K                              \nsda5  78.1G swap                         \nsda6  29.3G ext4                         \nsda7   100G ext4                         \nsdb1   1.4G vfat                         EFI\nsdb2     1K                              \nsdb5  70.1G ext4                         rootMX23\nsdb6  28.6G swap        [SWAP]           \nsdb7  47.7G ext4                         \nsdb8  71.5G ext4        /                rootMX23\nsdb9 246.4G vfat        /media/batan/100 DATA\nsdc1   2.3G iso9660                      MXLIVE\nsdc2   8.7M vfat                         EFI-LIVE\nsdd1   7.3G LVM2_member"
+2024-05-11 04:28:56.847 DBG default: lsblk -ln -o PARTTYPE /dev/sda| grep -qEi '0x83|0fc63daf-8483-4772-8e79-3d69d8477de4|44479540-F297-41B2-9AF7-D131D5F0458A|4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709'
+2024-05-11 04:28:59.921 DBG default: lsblk -ln -o LABEL /dev/sda1| grep -q rootMX
+2024-05-11 04:28:59.953 DBG default: lsblk -ln -o LABEL /dev/sda2| grep -q rootMX
+2024-05-11 04:28:59.992 DBG default: lsblk -ln -o LABEL /dev/sda5| grep -q rootMX
+2024-05-11 04:29:00.030 DBG default: lsblk -ln -o LABEL /dev/sda6| grep -q rootMX
+2024-05-11 04:29:00.067 DBG default: lsblk -ln -o LABEL /dev/sda7| grep -q rootMX
+2024-05-11 04:29:00.103 DBG default: lsblk -ln -o LABEL /dev/sdb1| grep -q rootMX
+2024-05-11 04:29:00.144 DBG default: lsblk -ln -o LABEL /dev/sdb2| grep -q rootMX
+2024-05-11 04:29:00.181 DBG default: lsblk -ln -o LABEL /dev/sdb5| grep -q rootMX
+2024-05-11 04:29:00.221 DBG default: lsblk -ln -o LABEL /dev/sda1| grep -q rootMX
+2024-05-11 04:29:00.259 DBG default: lsblk -ln -o LABEL /dev/sda2| grep -q rootMX
+2024-05-11 04:29:00.298 DBG default: lsblk -ln -o LABEL /dev/sda5| grep -q rootMX
+2024-05-11 04:29:00.337 DBG default: lsblk -ln -o LABEL /dev/sda6| grep -q rootMX
+2024-05-11 04:29:00.375 DBG default: lsblk -ln -o LABEL /dev/sda7| grep -q rootMX
+2024-05-11 04:29:00.410 DBG default: lsblk -ln -o LABEL /dev/sdb1| grep -q rootMX
+2024-05-11 04:29:00.449 DBG default: lsblk -ln -o LABEL /dev/sdb2| grep -q rootMX
+2024-05-11 04:29:00.487 DBG default: lsblk -ln -o LABEL /dev/sdb5| grep -q rootMX
+2024-05-11 04:29:16.765 DBG default: "lsblk" ("-nro", "MOUNTPOINTS", "/dev/sdb5")
+2024-05-11 04:29:16.808 DBG default: ""
+2024-05-11 04:29:16.808 DBG default: "cryptsetup" ("isLuks", "/dev/sdb5")
+2024-05-11 04:29:16.956 DBG default: /bin/mount /dev/sdb5 /tmp/mx-boot-repair-BONQqN && /bin/mount --rbind --make-rslave /dev /tmp/mx-boot-repair-BONQqN/dev && /bin/mount --rbind --make-rslave /sys /tmp/mx-boot-repair-BONQqN/sys && /bin/mount --rbind /proc /tmp/mx-boot-repair-BONQqN/proc && /bin/mount -t tmpfs -o size=100m,nodev,mode=755 tmpfs /tmp/mx-boot-repair-BONQqN/run && /bin/mkdir /tmp/mx-boot-repair-BONQqN/run/udev && /bin/mount --rbind /run/udev /tmp/mx-boot-repair-BONQqN/run/udev
+2024-05-11 04:29:17.229 DBG default: test -n "$(ls -A /tmp/mx-boot-repair-BONQqN/boot)"
+2024-05-11 04:29:17.288 DBG default: chroot /tmp/mx-boot-repair-BONQqN update-grub
+2024-05-11 04:29:19.650 WRN default: "Generating grub configuration file ..."
+2024-05-11 04:29:19.651 WRN default: ""
+2024-05-11 04:29:19.678 WRN default: "cat: write error"
+2024-05-11 04:29:19.679 WRN default: ": No space left on device"
+2024-05-11 04:29:19.685 DBG default: mountpoint -q /tmp/mx-boot-repair-BONQqN/boot/efi && umount /tmp/mx-boot-repair-BONQqN/boot/efi
+2024-05-11 04:29:19.769 DBG default: mountpoint -q /tmp/mx-boot-repair-BONQqN/boot && umount -R /tmp/mx-boot-repair-BONQqN/boot
+2024-05-11 04:29:19.810 DBG default: mountpoint -q /tmp/mx-boot-repair-BONQqN && /bin/umount -R /tmp/mx-boot-repair-BONQqN/run && /bin/umount -R /tmp/mx-boot-repair-BONQqN/proc && /bin/umount -R /tmp/mx-boot-repair-BONQqN/sys && /bin/umount -R /tmp/mx-boot-repair-BONQqN/dev && umount /tmp/mx-boot-repair-BONQqN && rmdir /tmp/mx-boot-repair-BONQqN
+2024-05-11 04:29:59.672 DBG default: lsblk -ln -o LABEL /dev/sda1| grep -q rootMX
+2024-05-11 04:29:59.712 DBG default: lsblk -ln -o LABEL /dev/sda2| grep -q rootMX
+2024-05-11 04:29:59.754 DBG default: lsblk -ln -o LABEL /dev/sda5| grep -q rootMX
+2024-05-11 04:29:59.794 DBG default: lsblk -ln -o LABEL /dev/sda6| grep -q rootMX
+2024-05-11 04:29:59.831 DBG default: lsblk -ln -o LABEL /dev/sda7| grep -q rootMX
+2024-05-11 04:29:59.874 DBG default: lsblk -ln -o LABEL /dev/sdb1| grep -q rootMX
+2024-05-11 04:29:59.912 DBG default: lsblk -ln -o LABEL /dev/sdb2| grep -q rootMX
+2024-05-11 04:29:59.950 DBG default: lsblk -ln -o LABEL /dev/sdb5| grep -q rootMX
+2024-05-11 04:30:00.363 WRN default: "mv: cannot stat '/var/log/mx-boot-repair.log': No such file or directory"

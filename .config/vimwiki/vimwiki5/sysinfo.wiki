@@ -1,0 +1,102 @@
+Snapshot created on: 20240514_2200
+== System: ==
+  Kernel: 6.1.0-21-amd64 [6.1.90-1] arch: x86_64 bits: 64 compiler: gcc v: 12.2.0
+    parameters: BOOT_IMAGE=/boot/vmlinuz-6.1.0-21-amd64 root=UUID=<filter> ro quiet splash
+  Desktop: Xfce v: 4.18.1 tk: Gtk v: 3.24.36 info: xfce4-panel wm: xfwm v: 4.18.0 vt: 7
+    dm: LightDM v: 1.26.0 Distro: MX-23.2_x64 Libretto May 05  2024 base: Debian GNU/Linux 12
+    (bookworm)
+== Machine: ==
+  Type: Desktop System: LENOVO product: 3578G4M v: ThinkCentre M72e serial: <superuser required>
+    Chassis: type: 3 serial: <superuser required>
+  Mobo: LENOVO model: N/A v: Win8 Pro DPK TPG serial: <superuser required> BIOS: LENOVO
+    v: F1KT39AUS date: 10/12/2012
+== CPU: ==
+  Info: model: Intel Core i3-3220 bits: 64 type: MT MCP arch: Ivy Bridge gen: core 3 level: v2
+    built: 2012-15 process: Intel 22nm family: 6 model-id: 0x3A (58) stepping: 9 microcode: 0x21
+  Topology: cpus: 1x cores: 2 tpc: 2 threads: 4 smt: enabled cache: L1: 128 KiB
+    desc: d-2x32 KiB; i-2x32 KiB L2: 512 KiB desc: 2x256 KiB L3: 3 MiB desc: 1x3 MiB
+  Speed (MHz): avg: 1620 high: 1649 min/max: 1600/3300 scaling: driver: intel_cpufreq
+    governor: ondemand cores: 1: 1636 2: 1597 3: 1649 4: 1600 bogomips: 26340
+  Flags: avx ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+  Vulnerabilities:
+  Type: gather_data_sampling status: Not affected
+  Type: itlb_multihit status: KVM: VMX disabled
+  Type: l1tf mitigation: PTE Inversion; VMX: conditional cache flushes, SMT vulnerable
+  Type: mds mitigation: Clear CPU buffers; SMT vulnerable
+  Type: meltdown mitigation: PTI
+  Type: mmio_stale_data status: Unknown: No mitigations
+  Type: reg_file_data_sampling status: Not affected
+  Type: retbleed status: Not affected
+  Type: spec_rstack_overflow status: Not affected
+  Type: spec_store_bypass mitigation: Speculative Store Bypass disabled via prctl
+  Type: spectre_v1 mitigation: usercopy/swapgs barriers and __user pointer sanitization
+  Type: spectre_v2 mitigation: Retpolines; IBPB: conditional; IBRS_FW; STIBP: conditional; RSB
+    filling; PBRSB-eIBRS: Not affected; BHI: Not affected
+  Type: srbds status: Not affected
+  Type: tsx_async_abort status: Not affected
+Graphics:
+  Device-1: Intel Xeon E3-1200 v2/3rd Gen Core processor Graphics vendor: Lenovo driver: i915
+    v: kernel arch: Gen-7 process: Intel 22nm built: 2012-13 ports: active: HDMI-A-1,VGA-1
+    empty: DP-1 bus-ID: 00:02.0 chip-ID: 8086:0152 class-ID: 0300
+  Display: x11 server: X.Org v: 1.21.1.7 compositor: xfwm v: 4.18.0 driver: dri: crocus gpu: i915
+    note: X driver n/a display-ID: :0.0 screens: 1
+  Screen-1: 0 s-res: 3600x1080 s-dpi: 96 s-size: 952x285mm (37.48x11.22") s-diag: 994mm (39.12")
+  Monitor-1: HDMI-A-1 mapped: HDMI-1 pos: primary,left model: Samsung S24E450 serial: <filter>
+    built: 2020 res: 1920x1080 hz: 60 dpi: 92 gamma: 1.2 size: 531x299mm (20.91x11.77")
+    diag: 609mm (24") ratio: 16:9 modes: max: 1920x1080 min: 720x400
+  Monitor-2: VGA-1 pos: right model: Lenovo LT2252p Wide serial: <filter> built: 2012
+    res: 1680x1050 hz: 60 dpi: 90 gamma: 1.2 size: 474x296mm (18.66x11.65") diag: 559mm (22")
+    ratio: 16:10 modes: max: 1680x1050 min: 720x400
+  API: OpenGL v: 4.2 Mesa 22.3.6 renderer: Mesa Intel HD Graphics 2500 (IVB GT1)
+    direct-render: Yes
+== Audio: ==
+  Device-1: Intel 6 Series/C200 Series Family High Definition Audio vendor: Lenovo 6
+    driver: snd_hda_intel v: kernel bus-ID: 00:1b.0 chip-ID: 8086:1c20 class-ID: 0403
+  API: ALSA v: k6.1.0-21-amd64 status: kernel-api tools: alsamixer,amixer
+  Server-1: PipeWire v: 1.0.0 status: off with: 1: pipewire-pulse status: off 2: wireplumber
+    status: off tools: pw-cat,pw-cli,wpctl
+  Server-2: PulseAudio v: 16.1 status: active tools: pacat,pactl,pavucontrol
+== Network: ==
+  Device-1: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet vendor: Lenovo driver: r8169
+    v: kernel pcie: gen: 1 speed: 2.5 GT/s lanes: 1 port: e000 bus-ID: 03:00.0 chip-ID: 10ec:8168
+    class-ID: 0200
+  IF: eth0 state: up speed: 1000 Mbps duplex: full mac: <filter>
+  Device-2: NetGear Nighthawk A7000 802.11ac Wireless Adapter AC1900 [Realtek 8814AU] type: USB
+    driver: N/A bus-ID: 2-1.2:3 chip-ID: 0846:9054 class-ID: 0000 serial: <filter>
+Drives:
+  Local Storage: total: 763.85 GiB used: 177.41 GiB (23.2%)
+  SMART Message: Unable to run smartctl. Root privileges required.
+  ID-1: /dev/sda maj-min: 8:0 vendor: Western Digital model: WD5000AAKX-60U6AA0 size: 465.76 GiB
+    block-size: physical: 512 B logical: 512 B speed: 3.0 Gb/s type: HDD rpm: 7200 serial: <filter>
+    rev: 1H18 scheme: MBR
+  ID-2: /dev/sdb maj-min: 8:16 vendor: Seagate model: ST320LT007-9ZV142 size: 298.09 GiB
+    block-size: physical: 4096 B logical: 512 B speed: 3.0 Gb/s type: HDD rpm: 7242 serial: <filter>
+    rev: LVM1 scheme: MBR
+== Partition: ==
+  ID-1: / raw-size: 71.52 GiB size: 69.85 GiB (97.66%) used: 55.67 GiB (79.7%) fs: ext4
+    dev: /dev/sda8 maj-min: 8:8
+== Swap: ==
+  Kernel: swappiness: 15 (default 60) cache-pressure: 100 (default)
+  ID-1: swap-1 type: partition size: 28.61 GiB used: 0 KiB (0.0%) priority: -2 dev: /dev/sda6
+    maj-min: 8:6
+  ID-2: swap-2 type: file size: 23.51 GiB used: 0 KiB (0.0%) priority: -3 file: /swap/swap
+== Sensors: ==
+  System Temperatures: cpu: 33.0 C mobo: N/A
+  Fan Speeds (RPM): N/A
+== Repos: ==
+  Packages: 3067 pm: dpkg pkgs: 3060 libs: 1293
+    tools: apt,apt-get,aptitude,gnome-software,nala,synaptic pm: rpm pkgs: 0 pm: flatpak pkgs: 7
+  No active apt repos in: /etc/apt/sources.list
+  Active apt repos in: /etc/apt/sources.list.d/debian-stable-updates.list
+    1: deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+  Active apt repos in: /etc/apt/sources.list.d/debian.list
+    1: deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+    2: deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+    3: deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
+  Active apt repos in: /etc/apt/sources.list.d/mx.list
+    1: deb http://mx.debian.nz/mx/repo/ bookworm main non-free
+== Info: ==
+  Processes: 262 Uptime: 23h 33m wakeups: 1 Memory: 7.58 GiB used: 2.24 GiB (29.5%) Init: SysVinit
+  v: 3.06 runlevel: 5 default: graphical tool: systemctl Compilers: gcc: 12.2.0 alt: 12
+  Client: shell wrapper v: 5.2.15-release inxi: 3.3.26
+Boot Mode: BIOS (legacy, CSM, MBR)

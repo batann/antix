@@ -1,0 +1,79 @@
+= mx-repos-on-debian-based-os =
+
+
+- get the keyring:
+wget https://mxrepo.com/mx/repo/pool/main/m/mx-gpg-keys/mx-gpg-keys_23.09.04_all.deb
+_or_
+wget https://mxrepo.com/mx/repo/pool/main/m/mx-gpg-keys/mx-gpg-keys_23.09.04.tar.xz
+
+sudo dpkg -i mx-gpg*.deb
+touch mxlinux
+echo "Package: *" >>mxlinux
+echo "Pin: release a=mx" >> mxlinux
+echo "Pin-Priority: 100" >> mxlinux
+
+sudo mv mxlinux /etc/apt/preferences.d/mxlinux
+
+
+
+== Adding MX Linux tools to Debian ==
+
+The latest release of MX Linux (19.1 at the time of writing) is based on Debian buster and so should be binary-compatible. As such, it is possible to add the MX repositories to a Debian buster system and install their various tools.
+
+However, MX rely on their own custom versions of systemd, udev and GRUB so simply adding the repositories will cause those packages to be favoured over the native buster versions, which isn't ideal.
+
+To solve this problem the MX repositories can be assigned an APT pin value of 100 so that they are treated in the same way as the backports repositories — packages are not automatically updated to unless they are explicitly installed from there (eg, by using the --target option).
+
+To do this create a file at /etc/apt/preferences.d/mxlinux with this content:
+``
+Package: *
+Pin: release a=mx
+Pin-Priority: 100
+``
+Now add the MX-19 repositories to /etc/apt/sources.list.d/mxlinux.list, here is the content of that file:
+``
+deb http://mxrepo.com/mx/repo buster main non-free
+``
+To gain access to MX's new Advanced Hardware Support (AHS) repository also add this line:
+``
+deb http://mxrepo.com/mx/repo buster ahs
+``
+Then update the package database:
+``
+ apt update
+``
+This will return an error to the effect that the MX repositories are unverified and so will not be trusted, the message will name their GPG key (hereafter referred to as $mx_gpg_key).
+
+To add the key first download it from the keyservers:
+``
+gpg --keyserver keyserver.ubuntu.com --recv-keys $mx_gpg_key
+``
+Then add it to APT's key list:
+``
+ gpg -a --export $mx_gpg_key | apt-key add -
+``
+Now update again:
+``
+ apt update
+``
+The MX repositories should now be trusted :-)
+
+Alternatively, download the mx19-archive-keyring .deb package and install that.
+
+Once the above steps are completed it should be possible to install packages from MX Linux, for example:
+``
+ apt install mx-datetime
+``
+If a package is needed from MX that also exists in the Debian buster repositories then use the --target option, like this (replace $package with the actual name of the desired package):
+``
+ apt install --target mx $package
+``
+To list all MX Linux packages use
+``
+aptitude search '?archive(mx)'
+``
+To list all installed MX Linux packages use
+``
+aptitude search '?narrow(?installed, ?archive(mx))'
+``
+

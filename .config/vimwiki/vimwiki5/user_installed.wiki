@@ -1,0 +1,168 @@
+# UIP - User Installed Packages
+# Date:      Thu, 02 May 2024 12:12:33 +1000
+# Host:      think
+# System:    MX-23.2_minimal_x64 Libretto January 21, 2024
+#
+# List of user installed packages
+# Package name                                      Description
+
+7zip                                                7-Zip file archiver with a high compression ratio
+adb                                                 Android Debug Bridge
+advert-block-antix                                  Script and Desktop launcher for advert block, website add blocker for antiX.
+alsa-utils                                          Utilities for configuring and using ALSA
+antix-archive-keyring                               GnuPG archive keys of the antiX Linux archive
+apparix                                             console-based bookmark tool for fast file system navigation
+apt-utils                                           package management related utility programs
+at                                                  Delayed job execution and batch processing
+automake                                            Tool for generating GNU Standards-compliant Makefiles
+axel                                                light command line download accelerator
+bleachbit                                           delete unnecessary files from the system
+bwm-ng                                              small and simple console-based bandwidth monitor
+cli-aptix                                           cli apt installer tool.
+cmus                                                lightweight ncurses audio player
+codelite-plugins                                    Powerful and lightweight IDE - plugins
+ddgr                                                DuckDuckGo from the terminal
+dialog                                              Displays user-friendly dialog boxes from shell scripts
+dolphin                                             file manager
+dvtm                                                Tiling window management for the console
+exa                                                 Modern replacement for ls
+exuberant-ctags                                     build tag file indexes of source code definitions
+fairymax                                            xboard compatible chess and chess-variant engine
+falkon                                              lightweight web browser based on Qt WebEngine
+fbi                                                 Linux frame buffer image viewer
+fbless                                              terminal fiction book reader
+fd-find                                             Simple, fast and user-friendly alternative to find
+feh                                                 imlib2 based image viewer
+ffmpeg                                              Tools for transcoding, streaming and playing of multimedia files
+fzf                                                 general-purpose command-line fuzzy finder
+gir1.2-spiceclientgtk-3.0                           GTK3 widget for SPICE clients (GObject-Introspection)
+gnome-boxes                                         Simple GNOME app to access virtual systems
+gnome-software-plugin-flatpak                       Flatpak support for GNOME Software
+guake                                               Drop-down terminal for GNOME Desktop Environment
+ibverbs-providers                                   User space provider drivers for libibverbs
+imagemagick                                         image manipulation programs -- binaries
+kodi                                                Open Source Home Theatre (executable binaries)
+kodi-eventclients-dev                               Open Source Home Theatre (Event Client virtual dev package)
+kodi-eventclients-kodi-send                         Open Source Home Theatre (Event Client Kodi-SEND package)
+kodi-eventclients-ps3                               Open Source Home Theatre (Event Client PS3 package)
+kodi-eventclients-wiiremote                         Open Source Home Theatre (Event Client WII Remote support package)
+kodi-eventclients-zeroconf                          Open Source Home Theatre (Event Client ZeroConf script package)
+kodi-game-libretro-bsnes-mercury-accuracy           Kodi integration for bsnes-mercury accuracy core
+kodi-game-libretro-bsnes-mercury-balanced           Kodi integration for bsnes-mercury balanced core
+kodi-game-libretro-bsnes-mercury-performance        Kodi integration for bsnes-mercury performance core
+kodi-inputstream-adaptive                           Adaptive inputstream addon for Kodi
+kodi-inputstream-ffmpegdirect                       FFmpegDirect inputstream addon for Kodi
+kodi-inputstream-rtmp                               Kodi input stream addon for RTMP
+kodi-pvr-mythtv                                     MythTV PVR Addon for Kodi
+kodi-repository-kodi                                Open Source Home Theatre (official addons repository feed)
+kodi-tools-texturepacker                            Open Source Home Theatre (TexturePacker skin development tool)
+kodi-vfs-libarchive                                 Libarchive VFS add-on for Kodi
+kodi-vfs-sftp                                       SSH File Transfer Protocol for Kodi
+kodi-visualization-fishbmc                          Fishbmc audio visualization addon for Kodi
+kodi-visualization-pictureit                        pictureit visualizer for Kodi
+kodi-visualization-shadertoy                        Shadertoy audio visualization for Kodi
+kodi-visualization-spectrum                         Spectrum visualizer addon for Kodi
+kodi-visualization-waveform                         Waveform audio visualization addon for Kodi
+konsole                                             X terminal emulator
+lazpaint-gtk2                                       Image editor with raster and vector layers (gtk2)
+lfm                                                 simple but powerful file manager for the UNIX console
+libapache2-mod-php8.2                               server-side, HTML-embedded scripting language (Apache 2 module)
+libdvdcss2                                          Simple foundation for reading DVDs - runtime libraries
+libsox-fmt-mp3                                      SoX MP2 and MP3 format library
+libtxc-dxtn0                                        S3 Texture Compression (S3TC) library
+libtxc-dxtn0:i386                                   S3 Texture Compression (S3TC) library
+libvirt-daemon-driver-lxc                           Virtualization daemon LXC connection driver
+libvirt-daemon-driver-vbox                          Virtualization daemon VirtualBox connection driver
+libvirt-daemon-driver-xen                           Virtualization daemon Xen connection driver
+libvirt-daemon-system                               Libvirt daemon configuration files
+libvirt-daemon-system-sysv                          Libvirt daemon configuration files (sysv)
+libzulucrypt-plugins                                collection of plugins for zulucrypt
+links2                                              Web browser running in both graphics and text mode
+lnav                                                ncurses-based log file viewer
+lynx                                                classic non-graphical (text-mode) web browser
+man2html                                            browse man pages in your web browser
+mariadb-server                                      MariaDB database server binaries
+mat2                                                Metadata anonymisation toolkit v2
+megatools                                           Command-line client for the Mega cloud storage service
+mpv                                                 video player based on MPlayer/mplayer2
+mx-cleanup                                          mx-cleanup
+mx-codecs                                           restricted codecs installer
+mx-samba-config                                     GUI for managing Samba shares and users
+nala                                                Commandline frontend for the APT package manager
+netcat-openbsd                                      TCP/IP swiss army knife
+newsboat                                            text mode rss feed reader with podcast support
+nodau                                               simple console based note taking program
+notion-desktop                                      Notion desktop application
+npm                                                 package manager for Node.js
+obsidian-2-gtk-theme                                obsidian 2 GTK themes for MX Linux
+obsidian-icon-theme                                 Intuitive Faenza-like icon theme
+openssh-server                                      secure shell (SSH) server, for secure access from remote machines
+optipng                                             advanced PNG (Portable Network Graphics) optimizer
+ovmf                                                UEFI firmware for 64-bit x86 virtual machines
+pandoc                                              general markup converter
+php8.2                                              server-side, HTML-embedded scripting language (metapackage)
+php8.2-mysql                                        MySQL module for PHP
+php8.2-xml                                          DOM, SimpleXML, XML, and XSL module for PHP
+php8.2-yaml                                         YAML-1.1 parser and emitter for PHP
+pipx                                                execute binaries from Python packages in isolated environments
+poppler-utils                                       PDF utilities (based on Poppler)
+presentty                                           Console-based presentation software
+pulseaudio-equalizer                                Equalizer sink module for PulseAudio sound server
+pv                                                  Shell pipeline element to meter data passing through
+pwman3                                              console password management application
+python3-bs4                                         error-tolerant HTML parser for Python 3
+python3-pip                                         Python package installer
+qemu-system-gui                                     QEMU full system emulation binaries (user interface and audio support)
+qemu-system-x86                                     QEMU full system emulation binaries (x86)
+qemu-utils                                          QEMU utilities
+ranger                                              Console File Manager with VI Key Bindings
+renameutils                                         Programs to make file renaming easier
+shaarli                                             Personal, minimalist, super-fast and no-database bookmarking service
+sox                                                 Swiss army knife of sound processing
+speedtest-cli                                       Command line interface for testing internet bandwidth using speedtest.net
+sphinx-doc                                          documentation generator for Python projects - documentation
+spice-client-gtk                                    Simple clients for interacting with SPICE servers
+spice-vdagent                                       Spice agent for Linux
+spice-webdavd                                       daemon to proxy WebDAV request to the Spice virtio channel
+sshfs                                               filesystem client based on SSH File Transfer Protocol
+stacer                                              Linux system optimizer and monitoring
+stockfish                                           strong chess engine, to play chess against
+stterm                                              simple terminal emulator for X
+sweeper                                             history and temporary file cleaner
+tesseract-ocr                                       Tesseract command line OCR tool
+thunar-dropbox-plugin                               context-menu items from dropbox for Thunar
+thunar-font-manager                                 Thunar extension for Font Manager
+thunar-gtkhash                                      thunar extension for computing checksums and more using gtkhash
+thunar-shares-plugin                                quickly share a folder using Samba from Thunar
+thunar-vcs-plugin                                   VCS plugin for Thunar file manager
+thunarx-python                                      Python bindings for the Thunar file manager
+timewarrior                                         feature-rich time tracking utility
+tldr                                                Haskell tldr client
+tmux                                                terminal multiplexer
+tpp                                                 text presentation program
+tracker-miner-fs                                    metadata database, indexer and search tool - filesystem indexer
+transmission                                        lightweight BitTorrent client
+transmission-cli                                    lightweight BitTorrent client (command line programs)
+transmission-gtk                                    lightweight BitTorrent client (GTK+ interface)
+trash-cli                                           command line trashcan utility
+treeline                                            versatile tree-like structured custom data manager
+trigger-rally                                       3D rally car racing game
+ufw                                                 program for managing a Netfilter firewall
+vim-youcompleteme                                   fast, as-you-type, fuzzy-search code completion engine for Vim
+virt-manager                                        desktop application for managing virtual machines
+virt-viewer                                         Displaying the graphical console of a virtual machine
+vit                                                 full-screen terminal interface for Taskwarrior
+vlc                                                 multimedia player and streamer
+vnstat                                              console-based network traffic monitor
+vym                                                 mindmapping tool
+w3m                                                 WWW browsable pager with excellent tables/frames support
+w64codecs                                           win64 binary codecs
+webkit2gtk-driver                                   WebKitGTK WebDriver support
+wmctrl                                              control an EWMH/NetWM compatible X Window Manager
+xboard                                              X Window System Chess Board
+xcape                                               Configure modifier keys to act as other keys when pressed and released
+xfce4-goodies                                       enhancements for the Xfce4 Desktop Environment
+xterm                                               X terminal emulator
+yt-dlp                                              downloader of videos from YouTube and other sites
+zulucrypt-gui                                       graphical front end for zulucrypt-cli
+zulusafe-cli                                        cli that manages encrypted volumes
