@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CodePen - navbar &amp; sidebar</title>
+<link rel='stylesheet' href='file:///home/batan/.config/homepage/assets/bootstrap.min.css'>
+<link rel='stylesheet' href='file:///home/batan/.config/homepage/assets/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<style>
+.iframe a{border:2px solid #00203f;}
+hr {
+border:3px solid #D6ED17;
+width:100%;
+height:5px;
+background-color:#00203f;
+}
+.container {position:flex;
+}
+.link_frame{
+	position:relative;
+	width:70px;
+	height:25px;
+	border:2px solid #323232 ;
+	background-color:#121212;
+	padding:2px 2px 2px 2px;
+	margin:5px 5px 5px 5px;
+}
+			time {font-size:1.0em;
+			color:#cd3232;
+		}
+
+
+/* The Modal II  */
+        .modal100 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 300px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: #c0c0c0; /* Black w/ opacity */
+        }
+        .mybtn100{      border:3px solid #483c32;
+        background-color:#007ea7;
+        width:30px;
+        height:30px;
+        border-radius:20px;
+        }
+        /* Modal Content */
+        .modal100-content {
+        position: relative;
+        background-color: #E7EBE0;
+        margin: auto;
+        padding: 10px 10px 10px 10px;
+        border: 3px solid #888;
+        width: 80%;
+        box-shadow: 6px 24px 24px 6px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.8s;
+        animation-name: animatetop;
+        animation-duration: 0.8s
+        }
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+        }
+        @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+        }
+        /* The Close Button */
+        .close100 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+        .close100:hover,
+        .close100:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        .modal100-header {
+        padding: 2px 6px;
+        background-color:#F2AA4C;
+        color: white;
+        }
+        .modal100-body {padding: 2px 16px;
+        background-color:#101820}
+        .modal100-footer {
+        padding:2px 6px;
+        background-color:#F2AA4C;
+        color: white;
+        }
+/* The Modal I (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.searchbar1 {
+width:650px;
+	height:23px;
+background-color:#101820;
+color:white;
+	padding:3px 3px 3px 3px;
+border:2px solid #0F3156;
+border-radius:15px;
+}
+.searchbar10 {
+width:750px;
+	height:23px;
+background-color:#c9cba3;
+color:#00080;
+border:3px solid #25383C;
+border-radius:20px;
+}
+
+
+/* Modal Content */
+.modal1-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatetop;
+  animation-duration: 0.8s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal1-header {
+  padding: 2px 6px;
+  background-color: #b77b82;
+  color: white;
+}
+
+.modal1-body {padding: 2px 16px;
+background-color:#fdf4dc}
+
+.modal1-footer {
+  padding:2px 6px;
+  background-color:#2E5266;
+  color: white;
+}
+
+.myBtn3 {border:3px solid silver;
+background-color:olivedrab;
+}
+.myBtn8 {border:3px solid silver;
+background-color:olivedrab;
+}
+
+
+
+
+
+
+============
+.myBtn2 {
+
+	border:3px solid silver;
+		background-color:olivedrab;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+   background-color:#000000;
+  color:#D6ED17;
+
+}
+
+.modal-body {
+    background-color:#292A2C;
+    padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #000000;
+  color:#D6ED17 ;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(116, 116, 116) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+.p-1 {
+padding: 5px !important;
+}
+
+.p-2 {
+padding: 15px !important;
+}
+
+.p-3 {
+padding: 25px !important;
+}
+
+.p-4 {
+padding: 35px !important;
+}
+
+.p-5 {
+padding: 45px !important;
+}
+
+.pl-1 {
+padding-left: 5px !important;
+}
+
+.pl-2 {
+padding-left: 15px !important;
+}
+
+.pl-3 {
+padding-left: 25px !important;
+}
+
+.pl-4 {
+padding-left: 35px !important;
+}
+
+.pl-5 {
+padding-left: 45px !important;
+}
+
+.pr-1 {
+padding-right: 5px !important;
+}
+
+.pr-2 {
+padding-right: 15px !important;
+}
+
+.pr-3 {
+padding-right: 25px !important;
+}
+
+.pr-4 {
+padding-right: 35px !important;
+}
+
+.pr-5 {
+padding-right: 45px !important;
+}
+
+.pt-1 {
+padding-top: 5px !important;
+}
+
+.pt-2 {
+padding-top: 15px !important;
+}
+
+.pt-3 {
+padding-top: 25px !important;
+}
+
+.pt-4 {
+padding-top: 35px !important;
+}
+
+.pt-5 {
+padding-top: 45px !important;
+}
+
+.pb-1 {
+padding-bottom: 5px !important;
+}
+
+.pb-2 {
+padding-bottom: 15px !important;
+}
+
+.pb-3 {
+padding-bottom: 25px !important;
+}
+
+.pb-4 {
+padding-bottom: 35px !important;
+}
+
+.pb-5 {
+padding-bottom: 45px !important;
+}
+
+.px-1 {
+padding-left: 5px !important;
+padding-right: 5px !important;
+}
+
+.px-2 {
+padding-left: 15px !important;
+padding-right: 15px !important;
+}
+
+.px-3 {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+
+.px-4 {
+padding-left: 35px !important;
+padding-right: 35px !important;
+}
+
+.px-5 {
+padding-left: 45px !important;
+padding-right: 45px !important;
+}
+
+.py-1 {
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+}
+
+.py-2 {
+padding-top: 15px !important;
+padding-bottom: 15px !important;
+}
+
+.py-3 {
+padding-top: 25px !important;
+padding-bottom: 25px !important;
+}
+
+.py-4 {
+padding-top: 35px !important;
+padding-bottom: 35px !important;
+}
+
+.py-5 {
+padding-top: 45px !important;
+padding-bottom: 45px !important;
+}
+
+.m-1 {
+margin: 5px !important;
+}
+
+.m-2 {
+margin: 10px !important;
+}
+
+.m-3 {
+margin: 15px !important;
+}
+
+.m-4 {
+margin: 25px !important;
+}
+
+.m-5 {
+margin: 35px !important;
+}
+
+.ml-1 {
+margin-left: 5px !important;
+}
+
+.ml-2 {
+margin-left: 10px !important;
+}
+
+.ml-3 {
+margin-left: 15px !important;
+}
+
+.ml-4 {
+margin-left: 25px !important;
+}
+
+.ml-5 {
+margin-left: 35px !important;
+}
+
+.mr-1 {
+margin-right: 5px !important;
+}
+
+.mr-2 {
+margin-right: 10px !important;
+}
+
+.mr-3 {
+margin-right: 15px !important;
+}
+.mr-6{
+margin-right: 15px !important;
+
+}
+
+.mr-4 {
+margin-right: 25px !important;
+}
+
+.mr-5 {
+margin-right: 35px !important;
+}
+
+.mt-1 {
+margin-top: 5px !important;
+}
+
+.mt-2 {
+margin-top: 10px !important;
+}
+
+.mt-3 {
+margin-top: 15px !important;
+}
+
+.mt-4 {
+margin-top: 25px !important;
+}
+
+.mt-5 {
+margin-top: 35px !important;
+}
+
+.mb-1 {
+margin-bottom: 5px !important;
+}
+
+.mb-2 {
+margin-bottom: 10px !important;
+}
+
+.mb-3 {
+margin-bottom: 15px !important;
+}
+
+.mb-4 {
+margin-bottom: 25px !important;
+}
+
+.mb-5 {
+margin-bottom: 35px !important;
+}
+
+.mx-1 {
+margin-left: 5px !important;
+margin-right: 5px !important;
+}
+
+.mx-2 {
+margin-left: 10px !important;
+margin-right: 10px !important;
+}
+
+.mx-3 {
+margin-left: 15px !important;
+margin-right: 15px !important;
+}
+
+.mx-4 {
+margin-left: 25px !important;
+margin-right: 25px !important;
+}
+
+.mx-5 {
+margin-left: 35px !important;
+margin-right: 35px !important;
+}
+
+.my-1 {
+margin-top: 5px !important;
+margin-bottom: 5px !important;
+}
+
+.my-2 {
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+}
+
+.my-3 {
+margin-top: 15px !important;
+margin-bottom: 15px !important;
+}
+
+.my-4 {
+margin-top: 25px !important;
+margin-bottom: 25px !important;
+}
+
+.my-5 {
+margin-top: 35px !important;
+margin-bottom: 35px !important;
+}
+
+body {
+background-color: silver;
+font-family: "Open Sans", sans-serif;
+}
+
+.wp-content {
+margin-top: 60px;
+margin-left: 75px;
+}
+
+/* Remove unde
+a:hover {
+text-decoration: none;
+}
+/* Remove Bootstrap button outline */
+button .focus, a .focus {
+outline: 0;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+button:focus, a:focus {
+outline: 0;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+
+[data-component=navbar] {
+/* Right Menu Dropdowns */
+/* Notification */
+/* Notification Dropdown */
+}
+[data-component=navbar] .navbar {
+background-color: #fff;
+}
+[data-component=navbar] .navbar-toggler {
+line-height: 2.4;
+margin-left: 75px;
+}
+[data-component=navbar] .navbar-toggler span {
+text-transform: uppercase;
+font-size: 1em;
+font-weight: 400;
+font-family: "Lato", sans-serif;
+display: none;
+}
+[data-component=navbar] .navbar-toggler[aria-expanded=true] {
+color: #009fff;
+}
+[data-component=navbar] .navbar-toggler[aria-expanded=true] span {
+display: initial;
+color: #009fff;
+}
+[data-component=navbar] .navbar-toggler[aria-expanded=true] i {
+color: #009fff;
+}
+[data-component=navbar] .navbar-collapse {
+background-color: #292a2c;
+margin-left: 75px;
+}
+[data-component=navbar] .navbar-nav {
+height: 100vw;
+}
+[data-component=navbar] .collapsing {
+-webkit-transition: height 0.1s ease;
+-o-transition: height 0.1s ease;
+transition: height 0.1s ease;
+}
+[data-component=navbar] .navbar-brand {
+background-color: #009fff;
+height: 60px;
+width: 75px;
+text-align: center;
+}
+[data-component=navbar] ::-webkit-scrollbar {
+width: 0px;
+background: transparent;
+}
+[data-component=navbar] .right-links i {
+color: #000;
+font-size: 20px;
+line-height: 2.8;
+}
+[data-component=navbar] .home {
+border-right: 1px solid #ababab;
+}
+[data-component=navbar] .dropdown-toggle::after {
+display: none;
+}
+[data-component=navbar] .dropdown-item {
+color: #292b2c;
+font-size: 0.75em;
+}
+[data-component=navbar] .dropdown {
+position: relative;
+}
+[data-component=navbar] .dropdown span {
+color: #fff;
+position: absolute;
+width: 15px;
+height: 15px;
+top: -8px;
+right: -3px;
+background-color: red;
+border-radius: 50%;
+text-align: center;
+font-size: 0.625em;
+font-weight: 600;
+}
+[data-component=navbar] .dropdown img {
+border-radius: 50%;
+height: 40px;
+}
+[data-component=navbar] .list-group .lg {
+height: 500px;
+width: 270px;
+overflow: auto;
+}
+[data-component=navbar] .list-group .list-group-item {
+border-radius: 0;
+letter-spacing: 0.5px;
+}
+[data-component=navbar] .list-group h5 {
+font-size: 0.6875em;
+font-weight: 700;
+line-height: 2;
+}
+[data-component=navbar] .list-group p {
+font-size: 0.5625em;
+font-weight: 400;
+line-height: 2;
+}
+[data-component=navbar] .megamenu #menuOne, [data-component=navbar] .megamenu #menuTwo, [data-component=navbar] .megamenu #menuThree {
+position: absolute;
+width: 100%;
+z-index: 1;
+}
+[data-component=navbar] .megamenu .megamenu-links {
+background-color: #EEEEEE;
+height: 100vh;
+overflow: hidden;
+}
+[data-component=navbar] .megamenu .btn {
+font-size: 0.875em;
+font-weight: 400;
+letter-spacing: 0.5px;
+}
+[data-component=navbar] .megamenu .btn:hover {
+background-color: #292a2c;
+color: #fff;
+}
+[data-component=navbar] .megamenu a[aria-expanded=true] .fa-plus {
+display: none;
+}
+[data-component=navbar] .megamenu a[aria-expanded=false] .fa-minus {
+display: none;
+}
+[data-component=navbar] .megamenu [aria-expanded=true] {
+background-color: #292a2c;
+color: #fff;
+}
+[data-component=navbar] .megamenu [aria-expanded=true] i {
+color: #fff;
+font-size: 1.25em;
+}
+[data-component=navbar] .megamenu [aria-expanded=false] {
+background-color: #eee;
+color: #292a2c;
+border-radius: 0;
+}
+[data-component=navbar] .megamenu [aria-expanded=false] i {
+color: #009fff;
+font-size: 1.25em;
+}
+[data-component=navbar] .megamenu .list-group {
+height: 100vw;
+background-color: #292a2c;
+}
+[data-component=navbar] .megamenu .list-group-item {
+border-radius: 0;
+background-color: #292a2c;
+font-size: 0.75em;
+color: #fff;
+}
+[data-component=navbar] .megamenu .list-group-item:hover {
+background-color: #009fff;
+}
+
+[data-component=sidebar] .sidebar {
+position: fixed;
+z-index: 9999;
+}
+[data-component=sidebar] .first-menu {
+position: fixed;
+background-color: #292a2c;
+height: 100vw;
+width: 75px;
+top: 60px;
+overflow: hidden;
+transition: width 0.5s;
+}
+[data-component=sidebar] .first-menu a {
+color: #fff;
+}
+[data-component=sidebar] .first-menu i {
+font-size: 24px;
+}
+[data-component=sidebar] .first-menu span {
+font-size: 14px;
+white-space: nowrap;
+font-family: "Open Sans", sans-serif;
+opacity: 0;
+visibility: hidden;
+}
+[data-component=sidebar] .first-menu:hover span {
+opacity: 1;
+visibility: visible;
+}
+[data-component=sidebar] .first-menu .list-group-item {
+border-radius: 0;
+}
+[data-component=sidebar] .first-menu .list-group-item:hover {
+background-color: #009fff;
+}
+[data-component=sidebar] .first-menu:hover {
+width: 160px;
+}
+[data-component=sidebar] .list-group-item {
+font-size: 14px;
+}
+[data-component=sidebar] .submenu {
+position: fixed;
+left: 160px;
+width: 195px;
+top: 60px;
+background-color: #009fff;
+height: 100vw;
+opacity: 0;
+visibility: hidden;
+transition: 600ms opacity 600ms, 600ms visibility 600ms;
+}
+[data-component=sidebar] .submenu .list-group-item {
+margin-top: 8px;
+}
+[data-component=sidebar] .first-menu li:hover .submenu {
+visibility: visible;
+opacity: 1;
+}
+[data-component=sidebar] .sub-submenu {
+position: fixed;
+background-color: #fff;
+left: 355px;
+top: 60px;
+height: 100vw;
+width: 195px;/
+opacity: 0;
+visibility: hidden;
+transition: 600ms opacity 600ms, 600ms visibility 600ms;
+}
+[data-component=sidebar] .sub-submenu a {
+color: #009fff;
+}
+[data-component=sidebar] .sub-submenu .list-group-item:hover {
+background-color: transparent;
+}
+[data-component=sidebar] .submenu li:hover .sub-submenu {
+visibility: visible;
+opacity: 1;
+}
+[data-component=sidebar] .list-group-item {
+background-color: transparent;
+border: none;
+border-radius: 0;
+}
+[data-component=sidebar] .arrow {
+position: fixed;
+left: 329px;
+width: 0;
+height: 0;
+border-top: 27px solid transparent;
+border-bottom: 27px solid transparent;
+border-right: 27px solid white;
+}
+[data-component=sidebar] .arrow:nth-child(3) {
+top: 20px;
+}
+
+table,th,td {
+  border:2px solid black ;
+  color:#ffffff;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color:rgb(0, 60, 255):
+  color: white;
+  text-align: center;
+  padding-top:5px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color:rgb(0, 60, 255):
+  color: white;
+  text-align: center;
+  padding-top:20px;
+}
+
+.searchbar {
+	position:fixed;
+		align:right;
+	background-color:silver;
+	text-align:center;
+	width:750px;
+	height:25px;
+	padding:10px;
+	border:5px solid #0F3156;
+	border-radius:70px;
+
+}
+searchbar input[type=text]{
+	color:#000000;
+	}
+
+.s {
+</style>
+
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div data-component="navbar">
+
+<nav class="navbar p-0 fixed-top">
+    <button class="navbar-toggler navbar-toggler-left rounded-0 border-0" type="button" data-toggle="collapse" data-target="#megamenu-dropdown" aria-controls="megamenu-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i><span class="ml-3">Advanced</span>
+    </button>
+
+<div><a class="navbar-brand px-1" href="#"><img src="file:///home/batan/10/html/homepage/LC_240_240.png" class="d-inline-block mt-1" alt="AgentFire Logo" height="40"></a>
+
+<div class="right-links float-right mr-4">
+	<a href="http://localhost/nextcloud/" src="file:///home/batan/10/html/homepage/nextcloud_48x48.png" class="home2"><i class="fa fa-home mr-6"></i></a>
+<div class="right-links float-right mr-4">
+  <a href="http://localhost/nextcloud/" class="home"><i class="fa fa-home mr-3"></i></a>
+
+  <div class="d-inline dropdown rounded-0 mx-3">
+    <a class="dropdown-toggle" id="tools" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-wrench" aria-hidden="true"></i></a>
+    <div class="dropdown-menu dropdown-menu-right rounded-0 text-center" aria-labelledby="tools">
+      <a class="dropdown-item px-2" href="#">Recompile CSS</a>
+    </div>
+  </div> <!-- /.dropdown -->
+
+  <div class="d-inline dropdown mr-3">
+    <a class="dropdown-toggle" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>10</span><i class="fa fa-bell"></i></a>
+    <div class="dropdown-menu dropdown-menu-right rounded-0 pt-0" aria-labelledby="notifications">
+      <div class="list-group">
+        <div class="lg">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <h5 class="mb-1">Real Estate Marketing Automation: 6 Simple Systems</h5>
+            <p class="mb-0">17 October 2016 | 9:32 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">How to Generate Seller Leads For $0.88 Using...</h5>
+            <p class="mb-0">3 October 2016 | 9:58 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">AgentFire Re-Opens For Business. New Services,...</h5>
+            <p class="mb-0">20 September 2016 | 6:28 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">Real Estate Blogging 101: How To Get Better...</h5>
+            <p class="mb-0">7 September 2016 | 3:03 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">How To Get More Listings With Strategic...</h5>
+            <p class="mb-0">16 August 2016 | 8:26 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">How To Find Strategic Real Estate Partners as...</h5>
+            <p class="mb-0">9 August 2016 | 6:44 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">Top 10 Real Estate Marketing Tools</h5>
+            <p class="mb-0">2 August 2016 | 10:25 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">The Beginner Guide To Google Adwords For Real...</h5>
+            <p class="mb-0">27 July 2016 | 1:15 am</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">The Complete Guide To Hyper-Local SEO For Realtors</h5>
+            <p class="mb-0">19 July 2016 | 5:51 pm</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h5 class="mb-1">How We Took Ed Eakin’s Real Estate Website...</h5>
+            <p class="mb-0">11 July 2016 | 6:19 pm</p>
+          </a>
+        </div> <!-- /.lg -->
+      </div> <!-- /.list group -->
+    </div> <!-- /.dropdown-menu -->
+  </div> <!-- /.dropdown -->
+
+  <div class="d-inline dropdown mr-3">
+    <a class="dropdown-toggle" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-envelope"></i></a>
+    <div class="dropdown-menu dropdown-menu-right rounded-0 text-center" aria-labelledby="messages">
+      <a class="dropdown-item">There are no new messages</a>
+    </div> <!-- /.dropdown-menu -->
+</div> <!-- /.dropdown -->
+
+
+  <div class="d-inline dropdown">
+    <a class="dropdown-toggle" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+		<img src="file:///home/batan/10/html/homepage/96x96_icon.png">
+
+    </a>
+    <div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="messages">
+      <a class="dropdown-item" href="#">Edit my profile</a>
+      <a class="dropdown-item" href="#">Log Out</a>
+    </div> <!-- /.dropdown-menu -->
+  </div> <!-- /.dropdown -->
+
+</div> <!-- /.right-links -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="megamenu">
+      <div class="collapse navbar-collapse" id="megamenu-dropdown">
+      <div class="megamenu-links">
+    <div class="row">
+      <div class="col-md-3 px-0">
+        <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3 pl-5" data-toggle="collapse" href="#menuOne" aria-expanded="false" aria-controls="collapseExample" id="more">Usefull Local Links
+          <i class="fa fa-minus float-right" aria-hidden="true"></i>
+          <i class="fa fa-plus float-right" aria-hidden="true"></i>
+        </a> <!-- button close -->
+        <div class="collapse" id="menuOne">
+          <div class="list-group border-0">
+            <a href="http://m.home/index.html" class="list-group-item list-group-item-action border-0 pl-4 py-3">Netgear</a>
+            <a href="file:///home/batan/10/html/homepage/ext/index.html" class="list-group-item list-group-item-action border-0 pl-4 py-3">Ungoogled Extentions</a>
+            <a href="https://my.gov.au/" class="list-group-item list-group-item-action border-0 pl-4 py-3">MyGov</a>
+	    <a href="https://myid.telstra.com/identity/as/authorization.oauth2?client_id=mytelstra&redirect_uri=https%3A%2F%2Fwww.myservices.telstra.com.au%2Fmytelstra%2Flogin-intermediate&response_type=code&scope=openid+app.mytelstra&state=90b4b2c371a04a4da0dc4df71f6f491d&code_challenge=vmH87oYiD-uYzimr6ZmHHzgGizLgF5lMYBblT6MdXNs&code_challenge_method=S256" class="list-group-item list-group-item-action border-0 pl-4 py-3">Mytelstra</a>
+	    <a href="file:///home/batan/10/vimwiki_html/index.html" class="list-group-item list-group-item-action border-0 pl-4 py-3">Vimwiki INDEX</a>
+
+	  </div> <!-- /.list-group -->
+        </div><!-- /.collapse -->
+      </div> <!-- /.col-md-3 -->
+
+      <div class="col-md-3 px-0">
+        <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuTwo" aria-expanded="false" aria-controls="collapseExample" id="more">Web Links
+          <i class="fa fa-minus float-right" aria-hidden="true"></i>
+          <i class="fa fa-plus float-right" aria-hidden="true"></i>
+        </a> <!-- button close -->
+        <div class="collapse" id="menuTwo">
+          <div class="list-group border-0">
+            <a href=https://www.xfce-look.org/browse/ class="list-group-item list-group-item-action border-0 pl-4 py-3">xfce-look</a>
+            <a href="http://10minutemail.com/10MinuteMail/index.html" class="list-group-item list-group-item-action border-0 pl-4 py-3">10min Mail</a>
+            <a href=https:/chess.com class="list-group-item list-group-item-action border-0 pl-4 py-3">Chess</a>
+            <a href=https://lichess.org/ class="list-group-item list-group-item-action border-0 pl-4 py-3">Lichess</a>
+            <a href=https:/pypi.org class="list-group-item list-group-item-action border-0 pl-4 py-3">Pypi</a>
+            <a href=https://www.duckduckgo.com/ class="list-group-item list-group-item-action border-0 pl-4 py-3">DuckduckGo</a>
+            <a href=https://www.ask.com/ class="list-group-item list-group-item-action border-0 pl-4 py-3">Ask Search</a>
+            <a href=https://github.com/ class="list-group-item list-group-item-action border-0 pl-4 py-3">Github</a>
+            <a href="https://www.openai.com" class="list-group-item list-group-item-action border-0 pl-4 py-3">OpenAI</a>
+            <a href=https://tutanota.com" class="list-group-item list-group-item-action border-0 pl-4 py-3">Tutanota</a>
+          </div> <!-- /.list-group -->
+        </div><!-- /.collapse -->
+      </div> <!-- /.col-md-3 -->
+      <div class="col-md-3 px-0">
+        <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuThree" aria-expanded="false" aria-controls="collapseExample" id="more">W3 School
+          <i class="fa fa-minus float-right" aria-hidden="true"></i>
+          <i class="fa fa-plus float-right" aria-hidden="true"></i>
+        </a> <!-- button close -->
+        <div class="collapse" id="menuThree">
+          <div class="list-group border-0">
+            <a href=https://www.w3schools.com/ class="list-group-item list-group-item-action border-0 pl-4 py-3">W3 Schools</a>
+            <a href=https://www.w3schools.com/html/default.asp class="list-group-item list-group-item-action border-0 pl-4 py-3">Learn HTML</a>
+            <a href=https://www.w3schools.com/css/default.asp class="list-group-item list-group-item-action border-0 pl-4 py-3">Learn CSS</a>
+            <a href=https://www.w3schools.com/php/default.asp class="list-group-item list-group-item-action border-0 pl-4 py-3">Learn PHP</a>
+            <a href=https://www.w3schools.com/w3css/w3css_templates.asp class="list-group-item list-group-item-action border-0 pl-4 py-3">W3 Templates</a>
+
+          </div> <!-- /.list-group -->
+        </div><!-- /.collapse -->
+      </div> <!-- /.col-md-3 -->
+    </div> <!-- /.row -->
+        <div class="row">
+          <div class="col-md-3 px-0">
+        <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3 pl-5" data-toggle="collapse" href="#menuFour" aria-expanded="false" aria-controls="collapseExample" id="more">Arch Linux
+          <i class="fa fa-minus float-right" aria-hidden="true"></i>
+          <i class="fa fa-plus float-right" aria-hidden="true"></i>
+        </a> <!-- button close -->
+        <div class="collapse" id="menuFour">
+          <div class="list-group border-0">
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Vimwiki Links</a>
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Item Skin Editor</a>
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Meta Data Handling</a>
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Search Settings</a>
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Global Settings</a>
+            <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Import/Export</a>
+          </div> <!-- /.list-group -->
+        </div><!-- /.collapse -->
+      </div> <!-- /.col-md-3 -->
+          <div class="col-md-3 px-0">
+        <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuFive" aria-expanded="false" aria-controls="collapseExample" id="more">AgentLocal Links 2B
+          <i class="fa fa-minus float-right" aria-hidden="true"></i>
+          <i class="fa fa-plus float-right" aria-hidden="true"></i>
+        </a> <!-- button close -->
+        <div class="collapse" id="menuFive">
+          <div class="list-group border-0">
+            <a href="file:///home/batan/" class="list-group-item list-group-item-action border-0 pl-4 py-3">Link 1</a>
+	    <a href="file:///home/batan/" class="list-group-item list-group-item-action border-0 pl-4 py-3">Link 2</a>
+            <a href="file:///home/batan/" class="list-group-item list-group-item-action border-0 pl-4 py-3">Link 2</a>
+	    <a href="#file:///home/batan/" class="list-group-item list-group-item-action border-0 pl-4 py-3">Link 100</a>
+            <a href="#"file:///home/batan/ class="list-group-item list-group-item-action border-0 pl-4 py-3">Link</a>
+	    <a href="#file:///home/batan/" class="list-group-item list-group-item-action border-0 pl-4 py-3">Link</a>
+          </div> <!-- /.list-group -->
+        </div><!-- /.collapse -->
+      </div> <!-- /.col-md-3 -->
+        </div>
+  </div> <!-- /.megamenu-links -->
+    </div></div>
+</nav>
+</div> <!-- END TOP NAVBAR -->
+
+
+
+<div data-component="sidebar">
+<div class="sidebar">
+<ul class="list-group flex-column d-inline-block first-menu">
+  <li class="list-group-item pl-3 py-2">
+    <a href="#"><i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Reporting</span></i></a>
+
+    <ul class="list-group flex-column d-inline-block submenu">
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Dashboard</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="file:///home/batan/page/homepage.html">Home</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://w3schools.com">w3school</a>
+                </li>
+           <li class="list-group-item pl-4">
+          <a href="https://w3schools.com/html/">Learn-HTML</a>
+          </li>
+            <li class="list-group-item pl-4">
+            <a href="https://w3schools.com/css/">Learn-CSS</a>
+          </li>
+          <li class="list-group-item pl-4">
+          <a href="https://w3schools.com/php/">Learn-PHP</a>
+          </li>
+          <li class="list-group-item pl-4">
+          <a href="https://html-color.codes">Color Codes</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://codepen.io#">Codepen</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li class="list-group-item pl-4">
+        <a href="">Entertainment</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:113px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="https://tiava.com">Tiava</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://pornhub.com">Pornhub</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://xhamster.com">Xhamster</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://xvideos.com">Xvideos</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="https://youporn.com">Youporn</a>
+          </li>
+          <li class="list-group-item pl-4">
+		  <a href="https://www.tubepornstars.com">Tubepornstars</a>
+	  </li>
+  </li>
+	</ul>
+      <li class="list-group-item pl-4">
+        <a href="">Local HTML</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:113px;"></span>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/kali/kali.html">Kali</a>
+	  </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/pirate.html">Piratebay</a>
+	  </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/color/color.html">Color</a>
+	  </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/color/colorlist.html">Colorlist</a>
+	  </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/curtain/curtain.html">Curtain</a>
+	  </li>
+          <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/ext/index.html">Ungoogled Ex</a>
+          </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/html/homepage/services/services.html">Services</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Go Premium</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Manual</a>
+          </li>
+	  </li>
+	</ul>
+      <li class="list-group-item pl-4">
+        <a href="">Vimwikies</a>
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:113px;"></span>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/vimwiki/vimwiki2_html/indexx.html">Vimwiki2</a>
+	  </li>
+          <li class="list-group-item pl-4">
+          <a href="file:///home/batan/10/vimwiki/vimwiki10_html/index.html">Vimwiki10</a>
+	  </li>
+
+		</ul>
+
+
+
+      </li>
+    </ul> <!-- /.submenu -->
+  </li> <!-- /.list-group-item -->
+
+  <li class="list-group-item pl-3 py-2">
+    <a href="#"><i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Content</span></i></a>
+    <ul class="list-group flex-column d-inline-block submenu">
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Posts</a>
+
+      <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/color/color.html">Color</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/color/colorlist.html">Colorlist</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/color/color-palette2.html">Color-Palette2</a>
+          </li>
+        <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/ext/index.html">Ungoogled</a>
+          </li>
+        <li class="list-group-item pl-4">
+            <a href="file:///home/batan/10/html/homepage/curtain/curtain.html">Curtain</a>
+          </li>
+        </ul>
+      </li> <!-- end Posts -->
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Blog Assist</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:114px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Blog Post</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Feed Sources</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Feed Source</a>
+          </li>
+        </ul>
+      </li> <!-- end Blog Assist -->
+
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Pages</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:166px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Pages</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New</a>
+          </li>
+        </ul>
+      </li> <!-- end Pages -->
+
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Area Content</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:220px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Cities</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New City</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">All Neighborhoods</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Neighborhood</a>
+          </li>
+        </ul>
+      </li> <!-- end Area Content -->
+
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Manual Listings</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:272px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">View All Listings</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Listing</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Status</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Locations</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Property Types</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Import Listing</a>
+          </li>
+        </ul>
+      </li> <!-- end Manual Listings -->
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Testimonials</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:323px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">View All</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+      </li> <!-- end Testimonials -->
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Team Members</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:377px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Members</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Member</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Designations</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Specialties</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Areas</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">All Locations</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New Location</a>
+          </li>
+        </ul>
+      </li> <!-- end Team Members -->
+
+    </ul> <!-- /.submenu -->
+  </li> <!-- /.list-group-item -->
+
+  <li class="list-group-item pl-3 py-2">
+    <a href="#">
+      <i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Engagement</span></i>
+    </a>
+    <ul class="list-group flex-column d-inline-block submenu">
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Comments</a>
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Comments</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Forms</a>
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:114px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Forms</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">New Form</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">All Entries</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Gravity Forms</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Import/Export</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Gravity Forms Tutorials</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Home Valuation</a>
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:166px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">View All Leads</a>
+          </li>
+        </ul>
+      </li>
+    </ul> <!-- /.submenu -->
+  </li> <!-- /.list-group-item -->
+
+
+  <li class="list-group-item pl-3 py-2">
+    <a href="#"><i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Image Center</span></i></a>
+
+    <ul class="list-group flex-column d-inline-block submenu">
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Media Library</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Media Library</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Soliloquy Slider</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:114px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Sliders</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New</a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item pl-3 py-2">
+    <a href="#"><i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Settings</span></i></a>
+    <ul class="list-group flex-column d-inline-block submenu">
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Users</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">All Users</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Add New</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Your Profile</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Documentaries</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:114px;"></span>
+          <li class="list-group-item pl-4">
+<a href="https://topdocumentaryfilms.com/">TopDocus</a>
+	  </li>
+          <li class="list-group-item pl-4">
+<a href="https://documentaryheaven.com/">DOcHeaven</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://www.documentarytube.com/">DocTube</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://www.filmsforaction.org/">FilsForAction</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://www.documentary24.com/">DOc24</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://freemoviescinema.com/category/documentary">FMC</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://watch.plex.tv/movies-and-shows/category/documentary">plex</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://filmzie.com/category/documentary">filmzi</a>
+          </li>
+          <li class="list-group-item pl-4">
+<a href="https://www.yidio.com/movies/filter/free">yidio</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Grids Settings</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:166px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Ess. Grid Search Settings</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Ess. Grid Global Settings</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Plugin Settings</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:220px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Soliloquy</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Flickr - Pick a Picture</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Google Analytics</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Google Maps</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">JackBox</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Media</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">No Page Comment</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Post Types Order</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Shortcode any widget</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">WP RSS Images</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">SNAP</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">WP Sitemap Page</a>
+          </li>
+        </ul>
+
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">WordPress Settings</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:272px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">General</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Discussion</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Reading</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Re-Order</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:323px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Posts</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Pages</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Media Library</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Blog Assist</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Area Content</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Manual Listings</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Testimonials</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Team Members</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Flyouts</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Site Appearance</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:377px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Widgets</a>
+          </li>
+          <li class="list-group-item pl-4">
+            <a href="#">Menus</a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+
+  </li>
+
+  <li class="list-group-item pl-3 py-2">
+    <a href="#"><i class="fa fa-user-o" aria-hidden="true"><span class="ml-2 align-middle">Support</span></i></a>
+    <ul class="list-group flex-column d-inline-block submenu">
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Training</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Video Tutorials</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Tutorials</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:114px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Help Desk</a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item pl-4">
+        <a href="#" class="">Ask a Question</a>
+
+        <ul class="list-group flex-column d-inline-block sub-submenu">
+          <span class="arrow" style="top:166px;"></span>
+          <li class="list-group-item pl-4">
+            <a href="#">Send Support Request</a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+
+  </li>
+
+
+</ul> <!-- /.first-menu -->
+</div> <!-- /.sidebar -->
+</div>
+
+
+
+<br><br>
+ <header>
+            <script>
+            // Get the current time
+            function getCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+            return formattedTime;
+            }
+
+            // Update the time element
+            function updateTime() {
+            const currentTimeElement = document.getElementById('current-time');
+            currentTimeElement.innerText = getCurrentTime();
+            }
+
+            // Update the time every second
+            setInterval(updateTime, 1000);
+
+            // Initial update
+            updateTime();
+			</script> 
+			<script>
+            // Get the modal
+            var modal = document.getElementById("myModal1");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn3");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close1")[0];
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+            }
+            </script>
+            </div>
+        <div style="background-color:#101820 ; color:#fff" class="header">
+                <p>Sydney  :   <time id="current-time"></time></p>
+	 
+			<h6>Fairdinkum Batan;                       12982@utanota.com</h6>
+        </div>
+ </header>
+<br><br/>	<br><br/> <Center>
+
+
+
+        <form method="get" id="animated" action="https://www.duckduckgo.com/" target="_blank" rel="noopener">
+<input class="searchbar1" type="text" name="q" maxlength="300" placeholder="Search with Duck"/>
+<input type="submit" value="Search" style="visibility: hidden;" /></form>
+</br>
+                        <form method="get" id="animated" action=
+                        "https://searx.org/search?preferences=eJx1V8mO8zYMfprmYjToBhQ95FSgT9C7QUuMzd-W6GpJ4nn6Ul5iejxzGE9EUSRFflxkIGHLgTDeWvQYYLgM4NsMLd4gJ74MbGDAG_pLWRp244AJbzabvvy1fCEnzPUY-DXd_g0ZLxHuGBGC6W6_XCxTHTDy8MBwY5DllUN7iVQE1TFNItxC6C8GfcJQw0Ctd_L79g8MES9gH-AN2nqVuGiYf9fsa7PYP8n2gCYt2x2nHqd4s3iHPKSLpQjNIDLQt-Tlqn-10NZ1ZEMwVA4twU-__Q3eQ6yKYHpgXd9pwFjIY185CoGDponxlXyrmDhoZg-GvYW6piTLhgYqf3X9IIscZ5IX1auv53VqxI-YtiNjc9hOltp2V2CM-Tk9lDwTOMaAd7mOIRRPLbSnfRA-taQJx0_Lao5cFMXz_5Xo8Smk8i2SchgIDwZB5zu-a5JF_JDI1S5HMvM6JkgkUjh1GArFtpUEgzwlYh_1YRRbySrWN7DO5qm95f7KD2rvcANFfyIUJbuuJYwORmGXb7HG8Q8aCyB2riSQmQ4--PWljLrbwOUCW4TuAbGKfE9PCFhZCgLLAtAlvPdAvicwWsA0qfu3lAZoVm7DFhsM7bpsmVsxeBxgKuCLu1K941hCr13jJEdCQTqZ2flvze3I1urIddAEKJ9VYQeCzLD4cyaQs81uK7k2ByWPPCi15OUncY5f0zadPyh2vMuUhAkQpqp4O5K64sBNTHgNmynwMUyBjJLkMIEZwa8M7umaQYfNj27d8hPALpntFBGVlTyiDziy0j6KJ6CluKXpGNYSpxW8iWfo7lsbcr86dkDumJurxceqMHBKUhVZgsmoUms5WYBSlc8bZuCguHIjRHTgE5kqmo4HCLpcSLaGNJYiroxK3E-cWGLTF49ufkjlPiID8oFZUVfr0wEpE3TM-sSTmkmvpce8wNtQEk9z9dQw9_Ez8eCoQvgvc8LPXJFzMGfqiGZOkG_Iu2MKWdpWpDR95n7w9MlhTx4Wr4_d4Q6__v77n6_dgTZb9Dp8Hx6c5pcKhNgfKZLQIw2c9nMeHiVxd6aQm6lFt2XHiBhSbjSq5z4nx_vSGZ7YqK0JzOGGZX3GcMiSUFrik1_UsxeUVnHy7CeH-mbYhyOiF9JJ7kI-VfT4Y7yOT-2rFMAkbWd8tCVPlawSGyd95nCb7NwwHUrMXkYWjHQ57TX2kJt9e215y8ML-uMgMWftQD6_qqJ5K01BMk0ZBeFFDw2sRqBuwI177Sqn176jZwPfnt01Uw9-nSkn_5UqVtCL6qzp8N5zqVqbM6TDB7FqOjb0B0m1kGvo5sulF1Rd3ppTMdlCOli8d9tDj0-TYy9uUvC4D2R63TyEnXRfaEu14y0qlHbFS7PTCtb2d3LVSj84a6Wd3LXSv6iP3apvVt6L2RB1X0LnJqm9zuUy3swV5DhYLhw5YvhuT1pN-m6vSBZXnLc_fl57pbJlbZ58l2NeciNqb0gA2schXA5kfrXsvzHuvd1B7KTGf8Fh392WXmbgbFU7Bpl0cBslChpBhqGCmIjpUGe3Pel4ggpYZ8TjviQ_YpIpbRvVRluq2840ytQvD4Jtl8prAqNG8FgyTEV8Xl9nc3erRwoyLjWgvCpTkhFPkLf42gEsxroiTlkwjVsF-O8p-aM9PROOQFxIJ8wu5BM8A8jcVDUyLUc9sYlDLaVTXKL0C9gGlL2icpa6c4ySNH_Ts9SJ-8DPrX7FPjfZp7xNfcWXXqar5W301QiRRww5vqMt7z2yMvaGBbmbJ7OPMqLGTj85ymRwdMzE-VPrelPeTwygQWpKQYpie5BD1v2J-sIxp8gWtlK1SkoJxK7nBwaZ9MH-UFucdDUnA3wl3cfHQcChpvUnB-upV48F5nQvSAmnmDxhGDpp2163q5TClVSPk_x9HN9bhXC2dCGfULKQj80h_bG9H_eH8DhkaWDxViDyuq6raydlSKYRlAe7hGkJ7IGBoV7e889A6bwtb_B7Tf7Opx2BQi29x_TvDvqNBQUcy-IsI8yvkVqepGKBK5i9yJQqpeH2P_oNVVE=&amp;q="
+                        target="_blank" rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder=
+                            "&lt;&lt;&lt;--Search SearX--&gt;&gt;&gt;">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+						<hr>
+<div class="container">
+        <button id="myBtn">Quick Buttons</button>
+		<button id="mybtn100">Search Bars</button>
+		<button id="myBtn2" onclick="window.location.href='https://openai.com/';">OpenAI</button>
+		<button id="myBtn2" onclick= "window.location.href='https://copilot.microsoft.com/';"> Copilot</button>
+		<button id="myBtn2" onclick= "window.location.href='https://gemini.google.com/?hl=en';"> Bard</button>
+		<button id="myBtn2" onclick= "window.location.href='https://chess.com/';">Chess</button>
+		<button id="myBtn2" onclick= "window.location.href='https://lichess.org/';">LiChess</button>
+		<button id="myBtn2" onclick= "window.location.href='https://app.tuta.com/login';">Tuta Mail</button>
+		<button id="myBtn2" onclick= "window.location.href='http://m.home/index.html';">NetGear</button>
+		<button id="myBtn2" onclick= "window.location.href='https://github.com/';">Github</button>
+		</div></div></div>
+</br>
+<hr>
+<div class="container">
+<a class="link_frame" href="file:///home/batan/10/html/homepage/media-player/index.html" target="iframe_a">Player</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/books/index.html" target="iframe_a">Books-Oraily</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/movie-library/dist/index.html" target="iframe_a">MovieLibrary</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/ranger-cheatsheet.md 
+" target="iframe_a">CheatRanger</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/GPT/chat3.html" target="iframe_a">CHAT3</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/GPT/chat.4.html" target="iframe_a">CHAT4</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/GPT/chat_200.html" target="iframe_a">CHAT200</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/GPT/chat.150.html" target="iframe_a">CHAT150</a>
+<a class="link_frame" href="https://tuxurls.com/" target="iframe_a">Tuxurls</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/ag-html-editor/dist/index.html" target="iframe_a">AG-Editor</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/firefox_shortcut.html" target="iframe_a">Firefox Shortcuts</a>
+</br>
+<a class="link_frame" href="https://www.vpnbook.com/webproxy"target="iframe_a">Proxy - VPNbook</a>
+<a class="link_frame" href="https://www.privacytools.io/"target="iframe_a">PrivacyTools</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/pirate.html"target="iframe_a">List PiratBay</a>
+<a class="link_frame" href="https://www.vpnbook.com/webproxy"target="iframe_a">Proxy - VPNbook</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/modern.unix.html"target="iframe_a">Modern Unix</a>
+</br>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/awesome.html" target="iframe_a">Awesome</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/awesome-shell.html" target="iframe_a">Modern Unix</a>
+<a class="link_frame" href="file:///home/batan/xterm.js.html" target="iframe_a">xterm.js.html</a>
+<a class="link_frame" href="file:///home/batan/10/vimwiki/vimwiki2_html/index.html" target="iframe_a">Personal VimWiki</a>
+<a class="link_frame" href="http://127.0.0.1:5000/" target="iframe_a">xterm</a>
+</br>
+<a class="link_frame" href="http://127.0.0.1:5000/" target="iframe_a">xterm</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/MD/cheatsheet.html" target="iframe_a">Cheatsheets</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/ps2.2.html" target="iframe_a">PS2 Roms</a>
+<a class="link_frame" href="file:///home/batan/10/html/homepage/GPT/antennapod-feeds-2024-05-20.html" target="iframe_a">Podcast Feeds</a>
+<a class="link_frame" href="http://0.0.0.0:5000" target="iframe_a">SCRIPT Server</a>
+</div>
+</br>
+<iframe scr="demo_iframe" name="iframe_a" style="height:700px;width:1700px;border:10px solid #25383C;" title="Iframe Example"></iframe>
+</br>
+</br>
+
+
+
+
+<!--- The MODAL II -->
+t
+            <div id="myModal100" class="modal100">
+                <!-- Modal content -->
+                <div class="modal100-content">
+                    <div class="modal100-header">
+                        <p>
+                            Some Usefull Search Bars
+                        </p>
+                    </div>
+
+                    <div class="modal100-body">
+                        <form method="get" id="animated" action=
+                        "https://searx.org/search?preferences=eJx1V8mO8zYMfprmYjToBhQ95FSgT9C7QUuMzd-W6GpJ4nn6Ul5iejxzGE9EUSRFflxkIGHLgTDeWvQYYLgM4NsMLd4gJ74MbGDAG_pLWRp244AJbzabvvy1fCEnzPUY-DXd_g0ZLxHuGBGC6W6_XCxTHTDy8MBwY5DllUN7iVQE1TFNItxC6C8GfcJQw0Ctd_L79g8MES9gH-AN2nqVuGiYf9fsa7PYP8n2gCYt2x2nHqd4s3iHPKSLpQjNIDLQt-Tlqn-10NZ1ZEMwVA4twU-__Q3eQ6yKYHpgXd9pwFjIY185CoGDponxlXyrmDhoZg-GvYW6piTLhgYqf3X9IIscZ5IX1auv53VqxI-YtiNjc9hOltp2V2CM-Tk9lDwTOMaAd7mOIRRPLbSnfRA-taQJx0_Lao5cFMXz_5Xo8Smk8i2SchgIDwZB5zu-a5JF_JDI1S5HMvM6JkgkUjh1GArFtpUEgzwlYh_1YRRbySrWN7DO5qm95f7KD2rvcANFfyIUJbuuJYwORmGXb7HG8Q8aCyB2riSQmQ4--PWljLrbwOUCW4TuAbGKfE9PCFhZCgLLAtAlvPdAvicwWsA0qfu3lAZoVm7DFhsM7bpsmVsxeBxgKuCLu1K941hCr13jJEdCQTqZ2flvze3I1urIddAEKJ9VYQeCzLD4cyaQs81uK7k2ByWPPCi15OUncY5f0zadPyh2vMuUhAkQpqp4O5K64sBNTHgNmynwMUyBjJLkMIEZwa8M7umaQYfNj27d8hPALpntFBGVlTyiDziy0j6KJ6CluKXpGNYSpxW8iWfo7lsbcr86dkDumJurxceqMHBKUhVZgsmoUms5WYBSlc8bZuCguHIjRHTgE5kqmo4HCLpcSLaGNJYiroxK3E-cWGLTF49ufkjlPiID8oFZUVfr0wEpE3TM-sSTmkmvpce8wNtQEk9z9dQw9_Ez8eCoQvgvc8LPXJFzMGfqiGZOkG_Iu2MKWdpWpDR95n7w9MlhTx4Wr4_d4Q6__v77n6_dgTZb9Dp8Hx6c5pcKhNgfKZLQIw2c9nMeHiVxd6aQm6lFt2XHiBhSbjSq5z4nx_vSGZ7YqK0JzOGGZX3GcMiSUFrik1_UsxeUVnHy7CeH-mbYhyOiF9JJ7kI-VfT4Y7yOT-2rFMAkbWd8tCVPlawSGyd95nCb7NwwHUrMXkYWjHQ57TX2kJt9e215y8ML-uMgMWftQD6_qqJ5K01BMk0ZBeFFDw2sRqBuwI177Sqn176jZwPfnt01Uw9-nSkn_5UqVtCL6qzp8N5zqVqbM6TDB7FqOjb0B0m1kGvo5sulF1Rd3ppTMdlCOli8d9tDj0-TYy9uUvC4D2R63TyEnXRfaEu14y0qlHbFS7PTCtb2d3LVSj84a6Wd3LXSv6iP3apvVt6L2RB1X0LnJqm9zuUy3swV5DhYLhw5YvhuT1pN-m6vSBZXnLc_fl57pbJlbZ58l2NeciNqb0gA2schXA5kfrXsvzHuvd1B7KTGf8Fh392WXmbgbFU7Bpl0cBslChpBhqGCmIjpUGe3Pel4ggpYZ8TjviQ_YpIpbRvVRluq2840ytQvD4Jtl8prAqNG8FgyTEV8Xl9nc3erRwoyLjWgvCpTkhFPkLf42gEsxroiTlkwjVsF-O8p-aM9PROOQFxIJ8wu5BM8A8jcVDUyLUc9sYlDLaVTXKL0C9gGlL2icpa6c4ySNH_Ts9SJ-8DPrX7FPjfZp7xNfcWXXqar5W301QiRRww5vqMt7z2yMvaGBbmbJ7OPMqLGTj85ymRwdMzE-VPrelPeTwygQWpKQYpie5BD1v2J-sIxp8gWtlK1SkoJxK7nBwaZ9MH-UFucdDUnA3wl3cfHQcChpvUnB-upV48F5nQvSAmnmDxhGDpp2163q5TClVSPk_x9HN9bhXC2dCGfULKQj80h_bG9H_eH8DhkaWDxViDyuq6raydlSKYRlAe7hGkJ7IGBoV7e889A6bwtb_B7Tf7Opx2BQi29x_TvDvqNBQUcy-IsI8yvkVqepGKBK5i9yJQqpeH2P_oNVVE=&amp;q="
+                        target="_blank" rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder=
+                            "&lt;&lt;&lt;--Search SearX--&gt;&gt;&gt;">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://ravebooksearch.com/?q=%s"
+                        target="_blank" rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder=
+                            "BOOK SEARCH"> <input type=
+                            "submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://www.ecosia.org/search?method=index&amp;q="
+                        target="_blank" rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder=
+                            "Search Linux-related questions"> <input type=
+                            "submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://archive.org/search?query=" target="_blank"
+                        rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder="Search Archive.org">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://duckduckgo.com/" target="_blank" rel=
+                        "noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder="Search Duckduckgo">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://www.youtube.com/results/" target="_blank" rel=
+                        "noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlenght="300" placeholder="Search Youtube">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://codepen.io/search/pens?q=" target="_blank"
+                        rel="noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlenght="300" placeholder="Search CODEPEN">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://pypi.org/search/" target="_blank" rel=
+                        "noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder="Search Pypi">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://www.github.com/search/" target="_blank" rel=
+                        "noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlenght="300" placeholder="Search Github">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://reddit.com/search/" target="_blank" rel=
+                        "noopener" name="animated">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder="Search Reddit">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated1" action=
+                        "https://tiava.com/search/?q=" target="_blank" rel=
+                        "noopener" name="animated1">
+                            <input class="searchbar1" type="text" name="q"
+                            maxlength="300" placeholder="Search Tiava">
+                            <input type="submit" value="Search" class="c4">
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://explainshell.com/explain?cmd=" name=
+                        "animated">
+                            <input class="searchbar1" type="text" name="cmd"
+                            maxlength="300" placeholder="EXPLAIN SHELL">
+                            <input type="submit" value="search" class="c4">
+                        </form>
+                        </form>
+                        <form method="get" id="animated" action=
+                        "https://www.nudevista.com/?q=" name=
+                        "q">
+                            <input class="searchbar1" type="submit" name="text"
+                            maxlength="300" placeholder="NUDE VISTA">
+                            <input type="submit" value="search" class="c4">
+							</form>
+                    </div>
+                </div>
+            </div>
+
+		<!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">FuckOff</span>
+                    <h4 class="c6">
+                        Linux Conandrun
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The current time is: <time id=
+                        "current-time">time</time>
+                    </p>
+                    <div class="container">
+<button id="myBtn2" onclick= "window.location.href='https://openai.com/';">OpenAI</button>
+<button id="myBtn2" onclick= "window.location.href='https://copilot.microsoft.com/';"> Copilot</button>
+<button id="myBtn2" onclick= "window.location.href='https://gemini.google.com/?hl=en';"> Bard</button>
+<button id="myBtn2" onclick= "window.location.href='https://chess.com/';">Chess</button>
+<button id="myBtn2" onclick= "window.location.href='https://lichess.org/';">LiChess</button>
+<button id="myBtn2" onclick= "window.location.href='https://github.com/';">Github</button>
+<button id="myBtn2" onclick= "windidow.location.href='https://mega.nz/login';">MEGA</button>
+<button id="myBtn2" onclick= "window.location.href='https://vpnbook.com';">VPNbook-Free-VPN</button>
+<button id="myBtn2" onclick= "window.location.href='https://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion';">Piratebay.Onion</button>
+<button id="myBtn2" onclick= "window.location.href='http://csslint.net/';">CSS LINT</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/isepic-chess-ui/index.html';"> ChessViewer</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/usefull/index.html';"> Usefull Links</button>
+<button id="myBtn2" onclick= "window.location.href='https://www.freecodecamp.org/';"> FreeCodeCamp</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/man/index.html';"> Manual Pages</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/player/player.html'"> MP3 Player</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/neocraft/neocraft.html'"> Neocraft</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/calcurse_manual.html'"> Calcurse</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/homepage/chat_gpt.html'"> GPT-1</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/homepage/GPT/chat.html'"> GPT-2</button>
+<button id="myBtn2" onclick= "window.location.href='file:///home/batan/10/html/homepage/GPT/chat3.html'"> GPT-3</button>
+<button id="myBtn2" onclick= "window.location.href='https://stackexchange.com/'">Stack Exchange</button>
+<button id="myBtn2" onclick= "window.location.href='https://validator.w3.org/'">HTML CODE Validation</button>
+<button id="myBtn2" onclick= "window.location.href='file:///media/batan/100/Videos/home/index.html';"> VideoPlayer</button>
+<button id="myBtn2" onclick= "window.location.href='https://overland.org.au/';">OVERLAND </button>
+                    </div><br>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <h4 class="c6">
+                        100% Open Source 10/10
+                    </h4><a class="c7">It works Today. Dont Jinx it!!!</a>
+                </div>
+            </div>
+        </div>
+        <script>
+        // Get the modal
+        var modal100 = document.getElementById("myModal100");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("mybtn100");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close100")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal100.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal100.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal100) {
+        modal100.style.display = "none";
+        }
+        }
+		</script>
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+ <footer>
+
+        <div style="background-color:#101820;color:#fff" class="footer">
+                <button 
+            style="background-color: #121212; 
+                   color: #09487F;
+				   font:Share Tech Mono Bold;
+                   padding: 2px 10px;
+				   height: 25px;
+                   border: none; 
+                   cursor: pointer; 
+                   border-radius: 5px;"
+            onclick="scrollToTop()">BacktoTop</button>
+
+		</div>
+
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</footer></Center>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+</body>
+</html>
