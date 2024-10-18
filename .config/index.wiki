@@ -1,0 +1,18 @@
+
+
+= # LC-Wikis-Index =
+
+== ## Personal knowledge based ==
+[[file:///vimwiki2/index.wiki|Personal Wiki]]
+== ## Wicked Cool Shell Scripts II ==
+[[file:///vimwiki3/index.wiki|WCSS2]]
+
+[[file:///vimwiki4/index.wiki|
+[[file:///vimwiki5/index.wiki|
+[[file:///vimwiki6/index.wiki|
+[[file:///vimwiki7/index.wiki|
+[[file:///vimwiki8/index.wiki|
+[[file:///vimwiki9/index.wiki|
+== ## E-Books -mainly Linux focused ==
+[[file:///vimwiki10/index.wiki|Books]]
+
