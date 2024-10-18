@@ -1,0 +1,27 @@
+= Contents =
+    - [[#NixOS]]
+            - [[#Nix_Package_Manager_50_commands]]
+            - [[#NixOS_Online_Documentation_Links]]
+            - [[#Nix Package Manager on NON NixOS]]
+            - [[#NixOS Config File]]
+            - [[#NixOS_30_postinstall_steps]]
+            - [[#Postinstall]]
+
+= NixOS =
+
+
+===Nix_Package_Manager_50_commands===
+[[Nix_Package_Manager_50_commands_]]
+=== NixOS_Online_Documentation_Links ===
+[[NixOS_Online_Documentation_Links]]
+=== Nix Package Manager on NON NixOS ===
+[[Nix Package Manager on NON NixOS]]
+=== Nix_Package_Manager_on_MX_GPT ===
+[[Nix_Package_Manager_on_MX_GPT]]
+
+=== NixOS Config File ===
+[[NixOS Config File ]]
+=== NixOS_30_postinstall_steps ===
+[[NixOS_30_postinstall_steps]]
+=== Postinstall ===
+[[Postinstall NixOS]]

@@ -1,0 +1,5 @@
+= MX live USB =
+
+[[dry run]]
+[[persistent install]]
+

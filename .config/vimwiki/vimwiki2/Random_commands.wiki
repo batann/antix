@@ -1,0 +1,59 @@
+=random commands=
+
+
+===extract https links===
+sed -n 's/.*href="\([^"]*\).*/\1/p' file
+
+
+
+
+
+==cache==
+
+sudo rm -f /usr/share/fonts/*fonts.cache-1 && sudo rm -f ~/*fonts.cache-1
+
+ rm -f ~/*fonts.cache-1
+
+
+==ffmpeg==
+
+for i in *.m4a; do ffmpeg -i "$i" "${i%.*}.mp3"; done
+
+for i in *.wav; do ffmpeg -i "$i" "${i%.*}.mp3"; done
+
+
+
+
+
+
+#===========================
+#sda2 is the root partition
+#===========================
+
+sudo mount /dev/sda2 /mnt 
+
+============================
+#sda1 is the efi partition
+============================
+sudo mount /dev/sda1 /mnt/boot/efi 
+sudo cp /etc/resolv.conf /mnt/etc/ 
+for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+
+
+#============================
+#makes the network available after chrooting
+#============================
+sudo cp /etc/resolv.conf /mnt/etc/ 
+
+#============================
+# make sure this is loaed
+#============================
+modprobe efivars 
+
+
+sudo chroot /mnt
+
+
+====================================
+
+sudo apt-get install --reinstall grub-efi-amd64

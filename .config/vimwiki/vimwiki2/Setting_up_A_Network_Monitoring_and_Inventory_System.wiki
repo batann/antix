@@ -1,0 +1,282 @@
+
+
+
+
+   = From Alpine Linux =
+
+   [64px-Underconstruction_clock_icon_gray.svg.png] This material is
+   work-in-progress ...
+
+   This page started out as a fun project, but then it wasn't fully
+   completed due to time constraints. Following it will result in having a
+   server that can run a ping sweep of a given subnet, submit the results
+   of the sweep to OpenAudit so that the Windows machines will be audited
+   automatically, then parse the results and add found computers to
+   different Nagios hostgroups in NagioSQL based on certain software that
+   they have installed, such as Microsoft Exchange or Lotus Domino.
+   Unfortunately, the final code for OpenAudit + Nagios integration, the
+   part that exports the data from the NagioSQL database to the nagios
+   config files then issues a SIGHUP to Nagios so the changes take effect,
+   hasn't been implemented yet. Once it has been, this page will be
+   updated.
+   (Last edited by Sertonix on 25 Aug 2023.)
+
+Goal
+
+   Basic concept is to combine the above apps/utilities to create an easy
+   to set up and low upkeep monitoring system that also tracks inventory
+   thanks to OpenAudit. Redundant entries in configs will be kept to a
+   minimum (hopefully). New devices should be auto-added to monitoring
+   systems, along with associated services (for example, a Windows server
+   running MS Exchange might have basic services such as CPU load, HD free
+   space, running services and Exchange queues monitored, whereas a router
+   running on Alpine Linux would might need the routing table, throughput,
+   and opennhrp monitored). Also, software licensing should be monitored
+   so that Windows boxes do not exceed purchased licenses.
+
+   Once finished, the scripts to tie OpenAudit and the monitoring
+   components will be called AMAAPS (Automatic Monitoring And Auditing
+   Populating System) (WIP available at
+   [53]https://github.com/jbilyk/AMAAPS)
+
+   To accomplish the above, this guide will set up (list subject to
+   change):
+     * Lighttpd
+     * Nagios
+     * NagiosQL
+     * [54]Cacti
+     * [55]Smokeping
+     * OpenAudit
+     * MySQL DB and associated scripts to tie these together
+
+   This guide will assume:
+     * You have a knowledge of your network setup (at least know which
+       subnets exist)
+     * Your network allows ICMP ping packets to every device that you want
+       discovered and automatically added to the system
+     * Your firewalls (whether on your networking devices or end-user
+       devices) allow traffic back to the server that is being set up, and
+       if it is a Windows host, allows RPC calls in especially if running
+       the audits on Win7 Pro machines, double-check local firewall
+       settings for traffic to/from OpenAudit computer (will allow audits
+       to happen properly when triggered via the OpenAudit computer).
+     * If you are auditing a Windows domain, you have access to an account
+       that has local administrator privileges on every computer (on Win
+       XP a user with Power User privileges may be enough).
+
+Steps
+
+Install lighttpd
+
+Basic Installation
+
+   For installing the additional packages first [56]activate community
+   packages and update the package index
+
+   Install the required packages:
+
+   # apk add lighttpd php82 fcgi php82-cgi
+
+Configure Lighttpd
+
+   Edit lighttpd.conf (/etc/lighttpd/lighttpd.conf) and uncomment the
+   line:
+include "mod_fastcgi.conf"
+
+   Edit mod_fastcgi.conf (/etc/lighttpd/mod_fastcgi.conf), find and change
+   /usr/bin/php-cgi to /usr/bin/php-cgi82
+"bin-path" => "/usr/bin/php-cgi82" # php-cgi
+
+Start lighttpd service and add it to default runlevel
+
+   # rc-service lighttpd start && rc-update add lighttpd default
+
+Configure MySQL
+
+   /usr/bin/mysql_install_db --user=mysql /etc/init.d/mysql start &&
+   rc-update add mysql default /usr/bin/mysqladmin -u root password
+   'password'
+
+   Install Nagios, nagios-plugins and Nagiosql and other needed packages
+
+   apk add nagios nagios-web nagios-plugins nagiosql php-mysqli php-mysql
+
+   Create soft-link for nagiosql virtual host'
+
+   ln -s /usr/share/webapps/nagiosql /var/www/localhost/htdocs/nagiosql
+
+   Change permissions for nagiosql
+
+   chown lighttpd:lighttpd /usr/share/webapps/nagiosql/config
+
+   Browse to http://localhost/nagiosql and follow the setup instructions.
+   Create folder /usr/share/webapps/openaudit and link to virtual host
+   folder
+
+   mkdir /usr/share/webapps/openaudit chown lighttpd:lighttpd
+   /usr/share/webapps/openaudit ln -s /usr/share/webapps/openaudit
+   /var/www/localhost/htdocs/openaudit</nowiki>
+
+   Download openaudit from
+   [57]https://downloads.sourceforge.net/open-audit/openauditrelease-09.12
+   .23-SVN1233.zip and extract to /usr/share/webapps/openaudit.
+
+   On a Windows server, create scheduled tasks to run ping-sweep-main.bat,
+   lookup-main.bat and insert-hosts-main.bat on a regular basis. Since the
+   insert-hosts-main.bat file runs RPC calls against other Windows
+   servers, at the moment this section needs to run on a Windows server...
+   To be continued...
+
+   AMAAPS now has code to add Windows hosts that were found using
+   OpenAudit into NagioSQL host table. Also will now add Exchange servers,
+   SQL servers, and Lotus Domino servers to the proper hostgroups.
+
+   NOW: Finish NagioSQL config so that it has:
+     * semi-sensible defaults (hostgroup setup, check commands, etc) and
+     * a triggered reload of Nagios config when it's changed
+
+Notes
+
+   SNMPTT receives snmp traps properly and sends them on to Nagios but
+   they aren't parsed in any way yet.
+
+   Got nmap results into OpenAudit. Needed a change in
+   admin_nmap_input.php line 48 ("Interesting ports on" -> "Nmap scan
+   report for"), for which a bug report was filed upstream.
+
+   Got pingable/resolvable hosts automatically added into OpenAudit:
+     * When auto-adding using scripts below, Windows versions 2000 (Pro
+       and Server), XP Pro, 2003 (inc R2)(Std/Ent)(x86/x64) were detected.
+       Windows 7 Pro only detected when the local firewall was set to
+       allow RPC traffic through
+     * Some printers (HP LJ3300, LJ8100) were detected whereas other
+       models weren't
+     * No networking devices (switches/routers) were added
+
+    1. Schedule a query of Windows Servers from OpenAudit + installed
+       software
+    2. Check that nagiosql has each server in it
+    3. If it doesn't, add host monitoring + base services
+    4. For each MS software (such as Exchange, SQL, DPM), add services
+    5. Query core switch via LLDP to find out where devices are and set up
+       dependencies automatically
+    6. SNMPTT integration to Nagios (setup based on device info in
+       OpenAudit) - follow
+       [58]http://xavier.dusart.free.fr/joomla/index.php/en/nagios/47-trap
+       s-snmp-dans-nagios^[[59]Dead Link]
+
+Random scripts
+
+   Since part of implementation runs on Windows (due to running a VBScript
+   from OpenAudit to collect Windows server/workstation info via RPC), a
+   set of scripts that run on Windows are listed below.
+
+   Ping-sweep*.bat: does an nmap ping sweep of each subnet in subnet.txt
+   and writes all hosts that are up to a file lookup*.bat: does a A record
+   DNS lookup for each host that's pingable and writes results to a file
+   insert-hosts*: for each resolvable host, downloads the vbscript to
+   insert the host information into openaudit (uses WMI to get hardware,
+   OS and software info)
+
+   ping-sweep-main.bat
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+for /F %%i in (subnets.txt) do ping-sweep-backend.bat %%i
+
+   ping-sweep-backend.bat
+@echo off
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+del %1.ip.txt
+nmap -sP %1 | "C:\program files\utilities\bin\grep" "Nmap scan report for" | "C:
+\Program Files\Utilities\bin\awk" -F " " "{print $NF}" | "C:\Program Files\Utili
+ties\bin\awk" -F "(" "{print $NF}" | "C:\Program Files\Utilities\bin\awk" -F ")"
+ "{print $1}" >> %1.ip.txt
+
+   lookup-main.bat
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+for /F %%i in (subnets.txt) do lookup-subnet.bat %%i
+
+   lookup-subnet.bat
+@echo off
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+del %1.host.txt
+for /F %%i in (%1.ip.txt) do @lookup-backend.bat %%i >> %1.host.txt
+
+   lookup-backend.bat
+@nslookup %1 | "C:\program files\utilities\bin\grep" "Name:  " | "C:\program fil
+es\utilities\bin\awk" -F " " "{print $2}"
+
+   insert-hosts-main.bat
+@echo off
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+for /F %%i in (subnets.txt) do insert-hosts-subnet.bat %%i
+
+   insert-hosts-subnet.bat
+@echo off
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+for /F %%i in (%1.host.txt) do @insert-hosts-parse.bat %%i
+
+   insert-hosts-parse.bat
+@echo off
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+echo %1 | "C:\Program Files\Utilities\bin\awk.exe" -F "." "{print $1}" > temp-ou
+t-insert.txt
+for /F %%A in (temp-out-insert.txt) do @insert-hosts-backend.bat %%A
+del temp-out-insert.txt
+
+   insert-hosts-backend.bat
+cd C:\Program Files\WAMP\www\openaudit\scripts\scans
+"C:\Program Files\Utilities\bin\wget.exe" "http://camgmt01/openaudit/launch_loca
+l_audit.php?domain=example.org&application=cmd&ext=vbs&hostname=%1&" -O %1.vbs
+cscript %1.vbs
+del %1.vbs
+
+   subnet.txt (snippet)
+10.14.8.0-255
+10.14.9.0-255
+
+   To grab all Windows servers using MySQL:
+select system_uuid,system_name,net_ip_address,system_os_name from openaudit.syst
+em where system_os_name like '%Microsoft%Server%';
+
+   exchangeservers hostgroup:
+   select distinct tbl_host.host_name,tbl_host.address from
+   tbl_host,tbl_lnkHostgroupToHost,tbl_hostgroup where
+   tbl_hostgroup.hostgroup_name = 'exchangeservers' and
+   tbl_lnkHostgroupToHost.idMaster = tbl_hostgroup.id and
+   tbl_lnkHostgroupToHost.idSlave = tbl_host.id;
+   sqlservers hostgroup:
+   select distinct tbl_host.host_name,tbl_host.address from
+   tbl_host,tbl_lnkHostgroupToHost,tbl_hostgroup where
+   tbl_hostgroup.hostgroup_name = 'sqlservers' and
+   tbl_lnkHostgroupToHost.idMaster = tbl_hostgroup.id and
+   tbl_lnkHostgroupToHost.idSlave = tbl_host.id;
+   lotusnotesservers hostgroup:
+   select distinct tbl_host.host_name,tbl_host.address from
+   tbl_host,tbl_lnkHostgroupToHost,tbl_hostgroup where
+   tbl_hostgroup.hostgroup_name = 'lotusnotesservers' and
+   tbl_lnkHostgroupToHost.idMaster = tbl_hostgroup.id and
+   tbl_lnkHostgroupToHost.idSlave = tbl_host.id;
+   windowsservers hostgroup:
+   select distinct tbl_host.host_name,tbl_host.address from
+   tbl_host,tbl_lnkHostgroupToHost,tbl_hostgroup where
+   tbl_hostgroup.hostgroup_name = 'windowsservers' and
+   tbl_lnkHostgroupToHost.idMaster = tbl_hostgroup.id and
+   tbl_lnkHostgroupToHost.idSlave = tbl_host.id;
+   OpenAudit queries:
+   Exchange:
+   select distinct system.system_name,system.net_ip_address from
+   system,software where software_name like '%icrosoft%xchange' and
+   software.software_uuid = system.system_uuid;
+   SQL:
+   select distinct system.system_name,system.net_ip_address from
+   system,software where software.software_name like
+   '%icrosoft%SQL%erver%200%' and system.system_os_name like '%erver%' and
+   software.software_uuid = system.system_uuid;
+   Lotus Domino:
+   select distinct system.system_name,system.net_ip_address from
+   system,software where software_name like '%otus%omino%' and
+   software.software_uuid = system.system_uuid;
+   Windows:
+   select distinct system.system_name,system.net_ip_address from system
+   where system.system_os_name like '%microsoft%server%';
+

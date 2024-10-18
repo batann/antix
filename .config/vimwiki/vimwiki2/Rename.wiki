@@ -1,0 +1,32 @@
+= Rename =
+
+
+_Remove whitesapces in files within a Directory_
+
+1) To replace the white space in all files with underscores, the following command inside of a Bash for loop will do the job. Note that this command will not touch files within subdirectories. 
+``
+	for f in *; do mv "$f" $(echo $f | tr ' ' '_'); done
+``
+
+2) To remove the white spaces in an individual file and substitute underscores in their place, you can use the following command: 
+``
+	 myfile="some file.txt" ; mv "$myfile" $(echo $myfile | tr ' ' '_'
+ ``
+ 
+3) What if we want to remove the white space completely, and not put anything in its place? In that case, we can leave out the underscore in the`` tr ``command in the above examples and use the `` -d ``option. 
+``
+	for f in *; do mv "$f" $(echo $f | tr -d ' '); done
+``
+4) To recursively replace all white spaces in file names with underscores, we can use the Linux ``find`` command. Note that this command will traverse all subdirectories, no matter how deep, and change the names for all files that contain any white space. This behavior can be altered with the `` -maxdepth`` option. 
+``
+	find . -type f -name "* *" -exec bash -c 'mv "$0" "${0// /_}"' {} \;
+
+``
+5) If you have the ``rename`` utility installed on your Linux system, there is a very easy syntax to remove the white space from all files and replace it with underscores: 
+``
+	rename 's/\s/_/g' ./*.*
+``
+6) Anoter utility which is not ordinarily installed by default on Linux, but can do the job very well, is mmv. The following command will remove all white spaces and replace them with underscores: 
+``
+	 mmv '* *' '#1_#2'
+``

@@ -1,0 +1,10 @@
+= smenu =
+
+https://www.linux-magazine.com/Issues/2017/205/smenu/(offset)/0#article_l6
+
+https://www.linux-magazine.com/Issues/2017/205/smenu/(offset)/3
+
+
+https://github.com/p-gen/smenu/wiki
+
+

@@ -1,0 +1,21 @@
+= tmux andom commands =
+
+
+
+== menu1 ==
+
+xfce4-terminal --geometry=220x60+0+0 -e "tmux new-session \; splitw -v -p40 \; splitw -h \; selectp -t0 \; splitw -h -p70 'sudo -u batan bash /home/batan/16/menu/menu1.sh' \; splitw -h -p80 \; splitw -v -p30 \; selectp -t2 \; splitw -h -p30 'sudo -u batan bash /home/batan/16/menu/menu2.sh' \;"
+
+== pipe to a pane (compleate) ==
+
+=== find out the perticular panes pts: ===
+ps ax | grep $$ | awk '{ print $2 }'
+
+=== as example pts5: ===
+tmux pipe-pane -o -t 0 'cat > /dev/pts/5';
+
+
+
+ 
+ 
+ 

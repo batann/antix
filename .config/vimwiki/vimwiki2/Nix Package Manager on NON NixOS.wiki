@@ -1,0 +1,54 @@
+= Nix Package Manager on NON NixOS =
+
+=== 50 command examples of Nix package Manager on a non NixOS Linux OS such as MX-Linux ===
+
+1. nix-env -qa
+2. nix-env -iA nixpkgs.hello
+3. nix-env -e hello
+4. nix-env -u
+5. nix-env -uA nixpkgs
+6. nix-env -p /nix/var/nix/profiles/system -iA nixos.git
+7. nix-env -p /nix/var/nix/profiles/system -e git
+8. nix-env -p /nix/var/nix/profiles/system -u
+9. nix-env -p /nix/var/nix/profiles/system -uA nixos
+10. nix-env -qaP hello
+11. nix-env -qaP --description hello
+12. nix-env -qaP --attr-path hello
+13. nix-env -qaP --meta hello
+14. nix-env -qaP --drv-path hello
+15. nix-env -qaP --out-path hello
+16. nix-env -qaP --system
+17. nix-env -qaP --available
+18. nix-env -qaP --installed
+19. nix-env -qaP --upgrade
+20. nix-env -qaP --upgrades
+21. nix-env -qaP --query hello
+22. nix-env -qaP --query hello --description
+23. nix-env -qaP --query hello --attr-path
+24. nix-env -qaP --query hello --meta
+25. nix-env -qaP --query hello --drv-path
+26. nix-env -qaP --query hello --out-path
+27. nix-env -qaP --query --system
+28. nix-env -qaP --query --available
+29. nix-env -qaP --query --installed
+30. nix-env -qaP --query --upgrade
+31. nix-env -qaP --query --upgrades
+32. nix-env -iA nixpkgs.hello -f /path/to/nixpkgs
+33. nix-env -iA nixpkgs.hello -I nixpkgs=/path/to/nixpkgs
+34. nix-env -iA nixpkgs.hello --argstr foo bar
+35. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux
+36. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux -f /path/to/nixpkgs
+37. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux -I nixpkgs=/path/to/nixpkgs
+38. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com
+39. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com
+40. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com -f /path/to/nixpkgs
+41. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com -I nixpkgs=/path/to/nixpkgs
+42. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true
+43. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true -f /path/to/nixpkgs
+44. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true -I nixpkgs=/path/to/nixpkgs
+45. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4
+46. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4 -f /path/to/nixpkgs
+47. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4 -I nixpkgs=/path/to/nixpkgs
+48. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4 --option keep-outputs true
+49. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4 --option keep-outputs true -f /path/to/nixpkgs
+50. nix-env -iA nixpkgs.hello --argstr foo bar --argstr baz qux --option extra-binary-caches https://cache.example.com --option extra-substituters https://cache.example.com --option sandbox true --option build-max-jobs 4 --option keep-outputs true -I nixpkgs=/path/to/nixpkgs

@@ -1,0 +1,42 @@
+==about:config firefox==
+source: https://proprivacy.com/vpn/guides/firefox-privacy-security-guide
+
+
+		=about:config=
+	==Privacy optimized Setting==
+
+
++=======================================================================+
++-----------------------------------------------------------------------+
+| about:config privacy optimized setting firefox               |        |
++--------------------------------------------------------------+--------+
+| browser.safebrowsing.phishing.enabled*                       | false  |
+| browser.safebrowsing.malware.enabled*                        | false  |
+| dom.event.clipboardevents.enabled*                           | false  |
+| dom.storage.enabled*                                         | false  |
+| geo.enabled*                                                 | false  |
+| network.http.sendSecureXSiteReferrer*                        | false  |
+| network.prefetch-next* false                                 | false  |
+| privacy.donottrackheader.enabled* true                       | true   |
+| privacy.donottrackheader.value*                              | true   |
+| browser.privatebrowsing.autostart true                       | true   |
+| browser.startup.homepage   ///home/batan/file                | string |
+| browser.startup.page :0=blank 1=                             | 0      |
+| datareporting.healthreport.uploadEnabled   =false            | false  |
+| geo.wifi.uri		add 127.0.0.1                          | string |
+| media.peerconnection.enabled                                 | true   |
+| network.cookie.cookieBehavior	1 from server                  | 1      |
+| network.cookie.lifetimePolicy	2 end of session               | 2      |
+| network.dns.disablePrefetch                                  | false  |
+| network.http.sendRefererHeader                               | false  |
+| privacy.donottrackheader.value*                              | true   |
+| privacy.trackingprotection.enabled true                      | true   |
+| toolkit.telemetry.enabled false                              | false  |
+|                                                              |        |
++==============================================================+========+
++==============================================================+========+
+
+*In firefox the privacy.query_stripping.enabled.pbmode should be set to true*
+
+
+

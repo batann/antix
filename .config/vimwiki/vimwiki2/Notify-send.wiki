@@ -1,0 +1,33 @@
+
+
+
+
+==Notify-send==
+
+
+
+notify-send "Time" "Its Time" -i /usr/share/icons/Adwaita/48x48/actions/mail-send-receive-symbolic.symbolic.png -t 2000
+
+
+
+
+        1. Basic message with an icon in front of the Title showing 5000
+        milliseconds
+        Code:
+
+        notify-send "Message Title" "The message body is shown here" -i /usr/share/pixmaps/idle.xpm -t 5000
+
+        2. Show contents of a file:
+        Code:
+
+        notify-send test "`tail /var/log/syslog`"
+
+        3. Follow log file:
+        Code:
+
+        tail -n0 -f /var/log/messages | while read line; do notify-send "System Message" "$line"; done
+
+        4. Format message with HTML:
+        Code:
+
+        notify-send Test "<font size=16 color=blue><b><i>Hello World</b></i></font>"

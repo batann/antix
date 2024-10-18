@@ -1,0 +1,125 @@
+
+
+
+
+NextDNS _first analasis_
+This device is not using NextDNS.
+This device is currently using ”Cloudflare” as DNS resolver.
+Endpoints
+Set up NextDNS with this profile using one of the endpoints below.
+ID
+693d99
+DNS-over-TLS/QUIC
+693d99.dns.nextdns.io
+DNS-over-HTTPS
+https://dns.nextdns.io/693d99
+IPv6
+2a07:a8c0::69:3d99
+2a07:a8c1::69:3d99
+Not sure how to use those? Follow the Setup Guide.
+Linked IP
+If you are unable to set up NextDNS using our apps, DNS-over-TLS, DNS-over-HTTPS or IPv6, then use the DNS servers below and link your IP. This is mostly for use on home networks and not recommended on mobile.
+DNS Servers
+45.90.28.189
+45.90.30.189
+Linked IP
+Setup Guide
+Follow the instructions below to set up NextDNS on your device, browser or router.
+Android
+iOS
+Windows
+macOS
+Linux
+ChromeOS
+Browsers
+Routers
+RECOMMENDED
+systemd-resolved
+Use the following in /etc/systemd/resolved.conf:
+[Resolve]
+DNS=45.90.28.0#693d99.dns.nextdns.io
+DNS=2a07:a8c0::#693d99.dns.nextdns.io
+DNS=45.90.30.0#693d99.dns.nextdns.io
+DNS=2a07:a8c1::#693d99.dns.nextdns.io
+DNSOverTLS=yes
+OR
+NextDNS Command-Line Client
+1. Run the following command: sh -c "$(curl -sL https://nextdns.io/install)"
+2. Follow the instructions.
+Head over to our open-source repository at https://github.com/nextdns/nextdns/wiki for manual installation instructions.
+OR
+IPv6
+Your network does not support IPv6
+Change your DNS servers to 2a07:a8c0::69:3d99 and 2a07:a8c1::69:3d99.
+OR
+IPv4 (with Linked IP)
+Change your DNS servers to 45.90.28.189 and 45.90.30.189.
+OR
+dnsmasq
+Use the following in dnsmasq.conf:
+no-resolv
+bogus-priv
+strict-order
+server=2a07:a8c1::
+server=45.90.30.0
+server=2a07:a8c0::
+server=45.90.28.0
+add-cpe-id=693d99
+OR
+Stubby
+Use the following in stubby.yml:
+round_robin_upstreams: 1
+upstream_recursive_servers:
+  - address_data: 45.90.28.0
+    tls_auth_name: "693d99.dns.nextdns.io"
+  - address_data: 2a07:a8c0::0
+    tls_auth_name: "693d99.dns.nextdns.io"
+  - address_data: 45.90.30.0
+    tls_auth_name: "693d99.dns.nextdns.io"
+  - address_data: 2a07:a8c1::0
+    tls_auth_name: "693d99.dns.nextdns.io"
+Make sure Stubby is linked with OpenSSL 1.1.1 or higher as previous versions will not work with NextDNS.
+OR
+DNSCrypt
+Use the following in dnscrypt-proxy.toml:
+server_names = ['NextDNS-693d99']
+
+[static]
+  [static.'NextDNS-693d99']
+  stamp = 'sdns://AgEAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8HLzY5M2Q5OQ'
+OR
+Knot Resolver
+Use the following in /etc/kresd/custom.conf:
+policy.add(policy.all(policy.TLS_FORWARD({
+  {'45.90.28.0', hostname='693d99.dns.nextdns.io'},
+  {'2a07:a8c0::', hostname='693d99.dns.nextdns.io'},
+  {'45.90.30.0', hostname='693d99.dns.nextdns.io'},
+  {'2a07:a8c1::', hostname='693d99.dns.nextdns.io'}
+})))
+OR
+cloudflared
+Use the following in /usr/local/etc/cloudflared/config.yml:
+proxy-dns: true
+proxy-dns-upstream:
+ - https://dns.nextdns.io/693d99
+OR
+Unbound
+Use the following in unbound.conf:
+forward-zone:
+  name: "."
+  forward-tls-upstream: yes
+  forward-addr: 45.90.28.0#693d99.dns.nextdns.io
+  forward-addr: 2a07:a8c0::#693d99.dns.nextdns.io
+  forward-addr: 45.90.30.0#693d99.dns.nextdns.io
+  forward-addr: 2a07:a8c1::#693d99.dns.nextdns.io
+As a recursive resolver, Unbound chases CNAMEs. This may result in unexpected behavior when used in conjunction with a blocking DNS resolver like NextDNS. See github.com/NLnetLabs/unbound/issues/132.
+Identify your devices
+Follow the instructions below to identify your devices in Analytics and Logs.
+DNS-over-TLS/QUIC
+Prepend the name to the provided domain (the name should only contain a-z, A-Z, 0-9 and -). Use -- for spaces.
+For "John Router", you would use John--Router-693d99.dns.nextdns.io as your DNS-over-TLS endpoint.
+DNS-over-HTTPS
+Append the name to the provided URL (the name should be URL encoded).
+For "John's Firefox", you would use https://dns.nextdns.io/693d99/John's%20Firefox as your DNS-over-HTTPS endpoint.
+Apps
+Enable "Send Device Name" in the app settings.

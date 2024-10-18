@@ -1,0 +1,530 @@
+= Nextcloud on Alpine OS =
+
+
+
+   From Alpine Linux
+
+   [65]Nextcloud is WedDAV-based solution for storing and sharing on-line
+   your data, files, images, video, music, calendars and contacts.
+   [66]Nextcloud is a fork of ownCloud with enterprise features included.
+
+Installation
+
+   [67]nextcloud is available from Alpine 3.5 and greater.
+
+   Before you start installing anything, make sure you have the latest
+   packages available. Make sure you are using an 'http' repository in
+   your /etc/apk/repositories file, then:
+
+   apk update
+   Tip: Detailed information is found in [68]this doc.
+
+Database
+
+   First you have to decide which database to use. Use one of the
+   databases listed below.
+
+Sqlite
+
+   All you need to do is to install the package:
+
+   apk add nextcloud-sqlite
+
+PostgreSQL
+
+   Install the package:
+
+   apk add nextcloud-pgsql postgresql postgresql-client
+
+   Next thing is to configure and start the database:
+
+   /etc/init.d/postgresql setup /etc/init.d/postgresql start
+
+   Next, you need to create a user and temporarily grant the CREATEDB
+   privilege:
+
+   psql -U postgres CREATE USER mycloud WITH PASSWORD 'test123'; ALTER
+   ROLE mycloud CREATEDB; \q
+   Note: Replace the above username 'mycloud' and password 'test123' with
+   something secure. Remember these settings. You will need them later
+   when setting up nextcloud.
+
+   Set postgresql to start on boot:
+
+   rc-update add postgresql
+
+MariaDB
+
+   Install the package:
+
+   apk add nextcloud-mysql mariadb mariadb-client
+
+   Now configure and start [69]mariadb:
+
+   mysql_install_db --user=mysql --datadir=/var/lib/mysql service mariadb
+   start rc-update add mariadb mysql_secure_installation
+
+   Follow the wizard to setup passwords, etc.
+   Note: Remember the usernames/passwords that you set using the wizard.
+   You will need them later.
+
+   Next, you need to create a user and database and set permissions:
+
+   mysql -u root -p CREATE DATABASE nextcloud; GRANT ALL ON nextcloud.* TO
+   'mycloud'@'localhost' IDENTIFIED BY 'test123'; GRANT ALL ON nextcloud.*
+   TO 'mycloud'@'localhost.localdomain' IDENTIFIED BY 'test123'; FLUSH
+   PRIVILEGES; EXIT
+   Note: Replace the above username 'mycloud' and password 'test123' with
+   something secure. Remember these settings. You will need them later
+   when setting up nextcloud.
+
+   [70]mariadb-client is not needed anymore. Let's uninstall it:
+
+   apk del mariadb-client
+
+   Next thing is to choose, install, and configure a webserver. In this
+   example we will install [71]nginx or [72]lighttpd. Nginx is preferred
+   over Lighttpd since the latter will consume a lot of memory when
+   working with large files (see [73]lighty bug #1283). You are free to
+   install any other webserver of your choice as long as it supports PHP
+   and FastCGI. Generating an SSL certificate for your webserver is
+   outside of the scope of this document.
+
+   [74]nextcloud-initscript facilitates running the webserver with
+   php-fpm.
+
+   apk add nextcloud-initscript
+
+Nginx
+
+   Install the needed packages:
+
+   apk add nginx php81-fpm
+
+   Delete the default nginx website configuration:
+
+   rm /etc/nginx/http.d/default.conf
+
+   Create a configuration file for your site in
+   /etc/nginx/http.d/mysite.mydomain.com.conf:
+
+   Contents of /etc/nginx/http.d/mysite.mydomain.com.conf
+   server { #listen [::]:80; #uncomment for IPv6 support listen 80; return
+   301 https://$host$request_uri; server_name mysite.mydomain.com; }
+   server { #listen [::]:443 ssl; #uncomment for IPv6 support listen 443
+   ssl; server_name mysite.mydomain.com; root
+   /usr/share/webapps/nextcloud; index index.php index.html index.htm;
+   disable_symlinks off; ssl_certificate /etc/ssl/cert.pem;
+   ssl_certificate_key /etc/ssl/key.pem; ssl_session_timeout 5m; #Enable
+   Perfect Forward Secrecy and ciphers without known vulnerabilities
+   #Beware! It breaks compatibility with older OS and browsers (e.g.
+   Windows XP, Android 2.x, etc.) #ssl_ciphers
+   ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-A
+   ES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDH
+   E-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA2
+   56:ECDHE-RSA-AES256-SHA; #ssl_prefer_server_ciphers on; location / {
+   try_files $uri $uri/ /index.html; } # pass the PHP scripts to FastCGI
+   server listening on 127.0.0.1:9000 location ~ [^/]\.php(/|$) {
+   fastcgi_split_path_info ^(.+?\.php)(/.*)$; if (!-f
+   $document_root$fastcgi_script_name) { return 404; } #fastcgi_pass
+   127.0.0.1:9000; #fastcgi_pass unix:/run/php-fpm/socket; fastcgi_pass
+   unix:/run/nextcloud/fastcgi.sock; # From the nextcloud-initscript
+   package fastcgi_index index.php; include fastcgi.conf; } # Help pass
+   nextcloud's configuration checks after install: # Per
+   https://docs.nextcloud.com/server/22/admin_manual/issues/general_troubl
+   eshooting.html#service-discovery location ^~ /.well-known/carddav {
+   return 301 /remote.php/dav/; } location ^~ /.well-known/caldav { return
+   301 /remote.php/dav/; } location ^~ /.well-known/webfinger { return 301
+   /index.php/.well-known/webfinger; } location ^~ /.well-known/nodeinfo {
+   return 301 /index.php/.well-known/nodeinfo; } }
+
+   If you plan to enable uploads - and you probably do) - then you need to
+   modify the default:
+client_max_body_size 1m;'
+
+   setting in /etc/nginx/nginx.conf. For testing purposes, I disabled the
+   limit by changing it to:
+client_max_body_size 0;
+
+   This enabled large file uploads and auto-uploads to work. Note, this is
+   a file-size restriction in addition to the restriction set in
+   /etc/php81/php-fpm.d/nextcloud.conf. That second restriction defaults
+   to:
+; Maximal size of a file that can be uploaded via web interface.
+php_admin_value[memory_limit] = 512M
+php_admin_value[post_max_size] = 513M
+php_admin_value[upload_max_filesize] = 513M
+
+   Another setting that may limit file-size is in configuration file
+   /etc/php81/php.ini, where I set the restriction to to:
+upload_max_filesize = 513M
+
+   to match the /etc/php81/php-fpm.d/nextcloud.conf file-size restriction.
+
+   If you are running from RAM and you're dealing with large files you
+   might need to move the FastCGI temp file from /tmp to /var/tmp or to a
+   directory that is mounted on hdd:
+fastcgi_temp_path /var/tmp/nginx/fastcgi 1 2;
+
+   Large file uploads take some time to be processed by php-fpm, so you
+   need to bump the Nginx default read timeout:
+fastcgi_read_timeout 300s;
+
+   Note: If you are serving several users make sure to tune the
+   *pm.max_children setting in /etc/php81/php-fpm.d/nextcloud.conf
+
+   /etc/nginx/nginx.conf should already be configured to load your site
+   config from this directory:
+...
+# Includes virtual hosts configs.
+include /etc/nginx/http.d/*;
+...
+
+   Start services:
+
+   service nginx start service nextcloud start
+
+   Enable automatic startup of services:
+
+   rc-update add nginx rc-update add nextcloud
+
+Lighttpd
+
+   Install the package:
+
+   apk add lighttpd php5-cgi
+
+   Make sure you have FastCGI enabled in [75]lighttpd:
+
+   Contents of /etc/lighttpd/lighttpd.conf
+   ... include "mod_fastcgi.conf" ...
+
+   Start up the webserver:
+
+   /etc/init.d/lighttpd start
+   Tip: You might want to follow the [76]Lighttpd_Https_access doc in
+   order to configure lighttpd to use https (securing your connections to
+   your nextcloud server).
+
+   Link [77]nextcloud installation to web server directory:
+
+   ln -s /usr/share/webapps/nextcloud /var/www/localhost/htdocs
+
+Firewall
+
+   Next up, open the desired port for the webserver in the firewall. You
+   can use the following snippet as a reference for an nftable rule in a
+   new file/etc/nftables.d/50-https.nft:
+
+   Contents of /etc/nftables.d/50-https.nft
+   #!/usr/sbin/nft -f table inet filter { chain input { # allow https tcp
+   dport 443 accept comment "accept HTTPS" } }
+
+Other settings
+
+Hardening
+
+   Consider updating the variable url.access-deny in
+   /etc/lighttpd/lighttpd.conf for additional security. Add "config.php"
+   to the variable (that's where the database is stored) so it looks
+   something like this:
+
+   Contents of /etc/lighttpd/lighttpd.conf
+   ... url.access-deny = ("~", ".inc", "config.php") ...
+
+   Restart [78]lighttpd to activate the changes:
+
+   /etc/init.d/lighttpd restart
+
+Additional packages
+
+   Some large apps, such as pdfviewer, texteditor, notifications and
+   videoplayer are in separate packages:
+
+   apk add nextcloud-files_pdfviewer nextcloud-text
+   nextcloud-notifications nextcloud-files_videoplayer
+   nextcloud-files_external
+
+   You can also install the [79]nextcloud-default-apps meta-package which
+   installs all 30 core Nextcloud apps (listed as dependencies under
+   aforementioned link):
+
+   apk add nextcloud-default-apps
+
+How To Create a Self-Signed SSL Certificate
+
+   Install openssl:
+
+   apk add openssl
+
+   Generate your self signed certificate and its private key:
+
+   openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout
+   /etc/ssl1.1/private/nextcloud-selfsigned.key -out
+   /etc/ssl1.1/certs/nextcloud-selfsigned.crt
+
+   Edit your nginx configuration:
+
+   Contents of /etc/nginx/http.d/mysite.mydomain.com.conf
+   ssl_certificate /etc/ssl1.1/certs/nextcloud-selfsigned.crt;
+   ssl_certificate_key /etc/ssl1.1/private/nextcloud-selfsigned.key;
+
+How To Install and Set Up Auto-Renewing LetsEncrypt SSL Certificate
+
+   After first setting up the Nextcloud server using the instructions in
+   the 'Configure and use Nextcloud' section below, I then followed the
+   SSL-setup instructions at: [[80]Tech Jogging].
+
+   I also had to add my Nextcloud servers Fully Qualified Domain Name
+   (FQDN) to the list of trusted domains in /etc/nextcloud/config.php. In
+   the section labelled: 'trusted_domains':
+'trusted_domains' =>
+  array (
+    0 => '<machine's local IP address>',
+    1 => 'nextcloud.mydomain.com',
+  ),
+}}
+
+Configure and use Nextcloud
+
+Configure
+
+   Point your browser at https://mysite.mydomain.com and follow the
+   on-screen instructions to complete the installation, supplying the
+   database user and password created before.
+
+Hardening PostgreSQL
+
+   If you have chosen PGSQL backend, revoke CREATEDB privilege from
+   'mycloud' user:
+
+   psql -U postgres ALTER ROLE mycloud NOCREATEDB; \q
+
+Increase upload size
+
+/etc/php81/php-fpm.d/nextcloud.conf has overridden default file sizes, but they
+can be modified further to suit your needs:
+
+; Maximal size of a file that can be uploaded via web interface.
+php_admin_value[memory_limit] = 512M
+php_admin_value[post_max_size] = 513M
+php_admin_value[upload_max_filesize] = 513M
+
+enable opcache for nginx/php81
+
+   To increase performace install
+
+   apk add php81-opcache
+
+   Now uncomment/edit lines in /etc/php81/php.ini:
+...
+opcache.enable=1
+opcache.enable_cli=1
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=10000
+opcache.memory_consumption=128 //you can reduce this slightly when short on RAM
+opcache.save_comments=1
+opcache.revalidate_freq=1
+...
+
+   Restart php-fpm81
+
+   rc-service php-fpm81 restart
+
+Clients
+
+   There are clients available for many platforms, Android included:
+     * [81]https://nextcloud.org/sync-clients/^[[82]Dead Link] (nextcloud
+       Sync clients)
+     * [83]https://nextcloud.org/support/android/^[[84]Dead Link] (Android
+       client)
+
+   [85]nextcloud-client is currently available in the community repo.
+
+Video Communication
+
+   One of the major features of Nextcloud 11, available on Alpine 3.6
+   (currently edge) is a [86]WebRTC app, which relies on Spreed WebRTC
+   server, which is available in the Alpine testing repository. Everything
+   is still beta, so be aware of it :-). If you want a private video
+   conferencing server install Nextcloud using Nginx and do the following
+   (you can use Apache as well and follow the Apache config instructions
+   [87]nextcloud.com):
+
+   Put the following config in the server section of Nginx:
+# Spreed WebRTC
+location ^~ /webrtc {
+  proxy_pass http://127.0.0.1:8080;
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection $connection_upgrade;
+  proxy_set_header X-Forwarded-Proto $scheme;
+  proxy_set_header Host $http_host;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+  proxy_buffering             on;
+  proxy_ignore_client_abort   off;
+  proxy_redirect              off;
+  proxy_connect_timeout       90;
+  proxy_send_timeout          90;
+  proxy_read_timeout          90;
+  proxy_buffer_size           4k;
+  proxy_buffers               4 32k;
+  proxy_busy_buffers_size     64k;
+  proxy_temp_file_write_size  64k;
+  proxy_next_upstream         error timeout invalid_header http_502 http_503 htt
+p_504;
+}
+
+   Put the following section in the http section of Nginx:
+map $http_upgrade $connection_upgrade {
+  default upgrade;
+  ''      close;
+}
+
+   Reload Nginx:
+
+   rc-service nginx reload
+
+   Install Spreed WedRTC server (make sure you have the testing
+   [88]repository enabled):
+
+   apk add spreed-web-server
+
+   Using the configuration file in
+   /etc/spreed-webrtc/spreed-webrtc-server.conf follow the instructions at
+   [89]nextcloud.com to configure Spreed WebRTC server. Then start the
+   server:
+
+   rc-service spreed-web-server start
+
+   rc-update add spreed-web-server
+
+   Install the Spreed video calls app in Nextcloud and enjoy your private
+   video calls.
+
+Upgrading
+
+   If you're using alpine stable, rather than edge, be aware when an
+   upgrade skips a major release version: Nextcloud doesn't support
+   skipping a major release version in its upgrade path. For this reason,
+   alpine also packages the previous nextcloud release as a separate
+   package.
+   Retrieved from
+   "[90]https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&oldid=241
+   63"
+   [91]Category:
+     * [92]Server
+
+     * This page was last edited on 7 August 2023, at 11:41.
+     *
+
+   [93]© Copyright 2008-2021 Alpine Linux Development Team all rights
+   reserved
+
+     * [94]Privacy policy
+     * [95]About
+     * [96]Disclaimers
+
+     * [97]Powered by MediaWiki
+
+References
+
+   1. https://wiki.alpinelinux.org/w/opensearch_desc.php
+   2. https://wiki.alpinelinux.org/w/index.php?title=Special:RecentChanges&feed=atom
+   3. https://wiki.alpinelinux.org/wiki/Nextcloud#bodyContent
+   4. https://wiki.alpinelinux.org/wiki/Main_Page
+   5. https://wiki.alpinelinux.org/wiki/Special:Search
+   6. https://wiki.alpinelinux.org/w/index.php?title=Special:CreateAccount&returnto=Nextcloud
+   7. https://wiki.alpinelinux.org/w/index.php?title=Special:UserLogin&returnto=Nextcloud
+   8. https://wiki.alpinelinux.org/w/index.php?title=Special:CreateAccount&returnto=Nextcloud
+   9. https://wiki.alpinelinux.org/w/index.php?title=Special:UserLogin&returnto=Nextcloud
+  10. https://wiki.alpinelinux.org/wiki/Installation
+  11. https://wiki.alpinelinux.org/wiki/FAQ
+  12. https://wiki.alpinelinux.org/wiki/Tutorials_and_Howtos
+  13. https://wiki.alpinelinux.org/wiki/Contribute
+  14. https://wiki.alpinelinux.org/wiki/Developer_Documentation
+  15. https://wiki.alpinelinux.org/wiki/Glossary
+  16. https://alpinelinux.org/
+  17. https://git.alpinelinux.org/
+  18. https://gitlab.alpinelinux.org/alpine/aports/-/issues
+  19. https://wiki.alpinelinux.org/wiki/Alpine_Linux:Mailing_lists
+  20. https://wiki.alpinelinux.org/wiki/IRC
+  21. https://alpinelinux.org/downloads
+  22. https://pkgs.alpinelinux.org/packages
+  23. https://wiki.alpinelinux.org/wiki/Special:RecentChanges
+  24. https://wiki.alpinelinux.org/wiki/Special:PrefixIndex
+  25. https://wiki.alpinelinux.org/wiki/Special:Categories
+  26. https://wiki.alpinelinux.org/wiki/Category:Wiki
+  27. https://wiki.alpinelinux.org/wiki/Alpine_Linux:Wiki_maintenance
+  28. https://wiki.alpinelinux.org/wiki/Special:WhatLinksHere/Nextcloud
+  29. https://wiki.alpinelinux.org/wiki/Special:RecentChangesLinked/Nextcloud
+  30. https://wiki.alpinelinux.org/wiki/Special:SpecialPages
+  31. javascript:print();
+  32. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&oldid=24163
+  33. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&action=info
+  34. https://wiki.alpinelinux.org/wiki/Nextcloud
+  35. https://wiki.alpinelinux.org/wiki/Nextcloud#Installation
+  36. https://wiki.alpinelinux.org/wiki/Nextcloud#Database
+  37. https://wiki.alpinelinux.org/wiki/Nextcloud#Sqlite
+  38. https://wiki.alpinelinux.org/wiki/Nextcloud#PostgreSQL
+  39. https://wiki.alpinelinux.org/wiki/Nextcloud#MariaDB
+  40. https://wiki.alpinelinux.org/wiki/Nextcloud#Webserver
+  41. https://wiki.alpinelinux.org/wiki/Nextcloud#Nginx
+  42. https://wiki.alpinelinux.org/wiki/Nextcloud#Lighttpd
+  43. https://wiki.alpinelinux.org/wiki/Nextcloud#Firewall
+  44. https://wiki.alpinelinux.org/wiki/Nextcloud#Other_settings
+  45. https://wiki.alpinelinux.org/wiki/Nextcloud#Hardening
+  46. https://wiki.alpinelinux.org/wiki/Nextcloud#Additional_packages
+  47. https://wiki.alpinelinux.org/wiki/Nextcloud#How_To_Create_a_Self-Signed_SSL_Certificate
+  48. https://wiki.alpinelinux.org/wiki/Nextcloud#How_To_Install_and_Set_Up_Auto-Renewing_LetsEncrypt_SSL_Certificate
+  49. https://wiki.alpinelinux.org/wiki/Nextcloud#Configure_and_use_Nextcloud
+  50. https://wiki.alpinelinux.org/wiki/Nextcloud#Configure
+  51. https://wiki.alpinelinux.org/wiki/Nextcloud#Hardening_PostgreSQL
+  52. https://wiki.alpinelinux.org/wiki/Nextcloud#Increase_upload_size
+  53. https://wiki.alpinelinux.org/wiki/Nextcloud#enable_opcache_for_nginx/php81
+  54. https://wiki.alpinelinux.org/wiki/Nextcloud#Clients
+  55. https://wiki.alpinelinux.org/wiki/Nextcloud#Video_Communication
+  56. https://wiki.alpinelinux.org/wiki/Nextcloud#Upgrading
+  57. https://wiki.alpinelinux.org/wiki/Nextcloud
+  58. https://wiki.alpinelinux.org/wiki/Talk:Nextcloud
+  59. https://wiki.alpinelinux.org/wiki/Nextcloud
+  60. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&action=edit
+  61. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&action=history
+  62. https://wiki.alpinelinux.org/wiki/Nextcloud
+  63. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&action=edit
+  64. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&action=history
+  65. https://nextcloud.com/
+  66. https://karlitschek.de/2016/06/nextcloud/
+  67. https://pkgs.alpinelinux.org/packages?name=nextcloud&branch=edge&repo=&arch=x86_64&maintainer=
+  68. https://wiki.alpinelinux.org/wiki/Include:Upgrading_to_latest_release
+  69. https://pkgs.alpinelinux.org/packages?name=mariadb&branch=edge&repo=&arch=x86_64&maintainer=
+  70. https://pkgs.alpinelinux.org/packages?name=mariadb-client&branch=edge&repo=&arch=x86_64&maintainer=
+  71. https://pkgs.alpinelinux.org/packages?name=nginx&branch=edge&repo=&arch=x86_64&maintainer=
+  72. https://pkgs.alpinelinux.org/packages?name=lighttpd&branch=edge&repo=&arch=x86_64&maintainer=
+  73. https://redmine.lighttpd.net/issues/1283
+  74. https://pkgs.alpinelinux.org/packages?name=nextcloud-initscript&branch=edge&repo=&arch=x86_64&maintainer=
+  75. https://pkgs.alpinelinux.org/packages?name=lighttpd&branch=edge&repo=&arch=x86_64&maintainer=
+  76. https://wiki.alpinelinux.org/wiki/Lighttpd_Advanced_security#Https_access
+  77. https://pkgs.alpinelinux.org/packages?name=nextcloud&branch=edge&repo=&arch=x86_64&maintainer=
+  78. https://pkgs.alpinelinux.org/packages?name=lighttpd&branch=edge&repo=&arch=x86_64&maintainer=
+  79. https://pkgs.alpinelinux.org/packages?name=nextcloud-default-apps&branch=edge&repo=&arch=x86_64&maintainer=
+  80. https://techjogging.com/create-letsencrypt-certificate-alpine-nginx.html
+  81. https://nextcloud.org/sync-clients/
+  82. https://wiki.alpinelinux.org/wiki/Template:Dead_link
+  83. https://nextcloud.org/support/android/
+  84. https://wiki.alpinelinux.org/wiki/Template:Dead_link
+  85. https://pkgs.alpinelinux.org/packages?name=nextcloud-client&branch=edge&repo=&arch=x86_64&maintainer=
+  86. https://nextcloud.com/webrtc/
+  87. https://nextcloud.com/webrtc/
+  88. https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management#Packages_and_Repositories
+  89. https://nextcloud.com/webrtc/
+  90. https://wiki.alpinelinux.org/w/index.php?title=Nextcloud&oldid=24163
+  91. https://wiki.alpinelinux.org/wiki/Special:Categories
+  92. https://wiki.alpinelinux.org/wiki/Category:Server
+  93. https://wiki.alpinelinux.org/wiki/Privacy_Policy#Copyright
+  94. https://wiki.alpinelinux.org/wiki/Alpine_Linux:Privacy_policy
+  95. https://wiki.alpinelinux.org/wiki/Alpine_Linux:About
+  96. https://wiki.alpinelinux.org/wiki/Alpine_Linux:General_disclaimer
+  97. https://www.mediawiki.org/

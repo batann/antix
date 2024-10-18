@@ -1,0 +1,84 @@
+= Contents =
+        - [[#PHP]]
+                        - [[#How to change configuration settings]]
+                        - [[#Running PHP as an Apache module]]
+                                                - [[#php_value name value]]
+                                                - [[#php_flag name on|off]]
+                                                - [[#php_admin_value name value]]
+                                                - [[#php_admin_flag name on|off]]
+                        - [[#Example #1 Apache configuration example]]
+                        - [[#Caution]]
+                        - [[#Other interfaces to PHP]]
+
+= PHP =
+
+=== How to change configuration settings ===
+
+=== Running PHP as an Apache module ===
+
+When using PHP as an Apache module, you can also change the configuration
+settings using directives in Apache configuration files (e.g. httpd.conf) and
+.htaccess files. You will need "AllowOverride Options" or "AllowOverride All"
+privileges to do so.
+
+There are several Apache directives that allow you to change the PHP
+configuration from within the Apache configuration files. For a listing of
+which directives are PHP_INI_ALL, PHP_INI_PERDIR, or PHP_INI_SYSTEM, have a
+look at the List of php.ini directives appendix.
+
+====== php_value name value ======
+
+    Sets the value of the specified directive. Can be used only with
+    PHP_INI_ALL and PHP_INI_PERDIR type directives. To clear a previously set
+    value use none as the value.
+
+        Note: Don't use php_value to set boolean values. php_flag (see below)
+        should be used instead.
+
+====== php_flag name on|off ======
+
+    Used to set a boolean configuration directive. Can be used only with
+    PHP_INI_ALL and PHP_INI_PERDIR type directives.
+
+====== php_admin_value name value ======
+
+    Sets the value of the specified directive. This can not be used in
+    .htaccess files. Any directive type set with php_admin_value can not be
+    overridden by .htaccess or ini_set(). To clear a previously set value use
+    none as the value.
+
+====== php_admin_flag name on|off ======
+
+    Used to set a boolean configuration directive. This can not be used in
+    .htaccess files. Any directive type set with php_admin_flag can not be
+    overridden by .htaccess or ini_set().
+
+=== Example #1 Apache configuration example ===
+
+<IfModule mod_php5w3m: Can't load dump.
+.c>
+  php_value include_path ".:/usr/local/lib/php"
+  php_admin_flag engine on
+</IfModule>
+<IfModule mod_php4.c>
+  php_value include_path ".:/usr/local/lib/php"
+  php_admin_flag engine on
+</IfModule>
+
+=== Caution ===
+
+PHP constants do not exist outside of PHP. For example, in httpd.conf you can
+not use PHP constants such as E_ALL or E_NOTICE to set the error_reporting
+directive as they will have no meaning and will evaluate to 0. Use the
+associated bitmask values instead. These constants can be used in php.ini
+
+=== Other interfaces to PHP ===
+
+Regardless of how you run PHP, you can change certain values at runtime of your
+scripts through ini_set(). See the documentation on the ini_set() page for more
+information.
+
+If you are interested in a complete list of configuration settings on your
+system with their current values, you can execute the phpinfo() function, and
+review the resulting page. You can also access the values of individual
+configuration directives at runtime using ini_get() or get_cfg_var().

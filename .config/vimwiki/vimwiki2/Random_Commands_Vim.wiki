@@ -1,0 +1,5 @@
+=Random Commands=
+
+
+:%g!/pattern/d		_deletes all lines without the pattern_
+

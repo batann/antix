@@ -1,0 +1,21 @@
+
+== SED ==
+
+	- replace from starting rs up to a space by an empty string, so that the rsXXX gets removed.
+<code>sed 's/^rs[^ ]*//' file</code>
+	- This supposed your rs was in the beginning of the line. If rs can appear anywhere in the file, use:
+<code>sed 's/\brs[^ ]*//' file</code>
+
+
+
+
+
+
+
+
+# Get the directory of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+# Now SCRIPT_DIR variable holds the directory path of the script
+echo "The script is executing from: $SCRIPT_DIR"
+
+

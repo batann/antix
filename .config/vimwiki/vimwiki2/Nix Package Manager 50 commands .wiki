@@ -1,0 +1,53 @@
+ = 50 command examples of Nix package Manager on a non NixOS Linux OS such as MX-Linux and a very brief explanation to each =
+
+
+1. `nix-env -qa`							: List all available packages in the Nix package manager.
+2. `nix-env -iA nixpkgs.packageName`					: Install a specific package from the Nix package manager.
+3. `nix-env -e packageName`						: Uninstall a specific package from the Nix package manager.
+4. `nix-env -u`								: Update all installed packages in the Nix package manager.
+5. `nix-env -iA nixpkgs.packageName --option binary-caches https://cache.nixos.org/`: Install a package from a specific binary cache.
+6. `nix-env -qaP packageName`						: Search for a specific package in the Nix package manager.
+7. `nix-env -qa --description packageName`				: Get the description of a specific package.
+8. `nix-env -qa --attr-path packageName`				: Get the attribute path of a specific package.
+9. `nix-env -qa --drv-path packageName`					: Get the derivation path of a specific package.
+10. `nix-env -qa --meta packageName`					: Get the metadata of a specific package.
+11. `nix-env -qa --out-path packageName`				: Get the output path of a specific package.
+12. `nix-env -qa --system`						: List all packages installed in the Nix package manager for the current system.
+13. `nix-env -qa --available`						: List all available packages in the Nix package manager.
+14. `nix-env -qa --installed`						: List all installed packages in the Nix package manager.
+15. `nix-env -qa --outdated`						: List all outdated packages in the Nix package manager.
+16. `nix-env -qa --closure packageName`					: Get the closure of a specific package.
+17. `nix-env -qa --references packageName`				: Get the references of a specific package.
+18. `nix-env -qa --requisites packageName`				: Get the requisites of a specific package.
+19. `nix-env -qa --reverse-dependencies packageName`			: Get the reverse dependencies of a specific package.
+20. `nix-env -qa --drv-path --meta --json`				: List all packages in JSON format.
+21. `nix-env -iA nixpkgs.packageName --dry-run`				: Simulate the installation of a specific package without actually installing it.
+22. `nix-env -iA nixpkgs.packageName --profile /path/to/profile`	: Install a specific package into a custom profile.
+23. `nix-env -iA nixpkgs.packageName --set-flag priority 100`		: Set the priority of a specific package.
+24. `nix-env -iA nixpkgs.packageName --set-flag priority 0`		: Reset the priority of a specific package.
+25. `nix-env -iA nixpkgs.packageName --set-flag keep`			: Mark a specific package as "keep" to prevent it from being garbage collected.
+26. `nix-env -iA nixpkgs.packageName --set-flag unkeep`			: Remove the "keep" mark from a specific package.
+27. `nix-env -iA nixpkgs.packageName --set-flag manual`			: Mark a specific package as "manual" to prevent it from being automatically removed during garbage collection.
+28. `nix-env -iA nixpkgs.packageName --set-flag unmanual`		: Remove the "manual" mark from a specific package.
+29. `nix-env -iA nixpkgs.packageName --set-flag broken`			: Mark a specific package as "broken" to prevent it from being used.
+30. `nix-env -iA nixpkgs.packageName --set-flag unbroken`		: Remove the "broken" mark from a specific package.
+31. `nix-env -iA nixpkgs.packageName --set-flag hidden`			: Mark a specific package as "hidden" to prevent it from being listed in searches.
+32. `nix-env -iA nixpkgs.packageName --set-flag unhidden`		: Remove the "hidden" mark from a specific package.
+33. `nix-env -iA nixpkgs.packageName --set-flag show-trace`		: Enable tracing for a specific package during installation.
+34. `nix-env -iA nixpkgs.packageName --set-flag no-trace`		: Disable tracing for a specific package during installation.
+35. `nix-env -iA nixpkgs.packageName --set-flag show-build-logs`	: Enable build logs for a specific package during installation.
+36. `nix-env -iA nixpkgs.packageName --set-flag no-build-logs`		: Disable build logs for a specific package during installation.
+37. `nix-env -iA nixpkgs.packageName --set-flag show-details`		: Enable detailed output for a specific package during installation.
+38. `nix-env -iA nixpkgs.packageName --set-flag no-details`		: Disable detailed output for a specific package during installation.
+39. `nix-env -iA nixpkgs.packageName --set-flag show-outputs`		: Enable output paths for a specific package during installation.
+40. `nix-env -iA nixpkgs.packageName --set-flag no-outputs`		: Disable output paths for a specific package during installation.
+41. `nix-env -iA nixpkgs.packageName --set-flag show-derivation`	: Enable derivation paths for a specific package during installation.
+42. `nix-env -iA nixpkgs.packageName --set-flag no-derivation`		: Disable derivation paths for a specific package during installation.
+43. `nix-env -iA nixpkgs.packageName --set-flag show-meta`		: Enable metadata for a specific package during installation.
+44. `nix-env -iA nixpkgs.packageName --set-flag no-meta`		: Disable metadata for a specific package during installation.
+45. `nix-env -iA nixpkgs.packageName --set-flag show-references`	: Enable references for a specific package during installation.
+46. `nix-env -iA nixpkgs.packageName --set-flag no-references`		: Disable references for a specific package during installation.
+47. `nix-env -iA nixpkgs.packageName --set-flag show-requisites`	: Enable requisites for a specific package during installation.
+48. `nix-env -iA nixpkgs.packageName --set-flag no-requisites`		: Disable requisites for a specific package during installation.
+49. `nix-env -iA nixpkgs.packageName --set-flag show-reverse-dependencies`: Enable reverse dependencies for a specific package during installation.
+50. `nix-env -iA nixpkgs.packageName --set-flag no-reverse-dependencies`: Disable reverse dependencies for a specific package during installation.

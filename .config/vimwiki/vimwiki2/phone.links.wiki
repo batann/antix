@@ -1,0 +1,51 @@
+= phone-bookmarks =
+
+
+    Top 15 Popular GitHub Repos
+        1. freeCodeCamp/freeCodeCamp
+        2. EbookFoundation/free-programming-books
+        3. jwasham/coding-interview-university
+        4. sindresorhus/awesome
+        5. kamranahmedse/developer-roadmap
+        6. public-apis/public-apis
+        7. donnemartin/system-design-primer
+        8. facebook/react
+        9. codecrafters-io/build-your-own-x
+        10. tensorflow/tensorflow
+        11. getify/You-Dont-Know-JS
+        12. trekhleb/javascript-algorithms
+        13. twbs/bootstrap
+        14. vinta/awesome-python
+        15. ohmyzsh/ohmyzsh
+
+
+
+https://github.com/kot-behemoth/awesome-joplin.git
+https://www.kali.org/docs/containers/using-kali-docker-images/
+https://kkalamarski.me/essential-neovim-plugins
+https://github.com/eoh-bse/minintro.nvim
+https://github.com/eoh-bse/nvim-setup
+https://github.com/kot-behemoth/awesome-joplin.git
+https://www.kali.org/docs/containers/using-kali-docker-images/
+https://github.com/bsundsrud/awesome-config.git
+http://www.drchip.org/astronaut/vim/align.html
+https://awesomewm.org/apidoc/?redirected_from_wiki=1
+http://offog.org/code/rawdog/
+https://github.com/willothy/nvim-cokeline
+http://www.drchip.org/astronaut/vim/index.html#NETRW
+https://github.com/luong-komorebi/Awesome-Linux-Software
+https://github.com/dfmgr
+https://github.com/dfmgr/vim
+https://github.com/groepl/Obsidian-Templates
+https://github.com/mhinz/vim-startify.git
+https://github.com/itchyny/lightline.vim.git
+https://github.com/tpope/vim-vinegar.git
+https://github.com/xolox/vim-session.git
+https://github.com/tpope/vim-obsession.git
+https://github.com/tpope/vim-obsession.git
+https://github.com/search?q=Tuxi&type=repositories
+https://github.com/junegunn/fzf.vim
+https://github.com/junegunn/fzf
+https://github.com/ibhagwan/fzf-lua
+https://github.com/alok/notational-fzf-vim
+https://github.com/luong-komorebi/Awesome-Linux-Software

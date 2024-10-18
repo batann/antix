@@ -1,0 +1,740 @@
+#!/bin/bash
+
+#	sudo apt update && sudo apt upgrade -y 
+#	apt install megatools neovim 
+ #dialog --backtitle "SETTING UP CONFIGS" --title "Startup everyday configuration" --msgbox "Following software will be installed:megatools; inorder to access configuration files, neovim and dialog. Am megarc file will be created, bashrc,init.vim,castero,rainbowstrea,rtv,youtube-dl configuration files will either be created or replaced to save you some time." 0 0
+
+#	echo "Here we go!!!"
+#	mkdir /home/batan/.config/nvim 
+##	sudo rm .bashrc
+#	touch /home/batan/.megarc
+#	echo "[Login]">>/home/batan/.megarc
+#	echo "Username=tel.petar@gmail.com">>/home/batan/.megarc
+#	echo "Password=Ba7an?12982">>/home/batan/.megarc
+#	echo "[UI]">>/home/batan/.megarc
+#	megaget /Root/a.tar.gz
+#	tar vfxz a.tar.gz
+#	mv init.vim /home/batan/.config/nvim
+#	sudo mv youtube-dl.conf /etc
+#	sudo mkdir /home/batan/.config/castero 
+#	sudo mkdir /home/batan/.config/rtv
+#	sudo mv castero.conf /home/batan/.config/castero
+#	sudo mv rtv.cfg /home/.config/rtv
+#	rtv --copy-mailcap
+
+
+
+
+dialog --backtitle "Your friendly Postinstall Script" --title "Hi there!" --msgbox "Hold on to your heameroids and relax,
+dont panic, I am here to help!" 7 60
+
+#dialog --title "Firewall" --yesno "Would you like to configure, 
+#allow to & from IP,firewall rule?" 7 60
+
+
+#OUTPUT="INPUT.txt"
+#>$OUTPUT
+
+#dialog --stdout --title "Firewall Rule" \
+#	--backtitle "Setup" \
+#--inputbox "Enter the IP address Nu, please?" 0 0 >$OUTPUT
+#CLIENTNAME=$(<$OUTPUT)
+#rm $OUTPUT
+#sudo ufw allow from $CLIENTNAME
+#sudo ufw allow to $CLIENTNAME
+#sudo ufw enable
+##sleep 3s
+
+
+
+if [[ $EUID -ne 0 ]]; then
+   	echo "This script must be run as root" 
+   	exit 1
+else
+	#Update and Upgrade
+#	echo "Updating and Upgrading"
+#	apt-get update && sudo apt-get upgrade -y
+
+	sudo apt-get install dialog
+	cmd=(dialog --separate-output --checklist "Please Select Software you want to install:" 22 76 16)
+	options=(1 "neovim" off    # any option can be set to default to "on"
+	         2 "ranger" off
+	         3 "Cmus" off
+	         4 "flatpak" off
+	         5 "git" off
+	         6 "phython3-pip" off
+	         7 "taskwarrior" off
+	         8 "bleachbit" off
+	         9 "sweeper" off
+	         10 "VLC Media Player" off
+	         11 "MPV" off
+	         12 "chromium" off
+	         13 "timewarrior" off
+	         14 "vit" off
+#FlatPaks:
+		 15 "bitwarden" off
+	         16 "ungoogled Chromium" off
+	         17 "Mega Sync Cloud" off
+		 18 "tutanota" off
+	 	 20 "Oolite" off
+		 21 "musikcube" off
+		 22 "browser-history" off
+		 23 "castero" off
+		 24 "rtv" off
+		 25 "rainbowstream" off
+		 26 "eg" off
+		 27 "bpytop" off
+		 28 "openssh-server" off
+		 29 "openssh-client" off
+		 30 "renameutils" off
+		 31 "mat2" off
+		 32 "0ad" off
+		 33 "youtube-dl" off
+		 34 "ffmpeg" off
+		 35 "buku" off		
+		 36 "megatools" off
+		 37 "bitwarden-cli" off
+		 200 "N Stacer" off
+		 201 "links2" off
+		
+	         202 "w3m" off
+		 203 "speedread" off
+		 204 "shalarm" off
+		 205 "trash-cli" off
+		 206 "speedtest-cli" off
+		 207 "kdeconnect" off
+		 208 "zsh" off
+		 209 "ufw" off
+                 210 "guake" off
+		 211 "tmux" off
+		 212 "yad" off
+         213 "kodi" off
+
+		 300 "enable ufw" off
+		 301 "firewall rule kdeconnect" off
+		 302 "firewall rule humankind" off
+
+		
+	  #Complete nvim plugins 
+		 
+#		38 "Install Projeoject Managemet" off
+#		40 "Vimwiki" off
+#		41 "Vim-taskwarrior" off
+#		42 "Taskwiki" off
+#		43 "Tabular" off
+#		44 "Calendar" off
+#		45 "Tagbar" off
+#		46 "Vim-plugin-AnsiEsc" off
+
+
+
+	 )
+
+
+
+		choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+		clear
+		for choice in $choices
+		do
+		    case $choice in
+			1)
+	            		#Install Neovim
+				echo "Installing Neovim"
+				apt install neovim -y
+				;;
+			
+
+			2)
+			    	#Install Ranger
+				echo "Installing Ranger"
+				apt install ranger -y
+         
+				;;
+    			3)	
+				#Install Cmus
+				echo "Installing Cmus"
+				apt install -y cmus
+				;;
+				
+			4)
+				#flatpak
+				echo "Installing flatpak & gnome-blah-blah-blah"
+				apt install flatpak gnome-software-plugin-flatpak
+				flatpak remote-add --if-not-exits flathub https://flathub.org/repo/flathub.flatpakrepo
+				;;
+
+			5)
+				#Install git
+				echo "Installing Git, please congiure git later..."
+				apt install git -y
+				;;
+			6)
+				#Python3-pip
+				echo "Installing python3-pip"
+				apt install python3-pip -y
+				;;
+			7)
+				#taskwarrior
+				echo "Installing taskwarrior"
+				apt install taskwarrior -y
+				;;
+			8)
+				#Bleachbit
+				echo "Installing BleachBit"
+				apt install bleachbit -y
+				;;
+			9)
+				#sweeper
+				echo "Installing sweeper"
+				apt install sweeper -y
+				;;
+			10)
+				#VLC Media Player
+				echo "Installing VLC Media Player"
+				apt install vlc -y
+				;;
+			11)
+				#MPV
+				echo "Installing MPV"
+				apt install mpv -y
+				;;
+			12)
+
+				#Chromiun
+				echo "Installing Chromium"
+				apt-get install chromium -y
+				;;
+			13)
+				#Timewarrior
+				echo "Installing Timewarrior"
+				apt-get install timewarrior -y
+				;;
+			14)
+
+				#Vit
+				echo "Installing Vit"
+				apt install vit -y
+				;;
+			15)
+
+				#Bitwarden
+				echo "Installing Bitwarden"
+				flatpak install flathub com.bitwarden.desktop -y
+				;;
+			16)
+				#Ungoogled Chromium cloned uBlock
+				echo "Installing Ungoogled-Chromium"
+				flatpak install flathub com.githuvb.Elston.UngoogledChromium -y
+				git clone https://github.com/gorhill/uBlock.git
+				cd ~/uBlock
+				git checkout master
+				make chromium
+				;;
+			17)
+
+				#MEGAsync
+				echo "Installing MEGAsync"
+				flatpak install flathub nz.mega.MEGAsync -y
+				;;
+			18)
+				#Tutanota
+				echo "Installing Numic Icons"
+				flatpak install flathub com.tutanota.Tutanota -y
+				;;
+			20)
+				#Oolite
+				echo "Installing Oolite"
+				wget https://github.com/OoliteProject/oolite/releases/download/1.90/oolite-1.90.linux-x86_64.tgz
+				tar -xvzf oolite-1.90.linux-x86_64.tgz
+				./oolite-1.90.linux-x86_64.run
+				;;
+			21)	
+				#Musikcube
+				wget https://github.com/clangen/musikcube/releases/download/0.98.0/musikcube_standalone_0.98.0_amd64.deb
+				dpkg -i musikcube_standalone_0.98.0_amd64.deb
+				apt-get install -f
+				;;
+
+			22)	
+				#Browser-history
+				echo "Installing Browser-History"
+				pip3 install browser-history
+				;;
+
+			23)
+				#Castero
+				echo "Installing Castero"
+				pip3 install castero 
+				;;
+			
+			24)     
+				#RTV
+				echo "Installing RTV"
+				pip3 install rtv
+				rtv --copy-config
+				rtv --copy-mailcap
+				"oauth_client_id = E2oEtRQfdfAfNQ
+				oauth_client_secret = praw_gapfill
+				oauth_redirect_uri = http://127.0.0.1:65000/"
+
+				;;
+			25)	
+				#Rainbow Stream
+				echo "Installing Rainbow Stream"
+				pip3 install rainbowstream
+				;;
+	
+			26)	
+				#eg
+				echo "Installing eg!"
+				pip3 install eg
+
+				;;
+
+			27)	
+				#bpytop
+				echo "Installing btop"
+				pip3 install bpytop -y
+
+				;;
+
+			28)	
+				#Openssh-server
+				echo "Installing opensssh-server"
+				apt install openssh-server -y
+
+				;;
+
+			
+			29)	
+				#openssh-client
+				echo "Installing openssh-client"
+				apt install openssh-client -y
+
+				;;
+
+			30)	
+				#renameutils
+				echo "Installing renameutils"
+				apt install renameutils -y
+
+
+				;;
+			31)	
+				#mat2
+				echo "Installing mat2"
+				apt install mat2
+
+				;;
+
+			32)	
+				#0AD
+				echo "Installing Oad"
+				apt install 0ad -y
+
+				;;
+
+			33)	
+				#youtube-dl
+				apt install youtube-dl
+				touch /etc/youtube-dl.conf
+				sudo echo "-x --prefer-ffmpeg --audio-format mp3 --download-archive ~/Documents/archive.txt"
+
+				;;
+			34)	
+				#ffmpeg
+				echo "Instaling ffmpeg"
+				apt install ffmpeg
+
+				;;
+			35)	
+				#Install buku
+				echo "Installing buku, bookmark manager"
+				pip install buku
+
+				;;
+
+			36)
+				#Install Megatools
+				echo "Installing Megatools"
+				apt install megatools -y
+
+				;;
+
+			37)
+				#Install Bitwarden-cli
+				echo "Installing bitwarden-cli"
+				wget https://github.com/bitwarden/cli/releases/download/v1.0.1/bw-linux-1.0.1.zip
+				unzip bw-linux-1.0.1.zip
+				sudo install bw /usr/local/bin/
+				
+				;;
+			200)
+				#stacer
+				echo "Installing stacer and getting tired off repetitive tasks"
+				apt install stacer
+				;;
+
+			201)
+				#links2
+				echo "Installing links2, have mercy"
+				apt install links2
+				;;
+			
+			202)
+				#Install w3m
+				echo "Installing w3m"
+				apt install -y w3m
+				;;
+			203)
+				#speedread
+				echo "Cloning text reader for dyslexic linux users"
+				git clone https://github.com/pasky/speedread.git
+				;;
+
+			204)
+				#shalarm
+				echo "Cloning shalarm"
+				git clone https://github.com/jahendrie/shalarm.git
+				;;
+			205)
+				#trash-cli
+				echo "Installing trash-cli"
+				apt install trash-cli
+				;;
+			206)
+				#speedtest-cli
+				echo "Installing speedtest-cli, you are with telstra, only god knows why you need this tool!"
+				apt install speedtest-cli
+				;;
+			
+			207)
+				#kdeconnect
+				echo "Installing kde-connect with your mom"
+				apt install kdeconnect
+				;;
+
+			208)
+				#zsh
+				echo "Installing more software you still dont know how to use, ZSH!"
+				apt install zsh
+				;;
+			209)
+				#ufw
+				echo "WIth your browsing habits it will not make a difference, Installing ufw!"
+				apt install ufw
+				;;
+		
+			210)
+				#guake
+				echo "Installing guake"
+				apt install guake
+				;;
+
+			
+			211)
+				#tmux
+				echo "Installing yet another app you dont know how to use, tmux"
+				apt install tmux
+				;;
+			212)
+				#yad
+				echo "It feels like, Installing the entire software repository, I mean yad"
+				apt install yad
+				;;
+            213)
+                #kodi
+                echo "Installing kodi"
+                apt install kodi
+                ;;
+
+			300)
+				#enable ufw
+				ech "enabling ufw firewall"
+				ufw enable
+				;;
+			301)
+				#firewall rule kdeconnect
+				ufw allow 1714:1761/udp
+				ufw allow 1714:1761/tcp
+				ufw reload
+				;;
+			302)
+				#firewall rule humankind
+				ufw allow from 192.168.1.35
+				ufw allow to 192.168.1.35
+				ufw reload
+			
+		esac
+	done
+fi
+
+
+
+
+
+dialog --title "Compleate Suit or Individual Vim Plugins?" --yesno "If you prefer the compleate PM Suit with indiscriminate instalation of Vim Plugins click OK, on the contrary you will be given the chance to have them idividually integrated with Your Neovim according to your needs!" 30 60 
+
+#if [[ $? eq 0 ]]; then
+dialog --backtitle "PM Tools" --title "Project Management Suit" --clear "$@" --checklist "Please confirm the installation!" 25 35 30 38 "Project Management Suit" off
+
+if [ $? eq=0 ] ; then
+			 
+##	choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+#	clear
+#	for choice in $choices
+#	do
+#	case $choice in
+
+ 					
+	echo 'Installing all 7 plugins'
+				
+	mkdir /home/batan/.config/nvim 
+
+	mkdir /home/batan/.config/nvim/pack 
+
+	mkdir /home/batan/.config/nvim/pack/vendor/ 
+		
+	mkdir /home/batan/.config/nvim/pack/vendor/start 
+
+	git clone https://github.com/vimwiki/vimwiki.git /home/batan/.config/nvim/pack/vendor/start/vimwiki
+
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/vimwiki/doc' -c quit 
+
+	git clone https://github.com/itchyny/calendar.vim.git /home/batan/.config/nvim/pack/vendor/start/calendar
+
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/calendar/doc' -c quit
+
+	git clone https://github.com/tools-life/taskwiki.git /home/batan/.config/nvim/pack/vendor/start/taskwiki
+
+	nvim -c 'helptags /home/batan/.config/nvim/pack/vendor/start/taskwiki/doc' -c quit
+
+	git clone https://github.com/powerman/vim-plugin-AnsiEsc /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc
+
+	nvim -c 'helptags /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc/doc' -c quit
+
+	git clone https://github.com/majutsushi/tagbar /home/batan/.config/nvim/pack/vendor/start/tagbar
+
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/tagbar/doc' -c quit
+
+	git clone https://github.com/farseer90718/vim-taskwarrior /home/batan/.config/nvim/pack/vendor/start/vim-taskwarrior
+
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/vim-taskwarrior/doc' -c quit
+
+	git clone https://github.com/godlygeek/tabular.git /home/batan/.config/nvim/pack/vendor/start/tabular
+				
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/vim-tabular/doc' -c quit
+
+	git clone https://github.com/dhruvasagar/vim-table-mode.git /home/batan/.config/nvim/pack/vendor/start/table-mode
+	nvim -c 'helptags ~/.config/nvim/pack/vendor/start/vim-table-mode/doc' -c quit
+
+
+		
+
+else
+
+
+
+##############################################################################################
+
+
+#dialog --aspect 12 --title "Please Consider" --trim "$@" --msgbox "If you during the previous step have the Project Management Tool installed , it is safe to ignore the following seven Vim plugins, on the contrary  feel free to install them individually." 0 0
+
+
+dialog --extra-button --title "Neovim Plugins" --checklist "Select The Vim Plugins you would like to have integrated with your Neovim:" 30 55 16
+#	cmd=(dialog --separate-output --checklist "Please Select Individual Vim-plugins you n\
+#		would like to be installed:" 22 76 16)
+	
+	options=(40 "Vimwiki" off
+		41 "Vim-taskwarrior" off
+		42 "Taskwiki" off
+		43 "Tabular" off
+		44 "Calendar" off
+		45 "Tagbar" off
+		46 "Vim-plugin-AnsiEsc" off
+		47 "table-mode" off
+
+
+	 )
+
+
+
+##############################################################################################
+
+
+		choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+		clear
+		for choice in $choices
+		do
+		    case $choice in	
+	40) 
+		#Install Vimwiki
+		echo "Installing Vimwiki"
+		mkdir /home/batan/.config/nvim/pack 
+		mkdir /home/batan/.config/nvim/pack/vendor/ 
+		mkdir /home/batan/.config/nvim/pack/vendor/start 
+		git clone https://github.com/vimwiki/vimwiki.git /home/batan/.config/nvim/pack/vendor/start/vimwiki
+		nvim -c 'helptags home/batan/.config/nvim/pack/vendor/start/vimwiki/doc' -c quit 
+		;;
+
+	41)
+		#Install Vim-taskwarrior
+		echo "Installing Vim-taskwarrior"			
+		git clone https://github.com/itchyny/calendar.vim.git /home/batan/.config/nvim/pack/vendor/start/calendar
+		nvim -c 'helptags ~/.config/nvim/pack/vendor/start/calendar/doc' -c quit
+				;;
+	42)	
+		#Install Taskwiki
+		echo "Installing Taskwiki"
+		git clone https://github.com/tools-life/taskwiki.git /home/batan/.config/nvim/pack/vendor/start/taskwiki
+		nvim -c 'helptags /home/batan/.config/nvim/pack/vendor/start/taskwiki/doc' -c quit
+				;;
+
+	43) 
+		#Install Tabular
+		echo "Installing tagbar"
+		git clone https://github.com/godlygeek/tabular.git /home/batan/.config/nvim/pack/vendor/start/tabular
+		nvim -c 'helptags ~/.config/nvim/pack/vendor/start/vim-tabular/doc' -c quit
+			;;
+
+	44)	
+		#Install Calendar
+		echo "Installing Calendar"	
+		git clone https://github.com/itchyny/calendar.vim.git /home/batan/.config/nvim/pack/vendor/start/calendar
+		nvim -c 'helptags ~/.config/nvim/pack/vendor/start/calendar/doc' -c quit
+			;;
+
+	45)
+		#Install Tagbar
+		echo "Installing Tagbar"
+		git clone https://github.com/majutsushi/tagbar /home/batan/.config/nvim/pack/vendor/start/tagbar
+		nvim -c 'helptags ~/.config/nvim/pack/vendor/start/tagbar/doc' -c quit
+			;;
+	46)	
+		#Install Vim-plugin-AnsiEsc
+		echo "Not sure why but am installing Vim-plugin-AmsiEsc"
+		git clone https://github.com/powerman/vim-plugin-AnsiEsc /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc
+		nvim -c 'helptags /home/batan/.config/nvim/pack/vendor/start/vim-plugin-AnsiEsc/doc' -c quit
+
+			;;
+	47)
+		#Install table-mode
+		echo "Installing Table-Mode"
+		git clone https://github.com/dhruvasagar/vim-table-mode.git /home/batan/.config/nvim/pack/vendor/start/table-mode
+		nvim -c 'helptags /home/batan/.config/nvim/pack/vendor/start/vim-table-mode/doc' -c quit
+			;;
+
+	
+
+########################################################################################
+
+
+
+
+
+	    esac
+	done
+fi					
+
+			
+dialog --title "Vimix Theme" --checklist  "Install Vimix Themes and Icons:" 22 76 16 
+
+	options=( 100 "Vimix-Themes" off
+		  101 "Vimix  Icons" off
+		  102 "Install graphne Theme" off
+		  103 "Obsidian-2-gtk-theme" off
+	  	  104 "Obsidian-icon-Theme" off
+		  110 "Falkon Browser" off
+		  111 "Speedtest-cli" off
+		  112 "Trash-cli" off
+		  113 "Awsom Vim Colorschemes" off
+		  114 "shalarm" off
+		  115 "VideoDownloader" off
+	  )
+
+
+
+	choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+	clear
+	for choice in $choices
+	do
+	case $choice in
+
+		 100)	#Install vimix theme
+			git clone https://github.com/vinceliuice/vimix-gtk-themes.git
+			cd vimix-gtk-themes
+			./install.sh -t all -s all
+			cd
+			;;
+
+		101)
+			#Install vimix Icon
+			 git clone https://github.com/vinceliuice/vimix-icon-theme.git
+			 cd vimix-icon-theme
+			 ./install.sh -a
+			 cd
+			;;
+		102)	
+				
+			#Install Graphne Theme
+			git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
+			cd Graphite-gtk-theme
+			./install.sh 
+			cd
+			;;
+		103)
+			#Obsidian Theme
+			echo "Installing Obsidian Theme...!"
+			apt install obsidian-2-gtk-theme -y
+			;;
+
+		104)
+			#Obsidian Icon Theme
+			echo "Installing Obsidian-Icon-Theme"
+			apt install -y obsidian-icon-theme
+			;;
+
+		110)
+			#Falkon
+			echo "Installing falkon browser"
+			apt install falkon -y
+			;;
+		111)
+			#Speedtest
+			echo "Installing speedtest-cli"
+			apt install -y speedtest-cli
+			;;
+		112)
+			#Trash-cli
+			echo "Installing trash-cli"
+			apt install trash-cli -y
+			;;
+		113)
+			#Awsom Vim COlorschemes
+			echo "Cloning Awsom VIm Colorscheems"
+			git clone https://github.com/rafi/awesome-vim-colorschemes.git /home/batan/.config/nvim/pack/vendor/start/awsome-vim-colorschemes
+			;;
+
+
+		114)
+			#shalarm
+			echo "cloning shalarm"
+			git clone https://github.com/jahendrie/shalarm.git
+			;;
+
+
+		115)
+			#VideoDownloader
+			echo "Install Videodownloader"
+			flatpak install flathub com.github.unrud.VideoDownloader
+			;;
+
+
+
+
+		esac
+		
+
+	done
+
+s

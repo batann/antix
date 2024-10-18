@@ -1,0 +1,4 @@
+https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
+https://github.com/clangen/musikcube/releases/download/3.0.2/musikcube_3.0.2_linux_x86.tar.bz2
+https://app.tuta.com/desktop/tutanota-desktop-linux.AppImage
+https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-125.0a1.en-US.linux-x86_64.tar.bz2

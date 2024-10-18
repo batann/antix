@@ -1,0 +1,6 @@
+echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
+### Enhanced Version ###
+sudo apt install notion-app-enhanced
+
+### Standard Version ###
+sudo apt install notion-app

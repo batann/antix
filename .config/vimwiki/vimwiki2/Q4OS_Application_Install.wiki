@@ -1,0 +1,222 @@
+= Q4OS Application install howto, general recommendations =
+
+= Contents =
+    - [[#Q4OS Application install howto, general recommendations]]
+        - [[#1. Introduction]]
+        - [[#2. Basic installation rules in short]]
+        - [[#3. Installer]]
+        - [[#3.1. Standard setup using Apt]]
+        - [[#3.2. Simple setup mode]]
+        - [[#3.3. User setup mode]]
+        - [[#4. Directory tree]]
+        - [[#5. Desktop icons]]
+        - [[#6. Menu entries]]
+        - [[#7. Configuration files]]
+        - [[#8. Registration]]
+        - [[#9. Internet repository]]
+        - [[#10. Update mechanism]]
+        - [[#11. Porting existing applications]]
+        - [[#12. Windows applications]]
+
+
+== 1. Introduction ==
+
+This developer manual generally describes important rules for installing Unix-like application to Q4OS operating system, alongside clarifies essential install steps and also help you to understand Q4OS basics and design.
+
+Q4OS is desktop operating system designed to offer compact and clean user interface, simple accessories and to serve stable foundation for running complex third-party applications. Since Q4OS is a Debian/Linux based OS, it uses "Apt" package management system and related tools to maintain system health and clean.
+
+We advise you to use QT libraries API to program your applications. If Application requires some library or other software, which is not part of base Q4OS installation, the easiest way is pick it and install as a system shared from official Q4OS repository. Another way is to add library directly into your setup package, decreasing dependency on third-party software. It is possible to run Linux executables without restriction or modification.
+
+
+
+== 2. Basic installation rules in short ==
+
+    Any Application file may not affect other system files or directory structure !
+
+    Install Applications using "Apt" package management system. Two exceptions are enabled, see "simple setup mode" and "user setup mode" bellow.
+
+    All Application files are located in "/program_files/appname" directory, some rare exceptions are specified in this document.
+
+    System menu entries in "/usr/share/apps/q4os_system/q4os_menus_applications_merged/".
+
+    System menu links in "/usr/share/applications/".
+
+    System desktop icons in "/opt/trinity/share/apps/kdesktop/Desktop/".
+
+    System configuration files in "/program_files/appname/" or "/etc/appname/".
+
+    Registration via "/usr/share/apps/q4os_system/q4_regs/appname.qrg" file is necessary.
+
+    User menu entries and links in "$HOME/.q4data/applnk/Programs/".
+
+    User desktop icons in "$HOME/Desktop/".
+
+    User configuration files in "$HOME/.appname/".
+
+    Placing some files somewhere in user's "$HOME/" directories structure is possible.
+
+    Using "/tmp/" for temporary operations is recommended.
+
+    Placing file to other than specified location is allowed only in absolutely necessary cases, such files must be controlled via "Apt" packaging system.
+
+    Q4OS allows you to install application bypassing "Apt" system using "simple setup mode", installer in this mode must absolutely strictly pass criteria quoted here.
+
+    It is possible to install user specific application in "user setup mode", installer in this mode must pass criteria quoted here.
+
+
+
+== 3. Installer ==
+
+Install job should be automated by user comfortable installer to let user to answer questions, take some more installation steps like environment checks, pre/post-install actions, another optional steps and finally install the software. Packages can be packed together and joined to installer creating single self-extracting executable.
+
+
+== 3.1. Standard setup using Apt ==
+
+The preferred way to distribute your application is to create Apt "*.deb" packages (or single package) installable using "apt" or "dpkg" commands, which are part of basic system installation. If Application requires some external library, which is included in official Q4OS repository, you can set it as dependency and installer automatically takes care about proper setup. Installer can install/remove packages from official repositories standard "Apt" way using command-line tools as "dpkg" or "apt", any administrative operations need to be executed via "sudo" command. Using "Apt" capabilities and advanced functions, significantly make easier developing and distributing your software. For detailed resource on "Apt" package management system look at http://www.debian.org/doc/debian-policy.
+
+You can take and modify simple installer skeleton from "Q4OS Development Pack" software now, we plan to release official Q4OS installer in the future.
+
+Advantages of using "Apt" package management system:
+
+    control over any Application file
+
+    take care about installation of dependent software
+
+    close integration to system, keeping it clean
+
+    watch dependencies, avoid package conflicts
+
+    easy uninstall process
+
+    easy update mechanism
+
+    possibility to create your own Internet repository
+
+    possibility to order your app into Q4OS software centre
+
+Notes about installer actions:
+
+Application installer has to process at minimum the following operations:
+
+    Create "program_files/appname" directory.
+
+    Copy application files and directory structure into "program_files/appname".
+
+    Create menu and desktop entries.
+
+    Register application to the system.
+
+Optional operations:
+
+    Create configuration files.
+
+    Adding some system users and groups.
+
+    Other operations.
+
+Important restrictions !
+
+    Application may not affect any Q4OS system files and structure.
+
+    All files should be installed into permitted folders only.
+
+
+== 3.2. Simple setup mode ==
+
+Q4OS allows installer to only copy application files into "/program_files/appname" tree without packaging and installing with "Apt", but you loose some noted advantages in this case. However the basic rules must be kept:
+
+    All files belonging to application must be located in "program_files/appname" and/or user's "$HOME/.program_files/appname" directory.
+
+    Register application into the system using "/usr/share/apps/q4os_system/q4_regs/appname.qrg" file.
+
+    Menu entries located in "$HOME/.q4data/applnk/Programs" directory.
+
+    Desktop icons located in "$HOME/Desktop".
+
+    Other application files can be stored somewhere in user's "$HOME/" directory structure.
+
+    Any other file locations and other exceptions are strictly forbidden in "simple setup mode".
+
+
+== 3.3. User setup mode ==
+
+Non-privileged users will use this mode for installations, all Application files are located strictly in user's "$HOME/" directory structure. It is recommended to use "$HOME/.program_files/appname" folder as much as possible.
+
+
+
+== 4. Directory tree ==
+
+According to basic Q4OS rules, any file (executables, libraries, data, ...) belonging to an application has to be located in application specific folder "/program_files/appname" with rare exceptions (menu and desktop entries, configuration) all described in this document. "/program_files" folder is intended to be independent on operating system files and structure.
+
+One necessary step for installer is to create folder "/program_files/appname" and copy all application data into it. Subtree structure is optional, for example properly ported Unix applications will contain standard subdirectories like "bin, share, var, etc, ..."
+
+
+
+== 5. Desktop icons ==
+
+    Desktop icons folder - global:
+    "/opt/trinity/share/apps/kdesktop/Desktop/"
+    Directory contains "*.desktop" files - links to desktop icons, for more info see http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html.
+
+    Desktop icons folder - user:
+    "$HOME/Desktop/"
+    Directory contains "*.desktop" files - links to desktop icons.
+
+
+
+== 6. Menu entries ==
+
+Installer should create some "Start menu" shortcuts, any entry can be global (for all users) or user specific. Important system directories intended to write to:
+
+    Menu entries - global:
+    "/usr/share/apps/q4os_system/q4os_menus_applications_merged/"
+    Directory contains xml file "appname.menu", for more info see http://standards.freedesktop.org/menu-spec/menu-spec-latest.html.
+
+    Menu links - global:
+    "/usr/share/applications/"
+    Directory contains "*.desktop" files - links to menu items, for more info see http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html.
+
+    Menu entries - user:
+    "$HOME/.q4data/applnk/Programs"
+    Directory contains user menu items, organized into real subdirectory structure. Any directory can contain subdirectory (submenu) or "*.desktop" file (menu item). Users are allowed to add, remove or change menu items modifying this directory structure and files contained.
+
+
+
+== 7. Configuration files ==
+
+Configuration should be stored somewhere in "/program_files/appname/", or in "/etc/appname/" directory structure. User specific configuration in "$HOME/.appname/".
+
+
+
+== 8. Registration ==
+
+Applications have to be registered by describing "appname.qrg" file in "/usr/share/apps/q4os_system/q4_regs/q4apps" directory. Installer create new file "/usr/share/apps/q4os_system/q4_regs/appname.qrg" copying skeleton file "app.qrg.template" and substitute all fields properly. This step is important to maintain proper information about your application, *.qrg file is a simple, but important interface between your application and Q4OS.
+
+
+
+== 9. Internet repository ==
+
+You can have your own Internet repository for easy application updates or to order your app in the Q4OS software centre. To learn how create your own GPG signed Internet software repository start here http://wiki.debian.org/HowToSetupADebianRepository.
+
+
+
+== 10. Update mechanism ==
+
+There is no recommended way how to solve this quite complicated task. You can use custom software repository and package management system to simplify developer's life. If you need some specific functions, you have to code custom updater. Doing any update action, it is important to ensure keeping Apt package system in clean consistent state.
+
+
+
+== 11. Porting existing applications ==
+
+Q4OS handles typical Unix filesystem structure, any native Linux executable can be run without modification, so porting Unix applications is fairly easy. The easiest, but not clean way would be simply run "make install", however you have to take care about Q4OS installation rules above.
+
+At minimal, you should modify Makefile to add menu and desktop entries for Q4OS and take care of registration to the system. Locating installed files in "program_files/appname" folder is strongly recommended, although not necessary. Installing with user comfortable installer improve user's comfort and make distribution of your application easier.
+
+
+
+== 12. Windows applications ==
+
+It is possible to run Windows applications within Q4OS using Wine compatibility layer. There is Wine installer available at Q4OS website, development utilities are installable from basic Q4OS repositories. Developers can use great Wine debug tools and WineLib to adapt even to compile Windows applications for Q4OS. See Wine Developer's Guide, detailed resource for development with Wine. At the moment we are working at Wine optimization and close integration into the Q4OS system.
+
+
+

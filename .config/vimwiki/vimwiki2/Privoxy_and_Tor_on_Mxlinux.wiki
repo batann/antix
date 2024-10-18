@@ -1,0 +1,89 @@
+= Contents =
+        - [[#Privoxy and Tor on Mxlinux]]
+                        - [[#Step 1: Install Privoxy and Tor]]
+                        - [[#Step 2: Configure Privoxy]]
+                        - [[#Step 3: Start and Enable Privoxy]]
+                        - [[#Step 4: Configure Your Web Browser]]
+                        - [[#Step 5: Configure Tor]]
+                        - [[#Step 6: Start Tor]]
+                        - [[#Step 7: Test Your Configuration]]
+
+= Privoxy and Tor on Mxlinux =
+_According to ChatGPT_
+
+Sure, I can provide you with instructions on how to install and configure Privoxy and Tor on a Debian-based Linux system like MX Linux. Privoxy is a web proxy server that can be used to filter and modify web page content, while Tor is a network that enables anonymous communication. Together, they can provide enhanced privacy and security when browsing the web.
+
+*Here are the steps to install and configure Privoxy and Tor:*
+
+=== Step 1: Install Privoxy and Tor ===
+
+Open a terminal window.
+
+Update your package list to ensure you have the latest package information:
+
+<pre>sudo apt update</pre>
+
+*Install Privoxy and Tor:*
+
+
+sudo apt install privoxy tor
+
+=== Step 2: Configure Privoxy ===
+
+*Open the Privoxy configuration file in a text editor:*
+
+sudo nano /etc/privoxy/config
+
+In the Privoxy configuration file, locate the line that begins with "listen-address." By default, it's set to listen only on the local loopback address (127.0.0.1). If you want to use Privoxy on the same machine, you can leave it as is. However, if you want to use Privoxy on other devices in your network, you can change it to:
+
+listen-address 0.0.0.0:8118
+
+This will allow Privoxy to accept connections from any IP address on port 8118.
+
+Save the configuration file and exit the text editor.
+
+=== Step 3: Start and Enable Privoxy ===
+
+*Start Privoxy:*
+
+sudo systemctl start privoxy
+
+Enable Privoxy to start on boot:
+
+sudo systemctl enable privoxy
+
+=== Step 4: Configure Your Web Browser ===
+
+Open your web browser's proxy settings.
+
+Set the HTTP proxy to use the IP address and port where Privoxy is listening, which is usually "127.0.0.1" and port "8118."
+
+=== Step 5: Configure Tor ===
+
+Tor should be automatically configured to work with Privoxy. You can verify this by checking the Tor configuration file at /etc/tor/torrc. Look for the following lines:
+
+SocksPort 9050
+SocksPort 192.168.0.1:9100 # Only accept connections from the local LAN
+
+These lines should route Tor traffic through Privoxy.
+
+=== Step 6: Start Tor ===
+
+Start Tor:
+
+*sudo systemctl start tor*
+
+Enable Tor to start on boot:
+
+sudo systemctl enable tor
+
+=== Step 7: Test Your Configuration ===
+
+You can test your setup by visiting the following URL in your web browser: https://check.torproject.org/. It should confirm that you are using Tor for anonymous browsing.
+
+That's it! You've successfully installed and configured Privoxy and Tor on your Debian-based Linux system like MX Linux. Your web traffic should now be routed through the Tor network for enhanced privacy and anonymity.
+
+
+
+
+

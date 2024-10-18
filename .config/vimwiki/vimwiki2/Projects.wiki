@@ -1,0 +1,31 @@
+= Projects =
+
+== Conky ==
+[[Conky]]
+[[conkyrc]]
+== Minimal Linux OS Scripts ==
+[[Minimal_linux_OS]]
+== RANDOM_COMMANDS_SCRIPTING ==
+[[RANDOM_COMMANDS_SCRIPTING]]
+== Extention ==
+[[Extention]]
+== Bash Scripts ==
+[[mp3_downloader]]
+==RSS WEB PAGE==
+[[Rss_Web_Page]] _Bard_
+[[rss_page]] _Code Pilot_
+== phone.links ==
+[[phone.links]]
+== tput ==
+[[tput]]
+== Rename ==
+[[Rename]]
+== Kitty ==
+[[Kitty]]
+== Notion_repo ==
+[[Notion_repo]]
+== Cubic ==
+[[Cubic]]
+== fzf ==
+[[fzf]]
+

@@ -1,0 +1,168 @@
+= Contents =
+                - [[#1. **Update Alpine Linux:**]]
+                - [[#2. **Install Dependencies:**]]
+                - [[#3. **Configure MariaDB:**]]
+                - [[#4. **Create a Database for Nextcloud:**]]
+                - [[#5. **Download and Extract Nextcloud:**]]
+                - [[#6. **Configure Nginx:**]]
+                - [[#7. **Set Permissions:**]]
+                - [[#8. **Start Nginx and PHP-FPM:**]]
+                - [[#9. **Complete the Nextcloud Setup:**]]
+                - [[#10. **Secure Your Nextcloud:**]]
+
+
+
+
+Installing Nextcloud on Alpine Linux involves setting up a LEMP (Linux, Nginx, MySQL/MariaDB, PHP) stack, configuring the necessary dependencies, and then installing and configuring Nextcloud itself. Here are the steps to install Nextcloud on Alpine Linux:
+
+== 1. **Update Alpine Linux:** ==
+
+   Ensure your system is up to date by running:
+
+   ```sh
+   sudo apk update
+   sudo apk upgrade
+   ```
+
+== 2. **Install Dependencies:** ==
+
+   Install the necessary packages for the LEMP stack (Nginx, MariaDB, PHP):
+
+   ```sh
+   sudo apk add nginx mariadb mariadb-client php7 php7-fpm php7-json php7-mysqli php7-ctype php7-dom php7-xml php7-curl php7-gd php7-mbstring php7-session php7-iconv php7-zip php7-intl
+   ```
+
+== 3. **Configure MariaDB:** ==
+
+   Set up MariaDB by running the following commands:
+
+   ```sh
+   sudo mysql_install_db --user=mysql --datadir=/var/lib/mysql
+   sudo rc-service mariadb start
+   sudo mysql_secure_installation
+   ```
+
+   Follow the prompts to secure your MariaDB installation by setting a root password and answering "Y" to the security-related questions.
+
+== 4. **Create a Database for Nextcloud:** ==
+
+   Log in to the MariaDB server as the root user:
+
+   ```sh
+   mysql -u root -p
+   ```
+
+   Create a database for Nextcloud and a user with the necessary privileges:
+
+   ```sql
+   CREATE DATABASE nextcloud;
+   CREATE USER 'nextclouduser'@'localhost' IDENTIFIED BY 'your_password';
+   GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextclouduser'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+
+   Replace `'your_password'` with a strong password.
+
+== 5. **Download and Extract Nextcloud:** ==
+
+   Navigate to your web server root directory and download Nextcloud:
+
+   ```sh
+   cd /var/www/localhost/htdocs
+   wget https://download.nextcloud.com/server/releases/latest.tar.bz2
+   tar -xvjf latest.tar.bz2
+   ```
+
+== 6. **Configure Nginx:** ==
+
+   Create a new Nginx configuration file for Nextcloud:
+
+   ```sh
+   sudo nano /etc/nginx/conf.d/nextcloud.conf
+   ```
+
+   Add the following configuration (replace `your_domain` with your actual domain or IP address):
+
+   ```nginx
+   server {
+       listen 80;
+       server_name your_domain;
+
+       root /var/www/localhost/htdocs/nextcloud/;
+       index index.php;
+
+       location / {
+           rewrite ^ /index.php$request_uri;
+       }
+
+       location ~ ^/(?:build|tests|config|lib|3rdparty|templates|data)/ {
+           deny all;
+       }
+
+       location ~ ^/(?:\.|autotest|occ|issue|indie|db_|console) {
+           deny all;
+       }
+
+       location ~ ^/(?:index|remote|public|cron|core/ajax/update|status|ocs/v[12]|updater/.+|ocs-provider/.+) {
+           fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+           set $path_info $fastcgi_path_info;
+           try_files $fastcgi_script_name =404;
+           include fastcgi_params;
+           fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+           fastcgi_param PATH_INFO $path_info;
+           fastcgi_param HTTPS on;
+           fastcgi_param modHeadersAvailable true;
+           fastcgi_param front_controller_active true;
+           fastcgi_pass php-handler;
+           fastcgi_intercept_errors on;
+           fastcgi_request_buffering off;
+       }
+
+       location ~ ^/(?:updater|ocs-provider)(?:$|/) {
+           try_files $uri/ =404;
+           index index.php;
+       }
+
+       location ~ \.php(?:$|/) {
+           include fastcgi_params;
+           fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+           fastcgi_param PATH_INFO $fastcgi_path_info;
+           fastcgi_param HTTPS on;
+           fastcgi_param modHeadersAvailable true;
+           fastcgi_param front_controller_active true;
+           fastcgi_pass php-handler;
+           fastcgi_intercept_errors on;
+           fastcgi_request_buffering off;
+       }
+   }
+   ```
+
+   Save the file and exit the text editor.
+
+== 7. **Set Permissions:** ==
+
+   Set the correct permissions for the Nextcloud directory:
+
+   ```sh
+   chown -R nginx:nginx /var/www/localhost/htdocs/nextcloud
+   ```
+
+== 8. **Start Nginx and PHP-FPM:** ==
+
+   Start the Nginx and PHP-FPM services:
+
+   ```sh
+   sudo rc-service nginx start
+   sudo rc-service php-fpm7 start
+   ```
+
+== 9. **Complete the Nextcloud Setup:** ==
+
+   Open a web browser and navigate to your server's domain or IP address. You'll be greeted with the Nextcloud setup wizard. Follow the on-screen instructions to complete the installation, specifying the database details you created earlier.
+
+== 10. **Secure Your Nextcloud:** ==
+
+    It's important to configure security settings, such as enabling HTTPS (SSL/TLS), setting strong passwords, and regularly updating Nextcloud and your server.
+
+That's it! You should now have a working Nextcloud instance on your Alpine Linux server. You can start using it for file storage, collaboration, and more.

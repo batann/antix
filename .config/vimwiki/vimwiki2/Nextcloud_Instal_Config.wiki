@@ -1,0 +1,84 @@
+= Contents =
+        - [[#Manual Installation with Enhanced Security:]]
+            - [[#Pre-requisites:]]
+            - [[#Install LAMP Stack:]]
+            - [[#Create Database for Nextcloud:]]
+
+== Manual Installation with Enhanced Security:==
+=== Pre-requisites: ===
+Update and upgrade your system:
+``
+sudo apt update && sudo apt upgrade
+``
+Consider using a dedicated server or Raspberry Pi for better performance and security.
+=== Install LAMP Stack:===
+Apache web server:
+``
+ sudo apt install apache2
+``
+MySQL database:
+``
+ sudo apt install mysql-server
+``
+PHP and dependencies:
+``
+ sudo apt install php php-fpm php-mysql php-curl php-gd php-zip php-xml
+``
+Secure MySQL:
+
+_Run the MySQL secure installation script_
+``
+sudo mysql_secure_installation
+``
+_and set strong, unique passwords for root, mariadb, phpmyadmin, and any other database users.
+Avoid using the same password for multiple accounts or services._
+=== Create Database for Nextcloud: ===
+Log in to MySQL:
+``
+ sudo mysql -u root -p (use the strong password you set)
+``
+Create a database named nextcloud_db:
+``
+CREATE DATABASE nextcloud_db;
+``
+Create a user named nextcloud_user with access to the database:
+``
+SQL
+CREATE USER nextcloud_user@localhost IDENTIFIED BY 'your_strong_password';
+GRANT ALL PRIVILEGES ON nextcloud_db.* TO nextcloud_user@localhost IDENTIFIED BY 'your_strong_password';
+``
+Use code with caution. Learn more
+Replace 'your_strong_password' with a unique and complex password.
+Exit MySQL:
+``
+ quit;
+``
+Download Nextcloud:
+Download the latest version from the official website:
+ https://nextcloud.com/install/:
+ https://nextcloud.com/install/
+Extract and Move Files:
+Extract the downloaded file:
+ ``
+ tar -xf nextcloud-latest.tar.gz
+``
+Move the extracted directory to your web server's root:
+``
+sudo mv nextcloud /var/www/html/nextcloud
+``
+Set Ownership and Permissions:
+Set ownership of the Nextcloud directory:
+``
+sudo chown -R www-data:www-data /var/www/html/nextcloud
+``
+Set permissions for the data directory:
+``
+ sudo chmod -R 0750 /var/www/html/nextcloud/data
+``
+Enable and Restart Apache:
+``
+sudo systemctl enable apache2 && sudo systemctl restart apache2
+``
+Nextcloud Setup:
+Open your web browser and go to http://localhost/nextcloud.
+Complete the Nextcloud setup wizard using a strong, unique password different from your database credentials.

@@ -1,0 +1,61 @@
+= Contents =
+        - [[#pwman3]]
+                - [[#1. Initialize a New Password Database:]]
+                - [[#2. Add a New Password Entry:]]
+                - [[#3. List All Password Entries:]]
+                - [[#4. Retrieve a Password:]]
+                - [[#5. Update a Password Entry:]]
+                - [[#6. Remove a Password Entry:]]
+                - [[#7. Copy a Password to Clipboard:]]
+                - [[#8. Search for a Password Entry:]]
+                - [[#9. Export Password Database:]]
+                - [[#10. Import Password Database:]]
+
+= pwman3 =
+
+== 1. Initialize a New Password Database: ==
+
+`pwman3 init`
+This command initializes a new password database. It prompts you to set up a master password.
+== 2. Add a New Password Entry: ==
+
+`pwman3 add -s "example.com" -u "username" -p`
+Adds a new entry for "example.com" with the provided username and prompts for the password.
+== 3. List All Password Entries: ==
+
+`pwman3 list`
+Displays a list of all stored password entries in the database.
+== 4. Retrieve a Password: ==
+
+`pwman3 get -s "example.com"`
+Retrieves the password for the specified site, here "example.com", and displays it.
+== 5. Update a Password Entry: ==
+
+`pwman3 update -s "example.com" -u "new_username"`
+Updates the username for the entry related to "example.com".
+== 6. Remove a Password Entry: ==
+
+`pwman3 remove -s "example.com"`
+Deletes the entry for "example.com" from the password database.
+== 7. Copy a Password to Clipboard: ==
+
+`pwman3 copy -s "example.com"`
+Copies the password for "example.com" to the clipboard for a limited time.
+== 8. Search for a Password Entry: ==
+
+`pwman3 search "keyword"`
+Searches for entries containing the specified keyword in their site names or usernames.
+== 9. Export Password Database: ==
+
+`pwman3 export -f json > pwman_backup.json`
+Exports the password database in JSON format to a file named "pwman_backup.json".
+== 10. Import Password Database: ==
+
+`pwman3 import -f json < pwman_backup.json`
+Imports a previously exported database file ("pwman_backup.json") in JSON format into pwman3.
+These commands showcase various functionalities of pwman3 for managing passwords securely via the command line interface.
+
+``
+See also:
+ pwman3 Documentation
+ pwman3 GitHub Repository

@@ -1,0 +1,25 @@
+1. Arch Linux
+Arch Linux is well-known for its simplicity and flexibility. You install only the components you need, making it ideal for a minimal, desktop-free setup. Its package manager, pacman, provides easy access to a vast repository of software.
+
+2. Void Linux
+Void Linux is an independent distribution with a strong emphasis on simplicity and minimalism. It uses the runit init system, which is lighter and faster compared to systemd. Void Linux can be installed with just a base system and no graphical environment.
+
+3. Gentoo Linux
+Gentoo is a source-based distribution that offers complete control over what gets installed and how it is configured. It’s highly customizable, and you can build a system with only the necessary components, avoiding a desktop environment entirely.
+
+4. Debian (Minimal Install)
+Debian offers a minimal installation option where you can choose not to install any graphical desktop environment. This makes it suitable for server setups or minimal configurations where you want to manage everything from the command line.
+
+5. Slackware
+Slackware is one of the oldest Linux distributions, known for its simplicity and lack of automation. It’s a good choice if you want a minimal system where you manually configure everything, including whether to install a desktop environment.
+
+6. Alpine Linux
+Since you’re already familiar with Alpine, it’s worth noting that its simplicity, small footprint, and security features make it a great option for headless setups or systems without a desktop environment.
+
+7. FreeBSD
+While not a Linux distribution, FreeBSD is a Unix-like operating system that can be used without a desktop environment. It’s known for its performance, stability, and advanced networking features.
+
+8. OpenBSD
+OpenBSD is focused on security and simplicity. It can be run as a minimal system without a desktop environment, making it suitable for servers or network appliances.
+
+9. CentOS Stream (Minimal Install)

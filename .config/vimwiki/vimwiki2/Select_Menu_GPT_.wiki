@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Change directory to /home/batan/10/menu/scripts/
+cd /home/batan/10/menu/scripts/
+
+# Get the list of scripts in the directory
+scripts=$(ls)
+
+# Display the list of scripts
+select script in $scripts; do
+    # Execute the user-selected script
+   sudo -u batan bash /home/batan/10/menu/select/$script
+    break
+    #leave the command 'break' out for the repeat
+
+done

@@ -1,0 +1,199 @@
+
+                                  = SpaceVim =
+
+   A community-driven vim distribution
+     __________________________________________________________________
+
+       [1]Home | [2]About | [3]Quick start guide | [4]Documentation |
+                 [5]Development | [6]Community | [7]Sponsors
+     __________________________________________________________________
+
+== Quick start guide ==
+
+   This is a quick start guide for SpaceVim. It will show you how to
+   install, configure, and use SpaceVim. It also lists a series of
+   resources for learning SpaceVim.
+
+   If you’ve never heard of SpaceVim, this is the best place to start. It
+   will give you a good idea of what SpaceVim is like.
+     * [8]Installation
+          + [9]Linux and macOS
+          + [10]Windows
+     * [11]Run in docker
+     * [12]Configuration
+     * [13]Online tutorials
+     * [14]Learning SpaceVim
+     * [15]User experiences
+
+== Installation ==
+
+   First of all, you need to [16]install Vim or Neovim, preferably with
+   +python3 support enabled.
+
+   Also, you need to have git and curl installed in your system, which are
+   needed for downloading plugins and fonts.
+
+   If you are using a terminal emulator, you will need to set the font in
+   the terminal configuration.
+
+== Linux and macOS ==
+
+curl -sLf https://spacevim.org/install.sh | bash
+
+   After SpaceVim is installed, launch nvim or vim, all plugins will be
+   downloaded automatically.
+
+   For more info about the install script, please check:
+curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+
+   By default the latest version of SpaceVim will be installed. If you
+   want to switch to specific version, for example v1.8.0, run following
+   command in your terminal.
+cd ~/.SpaceVim
+git checkout v1.8.0
+
+   If you got a vimproc error like this:
+[vimproc] vimproc's DLL: "~/.SpaceVim/bundle/vimproc.vim/lib/vimproc_linux64.so"
+ is not found.
+
+   Please read :help vimproc and make it, you may need to install make
+   (from build-essential) and a C compiler (like gcc) to build the dll.
+
+
+== Configuration ==
+
+   The default configuration file of SpaceVim is ~/.SpaceVim.d/init.toml.
+   This is an example for basic usage of SpaceVim. For more info, please
+   check out [19]documentation and [20]available layers.
+# This is a basic configuration example for SpaceVim
+
+# All SpaceVim options are below [options] snippet
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer, the value of this option is a string.
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors, the type of the value is boolean, true or false.
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "nil"
+    statusline_iseparator = "bar"
+    buffer_index_type = 4
+    # Display file type icon on the tabline, If you do not have nerd fonts
+    # installed, please change the value to false
+    enable_tabline_filetype_icon = true
+    # Display current mode text on statusline, by default It is disabled,
+    # only color will be changed when switch modes.
+    enable_statusline_mode = false
+
+# Enable autocomplete layer
+[[layers]]
+    name = "autocomplete"
+    auto-completion-return-key-behavior = "complete"
+    auto-completion-tab-key-behavior = "cycle"
+
+[[layers]]
+    name = "shell"
+    default_position = "top"
+    default_height = 30
+
+# This is an example for adding custom plugins lilydjwg/colorizer
+[[custom_plugins]]
+    repo = "lilydjwg/colorizer"
+    merged = false
+
+   If you want to use vim script to configure SpaceVim, please check out
+   the [21]bootstrap function section.
+
+   If there are errors in your init.toml, the setting will not be applied.
+   See [22]FAQ. There should be only one [options] section in init.toml.
+
+== Online tutorials ==
+
+   This is a list of online tutorials for using SpaceVim as a general IDE
+   and programming language support:
+     * [23]use vim as general IDE: a general guide for using SpaceVim as
+       an IDE
+
+   A list of guides for programming language support:
+     * [24]Use Vim as a Scala IDE
+     * [25]Use Vim as a Nim IDE
+     * [26]Use Vim as a Clojure IDE
+     * [27]Use Vim as a Kotlin IDE
+     * [28]Use Vim as Elixir IDE
+     * [29]Use Vim as a Swift IDE
+     * [30]Use Vim as a TypeScript IDE
+     * [31]Use Vim as a Rust IDE
+     * [32]Use Vim as a C/C++ IDE
+     * [33]Use Vim as a PHP IDE
+     * [34]Use Vim as a Ruby IDE
+     * [35]Use Vim as a Perl IDE
+     * [36]Use Vim as a JavaScript IDE
+     * [37]Use Vim as a CoffeeScript IDE
+     * [38]Use Vim as a Lua IDE
+     * [39]Use Vim as a Go IDE
+     * [40]Use Vim as a Python IDE
+     * [41]Use Vim as a Java IDE
+
+== Learning SpaceVim ==
+
+     * [42]SpaceVim Documentation. Also known as “The Book”, The SpaceVim
+       Documentation will introduce you to the main topics important to
+       using SpaceVim. The book is the primary official document of
+       SpaceVim.
+     * [43]Hack-SpaceVim. Teaches you how to hack SpaceVim.
+
+== User experiences ==
+
+   Here is a list of User experiences about using SpaceVim:
+     * [44]Vim as an IDE, not the text editor - Eugene Obrezkov
+
+                Powered by Jekyll, [45]Help improve this page
+                            ____________________
+
+== References ==
+
+   1. https://spacevim.org/
+   2. https://spacevim.org/about/
+   3. https://spacevim.org/quick-start-guide/
+   4. https://spacevim.org/documentation/
+   5. https://spacevim.org/development/
+   6. https://spacevim.org/community/
+   7. https://spacevim.org/sponsors/
+   8. https://spacevim.org/quick-start-guide/#installation
+   9. https://spacevim.org/quick-start-guide/#linux-and-macos
+  10. https://spacevim.org/quick-start-guide/#windows
+  11. https://spacevim.org/quick-start-guide/#run-in-docker
+  12. https://spacevim.org/quick-start-guide/#configuration
+  13. https://spacevim.org/quick-start-guide/#online-tutorials
+  14. https://spacevim.org/quick-start-guide/#learning-spacevim
+  15. https://spacevim.org/quick-start-guide/#user-experiences
+  16. https://spacevim.org/install-vim-or-neovim-with-python-support/
+  17. https://spacevim.org/install.cmd
+  18. https://spacevim.org/faq/#how-to-install-spacevim-manually
+  19. https://spacevim.org/documentation/
+  20. https://spacevim.org/layers/
+  21. https://spacevim.org/documentation/#bootstrap-functions
+  22. https://spacevim.org/faq/#why-are-the-options-in-toml-file-not-applied
+  23. https://spacevim.org/use-vim-as-ide/
+  24. https://spacevim.org/use-vim-as-a-scala-ide/
+  25. https://spacevim.org/use-vim-as-a-nim-ide/
+  26. https://spacevim.org/use-vim-as-a-clojure-ide/
+  27. https://spacevim.org/use-vim-as-a-kotlin-ide/
+  28. https://spacevim.org/use-vim-as-a-elixir-ide/
+  29. https://spacevim.org/use-vim-as-a-swift-ide/
+  30. https://spacevim.org/use-vim-as-a-typescript-ide/
+  31. https://spacevim.org/use-vim-as-a-rust-ide/
+  32. https://spacevim.org/use-vim-as-a-c-cpp-ide/
+  33. https://spacevim.org/use-vim-as-a-php-ide/
+  34. https://spacevim.org/use-vim-as-a-ruby-ide/
+  35. https://spacevim.org/use-vim-as-a-perl-ide/
+  36. https://spacevim.org/use-vim-as-a-javascript-ide/
+  37. https://spacevim.org/use-vim-as-a-coffeescript-ide/
+  38. https://spacevim.org/use-vim-as-a-lua-ide/
+  39. https://spacevim.org/use-vim-as-a-go-ide/
+  40. https://spacevim.org/use-vim-as-a-python-ide/
+  41. https://spacevim.org/use-vim-as-a-java-ide/

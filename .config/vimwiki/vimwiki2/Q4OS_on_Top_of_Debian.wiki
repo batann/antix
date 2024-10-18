@@ -1,0 +1,24 @@
+= Setup Q4OS on top of a Debian based distribution =
+
+1. Introduction
+
+The procedure consists of couple different steps. First, you need to install some of Debian based Linux distributions on your device. Then, you will download and run Q4OS installation script, as it will set up and fully configure fresh Q4OS desktop within your computer. The script basically adds Q4OS repositories and adapt the underlying system the Q4OS way, so you will be able to make use of Q4OS tools and amenities within the host operating system.
+
+2. Q4OS setup
+
+As introduced in the first chapter, perform a Debian based OS installation first, configure it accordingly. There is an interactive Q4OS installation script available from Q4OS downloads repository, it supports various Debian based operating systems. Simply download and run this script in terminal as 'root', see below, it will add Q4OS repositories and guide you throughout Q4OS setup process, please follow on-screen instructions.
+
+$ wget q4os.org/downloads/q4os-setup.sh
+$ su
+# sh q4os-setup.sh
+
+Please note, the setup process takes a while. Once completed, reboot and login into the fresh and clean Q4OS Desktop.
+
+3. After install steps
+
+Now, it's the right time to install desired applications. The best and recommended way is to use Q4OS Desktop profiler and Software center, please read [[Q4OS documentation]]. Enjoy your new desktop and don't forget to involve yourself in the [[Q4OS community]].
+
+
+
+=Download Link=
+wget https://onboardcloud.dl.sourceforge.net/project/q4os/stable/q4os-5.2-x64-tde.r2.iso

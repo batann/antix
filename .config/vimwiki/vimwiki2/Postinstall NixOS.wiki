@@ -1,0 +1,175 @@
+
+= Post-install 30 steps NixOS =
+
+== 1. Update the system: ==
+sudo nixos-rebuild switch
+
+== 2. Install additional packages: ==
+sudo nix-env -iA nixos.xfcePackages
+
+== 3. Enable the display manager: ==
+sudo systemctl enable lightdm.service
+
+== 4. Set the default display manager: ==
+sudo nano /etc/lightdm/lightdm.conf
+# Uncomment the line starting with "greeter-session" and set it to "lightdm-gtk-greeter"
+
+== 5. Enable the NetworkManager service: ==
+sudo systemctl enable NetworkManager.service
+
+== 6. Set the hostname: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the line "hostname = "your_hostname";" under the "networking" section
+
+== 7. Generate the hardware configuration: ==
+sudo nixos-generate-config --root /mnt
+
+== 8. Configure the hardware: ==
+sudo nano /mnt/etc/nixos/hardware-configuration.nix
+# Uncomment and modify the necessary lines according to your hardware
+
+== 9. Configure the Xfce desktop environment: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.xserver" section:
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
+
+== 10. Configure the display resolution: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.xserver" section:
+  services.xserver.videoDrivers = [ "nvidia" ]; # Replace "nvidia" with your graphics driver
+  services.xserver.desktopManager.xfce.displayManager.defaultSession = "xfce";
+
+== 11. Configure the keyboard layout: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.xserver" section:
+  services.xserver.layout = "us"; # Replace "us" with your desired keyboard layout
+  services.xserver.xkbOptions = "compose:rwin";
+
+== 12. Configure the timezone: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following line under the "time" section:
+  time.timeZone = "Your/Timezone"; # Replace "Your/Timezone" with your desired timezone
+
+== 13. Configure the locale: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "i18n" section:
+  i18n.defaultLocale = "en_US.UTF-8"; # Replace "en_US.UTF-8" with your desired locale
+  i18n.keyboardVariant = "intl";
+
+== 14. Configure the audio: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following line under the "sound" section:
+  sound.enable = true;
+
+== 15. Configure the network: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "networking" section:
+  networking.hostName = "your_hostname"; # Replace "your_hostname" with your desired hostname
+  networking.networkmanager.enable = true;
+
+== 16. Configure the Wi-Fi: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "networking" section:
+  networking.wireless.enable = true;
+  networking.wireless.networks = [
+    {
+      ssid = "your_wifi_ssid"; # Replace "your_wifi_ssid" with your Wi-Fi SSID
+      psk = "your_wifi_password"; # Replace "your_wifi_password" with your Wi-Fi password
+    }
+  ];
+
+== 17. Configure the touchpad: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.xserver" section:
+  services.xserver.libinput.enable = true;
+
+== 18. Configure the power management: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "powerManagement" section:
+  powerManagement.enable = true;
+  powerManagement.cpuFreqGovernor = "powersave";
+
+== 19. Configure the printer: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.printing" section:
+  services.printing.enable = true;
+
+== 20. Configure the Bluetooth: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.bluetooth" section:
+  services.bluetooth.enable = true;
+
+== 21. Configure the firewall: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "networking.firewall" section:
+  networking.firewall.enable = true;
+  networking.firewall.allowedTCPPorts = [ 22 80 443 ]; # Replace with your desired TCP ports
+  networking.firewall.allowedUDPPorts = [ 53 ]; # Replace with your desired UDP ports
+
+== 22. Configure the package manager: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "environment.systemPackages" section:
+  environment.systemPackages = with pkgs; [
+    wget
+    curl
+    git
+    vim
+    htop
+    tree
+  ];
+
+== 23. Configure the user accounts: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "users.users" section:
+  users.users."your_username" = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" "networkmanager" ];
+    home = "/home/your_username";
+    uid = 1000;
+    createHome = true;
+    shell = "/run/current-system/sw/bin/bash";
+  };
+
+== 24. Configure the sudo access: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following line under the "security.sudo" section:
+  security.sudo.wheelNeedsPassword = false;
+
+== 25. Configure the SSH access: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services.openssh" section:
+  services.openssh.enable = true;
+  services.openssh.permitRootLogin = "no";
+  services.openssh.passwordAuthentication = false;
+  services.openssh.authorizedKeys.keys = [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
+  ]; # Replace with your SSH public key
+
+== 26. Configure the system services: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "services" section:
+  services.avahi.enable = true;
+  services.cups.enable = true;
+
+== 27. Configure the system fonts: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "fonts.fontconfig" section:
+  fonts.fontconfig.enable = true;
+  fonts.fontconfig.enableAutoHinting = true;
+  fonts.fontconfig.enableInfinality = true;
+
+== 28. Configure the system colors: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "xsession" section:
+  xsession.windowManager.default = "xfce";
+  xsession.desktopManager.default = "xfce";
+
+== 29. Configure the system appearance: ==
+sudo nano /etc/nixos/configuration.nix
+# Add the following lines under the "xsession" section:
+  xsession.windowManager.theme = "Adwaita";
+  xsession.desktopManager.theme = "Adwaita";
+
+== 30. Rebuild the system configuration: ==
+sudo nixos-rebuild switch

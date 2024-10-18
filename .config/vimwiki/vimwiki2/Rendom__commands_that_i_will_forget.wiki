@@ -1,0 +1,7 @@
+content=$(wget -L FAZ.com -q -O - )
+
+echo $content
+
+
+
+

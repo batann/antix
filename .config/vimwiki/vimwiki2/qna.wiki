@@ -1,0 +1,9 @@
+In vim bind <Leader>qq to open file qna in insert mode
+In vim bind <Leader>s to start fzf in kitty
+
+fzf
+script to start fzf and display in blue silver background and dark blue text each line the selected line in dark blue background and silver text;
+display content of Music, whereby the preview window is to display the directory content
+upon user selection  if input is directory display the content of directory else play input
+
+

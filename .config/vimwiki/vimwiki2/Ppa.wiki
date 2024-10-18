@@ -1,0 +1,705 @@
+https://askubuntu.com/questions/71510/how-do-i-create-a-ppa
+  • Ubuntu
+  • Community
+  • Ask!
+  • Developer
+  • Design
+  • Hardware
+  • Insights
+  • Juju
+  • Shop
+  • More ›
+      □ Apps
+      □ Help
+      □ Forum
+      □ Launchpad
+      □ MAAS
+      □ Canonical
+
+
+
+
+Stack Exchange Network
+
+Stack Exchange network consists of 183 Q&A communities including Stack Overflow
+, the largest, most trusted online community for developers to learn, share
+their knowledge, and build their careers.
+
+Visit Stack Exchange
+[                    ]
+Loading…
+ 1.
+      □ Tour Start here for a quick overview of the site
+      □ Help Center Detailed answers to any questions you might have
+      □ Meta Discuss the workings and policies of this site
+      □ About Us Learn more about Stack Overflow the company, and our products.
+ 2.
+ 3. current community
+
+      □
+        Ask Ubuntu
+        help chat
+      □
+        Ask Ubuntu Meta
+
+    your communities
+
+    Sign up or log in to customize your list.
+
+    more stack exchange communities
+
+    company blog
+ 4.
+ 5. Log in
+ 6. Sign up
+
+Ask Ubuntu is a question and answer site for Ubuntu users and developers. It
+only takes a minute to sign up.
+
+Sign up to join this community
+[ano]
+Anybody can ask a question
+[ano]
+Anybody can answer
+[an]
+The best answers are voted up and rise to the top
+Ask Ubuntu
+
+ 1. Home
+ 2.
+     1. Public
+     2. Questions
+     3. Tags
+     4. Users
+     5. Companies
+     6. Unanswered
+ 3. Teams
+    Stack Overflow for Teams – Start collaborating and sharing organizational
+    knowledge. [teams-illo-free-si] Create a free Team Why Teams?
+ 4. Teams
+
+ 5.
+    Create free Team
+
+Teams
+
+Q&A for work
+
+Connect and share knowledge within a single location that is structured and
+easy to search.
+
+Learn more about Teams
+
+How do I create a PPA?
+
+Ask Question
+Asked 11 years, 11 months ago
+Modified 7 months ago
+Viewed 57k times
+155
+
+
+How do I create my own custom PPA to share with the Ubuntu community? I am
+trying to create my own custom package set and I would really like to share it
+with the community.
+
+  • ppa
+
+Share
+Improve this question
+Follow
+asked Oct 24, 2011 at 15:54
+Jebeld17's user avatar
+Jebeld17Jebeld17
+1,86244 gold badges1616 silver badges1818 bronze badges
+2
+
+  •
+    related or the same: askubuntu.com/questions/28562/…
+    – fossfreedom ♦
+    Jul 8, 2014 at 22:01
+  •
+    Maybe this helps packaging.ubuntu.com/html/getting-set-up.html
+    – rubo77
+    Jul 9, 2014 at 10:12
+
+Add a comment  |
+
+4 Answers 4
+
+Sorted by: Reset to default
+[Highest score (default)     ]
+125
+
+
+Using a Personal Package Archive (PPA), you can distribute software and updates
+directly to Ubuntu users. Create your source package, upload it and Launchpad
+will build binaries and then host them in your own apt repository.
+
+  • Create a Launchpad Account.
+  • Activate a PPA.
+  • You can only activate a PPA if you have signed the Ubuntu code of conduct.
+  • What are PPAs and how do I use them?
+  • Uploading your source packages.
+
+Here is a detailed explanation.
+
+Share
+Improve this answer
+Follow
+edited Apr 13, 2017 at 12:23
+Community's user avatar
+CommunityBot
+1
+answered Oct 24, 2011 at 16:01
+hhlp's user avatar
+hhlphhlp
+41.5k1818 gold badges8484 silver badges133133 bronze badges
+9
+
+  • 8
+    FWIW I was able to active my PPA before I signed the code of conduct.
+    – Sparhawk
+    Apr 3, 2014 at 4:30
+  • 2
+    This is the best answer. You were just told how to create a PPA. The
+    response below (by totti) is not a PPA, but it is a public repository. The
+    two are different, despite (potentially) accomplishing the same thing. He
+    even says in the first line of his answer: "This question has a well
+    written, accepted answer. As the OP wants a simple way to publish his
+    packages I'm giving an easy hack." Because you prefer the easy hack does
+    not make it the best answer.
+    – lbaile200
+    Jul 9, 2014 at 14:47
+  •
+    OK, but none of the links in this answer really describes how to do it from
+    scratch. all links here are made for developers, that are already into the
+    material much more
+    – rubo77
+    Jul 9, 2014 at 15:07
+  • 1
+    @rubo77 - the "how to create" is strictly too broad to be answerable. It
+    all depends what you are trying to package. Indeed each of the steps in the
+    above answer can be individual Q's with a good detailed answer each.
+    – fossfreedom ♦
+    Jul 11, 2014 at 14:25
+  • 1
+    Totti's new answer is great already
+    – rubo77
+    Jul 12, 2014 at 7:15
+
+  |  Show 4 more comments
+106
++50
+
+
+How to create a .deb file
+
+This is a tutorial on creating a basic .deb file from a given sample script. In
+this tutorial first we create a sample program in bash that just show 'HELLO
+FROM PROGRAM'. Then we create a control file for the program in order to make a
+debian installer. Finally they are packaged into a .deb file.
+
+Steps:
+
+ 1. create a sample program in bash
+
+    mkdir "$HOME/create_deb/pgmdir"
+    gedit "$HOME/create_deb/pgmdir/zenity_hello.sh"
+
+    paste the following code into it
+
+    #!/bin/bash
+    echo 'HELLO FROM PROGRAM' | zenity --text-info
+
+ 2. Make the program executable
+
+    chmod +x "$HOME/create_deb/pgmdir/zenity_hello.sh"
+
+ 3. Create control file for the debian package
+
+    Make a file named control inside folder DEBIAN
+
+    mkdir "$HOME"/create_deb/DEBIAN
+    gedit "$HOME"/create_deb/DEBIAN/control
+
+    and paste following details
+
+    Package: hellodeb
+    Version: 0.1
+    Architecture: all
+    Maintainer: totti
+    Installed-Size: 6
+    Depends: zenity, bash
+    Section: testing
+    Priority: optional
+    Homepage: http://askubuntu.com
+    Description: This is my first debian package.
+     Guided by Totti Torvalds.
+     In Description new line start with a space.
+
+    You can edit the contents if you like. Read more about the format of this
+    file here and here.
+
+ 4. Create postinst script, that is executed immediately after installation of
+    the package
+
+    gedit "$HOME"/create_deb/DEBIAN/postinst
+
+    then paste
+
+    #!/bin/sh
+    set -e
+    echo 'Installing program : zenity_hello.sh ......' | zenity --text-info
+
+    and make it executable
+
+    chmod +x "$HOME/create_deb/DEBIAN/postinst"
+
+ 5. Create prerm script, that is executed before removal of the package
+
+    #!/bin/sh
+    set -e
+    echo 'Removing program : zenity_hello.sh ......' | zenity --text-info
+
+    and make it executable
+
+    chmod +x "$HOME/create_deb/DEBIAN/prerm"
+
+ 6. Make package structure and copy programs, data, etc..
+    Create a structure of your installed programs and its data. In this example
+    we put the file at /bin.
+
+    mkdir -p "$HOME"/create_deb/bin
+    cp "$HOME/create_deb/pgmdir/zenity_hello.sh" "$HOME/create_deb/bin/zenity_hello"
+
+ 7. Build the .deb file.
+
+    dpkg-deb --build "$HOME"/create_deb .
+
+    The . will auto name the .deb file with version, arch etc. Or your custom
+    name
+
+    dpkg-deb --build "$HOME"/create_deb "$HOME"/create_deb/hellodeb.deb
+
+    Or if you build the .deb file with
+
+    debuild -k'your GPG key here' -S
+
+    then you can upload it to Ubuntu Launchpad with
+
+    dput ppa:<lp-username>/<ppa-name> packet-source.changes
+
+    like described here (source: create a .deb Package from scripts or binaries
+    )
+
+ 8. Install the newly created .deb package. You can open it with
+    software-center but it may not allow you to install. So I recommend to use
+    gdebi package manager.
+
+    sudo apt-get install gdebi
+
+    gdebi "$HOME"/create_deb/hellodeb.deb
+
+    Now you can install it. During installation you should see a gtk dialogue
+
+        Installing program : zenity_hello.sh ......
+
+ 9. After installing open a terminal and type zenity_hello. If the program
+    correctly installed and everything OK you should see a gtk dialogue
+
+        HELLO FROM PROGRAM
+
+10. Removing package
+
+    sudo apt-get remove zenity_hello
+
+Publish your repository in 2 minutes
+
+As the OP wants a simple way to publish his packages I'm giving an easy hack.
+
+requirement: dropbox (or anyother service, for ex. github) account with a
+public folder.
+
+ 1. Create a folder inside your Public-Dropbox-Folder where you put your *.deb
+    Files:
+
+    mkdir ~/Dropbox/Public/deb-packages
+
+    or create that folder somwhere else and put a symlink in your Public
+    folder:
+
+    mkdir ~/deb-packages
+    cd ~/Dropbox/Public
+    ln -s ~/deb-packages/ deb-packages
+
+ 2. Go into that folder and create a script that, when executed, creates the
+    Packages.gz, containing all the needed informationen about your
+    deb-packages. create:
+
+    gedit import.sh
+
+    put this in it:
+
+    #!/bin/bash
+    dpkg-scanpackages . /dev/null |gzip > Packages.gz
+
+    make it executable:
+
+    chmod  x import.sh
+
+ 3. Copy some *.deb Files into the Folder. Could be your own or some that
+    aren't available through other repositories. Then go into the Folder and
+    execute the script we put there:
+
+    cd ~/deb-packages/
+    ./import.sh
+
+    That should create the so called Packages.gz File, which apt looks for to
+    know which Packages are located at this repository.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+That's it
+
+Now, wait for Dropbox to synchronize the Folder and grab the Public-URL from
+the Packages.gz. It should look something like this:
+
+http://dl.getdropbox.../Packages.gz
+
+Get rid of the end of that link, put some more words to it and you can now use
+and populate the following line for the sources.list:
+
+deb http://dl.getdropbox.../deb-packages ./
+
+That's it you got your own deb repository running. Always synchronized locally,
+but available to anyone, anytime, anywhere.
+
+NOTE: dpkg-scanpackages is available from dpkg-dev
+reference
+
+Share
+Improve this answer
+Follow
+edited Apr 13, 2017 at 12:23
+Community's user avatar
+CommunityBot
+1
+answered Jul 9, 2014 at 11:16
+totti's user avatar
+tottitotti
+6,76844 gold badges3838 silver badges4848 bronze badges
+8
+
+  • 3
+    +1 Great! this worked: I used Github and there the raw directory for a
+    folder releases/ see github.com/rubo77/mouse-speed/blob/master/release/…
+    – rubo77
+    Jul 9, 2014 at 12:16
+  •
+    This describes a self hosted PPA, but how can I Build a Ubuntu debian
+    package
+    – rubo77
+    Jul 9, 2014 at 15:03
+  • 4
+    If you build the .deb file in step 7. with debuild -us -uc -k'your GPG key
+    here' then you can upload it with dput ppa:<lp-username>/<ppa-name>
+    packet-source.changes to Launchpad like described here (source: create a
+    .deb Package from scripts or binaries)
+    – rubo77
+    Jul 14, 2014 at 23:40
+  •
+    @rubo77,Thanks, I welcome you to add this infos at end of my answer.
+    – totti
+    Jul 18, 2014 at 8:53
+  • 1
+    OK, I just did, I also found out, that you need other parameters for
+    Launchpad to not to create the .deb file right now (just -S): debuild
+    -k'your GPG key here' -S because Launchpad will create the deb file (if it
+    is not rejected) - what would the ` -us -uc` have been for?
+    – rubo77
+    Jul 18, 2014 at 9:41
+
+  |  Show 3 more comments
+2
+
+
+You will need a Launchpad.net account to create a PPA. Just click on your user
+on Launchpad (click on your name on the upper left) and create a PPA. You may
+have to first sign the Code of Conduct and have a GPG key registered with your
+account.
+
+Share
+Improve this answer
+Follow
+answered Oct 24, 2011 at 16:03
+GTRsdk's user avatar
+GTRsdkGTRsdk
+3111 bronze badge
+0
+
+Add a comment  |
+0
+
+
+PPAs are just repositories. ppa:// URLs are just simple URLs that the script
+apt-add-repository converts to a deb line in a file in /etc/apt/sources.list.d
+/, using Launchpad and obeying its demands. (I read the source code.)
+
+TL:DR: See bottom.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+It’s just an attempt to gain power and control over us supposedly “dumb”
+“helpless” users, based on a toxic culture sold as “simplicity”, ultimately
+stemming from how Apple treats users, due to Steve Jobs having been a
+pathological control freak. (Sources: Books by people who did work directly
+under him.)
+But this is your computer, so they have no power here. :)
+
+If you look at the deb lines, they contain the real repository URLs. E.g.
+
+deb [arch=amd64 signed-by=/etc/apt/keyrings/
+maarten-fonville-android-studio-jammy.gpg] https://ppa.launchpadcontent.net/
+maarten-fonville/android-studio/ubuntu jammy main
+
+And if you open that URL, you see a specific directory structure. That’s all
+the “magic”.
+Now of course the easiest way, is to
+
+ 1. create your local repository in a directory of your choice (home server,
+    local pc, your homepage, etc), and
+
+ 2. if it’s local, run a very simple httpd server (“web server”) to serve that
+    directory to the target audience (e.g. you, your household, friends).
+
+ 3. Then anyone who wants to use your repository, can just put your
+    repository’s key (as a file) into his /etc/apt/keyrings/, and
+
+ 4. add a text file to his /etc/apt/sources.list.d, containing a deb line as
+    above, but with your key and your url, as well as the correct architecture
+    and version code name (e.g. jammy) of course.
+
+In the long run, it’s probably easier to just have an extremely simple
+(one-liner?) script that takes any normal repository URL, and creates those
+files automatically, imitating apt-add-repository without going through the
+Launchpad gatekeepers.
+
+This answer serves as the (previously missing) link that “ppas” are just
+repositories with a bit of “security” (mostly from you, instead of for you, as
+one might think), and so …
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TL;DR: The right question would be: How to create (and add) a repository?
+
+Debian maintains a complete guide on how to do this:
+https://wiki.debian.org/DebianRepository/#Set_up_and_maintain_a_repository
+E.g. using reprepro.
+
+So you do NOT need a launchpad account, obey any master, NOR sign a code of [S:
+conduct:S] censorship, hate and reverse discrimination.
+
+Of course, if you want to share it with entities that themselves prefer to obey
+and follow Canonical/Ubuntu/Launchpad, and refuse to trust anything else, and
+so will not use anything unless their masters have agreed that it is safe for
+them, then that is equivalent to dealing with their masters themselves. Who, as
+it stands, demand full obedience. (As in signing that CoC.) … I don’t bend over
+that low, so I cannot tell you how to do that.
+
+Share
+Improve this answer
+Follow
+edited Mar 2 at 13:34
+answered Mar 2 at 13:17
+Evi1M4chine's user avatar
+Evi1M4chineEvi1M4chine
+18988 bronze badges
+
+Add a comment  |
+
+You must log in to answer this question.
+
+Not the answer you're looking for? Browse other questions tagged
+
+  • ppa
+
+.
+
+  • Featured on Meta
+  •
+    Alpha test for short survey in banner ad slots starting on week of
+    September...
+  •
+    What should be next for community events?
+
+Linked
+
+2
+How to create your own Linux package from scratch?
+1
+What's the "right thing to do" when latest version of some gnu software is not
+available via apt-get
+0
+How to upload deb file to official apt repository?
+0
+How do I package my source code on a GitHub repo for a PPA?
+1
+How can I make my program available as native image available via apt-get?
+543
+What are PPAs and how do I use them?
+80
+Getting + installing gcc/g++ 4.9 on Ubuntu?
+74
+create a .deb Package from scripts or binaries
+38
+How do I create a PPA for a working program?
+23
+Why does apt-get require sudo?
+See more linked questions
+
+Related
+
+5
+How do i create my own php 5.3.3 package/ppa?
+8
+How to create a PPA that just contains links to other PPAs?
+6
+How to create a PPA for C++ program?
+6
+Use one PPA in another PPA
+2
+how to create a ppa .dep that depends on non-default GCC?
+10
+How to transition PPA users from one PPA to another?
+2
+PPA upload of custom kernel package
+1
+Create both, trusty and xenial packages in Ubuntu PPA
+
+Hot Network Questions
+
+  •
+    The argument specifier N and n
+  •
+    How does the Japanese government determine the amount of subsidies
+    appropriate to attract investment from private companies?
+  •
+    Syntax of "What's going on at work these days that you're always on the
+    phone?"
+  •
+    How to select elements from a List based on conditions on an analogous
+    list?
+  •
+    How can I convert a QR code from JPG to SVG with perfect clean squares?
+  •
+    Since we know that focal length does not affect DOF, why doesn't a 25mm
+    lens at an f-stop of 4 give me the same DOF as a 100mm on an F -stop of 16?
+  •
+    Why can't I apply for a visa from my home country when I am currently
+    resident in another country?
+  •
+    What kind of telescope would be needed to image a 10m dim object 1 million
+    km away?
+  •
+    Recommended way to sightread grand staff
+  •
+    How to check if a sphere passes through another sphere when both travels in
+    a straight line through 3d space
+  •
+    What assumptions were made about the sphericity of the Moon for the Apollo
+    program?
+  •
+    What's the correct Unicode code point for the Apple IIe's "delete" symbol?
+  •
+    Movie about aliens that secretly invade earth
+  •
+    What to do with a mathematical article rejected from a journal because the
+    anonymous referee found a simpler proof?
+  •
+    Can I reuse bricks from my removed fireplace?
+  •
+    I am trying to draw diagrams in regards to Depth of field, however I am not
+    sure if the one I have made here is correct?
+  •
+    What is the baseline temperature for the climate-change debate
+  •
+    Perl: change in interpretation of shell symbols in system() invocation?
+  •
+    QM from the uncertainty principle?
+  •
+    "Error: Items not allowed (keepout area..)" KiCAD
+  •
+    Google Videos Search "sca_esv" query parameter possible tracking
+  •
+    Planar vs geodesic
+  •
+    Why is it "id est" instead of "illud est" if it often means "that is"?
+  •
+    Cases syntax when expression sought is a Quantity
+
+more hot questions
+Question feed
+
+Subscribe to RSS
+
+Question feed
+
+To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
+
+[https://askubuntu.co]
+
+*
+
+Ask Ubuntu
+
+  • Tour
+  • Help
+  • Chat
+  • Contact
+  • Feedback
+
+Company
+
+  • Stack Overflow
+  • Teams
+  • Advertising
+  • Collectives
+  • Talent
+  • About
+  • Press
+  • Legal
+  • Privacy Policy
+  • Terms of Service
+  • Cookie Settings
+  • Cookie Policy
+
+Stack Exchange Network
+
+  • Technology
+  • Culture & recreation
+  • Life & arts
+  • Science
+  • Professional
+  • Business
+  • API
+  • Data
+
+  • Blog
+  • Facebook
+  • Twitter
+  • LinkedIn
+  • Instagram
+
+Site design / logo © 2023 Stack Exchange Inc; user contributions licensed under
+CC BY-SA. rev 2023.9.29.43652
+
+Ubuntu and the circle of friends logo are trade marks of Canonical Limited and
+are used under licence.
+
+Your privacy
+
+By clicking “Accept all cookies”, you agree Stack Exchange can store cookies on
+your device and disclose information in accordance with our Cookie Policy.
+
+Accept all cookies Necessary cookies only

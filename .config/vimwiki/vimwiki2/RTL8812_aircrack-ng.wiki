@@ -1,0 +1,27 @@
+= Contents =
+                - [[#RTL8812]]
+                - [[#Installing]]
+                - [[#DKMS]]
+                - [[#Install the driver to DKMS with:]]
+                - [[#Automatically load at boot:]]
+                - [[#Eventually remove from DKMS with:]]
+
+== RTL8812 ==
+NOTE: Not related to Aircrack-ng
+https://github.com/gnab/rtl8812au
+`
+$ make
+$ sudo insmod 8812au.ko`
+== Installing ==
+`
+$ sudo cp 8812au.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless
+$ sudo depmod`
+== DKMS ==
+Automatically rebuilds and installs on kernel updates. DKMS is in official sources of Ubuntu, for installation do:
+`$ sudo apt-get install build-essential dkms `
+== Install the driver to DKMS with: ==
+`sudo make dkms_install`
+== Automatically load at boot: ==
+`$ echo 8812au | sudo tee -a /etc/modules`
+== Eventually remove from DKMS with: ==
+`$ sudo make dkms_remove`
