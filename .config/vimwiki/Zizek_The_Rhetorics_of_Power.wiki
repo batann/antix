@@ -1,0 +1,686 @@
+RESPONSES
+
+
+THE RHETORICS OF POWER
+              ∨ ∨
+SLAVOJ ZIZEK
+
+                                                                ∨ ∨
+Claudia Breger. THE LEADER’S TWO BODIES: SLAVOJ ZIZEK’S POSTMODERN
+    POLITICAL THEOLOGY. Diacritics 31.1 (2001): 73-90.
+
+The first problem I have is: to what should I effectively respond? I find it difficult to
+recognize the theory I developed in the text, so often is my position distorted by means
+of an entire bag of rhetorical tricks:
+
+     —thoroughly distorting paraphrases of my line of argumentation (for example,
+“Thus, resistance to the ‘formal’ law of Judaism works as the enactment of the divine
+Law constituted by the ‘real’ content of Christianity” [85]—where do I speak of the
+“divine Law constituted by the ‘real’ content of Christianity”?), up to simple inventions
+inserted to render the critique more piquant by making me appear antifeminist, and so
+forth (for example, “At the same time, ‘woman’s’ ‘naked’ body functions as a spectacle
+doubtlessly deserving the philosopher’s lust” [88]—where do I claim anything resem-
+bling this?).
+
+     —the artifice of rendering my position in a falsified way, which makes it an easy
+target of criticism, and then dismissing the fact that this is NOT my position either as
+secondary attempts to answer (Judith Butler’s) criticism or as its inconsistency. Perhaps
+the best example of this procedure is the short footnote 9:
+                                          ∨ ∨
+    As a response to Butler’s criticism, Zizek stresses today that this Real is none-
+    theless “a symbolic determination” [FA 121], but he keeps insisting on its
+    (retroactively
+               ∨ ∨
+                   installed) foundational status as a traumatic∨ “ahistorical” ker-
+    nel [112; Zizek’s quotation marks]. [78, my emphasis—SZ]
+
+Unfortunately, the features that I allegedly stress as a response to Butler’s criticism (the
+Real, far from being a substantial starting point and reference/guarantee, emerges as the
+retroactive effect of the failure of the symbolic process itself, and so forth) are system-
+atically developed in my Sublime Object of Ideology, which, published in 1989, pre-
+cedes Butler’s criticism [see 169–73]. (Incidentally, Butler herself accuses me of incon-
+sistency when I characterize the Capital as the Real of our epoch, claiming that I thereby
+contradict my own definition of the Real—surely the easiest way to avoid confronting
+the inadequacy of her own notion of the Real: “I claim the notion of the Real in the
+criticized author means X—the criticized author says things that do not fit X—no prob-
+lem, it is not my notion that is wrong, he is inconsistent with himself . . .”).
+
+    —finally, attributions of theoretical propositions that directly contradict my theses:
+
+
+
+
+diacritics / spring 2001                              diacritics 31.1: 91–104            91
+for example, the claim that my “epistemology collapses historical difference, and the
+contemporary leader is modeled on the image of the ‘premodern’ king” [82]. Really?
+Do I not, again, already in Sublime Object of Ideology, develop in detail the difference
+between the traditional Master and the modern Leader [see 145–47]? Furthermore, when
+my critic comments on the thesis that “the emperor cannot simply be undressed,” she
+again imputes the very opposite of what I claim: the undressing of the king does not
+work not because his charisma is indestructible, but because it only destroys his per-
+sonal charisma, not the power of the symbolic place of the King—when we undress him,
+we realize that “he is not truly a king” . . . and engage in the search for a true one.
+(Incidentally, Marx makes a homologous point apropos of commodity fetishism: in or-
+der to escape its grasp, it is not enough to realize that “commodity is just an object like
+all others.”)
+
+Once we discard these distortions, my critic’s basic line of argumentation is simple and
+clear enough: my theory “does not allow for more optimistic scenarios of democratiza-
+tion and the diminution of nationalism in society” [73], that is, I “outline a world eter-
+nally ruled by a monstrous, earthbound Lord, a world not     ∨ ∨
+                                                                 open to human agency and
+political change. Because the authoritarian shape of his [Zizek’s] vision is constitutively
+tied up with anti-Semitic and antifeminist phantasms, it is especially problematic” [75].
+We are thus back to the old criticism elaborated by Butler, according to which the Real
+I evoke “remains . . . grounding a realm beyond discourse” [78]: the real kernel, that
+which is “in X more than X,” more than a combination of contingent symbolic determi-
+nations and, as such, exempted from any transformative grasp of a human agency. Al-
+though fantasmatic, this Real is irreducible, unshakable, charismatic, a traumatic point
+of reference that assumes in my work different forms (king, woman, Jew, capital). In
+sexual economy, this gives us Woman as Real, the ahistoric traumatic Thing; in racism,
+this gives us the (anti-Semitic figure of the) Jew as the traumatic point of reference of
+the racial imaginary; in politics proper, this gives us the King as the excess of the Real
+which limits the open process of democratic reinscriptions and redefinitions. . . . Again,
+the trouble with this line of criticism is that I find it difficult to recognize in the criti-
+cized position my own theory, in which I repeatedly claim that symbolic practice can
+transform the Real:
+
+     Precisely because of this internality of the Real to the Symbolic, it is possible
+     to touch the Real through the Symbolic—that is the whole point of Lacan’s
+     notion of psychoanalytic treatment; this is what the Lacanian notion of the
+     psychoanalytic act is about—the act as a gesture which, by definition, touches
+     the dimension of some impossible Real. [“Class Struggle” 121]
+
+And, as if answering in advance my critic’s claim that my world is “eternally ruled by a
+monstrous, earthbound Lord” and, as such, not “open to human agency and political
+change,” I emphasize that
+
+     [a]n act does not merely redraw the contours of our public symbolic identity, it
+     also transforms the spectral dimension that sustains this identity, the undead
+     ghosts that haunt the living subject, the secret history of traumatic fantasies
+     transmitted “between the lines,” through the lacks and distortions of the ex-
+     plicit symbolic texture of his or her identity. [“Class Struggle” 124]
+
+Is it possible to put it in clearer terms? An act intervenes in and changes precisely that
+which, according to my critic, I elevate into a firm ground outside the scope of human
+
+
+
+
+92
+diacritics / spring 2001   93
+agency, the fantasmatic-real support of the symbolic process. So my proposal to the
+reader of these lines is the following one: she should read the last paragraph of my
+critic’s essay, and then read these lines from my contribution to Contingency, Hege-
+mony, Universality:
+
+     In what, then, does our difference consist? Let me approach this key point via
+     another key criticism from Butler: her point that I describe only the paradoxi-
+     cal mechanisms of ideology, the way an ideological edifice reproduces itself
+     (the reversal that characterizes the effect of point de capiton, the “inherent
+     transgression,” etc.), without elaborating how one can “disturb” (resignify,
+     displace, turn against themselves) these mechanisms; I show:
+
+         how power compels us to consent to that which constrains us, and
+         how our very sense of freedom or resistance can be the dissimulated
+         instrument of dominance. But what remains less clear to me is how
+         one moves beyond such a dialectical reversal or impasse to some-
+         thing new. How would the new be produced from an analysis of the
+         social field that remains restricted to inversions, aporias, and rever-
+         sals that work regardless of time and place? (JB, p. 29)
+
+     In The Psychic Life of Power, Butler makes the same point apropos of Lacan
+     himself:
+
+         The [Lacanian] imaginary [resistance] thwarts the efficacy of the sym-
+         bolic law but cannot turn back upon the law, demanding or effecting
+         its reformulation. In this sense, psychic resistance thwarts the law in
+         its effects, but cannot redirect the law or its effects. Resistance is thus
+         located in a domain that is virtually powerless to alter the law that it
+         opposes. Hence, psychic resistance presumes the continuation of the
+         law in its anterior, symbolic form and, in that sense, contributes to its
+         status quo. In such a view, resistance appears doomed to perpetual
+         defeat.
+             In contrast, Foucault formulates resistance as an effect of the very
+         power that it is said to oppose. [. . .] For Foucault, the symbolic pro-
+         duces the possibility of its own subversions, and these subversions
+         are unanticipated effects of symbolic interpellations. [98–99]
+
+     My response to this is triple. First, on the level of exegesis, Foucault is much
+     more ambivalent on this point: his thesis on the immanence of resistance to
+     power can also be read as asserting that every resistance is caught in advance
+     in the game of the power it opposes. Second, my notion of “inherent transgres-
+     sion,” far from playing another variation on this theme (resistance reproduces
+     that to which it resists), makes the power edifice even more vulnerable: inso-
+     far as power relies on its “inherent transgression,” then—sometimes, at least—
+     overidentifying with the explicit power discourse—ignoring this inherent ob-
+     scene underside and simply taking the power discourse at its (public) word,
+     acting as if it really means what it explicitly says (and promises)—can be the
+     most effective way of disturbing its smooth functioning. Third, and most im-
+     portant: far from constraining the subject to a resistance doomed to perpetual
+     defeat, Lacan allows for a much more radical subjective intervention than
+     Butler: what the Lacanian notion of “act” aims at is not a mere displacement/
+
+
+
+
+94
+    resignification of the symbolic coordinates that confer on the subject his or
+    her identity, but the radical transformation of the very universal structuring
+    “principle” of the existing symbolic order. Or—to put it in more psychoana-
+    lytic terms—the Lacanian act, in its dimension of “traversing the fundamental
+    fantasy” aims radically to disturb the very “passionate attachment” that forms,
+    for Butler, the ultimately ineluctable background of the process of
+    resignification. So, far from being more “radical” in the sense of thorough
+    historicization, Butler is in fact very close to the Lacan of the early 1950s, who
+    found his ultimate expression in the rapport de Rome on “The Function and
+    the Field of Speech and Language in Psychoanalysis” (1953)—to the Lacan
+    of the permanent process of retroactive historicization or resymbolization of
+    social reality, to the Lacan who emphasized again and again how there is no
+    directly accessible “raw” reality, how what we perceive as “reality” is
+    overdetermined by the symbolic texture within which it appears.
+          Along these lines, Lacan triumphantly rewrites the Freudian “stages” (oral,
+    anal, phallic . . .) not as biologically determined stages in libidinal evolution,
+    but as different modes of the dialectical subjectivization of the child’s position
+    within the network of his or her family: what matters in, say, the anal stage is
+    not the function of defecation as such, but the subjective stance it involves
+    (complying with the Other’s demand to do it in an orderly way, asserting one’s
+    defiance and/or self-control . . .). What is crucial here is that it is this Lacan of
+    radical and unlimited resignification who is at the same time the Lacan of the
+    paternal Law (Name-of-the-Father) as the unquestionable horizon of the
+    subject’s integration into the symbolic order. Consequently, the shift from this
+    early “Lacan of unlimited resignification” to the later “Lacan of the Real” is
+    not the shift from the unconstrained play of resignification towards the asser-
+    tion of some ahistorical limit of the process of symbolization: it is the very
+    focus on the notion of Real as impossible that reveals the ultimate contin-
+    gency, fragility (and thus changeability) of every symbolic constellation that
+    pretends to serve as the a priori horizon of the process of symbolization.
+          No wonder Lacan’s shift of focus towards the Real is strictly correlative to
+    the devaluation of the paternal function (and of the central place of the Oedi-
+    pus complex itself)—to the introduction of the notion that paternal authority is
+    ultimately an imposture, one among the possible “sinthoms,” which allow us
+    temporarily to stabilize and coordinate the inconsistent/nonexistent “big Other.”
+    So Lacan’s point in unearthing the “ahistorical” limit of historicization/
+    resignification is thus not that we have to accept this limit in a resigned way,
+    but that every historical figuration of this limit is itself contingent and, as
+    such, susceptible to a radical overhaul. So my basic answer to Butler—no
+    doubt paradoxical for those who have been fully involved in recent debates—
+    is that, with all the talk about Lacan’s clinging to an ahistorical bar, and so on,
+    it is Butler herself who, on a more radical level, is not historicist enough: it is
+    Butler who limits the subject’s intervention to multiple resignifications/dis-
+    placements of the basic “passionate attachment,” which therefore persists as
+    the very limit/condition of subjectivity. Consequently, I am tempted to supple-
+    ment Butler’s series in her rhetorical question quoted above: “How would the
+    new be produced from an analysis of the social field that remains restricted to
+    inversions, aporias, reversals, and performative displacements or
+    resignifications . . . ?” [“Da Capo senza Fine” 219–21]
+
+Enough of self-quoting, since, I hope, I have made my point: after reading these lines
+
+
+
+
+diacritics / spring 2001                                                                    95
+(and my critic has read them, since she often quotes from the book from which they are
+taken), in which I denounce symbolic authority as an imposture, in which I directly and
+emphatically state that one can undermine unconscious fantasies, how can someone
+write that I claim the exact opposite?
+      How, then? I think the answer is double. First, what is the level my critic finds
+problematic in my work—the level of traumatic fantasies which persist and insist be-
+neath the multitude of symbolic games, thwarting our acts, dominating us behind our
+backs, sabotaging our “resignifications”—if not the Freudian unconscious? Let us make
+the point clear: what lurks in the position of my critic is simply the disavowal of psycho-
+analysis. In the field from which she speaks, there is no place for the Freudian uncon-
+scious—it is as simple as that.
+      The second answer is best approached by way of quoting       the very last sentence of
+                                                                 ∨ ∨
+my critic’s essay: “Thus, we might want to reconsider his [Zizek’s] royal status in the
+realm of theory” [88]. The ridicule of this statement cannot but strike the eye: here we
+have a critic who speaks on behalf of (“we”) one of the hegemonic trends of today’s
+academia, denouncing as racist/anti-Semitic/authoritarian, and so on, a Lacanian ap-
+proach that is quite marginalized, almost completely powerless from the standpoint of
+the distribution of power in Anglo-Saxon academia (one can count Lacanians in the US
+universities on the fingers of two hands—not even one department is dominated by
+them—and in Germany the situation is, if anything, even worse). This, then, is the level
+on which things “really happen”: politics in the academic Ideological State Appara-
+tuses. The unpleasant fact is that the position of my critics is far from marginal or re-
+pressed—it is not the Antigonian voice of those who are excluded from the academic
+public space, who live in the shadows of this space, but the voice of those who dominate
+this space. To proclaim that I possess any kind of “royal status in the realm of theory”
+from which I should be deposed is a cruel mockery of those who effectively occupy this
+status. It is not I who am to be deposed; it is they who fear their own deposition. How-
+ever, in order not to end in this purely polemical mood, let me conclude with a clarifica-
+tion concerning three features of my work that appear most problematic to my critic:
+my problematizing of democracy; the notion of the Real; my reference to Christianity.
+      Today, when everyone is “anticapitalist”—even Hollywood “sociocritical” con-
+spiracy movies (from The Pelican Brief to The Insider) in which the enemies are big
+corporations with their ruthless pursuit of profit—the signifier “anticapitalism” has lost
+its subversive sting. What one should problematize is rather the self-evident opposite of
+this “anticapitalism”: trust that the democratic substance of honest Americans is able to
+break up the conspiracy. This is the hard kernel of today’s global capitalist universe, its
+true Master-Signifier: democracy.
+      The limit of democracy is the State: in the democratic electoral process, the social
+body is symbolically dissolved, reduced to a pure numerical multitude. The electoral
+body is precisely not a body, a structured whole, but a formless abstract multitude, a
+multitude without a State (in both Badiouian senses of this term: the state as the re-
+presented unity of the multitude, and the State with its apparatuses). The point is thus
+not that democracy is inherent to the State, sustained by its apparatuses, but that it
+structurally ignores this dependency. When Alain Badiou says that the State is always in
+excess with regard to the multitude it represents, this means that it is precisely this
+excess which is structurally overlooked by democracy: the illusion is that the demo-
+cratic process can control this excess of the State [Badiou 37].
+      Which is why the antiglobalization movement is not enough: at some point, one
+will have to problematize the self-evident reference to “freedom and democracy.” Therein
+resides the ultimate “Leninist” lesson for today: paradoxically, it is only in this way, by
+problematizing democracy—by making it clear how liberal democracy a priori, in its
+
+
+
+
+96
+very notion (as Hegel would have put it), cannot survive without capitalist private prop-
+erty—that we can become effectively anticapitalist. Did the disintegration of Commu-
+nism in 1990 not provide ultimate confirmation of the most “vulgar” Marxist thesis that
+the actual economic base of political democracy is the private ownership of the means
+of production, that is, capitalism with its class distinctions? The big urge after the intro-
+duction of political democracy was “privatization,” the frantic effort to find—at any
+price, in whatever way—new owners, who can be the descendants of the old owners
+whose property was nationalized when the Communists took power, ex-Communist
+apparatchiks, mafiosi . . . whoever, simply in order to establish a “base” of democracy.
+The ultimate tragic irony is that this is all taking place too late—at exactly the moment
+when, in First World “postindustrial” societies, private ownership has begun to lose its
+central regulating role.
+      The battle to be fought is thus twofold: first, yes, anticapitalism. However, anti-
+capitalism without problematizing capitalism’s political form (liberal parliamentary
+democracy) is not sufficient, no matter how “radical” it is. Perhaps the lure today is the
+belief that one can undermine capitalism without effectively problematizing the liberal-
+democratic legacy which—as some Leftists claim—although engendered by capital-
+ism, has acquired autonomy and can serve to criticize capitalism. This lure is strictly
+correlative to its apparent opposite, to the pseudo-Deleuzian love-hate fascinating/fas-
+cinated poetic depiction of Capital as a rhizomatic monster/vampire that deterritorializes
+and swallows all, indomitable, dynamic, ever-rising from the dead, each crisis making
+it stronger, Dionysos-Phoenix reborn. . . . It is in this poetic (anti)capitalist reference to
+Marx that Marx is really dead: appropriated when deprived of his political sting.
+      The problem with democracy is that, the moment it is established as a positive
+formal system regulating the way a multitude of political subjects compete for power, it
+has to exclude some options as “nondemocratic,” and this exclusion, this founding deci-
+sion about who is included in and who is excluded from the field of democratic options,
+is not democratic. We are not simply playing formal-logical games here with the para-
+doxes of metalanguage, since, at this precise point, Marx’s old insight remains fully
+valid: this inclusion/exclusion is overdetermined by fundamental social antagonism
+(“class struggle”), which, for this very reason, cannot ever be adequately translated into
+the form of democratic competition. The ultimate democratic illusion—and, simulta-
+neously, the point at which the limitation of democracy becomes directly palpable—is
+that one can accomplish social revolution painlessly, through “peaceful means,” simply
+by winning elections. This illusion is formalist in the strictest sense of the term: it ab-
+stracts from the concrete framework of social relations within which the democratic
+form is operative. Consequently, although there is no profit in ridiculing political de-
+mocracy, one should nonetheless insist on the Marxist lesson, confirmed by the post-
+Socialist craving for privatization, that political democracy has to rely on private prop-
+erty. In short, the problem with democracy is not that it is a democracy but—to use the
+phrase introduced apropos of the NATO bombing of Yugoslavia—in its “collateral dam-
+age,” in the fact that it is a form of State Power involving certain relations of production.
+      Concerning the Real, one should always bear in mind the complex interconnection
+of the Lacanian triad Real-Imaginary-Symbolic: the entire triad reflects itself within
+each of its three elements. There are three modalities of the Real: the “real Real” (the
+horrifying Thing, the primordial object, from Irma’s throat to the Alien), the “imaginary
+Real” (the mysterious je ne sais quoi, the unfathomable “something” on account of
+which the sublime dimension shines through an ordinary object), and the “symbolic
+Real” (the real as consistency: the signifier reduced to a senseless formula, like the
+quantum physics formulas which can no longer be translated back into—or related to—
+the everyday experience of our life-world). The Real is thus effectively all three dimen-
+
+
+
+
+diacritics / spring 2001                                                                   97
+sions at the same time: the abyssal vortex which ruins every consistent structure; the
+mathematized consistent structure of reality; the fragile pure appearance. And, in a strictly
+homologous way, there are three modalities of the Symbolic (the real—the signifier
+reduced to a senseless formula; the imaginary—the Jungian “symbols”; and the sym-
+bolic—speech, meaningful language) and three modalities of the Imaginary (the real—
+fantasy, which is precisely an imaginary scenario occupying the place of the Real; the
+imaginary—image as such in its fundamental function of a decoy; and the symbolic—
+again, the Jungian “symbols” or New Age archetypes). The triad of the Real-Imaginary-
+Symbolic also determines the three modes of the subject’s decenterment: the Real (of
+which neurobiology speaks: the neuronal network as the objective reality of our illusive
+psychic self-experience); the Imaginary (the fundamental fantasy itself, the decentered
+imaginary scenario inaccessible to my psychic experience); and the Symbolic (the sym-
+bolic order as the Other Scene by whom I am spoken, which effectively pulls the strings).
+     What this means is that the Real is not the hard kernel of reality that resists
+virtualization. Hubert Dreyfus is right to identify the fundamental feature of today’s
+virtualization of our life-experience as a reflective distance which prevents any full
+engagement: as in the sexual games on the internet, you are never fully committed,
+since, as one usually puts it, “when the thing doesn’t work out, you can always leave!”
+When you reach an impasse, you can say “OK, I am leaving the game, I step out! Let’s
+start over with a different game!”; but the very fact of this withdrawal implies that, from
+the beginning, I was somehow aware that I can leave the game, which means that I was
+not fully committed [see Dreyfus]. In this way, we never get really burned, fatally hurt,
+since a commitment is always open to being revoked; but in an existential commitment
+without reservations, if we make a mistake we lose it all—there is no way out, no “OK,
+let’s start the game again!” We miss what Kierkegaard and others mean by a full exis-
+tential engagement when we perceive it as a risky voluntarist jump into a dogmatic
+stance, as if, instead of persisting in fully justified skepticism, we as it were lose our
+nerve and fully commit ourselves; what he has in mind are precisely situations when we
+are absolutely cornered and cannot step back and judge the situation from a distance—
+we do not have a choice to choose or not to choose, since the withdrawal from choice is
+already the (bad) choice.
+     However, from the Freudian standpoint, the first thing to do is to radically question
+the opposition, on which Dreyfus relies here, between human being as a fully embodied
+agent, thrown into his/her life-world, acting against the impenetrable background of
+preunderstanding, which can never be objectified/explicated into a set of rules, and the
+human being operating in an artificial digital universe that is thoroughly rule-regulated
+and thus lacks the background density of the life-world. What if our location in a life-
+world is not the ultimate fact? The Freudian notion of “death drive” points precisely
+toward a dimension of human subjectivity that resists its full immersion into its life-
+world: it designates a blind insistence that follows its course with utter disregard for the
+requirements of our concrete life-world. In Tarkovsky’s Mirror, his father Arseny
+Tarkovsky recites his own lines: “A soul is sinful without a body, / like a body without
+clothes”—with no project, no aim, a riddle without answer—“death drive” is this dislo-
+cated soul without body, a pure insistence ignoring the constraints of reality. Gnosti-
+cism is thus simultaneously right and wrong: right, insofar as it claims that the human
+subject is not truly “at home” in our reality; wrong, insofar as it draws the conclusion
+that, therefore, there should be another (astral, etheric . . .) universe that is our true
+home, and from which we “fell” into this inert material reality. This is also where all the
+postmodern-deconstructionist-poststructuralist variations on how the subject is always-
+already displaced, decentered, pluralized . . . somehow misses the central point: that the
+subject is “as such” the name for a certain radical displacement, a certain “wound, cut,
+
+
+
+
+98
+in the texture of the universe,” and all its identifications are ultimately just so many
+failed attempts to heal this wound. This displacement which in itself portends entire
+universes, is best rendered by the first lines of Fernando Pessoa’s “Tobacco Shop”: “I
+am nothing. / I will never be anything. / I cannot desire to be nothing. / Moreover, I carry
+in me all the dreams of the world.”
+      Within the space of the opposition on which Dreyfus relies, the Real equals the
+inertia of material bodily reality which cannot be reduced to another digital construct.
+However, what one should introduce here is the good old Lacanian distinction between
+reality and the Real: in the opposition between reality and spectral illusion, the Real
+appears precisely as “irreal,” as a spectral illusion for which there is no space in our
+(symbolically constructed) reality. Therein, in this “symbolic construction of (what we
+perceive as our social) reality,” lies the catch: the inert remainder foreclosed from (what
+we experience as) reality returns in the Real of spectral apparitions. What is so uncanny
+about animals like shellfishes, snails, and tortoises? The true object of horror is not the
+shell without the slimy body in it, but the “naked” body without the shell. That is to say,
+is it not that we always tend to perceive the shell as too large, too heavy, too thick, with
+regard to the living body it houses? The body never fully fits its shell. Furthermore, this
+body possesses no inner skeleton which would confer upon it the minimum of stability
+and firmness: deprived of its shell, the body is an almost formless spongy entity. It is as
+if, in these cases, the fundamental vulnerability, the need for a safe haven of a housing
+specific to humans, is projected back into nature, into the animal kingdom—in other
+words, it is as if these animals are effectively humans who carry their houses along with
+them. Is this squishy body not the perfect figure of the Real? The shell without the
+living body within would be like the famous vase evoked by Heidegger: the symbolic
+frame which delineates the contours of the Real Thing, the void in its middle—the
+uncanny thing is that nonetheless “something instead of nothing” is within the shell,
+although not an adequate something, but always a defective, vulnerable, ridiculously
+inadequate body, the remainder of the lost Thing. The Real is thus not the prereflexive
+reality of our immediate immersion in our life-world but, precisely, that which gets lost,
+that which the subject has to renounce in order to become immersed in his/her life-
+world—and, consequently, that which then returns in the guise of spectral apparitions.
+      In short, the Real is the “almost nothing” that sustains the gap that separates a thing
+from itself. The dimension we are trying to discern can best be formulated with regard
+to the thorough ambiguity of the relationship between reality and the Real. The standard
+“Lacanian” notion is that of reality as a grimace of the Real: the Real is the unattainable
+traumatic kernel-Void, the blinding Sun impossible to sustain in a face-to-face look,
+perceptible only if one looks at it awry, from the side, in a perspectival distortion—if we
+look at it directly, we get “burnt by the sun.” The Real is thus structured/distorted into
+the “grimace” we call reality through the pacifying symbolic network, something like
+the Kantian Ding-an-sich structured into what we experience as objective reality through
+the transcendental network. However, if one draws out all the consequences of the
+Lacanian notion of the Real, one is compelled to invert the above-quoted formula: the
+Real itself is nothing but a grimace of reality, something that is nothing but a perspec-
+tival distortion of reality, something that only shines through such a distortion, since it
+is “in itself” thoroughly without substance. This Real is a stain in what we perceive
+“face to face,” like the devil’s face appearing in the tornado clouds in the cover photo of
+News of the World, the obstacle (the proverbial “bone in the throat”) that forever distorts
+our perception of reality, introducing anamorphic stains in it. The Real is the appear-
+ance as appearance: it not only appears within appearances, but it is also nothing but its
+own appearance. It is only a certain grimace of reality, a certain imperceptible, unfath-
+omable, ultimately illusory feature that accounts for the absolute difference within the
+
+
+
+
+diacritics / spring 2001                                                                  99
+identity. This Real is not the inaccessible Beyond of phenomena, but only their doublure,
+the gap between two inconsistent phenomena, a perspectival shift. This, then, is how
+one should answer the “obvious” theological counterargument (or, more simply, read-
+ing) of Lacan: the Real does stand for the intervention of another dimension in the order
+of our reality—and why should this other dimension not be the Divine Thing? From the
+materialist standpoint, the Thing is a specter that emerges in the interstices of reality,
+insofar as reality is never homogeneous/consistent, but always afflicted by the cut of
+self-doubling.
+     Most of Rachel Whiteread’s sculptural work consists of variations on one and the
+same motif: that of directly giving body to the Void of the Thing. When, taking a created
+object (a closet, a room, a house . . .), she first fills in the empty space, the void in the
+middle, and then removes that which encircled and thus delineated this central void—
+what we get is a massive object that directly gives body to the void itself. The standard
+relationship between the void and the crust/armor/shell that created this void is thus
+inverted: instead of the vase embodying the central void, this void itself is directly
+materialized. The uncanny effect of these objects resides in the ways they palpably
+demonstrate the ontological incompleteness of reality: such objects by definition stick
+out, they are ontologically superfluous, not at the same level of reality as “normal”
+objects.
+     This doublure is never symmetrical. In a well-known psychological experiment,
+two psychiatrists were engaged in a conversation after each was told that the other is not
+really a psychiatrist, but a dangerous lunatic living under the illusion that he is a psy-
+chiatrist. Afterwards, each was asked to write a professional report on his partner, and
+each described in detail the other’s dangerous symptoms. Does this experiment not
+realize Escher’s famous picture of the two hands drawing each other? One should none-
+theless insist that, as with Escher’s drawing, the perfect symmetry is an illusion that
+“cannot happen in reality”—the two persons cannot both be just an entity in the other’s
+dream. The asymmetry at work here is clearly discernible in another similar case, that of
+the relationship between God and man in the tradition of German mysticism (Meister
+Eckhart): man is created-born by God, yet God is born in man, that is, man gives birth to
+what created him. The relationship is not symmetrical here, but—to put it in Hegelese—
+that of “positing the presuppositions”: God is, of course, the impenetrable/abyssal Ground
+out of which man emerges; however, it is only through man that God actualizes himself,
+that he “becomes what he always-already was.” What was before the creation of man an
+impersonal substantial force becomes through man the divine person.
+     We have thus returned to the difference between idealism and materialism: perhaps
+its ultimate figure is that between these two forms of the Real. Religion is the Real as
+the impossible Thing beyond phenomena, the Thing that “shines through” phenomena
+in sublime experiences; atheism is the Real as grimace of reality, as the gap, the incon-
+sistency, of reality. This is why the standard religious reproach to atheists (“But you
+cannot really understand what it is to believe!”) has to be turned around: our “natural”
+state is to believe; the truly difficult thing to grasp is the atheist position. Here one
+should move against the Derridean/Levinasian assertion of the kernel of religion as the
+belief in the impossible Real of a spectral Otherness that can leave its traces in our
+reality—the belief that this reality of ours is not the Ultimate Reality. Atheism is not the
+position of believing only in the positive (ontologically fully constituted, sutured, closed)
+reality; the most succinct rien n’aura eu lieu que le lieu definition of atheism is pre-
+cisely “religion without religion”—the assertion of the void of the Real deprived of any
+positive content, prior to any content, the assertion that any content is a semblance
+which fills in the void. “Religion without religion” is the place of religion deprived of
+its content, like Mallarme’s—this is atheism’s true formula—“nothing takes place but
+
+
+
+
+100
+the place itself.” Although this may sound similar to the Derridean/Levinasian “Messi-
+anic Otherness,” it is its exact opposite: it is not “the inner messianic Truth of religion
+minus religion’s external institutional apparatuses” but, rather, the form of religion de-
+prived of its content, in contrast to the Derridean/Levinasian reference to a spectral
+Otherness, which does not offer the form, but the empty content of religion. Not only do
+both religion and atheism insist on the Void, on the fact that our reality is not ultimate
+and closed—the experience of this Void is the original materalist experience, and reli-
+gion, unable to endure it, fills it in with religious content.
+     And is this shift not also the shift from Kant to Hegel? From tension between phe-
+nomena and Thing to an inconsistency/gap between phenomena themselves? The stan-
+dard notion of reality is that of a hard kernel that resists the conceptual grasp. What
+Hegel does is simply to take this notion of reality more literally: nonconceptual reality
+is something that emerges when the notional self-development gets caught in an incon-
+sistency and becomes nontransparent to itself. In short, the limit is transposed from
+exterior to interior: Reality exists because and insofar as the Notion is inconsistent,
+doesn’t coincide with itself. The multiple perspectival inconsistencies between phe-
+nomena are not an effect of the impact of the transcendent Thing—on the contrary,
+Thing is nothing but the ontologization of the inconsistency between phenomena. The
+logic of this reversal is ultimately the same as the passage from the special to the general
+theory of relativity in Einstein. While the special theory already introduces the notion of
+curved space, it conceives of this curvature as the effect of matter: it is the presence of
+matter that curves the space; that is, only an empty space would have been noncurved.
+With the passage to the general theory, the causality is reversed: far from causing the
+curvature of the space, matter is its effect. In the same way, the Lacanian Real—the
+Thing—is not so much the inert presence that “curves” the symbolic space (introducing
+gaps and inconsistencies in it) but, rather, the effect of these gaps and inconsistencies.
+     There are two fundamentally different ways to relate to the Void, best captured by
+the paradox of Achilles and the tortoise: while Achilles can easily overtake the tortoise,
+he can never reach her. We posit the Void as the impossible-real Limit of human experi-
+ence which we can only indefinitely approach, the absolute Thing toward which we
+have to maintain a proper distance—if we get too close to it, we get burned by the sun.
+Our attitude toward the Void is thus thoroughly ambiguous, marked by simultaneous
+attraction and repulsion. Or we posit it as that through which we should (and, in a way,
+even always-already have) pass(ed). Therein lies the gist of the Hegelian notion of “tar-
+rying with the negative,” which Lacan rendered in his notion of the deep connection
+between the death drive and creative sublimation: in order for (symbolic) creation to
+take place, the death drive (the Hegelian self-relating absolute negativity) has to accom-
+plish its work of, precisely, emptying the place and thus making it ready for creation.
+Instead of the old topic of phenomenal objects disappearing/dissolving in the vortex of
+the Thing, we get objects which are nothing but the Void of the Thing embodied, or, in
+Hegelese, objects in which negativity assumes positive existence.
+     And this brings me to Christianity: in religious terms, this passage from the Impos-
+sible-Real One (Thing), refracted/reflected in the multitude of its appearances, to the
+Twosome is the very passage from Judaism to Christianity—the Jewish God is the Real
+Thing of Beyond, while the divine dimension of Christ is just a tiny grimace, an imper-
+ceptible shade, which differentiates him from other (ordinary) humans. Christ is not
+“sublime” in the sense of an “object elevated to the dignity of a Thing”: he is not a
+stand-in for the impossible Thing-God; he is rather “the Thing itself,” or, more accu-
+rately, “the Thing itself” is nothing but the rupture/gap that makes Christ not fully hu-
+man. Christ is thus what Nietzsche, this ultimate and self-professed anti-Christ, called
+“Midday”: the thin edge between Before and After, the Old and the New, the Real and
+
+
+
+
+diacritics / spring 2001                                                               101
+the Symbolic, between God-Father-Thing and the community of the Spirit. As such, he
+is both at the same time: the extreme point of the Old (the culmination of the logic of
+sacrifice, himself standing for the extreme sacrifice, for the self-relating exchange in
+which we no longer pay God, but God pays for us himself and thus involves us in debt
+indefinitely) and its overcoming (the shift of perspective) into the New. It is a tiny
+nuance, an almost imperceptible shift in perspective, that distinguishes Christ’s sacri-
+fice from the atheist assertion of life that needs no sacrifice.
+     The key to Christ is provided by the figure of Job, whose suffering prefigures that
+of Christ. The almost unbearable impact of the Book of Job resides not so much in its
+narrative frame (the Devil appears in it as a conversational partner of God, and the two
+engage in a rather cruel experiment in order to test Job’s faith), but in its final outcome.
+Far from providing a satisfactory account of Job’s undeserved suffering, God’s appear-
+ance at the end ultimately amounts to pure boasting, a horror show with elements of
+farcical spectacle—a pure argument of authority grounded in breathtaking display of
+power: “You see all that I can do? Can you do this? Who are you then to complain?” So
+what we get is neither the good God letting Job know that his suffering is just an ordeal
+destined to test his faith, nor a dark God beyond Law, the God of pure caprice, but rather
+a God who acts like someone caught in a moment of impotence, weakness at least, who
+tries to escape his predicament by empty boasting. What we get at the end is a kind of
+cheap Hollywood horror show with lots of special effects—no wonder many commen-
+tators tend to dismiss Job’s story as a remainder of pagan mythology that should have
+been excluded from the Bible.
+     Against this temptation, one should precisely locate the true greatness of Job: con-
+trary to the usual notion of Job, he is not a patient sufferer, enduring his ordeal with firm
+faith in God. On the contrary, he complains all the time, rejecting his fate (like Oedipus
+at Colonus, who is also usually misperceived as a patient victim resigned to his fate).
+When the three theologian friends visit him, their line of argumentation is the standard
+ideological sophistry (if you suffer, by definition you must have done something wrong,
+since God is just). However, their argumentation is not limited to the claim that Job
+must somehow be guilty: what is at stake at a more radical level is the meaning(lessness)
+of Job’s suffering. Like Oedipus at Colonus, Job insists on the utter meaninglessness of
+his suffering. As the title of Job 27 says: “Job Maintains His Integrity.” As such, the
+Book of Job provides what is perhaps the first exemplary case of the critique of ideol-
+ogy in human history, laying bare the basic discursive strategies of legitimizing suffer-
+ing: Job’s properly ethical dignity resides in his persistent rejection of the notion that his
+suffering can have any meaning, either as punishment for his past sins or as a trial of his
+faith, against the three theologians who bombard him with possible meanings. Surpris-
+ingly, God takes his side at the end, claiming that every word Job has spoken was true,
+while every word of the three theologians was false.
+     It is with regard to this assertion of the meaninglessness of Job’s suffering that one
+should insist on the parallel between Job and Christ, on Job’s suffering announcing the
+Way of the Cross: Christ’s suffering is also meaningless, not an act of meaningful ex-
+change. The difference, of course, is that, in the case of Christ, the gap that separates the
+suffering, desperate man (Job) from God is transposed onto God himself, as His own
+radical splitting or, rather, self-abandonment. What this means is that one should risk a
+much more radical than usual reading of Christ’s “Father, why did you forsake me?”:
+since we are dealing here not with the gap between man and God, but with the split in
+God himself, the solution cannot be for God to (re)appear in all his majesty, revealing to
+Christ the deeper meaning of his suffering (that he was the Innocent sacrificed to re-
+deem humanity). Christ’s “Father, why did you forsake me?” is not the complaint to the
+omnipotent, capricious God-Father whose ways are indecipherable to us mortal hu-
+
+
+
+
+102
+mans, but the complaint which hints at the impotent God: it is rather like the child who,
+after believing in his father’s powerfulness, with horror discovers that his father cannot
+help him. (To evoke an example from recent history: at the moment of Christ’s crucifix-
+ion, God-the-Father is in a position somewhat similar to that of the Bosnian father made
+to witness the gang rape of his own daughter, and to endure the ultimate trauma of her
+compassionate-reproaching gaze: “Father, why did you forsake me?”). In short, with
+this “Father, why did you forsake me?,” it is God-the-Father who effectively dies, re-
+vealing his utter impotence, and thereupon rises from the dead in the guise of the Holy
+Ghost. The passage from Judaism to Christianity is thus again the passage from purifi-
+cation to subtraction: from the deadly fascination with the transcendent God-Thing to
+the minimal difference that makes Christ-man divine.
+      What one should emphasize is that this reading of Christianity is strictly material-
+ist. In our politically correct times, it is always advisable to start with the set of unwrit-
+ten prohibitions that define the positions one is allowed to assume. The first thing to
+note with regard to religious matters is that reference to “deep spirituality” is again in,
+and direct materialism is out; one is rather solicited to harbor openness toward a radical
+Otherness beyond the onto-theological God. Consequently, when, today, one directly
+asks an academic, “OK, let’s go to the basic fact: do you believe in some form of the
+divine or not?,” the first answer is an embarrassed withdrawal, as if the question is too
+intimate, too probing; this withdrawal is then usually explicated in more “theoretical”
+terms: “It is the wrong question to ask! It is not simply a matter of believing or not but,
+rather, a matter of certain radical experience, of the ability to open oneself to certain
+unheard-of dimensions, of the way our openness to the radical Otherness allows us to
+adopt a specific ethical stance, to participate in certain unique social practices, to ex-
+perience a shattering form of enjoyment. . . .” Against this, one should insist more than
+ever that the “vulgar” question “Do you really believe or not?” matters—more than
+ever, perhaps.
+      What one sees today is a kind of “suspended” belief, a belief that can thrive only as
+not fully (publicly) admitted, as a private obscene secret. This suspended status of our
+beliefs accounts for the predominant “antidogmatic” stance: one should modestly ac-
+cept that all our positions are relative, conditioned by contingent historical constella-
+tions, so that no one has definitive Solutions, just pragmatic temporary solutions. . . .
+The falsity of this stance was denounced by Gilbert Keith Chesterton: “At any street
+corner we may meet a man who utters the frantic and blasphemous statement that he
+may be wrong. Every day one comes across somebody who says that of course his view
+may not be the right one. Of course his view must be the right one, or it is not his view”
+[37]. Is the same falsity not clearly discernible in the rhetoric of many a postmodern
+deconstructionist? Is their apparently modest relativization of their own position not the
+mode of appearance of its very opposite, of privileging their own position of enuncia-
+tion, so that one can effectively claim that the self-relativizing stance is a key ingredient
+of today’s rhetorics of power? Compare the struggle and pain of the “fundamentalist”
+with the serene peace of the liberal democrat who, from a safe subjective position,
+ironically dismisses every fully pledged engagement, every “dogmatic” taking sides.
+Consequently, yes, I plead guilty: in this choice, I without hesitation opt for the “funda-
+mentalist.”
+
+
+
+
+diacritics / spring 2001                                                                 103
+                                      WORKS CITED
+Badiou, Alain. D’un désastre obscur. Paris: Nathan, 1991.
+Butler, Judith. The Psychic Life of Power: Theories in Subjection. Stanford: Stanford
+      UP, 1997.
+Chesterton, Gilbert Keith. Orthodoxy. San Francisco: Ignatius, 1989.
+Dreyfus,
+ ∨ ∨
+             Hubert. On the Internet. London: Routledge, 2001.
+Zizek, Slavoj. “Class Struggle or Postmodernism? Yes, Please!” Contingency, Hege-
+      mony, Universality: ∨Contemporary Dialogues on the Left. By Judith Butler, Ernesto
+                             ∨
+      Laclau, and Slavoj Zizek. London: Verso, 2000. 90–135.
+________
+         . The Sublime Object of Ideology. London: Verso, 1989.
+
+
+
+
+104
+
